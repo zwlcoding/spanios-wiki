@@ -1,12 +1,11 @@
 services:
-  api-qdkf-net:
-    image: crpi-yddandol1embdyi1.cn-shenzhen.personal.cr.aliyuncs.com/waylon_zhang/api-qdkf-net:latest
+  spanios-wiki:
+    image: crpi-yddandol1embdyi1.cn-shenzhen.personal.cr.aliyuncs.com/waylon_zhang/spanios-wiki:0.0.1
     ports:
-      - 1337
+      - 3000
     environment:
-      # 你可以在这里直接设置环境变量
-      # 或者在 Dokploy 的界面中配置
-      - NODE_ENV=production
+      - NODE_ENV=${NODE_ENV}
+      
     restart: unless-stopped
     networks:
       - dokploy-network
