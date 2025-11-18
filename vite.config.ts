@@ -5,9 +5,11 @@ import viteReact from '@vitejs/plugin-react'
 import viteTsConfigPaths from 'vite-tsconfig-paths'
 import tailwindcss from '@tailwindcss/vite'
 import { paraglideVitePlugin } from "@inlang/paraglide-js";
+import { nitro } from 'nitro/vite'
 
 const config = defineConfig({
   plugins: [
+    nitro(),
     paraglideVitePlugin({
       project: './project.inlang',
       outdir: './src/paraglide',
