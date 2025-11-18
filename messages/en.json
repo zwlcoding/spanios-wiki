@@ -1,0 +1,16 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "site_title": "Spanios.wiki | Rare Disease Scientific Guide, Patient Community and Knowledge Wiki: Genetic Loci, Treatment Options, Specialist Departments",
+  "site_not_fount": "Not found",
+  "site_not_fount_desc": "Uh oh. This page took a wrong turn.",
+  "site_back_home": "Back to Home",
+  "coming_soon__title": "Coming Soon",
+  "coming_soon__desc": "Your Rare Journey, Our Shared Strength.",
+  "coming_soon__exciting": "Something Exciting is",
+  "coming_soon__on_the_way": "On the Way!",
+  "coming_soon__working": "We are working hard behind the scenes to bring you something amazing. Stay tuned!",
+  "coming_soon__Days": "Days",
+  "coming_soon__Hours": "Hours",
+  "coming_soon__Minutes": "Minutes",
+  "coming_soon__Seconds": "Seconds"
+}

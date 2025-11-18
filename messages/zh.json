@@ -1,0 +1,16 @@
+{
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "site_title": "罕见病科学指南 | 罕见病患者社区与知识Wiki | 基因点位、治疗方案、科室查询 - Spanios.wiki",
+  "site_not_fount": "没找到内容",
+  "site_not_fount_desc": "糟糕。这页内容好像走错方向了。",
+  "site_back_home": "回到首页",
+  "coming_soon__title": "即将到来",
+  "coming_soon__desc": "你罕见的旅程，我们共同的力量",
+  "coming_soon__exciting": "令人兴奋的事情是",
+  "coming_soon__on_the_way": "正在路上！",
+  "coming_soon__working": "我们正在幕后努力筹备，为大家带来一些精彩的内容。敬请期待！",
+  "coming_soon__Days": "天",
+  "coming_soon__Hours": "小时",
+  "coming_soon__Minutes": "分钟",
+  "coming_soon__Seconds": "秒"
+}
