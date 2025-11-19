@@ -6,6 +6,7 @@
     &:where([data-theme="dark"] *) {
         @slot;
     }
+
     &:not([data-theme="light"] *) {
         @media (prefers-color-scheme: dark) {
             @slot;

@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'react'
-import { createFileRoute } from '@tanstack/react-router'
-import { m } from '@/paraglide/messages'
+import { m } from '@/paraglide/messages';
+import { createFileRoute } from '@tanstack/react-router';
+import { useEffect, useState } from 'react';
 
 export const Route = createFileRoute('/')({
   component: RouteComponent,
@@ -34,32 +34,6 @@ function RouteComponent() {
         <p className="mt-6 text-base-content/60 font-mono text-sm font-medium tracking-[2px] uppercase">
           {m.coming_soon__desc()}
         </p>
-        <div className="mt-12 flex flex-wrap gap-3 text-center md:gap-5">
-          <div className="bg-base-200 rounded-box flex size-16 flex-col items-center justify-center gap-1 text-xs sm:size-20 sm:text-sm">
-            <span className="countdown text-xl md:text-3xl">
-              <span style={{ "--value": 29 }}></span>
-            </span>
-            {m.coming_soon__Days()}
-          </div>
-          <div className="bg-base-200 rounded-box flex size-16 flex-col items-center justify-center gap-1 text-xs sm:size-20 sm:text-sm">
-            <span className="countdown text-xl md:text-3xl">
-              <span style={{ "--value": 16 }}></span>
-            </span>
-            {m.coming_soon__Hours()}
-          </div>
-          <div className="bg-base-200 rounded-box flex size-16 flex-col items-center justify-center gap-1 text-xs sm:size-20 sm:text-sm">
-            <span className="countdown text-xl md:text-3xl">
-              <span style={{ "--value": 24 }}></span>
-            </span>
-            {m.coming_soon__Minutes()}
-          </div>
-          <div className="bg-base-200 rounded-box flex size-16 flex-col items-center justify-center gap-1 text-xs sm:size-20 sm:text-sm">
-            <span className="countdown text-xl md:text-3xl">
-              <span style={{ "--value": value }}></span>
-            </span>
-            {m.coming_soon__Seconds()}
-          </div>
-        </div>
         <div className="absolute -start-12 sm:-start-24">
           <img
             src="/images/coming-soon/coming-soon-spiral.svg"

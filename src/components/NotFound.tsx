@@ -1,5 +1,5 @@
+import { m } from "@/paraglide/messages"
 import { Link } from '@tanstack/react-router'
-import {m} from "@/paraglide/messages"
 
 const NotFound = () => {
     return (

@@ -1,6 +1,6 @@
 {
   "name": "spanios-wiki",
-  "description": "",
+  "version": "0.0.2",
   "private": true,
   "type": "module",
   "scripts": {

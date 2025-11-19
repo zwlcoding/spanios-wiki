@@ -1,5 +1,5 @@
-import { Sun, Moon } from 'lucide-react';
-import { ClientOnly } from '@tanstack/react-router'
+import { ClientOnly } from '@tanstack/react-router';
+import { Moon, Sun } from 'lucide-react';
 
 
 export const DarkModeBtn = ({

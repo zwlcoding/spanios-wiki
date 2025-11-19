@@ -1,3 +1,8 @@
+import { DarkModeBtn, useDarkMode } from '@/features/DarkMode'
+import { LangModeBtn } from "@/features/LangMode"
+import { m } from '@/paraglide/messages'
+import { getLocale } from '@/paraglide/runtime'
+import { TanStackDevtools } from '@tanstack/react-devtools'
 import {
   HeadContent,
   Link,
@@ -5,12 +10,7 @@ import {
   createRootRoute,
 } from '@tanstack/react-router'
 import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import { TanStackDevtools } from '@tanstack/react-devtools'
 import styles from '../styles.css?url'
-import { getLocale, locales, setLocale } from '@/paraglide/runtime'
-import { m } from '@/paraglide/messages'
-import { DarkModeBtn, useDarkMode } from '@/features/DarkMode';
-import { LangModeBtn, useLangMode} from "@/features/LangMode"
 
 import NotFound from '@/components/NotFound'
 
@@ -26,9 +26,12 @@ export const Route = createRootRoute({
       },
       {
         title: m.site_title(),
-      },
+      }
     ],
     links: [{ rel: 'stylesheet', href: styles }],
+    scripts: [
+      { src: 'https://umami.qdkf.net/script.js', defer: true, 'data-website-id': '84cf0966-1cfb-4a2e-a7b4-076187b2914b' }
+    ]
   }),
   notFoundComponent: () => <NotFound />,
   shellComponent: RootDocument,
@@ -62,7 +65,6 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               <DarkModeBtn handleChange={toggleDarkMode} />
               <LangModeBtn />
             </div>
-            {/* <ThemeToggleDropdown triggerClass="btn btn-circle btn-ghost" dropdownClass="dropdown-end" /> */}
           </div>
           {children}
           <div className="flex flex-wrap items-center justify-between gap-2 max-sm:text-sm">
