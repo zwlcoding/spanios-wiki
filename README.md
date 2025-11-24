@@ -1,4 +1,3 @@
-
 # Spanios Wiki
 
 Spanios Wiki is a web application built with Vite and React.
