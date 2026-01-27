@@ -1,12 +1,12 @@
 // routes/hello.ts
-import { createFileRoute } from '@tanstack/react-router'
+import { createFileRoute } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/api/health')({
   server: {
     handlers: {
       GET: async ({ request }) => {
-        return new Response('ok')
+        return new Response('ok');
       },
     },
   },
-})
+});

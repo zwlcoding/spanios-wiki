@@ -11,6 +11,9 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as R404RouteImport } from './routes/404'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as HospitalsIndexRouteImport } from './routes/hospitals/index'
+import { Route as DiseasesIndexRouteImport } from './routes/diseases/index'
+import { Route as CharityIndexRouteImport } from './routes/charity/index'
 import { Route as ApiHealthRouteImport } from './routes/api/health'
 
 const R404Route = R404RouteImport.update({
@@ -23,6 +26,21 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HospitalsIndexRoute = HospitalsIndexRouteImport.update({
+  id: '/hospitals/',
+  path: '/hospitals/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiseasesIndexRoute = DiseasesIndexRouteImport.update({
+  id: '/diseases/',
+  path: '/diseases/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CharityIndexRoute = CharityIndexRouteImport.update({
+  id: '/charity/',
+  path: '/charity/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiHealthRoute = ApiHealthRouteImport.update({
   id: '/api/health',
   path: '/api/health',
@@ -33,30 +51,55 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/404': typeof R404Route
   '/api/health': typeof ApiHealthRoute
+  '/charity': typeof CharityIndexRoute
+  '/diseases': typeof DiseasesIndexRoute
+  '/hospitals': typeof HospitalsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/404': typeof R404Route
   '/api/health': typeof ApiHealthRoute
+  '/charity': typeof CharityIndexRoute
+  '/diseases': typeof DiseasesIndexRoute
+  '/hospitals': typeof HospitalsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/404': typeof R404Route
   '/api/health': typeof ApiHealthRoute
+  '/charity/': typeof CharityIndexRoute
+  '/diseases/': typeof DiseasesIndexRoute
+  '/hospitals/': typeof HospitalsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/404' | '/api/health'
+  fullPaths:
+    | '/'
+    | '/404'
+    | '/api/health'
+    | '/charity'
+    | '/diseases'
+    | '/hospitals'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/404' | '/api/health'
-  id: '__root__' | '/' | '/404' | '/api/health'
+  to: '/' | '/404' | '/api/health' | '/charity' | '/diseases' | '/hospitals'
+  id:
+    | '__root__'
+    | '/'
+    | '/404'
+    | '/api/health'
+    | '/charity/'
+    | '/diseases/'
+    | '/hospitals/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R404Route: typeof R404Route
   ApiHealthRoute: typeof ApiHealthRoute
+  CharityIndexRoute: typeof CharityIndexRoute
+  DiseasesIndexRoute: typeof DiseasesIndexRoute
+  HospitalsIndexRoute: typeof HospitalsIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,6 +118,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hospitals/': {
+      id: '/hospitals/'
+      path: '/hospitals'
+      fullPath: '/hospitals'
+      preLoaderRoute: typeof HospitalsIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diseases/': {
+      id: '/diseases/'
+      path: '/diseases'
+      fullPath: '/diseases'
+      preLoaderRoute: typeof DiseasesIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/charity/': {
+      id: '/charity/'
+      path: '/charity'
+      fullPath: '/charity'
+      preLoaderRoute: typeof CharityIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/health': {
       id: '/api/health'
       path: '/api/health'
@@ -89,6 +153,9 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   R404Route: R404Route,
   ApiHealthRoute: ApiHealthRoute,
+  CharityIndexRoute: CharityIndexRoute,
+  DiseasesIndexRoute: DiseasesIndexRoute,
+  HospitalsIndexRoute: HospitalsIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

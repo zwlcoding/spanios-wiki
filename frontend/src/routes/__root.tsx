@@ -1,18 +1,17 @@
-import { DarkModeBtn, useDarkMode } from '@/features/DarkMode'
-import { LangModeBtn } from "@/features/LangMode"
-import { m } from '@/paraglide/messages'
-import { getLocale } from '@/paraglide/runtime'
-import { TanStackDevtools } from '@tanstack/react-devtools'
+import { TanStackDevtools } from '@tanstack/react-devtools';
 import {
+  createRootRoute,
   HeadContent,
   Link,
   Scripts,
-  createRootRoute,
-} from '@tanstack/react-router'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
-import styles from '../styles.css?url'
-
-import NotFound from '@/components/NotFound'
+} from '@tanstack/react-router';
+import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
+import NotFound from '@/components/NotFound';
+import { DarkModeBtn, useDarkMode } from '@/features/DarkMode';
+import { LangModeBtn } from '@/features/LangMode';
+import { m } from '@/paraglide/messages';
+import { getLocale } from '@/paraglide/runtime';
+import styles from '../styles.css?url';
 
 export const Route = createRootRoute({
   head: () => ({
@@ -22,20 +21,25 @@ export const Route = createRootRoute({
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover',
       },
       {
         title: m.site_title(),
-      }
+      },
     ],
     links: [{ rel: 'stylesheet', href: styles }],
     scripts: [
-      { src: 'https://umami.qdkf.net/script.js', defer: true, 'data-website-id': '84cf0966-1cfb-4a2e-a7b4-076187b2914b' }
-    ]
+      {
+        src: 'https://umami.qdkf.net/script.js',
+        defer: true,
+        'data-website-id': '84cf0966-1cfb-4a2e-a7b4-076187b2914b',
+      },
+    ],
   }),
   notFoundComponent: () => <NotFound />,
   shellComponent: RootDocument,
-})
+});
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   const { toggleDarkMode } = useDarkMode();
@@ -45,20 +49,21 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-
         <div className="container flex h-screen flex-col py-4">
           <div className="fixed inset-0 -z-20 bg-[url('/common/squares-background.png')] opacity-2 dark:invert"></div>
           <div className="fixed inset-0 -z-19 bg-[url('/common/mesh-background.jpg')] [background-size:110%] object-fill opacity-2"></div>
           <div className="to-base-100 via-base-100/40 fixed inset-0 top-0 -z-1 bg-linear-to-b from-transparent"></div>
           <div className="flex items-center justify-between">
             <Link to="/">
-              <div className='flex items-center'>
+              <div className="flex items-center">
                 <img
                   src="/common/logo@180.png"
                   alt="Spanios.wiki"
                   className="h-12"
                 />
-                <span className='pl-2 hidden md:inline-block'>Spanios.wiki</span>
+                <span className="pl-2 hidden md:inline-block">
+                  Spanios.wiki
+                </span>
               </div>
             </Link>
             <div>
@@ -97,5 +102,5 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  )
+  );
 }
