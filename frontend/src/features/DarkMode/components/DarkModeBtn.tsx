@@ -1,7 +1,6 @@
 import { ClientOnly } from '@tanstack/react-router';
 import { Moon, Sun } from 'lucide-react';
 
-
 export const DarkModeBtn = ({
   handleChange,
 }: {

@@ -1,28 +1,23 @@
-import { getLocale, locales, setLocale } from '@/paraglide/runtime';
 import { Earth } from 'lucide-react';
+import { getLocale, locales, setLocale } from '@/paraglide/runtime';
 
 type LangModeBtnProps = {
   handleChanged?: (value: any) => void;
 };
 
-
-
 export const LangModeBtn = ({ handleChanged }: LangModeBtnProps) => {
   // const { lang, toggleLang, locales } = useLangMode();
 
-  const lang = getLocale()
+  const lang = getLocale();
 
   const handleSelect = (newLang: string) => {
     if (newLang === lang) return;
     // toggleLang(newLang);
-    setLocale(newLang)
+    setLocale(newLang);
     handleChanged && handleChanged(newLang);
   };
 
-
-
   return (
-
     <div className="dropdown dropdown-end">
       <button className="btn btn-ghost btn-circle" tabIndex={0} type="button">
         <label className="swap swap-rotate">
@@ -49,6 +44,5 @@ export const LangModeBtn = ({ handleChanged }: LangModeBtnProps) => {
         ))}
       </ul>
     </div>
-
   );
 };
