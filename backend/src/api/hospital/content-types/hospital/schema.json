@@ -18,7 +18,12 @@
     },
     "level": {
       "type": "enumeration",
-      "enum": ["tertiary_a", "tertiary_b", "secondary_a", "secondary_b"]
+      "enum": [
+        "tertiary_a",
+        "tertiary_b",
+        "secondary_a",
+        "secondary_b"
+      ]
     },
     "province": {
       "type": "string",
@@ -33,7 +38,8 @@
       "required": true
     },
     "phone": {
-      "type": "string"
+      "type": "string",
+      "default": "13800000000"
     },
     "website": {
       "type": "string"

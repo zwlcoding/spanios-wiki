@@ -109,13 +109,15 @@ VITE_MAINTENANCE_MODE="false"
 - ✅ 基础 UI 组件
 - ✅ Mock 数据展示
 - ✅ Strapi 数据模型设计文档
+- ✅ Strapi Content Types 创建（Tag, DiseaseCategory, Hospital, Department, CharityOrganization, Disease）
+- ✅ API 权限配置（Public 只读权限）
 
 ### 待实施 🔄
 
 #### Phase 1: 基础数据集成
-1. **在 Strapi 创建 Content Types**
-   - 按照 `docs/guides/strapi-content-types-setup.md` 操作
-   - 配置 API 权限（Public 只读）
+1. **配置 API 权限** ✅
+   - 为所有 Content Types 配置 Public 只读权限
+   - 测试 API 端点可用性
 
 2. **前端集成 Strapi API**
    - 创建 API 调用 hooks（使用 TanStack Query）
@@ -254,5 +256,5 @@ spanios-wiki/
 
 ---
 
-📝 **项目状态**: Phase 1 - 基础框架完成，待数据集成
-🎯 **下一里程碑**: Strapi Content Types 创建 + API 集成
+ 📝 **项目状态**: Phase 1 - 数据模型、API权限和路由已全部配置完成，待前端集成
+ 🎯 **下一里程碑**: 前端API集成 + 测试数据添加

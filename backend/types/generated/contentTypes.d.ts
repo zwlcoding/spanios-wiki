@@ -713,7 +713,7 @@ export interface ApiHospitalHospital extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     location: Schema.Attribute.JSON;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    phone: Schema.Attribute.String;
+    phone: Schema.Attribute.String & Schema.Attribute.DefaultTo<'13800000000'>;
     province: Schema.Attribute.String & Schema.Attribute.Required;
     publishedAt: Schema.Attribute.DateTime;
     specialties: Schema.Attribute.RichText;
