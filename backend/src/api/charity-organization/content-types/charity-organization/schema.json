@@ -1,0 +1,75 @@
+{
+  "kind": "collectionType",
+  "collectionName": "charity_organizations",
+  "info": {
+    "singularName": "charity-organization",
+    "pluralName": "charity-organizations",
+    "displayName": "CharityOrganization",
+    "description": "公益组织"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": ["patient_org", "foundation", "volunteer_team"]
+    },
+    "description": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "services": {
+      "type": "richtext",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contactPerson": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "wechat": {
+      "type": "string"
+    },
+    "diseases": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::disease.disease",
+      "inversedBy": "charityOrgs"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -14,36 +14,24 @@ pnpm dev
 
 ## Content Types 创建步骤
 
-### 1. Disease（罕见病）
+⚠️ **重要**：请按照以下顺序创建，因为存在依赖关系。
+
+### 1. Tag（标签）
 
 导航到：Content-Type Builder > Create new collection type
 
-**Collection Type 名称**：Disease
+**Collection Type 名称**：Tag
 
 **字段配置**：
 
 | 字段名 | 类型 | 配置 |
 |--------|------|------|
 | name | Text | Required, Unique |
-| nameEn | Text | - |
-| alias | Text | - |
-| icd10Code | Text | - |
-| category | Relation | Many-to-One with DiseaseCategory |
-| prevalence | Text | - |
-| symptoms | Rich Text | - |
-| diagnosis | Rich Text | - |
-| treatment | Rich Text | - |
-| prognosis | Rich Text | - |
-| relatedDiseases | Relation | Many-to-Many with Disease (self) |
-| hospitals | Relation | Many-to-Many with Hospital |
-| charityOrgs | Relation | Many-to-Many with CharityOrganization |
-| tags | Relation | Many-to-Many with Tag |
-| featuredImage | Media | Single image |
-| slug | UID | Based on name |
+| slug | UID | Based on name, Required |
+| type | Enumeration | Values: "症状", "治疗方法", "器官系统", "其他" |
 
 **高级设置**：
 - 启用 Draft & Publish
-- 启用 Internationalization (i18n)
 
 ---
 
@@ -82,12 +70,13 @@ pnpm dev
 | address | Text | Required |
 | phone | Text | - |
 | website | Text | - |
-| departments | Relation | One-to-Many with Department |
 | specialties | Rich Text | - |
 | location | JSON | Format: {"lat": number, "lng": number} |
 
 **高级设置**：
 - 启用 Draft & Publish
+
+**注意**：暂时不添加 `departments` 关系字段，等 Department 创建后再回来添加。
 
 ---
 
@@ -108,6 +97,8 @@ pnpm dev
 **高级设置**：
 - 启用 Draft & Publish
 
+**创建完成后**：回到 Hospital，添加 `departments` 字段 (One-to-Many with Department)。
+
 ---
 
 ### 5. CharityOrganization（公益组织）
@@ -127,29 +118,59 @@ pnpm dev
 | email | Email | - |
 | website | Text | - |
 | wechat | Text | - |
-| diseases | Relation | Many-to-Many with Disease |
 | logo | Media | Single image |
 
 **高级设置**：
 - 启用 Draft & Publish
 - 启用 Internationalization (i18n)
 
+**注意**：暂时不添加 `diseases` 关系字段，等 Disease 创建后再回来添加。
+
 ---
 
-### 6. Tag（标签）
+### 6. Disease（罕见病）
 
-**Collection Type 名称**：Tag
+**Collection Type 名称**：Disease
 
 **字段配置**：
 
 | 字段名 | 类型 | 配置 |
 |--------|------|------|
 | name | Text | Required, Unique |
-| slug | UID | Based on name, Required |
-| type | Enumeration | Values: "症状", "治疗方法", "器官系统", "其他" |
+| nameEn | Text | - |
+| alias | Text | - |
+| icd10Code | Text | - |
+| category | Relation | Many-to-One with DiseaseCategory |
+| prevalence | Text | - |
+| symptoms | Rich Text | - |
+| diagnosis | Rich Text | - |
+| treatment | Rich Text | - |
+| prognosis | Rich Text | - |
+| relatedDiseases | Relation | Many-to-Many with Disease (self) |
+| hospitals | Relation | Many-to-Many with Hospital |
+| charityOrgs | Relation | Many-to-Many with CharityOrganization |
+| tags | Relation | Many-to-Many with Tag |
+| featuredImage | Media | Single image |
+| slug | UID | Based on name |
 
 **高级设置**：
 - 启用 Draft & Publish
+- 启用 Internationalization (i18n)
+
+**创建完成后**：回到 CharityOrganization，添加 `diseases` 字段 (Many-to-Many with Disease)。
+
+---
+
+## 创建顺序总结
+
+1. ✅ **Tag** - 无依赖
+2. ✅ **DiseaseCategory** - 无依赖（自关联可后续添加）
+3. ✅ **Hospital** - 先创建基本字段
+4. ✅ **Department** - 依赖 Hospital
+5. 🔄 回到 **Hospital** - 添加 departments 字段
+6. ✅ **CharityOrganization** - 先创建基本字段
+7. ✅ **Disease** - 依赖所有上述 Content Types
+8. 🔄 回到 **CharityOrganization** - 添加 diseases 字段
 
 ---
 

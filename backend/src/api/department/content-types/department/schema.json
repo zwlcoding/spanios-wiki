@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "departments",
+  "info": {
+    "singularName": "department",
+    "pluralName": "departments",
+    "displayName": "Department",
+    "description": "科室"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "hospital": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::hospital.hospital",
+      "inversedBy": "departments"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "expertDoctors": {
+      "type": "text"
+    },
+    "appointmentUrl": {
+      "type": "string"
+    }
+  }
+}

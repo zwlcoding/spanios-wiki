@@ -1,7 +1,11 @@
 import { useEffect, useState } from 'react';
 import { m } from '@/paraglide/messages';
 
-export default function MaintenancePage() {
+interface MaintenancePageProps {
+  message?: string;
+}
+
+export default function MaintenancePage({ message }: MaintenancePageProps) {
   const [value, setValue] = useState<number>(59);
 
   useEffect(() => {
@@ -9,7 +13,7 @@ export default function MaintenancePage() {
       setValue((v) => (v <= 0 ? 59 : v - 1));
     }, 1000);
     return () => clearTimeout(timer);
-  }, [value]);
+  });
 
   return (
     <div className="relative flex grow flex-col items-center justify-center py-12">
@@ -24,7 +28,7 @@ export default function MaintenancePage() {
         </p>
       </div>
       <p className="text-base-content/80 mt-8 text-center text-lg sm:text-xl xl:text-2xl">
-        {m.coming_soon__working()}
+        {message || m.coming_soon__working()}
       </p>
       <p className="mt-6 text-base-content/60 font-mono text-sm font-medium tracking-[2px] uppercase">
         {m.coming_soon__desc()}
