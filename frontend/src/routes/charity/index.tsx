@@ -1,6 +1,8 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { Globe, Mail, Phone, Search } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useCharityOrganizations } from '@/hooks/useCharityOrganizations';
+import { Link } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/charity/')({
   component: CharityListPage,
@@ -9,45 +11,31 @@ export const Route = createFileRoute('/charity/')({
 function CharityListPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedType, setSelectedType] = useState('all');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
 
-  // Mock data
+  // Fetch charity organizations with filters
+  const { data: organizationsData, isLoading } = useCharityOrganizations({
+    type: selectedType !== 'all' ? selectedType : undefined,
+    search: debouncedSearch || undefined,
+  });
+
+  // Debounce search input
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(searchQuery);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
+  const organizations = organizationsData?.data || [];
+
   const types = [
     { id: 'all', name: '全部类型' },
-    { id: 'patient-org', name: '患者组织' },
+    { id: 'patient_org', name: '患者组织' },
     { id: 'foundation', name: '基金会' },
     { id: 'volunteer', name: '志愿者团队' },
   ];
-
-  const mockOrganizations = [
-    {
-      id: '1',
-      name: '中国罕见病联盟',
-      type: 'foundation',
-      description: '致力于推动罕见病事业发展，为患者提供支持和帮助',
-      services: '政策倡导、患者援助、医学研究支持',
-      phone: '010-12345678',
-      email: 'contact@raredisease.cn',
-      website: 'https://www.raredisease.cn',
-    },
-    {
-      id: '2',
-      name: '瓷娃娃罕见病关爱中心',
-      type: 'patient-org',
-      description: '专注于成骨不全症等罕见病患者关爱',
-      services: '患者互助、心理支持、医疗信息咨询',
-      phone: '010-87654321',
-      email: 'info@chinadolls.org',
-      website: 'https://www.chinadolls.org',
-    },
-  ];
-
-  const filteredOrganizations = mockOrganizations.filter((org) => {
-    const matchesType = selectedType === 'all' || org.type === selectedType;
-    const matchesSearch = org.name
-      .toLowerCase()
-      .includes(searchQuery.toLowerCase());
-    return matchesType && matchesSearch;
-  });
 
   return (
     <div className="flex grow flex-col py-8">
@@ -55,7 +43,9 @@ function CharityListPage() {
       <div className="breadcrumbs text-sm mb-4">
         <ul>
           <li>
-            <a href="/">首页</a>
+            <Link to="/" className="link link-hover">
+              首页
+            </Link>
           </li>
           <li>公益组织</li>
         </ul>
@@ -106,28 +96,51 @@ function CharityListPage() {
 
           {/* Organization List */}
           <div className="space-y-4">
-            {filteredOrganizations.length === 0 ? (
+            {isLoading ? (
+              <div className="space-y-4">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="card bg-base-200">
+                    <div className="card-body">
+                      <div className="skeleton h-6 w-3/4"></div>
+                      <div className="skeleton h-4 w-full mt-2"></div>
+                      <div className="skeleton h-4 w-2/3 mt-4"></div>
+                      <div className="skeleton h-4 w-1/2 mt-2"></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : organizations.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-base-content/60">暂无相关组织信息</p>
               </div>
             ) : (
-              filteredOrganizations.map((org) => (
-                <a
+              organizations.map((org) => (
+                <Link
                   key={org.id}
-                  href={`/charity/${org.id}`}
-                  className="card bg-base-200 hover:bg-base-300 transition-colors"
+                  to="/charity/$id"
+                  params={{ id: org.id.toString() }}
+                  className="card bg-base-200 hover:bg-base-300 transition-colors block"
                 >
                   <div className="card-body">
                     <h3 className="card-title">{org.name}</h3>
-                    <p className="text-sm text-base-content/70 mt-2">
-                      {org.description}
-                    </p>
-                    <div className="mt-4">
-                      <p className="text-sm">
-                        <span className="text-base-content/60">服务内容：</span>
-                        <span className="ml-2">{org.services}</span>
+                    {org.description && (
+                      <p className="text-sm text-base-content/70 mt-2">
+                        {org.description
+                          .replace(/<[^>]*>/g, '')
+                          .substring(0, 150)}
+                        ...
                       </p>
-                    </div>
+                    )}
+                    {org.services && (
+                      <div className="mt-4">
+                        <p className="text-sm">
+                          <span className="text-base-content/60">
+                            服务内容：
+                          </span>
+                          <span className="ml-2">{org.services}</span>
+                        </p>
+                      </div>
+                    )}
                     <div className="mt-4 space-y-2 text-sm">
                       {org.phone && (
                         <div className="flex items-center gap-2">
@@ -149,7 +162,7 @@ function CharityListPage() {
                       )}
                     </div>
                   </div>
-                </a>
+                </Link>
               ))
             )}
           </div>

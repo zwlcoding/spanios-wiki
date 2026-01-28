@@ -1,7 +1,6 @@
 import { useNavigate } from '@tanstack/react-router';
 import { Search } from 'lucide-react';
 import { useState } from 'react';
-import { m } from '@/paraglide/messages';
 
 export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');

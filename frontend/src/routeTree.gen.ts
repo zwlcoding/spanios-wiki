@@ -9,13 +9,22 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as SearchRouteImport } from './routes/search'
 import { Route as R404RouteImport } from './routes/404'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as HospitalsIndexRouteImport } from './routes/hospitals/index'
 import { Route as DiseasesIndexRouteImport } from './routes/diseases/index'
 import { Route as CharityIndexRouteImport } from './routes/charity/index'
+import { Route as HospitalsIdRouteImport } from './routes/hospitals/$id'
+import { Route as DiseasesSlugRouteImport } from './routes/diseases/$slug'
+import { Route as CharityIdRouteImport } from './routes/charity/$id'
 import { Route as ApiHealthRouteImport } from './routes/api/health'
 
+const SearchRoute = SearchRouteImport.update({
+  id: '/search',
+  path: '/search',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const R404Route = R404RouteImport.update({
   id: '/404',
   path: '/404',
@@ -41,6 +50,21 @@ const CharityIndexRoute = CharityIndexRouteImport.update({
   path: '/charity/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const HospitalsIdRoute = HospitalsIdRouteImport.update({
+  id: '/hospitals/$id',
+  path: '/hospitals/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiseasesSlugRoute = DiseasesSlugRouteImport.update({
+  id: '/diseases/$slug',
+  path: '/diseases/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CharityIdRoute = CharityIdRouteImport.update({
+  id: '/charity/$id',
+  path: '/charity/$id',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiHealthRoute = ApiHealthRouteImport.update({
   id: '/api/health',
   path: '/api/health',
@@ -50,7 +74,11 @@ const ApiHealthRoute = ApiHealthRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/404': typeof R404Route
+  '/search': typeof SearchRoute
   '/api/health': typeof ApiHealthRoute
+  '/charity/$id': typeof CharityIdRoute
+  '/diseases/$slug': typeof DiseasesSlugRoute
+  '/hospitals/$id': typeof HospitalsIdRoute
   '/charity': typeof CharityIndexRoute
   '/diseases': typeof DiseasesIndexRoute
   '/hospitals': typeof HospitalsIndexRoute
@@ -58,7 +86,11 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/404': typeof R404Route
+  '/search': typeof SearchRoute
   '/api/health': typeof ApiHealthRoute
+  '/charity/$id': typeof CharityIdRoute
+  '/diseases/$slug': typeof DiseasesSlugRoute
+  '/hospitals/$id': typeof HospitalsIdRoute
   '/charity': typeof CharityIndexRoute
   '/diseases': typeof DiseasesIndexRoute
   '/hospitals': typeof HospitalsIndexRoute
@@ -67,7 +99,11 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/404': typeof R404Route
+  '/search': typeof SearchRoute
   '/api/health': typeof ApiHealthRoute
+  '/charity/$id': typeof CharityIdRoute
+  '/diseases/$slug': typeof DiseasesSlugRoute
+  '/hospitals/$id': typeof HospitalsIdRoute
   '/charity/': typeof CharityIndexRoute
   '/diseases/': typeof DiseasesIndexRoute
   '/hospitals/': typeof HospitalsIndexRoute
@@ -77,17 +113,35 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/404'
+    | '/search'
     | '/api/health'
+    | '/charity/$id'
+    | '/diseases/$slug'
+    | '/hospitals/$id'
     | '/charity'
     | '/diseases'
     | '/hospitals'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/404' | '/api/health' | '/charity' | '/diseases' | '/hospitals'
+  to:
+    | '/'
+    | '/404'
+    | '/search'
+    | '/api/health'
+    | '/charity/$id'
+    | '/diseases/$slug'
+    | '/hospitals/$id'
+    | '/charity'
+    | '/diseases'
+    | '/hospitals'
   id:
     | '__root__'
     | '/'
     | '/404'
+    | '/search'
     | '/api/health'
+    | '/charity/$id'
+    | '/diseases/$slug'
+    | '/hospitals/$id'
     | '/charity/'
     | '/diseases/'
     | '/hospitals/'
@@ -96,7 +150,11 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   R404Route: typeof R404Route
+  SearchRoute: typeof SearchRoute
   ApiHealthRoute: typeof ApiHealthRoute
+  CharityIdRoute: typeof CharityIdRoute
+  DiseasesSlugRoute: typeof DiseasesSlugRoute
+  HospitalsIdRoute: typeof HospitalsIdRoute
   CharityIndexRoute: typeof CharityIndexRoute
   DiseasesIndexRoute: typeof DiseasesIndexRoute
   HospitalsIndexRoute: typeof HospitalsIndexRoute
@@ -104,6 +162,13 @@ export interface RootRouteChildren {
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/search': {
+      id: '/search'
+      path: '/search'
+      fullPath: '/search'
+      preLoaderRoute: typeof SearchRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/404': {
       id: '/404'
       path: '/404'
@@ -139,6 +204,27 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CharityIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/hospitals/$id': {
+      id: '/hospitals/$id'
+      path: '/hospitals/$id'
+      fullPath: '/hospitals/$id'
+      preLoaderRoute: typeof HospitalsIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diseases/$slug': {
+      id: '/diseases/$slug'
+      path: '/diseases/$slug'
+      fullPath: '/diseases/$slug'
+      preLoaderRoute: typeof DiseasesSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/charity/$id': {
+      id: '/charity/$id'
+      path: '/charity/$id'
+      fullPath: '/charity/$id'
+      preLoaderRoute: typeof CharityIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/health': {
       id: '/api/health'
       path: '/api/health'
@@ -152,7 +238,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   R404Route: R404Route,
+  SearchRoute: SearchRoute,
   ApiHealthRoute: ApiHealthRoute,
+  CharityIdRoute: CharityIdRoute,
+  DiseasesSlugRoute: DiseasesSlugRoute,
+  HospitalsIdRoute: HospitalsIdRoute,
   CharityIndexRoute: CharityIndexRoute,
   DiseasesIndexRoute: DiseasesIndexRoute,
   HospitalsIndexRoute: HospitalsIndexRoute,

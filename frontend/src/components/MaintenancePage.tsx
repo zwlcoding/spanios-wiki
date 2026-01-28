@@ -6,7 +6,7 @@ interface MaintenancePageProps {
 }
 
 export default function MaintenancePage({ message }: MaintenancePageProps) {
-  const [value, setValue] = useState<number>(59);
+  const [_value, setValue] = useState<number>(59);
 
   useEffect(() => {
     const timer = setTimeout(() => {

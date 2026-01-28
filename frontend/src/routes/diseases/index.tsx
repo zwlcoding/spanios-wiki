@@ -1,6 +1,9 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { Search } from 'lucide-react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { useDiseases } from '@/hooks/useDiseases';
+import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
+import { Link } from '@tanstack/react-router';
+import { OptimizedIcon } from '@/utils/optimizedIcons';
 
 export const Route = createFileRoute('/diseases/')({
   component: DiseasesListPage,
@@ -9,46 +12,39 @@ export const Route = createFileRoute('/diseases/')({
 function DiseasesListPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('all');
+  const [debouncedSearch, setDebouncedSearch] = useState('');
 
-  // Mock data - will be replaced with real Strapi data
-  const categories = [
-    { id: 'all', name: '全部' },
-    { id: 'neurological', name: '神经系统疾病' },
-    { id: 'metabolic', name: '代谢性疾病' },
-    { id: 'hematological', name: '血液系统疾病' },
-    { id: 'immunological', name: '免疫系统疾病' },
-    { id: 'musculoskeletal', name: '骨骼肌肉疾病' },
-    { id: 'cardiovascular', name: '心血管疾病' },
-  ];
+  // Fetch disease categories
+  const { data: categoriesData, isLoading: isLoadingCategories } =
+    useDiseaseCategories();
 
-  const mockDiseases = [
-    {
-      id: '1',
-      name: '渐冻人症（肌萎缩侧索硬化）',
-      nameEn: 'Amyotrophic Lateral Sclerosis (ALS)',
-      category: 'neurological',
-      prevalence: '2-3/100,000',
-      description: '一种进行性神经退行性疾病，影响大脑和脊髓中的运动神经元...',
-    },
-    {
-      id: '2',
-      name: '苯丙酮尿症',
-      nameEn: 'Phenylketonuria (PKU)',
-      category: 'metabolic',
-      prevalence: '1/10,000-15,000',
-      description: '一种遗传性代谢疾病，患者无法代谢苯丙氨酸...',
-    },
-    // Add more mock diseases as needed
-  ];
-
-  const filteredDiseases = mockDiseases.filter((disease) => {
-    const matchesCategory =
-      selectedCategory === 'all' || disease.category === selectedCategory;
-    const matchesSearch =
-      disease.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-      disease.nameEn.toLowerCase().includes(searchQuery.toLowerCase());
-    return matchesCategory && matchesSearch;
+  // Fetch diseases with filters
+  const { data: diseasesData, isLoading: isLoadingDiseases } = useDiseases({
+    category: selectedCategory !== 'all' ? selectedCategory : undefined,
+    search: debouncedSearch || undefined,
   });
+
+  // Debounce search input
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedSearch(searchQuery);
+    }, 300);
+
+    return () => clearTimeout(timer);
+  }, [searchQuery]);
+
+  // Prepare categories for display
+  const categories = [
+    { id: 'all', name: '全部', slug: 'all' },
+    ...(categoriesData?.data?.map((cat) => ({
+      id: cat.slug,
+      name: cat.name,
+      slug: cat.slug,
+    })) || []),
+  ];
+
+  const diseases = diseasesData?.data || [];
+  const isLoading = isLoadingCategories || isLoadingDiseases;
 
   return (
     <div className="flex grow flex-col py-8">
@@ -56,7 +52,9 @@ function DiseasesListPage() {
       <div className="breadcrumbs text-sm mb-4">
         <ul>
           <li>
-            <a href="/">首页</a>
+            <Link to="/" className="link link-hover">
+              首页
+            </Link>
           </li>
           <li>疾病列表</li>
         </ul>
@@ -70,21 +68,29 @@ function DiseasesListPage() {
           <div className="card bg-base-200">
             <div className="card-body">
               <h2 className="card-title text-lg">疾病分类</h2>
-              <ul className="menu menu-sm">
-                {categories.map((category) => (
-                  <li key={category.id}>
-                    <button
-                      type="button"
-                      onClick={() => setSelectedCategory(category.id)}
-                      className={
-                        selectedCategory === category.id ? 'active' : ''
-                      }
-                    >
-                      {category.name}
-                    </button>
-                  </li>
-                ))}
-              </ul>
+              {isLoadingCategories ? (
+                <div className="space-y-2">
+                  {[1, 2, 3, 4].map((i) => (
+                    <div key={i} className="skeleton h-8 w-full"></div>
+                  ))}
+                </div>
+              ) : (
+                <ul className="menu menu-sm">
+                  {categories.map((category) => (
+                    <li key={category.id}>
+                      <button
+                        type="button"
+                        onClick={() => setSelectedCategory(category.id)}
+                        className={
+                          selectedCategory === category.id ? 'active' : ''
+                        }
+                      >
+                        {category.name}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </div>
         </aside>
@@ -102,37 +108,67 @@ function DiseasesListPage() {
                 onChange={(e) => setSearchQuery(e.target.value)}
               />
               <button type="button" className="btn btn-primary join-item">
-                <Search className="h-5 w-5" />
+                <OptimizedIcon name="Search" className="h-5 w-5" />
               </button>
             </div>
           </div>
 
           {/* Disease List */}
           <div className="space-y-4">
-            {filteredDiseases.length === 0 ? (
+            {isLoading ? (
+              <div className="space-y-4">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="card bg-base-200">
+                    <div className="card-body">
+                      <div className="skeleton h-6 w-3/4"></div>
+                      <div className="skeleton h-4 w-1/2"></div>
+                      <div className="skeleton h-4 w-full"></div>
+                      <div className="skeleton h-4 w-1/3 mt-2"></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            ) : diseases.length === 0 ? (
               <div className="text-center py-12">
                 <p className="text-base-content/60">暂无相关疾病信息</p>
               </div>
             ) : (
-              filteredDiseases.map((disease) => (
-                <a
+              diseases.map((disease) => (
+                <Link
                   key={disease.id}
-                  href={`/diseases/${disease.id}`}
-                  className="card bg-base-200 hover:bg-base-300 transition-colors"
+                  to="/diseases/$slug"
+                  params={{ slug: disease.slug }}
+                  className="card bg-base-200 hover:bg-base-300 transition-colors block"
                 >
                   <div className="card-body">
                     <h3 className="card-title">{disease.name}</h3>
-                    <p className="text-sm text-base-content/70">
-                      {disease.nameEn}
-                    </p>
-                    <p className="text-sm mt-2">{disease.description}</p>
+                    {disease.nameEn && (
+                      <p className="text-sm text-base-content/70">
+                        {disease.nameEn}
+                      </p>
+                    )}
+                    {disease.symptoms && (
+                      <p className="text-sm mt-2 line-clamp-2">
+                        {disease.symptoms
+                          .replace(/<[^>]*>/g, '')
+                          .substring(0, 150)}
+                        ...
+                      </p>
+                    )}
                     <div className="card-actions justify-end mt-2">
-                      <div className="badge badge-outline">
-                        患病率: {disease.prevalence}
-                      </div>
+                      {disease.prevalence && (
+                        <div className="badge badge-outline">
+                          患病率: {disease.prevalence}
+                        </div>
+                      )}
+                      {disease.category && (
+                        <div className="badge badge-primary">
+                          {disease.category.name}
+                        </div>
+                      )}
                     </div>
                   </div>
-                </a>
+                </Link>
               ))
             )}
           </div>

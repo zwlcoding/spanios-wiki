@@ -61,7 +61,17 @@ export interface Disease {
   treatment?: string;
   prognosis?: string;
   category?: DiseaseCategory;
-  featuredImage?: any;
+  featuredImage?: {
+    id: number;
+    name: string;
+    url: string;
+    formats?: {
+      thumbnail?: { url: string };
+      small?: { url: string };
+      medium?: { url: string };
+      large?: { url: string };
+    };
+  };
   createdAt: string;
   updatedAt: string;
   publishedAt?: string;
@@ -121,7 +131,17 @@ export interface CharityOrganization {
   email?: string;
   website?: string;
   wechat?: string;
-  logo?: any;
+  logo?: {
+    id: number;
+    name: string;
+    url: string;
+    formats?: {
+      thumbnail?: { url: string };
+      small?: { url: string };
+      medium?: { url: string };
+      large?: { url: string };
+    };
+  };
   createdAt: string;
   updatedAt: string;
   publishedAt?: string;
