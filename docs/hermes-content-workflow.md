@@ -9,6 +9,11 @@ Hermes is the content producer. Codex is the reviewer and integrator.
 - Hermes does not commit, push, or open pull requests for content updates.
 - Generated images stay in draft folders until reviewed.
 - Medical claims need sources. Low-quality pages can be leads, not citations.
+- Cite high-quality sources first: official Chinese policy/guidelines,
+  GeneReviews/NCBI Bookshelf, MedlinePlus Genetics, Orphanet/OMIM/GARD,
+  professional society guidance, and peer-reviewed reviews. Baidu Baike,
+  Tencent Medipedia, SEO pages, forums, and marketing pages are search leads,
+  not formal citations.
 - Hospital, department, charity, and assistance-program relationships need
   explicit evidence. Do not invent organizations or disease-resource links.
 
@@ -68,7 +73,9 @@ Hard rules:
 - Do not invent hospitals,公益组织, contacts, services, or disease-resource links.
 - Prefer official, guideline, academic, hospital, or recognized rare disease sources.
 - Low-quality SEO/marketing pages may be used only as search leads, not as sources.
-- Generated images must contain no text, no logos, no diagnostic diagrams, and no misleading clinical detail.
+- Generated images must contain no readable text, no logos, no diagnostic
+  diagrams, and no misleading clinical detail. Abstract non-readable paperwork
+  or chart-like decoration can be accepted after human review.
 
 Output:
 - content-drafts/<slug>/<yyyy-mm-dd>/draft.<locale>.json
@@ -102,6 +109,8 @@ working directory. Keep the source copy in this repo, then copy it into
 The schedule above runs seven times overnight, while the queue script emits one
 disease per run. In the morning, inspect the generated draft folders, then run
 `pnpm run review` and ask Codex to audit and merge approved content.
+Draft folder dates use the local queue timezone, defaulting to
+`Asia/Shanghai`, so overnight runs land in the expected local calendar day.
 
 ## Reviewer Checklist
 
@@ -113,5 +122,10 @@ disease per run. In the morning, inspect the generated draft folders, then run
 - Does it fit the existing content model?
 - Are hospital/charity relationships backed by direct evidence rather than
   inference or promotion?
-- Is the generated image appropriate and non-misleading?
+- Is the generated image appropriate and non-misleading? Reject readable text,
+  logos, diagnostic diagrams, real medical forms, medication packaging, or
+  treatment-outcome promises. Abstract paperwork/chart decoration can pass if
+  the site owner accepts it.
+- Do the draft review notes match the actual final merge decision, including
+  whether a generated image was accepted or rejected?
 - Does `pnpm build` pass after promotion?

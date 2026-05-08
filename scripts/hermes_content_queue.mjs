@@ -7,7 +7,8 @@ const root = process.cwd();
 const args = parseArgs(process.argv.slice(2));
 const limit = Number.parseInt(args.limit ?? '5', 10);
 const locale = args.locale ?? 'zh';
-const today = new Date().toISOString().slice(0, 10);
+const timeZone = args.timezone ?? process.env.HERMES_QUEUE_TIMEZONE ?? 'Asia/Shanghai';
+const today = formatDateInTimeZone(new Date(), timeZone);
 
 if (!Number.isInteger(limit) || limit < 1) {
   fail('--limit must be a positive integer.');
@@ -44,6 +45,7 @@ function renderQueue(entries) {
     '# Hermes Rare Disease Draft Queue',
     '',
     `Generated at: ${new Date().toISOString()}`,
+    `Queue date: ${today} (${timeZone})`,
     `Locale: ${locale}`,
     `Batch limit: ${limit}`,
     '',
@@ -206,6 +208,26 @@ function parseArgs(rawArgs) {
     }
   }
   return parsed;
+}
+
+function formatDateInTimeZone(date, targetTimeZone) {
+  try {
+    const parts = new Intl.DateTimeFormat('en', {
+      day: '2-digit',
+      month: '2-digit',
+      timeZone: targetTimeZone,
+      year: 'numeric',
+    }).formatToParts(date);
+    const values = Object.fromEntries(
+      parts
+        .filter((part) => part.type !== 'literal')
+        .map((part) => [part.type, part.value]),
+    );
+
+    return `${values.year}-${values.month}-${values.day}`;
+  } catch (error) {
+    fail(`Invalid timezone "${targetTimeZone}": ${error.message}`);
+  }
 }
 
 function fail(message) {
