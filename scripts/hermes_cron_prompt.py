@@ -4,7 +4,7 @@ import subprocess
 from pathlib import Path
 
 
-ROOT = Path(__file__).resolve().parents[1]
+SPANIOS_ROOT = Path('/Volumes/acasis/coding/spanios-wiki')
 
 
 def main() -> None:
@@ -13,11 +13,11 @@ def main() -> None:
             "node",
             "scripts/hermes_content_queue.mjs",
             "--limit",
-            "5",
+            "1",
             "--locale",
             "zh",
         ],
-        cwd=ROOT,
+        cwd=SPANIOS_ROOT,
         check=True,
         capture_output=True,
         text=True,

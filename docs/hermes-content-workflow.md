@@ -87,12 +87,18 @@ Set review.status to "pending-codex-review".
 Example cron:
 
 ```bash
+cp scripts/hermes_cron_prompt.py ~/.hermes/scripts/hermes_cron_prompt.py
+
 hermes cron create "30 8 * * *" \
   --name "spanios-disease-draft-batch" \
   --workdir /Volumes/acasis/coding/spanios-wiki \
-  --script scripts/hermes_content_queue.mjs \
+  --script hermes_cron_prompt.py \
   "Use docs/hermes-content-workflow.md and docs/hermes-disease-draft-prompt.md. Generate patient-friendly drafts and image candidates for the queued diseases. Write only under content-drafts/."
 ```
+
+Hermes cron scripts are resolved from `~/.hermes/scripts/`, not the project
+working directory. Keep the source copy in this repo, then copy it into
+`~/.hermes/scripts/` whenever it changes.
 
 ## Reviewer Checklist
 

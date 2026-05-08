@@ -70,9 +70,11 @@ if (!article || typeof article !== 'object') {
   );
 
   if (article.image?.path) {
-    const imagePath = path.resolve(path.dirname(resolvedPath), article.image.path);
+    const imagePath = resolveDraftAssetPath(article.image.path, resolvedPath);
     if (!fs.existsSync(imagePath)) {
-      warnings.push(`article.image.path does not exist relative to draft: ${article.image.path}`);
+      warnings.push(
+        `article.image.path does not exist relative to draft or repo root: ${article.image.path}`,
+      );
     }
   }
 }
@@ -139,6 +141,19 @@ function validateStringList(value, label) {
       errors.push(`${label}[${index}] must be a non-empty string.`);
     }
   });
+}
+
+function resolveDraftAssetPath(assetPath, draftFilePath) {
+  if (path.isAbsolute(assetPath)) {
+    return assetPath;
+  }
+
+  const relativeToDraft = path.resolve(path.dirname(draftFilePath), assetPath);
+  if (fs.existsSync(relativeToDraft)) {
+    return relativeToDraft;
+  }
+
+  return path.resolve(process.cwd(), assetPath);
 }
 
 function fail(message) {

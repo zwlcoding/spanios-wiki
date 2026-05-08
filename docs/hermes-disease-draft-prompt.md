@@ -36,6 +36,8 @@ Also create a resource relationship file when reliable evidence exists:
 The JSON must match `docs/content-draft.schema.json`, and
 `review.status` must be `pending-codex-review`.
 `resource-links.json` must match `docs/resource-draft.schema.json`.
+If `article.image.path` is present, use a path relative to the dated draft
+folder, for example `generated-image.png`.
 
 ## Content Rules
 
