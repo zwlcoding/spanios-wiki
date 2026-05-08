@@ -73,6 +73,9 @@ Hard rules:
 - Do not invent hospitals,公益组织, contacts, services, or disease-resource links.
 - Prefer official, guideline, academic, hospital, or recognized rare disease sources.
 - Low-quality SEO/marketing pages may be used only as search leads, not as sources.
+- Generated images must include 2-3 disease-specific, non-diagnostic visual
+  anchors. Avoid generic clinic-only illustrations when the disease has clearer
+  patient-journey cues.
 - Generated images must contain no readable text, no logos, no diagnostic
   diagrams, and no misleading clinical detail. Abstract non-readable paperwork
   or chart-like decoration can be accepted after human review.
@@ -126,6 +129,8 @@ Draft folder dates use the local queue timezone, defaulting to
   logos, diagnostic diagrams, real medical forms, medication packaging, or
   treatment-outcome promises. Abstract paperwork/chart decoration can pass if
   the site owner accepts it.
+- Does the generated image have clear disease relevance through non-diagnostic
+  visual anchors, rather than only a generic clinic scene?
 - Do the draft review notes match the actual final merge decision, including
   whether a generated image was accepted or rejected?
 - Does `pnpm build` pass after promotion?

@@ -95,6 +95,25 @@ sources and the limitation is explicitly noted.
 
 Use the MMX image skill only for supportive, non-clinical illustrations.
 
+Before writing `image-prompt.md`, choose 2-3 disease-specific visual anchors.
+They must be concrete enough to make the image relevant to the disease, but not
+so clinical that the image becomes a diagnostic diagram.
+
+Good visual anchors:
+
+- care setting: pediatric endocrinology, ophthalmology, neurology,
+  rehabilitation, hematology, genetics clinic, newborn screening follow-up;
+- patient journey moment: preparing questions, reviewing growth charts,
+  eye-protection planning, mobility support, family genetic counseling,
+  transition from pediatric to adult care;
+- everyday safety/support: sun protection, low-vision aids, emergency card,
+  growth record booklet, hearing/vision support, rehabilitation tools;
+- abstract non-readable care-pathway elements that hint at the disease area.
+
+Avoid generic prompts that only say `rare disease patient navigation`,
+`clinic conversation`, or `medical documents`. Those are acceptable background
+elements, but each prompt must also include disease-specific anchors.
+
 Images must:
 
 - contain no readable text, logos, badges, watermarks, hospital names, real
@@ -118,11 +137,27 @@ Preferred image prompt pattern:
 
 ```txt
 Warm editorial illustration for a rare disease patient navigation knowledge
-base, <disease-specific non-diagnostic theme>, patient and family preparing for
-a clinic conversation, documents and care pathway elements, calm daylight,
-respectful and hopeful, no text, no logos, no medical diagrams, no medication,
+base, <disease-specific non-diagnostic theme>, <2-3 concrete visual anchors
+from the disease journey>, patient and family preparing for a clinic
+conversation, documents and care pathway elements, calm daylight, respectful
+and hopeful, no readable text, no logos, no diagnostic diagrams, no medication,
 16:9.
 ```
+
+Examples:
+
+- Kallmann syndrome: teenager and parent at an endocrinology clinic, subtle
+  smell-safety cue such as a gas detector or kitchen safety checklist, puberty
+  growth timeline booklet, genetics counseling folder, no labels.
+- 21-hydroxylase deficiency: parent and child in pediatric endocrinology
+  follow-up, growth chart booklet, emergency card or care plan folder without
+  readable text, calm discussion with clinician, no medication packaging.
+- Albinism: child or adult with light hair/skin tone at an ophthalmology visit,
+  sunglasses or brimmed hat, low-vision aid or eye exam equipment, no diagnostic
+  chart text.
+- Hemophilia: child and caregiver planning safe activity with a hematology care
+  folder, knee/elbow protection, rehabilitation or joint-care context, no
+  needles or blood.
 
 ## Stop Conditions
 

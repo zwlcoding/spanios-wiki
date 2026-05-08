@@ -80,7 +80,7 @@ function renderQueue(entries) {
     '- draft.zh.json matching docs/content-draft.schema.json',
     '- sources.md',
     '- change-summary.md',
-    '- image-prompt.md',
+    '- image-prompt.md with 2-3 disease-specific non-diagnostic visual anchors',
     '- generated-image.png if MMX image generation succeeds',
     '- resource-links.json matching docs/resource-draft.schema.json when hospital or charity relationships can be sourced',
     '',
