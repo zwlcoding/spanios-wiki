@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchDiseases, fetchDiseaseBySlug } from '@/lib/strapiClient';
-import type { Disease } from '@/types/strapi';
+import { fetchDiseaseBySlug, fetchDiseases } from '@/lib/contentClient';
 
 export function useDiseases(filters?: { category?: string; search?: string }) {
   return useQuery({

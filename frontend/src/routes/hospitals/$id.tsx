@@ -1,17 +1,24 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { useHospital } from '@/hooks/useHospitals';
-import { Link } from '@tanstack/react-router';
+import { createFileRoute, Link } from '@tanstack/react-router';
 import {
   ArrowLeft,
-  MapPin,
-  Phone,
-  Globe,
   Building,
+  ExternalLink,
+  Globe,
+  MapPin,
   Navigation,
+  Phone,
 } from 'lucide-react';
 import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
+import { useHospital } from '@/hooks/useHospitals';
+import { fetchHospitalById } from '@/lib/contentClient';
 
 export const Route = createFileRoute('/hospitals/$id')({
+  loader: async ({ context, params }) => {
+    await context.queryClient.prefetchQuery({
+      queryKey: ['hospital', params.id],
+      queryFn: () => fetchHospitalById(params.id),
+    });
+  },
   component: HospitalDetailPage,
 });
 
@@ -22,42 +29,18 @@ function HospitalDetailPage() {
 
   if (isLoading) {
     return (
-      <div className="flex grow flex-col py-8">
-        <div className="breadcrumbs text-sm mb-4">
-          <ul>
-            <li>
-              <Link to="/" className="link link-hover">
-                首页
-              </Link>
-            </li>
-            <li>
-              <Link to="/hospitals" className="link link-hover">
-                医院列表
-              </Link>
-            </li>
-            <li>
-              <div className="skeleton h-4 w-32"></div>
-            </li>
-          </ul>
+      <div className="page-container">
+        <div className="mb-6 h-4 w-48 animate-pulse rounded bg-stone-200 dark:bg-stone-700" />
+        <div className="surface-card mb-8 p-6">
+          <div className="h-9 w-72 animate-pulse rounded bg-stone-200 dark:bg-stone-700" />
+          <div className="mt-4 h-6 w-24 animate-pulse rounded-full bg-stone-200 dark:bg-stone-700" />
         </div>
-        <div className="skeleton h-10 w-3/4 mb-6"></div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <div className="space-y-6">
-              <div className="skeleton h-6 w-1/4"></div>
-              <div className="skeleton h-32 w-full"></div>
-              <div className="skeleton h-6 w-1/4"></div>
-              <div className="skeleton h-32 w-full"></div>
-            </div>
+            <div className="content-card h-56 animate-pulse" />
           </div>
           <div className="lg:col-span-1">
-            <div className="card bg-base-200">
-              <div className="card-body">
-                <div className="skeleton h-6 w-1/2"></div>
-                <div className="skeleton h-4 w-full mt-4"></div>
-                <div className="skeleton h-4 w-2/3 mt-2"></div>
-              </div>
-            </div>
+            <div className="content-card h-56 animate-pulse" />
           </div>
         </div>
       </div>
@@ -66,25 +49,20 @@ function HospitalDetailPage() {
 
   if (error || !hospital) {
     return (
-      <div className="flex grow flex-col py-8">
-        <div className="breadcrumbs text-sm mb-4">
-          <ul>
-            <li>
-              <Link to="/" className="link link-hover">
-                首页
-              </Link>
-            </li>
-            <li>
-              <Link to="/hospitals" className="link link-hover">
-                医院列表
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div className="alert alert-error">
+      <div className="page-container">
+        <nav className="muted-text mb-4 flex items-center gap-2 text-sm">
+          <Link to="/" className="hover:text-amber-700">
+            首页
+          </Link>
+          <span>/</span>
+          <Link to="/hospitals" className="hover:text-amber-700">
+            医院列表
+          </Link>
+        </nav>
+        <div className="surface-card p-5">
           <span>医院信息未找到或加载失败</span>
         </div>
-        <Link to="/hospitals" className="btn btn-primary mt-4">
+        <Link to="/hospitals" className="btn-primary-app mt-4">
           <ArrowLeft className="h-4 w-4 mr-2" />
           返回医院列表
         </Link>
@@ -93,246 +71,256 @@ function HospitalDetailPage() {
   }
 
   return (
-    <div className="flex grow flex-col py-8">
-      {/* Breadcrumb */}
-      <div className="breadcrumbs text-sm mb-4">
-        <ul>
-          <li>
-            <Link to="/" className="link link-hover">
-              首页
-            </Link>
-          </li>
-          <li>
-            <Link to="/hospitals" className="link link-hover">
-              医院列表
-            </Link>
-          </li>
-          <li>{hospital.name}</li>
-        </ul>
-      </div>
+    <div className="page-container">
+      <nav className="muted-text mb-4 flex flex-wrap items-center gap-2 text-sm">
+        <Link to="/" className="hover:text-amber-700">
+          首页
+        </Link>
+        <span>/</span>
+        <Link to="/hospitals" className="hover:text-amber-700">
+          医院列表
+        </Link>
+        <span>/</span>
+        <span className="strong-text">{hospital.name}</span>
+      </nav>
 
-      {/* Back Button */}
-      <Link to="/hospitals" className="btn btn-ghost btn-sm mb-6 self-start">
+      <Link to="/hospitals" className="btn-subtle mb-5 self-start">
         <ArrowLeft className="h-4 w-4 mr-2" />
         返回列表
       </Link>
 
-      {/* Hospital Header */}
-      <div className="mb-8">
-        <div className="flex items-start justify-between">
+      <div className="surface-card mb-8 p-6 sm:p-7">
+        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
           <div>
-            <h1 className="text-3xl font-bold mb-2">{hospital.name}</h1>
-            {hospital.level && (
-              <div className="badge badge-primary text-lg">
-                {hospital.level === 'three_a'
-                  ? '三甲医院'
-                  : hospital.level === 'three_b'
-                    ? '三乙医院'
-                    : hospital.level === 'two_a'
-                      ? '二甲医院'
-                      : hospital.level === 'two_b'
-                        ? '二乙医院'
-                        : hospital.level}
-              </div>
-            )}
+            <div className="eyebrow mb-4">
+              <Building className="h-4 w-4" />
+              诊疗医院
+            </div>
+            <h1 className="section-title text-3xl sm:text-4xl">
+              {hospital.name}
+            </h1>
+            <p className="section-copy mt-2">
+              {hospital.province} {hospital.city}
+            </p>
           </div>
+          {hospital.level && (
+            <div className="badge-warm self-start">
+              {formatHospitalLevel(hospital.level)}
+            </div>
+          )}
         </div>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Main Content */}
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2">
-          {/* Contact Info */}
-          <div className="card bg-base-200 mb-6">
-            <div className="card-body">
-              <h2 className="card-title text-xl mb-4">联系信息</h2>
-              <div className="space-y-4">
-                <div className="flex items-center gap-2">
-                  <MapPin className="h-5 w-5 text-base-content/60" />
-                  <div>
-                    <span className="font-medium">地址：</span>
-                    <span>{hospital.address}</span>
-                    {hospital.province && hospital.city && (
-                      <span className="text-base-content/60 ml-2">
-                        ({hospital.province} {hospital.city})
-                      </span>
-                    )}
-                  </div>
-                </div>
-
-                {hospital.phone && (
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-base-content/60" />
-                    <div>
-                      <span className="font-medium">电话：</span>
-                      <a
-                        href={`tel:${hospital.phone}`}
-                        className="link link-hover"
-                      >
-                        {hospital.phone}
-                      </a>
-                    </div>
-                  </div>
+          <div className="content-card mb-5 p-5">
+            <h2 className="mb-4 font-semibold">联系信息</h2>
+            <div className="grid gap-3">
+              <InfoRow icon={MapPin} label="地址">
+                <span>{hospital.address}</span>
+                {hospital.province && hospital.city && (
+                  <span className="muted-text ml-2">
+                    ({hospital.province} {hospital.city})
+                  </span>
                 )}
+              </InfoRow>
 
-                {hospital.website && (
-                  <div className="flex items-center gap-2">
-                    <Globe className="h-5 w-5 text-base-content/60" />
-                    <div>
-                      <span className="font-medium">网站：</span>
-                      <a
-                        href={hospital.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link link-hover"
-                      >
-                        {hospital.website}
-                      </a>
-                    </div>
-                  </div>
-                )}
-
-                {/* Map Link */}
-                {hospital.location && (
-                  <div className="flex items-center gap-2">
-                    <Navigation className="h-5 w-5 text-base-content/60" />
-                    <div>
-                      <span className="font-medium">导航：</span>
-                      <a
-                        href={`https://maps.google.com/?q=${hospital.location.lat},${hospital.location.lng}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link link-hover ml-2"
-                      >
-                        查看地图位置
-                      </a>
-                    </div>
-                  </div>
-                )}
-              </div>
-            </div>
-          </div>
-
-          {/* Specialties */}
-          {hospital.specialties && (
-            <div className="card bg-base-200 mb-6">
-              <div className="card-body">
-                <h2 className="card-title text-xl mb-4">特色专科</h2>
-                <SafeHTMLRenderer html={hospital.specialties} />
-              </div>
-            </div>
-          )}
-
-          {/* Departments */}
-          {hospital.departments && hospital.departments.length > 0 && (
-            <div className="card bg-base-200">
-              <div className="card-body">
-                <h2 className="card-title text-xl mb-4">相关科室</h2>
-                <div className="space-y-4">
-                  {hospital.departments.map((dept) => (
-                    <div key={dept.id} className="p-4 bg-base-100 rounded-lg">
-                      <h3 className="font-bold text-lg mb-2">{dept.name}</h3>
-                      {dept.description && (
-                        <div className="mb-3">
-                          <SafeHTMLRenderer html={dept.description} />
-                        </div>
-                      )}
-                      {dept.expertDoctors && (
-                        <div className="mb-2">
-                          <span className="font-medium">专家医生：</span>
-                          <span>{dept.expertDoctors}</span>
-                        </div>
-                      )}
-                      {dept.appointmentUrl && (
-                        <a
-                          href={dept.appointmentUrl}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="btn btn-primary btn-sm mt-2"
-                        >
-                          预约挂号
-                        </a>
-                      )}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Sidebar */}
-        <div className="lg:col-span-1">
-          {/* Related Diseases */}
-          {hospital.diseases && hospital.diseases.length > 0 && (
-            <div className="card bg-base-200 mb-6">
-              <div className="card-body">
-                <h3 className="card-title text-lg mb-4">
-                  <Building className="h-5 w-5 mr-2" />
-                  擅长疾病
-                </h3>
-                <div className="space-y-3">
-                  {hospital.diseases.map((disease) => (
-                    <Link
-                      key={disease.id}
-                      to="/diseases/$slug"
-                      params={{ slug: disease.slug }}
-                      className="block p-3 bg-base-100 rounded-lg hover:bg-base-300 transition-colors"
-                    >
-                      <div className="font-medium">{disease.name}</div>
-                      {disease.category && (
-                        <div className="text-sm text-base-content/60 mt-1">
-                          {disease.category.name}
-                        </div>
-                      )}
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Quick Actions */}
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h3 className="card-title text-lg mb-4">快速操作</h3>
-              <div className="space-y-3">
-                {hospital.phone && (
-                  <a
-                    href={`tel:${hospital.phone}`}
-                    className="btn btn-primary w-full"
-                  >
-                    <Phone className="h-4 w-4 mr-2" />
-                    电话咨询
+              {hospital.phone && (
+                <InfoRow icon={Phone} label="电话">
+                  <a href={`tel:${hospital.phone}`} className="text-amber-700">
+                    {hospital.phone}
                   </a>
-                )}
-                {hospital.website && (
+                </InfoRow>
+              )}
+
+              {hospital.website && (
+                <InfoRow icon={Globe} label="网站">
                   <a
                     href={hospital.website}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline w-full"
+                    className="inline-flex items-center gap-1 break-all text-amber-700"
                   >
-                    <Globe className="h-4 w-4 mr-2" />
-                    访问官网
+                    {hospital.website}
+                    <ExternalLink className="h-3.5 w-3.5 shrink-0" />
                   </a>
-                )}
-                {hospital.location && (
+                </InfoRow>
+              )}
+
+              {hospital.location && (
+                <InfoRow icon={Navigation} label="导航">
                   <a
-                    href={`https://maps.google.com/?q=${hospital.location.lat},${hospital.location.lng}`}
+                    href={mapUrl(hospital)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn btn-outline w-full"
+                    className="inline-flex items-center gap-1 text-amber-700"
                   >
-                    <Navigation className="h-4 w-4 mr-2" />
-                    查看地图
+                    查看地图位置
+                    <ExternalLink className="h-3.5 w-3.5" />
                   </a>
-                )}
+                </InfoRow>
+              )}
+            </div>
+          </div>
+
+          {hospital.specialties && (
+            <div className="content-card mb-5 p-5">
+              <h2 className="mb-3 font-semibold">特色专科</h2>
+              <SafeHTMLRenderer
+                html={hospital.specialties}
+                className="content-prose"
+              />
+            </div>
+          )}
+
+          {hospital.departments && hospital.departments.length > 0 && (
+            <div className="content-card p-5">
+              <h2 className="mb-4 font-semibold">相关科室</h2>
+              <div className="grid gap-3">
+                {hospital.departments.map((dept) => (
+                  <div
+                    key={dept.id}
+                    className="rounded-md border border-stone-200 bg-stone-50 p-4 dark:border-stone-700 dark:bg-stone-900/30"
+                  >
+                    <h3 className="font-semibold">{dept.name}</h3>
+                    {dept.description && (
+                      <SafeHTMLRenderer
+                        html={dept.description}
+                        className="content-prose mt-2 text-sm"
+                      />
+                    )}
+                    {dept.expertDoctors && (
+                      <p className="muted-text mt-3 text-sm">
+                        <span className="strong-text font-medium">
+                          专家团队：
+                        </span>
+                        {dept.expertDoctors}
+                      </p>
+                    )}
+                    {dept.appointmentUrl && (
+                      <a
+                        href={dept.appointmentUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-subtle mt-3"
+                      >
+                        预约挂号
+                        <ExternalLink className="h-4 w-4" />
+                      </a>
+                    )}
+                  </div>
+                ))}
               </div>
+            </div>
+          )}
+        </div>
+
+        <div className="lg:col-span-1">
+          {hospital.diseases && hospital.diseases.length > 0 && (
+            <div className="content-card mb-5 p-5">
+              <h3 className="mb-4 flex items-center gap-2 font-semibold">
+                <Building className="h-5 w-5 text-amber-700" />
+                擅长疾病
+              </h3>
+              <div className="space-y-3">
+                {hospital.diseases.map((disease) => (
+                  <Link
+                    key={disease.id}
+                    to="/diseases/$slug"
+                    params={{ slug: disease.slug }}
+                    className="block rounded-md border border-stone-200 bg-white p-3 transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-900/30"
+                  >
+                    <div className="font-medium">{disease.name}</div>
+                    {disease.category && (
+                      <div className="muted-text mt-1 text-sm">
+                        {disease.category.name}
+                      </div>
+                    )}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="content-card p-5">
+            <h3 className="mb-4 font-semibold">快速操作</h3>
+            <div className="grid gap-3">
+              {hospital.phone && (
+                <a href={`tel:${hospital.phone}`} className="btn-primary-app">
+                  <Phone className="h-4 w-4" />
+                  电话咨询
+                </a>
+              )}
+              {hospital.website && (
+                <a
+                  href={hospital.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-subtle"
+                >
+                  <Globe className="h-4 w-4" />
+                  访问官网
+                </a>
+              )}
+              {hospital.location && (
+                <a
+                  href={mapUrl(hospital)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-subtle"
+                >
+                  <Navigation className="h-4 w-4" />
+                  查看地图
+                </a>
+              )}
             </div>
           </div>
         </div>
       </div>
     </div>
   );
+}
+
+function InfoRow({
+  children,
+  icon: Icon,
+  label,
+}: {
+  children: React.ReactNode;
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+}) {
+  return (
+    <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
+      <Icon className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />
+      <div className="min-w-0 text-sm">
+        <span className="font-semibold">{label}：</span>
+        {children}
+      </div>
+    </div>
+  );
+}
+
+function formatHospitalLevel(level: string) {
+  const labels: Record<string, string> = {
+    secondary_a: '二甲医院',
+    secondary_b: '二乙医院',
+    tertiary_a: '三甲医院',
+    tertiary_b: '三乙医院',
+  };
+
+  return labels[level] ?? level;
+}
+
+function mapUrl(hospital: {
+  location?: {
+    lat: number;
+    lng: number;
+  };
+}) {
+  if (!hospital.location) {
+    return '#';
+  }
+
+  return `https://maps.google.com/?q=${hospital.location.lat},${hospital.location.lng}`;
 }

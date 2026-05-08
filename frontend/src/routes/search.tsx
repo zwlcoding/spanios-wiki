@@ -1,8 +1,13 @@
-import { createFileRoute, useSearch } from '@tanstack/react-router';
-import { Search as SearchIcon, FileText, Hospital, Users } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { createFileRoute, Link, useSearch } from '@tanstack/react-router';
+import {
+  ArrowRight,
+  Building2,
+  FileText,
+  Search as SearchIcon,
+  Users,
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { useGlobalSearch } from '@/hooks/useGlobalSearch';
-import { Link } from '@tanstack/react-router';
 
 export const Route = createFileRoute('/search')({
   component: SearchPage,
@@ -18,24 +23,23 @@ function SearchPage() {
 
   const { data: searchResults, isLoading } = useGlobalSearch(debouncedQuery);
 
-  // Debounce search input
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedQuery(searchQuery);
-    }, 300);
+    }, 250);
 
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
-    setDebouncedQuery(searchQuery);
+    setDebouncedQuery(searchQuery.trim());
   };
 
   const results = searchResults || {
+    charities: [],
     diseases: [],
     hospitals: [],
-    charities: [],
   };
 
   const totalResults =
@@ -44,267 +48,243 @@ function SearchPage() {
     results.charities.length;
 
   return (
-    <div className="flex grow flex-col py-8">
-      {/* Breadcrumb */}
-      <div className="breadcrumbs text-sm mb-4">
-        <ul>
-          <li>
-            <Link to="/" className="link link-hover">
-              首页
-            </Link>
-          </li>
-          <li>搜索</li>
-        </ul>
+    <div className="page-container">
+      <div className="mb-6">
+        <nav className="muted-text mb-3 flex items-center gap-2 text-sm">
+          <Link to="/" className="hover:text-amber-700">
+            首页
+          </Link>
+          <span>/</span>
+          <span className="strong-text">搜索</span>
+        </nav>
+        <h1 className="section-title text-3xl">全站搜索</h1>
+        <p className="section-copy mt-2">
+          同时查找疾病资料、医院资源和公益组织。
+        </p>
       </div>
 
-      <h1 className="text-3xl font-bold mb-6">搜索</h1>
-
-      {/* Search Form */}
-      <form onSubmit={handleSearch} className="mb-8">
-        <div className="join w-full max-w-2xl">
+      <form
+        onSubmit={handleSearch}
+        className="surface-card mb-8 flex gap-3 p-3"
+      >
+        <label className="relative flex-1">
+          <span className="sr-only">搜索关键词</span>
+          <SearchIcon className="absolute left-3 top-1/2 h-5 w-5 -translate-y-1/2 text-stone-400" />
           <input
             type="text"
-            placeholder="搜索疾病、医院、公益组织..."
-            className="input input-bordered join-item w-full"
+            placeholder="输入疾病、症状、医院或组织名称"
+            className="input-app pl-10"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
           />
-          <button type="submit" className="btn btn-primary join-item">
-            <SearchIcon className="h-5 w-5" />
-          </button>
-        </div>
+        </label>
+        <button type="submit" className="btn-primary-app w-24">
+          搜索
+        </button>
       </form>
 
-      {/* Search Results */}
       {debouncedQuery ? (
         <div>
-          {/* Results Summary */}
-          <div className="mb-6">
-            <p className="text-base-content/70">
-              搜索 "<span className="font-medium">{debouncedQuery}</span>"
-              的结果：
-              <span className="font-medium ml-2">{totalResults} 条</span>
+          <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
+            <p className="muted-text text-sm">
+              “
+              <span className="strong-text font-semibold">
+                {debouncedQuery}
+              </span>
+              ” 的结果：{isLoading ? '加载中...' : `${totalResults} 条`}
             </p>
           </div>
 
           {isLoading ? (
-            <div className="space-y-8">
-              {/* Diseases Loading */}
-              <div>
-                <div className="skeleton h-6 w-32 mb-4"></div>
-                <div className="space-y-4">
-                  {[1, 2].map((i) => (
-                    <div key={i} className="card bg-base-200">
-                      <div className="card-body">
-                        <div className="skeleton h-6 w-3/4"></div>
-                        <div className="skeleton h-4 w-1/2"></div>
-                        <div className="skeleton h-4 w-full"></div>
-                      </div>
-                    </div>
-                  ))}
+            <div className="grid gap-3">
+              {[1, 2, 3].map((item) => (
+                <div key={item} className="surface-card p-5">
+                  <div className="h-5 w-48 animate-pulse rounded bg-stone-200 dark:bg-stone-700" />
+                  <div className="mt-3 h-4 w-full animate-pulse rounded bg-stone-200 dark:bg-stone-700" />
                 </div>
-              </div>
-              {/* Hospitals Loading */}
-              <div>
-                <div className="skeleton h-6 w-32 mb-4"></div>
-                <div className="space-y-4">
-                  {[1, 2].map((i) => (
-                    <div key={i} className="card bg-base-200">
-                      <div className="card-body">
-                        <div className="skeleton h-6 w-3/4"></div>
-                        <div className="skeleton h-4 w-1/2"></div>
-                        <div className="skeleton h-4 w-full"></div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
+              ))}
             </div>
           ) : totalResults === 0 ? (
-            <div className="text-center py-12">
-              <div className="text-6xl mb-4">🔍</div>
-              <h3 className="text-xl font-medium mb-2">未找到相关结果</h3>
-              <p className="text-base-content/70">请尝试其他关键词或检查拼写</p>
-            </div>
+            <EmptySearch
+              title="未找到相关结果"
+              description="试试疾病名称、英文名、症状或医院名称。"
+            />
           ) : (
             <div className="space-y-8">
-              {/* Diseases Results */}
               {results.diseases.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <FileText className="h-5 w-5" />
-                    <h2 className="text-xl font-bold">疾病</h2>
-                    <span className="badge badge-neutral">
-                      {results.diseases.length} 条
-                    </span>
-                  </div>
-                  <div className="space-y-4">
-                    {results.diseases.map((disease) => (
-                      <Link
-                        key={disease.id}
-                        to="/diseases/$slug"
-                        params={{ slug: disease.slug }}
-                        className="card bg-base-200 hover:bg-base-300 transition-colors block"
-                      >
-                        <div className="card-body">
-                          <h3 className="card-title">{disease.name}</h3>
+                <ResultSection
+                  title="疾病"
+                  count={results.diseases.length}
+                  icon={FileText}
+                >
+                  {results.diseases.map((disease) => (
+                    <Link
+                      key={disease.id}
+                      to="/diseases/$slug"
+                      params={{ slug: disease.slug }}
+                      className="card-warm block p-5"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h3 className="font-semibold">{disease.name}</h3>
                           {disease.nameEn && (
-                            <p className="text-sm text-base-content/70">
-                              {disease.nameEn}
-                            </p>
+                            <p className="mt-1 text-sm">{disease.nameEn}</p>
                           )}
-                          {disease.symptoms && (
-                            <p className="text-sm mt-2 line-clamp-2">
-                              {disease.symptoms
-                                .replace(/<[^>]*>/g, '')
-                                .substring(0, 150)}
-                              ...
-                            </p>
-                          )}
-                          <div className="card-actions justify-end mt-2">
-                            {disease.prevalence && (
-                              <div className="badge badge-outline">
-                                患病率: {disease.prevalence}
-                              </div>
-                            )}
-                            {disease.category && (
-                              <div className="badge badge-primary">
-                                {disease.category.name}
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Hospitals Results */}
-              {results.hospitals.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <Hospital className="h-5 w-5" />
-                    <h2 className="text-xl font-bold">医院</h2>
-                    <span className="badge badge-neutral">
-                      {results.hospitals.length} 条
-                    </span>
-                  </div>
-                  <div className="space-y-4">
-                    {results.hospitals.map((hospital) => (
-                      <Link
-                        key={hospital.id}
-                        to="/hospitals/$id"
-                        params={{ id: hospital.id.toString() }}
-                        className="card bg-base-200 hover:bg-base-300 transition-colors block"
-                      >
-                        <div className="card-body">
-                          <div className="flex items-start justify-between">
-                            <div>
-                              <h3 className="card-title">{hospital.name}</h3>
-                              {hospital.level && (
-                                <div className="badge badge-primary mt-2">
-                                  {hospital.level === 'three_a'
-                                    ? '三甲'
-                                    : hospital.level === 'three_b'
-                                      ? '三乙'
-                                      : hospital.level === 'two_a'
-                                        ? '二甲'
-                                        : hospital.level === 'two_b'
-                                          ? '二乙'
-                                          : hospital.level}
-                                </div>
+                          {(disease.oneSentence || disease.symptoms) && (
+                            <p className="mt-3 line-clamp-2 text-sm">
+                              {plainText(
+                                disease.oneSentence ?? disease.symptoms ?? '',
                               )}
-                            </div>
-                          </div>
-                          <div className="mt-4 space-y-2 text-sm">
-                            <div>
-                              <span className="text-base-content/60">
-                                地址：
-                              </span>
-                              <span className="ml-2">{hospital.address}</span>
-                            </div>
-                            {hospital.specialties && (
-                              <div>
-                                <span className="text-base-content/60">
-                                  特色专科：
-                                </span>
-                                <span className="ml-2">
-                                  {hospital.specialties}
-                                </span>
-                              </div>
-                            )}
-                          </div>
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
-              )}
-
-              {/* Charity Organizations Results */}
-              {results.charities.length > 0 && (
-                <div>
-                  <div className="flex items-center gap-2 mb-4">
-                    <Users className="h-5 w-5" />
-                    <h2 className="text-xl font-bold">公益组织</h2>
-                    <span className="badge badge-neutral">
-                      {results.charities.length} 条
-                    </span>
-                  </div>
-                  <div className="space-y-4">
-                    {results.charities.map((org) => (
-                      <Link
-                        key={org.id}
-                        to="/charity/$id"
-                        params={{ id: org.id.toString() }}
-                        className="card bg-base-200 hover:bg-base-300 transition-colors block"
-                      >
-                        <div className="card-body">
-                          <h3 className="card-title">{org.name}</h3>
-                          {org.description && (
-                            <p className="text-sm text-base-content/70 mt-2">
-                              {org.description
-                                .replace(/<[^>]*>/g, '')
-                                .substring(0, 150)}
-                              ...
                             </p>
                           )}
-                          {org.services && (
-                            <div className="mt-4">
-                              <p className="text-sm">
-                                <span className="text-base-content/60">
-                                  服务内容：
-                                </span>
-                                <span className="ml-2">{org.services}</span>
-                              </p>
-                            </div>
+                        </div>
+                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
+                      </div>
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {disease.category && (
+                          <span className="badge-warm">
+                            {disease.category.name}
+                          </span>
+                        )}
+                        {disease.icd10Code && (
+                          <span className="badge-muted">
+                            ICD-10: {disease.icd10Code}
+                          </span>
+                        )}
+                        {disease.catalogRefs?.map((ref) => (
+                          <span
+                            key={`${ref.catalogId}-${ref.itemNumber}`}
+                            className="badge-muted"
+                          >
+                            {ref.catalogName}第 {ref.itemNumber} 项
+                          </span>
+                        ))}
+                        {!disease.catalogRefs?.length &&
+                          disease.catalogNumber && (
+                            <span className="badge-muted">
+                              目录第 {disease.catalogNumber} 项
+                            </span>
+                          )}
+                      </div>
+                    </Link>
+                  ))}
+                </ResultSection>
+              )}
+
+              {results.hospitals.length > 0 && (
+                <ResultSection
+                  title="医院"
+                  count={results.hospitals.length}
+                  icon={Building2}
+                >
+                  {results.hospitals.map((hospital) => (
+                    <Link
+                      key={hospital.id}
+                      to="/hospitals/$id"
+                      params={{ id: hospital.id.toString() }}
+                      className="card-warm block p-5"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h3 className="font-semibold">{hospital.name}</h3>
+                          <p className="mt-1 text-sm">
+                            {hospital.province} {hospital.city}
+                          </p>
+                          <p className="mt-3 line-clamp-2 text-sm">
+                            {hospital.address}
+                          </p>
+                        </div>
+                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
+                      </div>
+                    </Link>
+                  ))}
+                </ResultSection>
+              )}
+
+              {results.charities.length > 0 && (
+                <ResultSection
+                  title="公益组织"
+                  count={results.charities.length}
+                  icon={Users}
+                >
+                  {results.charities.map((org) => (
+                    <Link
+                      key={org.id}
+                      to="/charity/$id"
+                      params={{ id: org.id.toString() }}
+                      className="card-warm block p-5"
+                    >
+                      <div className="flex items-start justify-between gap-4">
+                        <div>
+                          <h3 className="font-semibold">{org.name}</h3>
+                          {org.description && (
+                            <p className="mt-3 line-clamp-2 text-sm">
+                              {plainText(org.description)}
+                            </p>
                           )}
                         </div>
-                      </Link>
-                    ))}
-                  </div>
-                </div>
+                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
+                      </div>
+                    </Link>
+                  ))}
+                </ResultSection>
               )}
             </div>
           )}
         </div>
       ) : (
-        /* Empty State */
-        <div className="text-center py-12">
-          <div className="text-6xl mb-4">🔍</div>
-          <h3 className="text-xl font-medium mb-2">输入关键词开始搜索</h3>
-          <p className="text-base-content/70 mb-6">
-            搜索疾病、医院、公益组织等相关信息
-          </p>
-          <div className="flex flex-wrap justify-center gap-4 max-w-2xl mx-auto">
-            <div className="badge badge-lg badge-outline p-4">渐冻人症</div>
-            <div className="badge badge-lg badge-outline p-4">北京协和医院</div>
-            <div className="badge badge-lg badge-outline p-4">罕见病联盟</div>
-            <div className="badge badge-lg badge-outline p-4">苯丙酮尿症</div>
-          </div>
-        </div>
+        <EmptySearch
+          title="输入关键词开始搜索"
+          description="可以从卡尔曼综合征、血友病 A、北京协和医院等关键词开始。"
+        />
       )}
     </div>
   );
+}
+
+function ResultSection({
+  children,
+  count,
+  icon: Icon,
+  title,
+}: {
+  children: React.ReactNode;
+  count: number;
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+}) {
+  return (
+    <section>
+      <div className="mb-3 flex items-center gap-2">
+        <span className="result-section-icon">
+          <Icon className="h-4 w-4" />
+        </span>
+        <h2 className="strong-text font-semibold">{title}</h2>
+        <span className="badge-muted">{count} 条</span>
+      </div>
+      <div className="grid gap-3">{children}</div>
+    </section>
+  );
+}
+
+function EmptySearch({
+  description,
+  title,
+}: {
+  description: string;
+  title: string;
+}) {
+  return (
+    <div className="surface-card py-14 text-center">
+      <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-md bg-amber-50 text-amber-700">
+        <SearchIcon className="h-6 w-6" />
+      </div>
+      <h3 className="mt-4 font-semibold">{title}</h3>
+      <p className="mx-auto mt-2 max-w-md text-sm">{description}</p>
+    </div>
+  );
+}
+
+function plainText(html: string) {
+  return html.replace(/<[^>]*>/g, '').slice(0, 180);
 }

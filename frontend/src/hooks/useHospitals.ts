@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { fetchHospitals, fetchHospitalById } from '@/lib/strapiClient';
-import type { Hospital } from '@/types/strapi';
+import { fetchHospitalById, fetchHospitals } from '@/lib/contentClient';
 
 export function useHospitals(filters?: { province?: string; search?: string }) {
   return useQuery({

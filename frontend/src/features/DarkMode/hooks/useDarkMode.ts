@@ -44,7 +44,7 @@ export const useDarkMode = () => {
         changeMode(systemTheme);
       }
     } else {
-      setMode(getSystemTheme());
+      changeMode(getSystemTheme());
     }
   }, []);
 

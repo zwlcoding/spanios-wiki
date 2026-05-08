@@ -1,9 +1,8 @@
 import { useQuery } from '@tanstack/react-query';
 import {
-  fetchCharityOrganizations,
   fetchCharityOrganizationById,
-} from '@/lib/strapiClient';
-import type { CharityOrganization } from '@/types/strapi';
+  fetchCharityOrganizations,
+} from '@/lib/contentClient';
 
 export function useCharityOrganizations(filters?: {
   type?: string;

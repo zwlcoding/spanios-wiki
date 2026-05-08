@@ -1,11 +1,9 @@
-import { TanStackDevtools } from '@tanstack/react-devtools';
 import {
   createRootRoute,
   HeadContent,
   Link,
   Scripts,
 } from '@tanstack/react-router';
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools';
 import NotFound from '@/components/NotFound';
 import { DarkModeBtn, useDarkMode } from '@/features/DarkMode';
 import { LangModeBtn } from '@/features/LangMode';
@@ -49,56 +47,41 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body>
-        <div className="container flex h-screen flex-col py-4">
-          <div className="fixed inset-0 -z-20 bg-[url('/common/squares-background.png')] opacity-2 dark:invert"></div>
-          <div className="fixed inset-0 -z-19 bg-[url('/common/mesh-background.jpg')] [background-size:110%] object-fill opacity-2"></div>
-          <div className="to-base-100 via-base-100/40 fixed inset-0 top-0 -z-1 bg-linear-to-b from-transparent"></div>
-          <div className="flex items-center justify-between">
-            <Link to="/">
-              <div className="flex items-center">
+        <div className="app-shell">
+          <header className="app-header">
+            <div className="app-header-inner">
+              <Link to="/" className="flex items-center gap-2">
                 <img
                   src="/common/logo@180.png"
                   alt="Spanios.wiki"
-                  className="h-12"
+                  className="h-10 w-auto"
                 />
-                <span className="pl-2 hidden md:inline-block">
+                <span className="brand-word hidden font-semibold md:inline-block">
                   Spanios.wiki
                 </span>
-              </div>
-            </Link>
-            <div>
-              <DarkModeBtn handleChange={toggleDarkMode} />
-              <LangModeBtn />
-            </div>
-          </div>
-          {children}
-          <div className="flex flex-wrap items-center justify-between gap-2 max-sm:text-sm">
-            <p>&copy; {new Date().getFullYear()} Spanios.wiki</p>
-            <div className="inline-flex items-center gap-4">
-              {/* <Link className="link hover:link-primary no-underline" to="/">
-                Terms
               </Link>
-              <Link className="link hover:link-primary no-underline" to="/">
-                Privacy
-              </Link>
-              <Link className="link hover:link-primary no-underline" to="/">
-                Sitemap
-              </Link> */}
-            </div>
-          </div>
-        </div>
 
-        <TanStackDevtools
-          config={{
-            position: 'bottom-left',
-          }}
-          plugins={[
-            {
-              name: 'Tanstack Router',
-              render: <TanStackRouterDevtoolsPanel />,
-            },
-          ]}
-        />
+              <nav className="app-nav" aria-label="主导航">
+                <Link to="/diseases">疾病</Link>
+                <Link to="/hospitals">医院</Link>
+                <Link to="/charity">公益组织</Link>
+                <Link to="/search">搜索</Link>
+              </nav>
+
+              <div className="flex items-center gap-1">
+                <DarkModeBtn handleChange={toggleDarkMode} />
+                <LangModeBtn />
+              </div>
+            </div>
+          </header>
+
+          <main className="app-main">{children}</main>
+
+          <footer className="app-footer flex flex-wrap items-center justify-between gap-2">
+            <p>&copy; {new Date().getFullYear()} Spanios.wiki</p>
+            <p>Rare disease wiki, maintained in code.</p>
+          </footer>
+        </div>
         <Scripts />
       </body>
     </html>

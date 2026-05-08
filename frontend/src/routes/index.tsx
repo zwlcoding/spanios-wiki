@@ -2,15 +2,33 @@ import { createFileRoute } from '@tanstack/react-router';
 import HomePage from '@/components/HomePage';
 import MaintenancePage from '@/components/MaintenancePage';
 import { useSiteSettings } from '@/hooks/useSiteSettings';
-import { fetchSiteSettings } from '@/lib/strapiClient';
+import {
+  fetchDiseaseCategories,
+  fetchDiseases,
+  fetchHospitals,
+  fetchSiteSettings,
+} from '@/lib/contentClient';
 
 export const Route = createFileRoute('/')({
   loader: async ({ context }) => {
-    // Prefetch site settings on server side
-    await context.queryClient.prefetchQuery({
-      queryKey: ['site-settings'],
-      queryFn: fetchSiteSettings,
-    });
+    await Promise.all([
+      context.queryClient.prefetchQuery({
+        queryKey: ['site-settings'],
+        queryFn: fetchSiteSettings,
+      }),
+      context.queryClient.prefetchQuery({
+        queryKey: ['diseaseCategories'],
+        queryFn: fetchDiseaseCategories,
+      }),
+      context.queryClient.prefetchQuery({
+        queryKey: ['diseases', undefined],
+        queryFn: () => fetchDiseases(),
+      }),
+      context.queryClient.prefetchQuery({
+        queryKey: ['hospitals', undefined],
+        queryFn: () => fetchHospitals(),
+      }),
+    ]);
   },
   component: RouteComponent,
 });

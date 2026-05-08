@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { globalSearch } from '@/lib/strapiClient';
+import { globalSearch } from '@/lib/contentClient';
 
 export function useGlobalSearch(query: string) {
   return useQuery({

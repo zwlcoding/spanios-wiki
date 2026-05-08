@@ -1,10 +1,27 @@
-import { createFileRoute } from '@tanstack/react-router';
-import { MapPin, Phone, Search } from 'lucide-react';
-import { useState, useEffect } from 'react';
+import { createFileRoute, Link } from '@tanstack/react-router';
+import {
+  Building2,
+  ChevronRight,
+  Filter,
+  Hospital,
+  MapPin,
+  Navigation,
+  Phone,
+  Search,
+} from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { useHospitals } from '@/hooks/useHospitals';
-import { Link } from '@tanstack/react-router';
+import { fetchHospitals } from '@/lib/contentClient';
 
 export const Route = createFileRoute('/hospitals/')({
+  loader: async ({ context }) => {
+    const filters = { province: undefined, search: undefined };
+
+    await context.queryClient.prefetchQuery({
+      queryKey: ['hospitals', filters],
+      queryFn: () => fetchHospitals(filters),
+    });
+  },
   component: HospitalsListPage,
 });
 
@@ -12,23 +29,20 @@ function HospitalsListPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedProvince, setSelectedProvince] = useState('all');
   const [debouncedSearch, setDebouncedSearch] = useState('');
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  // Fetch hospitals with filters
   const { data: hospitalsData, isLoading } = useHospitals({
     province: selectedProvince !== 'all' ? selectedProvince : undefined,
     search: debouncedSearch || undefined,
   });
 
-  // Debounce search input
   useEffect(() => {
     const timer = setTimeout(() => {
       setDebouncedSearch(searchQuery);
     }, 300);
-
     return () => clearTimeout(timer);
   }, [searchQuery]);
 
-  // Extract unique provinces from hospitals
   const hospitals = hospitalsData?.data || [];
   const provinces = [
     { id: 'all', name: '全部地区' },
@@ -37,135 +51,282 @@ function HospitalsListPage() {
       .map((province) => ({ id: province, name: province })),
   ];
 
+  const getLevelBadge = (level: string | undefined) => {
+    const levels: Record<string, { text: string; class: string }> = {
+      tertiary_a: {
+        text: '三甲',
+        class: 'bg-gradient-to-r from-amber-500 to-orange-500 text-white',
+      },
+      tertiary_b: {
+        text: '三乙',
+        class: 'bg-gradient-to-r from-orange-400 to-amber-400 text-white',
+      },
+      secondary_a: {
+        text: '二甲',
+        class: 'bg-gradient-to-r from-teal-500 to-emerald-500 text-white',
+      },
+      secondary_b: {
+        text: '二乙',
+        class: 'bg-gradient-to-r from-emerald-400 to-teal-400 text-white',
+      },
+    };
+    return level
+      ? levels[level] || { text: level, class: 'bg-stone-200 text-stone-700' }
+      : { text: '', class: 'bg-stone-200 text-stone-700' };
+  };
+
   return (
-    <div className="flex grow flex-col py-8">
-      {/* Breadcrumb */}
-      <div className="breadcrumbs text-sm mb-4">
-        <ul>
-          <li>
-            <Link to="/" className="link link-hover">
+    <div className="page-container">
+      <div className="w-full">
+        {/* Header */}
+        <div className="mb-8">
+          <nav className="muted-text flex items-center gap-2 text-sm mb-4">
+            <Link to="/" className="hover:text-amber-600 transition-colors">
               首页
             </Link>
-          </li>
-          <li>医院列表</li>
-        </ul>
-      </div>
+            <ChevronRight className="w-4 h-4" />
+            <span className="strong-text">医院列表</span>
+          </nav>
 
-      <h1 className="text-3xl font-bold mb-6">罕见病诊疗医院</h1>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h1 className="section-title text-4xl mb-2">罕见病诊疗医院</h1>
+              <p className="section-copy">
+                查找专业治疗罕见病的医院及科室，获取权威医疗资源
+              </p>
+            </div>
 
-      <div className="flex flex-col gap-6 lg:flex-row">
-        {/* Sidebar - Province Filter */}
-        <aside className="w-full lg:w-64 shrink-0">
-          <div className="card bg-base-200">
-            <div className="card-body">
-              <h2 className="card-title text-lg">地区筛选</h2>
-              <ul className="menu menu-sm">
-                {provinces.map((province) => (
-                  <li key={province.id}>
+            <button
+              type="button"
+              onClick={() => setIsSidebarOpen(!isSidebarOpen)}
+              className="sm:hidden btn-soft flex items-center gap-2"
+            >
+              <Filter className="w-4 h-4" />
+              <span>筛选</span>
+            </button>
+          </div>
+        </div>
+
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Sidebar */}
+          <aside
+            className={`${
+              isSidebarOpen ? 'block' : 'hidden'
+            } lg:block w-full lg:w-72 shrink-0`}
+          >
+            <div className="sticky top-24 space-y-4">
+              {/* Search */}
+              <div className="card-warm p-4">
+                <div className="relative">
+                  <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
+                  <input
+                    type="text"
+                    placeholder="搜索医院名称..."
+                    className="input-warm pl-10"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                  />
+                </div>
+              </div>
+
+              {/* Province Filter */}
+              <div className="card-warm p-4">
+                <h2 className="font-semibold mb-4 flex items-center gap-2">
+                  <MapPin className="w-4 h-4 text-teal-500" />
+                  地区筛选
+                </h2>
+
+                <div className="space-y-1 max-h-80 overflow-y-auto pr-2">
+                  {provinces.map((province) => (
                     <button
                       type="button"
-                      onClick={() => setSelectedProvince(province.id)}
-                      className={
-                        selectedProvince === province.id ? 'active' : ''
-                      }
+                      key={province.id}
+                      onClick={() => {
+                        setSelectedProvince(province.id);
+                        setIsSidebarOpen(false);
+                      }}
+                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 ${
+                        selectedProvince === province.id
+                          ? 'bg-gradient-to-r from-teal-500 to-emerald-500 text-white shadow-lg shadow-teal-500/25'
+                          : 'hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-400'
+                      }`}
                     >
-                      {province.name}
+                      <span className="font-medium">{province.name}</span>
+                      {selectedProvince === province.id && (
+                        <Navigation className="w-4 h-4" />
+                      )}
                     </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </aside>
+                  ))}
+                </div>
+              </div>
 
-        {/* Main Content */}
-        <div className="flex-1">
-          {/* Search Bar */}
-          <div className="mb-6">
-            <div className="join w-full">
-              <input
-                type="text"
-                placeholder="搜索医院名称..."
-                className="input input-bordered join-item w-full"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-              <button type="button" className="btn btn-primary join-item">
-                <Search className="h-5 w-5" />
-              </button>
-            </div>
-          </div>
-
-          {/* Hospital List */}
-          <div className="space-y-4">
-            {isLoading ? (
-              <div className="space-y-4">
-                {[1, 2, 3].map((i) => (
-                  <div key={i} className="card bg-base-200">
-                    <div className="card-body">
-                      <div className="skeleton h-6 w-3/4"></div>
-                      <div className="skeleton h-4 w-1/4 mt-2"></div>
-                      <div className="skeleton h-4 w-full mt-4"></div>
-                      <div className="skeleton h-4 w-2/3 mt-2"></div>
-                    </div>
+              {/* Info Card */}
+              <div className="card-warm p-4 bg-gradient-to-br from-teal-50 to-emerald-50 dark:from-teal-900/20 dark:to-emerald-900/20 border-teal-200">
+                <div className="flex items-start gap-3">
+                  <div className="p-2 rounded-lg bg-teal-100 dark:bg-teal-800">
+                    <Hospital className="w-5 h-5 text-teal-600 dark:text-teal-400" />
                   </div>
-                ))}
+                  <div>
+                    <h3 className="font-semibold text-stone-800 dark:text-stone-100 text-sm mb-1">
+                      权威医院推荐
+                    </h3>
+                    <p className="text-xs text-stone-600 dark:text-stone-400">
+                      收录全国罕见病诊疗协作网成员医院及专科中心
+                    </p>
+                  </div>
+                </div>
               </div>
-            ) : hospitals.length === 0 ? (
-              <div className="text-center py-12">
-                <p className="text-base-content/60">暂无相关医院信息</p>
+            </div>
+          </aside>
+
+          {/* Main Content */}
+          <div className="flex-1">
+            {/* Results Count */}
+            <div className="flex items-center justify-between mb-6">
+              <div className="muted-text">
+                {isLoading ? (
+                  <span>加载中...</span>
+                ) : (
+                  <span>
+                    共找到{' '}
+                    <span className="font-semibold text-teal-600">
+                      {hospitals.length}
+                    </span>{' '}
+                    家医院
+                  </span>
+                )}
               </div>
-            ) : (
-              hospitals.map((hospital) => (
-                <Link
-                  key={hospital.id}
-                  to="/hospitals/$id"
-                  params={{ id: hospital.id.toString() }}
-                  className="card bg-base-200 hover:bg-base-300 transition-colors block"
+
+              {selectedProvince !== 'all' && (
+                <button
+                  type="button"
+                  onClick={() => setSelectedProvince('all')}
+                  className="text-sm text-teal-600 hover:text-teal-700 flex items-center gap-1"
                 >
-                  <div className="card-body">
-                    <div className="flex items-start justify-between">
-                      <div>
-                        <h3 className="card-title">{hospital.name}</h3>
-                        {hospital.level && (
-                          <div className="badge badge-primary mt-2">
-                            {hospital.level === 'three_a'
-                              ? '三甲'
-                              : hospital.level === 'three_b'
-                                ? '三乙'
-                                : hospital.level === 'two_a'
-                                  ? '二甲'
-                                  : hospital.level === 'two_b'
-                                    ? '二乙'
-                                    : hospital.level}
-                          </div>
-                        )}
-                      </div>
-                    </div>
-                    <div className="mt-4 space-y-2 text-sm">
-                      <div className="flex items-center gap-2">
-                        <MapPin className="h-4 w-4 text-base-content/60" />
-                        <span>{hospital.address}</span>
-                      </div>
-                      {hospital.phone && (
-                        <div className="flex items-center gap-2">
-                          <Phone className="h-4 w-4 text-base-content/60" />
-                          <span>{hospital.phone}</span>
+                  清除筛选
+                  <span className="text-lg">×</span>
+                </button>
+              )}
+            </div>
+
+            {/* Hospital Grid */}
+            <div className="grid gap-4">
+              {isLoading ? (
+                <>
+                  {[1, 2, 3].map((i) => (
+                    <div key={i} className="card-warm p-6 space-y-4">
+                      <div className="flex items-start justify-between">
+                        <div className="space-y-2">
+                          <div className="h-6 w-56 bg-stone-200 dark:bg-stone-700 rounded animate-pulse" />
+                          <div className="h-4 w-24 bg-stone-200 dark:bg-stone-700 rounded animate-pulse" />
                         </div>
-                      )}
-                      {hospital.specialties && (
-                        <div>
-                          <span className="text-base-content/60">
-                            特色专科：
-                          </span>
-                          <span className="ml-2">{hospital.specialties}</span>
-                        </div>
-                      )}
+                        <div className="h-6 w-16 bg-stone-200 dark:bg-stone-700 rounded-full animate-pulse" />
+                      </div>
+                      <div className="h-4 w-full bg-stone-200 dark:bg-stone-700 rounded animate-pulse" />
+                      <div className="h-4 w-1/2 bg-stone-200 dark:bg-stone-700 rounded animate-pulse" />
                     </div>
+                  ))}
+                </>
+              ) : hospitals.length === 0 ? (
+                <div className="text-center py-16 card-warm">
+                  <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center">
+                    <Building2 className="w-10 h-10 text-stone-400" />
                   </div>
-                </Link>
-              ))
-            )}
+                  <h3 className="text-lg font-semibold mb-2">未找到相关医院</h3>
+                  <p className="mb-4">
+                    尝试使用其他关键词搜索，或浏览全部医院列表
+                  </p>
+                  <button
+                    type="button"
+                    onClick={() => {
+                      setSearchQuery('');
+                      setSelectedProvince('all');
+                    }}
+                    className="btn-soft"
+                  >
+                    查看全部医院
+                  </button>
+                </div>
+              ) : (
+                hospitals.map((hospital) => {
+                  const levelBadge = getLevelBadge(hospital.level);
+                  return (
+                    <Link
+                      key={hospital.id}
+                      to="/hospitals/$id"
+                      params={{ id: hospital.id.toString() }}
+                      className="group card-warm p-6 block hover:border-teal-300 dark:hover:border-teal-700"
+                    >
+                      <div className="flex flex-col md:flex-row md:items-start gap-4">
+                        {/* Hospital Icon */}
+                        <div className="shrink-0">
+                          <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-100 to-emerald-100 dark:from-teal-900/50 dark:to-emerald-900/50 flex items-center justify-center">
+                            <Building2 className="w-8 h-8 text-teal-600 dark:text-teal-400" />
+                          </div>
+                        </div>
+
+                        {/* Hospital Info */}
+                        <div className="flex-1 min-w-0">
+                          <div className="flex flex-wrap items-center gap-3 mb-2">
+                            <h3 className="font-serif text-xl font-bold group-hover:text-teal-600 transition-colors">
+                              {hospital.name}
+                            </h3>
+                            {hospital.level && (
+                              <span
+                                className={`px-3 py-1 rounded-full text-xs font-semibold ${levelBadge.class}`}
+                              >
+                                {levelBadge.text}
+                              </span>
+                            )}
+                          </div>
+
+                          <div className="flex items-center gap-2 text-sm text-stone-500 mb-3">
+                            <MapPin className="w-4 h-4" />
+                            <span>
+                              {hospital.province} {hospital.city}
+                            </span>
+                          </div>
+
+                          <div className="flex items-start gap-2 text-sm text-stone-600 dark:text-stone-400 mb-3">
+                            <Navigation className="w-4 h-4 mt-0.5 shrink-0" />
+                            <span className="line-clamp-1">
+                              {hospital.address}
+                            </span>
+                          </div>
+
+                          {hospital.phone && (
+                            <div className="flex items-center gap-2 text-sm text-stone-600 dark:text-stone-400 mb-3">
+                              <Phone className="w-4 h-4 text-teal-500" />
+                              <span>{hospital.phone}</span>
+                            </div>
+                          )}
+
+                          {hospital.specialties && (
+                            <div className="mt-3 pt-3 border-t border-stone-200 dark:border-stone-700">
+                              <p className="text-sm text-stone-600 dark:text-stone-400">
+                                <span className="font-medium text-stone-800 dark:text-stone-200">
+                                  特色专科：
+                                </span>
+                                <span className="line-clamp-2">
+                                  {hospital.specialties}
+                                </span>
+                              </p>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Arrow */}
+                        <div className="shrink-0 self-center">
+                          <div className="w-10 h-10 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center group-hover:bg-teal-100 dark:group-hover:bg-teal-900/30 transition-colors">
+                            <ChevronRight className="w-5 h-5 text-stone-400 group-hover:text-teal-600 transition-colors" />
+                          </div>
+                        </div>
+                      </div>
+                    </Link>
+                  );
+                })
+              )}
+            </div>
           </div>
         </div>
       </div>
