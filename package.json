@@ -1,0 +1,12 @@
+{
+  "name": "spanios-wiki",
+  "private": true,
+  "packageManager": "pnpm@10.11.0",
+  "scripts": {
+    "hermes:queue": "node scripts/hermes_content_queue.mjs",
+    "review": "node scripts/review_pending_drafts.mjs",
+    "review:resource": "node scripts/validate_resource_draft.mjs",
+    "review:validate": "node scripts/validate_content_draft.mjs",
+    "review:promote": "node scripts/promote_content_draft.mjs"
+  }
+}

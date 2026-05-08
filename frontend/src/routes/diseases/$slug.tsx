@@ -110,6 +110,65 @@ function DiseaseDetailPage() {
   const diagnosisHtml = disease.medicalSections?.diagnosis ?? disease.diagnosis;
   const treatmentHtml = disease.medicalSections?.treatment ?? disease.treatment;
   const prognosisHtml = disease.prognosis;
+  const quickLookItems = disease.quickLook
+    ? [
+        {
+          label: '先看哪个科',
+          value: disease.quickLook.whoToSeeFirst,
+          tone: 'primary' as const,
+        },
+        { label: '这是什么', value: disease.quickLook.whatItIs },
+        { label: '是否有治疗', value: disease.quickLook.hasTreatment },
+        { label: '是否遗传', value: disease.quickLook.isGenetic },
+        { label: '容易卡在哪里', value: disease.quickLook.commonDelayReason },
+      ].filter((item) => item.value)
+    : [];
+  const journeySections = disease.patientJourney
+    ? [
+        {
+          icon: AlertTriangle,
+          title: '什么时候该怀疑',
+          items: disease.patientJourney.whenToSuspect,
+        },
+        {
+          icon: Compass,
+          title: '常见弯路',
+          items: disease.patientJourney.commonWrongTurns,
+        },
+        {
+          icon: Stethoscope,
+          title: '先看哪些科',
+          items: disease.patientJourney.firstDepartments,
+        },
+        {
+          icon: ClipboardCheck,
+          title: '就诊前准备',
+          items: disease.patientJourney.diagnosisChecklist,
+        },
+        {
+          icon: BookOpenCheck,
+          title: '可向医生确认的检查',
+          items: disease.patientJourney.testsToAskAbout,
+        },
+        {
+          icon: HelpCircle,
+          title: '可以问医生的问题',
+          items: disease.patientJourney.questionsForDoctor,
+        },
+      ].filter((section) => section.items?.length)
+    : [];
+  const medicalBlocks = [
+    { title: '症状表现', html: symptomsHtml },
+    { title: '诊断方法', html: diagnosisHtml },
+    { title: '治疗方法', html: treatmentHtml },
+    { title: '长期管理', html: disease.medicalSections?.longTermCare },
+    { title: '生育与家族', html: disease.medicalSections?.fertilityOrFamily },
+    {
+      title: '需要尽快就医的情况',
+      html: disease.medicalSections?.emergencySigns,
+    },
+    { title: '预后情况', html: prognosisHtml },
+  ].filter((block) => block.html);
 
   return (
     <div className="page-container">
@@ -184,79 +243,68 @@ function DiseaseDetailPage() {
             {disease.oneSentence}
           </p>
         )}
+
+        {disease.featuredImage?.url && (
+          <div className="mt-6 overflow-hidden rounded-md border border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-900">
+            <img
+              src={disease.featuredImage.url}
+              alt={`${disease.name}就医导航插图`}
+              className="h-52 w-full object-cover sm:h-64"
+              loading="lazy"
+            />
+          </div>
+        )}
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        {/* Main Content */}
-        <div className="lg:col-span-2">
-          {disease.quickLook && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
+      {quickLookItems.length > 0 && (
+        <section className="content-card mb-8 p-5 sm:p-6">
+          <div className="mb-4 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Compass className="h-5 w-5 text-amber-700" />
                 先看这个
               </h2>
-              <div className="grid gap-3">
-                <QuickLookItem
-                  label="这是什么"
-                  value={disease.quickLook.whatItIs}
-                />
-                <QuickLookItem
-                  label="先看哪个科"
-                  value={disease.quickLook.whoToSeeFirst}
-                />
-                <QuickLookItem
-                  label="是否遗传"
-                  value={disease.quickLook.isGenetic}
-                />
-                <QuickLookItem
-                  label="是否有治疗"
-                  value={disease.quickLook.hasTreatment}
-                />
-                <QuickLookItem
-                  label="容易卡在哪里"
-                  value={disease.quickLook.commonDelayReason}
-                />
-              </div>
+              <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
+                先帮你判断下一步：看哪个科、准备什么材料、哪些问题要问医生。
+              </p>
             </div>
-          )}
+          </div>
+          <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-5">
+            {quickLookItems.map((item) => (
+              <QuickLookItem
+                key={item.label}
+                label={item.label}
+                tone={item.tone}
+                value={item.value}
+              />
+            ))}
+          </div>
+        </section>
+      )}
 
-          {disease.patientJourney && (
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* Main Content */}
+        <div className="lg:col-span-2 space-y-6">
+          {journeySections.length > 0 && (
             <div className="content-card mb-5 p-5">
-              <h2 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
-                <ListChecks className="h-5 w-5 text-amber-700" />
-                确诊路线
-              </h2>
-              <div className="grid gap-5">
-                <JourneyList
-                  icon={AlertTriangle}
-                  title="什么时候该怀疑"
-                  items={disease.patientJourney.whenToSuspect}
-                />
-                <JourneyList
-                  icon={Compass}
-                  title="常见弯路"
-                  items={disease.patientJourney.commonWrongTurns}
-                />
-                <JourneyList
-                  icon={Stethoscope}
-                  title="可以先看的科室"
-                  items={disease.patientJourney.firstDepartments}
-                />
-                <JourneyList
-                  icon={ClipboardCheck}
-                  title="就诊前准备"
-                  items={disease.patientJourney.diagnosisChecklist}
-                />
-                <JourneyList
-                  icon={BookOpenCheck}
-                  title="可向医生确认的检查"
-                  items={disease.patientJourney.testsToAskAbout}
-                />
-                <JourneyList
-                  icon={HelpCircle}
-                  title="可以问医生的问题"
-                  items={disease.patientJourney.questionsForDoctor}
-                />
+              <div className="mb-4">
+                <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
+                  <ListChecks className="h-5 w-5 text-amber-700" />
+                  确诊路线
+                </h2>
+                <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
+                  按患者实际行动顺序整理：先识别线索，再避开常见弯路，最后准备就诊。
+                </p>
+              </div>
+              <div className="grid gap-4 md:grid-cols-2">
+                {journeySections.map((section) => (
+                  <JourneyList
+                    icon={section.icon}
+                    items={section.items}
+                    key={section.title}
+                    title={section.title}
+                  />
+                ))}
               </div>
             </div>
           )}
@@ -300,17 +348,6 @@ function DiseaseDetailPage() {
                   </div>
                 </div>
               )}
-              {disease.reviewStatus && (
-                <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
-                  <BookOpenCheck className="mt-0.5 h-5 w-5 text-amber-700" />
-                  <div>
-                    <div className="text-sm font-semibold">审核状态</div>
-                    <div className="text-sm text-stone-600 dark:text-stone-400">
-                      {formatReviewStatus(disease.reviewStatus)}
-                    </div>
-                  </div>
-                </div>
-              )}
               {disease.sourceName && (
                 <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
                   <BookOpenCheck className="mt-0.5 h-5 w-5 text-amber-700" />
@@ -337,101 +374,42 @@ function DiseaseDetailPage() {
             </div>
           </div>
 
-          {/* Symptoms */}
-          {symptomsHtml && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                症状表现
-              </h2>
-              <SafeHTMLRenderer html={symptomsHtml} className="content-prose" />
-            </div>
-          )}
-
-          {/* Diagnosis */}
-          {diagnosisHtml && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                诊断方法
-              </h2>
-              <SafeHTMLRenderer
-                html={diagnosisHtml}
-                className="content-prose"
-              />
-            </div>
-          )}
-
-          {/* Treatment */}
-          {treatmentHtml && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                治疗方法
-              </h2>
-              <SafeHTMLRenderer
-                html={treatmentHtml}
-                className="content-prose"
-              />
-            </div>
-          )}
-
-          {disease.medicalSections?.longTermCare && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                长期管理
-              </h2>
-              <SafeHTMLRenderer
-                html={disease.medicalSections.longTermCare}
-                className="content-prose"
-              />
-            </div>
-          )}
-
-          {disease.medicalSections?.fertilityOrFamily && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                生育与家族
-              </h2>
-              <SafeHTMLRenderer
-                html={disease.medicalSections.fertilityOrFamily}
-                className="content-prose"
-              />
-            </div>
-          )}
-
-          {disease.medicalSections?.emergencySigns && (
-            <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                需要尽快就医的情况
-              </h2>
-              <SafeHTMLRenderer
-                html={disease.medicalSections.emergencySigns}
-                className="content-prose"
-              />
-            </div>
-          )}
-
-          {/* Prognosis */}
-          {prognosisHtml && (
+          {medicalBlocks.length > 0 && (
             <div className="content-card p-5">
-              <h2 className="mb-3 font-semibold text-stone-900 dark:text-stone-100">
-                预后情况
-              </h2>
-              <SafeHTMLRenderer
-                html={prognosisHtml}
-                className="content-prose"
-              />
+              <div className="mb-4">
+                <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
+                  <BookOpenCheck className="h-5 w-5 text-amber-700" />
+                  医学说明
+                </h2>
+                <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
+                  这里保留更完整的医学解释，方便和医生沟通时核对概念。
+                </p>
+              </div>
+              <div className="space-y-4">
+                {medicalBlocks.map((block) => (
+                  <MedicalBlock
+                    html={block.html ?? ''}
+                    key={block.title}
+                    title={block.title}
+                  />
+                ))}
+              </div>
             </div>
           )}
         </div>
 
         {/* Sidebar */}
-        <div className="lg:col-span-1">
-          {/* Related Hospitals */}
+        <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
+          {/* Care resources */}
           {disease.hospitals && disease.hospitals.length > 0 && (
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Hospital className="h-5 w-5 text-amber-700" />
-                推荐医院
+                就医资源
               </h3>
+              <p className="-mt-2 mb-4 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
+                以下为公开收录的就医信息参考，不代表本站推荐或医疗背书。
+              </p>
               <div className="space-y-3">
                 {disease.hospitals.map((hospital) => (
                   <Link
@@ -535,17 +513,31 @@ function DiseaseDetailPage() {
   );
 }
 
-function QuickLookItem({ label, value }: { label: string; value?: string }) {
+function QuickLookItem({
+  label,
+  tone,
+  value,
+}: {
+  label: string;
+  tone?: 'primary';
+  value?: string;
+}) {
   if (!value) {
     return null;
   }
 
   return (
-    <div className="rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
-      <div className="text-sm font-semibold text-stone-900 dark:text-stone-100">
+    <div
+      className={`rounded-md border p-3 ${
+        tone === 'primary'
+          ? 'border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/30'
+          : 'border-stone-200 bg-stone-50 dark:border-stone-800 dark:bg-stone-900/30'
+      }`}
+    >
+      <div className="text-xs font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
         {label}
       </div>
-      <p className="mt-1 text-sm leading-6 text-stone-600 dark:text-stone-400">
+      <p className="mt-2 text-sm leading-6 text-stone-700 dark:text-stone-300">
         {value}
       </p>
     </div>
@@ -566,7 +558,7 @@ function JourneyList({
   }
 
   return (
-    <section>
+    <section className="rounded-md border border-stone-200 bg-stone-50 p-4 dark:border-stone-800 dark:bg-stone-900/30">
       <h3 className="mb-2 flex items-center gap-2 text-sm font-semibold text-stone-900 dark:text-stone-100">
         <Icon className="h-4 w-4 text-amber-700" />
         {title}
@@ -575,7 +567,7 @@ function JourneyList({
         {items.map((item) => (
           <li
             key={item}
-            className="rounded-md bg-stone-50 px-3 py-2 text-sm leading-6 text-stone-600 dark:bg-stone-900/30 dark:text-stone-400"
+            className="text-sm leading-6 text-stone-600 before:mr-2 before:text-amber-700 before:content-['•'] dark:text-stone-400"
           >
             {item}
           </li>
@@ -585,12 +577,13 @@ function JourneyList({
   );
 }
 
-function formatReviewStatus(status: string) {
-  const labels: Record<string, string> = {
-    draft: '草稿，等待进一步校对',
-    'medical-reviewed': '已医学审核',
-    'patient-reviewed': '已患者视角校对',
-  };
-
-  return labels[status] ?? status;
+function MedicalBlock({ html, title }: { html: string; title: string }) {
+  return (
+    <section className="rounded-md border border-stone-200 p-4 dark:border-stone-800">
+      <h3 className="mb-2 text-sm font-semibold text-stone-900 dark:text-stone-100">
+        {title}
+      </h3>
+      <SafeHTMLRenderer html={html} className="content-prose" />
+    </section>
+  );
 }

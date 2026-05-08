@@ -59,7 +59,7 @@ function SearchPage() {
         </nav>
         <h1 className="section-title text-3xl">全站搜索</h1>
         <p className="section-copy mt-2">
-          同时查找疾病资料、医院资源和公益组织。
+          同时查找疾病资料、就医资源和公益组织。
         </p>
       </div>
 

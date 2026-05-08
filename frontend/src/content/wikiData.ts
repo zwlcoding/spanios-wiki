@@ -11,6 +11,7 @@ import { tagsByLocale } from '@/content/data/tags';
 import type {
   CharityOrganization,
   ContentResponse,
+  ContentSource,
   Disease,
   Hospital,
   LocalizedRecord,
@@ -52,6 +53,10 @@ export function getWikiContent(locale: string): WikiContent {
       normalizedLocale,
       disease.slug,
     );
+    const sources = mergeSources([
+      ...(disease.sources ?? []),
+      ...(catalogMetadata?.sources ?? []),
+    ]);
     const catalogTagSlugs =
       catalogMetadata?.catalogRefs.map((ref) =>
         ref.catalogId === 'china-first-rare-disease-catalog'
@@ -65,6 +70,9 @@ export function getWikiContent(locale: string): WikiContent {
     return {
       ...disease,
       ...catalogMetadata,
+      sourceName: disease.sourceName ?? catalogMetadata?.sourceName,
+      sourceUrl: disease.sourceUrl ?? catalogMetadata?.sourceUrl,
+      sources,
       category: categories.find(
         (categoryItem) => categoryItem.slug === categorySlug,
       ),
@@ -172,4 +180,17 @@ function resolveLocalized<T>(record: LocalizedRecord<T>, locale: Locale): T {
   }
 
   return record[defaultLocale];
+}
+
+function mergeSources(sources: ContentSource[]) {
+  const seenUrls = new Set<string>();
+
+  return sources.filter((source) => {
+    if (seenUrls.has(source.url)) {
+      return false;
+    }
+
+    seenUrls.add(source.url);
+    return true;
+  });
 }

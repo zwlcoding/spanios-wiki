@@ -54,19 +54,19 @@ const categoryTones = [
 const quickLinks = [
   {
     title: '疾病资料',
-    description: '查看症状、诊断、治疗和预后信息',
+    description: '查看症状线索、诊断路径和长期管理信息',
     href: '/diseases',
     icon: HeartPulse,
   },
   {
-    title: '诊疗医院',
-    description: '按地区查找医院、科室和联系方式',
+    title: '就医资源',
+    description: '按地区查找公开医院、科室和联系方式',
     href: '/hospitals',
     icon: Hospital,
   },
   {
-    title: '公益支持',
-    description: '连接患者组织、基金会和服务资源',
+    title: '公益资源',
+    description: '查找公开患者组织、基金会和服务信息',
     href: '/charity',
     icon: HandHeart,
   },
@@ -109,7 +109,7 @@ export default function HomePage() {
           </h1>
 
           <p className="section-copy mt-5 max-w-2xl text-base sm:text-lg">
-            把疾病资料、诊疗医院和公益支持放在同一个可搜索入口。内容以代码维护，便于快速更新和多语言发布。
+            把疾病资料、就医资源和公益信息放在同一个可搜索入口。内容以代码维护，便于快速更新和多语言发布。
           </p>
 
           <form
@@ -183,7 +183,7 @@ export default function HomePage() {
           <div>
             <h2 className="section-title text-2xl">疾病分类</h2>
             <p className="section-copy text-sm">
-              按诊疗系统和主要管理科室快速进入对应疾病列表。
+              按医学系统和常见管理科室快速进入对应疾病列表。
             </p>
           </div>
           <Link to="/diseases" className="btn-subtle self-start">
@@ -229,7 +229,7 @@ export default function HomePage() {
           {[
             { value: `${diseases.length}`, label: '疾病条目' },
             { value: `${catalogReferenceCount}`, label: '官方目录条目' },
-            { value: `${hospitals.length}`, label: '诊疗医院' },
+            { value: `${hospitals.length}`, label: '就医资源' },
           ].map((stat) => (
             <div key={stat.label} className="surface-card p-5">
               <div className="text-3xl font-semibold text-amber-700">

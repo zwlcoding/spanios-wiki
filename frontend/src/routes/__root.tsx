@@ -4,6 +4,7 @@ import {
   Link,
   Scripts,
 } from '@tanstack/react-router';
+import { MedicalDisclaimer } from '@/components/MedicalDisclaimer';
 import NotFound from '@/components/NotFound';
 import { DarkModeBtn, useDarkMode } from '@/features/DarkMode';
 import { LangModeBtn } from '@/features/LangMode';
@@ -77,9 +78,11 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 
           <main className="app-main">{children}</main>
 
+          <MedicalDisclaimer />
+
           <footer className="app-footer flex flex-wrap items-center justify-between gap-2">
             <p>&copy; {new Date().getFullYear()} Spanios.wiki</p>
-            <p>Rare disease wiki, maintained in code.</p>
+            <p>Patient-friendly rare disease knowledge and navigation.</p>
           </footer>
         </div>
         <Scripts />

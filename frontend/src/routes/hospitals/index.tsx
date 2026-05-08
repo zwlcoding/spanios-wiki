@@ -90,9 +90,9 @@ function HospitalsListPage() {
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
-              <h1 className="section-title text-4xl mb-2">罕见病诊疗医院</h1>
+              <h1 className="section-title text-4xl mb-2">罕见病就医资源</h1>
               <p className="section-copy">
-                查找专业治疗罕见病的医院及科室，获取权威医疗资源
+                按地区查找公开医院、科室和联系方式，作为就医前的信息参考
               </p>
             </div>
 
@@ -168,10 +168,10 @@ function HospitalsListPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-800 dark:text-stone-100 text-sm mb-1">
-                      权威医院推荐
+                      公开就医信息
                     </h3>
                     <p className="text-xs text-stone-600 dark:text-stone-400">
-                      收录全国罕见病诊疗协作网成员医院及专科中心
+                      收录公开可核对的医院、科室与服务信息，不构成医疗推荐
                     </p>
                   </div>
                 </div>

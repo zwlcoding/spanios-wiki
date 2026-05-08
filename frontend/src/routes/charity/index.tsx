@@ -100,7 +100,9 @@ function CharityListPage() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h1 className="section-title text-4xl mb-2">罕见病公益组织</h1>
-              <p className="section-copy">连接患者支持网络，获取帮助与资源</p>
+              <p className="section-copy">
+                查找公开患者组织、基金会和服务信息，具体服务以官方渠道为准
+              </p>
             </div>
 
             <button
@@ -176,10 +178,10 @@ function CharityListPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-800 dark:text-stone-100 text-sm mb-1">
-                      温暖互助
+                      公开组织信息
                     </h3>
                     <p className="text-xs text-stone-600 dark:text-stone-400">
-                      这些组织致力于帮助罕见病患者，提供医疗咨询、心理支持和资源对接
+                      仅收录可核对来源的组织和服务范围，不代表本站背书或援助承诺
                     </p>
                   </div>
                 </div>

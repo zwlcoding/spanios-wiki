@@ -95,7 +95,7 @@ function CharityDetailPage() {
           <div>
             <div className="eyebrow mb-4">
               <Heart className="h-4 w-4" />
-              公益支持
+              公益资源
             </div>
             <h1 className="section-title text-3xl sm:text-4xl">
               {organization.name}

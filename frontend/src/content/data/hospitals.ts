@@ -71,7 +71,7 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
         department(
           301,
           '血液科',
-          '提供凝血因子检测、出血急救和预防治疗方案制定。',
+          '公开资料显示该科室涉及凝血因子检测、出血处理和长期随访管理。',
           '凝血与血栓团队',
         ),
       ],

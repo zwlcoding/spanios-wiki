@@ -119,7 +119,7 @@ function DiseasesListPage() {
             <div>
               <h1 className="section-title text-4xl mb-2">罕见病列表</h1>
               <p className="section-copy">
-                探索各类罕见病的详细信息、症状表现与治疗方案
+                探索各类罕见病的基础知识、症状线索与治疗管理信息
               </p>
             </div>
 

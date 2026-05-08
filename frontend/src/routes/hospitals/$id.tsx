@@ -94,7 +94,7 @@ function HospitalDetailPage() {
           <div>
             <div className="eyebrow mb-4">
               <Building className="h-4 w-4" />
-              诊疗医院
+              就医信息
             </div>
             <h1 className="section-title text-3xl sm:text-4xl">
               {hospital.name}
@@ -165,7 +165,7 @@ function HospitalDetailPage() {
 
           {hospital.specialties && (
             <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold">特色专科</h2>
+              <h2 className="mb-3 font-semibold">公开科室信息</h2>
               <SafeHTMLRenderer
                 html={hospital.specialties}
                 className="content-prose"
@@ -192,7 +192,7 @@ function HospitalDetailPage() {
                     {dept.expertDoctors && (
                       <p className="muted-text mt-3 text-sm">
                         <span className="strong-text font-medium">
-                          专家团队：
+                          公开团队信息：
                         </span>
                         {dept.expertDoctors}
                       </p>
@@ -220,7 +220,7 @@ function HospitalDetailPage() {
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold">
                 <Building className="h-5 w-5 text-amber-700" />
-                擅长疾病
+                相关疾病信息
               </h3>
               <div className="space-y-3">
                 {hospital.diseases.map((disease) => (
@@ -248,7 +248,7 @@ function HospitalDetailPage() {
               {hospital.phone && (
                 <a href={`tel:${hospital.phone}`} className="btn-primary-app">
                   <Phone className="h-4 w-4" />
-                  电话咨询
+                  联系电话
                 </a>
               )}
               {hospital.website && (

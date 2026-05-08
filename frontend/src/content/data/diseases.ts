@@ -21,8 +21,8 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       prognosis:
         '<p>病程差异很大，早期识别呼吸和营养风险可以显著改善生活质量。</p>',
       categorySlug: 'neurological',
-      charityIds: [1],
-      hospitalIds: [1, 2],
+      charityIds: [],
+      hospitalIds: [],
       tagSlugs: ['neuromuscular', 'genetic-counseling'],
     },
     {
@@ -42,8 +42,8 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       prognosis:
         '<p>规范预防治疗可以减少关节损伤和严重出血，儿童患者需要长期随访。</p>',
       categorySlug: 'hematological',
-      charityIds: [2],
-      hospitalIds: [1, 3],
+      charityIds: [],
+      hospitalIds: [],
       tagSlugs: ['coagulation-care', 'genetic-counseling'],
     },
     {
@@ -56,7 +56,8 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       oneSentence:
         '卡尔曼综合征常表现为青春期迟迟不来、第二性征发育不足，并伴有嗅觉减退或缺失，确诊通常需要内分泌评估和遗传相关检查。',
       plainName: '青春期发育延迟伴嗅觉减退',
-      prevalence: '男性约 1/30,000，女性更少见，实际诊断率可能偏低。',
+      prevalence:
+        '估计男性约 1/30,000，女性约 1/120,000；实际诊断率可能受地区和就医路径影响。',
       quickLook: {
         whatItIs:
           '这是一类低促性腺激素性性腺功能减退，身体缺少启动青春期发育所需的激素信号，部分患者同时有嗅觉减退或没有嗅觉。',
@@ -74,11 +75,13 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
           '男孩到 14 岁、女孩到 13 岁仍缺少明显青春期发育迹象。',
           '青春期发育明显落后，同时从小嗅觉很差或闻不到气味。',
           '成年后因性腺功能低下、不孕或性激素水平异常才被发现。',
+          '男婴曾有小阴茎、隐睾，或青春期后睾丸体积仍明显偏小。',
         ],
         commonWrongTurns: [
           '只反复补营养、等待自然发育，没有做性激素和促性腺激素检查。',
           '只看生殖问题，没有回头评估青春期发育史和嗅觉问题。',
           '把低睾酮或月经问题当成单一问题处理，没有进一步查下丘脑-垂体-性腺轴。',
+          '知道自己闻不到气味，但没有把嗅觉问题和青春期延迟联系起来。',
         ],
         firstDepartments: ['内分泌科', '儿科内分泌', '生殖医学科'],
         diagnosisChecklist: [
@@ -90,6 +93,7 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
           'LH、FSH、睾酮或雌二醇等性腺轴激素。',
           '垂体和下丘脑影像检查。',
           '嗅觉评估、骨龄评估和相关基因检测。',
+          '是否需要筛查肾脏发育、听力、唇腭裂、牙齿发育或镜像运动等伴随问题。',
         ],
         questionsForDoctor: [
           '我的情况更像体质性发育延迟，还是低促性腺激素性性腺功能减退？',
@@ -99,28 +103,47 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       },
       medicalSections: {
         symptoms:
-          '<p>常见线索包括青春期启动延迟、第二性征发育不足、性腺功能减退、不孕或生育困难，以及嗅觉减退或缺失。不同患者表现差异很大，不能只靠单个症状判断。</p>',
+          '<p>常见线索包括青春期启动延迟、第二性征发育不足、性腺功能减退、不孕或生育困难，以及嗅觉减退或缺失。男性可表现为胡须少、声音不变粗、睾丸体积小；女性可表现为乳房发育不足或原发闭经。部分患者还可能合并单侧肾发育异常、唇腭裂、听力问题、牙齿发育异常或双手镜像运动。不同患者表现差异很大，不能只靠单个症状判断。</p>',
         diagnosis:
-          '<p>评估通常包括性激素和促性腺激素检测、嗅觉评估、垂体/下丘脑影像、骨龄和相关基因检测。医生还会排除体质性发育延迟、垂体病变、营养或慢性疾病等原因。</p>',
+          '<p>评估通常包括青春期发育史、家族史、体格检查、LH/FSH 与睾酮或雌二醇等激素检测、嗅觉评估、骨龄、垂体/下丘脑及嗅球相关影像，以及必要时的染色体核型或基因检测。医生还会排除体质性发育延迟、垂体病变、营养不良和慢性疾病等原因。</p>',
         treatment:
-          '<p>治疗以性激素替代、诱导青春期发育和生育治疗为主，需要内分泌专科长期管理。有生育需求时，治疗方案和周期通常与单纯激素替代不同。</p>',
+          '<p>治疗以性激素替代、诱导青春期发育和生育相关治疗为主，需要内分泌专科长期管理。有生育需求时，治疗安排和随访周期通常与单纯激素替代不同。</p>',
         longTermCare:
-          '<p>长期管理通常关注第二性征维持、骨密度、代谢状态、心理压力和生育计划。不要自行停药或更改剂量。</p>',
+          '<p>长期管理通常关注第二性征维持、骨密度、代谢状态、心理压力和生育计划。嗅觉缺失者还要特别注意燃气、烟雾和变质食物等安全风险。不要自行停药或更改剂量。</p>',
         fertilityOrFamily:
           '<p>部分患者可通过促性腺激素等治疗获得生育机会。若怀疑遗传因素，建议在医生指导下进行遗传咨询，而不是只依据单个基因结果做家庭决策。</p>',
+        emergencySigns:
+          '<p>如果青春期明显延迟并伴随嗅觉减退、隐睾/小阴茎病史、原发闭经、不孕，或检查发现性激素和促性腺激素均偏低，建议尽快到内分泌专科评估。若已经开始治疗但出现明显情绪困扰、骨痛骨折风险、严重乏力或生育治疗中的异常反应，也应及时复诊。</p>',
       },
+      sources: [
+        {
+          name: 'MedlinePlus Genetics: Kallmann syndrome',
+          type: 'official',
+          url: 'https://medlineplus.gov/genetics/condition/kallmann-syndrome/',
+        },
+        {
+          name: 'NCBI Bookshelf: Kallmann Syndrome',
+          type: 'review',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK538210/',
+        },
+      ],
       symptoms:
         '<p>典型表现包括青春期发育延迟、性腺功能减退、不孕或生育困难，以及嗅觉减退或缺失。</p>',
       diagnosis:
         '<p>评估通常包括性激素和促性腺激素检测、嗅觉评估、垂体/下丘脑影像、骨龄和相关基因检测。</p>',
       treatment:
-        '<p>治疗以性激素替代、诱导青春期发育和生育治疗为主，需要内分泌专科长期管理。</p>',
+        '<p>治疗以性激素替代、诱导青春期发育和生育相关治疗为主，需要内分泌专科长期管理。</p>',
       prognosis:
         '<p>多数患者经规范治疗可获得良好第二性征发育，部分患者可通过促性腺激素治疗实现生育。</p>',
       categorySlug: 'genetic-developmental',
-      charityIds: [1],
-      hospitalIds: [1, 2],
+      charityIds: [],
+      hospitalIds: [],
       reviewStatus: 'draft',
+      featuredImage: {
+        id: 301,
+        name: 'kallmann-syndrome-journey.png',
+        url: '/images/diseases/kallmann-syndrome-journey.png',
+      },
       tagSlugs: ['endocrine', 'genetic-counseling'],
     },
   ],
@@ -143,8 +166,8 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       prognosis:
         '<p>The disease course varies widely. Early attention to respiratory and nutrition risks can improve quality of life.</p>',
       categorySlug: 'neurological',
-      charityIds: [1],
-      hospitalIds: [1, 2],
+      charityIds: [],
+      hospitalIds: [],
       tagSlugs: ['neuromuscular', 'genetic-counseling'],
     },
     {
@@ -165,8 +188,8 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       prognosis:
         '<p>Regular prophylaxis can reduce joint damage and severe bleeding. Children need long-term monitoring.</p>',
       categorySlug: 'hematological',
-      charityIds: [2],
-      hospitalIds: [1, 3],
+      charityIds: [],
+      hospitalIds: [],
       tagSlugs: ['coagulation-care', 'genetic-counseling'],
     },
     {
@@ -180,7 +203,7 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
         'Kallmann syndrome often presents as delayed puberty or underdeveloped secondary sex characteristics with reduced or absent smell, and diagnosis usually requires endocrine evaluation.',
       plainName: 'Delayed puberty with reduced sense of smell',
       prevalence:
-        'Roughly 1 in 30,000 males; it is less common in females and may be underdiagnosed.',
+        'Estimated at about 1 in 30,000 males and 1 in 120,000 females; actual diagnosis rates may vary by care pathway.',
       quickLook: {
         whatItIs:
           'It is a form of hypogonadotropic hypogonadism where the body lacks the hormone signals needed to start puberty. Some people also have reduced or absent smell.',
@@ -198,11 +221,13 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
           'No clear signs of puberty by about age 14 in boys or 13 in girls.',
           'Markedly delayed puberty plus lifelong poor or absent sense of smell.',
           'Low sex hormones or infertility discovered in adulthood with a history of delayed puberty.',
+          'A history of micropenis or undescended testes, or persistently small testes after the expected age of puberty.',
         ],
         commonWrongTurns: [
           'Waiting for natural development without checking sex hormones and gonadotropins.',
           'Treating fertility only, without reviewing puberty history and smell.',
           'Treating low testosterone or menstrual issues as isolated problems without evaluating the hypothalamic-pituitary-gonadal axis.',
+          'Not connecting impaired smell with delayed puberty.',
         ],
         firstDepartments: [
           'Endocrinology',
@@ -218,6 +243,7 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
           'LH, FSH, testosterone or estradiol, and related pituitary hormones.',
           'Pituitary and hypothalamic imaging.',
           'Smell testing, bone age assessment, and targeted genetic testing.',
+          'Whether to screen for associated findings such as kidney development, hearing, cleft lip or palate, dental development, or mirror movements.',
         ],
         questionsForDoctor: [
           'Does this look more like constitutional delay or hypogonadotropic hypogonadism?',
@@ -227,16 +253,30 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       },
       medicalSections: {
         symptoms:
-          '<p>Common clues include delayed puberty, underdeveloped secondary sex characteristics, hypogonadism, infertility or fertility difficulty, and reduced or absent smell. Presentation varies, so a single symptom is not enough for diagnosis.</p>',
+          '<p>Common clues include delayed puberty, underdeveloped secondary sex characteristics, hypogonadism, infertility or fertility difficulty, and reduced or absent smell. Males may have sparse facial hair, no voice deepening, small testes, micropenis, or undescended testes. Females may have absent breast development or primary amenorrhea. Some people may also have unilateral kidney agenesis, cleft lip or palate, hearing loss, dental differences, or bimanual synkinesis. Presentation varies, so a single symptom is not enough for diagnosis.</p>',
         diagnosis:
-          '<p>Assessment may include sex hormone and gonadotropin testing, smell testing, pituitary/hypothalamic imaging, bone age, and targeted genetic testing. Clinicians also rule out constitutional delay, pituitary lesions, nutrition issues, and chronic disease.</p>',
+          '<p>Assessment may include puberty history, family history, physical examination, LH/FSH and testosterone or estradiol testing, smell testing, bone age, pituitary/hypothalamic and olfactory-bulb-related imaging, and chromosome or genetic testing when appropriate. Clinicians also rule out constitutional delay, pituitary lesions, nutrition issues, and chronic disease.</p>',
         treatment:
           '<p>Treatment centers on sex hormone replacement, puberty induction, and fertility therapy under long-term endocrinology care. Fertility treatment is usually different from simple hormone replacement.</p>',
         longTermCare:
-          '<p>Long-term care often tracks secondary sex characteristics, bone density, metabolic health, psychological stress, and fertility planning. Medication changes should be guided by a clinician.</p>',
+          '<p>Long-term care often tracks secondary sex characteristics, bone density, metabolic health, psychological stress, and fertility planning. People with absent smell should also plan around safety risks such as gas leaks, smoke, and spoiled food. Medication changes should be guided by a clinician.</p>',
         fertilityOrFamily:
           '<p>Some people can achieve fertility with gonadotropin-based treatment. If a genetic cause is suspected, family decisions should be made with genetic counseling rather than a single result alone.</p>',
+        emergencySigns:
+          '<p>If delayed puberty is accompanied by reduced smell, a history of micropenis or undescended testes, primary amenorrhea, infertility, or low sex hormones with low gonadotropins, specialist endocrine assessment should not be delayed. People already in treatment should seek follow-up for significant psychological distress, bone pain or fracture risk, severe fatigue, or unusual reactions during fertility treatment.</p>',
       },
+      sources: [
+        {
+          name: 'MedlinePlus Genetics: Kallmann syndrome',
+          type: 'official',
+          url: 'https://medlineplus.gov/genetics/condition/kallmann-syndrome/',
+        },
+        {
+          name: 'NCBI Bookshelf: Kallmann Syndrome',
+          type: 'review',
+          url: 'https://www.ncbi.nlm.nih.gov/books/NBK538210/',
+        },
+      ],
       symptoms:
         '<p>Typical signs include delayed puberty, hypogonadism, infertility or fertility difficulty, and reduced or absent sense of smell.</p>',
       diagnosis:
@@ -246,9 +286,14 @@ export const diseaseDraftsByLocale: LocalizedRecord<DiseaseDraft[]> = {
       prognosis:
         '<p>Most patients can develop secondary sex characteristics with structured treatment, and some can achieve fertility with gonadotropin therapy.</p>',
       categorySlug: 'genetic-developmental',
-      charityIds: [1],
-      hospitalIds: [1, 2],
+      charityIds: [],
+      hospitalIds: [],
       reviewStatus: 'draft',
+      featuredImage: {
+        id: 301,
+        name: 'kallmann-syndrome-journey.png',
+        url: '/images/diseases/kallmann-syndrome-journey.png',
+      },
       tagSlugs: ['endocrine', 'genetic-counseling'],
     },
   ],
