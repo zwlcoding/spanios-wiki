@@ -89,7 +89,7 @@ Example cron:
 ```bash
 cp scripts/hermes_cron_prompt.py ~/.hermes/scripts/hermes_cron_prompt.py
 
-hermes cron create "30 8-22/2 * * *" \
+hermes cron create "30 0-6 * * *" \
   --name "spanios-disease-draft-batch" \
   --workdir /Volumes/acasis/coding/spanios-wiki \
   --script hermes_cron_prompt.py \
@@ -99,8 +99,9 @@ hermes cron create "30 8-22/2 * * *" \
 Hermes cron scripts are resolved from `~/.hermes/scripts/`, not the project
 working directory. Keep the source copy in this repo, then copy it into
 `~/.hermes/scripts/` whenever it changes.
-The schedule above runs eight times per day, while the queue script emits one
-disease per run to keep each draft reviewable.
+The schedule above runs seven times overnight, while the queue script emits one
+disease per run. In the morning, inspect the generated draft folders, then run
+`pnpm run review` and ask Codex to audit and merge approved content.
 
 ## Reviewer Checklist
 
