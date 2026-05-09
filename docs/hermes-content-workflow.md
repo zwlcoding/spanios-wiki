@@ -56,14 +56,15 @@ Keep the final merge human-triggered. This prevents scheduled content from
 silently changing patient-facing pages.
 
 The reminder script is kept in `scripts/hermes_review_reminder.py`. It only
-counts pending draft files and prints the next manual commands. It should be
-copied to `~/.hermes/scripts/` and scheduled after the overnight content jobs,
-for example at 07:30 Asia/Shanghai:
+counts pending draft files and prints the next manual commands. Already
+published disease slugs are ignored when old local draft folders still say
+`pending-codex-review`. It should be copied to `~/.hermes/scripts/` and
+scheduled after the overnight content jobs, for example at 10:00 Asia/Shanghai:
 
 ```bash
 cp scripts/hermes_review_reminder.py ~/.hermes/scripts/hermes_review_reminder.py
 
-hermes cron create "30 7 * * *" \
+hermes cron create "0 10 * * *" \
   "Use the script output. Send the site owner a concise Chinese WeChat reminder. Do not review, merge, edit files, or run git." \
   --name "spanios-review-reminder" \
   --deliver weixin \

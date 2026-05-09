@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import json
+import re
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -14,11 +15,19 @@ DRAFTS_ROOT = SPANIOS_ROOT / "content-drafts"
 def main() -> None:
     now = datetime.now(TIMEZONE)
     today = now.date().isoformat()
-    content_drafts = collect_content_drafts()
+    published_slugs = collect_published_disease_slugs()
+    content_drafts = collect_content_drafts(published_slugs)
     translation_drafts = collect_translation_drafts()
 
     pending_content = [
-        item for item in content_drafts if item["status"] == "pending-codex-review"
+        item
+        for item in content_drafts
+        if item["status"] == "pending-codex-review" and not item["already_published"]
+    ]
+    stale_published_content = [
+        item
+        for item in content_drafts
+        if item["status"] == "pending-codex-review" and item["already_published"]
     ]
     today_content = [item for item in content_drafts if item["date"] == today]
     pending_translations = [
@@ -37,6 +46,7 @@ def main() -> None:
         "Facts:",
         f"- Today's Chinese content draft files: {len(today_content)}",
         f"- Pending Chinese content drafts: {len(pending_content)}",
+        f"- Ignored already-published pending-status drafts: {len(stale_published_content)}",
         f"- Pending translation drafts: {len(pending_translations)}",
         "",
     ]
@@ -74,7 +84,7 @@ def main() -> None:
             ]
         )
 
-    if not today_content and not pending_content and not pending_translations:
+    if not pending_content and not pending_translations:
         lines.extend(
             [
                 "Reminder wording:",
@@ -94,7 +104,7 @@ def main() -> None:
     print("\n".join(lines))
 
 
-def collect_content_drafts() -> list[dict]:
+def collect_content_drafts(published_slugs: set[str]) -> list[dict]:
     results = []
     for path in sorted(DRAFTS_ROOT.glob("*/20*/draft.*.json")):
         data = read_json(path)
@@ -103,12 +113,14 @@ def collect_content_drafts() -> list[dict]:
         locale = data.get("locale") or path.name.removeprefix("draft.").removesuffix(".json")
         if locale != "zh":
             continue
+        slug = data.get("slug") or path.parent.parent.name
         results.append(
             {
-                "slug": data.get("slug") or path.parent.parent.name,
+                "slug": slug,
                 "locale": locale,
                 "date": path.parent.name,
                 "status": data.get("review", {}).get("status", "unknown"),
+                "already_published": slug in published_slugs,
                 "path": path.relative_to(SPANIOS_ROOT).as_posix(),
             }
         )
@@ -144,6 +156,26 @@ def format_items(items: list[dict], limit: int = 12) -> list[str]:
     if remaining > 0:
         lines.append(f"- ...and {remaining} more.")
     return lines
+
+
+def collect_published_disease_slugs() -> set[str]:
+    path = SPANIOS_ROOT / "frontend/src/content/data/diseases.ts"
+    try:
+        source = path.read_text(encoding="utf-8")
+    except OSError:
+        return set()
+
+    markers = [match.start() for match in re.finditer(r"\.\.\.entity\(", source)]
+    slugs: set[str] = set()
+    for index, start in enumerate(markers):
+        end = markers[index + 1] if index + 1 < len(markers) else len(source)
+        block = source[start:end]
+        if "quickLook:" not in block:
+            continue
+        match = re.search(r"slug:\s*['\"]([^'\"]+)['\"]", block)
+        if match:
+            slugs.add(match.group(1))
+    return slugs
 
 
 def read_json(path: Path) -> dict:

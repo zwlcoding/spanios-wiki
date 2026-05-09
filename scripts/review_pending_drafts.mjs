@@ -8,10 +8,21 @@ const root = process.cwd();
 const draftsRoot = path.join(root, 'content-drafts');
 const summaryPath = path.join(draftsRoot, 'review-summary.md');
 const draftPaths = findDrafts(draftsRoot);
-const pendingDrafts = draftPaths.filter((draftPath) => {
+const detailedSlugs = readDetailedDiseaseSlugs();
+const pendingDrafts = [];
+const skippedPublishedDrafts = [];
+
+for (const draftPath of draftPaths) {
   const draft = readJson(draftPath);
-  return draft.review?.status === 'pending-codex-review';
-});
+  if (draft.review?.status !== 'pending-codex-review') {
+    continue;
+  }
+  if (detailedSlugs.has(draft.slug)) {
+    skippedPublishedDrafts.push(draftPath);
+    continue;
+  }
+  pendingDrafts.push(draftPath);
+}
 
 const lines = [
   '# Content Draft Review Summary',
@@ -19,6 +30,15 @@ const lines = [
   `Generated at: ${new Date().toISOString()}`,
   '',
 ];
+
+if (skippedPublishedDrafts.length > 0) {
+  lines.push(
+    `Skipped already-published pending-status drafts: ${skippedPublishedDrafts.length}`,
+    '',
+    ...skippedPublishedDrafts.map((draftPath) => `- ${path.relative(root, draftPath)}`),
+    '',
+  );
+}
 
 if (pendingDrafts.length === 0) {
   lines.push('No pending content drafts found.');
@@ -109,6 +129,33 @@ function findDrafts(dir) {
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+}
+
+function readDetailedDiseaseSlugs() {
+  const sourcePath = path.join(root, 'frontend/src/content/data/diseases.ts');
+  if (!fs.existsSync(sourcePath)) {
+    return new Set();
+  }
+
+  const source = fs.readFileSync(sourcePath, 'utf8');
+  const markers = [...source.matchAll(/\.\.\.entity\(/g)].map(
+    (match) => match.index ?? 0,
+  );
+  const slugs = new Set();
+
+  for (const [index, start] of markers.entries()) {
+    const end = markers[index + 1] ?? source.length;
+    const block = source.slice(start, end);
+    if (!/quickLook:/.test(block)) {
+      continue;
+    }
+    const slug = block.match(/slug:\s*['"]([^'"]+)['"]/)?.[1];
+    if (slug) {
+      slugs.add(slug);
+    }
+  }
+
+  return slugs;
 }
 
 function run(command, args) {
