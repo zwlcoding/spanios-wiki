@@ -223,7 +223,10 @@ function hasLowQualityCitation(draft) {
 
   return draft.sources.some((source) => {
     const host = getUrlHost(source.url);
-    return bannedCitationHostPatterns.some((pattern) => pattern.test(host));
+    return (
+      bannedCitationHostPatterns.some((pattern) => pattern.test(host)) ||
+      isGenericOfficialSource(source.url)
+    );
   });
 }
 
@@ -232,6 +235,21 @@ function getUrlHost(url) {
     return new URL(url).hostname.toLowerCase();
   } catch {
     return '';
+  }
+}
+
+function isGenericOfficialSource(url) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase();
+    const normalizedPath = parsed.pathname.replace(/\/+$/, '') || '/';
+
+    return (
+      host === 'www.nhc.gov.cn' &&
+      ['/', '/wjw', '/wjw/index.shtml'].includes(normalizedPath)
+    );
+  } catch {
+    return false;
   }
 }
 

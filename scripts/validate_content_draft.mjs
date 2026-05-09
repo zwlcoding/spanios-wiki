@@ -72,6 +72,11 @@ if (!Array.isArray(draft.sources) || draft.sources.length === 0) {
         `sources[${index}].url uses a low-quality citation host (${bannedHost[0]}). Keep it in sources.md as a lead, not draft sources.`,
       );
     }
+    if (isGenericOfficialSource(source.url)) {
+      errors.push(
+        `sources[${index}].url is a generic official page, not a disease-specific citation.`,
+      );
+    }
   });
 }
 
@@ -186,6 +191,21 @@ function getUrlHost(url) {
     return new URL(url).hostname.toLowerCase();
   } catch {
     return '';
+  }
+}
+
+function isGenericOfficialSource(url) {
+  try {
+    const parsed = new URL(url);
+    const host = parsed.hostname.toLowerCase();
+    const normalizedPath = parsed.pathname.replace(/\/+$/, '') || '/';
+
+    return (
+      host === 'www.nhc.gov.cn' &&
+      ['/', '/wjw', '/wjw/index.shtml'].includes(normalizedPath)
+    );
+  } catch {
+    return false;
   }
 }
 
