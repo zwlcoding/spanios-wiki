@@ -5,6 +5,8 @@ Hermes is the content producer. Codex is the reviewer and integrator.
 ## Boundaries
 
 - Hermes writes only to `content-drafts/`.
+- Hermes must not create helper scripts, validators, temp files, or notes
+  outside `content-drafts/`.
 - Hermes does not modify `frontend/src/content`, routes, styles, or git state.
 - Hermes does not commit, push, or open pull requests for content updates.
 - Generated images stay in draft folders until reviewed.
@@ -115,6 +117,9 @@ Hard rules:
 - Do not invent hospitals,公益组织, contacts, services, or disease-resource links.
 - Prefer official, guideline, academic, hospital, or recognized rare disease sources.
 - Low-quality SEO/marketing pages may be used only as search leads, not as sources.
+- Run `node scripts/validate_content_draft.mjs <draft.zh.json>` before
+  finishing. If validation fails, fix the draft instead of writing custom
+  validator scripts.
 - Generated images must include 2-3 disease-specific, non-diagnostic visual
   anchors. Avoid generic clinic-only illustrations when the disease has clearer
   patient-journey cues.

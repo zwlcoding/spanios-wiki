@@ -33,6 +33,9 @@ Also create a resource relationship file when reliable evidence exists:
 
 - `content-drafts/<slug>/<yyyy-mm-dd>/resource-links.json`
 
+Do not create helper scripts, validators, temp files, or notes outside
+`content-drafts/`.
+
 The JSON must match `docs/content-draft.schema.json`, and
 `review.status` must be `pending-codex-review`.
 `resource-links.json` must match `docs/resource-draft.schema.json`.
@@ -91,6 +94,15 @@ citations. They can only provide search leads or vocabulary hints. If a draft
 mentions these sources, mark them clearly as non-citation leads in `sources.md`
 and never include them in `draft.zh.json.sources`. If no stronger source can
 support the article, create only `change-summary.md` explaining the source gap.
+
+Before finishing each disease, run:
+
+```bash
+node scripts/validate_content_draft.mjs content-drafts/<slug>/<yyyy-mm-dd>/draft.zh.json
+```
+
+If validation fails, fix the draft sources or wording. Do not write custom
+validator scripts.
 
 ## Image Rules
 
