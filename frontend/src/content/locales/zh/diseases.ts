@@ -3731,4 +3731,451 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     reviewStatus: 'draft',
     tagSlugs: [],
   },
+  {
+    ...entity(35, 'disease-gitelman-syndrome'),
+    name: 'Gitelman 综合征',
+    nameEn: 'Gitelman Syndrome',
+    alias: '吉特曼综合征、家族性低钾低镁血症、GS',
+    slug: 'gitelman-syndrome',
+    oneSentence:
+      'Gitelman 综合征是一种遗传性肾小管盐丢失病，常表现为低钾、低镁、代谢性碱中毒、低尿钙和乏力或肌肉痉挛。',
+    plainName: '肾脏留不住部分盐和电解质导致低钾低镁的遗传病',
+    prevalence:
+      'MedlinePlus Genetics 估计全球约每 40,000 人 1 例；症状差异很大，许多人在青少年或成年后因低钾被发现。',
+    quickLook: {
+      whatItIs:
+        '肾小管负责回收钠、氯、钾、镁等电解质。Gitelman 综合征多与 SLC12A3 基因有关，会造成长期电解质失衡，症状可能轻微也可能明显影响生活。',
+      whoToSeeFirst:
+        '反复低钾、低镁、肌肉抽筋、乏力、心悸、手足麻木或低血压线索时，可到肾内科、儿科肾脏科或内分泌/电解质门诊评估。',
+      isGenetic:
+        '通常为常染色体隐性遗传，多与 SLC12A3 双等位致病变异有关，少数表型相近病例与其他盐丢失肾小管病重叠。',
+      hasTreatment:
+        '有长期电解质管理和随访方案。补钾、补镁或其他药物是否适合，需要医生根据化验、症状、心电图和肾功能判断。',
+      commonDelayReason:
+        '乏力、抽筋、头晕、心悸很容易被当作劳累、焦虑或缺钙；若只补一次钾而不追查尿钾、血镁和酸碱状态，容易反复。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '反复低钾，尤其伴低镁、代谢性碱中毒和尿钙偏低。',
+        '长期乏力、肌肉痉挛、手足麻木、抽搐样发作、心悸或运动耐量差。',
+        '血压偏低、盐 craving、夜尿或多尿，同时化验提示电解质异常。',
+        '低钾原因不明，否认长期利尿剂、泻药或反复呕吐。',
+        '家族中有低钾、低镁、类似肾小管病或近亲婚配史。',
+      ],
+      commonWrongTurns: [
+        '只按普通低钾补一次，未检查尿钾、尿氯、血镁、血气或肾素醛固酮。',
+        '把肌肉抽筋简单归因于缺钙，忽略低镁和低钾。',
+        '长期按焦虑、疲劳或心律失常处理，没有追查电解质根因。',
+        '未与 Bartter 综合征、利尿剂使用、呕吐、泻药或内分泌性低钾鉴别。',
+      ],
+      firstDepartments: [
+        '肾内科',
+        '儿科肾脏科',
+        '内分泌科/电解质门诊',
+        '心内科（心悸、心律风险评估时）',
+        '医学遗传科/遗传咨询门诊',
+      ],
+      diagnosisChecklist: [
+        '保存多次血钾、血镁、血氯、碳酸氢根/血气、肌酐和尿电解质结果。',
+        '记录发作时症状、诱因、补液或补电解质后变化。',
+        '向医生说明是否使用利尿剂、泻药、甘草制品，是否反复呕吐或腹泻。',
+        '询问是否需要 SLC12A3、CLCNKB 等基因检测。',
+        '带上心电图、心悸发作记录和家族低钾史。',
+      ],
+      testsToAskAbout: [
+        '血钾、血镁、血钙、血氯、碳酸氢根或血气分析。',
+        '尿钾、尿氯、尿钙和尿镁等肾性丢失评估。',
+        '肾素、醛固酮和血压评估。',
+        '心电图和必要时动态心电图。',
+        '盐丢失肾小管病相关基因检测。',
+      ],
+      questionsForDoctor: [
+        '我的低钾低镁是否符合 Gitelman 综合征？还需要排除哪些原因？',
+        '目标电解质范围和复查频率应如何设定？',
+        '我适合哪些补充或药物方案？胃肠不耐受时怎么办？',
+        '哪些症状提示心律风险或严重低钾，需要急诊？',
+        '家属和未来生育计划是否需要遗传咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Gitelman 综合征表现差异很大。常见线索包括乏力、肌肉痉挛、手足麻木或刺痛、头晕、低血压、盐 craving、心悸、运动耐量下降、夜尿或多尿。化验常提示低钾、低镁、代谢性碱中毒和低尿钙。少数患者可出现明显抽搐、低钾性麻痹或心律风险。</p>',
+      diagnosis:
+        '<p>诊断需要把血液电解质、酸碱状态、尿电解质、血压、肾素醛固酮和用药史放在一起判断。典型表现为肾性钾丢失、低镁、低尿钙和代谢性碱中毒。基因检测发现相关双等位致病变异可支持诊断，同时医生会排除 Bartter 综合征、利尿剂、呕吐、泻药和内分泌性低钾等原因。</p>',
+      treatment:
+        '<p>管理以长期补充和监测电解质、减少症状和心律风险为主。补钾、补镁、保钾相关药物或其他方案需要由医生根据化验、症状、血压、肾功能和耐受性调整，患者不应自行大剂量加药或停药。</p>',
+      longTermCare:
+        '<p>长期随访关注电解质稳定性、心电图变化、肾功能、血压、生活质量、妊娠计划和药物耐受性。患者可保存一份“低钾低镁病史摘要”，急诊或新增药物时主动告知医生。</p>',
+      fertilityOrFamily:
+        '<p>本病通常为常染色体隐性遗传。明确基因结果后，父母、兄弟姐妹和有生育计划的家庭可通过遗传咨询了解携带者检测、复发风险和产前/胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>严重乏力不能行走、呼吸费力、明显心悸或晕厥、抽搐、低钾快速下降、持续呕吐腹泻或无法口服补充时，应尽快急诊，并说明疑似或确诊 Gitelman 综合征。</p>',
+    },
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Gitelman syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/gitelman-syndrome/',
+      },
+      {
+        name: 'NCBI Bookshelf StatPearls: Gitelman Syndrome',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK459304/',
+      },
+      {
+        name: 'Orphanet Journal of Rare Diseases: Gitelman syndrome',
+        type: 'review',
+        url: 'https://ojrd.biomedcentral.com/articles/10.1186/1750-1172-3-22',
+      },
+    ],
+    symptoms:
+      '<p>常见线索包括低钾、低镁、乏力、肌肉痉挛、手足麻木、心悸、低血压和盐 craving。</p>',
+    diagnosis:
+      '<p>评估包括血尿电解质、酸碱状态、肾素醛固酮、用药史、心电图和相关基因检测。</p>',
+    treatment:
+      '<p>管理以电解质补充、症状控制、心律风险评估和长期肾内科随访为核心，具体方案需个体化。</p>',
+    prognosis:
+      '<p>多数患者经长期管理可稳定生活，但症状、心律风险、妊娠和药物耐受性仍需随访。</p>',
+    sourceName: 'MedlinePlus Genetics: Gitelman syndrome',
+    sourceUrl: 'https://medlineplus.gov/genetics/condition/gitelman-syndrome/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(36, 'disease-glutaric-acidemia-type-i'),
+    name: '戊二酸血症 I 型',
+    nameEn: 'Glutaric Acidemia Type I',
+    alias: 'GA-1、戊二酸尿症 I 型、GCDH 缺乏症、Glutaric aciduria type 1',
+    slug: 'glutaric-acidemia-type-i',
+    oneSentence:
+      '戊二酸血症 I 型是一种有机酸代谢病，未及时识别时可在婴幼儿感染或禁食后发生急性脑损伤和运动障碍。',
+    plainName: '某些氨基酸代谢异常，可能伤害基底节的遗传代谢病',
+    prevalence:
+      '总体罕见，不同地区和人群差异较大；许多地区可通过新生儿筛查发现线索。',
+    quickLook: {
+      whatItIs:
+        'GCDH 酶功能不足会影响赖氨酸、羟赖氨酸和色氨酸代谢，相关代谢物积累后可增加脑部，尤其是基底节损伤风险。',
+      whoToSeeFirst:
+        '新生儿筛查阳性、婴儿头围偏大、发育倒退、肌张力异常，或感染/禁食后突然运动异常时，应尽快到遗传代谢科、儿科神经或新生儿/儿科急诊。',
+      isGenetic: '是，通常为常染色体隐性遗传，与 GCDH 双等位致病变异有关。',
+      hasTreatment:
+        '有代谢专科管理方案，关键是早期识别、营养和代谢管理、感染或禁食时的应急方案，以及长期神经发育随访。',
+      commonDelayReason:
+        '早期可能只有大头围或轻微发育线索；急性发作常被当作普通感染、惊厥或脑炎，如果没有结合新生儿筛查和有机酸检查，容易错过窗口。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿筛查提示 C5DC 或相关有机酸代谢异常。',
+        '婴儿头围偏大或快速增长，尤其伴发育迟缓或肌张力异常。',
+        '感染、发热、呕吐、禁食或手术后出现嗜睡、喂养差、发育倒退或异常运动。',
+        '脑 MRI 提示基底节损伤、额颞部脑外间隙增宽或与 GA-1 相符的影像线索。',
+        '家族中有 GA-1、婴幼儿急性脑病、运动障碍或近亲婚配史。',
+      ],
+      commonWrongTurns: [
+        '筛查阳性后没有及时复查和转诊代谢专科。',
+        '把大头围只当作家族性头大，没有结合代谢病和 MRI 线索。',
+        '急性发作时只按感染或脑炎处理，没有启动代谢危象评估。',
+        '确诊后缺少书面生病/禁食应急方案，反复在感染时出现风险。',
+      ],
+      firstDepartments: [
+        '遗传代谢科/医学遗传科',
+        '新生儿科/儿科急诊',
+        '儿科神经内科',
+        '营养科（在代谢专科指导下）',
+        '康复医学科（运动障碍或发育问题时）',
+      ],
+      diagnosisChecklist: [
+        '保存新生儿筛查、复查通知、血酰基肉碱、尿有机酸和基因报告。',
+        '记录头围、发育里程碑、感染/禁食事件和是否出现运动倒退。',
+        '询问是否需要 GCDH 基因检测或酶活检测确认。',
+        '准备发热、呕吐、手术、不能进食时的书面急诊方案。',
+        '安排神经发育、运动障碍、营养和肾功能长期随访。',
+      ],
+      testsToAskAbout: [
+        '血酰基肉碱谱，尤其 C5DC。',
+        '尿有机酸或定量戊二酸、3-羟基戊二酸。',
+        'GCDH 基因检测，必要时酶活检测。',
+        '脑 MRI 和神经发育评估。',
+        '营养状态、氨基酸、肉碱和肾功能监测。',
+      ],
+      questionsForDoctor: [
+        '孩子的结果是否已经能确认 GA-1？还缺哪些确认检查？',
+        '日常饮食和营养随访应由谁负责？哪些情况不能在家观察？',
+        '发热、呕吐、疫苗后不适或手术禁食时，应急方案怎么执行？',
+        '是否已有脑部或运动系统受累？需要康复或神经科随访吗？',
+        '兄弟姐妹和未来生育需要哪些遗传咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>GA-1 可在新生儿筛查阶段发现，也可表现为头围偏大、喂养问题、肌张力异常、发育迟缓或运动障碍。未及时管理的婴幼儿可在感染、禁食或其他应激后发生急性脑病样发作，随后出现肌张力障碍、舞蹈样动作、运动倒退等复杂运动问题。</p>',
+      diagnosis:
+        '<p>诊断通常结合新生儿筛查、血酰基肉碱、尿有机酸或定量代谢物、脑 MRI 和 GCDH 基因检测。若分子结果不明确，专科可能考虑酶活检测。医生还会与其他有机酸血症、脑炎、线粒体病和其他运动障碍鉴别。</p>',
+      treatment:
+        '<p>管理需要遗传代谢团队参与，包括个体化营养方案、肉碱和相关代谢管理、感染或禁食时的应急处理、发育和运动障碍随访。具体饮食、补充和急诊处理必须按专科书面方案执行。</p>',
+      longTermCare:
+        '<p>长期照护重点是避免分解代谢状态、监测生长营养、发育和运动功能、肾功能，以及让家庭、学校和急诊医生都能看到清楚的应急说明。已出现运动障碍者需要康复、神经科和营养团队长期配合。</p>',
+      fertilityOrFamily:
+        '<p>GA-1 为常染色体隐性遗传。明确 GCDH 变异后，父母、兄弟姐妹和有生育计划的亲属可通过遗传咨询了解携带者检测、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>发热感染、反复呕吐、不能进食、嗜睡、肌张力突然改变、抽搐、发育倒退或异常运动，应尽快就医并说明 GA-1 或疑似有机酸代谢病风险，避免长时间禁食。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Glutaric Acidemia Type 1',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK546575/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Glutaric acidemia type I',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/glutaric-acidemia-type-i/',
+      },
+    ],
+    symptoms:
+      '<p>可表现为筛查异常、大头围、发育迟缓、感染或禁食后急性脑病样发作、运动倒退和肌张力障碍。</p>',
+    diagnosis:
+      '<p>评估包括血酰基肉碱、尿有机酸或定量代谢物、GCDH 基因检测、必要时酶活检测和脑 MRI。</p>',
+    treatment:
+      '<p>管理依赖遗传代谢专科，包括营养和代谢管理、应急方案、发育/运动随访和家庭教育。</p>',
+    prognosis:
+      '<p>早期筛查和规范管理可显著降低急性脑损伤风险；已有神经受累者需要长期康复和随访。</p>',
+    sourceName: 'GeneReviews: Glutaric Acidemia Type 1',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK546575/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(37, 'disease-glycogen-storage-disease-type-i-ii'),
+    name: '糖原累积病（I 型、II 型）',
+    nameEn: 'Glycogen Storage Disease (Type I, II)',
+    alias: '糖原贮积病 I 型、GSD I、Pompe disease、庞贝病、GSD II',
+    slug: 'glycogen-storage-disease-type-i-ii',
+    oneSentence:
+      '糖原累积病 I 型和 II 型都是遗传性糖原代谢病，但 I 型主要影响血糖和肝肾代谢，II 型（庞贝病）主要影响心肌、骨骼肌和呼吸肌。',
+    plainName: '身体处理糖原出问题的一组遗传代谢病，I 型和 II 型就医路径不同',
+    prevalence:
+      '均属于罕见病。不同国家和筛查体系下发病率估计差异较大，部分地区已纳入新生儿筛查或高危筛查。',
+    quickLook: {
+      whatItIs:
+        '目录把 I 型和 II 型放在同一项，但它们是两类机制不同的病。GSD I 影响维持血糖的代谢通路；GSD II 也叫庞贝病，是溶酶体内酸性 α-葡萄糖苷酶缺乏导致糖原在肌肉等组织堆积。',
+      whoToSeeFirst:
+        '反复低血糖、肝大、乳酸/尿酸/甘油三酯异常时看遗传代谢科、儿科内分泌或儿童消化肝病；婴儿心肌肥厚、肌无力、喂养差或成人近端肌无力、呼吸无力时看遗传代谢科、神经肌肉专科或儿科心脏/呼吸科。',
+      isGenetic:
+        '是，I 型和 II 型通常均为常染色体隐性遗传，但涉及基因和检测路径不同。',
+      hasTreatment:
+        '有专科管理方案。GSD I 重点是避免低血糖和代谢失衡；庞贝病可评估酶替代治疗、呼吸和肌力管理。具体方案必须由专科制定。',
+      commonDelayReason:
+        'GSD I 可能被当作普通低血糖、肝病或营养问题；庞贝病可能被当作肌病、心肌病、发育迟缓或呼吸问题，若不做酶活和基因检测容易延误。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '婴幼儿禁食后低血糖、惊厥、肝大、腹部膨隆、生长迟缓或乳酸/尿酸/血脂异常，提示 GSD I 方向。',
+        'GSD Ib 还可有反复感染、口腔或肠道溃疡、中性粒细胞减少等线索。',
+        '婴儿肌张力低、喂养差、心肌肥厚、心大、呼吸困难或运动发育落后，提示婴儿型庞贝病方向。',
+        '儿童或成人近端肌无力、上楼起立困难、疲劳、夜间通气不足或不明原因呼吸功能下降，提示迟发型庞贝病方向。',
+        '新生儿筛查、酶活或家族基因结果提示糖原累积病风险。',
+      ],
+      commonWrongTurns: [
+        '把 GSD I 的低血糖当作普通喂养间隔太长，没有同时看肝大和乳酸/尿酸/血脂。',
+        '只按脂肪肝或肝大处理，没有追查糖原代谢病。',
+        '把庞贝病婴儿的心肌肥厚和肌无力分散到心内、呼吸、康复就诊，没有统一到代谢肌病诊断。',
+        '成人迟发型庞贝病长期按普通腰腿无力、肌炎或运动不足处理，未评估呼吸肌。',
+      ],
+      firstDepartments: [
+        '遗传代谢科/医学遗传科',
+        '儿科内分泌科或儿童消化肝病科（GSD I 方向）',
+        '神经内科神经肌肉专科（庞贝病方向）',
+        '儿科心脏科/心血管内科（心肌受累时）',
+        '呼吸科和康复医学科',
+      ],
+      diagnosisChecklist: [
+        '先请医生判断更像 GSD I、庞贝病，还是其他糖原累积病。',
+        '保存低血糖发作时的血糖、乳酸、酮体、尿酸、血脂、肝功能和影像资料。',
+        '疑似 GSD I 时询问 G6PC、SLC37A4 等基因检测。',
+        '疑似庞贝病时询问 GAA 酶活、GAA 基因、CK、心脏和呼吸肌评估。',
+        '准备禁食、感染、手术、麻醉或呼吸困难时的专科应急说明。',
+      ],
+      testsToAskAbout: [
+        '低血糖相关代谢检查、乳酸、尿酸、甘油三酯、肝肾功能。',
+        '腹部超声或肝肾影像，必要时肝腺瘤监测。',
+        'GSD I 相关基因检测。',
+        'GAA 酶活、GAA 基因检测、CK、尿 Hex4 等庞贝病相关评估。',
+        '心电图、心脏超声、肺功能和睡眠呼吸评估。',
+      ],
+      questionsForDoctor: [
+        '目前更符合 I 型、II 型，还是其他糖原累积病？依据是什么？',
+        '家里需要怎样避免禁食或低血糖？生病时方案如何执行？',
+        '如果是庞贝病，心脏、呼吸肌和运动功能现在受累到什么程度？',
+        '是否需要特异性治疗评估？治疗目标和监测指标是什么？',
+        '家属筛查和再次生育风险需要怎样安排？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>GSD I 常见线索包括婴幼儿禁食不耐受、低血糖、肝大、腹部膨隆、生长迟缓、乳酸酸中毒、尿酸和血脂异常；GSD Ib 还可有中性粒细胞减少和反复感染。GSD II（庞贝病）婴儿型可有肌张力低、喂养困难、心肌肥厚、呼吸困难和运动发育落后；迟发型多表现为近端肌无力、疲劳和呼吸肌受累。</p>',
+      diagnosis:
+        '<p>诊断首先要明确是哪一型。GSD I 评估重点包括低血糖代谢谱、肝肾受累和 G6PC/SLC37A4 等基因检测。庞贝病评估重点包括 GAA 酶活、GAA 基因检测、肌酶、心脏和呼吸评估。医生还会鉴别其他糖原累积病、脂肪酸氧化障碍、线粒体病、肌营养不良和内分泌性低血糖。</p>',
+      treatment:
+        '<p>GSD I 管理以避免低血糖和代谢失衡、营养方案、肝肾和感染风险随访为核心。庞贝病管理包括酶替代治疗评估、心肺功能、运动和康复支持、呼吸管理和并发症监测。两类疾病都需要专科团队制定书面日常和应急方案。</p>',
+      longTermCare:
+        '<p>长期照护需要保存诊断、基因、酶活、营养方案、心肺评估和影像随访。GSD I 关注低血糖预防、肝肾并发症和代谢指标；庞贝病关注心脏、呼吸肌、运动功能、睡眠呼吸和治疗反应。</p>',
+      fertilityOrFamily:
+        '<p>GSD I 和庞贝病通常均为常染色体隐性遗传。明确致病变异后，父母、兄弟姐妹和有生育计划的亲属可通过遗传咨询了解携带者检测、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>GSD I 患者出现不能进食、反复呕吐、低血糖、嗜睡、抽搐或感染时应急诊。庞贝病患者出现呼吸困难、喂养明显变差、心衰线索、夜间低通气或感染后呼吸加重时应尽快就医，并说明具体糖原累积病类型。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Glycogen Storage Disease Type I',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1312/',
+      },
+      {
+        name: 'GeneReviews: Pompe Disease',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1261/',
+      },
+      {
+        name: 'NCBI Bookshelf StatPearls: Glycogen Storage Disease Type II',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK470558/',
+      },
+    ],
+    symptoms:
+      '<p>I 型主要表现为低血糖、肝大、乳酸/尿酸/血脂异常；II 型庞贝病主要表现为肌无力、心肌或呼吸肌受累。</p>',
+    diagnosis:
+      '<p>评估需先区分类型：I 型看代谢指标和 GSD I 相关基因；II 型看 GAA 酶活、GAA 基因、心肺和肌肉评估。</p>',
+    treatment:
+      '<p>管理包括代谢营养方案、应急计划、心肺和肌肉随访，以及庞贝病特异性治疗评估。</p>',
+    prognosis:
+      '<p>预后取决于具体类型、起病年龄、筛查和治疗时机、心肺或肝肾并发症及长期随访质量。</p>',
+    sourceName: 'GeneReviews: Glycogen Storage Disease Type I',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1312/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling', 'neuromuscular'],
+  },
+  {
+    ...entity(38, 'disease-hemophilia'),
+    name: '血友病',
+    nameEn: 'Hemophilia',
+    alias: 'Hemophilia A、Hemophilia B、凝血因子 VIII 缺乏、凝血因子 IX 缺乏',
+    slug: 'hemophilia',
+    oneSentence:
+      '血友病是一类遗传性凝血因子缺乏导致的出血性疾病，常见 A 型和 B 型，可出现关节、肌肉、手术或外伤后持续出血。',
+    plainName: '血液不容易正常凝住，容易反复出血的遗传病',
+    prevalence:
+      '血友病 A 较血友病 B 常见，严重程度与凝血因子活性水平有关；女性携带者也可能有出血表现。',
+    quickLook: {
+      whatItIs:
+        '血友病 A 与凝血因子 VIII 缺乏有关，血友病 B 与凝血因子 IX 缺乏有关。凝血因子不足会让出血持续更久，严重者可发生自发性关节或肌肉出血。',
+      whoToSeeFirst:
+        '反复关节肿痛、肌肉血肿、拔牙/手术/外伤后出血不止、婴幼儿不明原因瘀斑或家族史阳性时，应到血液科、儿童血液科或血友病诊疗中心评估。',
+      isGenetic:
+        '通常为 X 连锁遗传，与 F8 或 F9 基因有关。男性更常发病，女性携带者也可能因因子水平偏低或其他机制出现症状。',
+      hasTreatment:
+        '有急性止血、预防治疗、非因子治疗、康复和部分成人基因治疗评估等路径。具体治疗需由血液科根据类型、严重程度、抑制物和可及性制定。',
+      commonDelayReason:
+        '轻中型患者可能只在拔牙、手术或外伤后出血才被发现；女性携带者的月经过多、产后出血或术后出血也容易被低估。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '男孩反复大块瘀斑、关节肿痛、肌肉血肿或轻微外伤后出血时间长。',
+        '拔牙、割包皮、手术、分娩或外伤后出血反复或延迟出现。',
+        '婴幼儿头部碰撞后肿块异常大，或出现不明原因颅内出血。',
+        '女性有血友病家族史，同时月经过多、术后出血或产后出血。',
+        '化验提示 aPTT 延长、血小板计数和 PT 相对正常。',
+      ],
+      commonWrongTurns: [
+        '只按外伤或儿童好动解释瘀斑，没有追问家族史和凝血检查。',
+        '关节出血被当作扭伤、关节炎或感染，延误止血和关节保护。',
+        '轻型患者术前没有说明既往出血史，术后才被发现。',
+        '女性携带者被认为“不会发病”，没有检测凝血因子水平。',
+        '自行使用可能增加出血风险的药物，或在没有专科方案时进行侵入操作。',
+      ],
+      firstDepartments: [
+        '血液科/儿童血液科',
+        '血友病诊疗中心或凝血专病门诊',
+        '急诊科（头部外伤、深部出血或严重出血时）',
+        '康复医学科/骨科（关节保护和血友病性关节病）',
+        '遗传咨询门诊',
+      ],
+      diagnosisChecklist: [
+        '保存出血事件、家族史、手术/拔牙/外伤后出血记录和既往用药。',
+        '检查 PT、aPTT、血小板计数、纤维蛋白原、凝血因子 VIII/IX 活性。',
+        '询问是否需要 von Willebrand 病等鉴别检查。',
+        '确诊后评估抑制物、关节状态、疫苗和输血/感染相关记录。',
+        '有家族计划时准备 F8/F9 基因检测和遗传咨询。',
+      ],
+      testsToAskAbout: [
+        '凝血因子 VIII 和 IX 活性。',
+        'aPTT、PT、血小板计数和 von Willebrand 因子相关检查。',
+        'F8 或 F9 基因检测。',
+        '抑制物检测。',
+        '关节超声或 MRI、肝炎/感染相关筛查和治疗安全监测。',
+      ],
+      questionsForDoctor: [
+        '我是 A 型还是 B 型？严重程度属于轻型、中型还是重型？',
+        '我需要预防治疗还是按需治疗？家里应怎样识别关节或肌肉出血？',
+        '是否有抑制物？这会如何影响治疗选择？',
+        '拔牙、手术、运动、旅行和急诊时需要准备什么书面方案？',
+        '女性家属和未来生育计划需要哪些检测和咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>血友病可表现为外伤、拔牙或手术后出血时间延长，反复鼻出血、口腔出血、深部肌肉血肿、关节出血、尿血或消化道出血。重型患者可出现自发性关节或肌肉出血，反复关节出血会造成疼痛、活动受限和血友病性关节病。轻型患者可能到成人手术或拔牙后才确诊。</p>',
+      diagnosis:
+        '<p>诊断依赖凝血因子 VIII 或 IX 活性检测，并结合 aPTT、PT、血小板计数、von Willebrand 因子相关检查和家族史。F8 或 F9 基因检测可用于确认类型、家系筛查和生育咨询。确诊后还需要评估抑制物，因为它会影响止血方案。</p>',
+      treatment:
+        '<p>管理包括急性出血处理、预防治疗、非因子治疗、围手术期计划、康复和关节保护。部分成人可能适合基因治疗评估，但并非所有患者都适用。具体治疗选择需要血液科结合类型、因子水平、出血频率、抑制物、年龄和可及性制定。</p>',
+      longTermCare:
+        '<p>长期照护重点是减少关节和肌肉出血、保护关节功能、管理疼痛和运动、监测抑制物、评估治疗安全性，并准备急诊说明卡。患者进行手术、拔牙、侵入检查或开始新药前，应提前联系血液科制定止血计划。</p>',
+      fertilityOrFamily:
+        '<p>血友病 A 和 B 通常为 X 连锁遗传。女性携带者可能有低因子水平和出血风险。明确家族 F8/F9 变异后，亲属可通过遗传咨询了解携带者检测、产前诊断、胚胎植入前遗传学检测和分娩止血计划。</p>',
+      emergencySigns:
+        '<p>头部外伤、头痛呕吐或意识改变，颈部/咽喉出血或呼吸困难，腹痛或腰背痛伴疑似内出血，关节或肌肉迅速肿痛，外伤或手术后出血不止，应立即急诊并说明血友病类型和治疗方案。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Hemophilia A',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1404/',
+      },
+      {
+        name: 'GeneReviews: Hemophilia B',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1495/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Hemophilia',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/hemophilia/',
+      },
+    ],
+    symptoms:
+      '<p>可表现为关节或肌肉出血、外伤/拔牙/手术后出血时间长、反复瘀斑、鼻出血、尿血或深部出血。</p>',
+    diagnosis:
+      '<p>评估包括凝血因子 VIII/IX 活性、aPTT/PT、von Willebrand 因子相关检查、抑制物检测和 F8/F9 基因检测。</p>',
+    treatment:
+      '<p>管理包括急性止血、预防治疗、非因子治疗、围手术期计划、康复关节保护和遗传咨询。</p>',
+    prognosis:
+      '<p>规范预防和综合管理可显著降低关节损伤和严重出血风险；预后受严重程度、抑制物和治疗可及性影响。</p>',
+    sourceName: 'GeneReviews: Hemophilia A',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1404/',
+    categorySlug: 'hematological',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
 ];
