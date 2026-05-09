@@ -82,7 +82,7 @@ function renderQueue(entries) {
 
   lines.push(
     'Hard rules:',
-    '- Translate only from the existing reviewed Chinese content in frontend/src/content/data/diseases.ts.',
+    '- Translate only from the existing reviewed Chinese content in frontend/src/content/locales/zh/diseases.ts.',
     '- Do not add new medical facts, sources, medications, hospitals, charities, or resource relationships.',
     '- Preserve source URLs exactly; translate source names only when natural.',
     '- Keep China-specific care navigation clearly framed as China-specific.',
@@ -115,14 +115,16 @@ function readDetailedDiseaseSlugs(locale) {
 }
 
 function readLocaleBlocks(locale) {
-  const source = fs.readFileSync(
-    path.join(root, 'frontend/src/content/data/diseases.ts'),
-    'utf8',
+  const sourcePath = path.join(
+    root,
+    'frontend/src/content/locales',
+    locale,
+    'diseases.ts',
   );
-  const localeBody = extractLocaleArrayBody(source, locale);
-  if (!localeBody) {
+  if (!fs.existsSync(sourcePath)) {
     return [];
   }
+  const localeBody = fs.readFileSync(sourcePath, 'utf8');
 
   const markers = [...localeBody.matchAll(/\.\.\.entity\(/g)].map(
     (match) => match.index ?? 0,
@@ -136,40 +138,6 @@ function readLocaleBlocks(locale) {
 
   return blocks;
 }
-
-function extractLocaleArrayBody(source, locale) {
-  const marker = `${JSON.stringify(locale)}: [`;
-  const singleQuoteMarker = `${locale}: [`;
-  let start = source.indexOf(marker);
-  let offset = marker.length;
-
-  if (start === -1) {
-    start = source.indexOf(singleQuoteMarker);
-    offset = singleQuoteMarker.length;
-  }
-
-  if (start === -1) {
-    return '';
-  }
-
-  let depth = 1;
-  let index = start + offset;
-
-  for (; index < source.length; index += 1) {
-    const char = source[index];
-    if (char === '[') {
-      depth += 1;
-    } else if (char === ']') {
-      depth -= 1;
-      if (depth === 0) {
-        return source.slice(start + offset, index);
-      }
-    }
-  }
-
-  return '';
-}
-
 function readExistingTranslationDraftSlugs(target) {
   const draftsRoot = path.join(root, 'content-drafts');
   const slugs = new Set();

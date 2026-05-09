@@ -151,8 +151,10 @@ hermes cron create "30 0-6 * * *" \
 Hermes cron scripts are resolved from `~/.hermes/scripts/`, not the project
 working directory. Keep the source copy in this repo, then copy it into
 `~/.hermes/scripts/` whenever it changes.
-The schedule above runs seven times overnight, while the queue script emits one
-disease per run. In the morning, inspect the generated draft folders, then run
+The schedule above runs seven times overnight. The cron script emits a small
+batch per run so Hermes can collect sources and image candidates without
+silently touching production content. In the morning, inspect the generated
+draft folders, then run
 `pnpm run review` and ask Codex to audit and merge approved content.
 Draft folder dates use the local queue timezone, defaulting to
 `Asia/Shanghai`, so overnight runs land in the expected local calendar day.

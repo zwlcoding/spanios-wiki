@@ -46,7 +46,7 @@ The JSON must match `docs/translation-draft.schema.json`.
 
 ## Translation Rules
 
-- Translate field-by-field from `frontend/src/content/data/diseases.ts`.
+- Translate field-by-field from `frontend/src/content/locales/zh/diseases.ts`.
 - Preserve source URLs exactly.
 - Translate source names only when it improves readability.
 - Keep plain patient-friendly language in the target language.
@@ -72,7 +72,7 @@ content-drafts/<slug>/review-output/<locale>.translation-article.ts
 ```
 
 Codex then reviews the artifact and manually merges approved translated fields
-into `frontend/src/content/data/diseases.ts`.
+into the matching `frontend/src/content/locales/<locale>/diseases.ts`.
 
 ## Suggested Hermes Cron
 

@@ -159,7 +159,7 @@ def format_items(items: list[dict], limit: int = 12) -> list[str]:
 
 
 def collect_published_disease_slugs() -> set[str]:
-    path = SPANIOS_ROOT / "frontend/src/content/data/diseases.ts"
+    path = SPANIOS_ROOT / "frontend/src/content/locales/zh/diseases.ts"
     try:
         source = path.read_text(encoding="utf-8")
     except OSError:

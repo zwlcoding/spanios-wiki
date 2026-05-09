@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
 
 import subprocess
+import os
 from pathlib import Path
 
 
 SPANIOS_ROOT = Path('/Volumes/acasis/coding/spanios-wiki')
+DEFAULT_BATCH_LIMIT = "6"
 
 
 def main() -> None:
@@ -13,7 +15,7 @@ def main() -> None:
             "node",
             "scripts/hermes_content_queue.mjs",
             "--limit",
-            "1",
+            os.environ.get("HERMES_CONTENT_BATCH_LIMIT", DEFAULT_BATCH_LIMIT),
             "--locale",
             "zh",
         ],

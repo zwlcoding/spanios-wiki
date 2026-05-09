@@ -21,7 +21,7 @@ const outputPath = path.join(
 );
 const article = draft.article ?? {};
 const source = `// Generated from ${path.relative(process.cwd(), resolvedPath)}
-// Review this file, then manually merge the translated fields into frontend/src/content/data/diseases.ts.
+// Review this file, then manually merge the translated fields into frontend/src/content/locales/${draft.targetLocale}/diseases.ts.
 // Translation drafts must not add medical facts, sources, images, hospitals, charities, or resource relationships.
 
 export const ${toIdentifier(draft.slug)}${localeSuffix(draft.targetLocale)}Translation = ${stableStringify(

@@ -132,7 +132,7 @@ function readJson(filePath) {
 }
 
 function readDetailedDiseaseSlugs() {
-  const sourcePath = path.join(root, 'frontend/src/content/data/diseases.ts');
+  const sourcePath = path.join(root, 'frontend/src/content/locales/zh/diseases.ts');
   if (!fs.existsSync(sourcePath)) {
     return new Set();
   }

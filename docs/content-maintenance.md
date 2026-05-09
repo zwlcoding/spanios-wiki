@@ -24,8 +24,15 @@ Spanios.wiki is a public-interest rare disease knowledge project. Content should
 - `frontend/src/content/data/catalogs/catalogClassification.ts`
   Assigns catalog entries into medical categories. Explicit slug overrides come first; keyword rules are only a fallback for new catalog entries.
 
-- `frontend/src/content/data/diseases.ts`
-  Stores detailed disease articles. These entries override generated catalog placeholders by slug and can attach hospitals, charities, tags, ICD codes, and richer patient-facing content.
+- `frontend/src/content/locales/zh/diseases.ts`
+- `frontend/src/content/locales/en/diseases.ts`
+  Store detailed disease articles. These entries override generated catalog placeholders by slug and can attach hospitals, charities, tags, ICD codes, and richer patient-facing content.
+
+- `frontend/src/content/locales/<locale>/hospitals.ts`
+  Stores localized hospital display fields and service-level disease relationships. Relationships should stay neutral and evidence-backed at department, clinic, MDT, or service level.
+
+- `frontend/src/content/locales/<locale>/charities.ts`
+  Stores localized charity and patient-organization entries when there is direct evidence for disease-resource relationships.
 
 - `frontend/src/content/wikiData.ts`
   Assembles localized categories, detailed disease articles, generated catalog placeholders, hospitals, charities, tags, and source references. It resolves locale fallbacks so a new language can reuse the base Chinese content until a translation is available.

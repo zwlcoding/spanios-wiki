@@ -151,11 +151,10 @@ if (warnings.length > 0) {
 
 function findSourceRecord(slug) {
   const source = fs.readFileSync(
-    path.resolve('frontend/src/content/data/diseases.ts'),
+    path.resolve('frontend/src/content/locales/zh/diseases.ts'),
     'utf8',
   );
-  const localeBody = extractLocaleArrayBody(source, 'zh');
-  const blocks = splitEntityBlocks(localeBody);
+  const blocks = splitEntityBlocks(source);
   const block = blocks.find((item) =>
     new RegExp(`slug:\\s*['"]${escapeRegExp(slug)}['"]`).test(item),
   );
@@ -171,31 +170,6 @@ function findSourceRecord(slug) {
   return {
     sources: sourceUrls.map((url) => ({ url })),
   };
-}
-
-function extractLocaleArrayBody(source, locale) {
-  const marker = `${locale}: [`;
-  const start = source.indexOf(marker);
-  if (start === -1) {
-    return '';
-  }
-
-  let depth = 1;
-  let index = start + marker.length;
-
-  for (; index < source.length; index += 1) {
-    const char = source[index];
-    if (char === '[') {
-      depth += 1;
-    } else if (char === ']') {
-      depth -= 1;
-      if (depth === 0) {
-        return source.slice(start + marker.length, index);
-      }
-    }
-  }
-
-  return '';
 }
 
 function splitEntityBlocks(localeBody) {

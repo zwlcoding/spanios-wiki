@@ -18,7 +18,7 @@ fs.mkdirSync(outputDir, { recursive: true });
 const outputPath = path.join(outputDir, `${draft.locale}.disease-article.ts`);
 const article = draft.article ?? {};
 const source = `// Generated from ${path.relative(process.cwd(), resolvedPath)}
-// Review this file, then manually merge the fields into frontend/src/content/data/diseases.ts.
+// Review this file, then manually merge the fields into frontend/src/content/locales/${draft.locale}/diseases.ts.
 
 export const ${toIdentifier(draft.slug)}${localeSuffix(draft.locale)} = ${stableStringify(
   {

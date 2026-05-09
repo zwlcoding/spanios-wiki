@@ -124,7 +124,7 @@ function readCatalog(relativePath, catalog) {
 
 function readDetailedDiseaseSlugs() {
   const source = fs.readFileSync(
-    path.join(root, 'frontend/src/content/data/diseases.ts'),
+    path.join(root, 'frontend/src/content/locales/zh/diseases.ts'),
     'utf8',
   );
   const markers = [...source.matchAll(/\.\.\.entity\(/g)].map(
