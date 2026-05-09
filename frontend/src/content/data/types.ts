@@ -3,12 +3,13 @@ import type {
   Department,
   Disease,
   Hospital,
+  HospitalService,
 } from '@/types/content';
 import type { DiseaseCategorySlug } from './taxonomy';
 
 export type DiseaseDraft = Omit<
   Disease,
-  'category' | 'charityOrgs' | 'hospitals' | 'tags'
+  'category' | 'charityOrgs' | 'hospitalServices' | 'hospitals' | 'tags'
 > & {
   categorySlug: DiseaseCategorySlug;
   charityIds: number[];
@@ -16,10 +17,17 @@ export type DiseaseDraft = Omit<
   tagSlugs: string[];
 };
 
-export type HospitalDraft = Omit<Hospital, 'departments' | 'diseases'> & {
+export type HospitalDraft = Omit<
+  Hospital,
+  'departments' | 'diseases' | 'services'
+> & {
   departments?: Array<Omit<Department, 'hospital'>>;
-  diseaseSlugs: string[];
 };
+
+export type HospitalServiceDraft = Omit<
+  HospitalService,
+  'diseases' | 'hospital'
+>;
 
 export type CharityDraft = Omit<CharityOrganization, 'diseases'> & {
   diseaseSlugs: string[];

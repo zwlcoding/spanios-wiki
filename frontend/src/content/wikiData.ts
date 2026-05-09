@@ -5,7 +5,10 @@ import {
 } from '@/content/data/catalogs';
 import { charityDraftsByLocale } from '@/content/data/charities';
 import { diseaseDraftsByLocale } from '@/content/data/diseases';
-import { hospitalDraftsByLocale } from '@/content/data/hospitals';
+import {
+  hospitalDraftsByLocale,
+  hospitalServiceDraftsByLocale,
+} from '@/content/data/hospitals';
 import { siteSettingsByLocale } from '@/content/data/settings';
 import { tagsByLocale } from '@/content/data/tags';
 import type {
@@ -13,6 +16,7 @@ import type {
   ContentResponse,
   ContentSource,
   Disease,
+  HospitalService,
   Hospital,
   LocalizedRecord,
   Locale,
@@ -91,17 +95,39 @@ export function getWikiContent(locale: string): WikiContent {
     normalizedLocale,
   );
   const hospitals = hospitalDrafts.map((draft) => {
-    const { departments, diseaseSlugs, ...hospital } = draft;
+    const { departments, ...hospital } = draft;
 
     return {
       ...hospital,
       departments,
-      diseases: diseaseSlugs
-        .map((slug) => diseases.find((disease) => disease.slug === slug))
-        .filter(Boolean),
-      _diseaseSlugs: diseaseSlugs,
+      diseases: [],
+      services: [],
     };
   });
+
+  const hospitalServiceDrafts = resolveLocalized(
+    hospitalServiceDraftsByLocale,
+    normalizedLocale,
+  );
+  const hospitalServices = hospitalServiceDrafts.map((service) => ({
+    ...service,
+    diseases: service.diseaseSlugs
+      .map((slug) => diseases.find((disease) => disease.slug === slug))
+      .filter(Boolean),
+    hospital: compactHospital(
+      hospitals.find((hospital) => hospital.id === service.hospitalId),
+    ),
+  }));
+
+  for (const hospital of hospitals) {
+    const services = hospitalServices.filter(
+      (service) => service.hospitalId === hospital.id,
+    );
+    hospital.services = services;
+    hospital.diseases = uniqueById(
+      services.flatMap((service) => service.diseases ?? []),
+    );
+  }
 
   const charityDrafts = resolveLocalized(
     charityDraftsByLocale,
@@ -120,22 +146,24 @@ export function getWikiContent(locale: string): WikiContent {
 
   const enrichedDiseases = diseases.map((disease) => {
     const { _charityIds, _hospitalIds, ...publicDisease } = disease;
+    const diseaseHospitalServices = hospitalServices.filter((service) =>
+      service.diseaseSlugs.includes(disease.slug),
+    );
+    const serviceHospitals = diseaseHospitalServices
+      .map((service) => service.hospital)
+      .filter(Boolean);
+    const directHospitals = _hospitalIds
+      .map((id) => hospitals.find((hospital) => hospital.id === id))
+      .filter(Boolean);
 
     return {
       ...publicDisease,
       charityOrgs: _charityIds
         .map((id) => charities.find((charity) => charity.id === id))
         .filter(Boolean),
-      hospitals: _hospitalIds
-        .map((id) => hospitals.find((hospital) => hospital.id === id))
-        .filter(Boolean),
+      hospitalServices: diseaseHospitalServices,
+      hospitals: uniqueById([...serviceHospitals, ...directHospitals]),
     };
-  });
-
-  const publicHospitals = hospitals.map((hospital) => {
-    const { _diseaseSlugs, ...publicHospital } = hospital;
-
-    return publicHospital;
   });
 
   const content: WikiContent = {
@@ -143,8 +171,8 @@ export function getWikiContent(locale: string): WikiContent {
     categories,
     charities: charities as CharityOrganization[],
     diseases: enrichedDiseases as Disease[],
-    hospitalServices: [],
-    hospitals: publicHospitals as Hospital[],
+    hospitalServices: hospitalServices as HospitalService[],
+    hospitals: hospitals as Hospital[],
     medicines: [],
     siteSettings: resolveLocalized(siteSettingsByLocale, normalizedLocale),
     tags,
@@ -193,4 +221,29 @@ function mergeSources(sources: ContentSource[]) {
     seenUrls.add(source.url);
     return true;
   });
+}
+
+function uniqueById<T extends { id: number }>(items: T[]) {
+  const seen = new Set<number>();
+  const uniqueItems: T[] = [];
+
+  for (const item of items) {
+    if (seen.has(item.id)) {
+      continue;
+    }
+
+    seen.add(item.id);
+    uniqueItems.push(item);
+  }
+
+  return uniqueItems;
+}
+
+function compactHospital(hospital: Hospital | undefined) {
+  if (!hospital) {
+    return undefined;
+  }
+
+  const { diseases: _diseases, services: _services, ...compact } = hospital;
+  return compact;
 }

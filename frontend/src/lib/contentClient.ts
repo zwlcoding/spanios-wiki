@@ -106,6 +106,13 @@ export async function fetchHospitals(
       hospital.specialties,
       ...(hospital.departments?.map((department) => department.name) ?? []),
       ...(hospital.diseases?.map((disease) => disease.name) ?? []),
+      ...(hospital.services?.flatMap((service) => [
+        service.departmentName,
+        service.serviceName,
+        service.notes,
+        service.evidenceSummary,
+        ...(service.diseases?.map((disease) => disease.name) ?? []),
+      ]) ?? []),
     ]);
 
     return matchesProvince && matchesSearch;

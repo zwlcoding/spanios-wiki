@@ -136,6 +136,7 @@ export interface Disease {
   sourceUrl?: string;
   sources?: ContentSource[];
   category?: DiseaseCategory;
+  hospitalServices?: HospitalService[];
   hospitals?: Hospital[];
   charityOrgs?: CharityOrganization[];
   tags?: Tag[];
@@ -170,11 +171,23 @@ export interface Department {
 
 export interface HospitalService {
   appointmentUrl?: string;
+  confidence?: 'low' | 'medium' | 'high';
+  departmentId?: number;
   departmentName: string;
+  diseases?: Disease[];
   diseaseSlugs: string[];
+  evidenceSummary?: string;
+  evidenceUrl?: string;
+  hospital?: Hospital;
   hospitalId: number;
   id: string;
   notes?: string;
+  relationKind?:
+    | 'clinic-or-mdt'
+    | 'department-service'
+    | 'public-directory'
+    | 'rare-disease-network';
+  serviceName?: string;
   sourceUrl?: string;
   stage?: 'diagnosis' | 'follow-up' | 'genetic-counseling' | 'treatment';
 }
@@ -202,6 +215,7 @@ export interface Hospital {
   };
   departments?: Department[];
   diseases?: Disease[];
+  services?: HospitalService[];
   createdAt: string;
   updatedAt: string;
   publishedAt?: string;

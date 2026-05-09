@@ -401,28 +401,57 @@ function DiseaseDetailPage() {
         {/* Sidebar */}
         <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
           {/* Care resources */}
-          {disease.hospitals && disease.hospitals.length > 0 && (
+          {disease.hospitalServices && disease.hospitalServices.length > 0 && (
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Hospital className="h-5 w-5 text-amber-700" />
                 就医资源
               </h3>
               <p className="-mt-2 mb-4 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
-                以下为公开收录的就医信息参考，不代表本站推荐或医疗背书。
+                以下为公开收录的科室或服务线索，不代表本站推荐或医疗背书。
               </p>
               <div className="space-y-3">
-                {disease.hospitals.map((hospital) => (
-                  <Link
-                    key={hospital.id}
-                    to="/hospitals/$id"
-                    params={{ id: hospital.id.toString() }}
-                    className="block rounded-md border border-stone-200 bg-white p-3 transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-900/30"
+                {disease.hospitalServices.map((service) => (
+                  <div
+                    key={service.id}
+                    className="rounded-md border border-stone-200 bg-white p-3 dark:border-stone-700 dark:bg-stone-900/30"
                   >
-                    <div className="font-medium">{hospital.name}</div>
-                    <div className="mt-1 text-sm text-stone-500">
-                      {hospital.province} {hospital.city}
+                    {service.hospital && (
+                      <Link
+                        to="/hospitals/$id"
+                        params={{ id: service.hospital.id.toString() }}
+                        className="font-medium transition hover:text-amber-700"
+                      >
+                        {service.hospital.name}
+                      </Link>
+                    )}
+                    <div className="mt-1 text-sm text-stone-600 dark:text-stone-400">
+                      {service.departmentName}
+                      {service.serviceName ? ` · ${service.serviceName}` : ''}
                     </div>
-                  </Link>
+                    <div className="mt-1 text-xs text-stone-500">
+                      {formatHospitalServiceStage(service.stage)}
+                      {service.hospital
+                        ? ` · ${service.hospital.province} ${service.hospital.city}`
+                        : ''}
+                    </div>
+                    {service.notes && (
+                      <p className="mt-2 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
+                        {service.notes}
+                      </p>
+                    )}
+                    {(service.evidenceUrl || service.sourceUrl) && (
+                      <a
+                        href={service.evidenceUrl ?? service.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-2 inline-flex items-center gap-1 text-xs text-amber-700"
+                      >
+                        查看公开来源
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -586,4 +615,15 @@ function MedicalBlock({ html, title }: { html: string; title: string }) {
       <SafeHTMLRenderer html={html} className="content-prose" />
     </section>
   );
+}
+
+function formatHospitalServiceStage(stage?: string) {
+  const labels: Record<string, string> = {
+    diagnosis: '诊断评估',
+    'follow-up': '长期随访',
+    'genetic-counseling': '遗传咨询',
+    treatment: '治疗管理',
+  };
+
+  return stage ? (labels[stage] ?? stage) : '就医信息参考';
 }

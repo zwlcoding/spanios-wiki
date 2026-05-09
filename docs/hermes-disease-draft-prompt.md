@@ -176,6 +176,10 @@ Resource relationships are candidates for Codex review, not publication.
 
 - Hospitals must have an official URL and a separate evidence URL showing why
   the hospital, department, clinic, MDT, or public directory is relevant.
+- Hospital relationships are later integrated as `HospitalService` entries, not
+  broad hospital recommendations. Prefer department/service-level evidence:
+  `departmentName`, `relationKind`, `evidenceUrl`, `evidenceSummary`,
+  `confidence`, and neutral `notes`.
 - 公益组织 must have an official URL and evidence that the organization focuses
   on the disease, rare diseases generally, or a clearly related service.
 - Disease associations must use existing catalog slugs from the queue.

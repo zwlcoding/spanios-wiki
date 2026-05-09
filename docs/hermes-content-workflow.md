@@ -14,8 +14,10 @@ Hermes is the content producer. Codex is the reviewer and integrator.
   professional society guidance, and peer-reviewed reviews. Baidu Baike,
   Tencent Medipedia, SEO pages, forums, and marketing pages are search leads,
   not formal citations.
-- Hospital, department, charity, and assistance-program relationships need
-  explicit evidence. Do not invent organizations or disease-resource links.
+- Hospital, department, clinic/MDT, charity, and assistance-program
+  relationships need explicit evidence. Do not invent organizations or
+  disease-resource links. Hospital relationships are integrated as
+  `HospitalService` records, not as broad hospital-level recommendations.
 
 ## Draft Lifecycle
 
@@ -24,7 +26,9 @@ Hermes is the content producer. Codex is the reviewer and integrator.
 2. Hermes creates a dated draft folder for each queued disease.
 3. Hermes writes `draft.<locale>.json`, `sources.md`, and `change-summary.md`.
 4. If reliable evidence exists, Hermes writes `resource-links.json` for
-   hospital/charity relationships.
+   hospital/charity relationships. Hospital entries should identify the
+   specific department, clinic, MDT, public directory, or care service that
+   connects the hospital to the disease.
 5. Optional: Hermes uses its MiniMax/MMX skill to generate image candidates.
 6. Run `node scripts/validate_content_draft.mjs <draft.json>`.
 7. Run `node scripts/validate_resource_draft.mjs <resource-links.json>` when
@@ -70,6 +74,10 @@ Hard rules:
 - Every new medical claim must have a source URL.
 - Every hospital, department, charity, or assistance-program relationship must
   have a source URL and an evidence summary.
+- Hospital relationships must be department/service level when possible:
+  include `departmentName`, `relationKind`, `evidenceUrl`, `evidenceSummary`,
+  `confidence`, and neutral notes. Do not create a generic hospital-disease
+  relationship when the evidence only supports one department or clinic.
 - Do not invent hospitals,公益组织, contacts, services, or disease-resource links.
 - Prefer official, guideline, academic, hospital, or recognized rare disease sources.
 - Low-quality SEO/marketing pages may be used only as search leads, not as sources.
@@ -125,6 +133,8 @@ Draft folder dates use the local queue timezone, defaulting to
 - Does it fit the existing content model?
 - Are hospital/charity relationships backed by direct evidence rather than
   inference or promotion?
+- Are hospital relationships modeled as specific service entries with
+  department/clinic/MDT evidence, rather than broad hospital endorsements?
 - Is the generated image appropriate and non-misleading? Reject readable text,
   logos, diagnostic diagrams, real medical forms, medication packaging, or
   treatment-outcome promises. Abstract paperwork/chart decoration can pass if

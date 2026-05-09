@@ -174,7 +174,7 @@ function HospitalDetailPage() {
           )}
 
           {hospital.departments && hospital.departments.length > 0 && (
-            <div className="content-card p-5">
+            <div className="content-card mb-5 p-5">
               <h2 className="mb-4 font-semibold">相关科室</h2>
               <div className="grid gap-3">
                 {hospital.departments.map((dept) => (
@@ -206,6 +206,65 @@ function HospitalDetailPage() {
                       >
                         预约挂号
                         <ExternalLink className="h-4 w-4" />
+                      </a>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {hospital.services && hospital.services.length > 0 && (
+            <div className="content-card p-5">
+              <h2 className="mb-2 font-semibold">科室/服务与疾病关系</h2>
+              <p className="muted-text mb-4 text-sm">
+                以下基于公开资料整理为就医信息参考，不构成医院推荐或疗效背书。
+              </p>
+              <div className="grid gap-3">
+                {hospital.services.map((service) => (
+                  <div
+                    key={service.id}
+                    className="rounded-md border border-stone-200 bg-stone-50 p-4 dark:border-stone-700 dark:bg-stone-900/30"
+                  >
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h3 className="font-semibold">
+                        {service.departmentName}
+                      </h3>
+                      <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-200">
+                        {formatHospitalServiceStage(service.stage)}
+                      </span>
+                    </div>
+                    {service.serviceName && (
+                      <p className="mt-1 text-sm text-stone-700 dark:text-stone-300">
+                        {service.serviceName}
+                      </p>
+                    )}
+                    {service.diseases && service.diseases.length > 0 && (
+                      <div className="mt-3 flex flex-wrap gap-2">
+                        {service.diseases.map((disease) => (
+                          <Link
+                            key={disease.id}
+                            to="/diseases/$slug"
+                            params={{ slug: disease.slug }}
+                            className="rounded-full border border-stone-200 bg-white px-3 py-1 text-xs transition hover:border-amber-300 hover:text-amber-700 dark:border-stone-700 dark:bg-stone-950"
+                          >
+                            {disease.name}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                    {service.notes && (
+                      <p className="muted-text mt-3 text-sm">{service.notes}</p>
+                    )}
+                    {(service.evidenceUrl || service.sourceUrl) && (
+                      <a
+                        href={service.evidenceUrl ?? service.sourceUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="mt-3 inline-flex items-center gap-1 text-sm text-amber-700"
+                      >
+                        查看公开来源
+                        <ExternalLink className="h-3.5 w-3.5" />
                       </a>
                     )}
                   </div>
@@ -310,6 +369,17 @@ function formatHospitalLevel(level: string) {
   };
 
   return labels[level] ?? level;
+}
+
+function formatHospitalServiceStage(stage?: string) {
+  const labels: Record<string, string> = {
+    diagnosis: '诊断评估',
+    'follow-up': '长期随访',
+    'genetic-counseling': '遗传咨询',
+    treatment: '治疗管理',
+  };
+
+  return stage ? (labels[stage] ?? stage) : '就医信息参考';
 }
 
 function mapUrl(hospital: {

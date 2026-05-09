@@ -78,6 +78,7 @@
             }
           },
           "departmentName": { "type": "string" },
+          "serviceName": { "type": "string" },
           "province": { "type": "string" },
           "city": { "type": "string" },
           "contactUrl": { "type": "string", "format": "uri" },

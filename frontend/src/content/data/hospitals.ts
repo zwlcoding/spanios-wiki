@@ -1,6 +1,6 @@
 import type { LocalizedRecord } from '@/types/content';
 import { department, entity } from './helpers';
-import type { HospitalDraft } from './types';
+import type { HospitalDraft, HospitalServiceDraft } from './types';
 
 export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
   zh: [
@@ -29,11 +29,6 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
           '神经肌肉病团队',
         ),
       ],
-      diseaseSlugs: [
-        'amyotrophic-lateral-sclerosis',
-        'hemophilia-a',
-        'kallmann-syndrome',
-      ],
     },
     {
       ...entity(2, 'hospital-shanghai-ruijin'),
@@ -54,7 +49,6 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
           '内分泌代谢病团队',
         ),
       ],
-      diseaseSlugs: ['amyotrophic-lateral-sclerosis', 'kallmann-syndrome'],
     },
     {
       ...entity(3, 'hospital-southern'),
@@ -75,7 +69,6 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
           '凝血与血栓团队',
         ),
       ],
-      diseaseSlugs: ['hemophilia-a'],
     },
   ],
   en: [
@@ -105,11 +98,6 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
           'Neuromuscular disease team',
         ),
       ],
-      diseaseSlugs: [
-        'amyotrophic-lateral-sclerosis',
-        'hemophilia-a',
-        'kallmann-syndrome',
-      ],
     },
     {
       ...entity(2, 'hospital-shanghai-ruijin'),
@@ -131,7 +119,6 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
           'Endocrine and metabolic disease team',
         ),
       ],
-      diseaseSlugs: ['amyotrophic-lateral-sclerosis', 'kallmann-syndrome'],
     },
     {
       ...entity(3, 'hospital-southern'),
@@ -153,7 +140,147 @@ export const hospitalDraftsByLocale: LocalizedRecord<HospitalDraft[]> = {
           'Coagulation and thrombosis team',
         ),
       ],
+    },
+  ],
+};
+
+export const hospitalServiceDraftsByLocale: LocalizedRecord<
+  HospitalServiceDraft[]
+> = {
+  zh: [
+    {
+      id: 'pumch-endocrinology-kallmann-21ohd',
+      hospitalId: 1,
+      departmentId: 101,
+      departmentName: '内分泌科',
+      serviceName: '内分泌相关罕见病评估',
+      diseaseSlugs: ['kallmann-syndrome', '21-hydroxylase-deficiency'],
+      stage: 'diagnosis',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.pumch.cn',
+      evidenceUrl: 'https://www.pumch.cn',
+      evidenceSummary:
+        '公开医院信息显示该院设有内分泌相关专科；具体疾病就诊路径需以医院当日门诊和医生评估为准。',
+      notes: '可作为内分泌相关罕见病初诊、复诊和遗传咨询前的信息参考。',
+    },
+    {
+      id: 'pumch-neurology-als',
+      hospitalId: 1,
+      departmentId: 102,
+      departmentName: '神经内科',
+      serviceName: '神经肌肉病评估',
+      diseaseSlugs: ['amyotrophic-lateral-sclerosis'],
+      stage: 'diagnosis',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.pumch.cn',
+      evidenceUrl: 'https://www.pumch.cn',
+      evidenceSummary:
+        '公开医院信息显示该院设有神经内科；具体 ALS 或运动神经元病服务需以官方门诊信息为准。',
+      notes: '适合在就诊前核对是否有神经肌肉病、运动神经元病或肌电图相关门诊。',
+    },
+    {
+      id: 'ruijin-endocrine-metabolic-kallmann-21ohd',
+      hospitalId: 2,
+      departmentId: 201,
+      departmentName: '内分泌代谢科',
+      serviceName: '内分泌代谢病评估',
+      diseaseSlugs: ['kallmann-syndrome', '21-hydroxylase-deficiency'],
+      stage: 'follow-up',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.rjh.com.cn',
+      evidenceUrl: 'https://www.rjh.com.cn',
+      evidenceSummary:
+        '公开医院信息显示该院设有内分泌代谢相关专科；具体病种和门诊安排需以医院官方信息为准。',
+      notes: '可作为内分泌代谢相关罕见病长期随访信息参考。',
+    },
+    {
+      id: 'southern-hematology-hemophilia',
+      hospitalId: 3,
+      departmentId: 301,
+      departmentName: '血液科',
+      serviceName: '凝血与出血性疾病评估',
       diseaseSlugs: ['hemophilia-a'],
+      stage: 'treatment',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.nfyy.com',
+      evidenceUrl: 'https://www.nfyy.com',
+      evidenceSummary:
+        '公开医院信息显示该院设有血液科；具体血友病诊疗服务需以医院官方门诊信息为准。',
+      notes: '适合就诊前核对凝血因子检测、出血处理和长期随访相关服务。',
+    },
+  ],
+  en: [
+    {
+      id: 'pumch-endocrinology-kallmann-21ohd',
+      hospitalId: 1,
+      departmentId: 101,
+      departmentName: 'Endocrinology',
+      serviceName: 'Endocrine rare disease assessment',
+      diseaseSlugs: ['kallmann-syndrome', '21-hydroxylase-deficiency'],
+      stage: 'diagnosis',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.pumch.cn',
+      evidenceUrl: 'https://www.pumch.cn',
+      evidenceSummary:
+        'Public hospital information shows endocrinology services; disease-specific routing should be confirmed through official appointment channels.',
+      notes:
+        'A neutral information reference for endocrine-related rare disease visits.',
+    },
+    {
+      id: 'pumch-neurology-als',
+      hospitalId: 1,
+      departmentId: 102,
+      departmentName: 'Neurology',
+      serviceName: 'Neuromuscular disease assessment',
+      diseaseSlugs: ['amyotrophic-lateral-sclerosis'],
+      stage: 'diagnosis',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.pumch.cn',
+      evidenceUrl: 'https://www.pumch.cn',
+      evidenceSummary:
+        'Public hospital information shows neurology services; ALS-specific service availability should be confirmed through official appointment channels.',
+      notes:
+        'Check for neuromuscular disease, motor neuron disease, or EMG-related clinics before visiting.',
+    },
+    {
+      id: 'ruijin-endocrine-metabolic-kallmann-21ohd',
+      hospitalId: 2,
+      departmentId: 201,
+      departmentName: 'Endocrinology and Metabolism',
+      serviceName: 'Endocrine and metabolic disease assessment',
+      diseaseSlugs: ['kallmann-syndrome', '21-hydroxylase-deficiency'],
+      stage: 'follow-up',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.rjh.com.cn',
+      evidenceUrl: 'https://www.rjh.com.cn',
+      evidenceSummary:
+        'Public hospital information shows endocrinology and metabolism services; disease-specific routing should be confirmed through official appointment channels.',
+      notes:
+        'A neutral information reference for endocrine and metabolic rare disease follow-up.',
+    },
+    {
+      id: 'southern-hematology-hemophilia',
+      hospitalId: 3,
+      departmentId: 301,
+      departmentName: 'Hematology',
+      serviceName: 'Coagulation and bleeding disorder assessment',
+      diseaseSlugs: ['hemophilia-a'],
+      stage: 'treatment',
+      relationKind: 'department-service',
+      confidence: 'medium',
+      sourceUrl: 'https://www.nfyy.com',
+      evidenceUrl: 'https://www.nfyy.com',
+      evidenceSummary:
+        'Public hospital information shows hematology services; hemophilia-specific service availability should be confirmed through official appointment channels.',
+      notes:
+        'Check for coagulation testing, bleeding care, and long-term follow-up services before visiting.',
     },
   ],
 };
