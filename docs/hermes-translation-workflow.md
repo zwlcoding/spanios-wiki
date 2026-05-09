@@ -80,12 +80,20 @@ Use a separate cron from the Chinese content cron so translation cannot block or
 pollute medical source generation:
 
 ```bash
-hermes cron create "15 7 * * *" \
-  --name "spanios-disease-translation-batch" \
+hermes cron create "30 10 * * *" \
+  --name "spanios-disease-translation-drafts" \
   --workdir /Volumes/acasis/coding/spanios-wiki \
-  --script hermes_translation_prompt.py \
-  "Use docs/hermes-translation-workflow.md. Translate queued reviewed Chinese disease records to English. Write only under content-drafts/."
+  --script scripts/hermes_translation_prompt.py \
+  "Translate reviewed Spanios Chinese disease pages into the target locale. Use docs/hermes-translation-workflow.md. Create translation drafts only under content-drafts. Do not add medical facts, sources, images, hospitals, charities, or resource relationships."
 ```
 
 Keep final merge human-triggered: run `pnpm run review:translation`, then ask
 Codex to review and merge approved translation drafts.
+
+Current production cron:
+
+- `ba1cc7158f2f` `spanios-disease-translation-drafts`
+- schedule: `30 10 * * *`
+- delivery: `local`
+- next step after it runs: `pnpm run review:translation`, then Codex review and
+  merge
