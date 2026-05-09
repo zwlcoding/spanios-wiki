@@ -55,6 +55,20 @@ ways to trigger review:
 Keep the final merge human-triggered. This prevents scheduled content from
 silently changing patient-facing pages.
 
+## Translation Workflow
+
+Detailed Chinese disease pages are the source of truth. English, Traditional
+Chinese, and future locales should be generated through
+`docs/hermes-translation-workflow.md`, not by researching each disease again in
+each language.
+
+- Use `pnpm run hermes:translate -- --locale en --limit 3` to queue English
+  translation work.
+- Use `pnpm run review:translation` to validate translation drafts and create
+  Codex review artifacts.
+- Translation drafts must not add new medical facts, sources, images, hospitals,
+  charities, medicines, assistance programs, or resource relationships.
+
 ## Hermes Cron Prompt Template
 
 Use this as the task instruction for a scheduled Hermes job:

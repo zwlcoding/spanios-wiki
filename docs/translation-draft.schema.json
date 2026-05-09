@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://spanios.wiki/schemas/translation-draft.schema.json",
+  "title": "Spanios Disease Translation Draft",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "slug",
+    "sourceLocale",
+    "targetLocale",
+    "review",
+    "updatedReason",
+    "translationRules",
+    "sources",
+    "article"
+  ],
+  "properties": {
+    "slug": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    },
+    "sourceLocale": {
+      "type": "string",
+      "enum": ["zh"]
+    },
+    "targetLocale": {
+      "type": "string",
+      "enum": ["en", "zh-Hant"]
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "createdBy", "createdAt"],
+      "properties": {
+        "status": {
+          "type": "string",
+          "enum": [
+            "pending-codex-review",
+            "merged",
+            "rejected",
+            "needs-revision"
+          ]
+        },
+        "createdBy": { "type": "string" },
+        "createdAt": { "type": "string", "format": "date-time" },
+        "riskNotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "reviewedBy": { "type": "string" },
+        "reviewedAt": { "type": "string", "format": "date-time" },
+        "decisionNotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "updatedReason": { "type": "string", "minLength": 1 },
+    "translationRules": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "noNewMedicalFacts",
+        "noNewSources",
+        "noResourceRelationshipChanges"
+      ],
+      "properties": {
+        "noNewMedicalFacts": { "const": true },
+        "noNewSources": { "const": true },
+        "noResourceRelationshipChanges": { "const": true },
+        "localizationNotes": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": { "$ref": "content-draft.schema.json#/properties/sources/items" }
+    },
+    "article": {
+      "$ref": "content-draft.schema.json#/properties/article"
+    }
+  }
+}
