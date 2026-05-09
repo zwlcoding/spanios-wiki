@@ -32,6 +32,8 @@ Hermes is the content producer. Codex is the reviewer and integrator.
    specific department, clinic, MDT, public directory, or care service that
    connects the hospital to the disease.
 5. Optional: Hermes uses its MiniMax/MMX skill to generate image candidates.
+   Do not use Hermes generic image providers that depend on `FAL_KEY`; if MMX
+   image generation is unavailable, keep only `image-prompt.md`.
 6. Run `node scripts/validate_content_draft.mjs <draft.json>`.
 7. Run `node scripts/validate_resource_draft.mjs <resource-links.json>` when
    resource relationships are present.
@@ -127,8 +129,8 @@ Hard rules:
   diagrams, and no misleading clinical detail. Abstract non-readable paperwork
   or chart-like decoration can be accepted after human review.
 - If image generation fails once during a scheduled run, stop trying to generate
-  images for that run. Keep `image-prompt.md`; image files are optional and must
-  not block draft creation.
+  images for that run. Do not retry with a different image provider. Keep
+  `image-prompt.md`; image files are optional and must not block draft creation.
 
 Output:
 - content-drafts/<slug>/<yyyy-mm-dd>/draft.<locale>.json

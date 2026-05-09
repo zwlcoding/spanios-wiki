@@ -106,7 +106,11 @@ validator scripts.
 
 ## Image Rules
 
-Use the MMX image skill only for supportive, non-clinical illustrations.
+Use the MMX image skill only for supportive, non-clinical illustrations. Do not
+call Hermes' generic `image_generate` provider or any image provider that needs
+`FAL_KEY`; in this workflow, that provider is not considered available. If the
+MMX image skill/CLI is not explicitly available in the current run, create only
+`image-prompt.md` and skip `generated-image.png`.
 
 Before writing `image-prompt.md`, choose 2-3 disease-specific visual anchors.
 They must be concrete enough to make the image relevant to the disease, but not
@@ -137,8 +141,13 @@ Images must:
 - be suitable for a patient navigation page.
 
 If image generation fails once during a run, stop trying to generate images for
-the remaining diseases in that run. Keep `image-prompt.md` and continue the
-text/source draft work; images are optional and must not block draft creation.
+the remaining diseases in that run. Do not retry with another image provider.
+Keep `image-prompt.md` and continue the text/source draft work; images are
+optional and must not block draft creation.
+
+Only run image understanding/vision checks after a real local
+`generated-image.png` exists. Do not pass Markdown, prompts, or missing paths to
+vision tools.
 
 Images may include abstract clinic paperwork, abstract charts, or non-readable
 background forms when they are clearly decorative and do not look like real
