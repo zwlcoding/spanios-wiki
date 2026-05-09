@@ -9,6 +9,21 @@ const limit = Number.parseInt(args.limit ?? '5', 10);
 const locale = args.locale ?? 'zh';
 const timeZone = args.timezone ?? process.env.HERMES_QUEUE_TIMEZONE ?? 'Asia/Shanghai';
 const today = formatDateInTimeZone(new Date(), timeZone);
+const bannedCitationHostPatterns = [
+  /(^|\.)baidu\.com$/,
+  /(^|\.)wenku\.baidu\.com$/,
+  /(^|\.)book118\.com$/,
+  /(^|\.)doc88\.com$/,
+  /(^|\.)familydoctor\.com\.cn$/,
+  /(^|\.)haodf\.com$/,
+  /(^|\.)maigoo\.com$/,
+  /(^|\.)medlive\.cn$/,
+  /(^|\.)baike\.qq\.com$/,
+  /(^|\.)renrendoc\.com$/,
+  /(^|\.)baike\.sogou\.com$/,
+  /(^|\.)sohu\.com$/,
+  /(^|\.)zhihu\.com$/,
+];
 
 if (!Number.isInteger(limit) || limit < 1) {
   fail('--limit must be a positive integer.');
@@ -164,6 +179,12 @@ function readExistingDraftSlugs(targetLocale) {
     if (draft.review?.status === 'rejected') {
       continue;
     }
+    if (draft.review?.status === 'needs-revision') {
+      continue;
+    }
+    if (hasLowQualityCitation(draft)) {
+      continue;
+    }
     if (draft.slug) {
       slugs.add(draft.slug);
     }
@@ -190,6 +211,25 @@ function readJson(filePath) {
     return JSON.parse(fs.readFileSync(filePath, 'utf8'));
   } catch {
     return {};
+  }
+}
+
+function hasLowQualityCitation(draft) {
+  if (!Array.isArray(draft.sources)) {
+    return false;
+  }
+
+  return draft.sources.some((source) => {
+    const host = getUrlHost(source.url);
+    return bannedCitationHostPatterns.some((pattern) => pattern.test(host));
+  });
+}
+
+function getUrlHost(url) {
+  try {
+    return new URL(url).hostname.toLowerCase();
+  } catch {
+    return '';
   }
 }
 
