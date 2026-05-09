@@ -2166,4 +2166,341 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     reviewStatus: 'draft',
     tagSlugs: [],
   },
+  {
+    ...entity(21, 'disease-congenital-adrenal-hypoplasia'),
+    name: '先天性肾上腺发育不良',
+    nameEn: 'Congenital Adrenal Hypoplasia',
+    alias: 'X 连锁先天性肾上腺发育不良、NR0B1 相关肾上腺发育不良',
+    slug: 'congenital-adrenal-hypoplasia',
+    oneSentence:
+      '先天性肾上腺发育不良是一种遗传性肾上腺功能不全疾病，可在新生儿或儿童期出现低血糖、呕吐、脱水、低血压、色素沉着或盐丢失危象。',
+    plainName: '肾上腺先天发育不足导致激素不足的罕见遗传病',
+    prevalence:
+      '总体罕见，X 连锁 NR0B1 相关类型主要影响男性，也可因家族变异和女性携带者表现而存在差异。',
+    quickLook: {
+      whatItIs:
+        '肾上腺负责产生维持血压、血糖和盐水平衡的重要激素。相关基因异常时，肾上腺从出生起功能不足，身体在感染、发热或脱水时更容易发生危象。',
+      whoToSeeFirst:
+        '新生儿或儿童出现不明原因低血糖、反复呕吐、脱水、低钠高钾、低血压、皮肤色素加深或休克时应急诊；稳定后由儿科内分泌/内分泌科长期随访。',
+      isGenetic:
+        '是。经典 X 连锁类型与 NR0B1 相关，常影响男性；也存在其他遗传或发育相关原因。遗传咨询需要结合基因检测和家族史。',
+      hasTreatment:
+        '有长期激素替代和危象预防方案，但必须由内分泌专科个体化制定。患者和家属需要了解生病、发热、手术等应激场景下何时就医。',
+      commonDelayReason:
+        '早期表现像喂养困难、胃肠炎、感染或普通低血糖；若未及时检查电解质、皮质醇/ACTH 和家族史，容易延误。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿或婴儿反复呕吐、吃奶差、体重增长差、脱水或精神差。',
+        '低血糖、低钠、高钾、低血压、休克或不明原因酸中毒。',
+        '皮肤或黏膜色素加深，尤其伴肾上腺功能不全线索。',
+        '男孩青春期延迟、性腺功能低下，且既往有肾上腺功能不全病史。',
+        '家族中有男性新生儿夭折、肾上腺危象或类似内分泌诊断。',
+      ],
+      commonWrongTurns: [
+        '把反复呕吐和脱水只当作胃肠炎处理，未检查电解质和肾上腺轴。',
+        '低血糖反复发作但没有追问出生史、家族史和色素沉着。',
+        '确诊后没有准备急诊说明和应激处理计划，导致发热或手术时风险增加。',
+        '只关注肾上腺危象，忽略青春期发育、性腺功能和遗传咨询。',
+      ],
+      firstDepartments: [
+        '急诊科（休克、意识改变、严重脱水或低血糖时）',
+        '儿科内分泌科',
+        '内分泌科',
+        '医学遗传科/遗传咨询门诊',
+      ],
+      diagnosisChecklist: [
+        '保存低血糖、电解质、血气、皮质醇、ACTH、肾素-醛固酮等检查结果。',
+        '记录发作诱因：感染、发热、呕吐、禁食、手术或漏服药物。',
+        '询问是否需要 NR0B1 及肾上腺发育/功能不全相关基因检测。',
+        '准备急诊说明卡，写明诊断、主管医生、用药和危象处理原则。',
+        '青春期后关注性腺功能、身高增长、骨健康和生育相关问题。',
+      ],
+      testsToAskAbout: [
+        '电解质、血糖、血气和肾功能。',
+        '皮质醇、ACTH、肾素、醛固酮及相关内分泌评估。',
+        '肾上腺影像和其他可能的发育异常评估。',
+        'NR0B1 或肾上腺功能不全相关基因检测。',
+        '家属携带者检测和生育风险评估。',
+      ],
+      questionsForDoctor: [
+        '这次发作是否符合肾上腺危象？以后哪些情况需要直接急诊？',
+        '日常激素替代和生病时的处理计划应该写成什么文件随身携带？',
+        '需要做哪些基因检测？家属是否需要筛查？',
+        '青春期、性腺功能和生育问题需要何时开始随访？',
+        '学校或照护者需要知道哪些风险和联系信息？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>症状可从新生儿期或婴儿期开始，包括喂养困难、反复呕吐、脱水、低血糖、低血压、低钠高钾、休克和皮肤色素加深。部分患者在儿童或青春期后还会出现青春期延迟、性腺功能低下或生育相关问题。感染、发热、呕吐、禁食和手术可诱发危象。</p>',
+      diagnosis:
+        '<p>诊断需要结合急性发作时的血糖、电解质、皮质醇、ACTH、肾素-醛固酮轴、临床表现和家族史。NR0B1 等基因检测可帮助明确分型和家族风险。医生还需要排除其他原因导致的原发性肾上腺功能不全和先天性肾上腺皮质增生。</p>',
+      treatment:
+        '<p>长期管理通常包括内分泌专科指导下的激素替代、应激场景处理计划、急诊说明和定期监测。剂量和调整必须由医生根据年龄、体重、生长、血压、电解质和临床状态决定，不能自行按网络信息加减药。</p>',
+      longTermCare:
+        '<p>随访重点包括生长发育、血压、电解质、肾上腺危象预防、青春期和性腺功能、骨健康及家庭应急能力。建议保存诊断书、用药清单、急诊说明卡和主管医生联系方式，并让学校或照护者了解何时需要急诊。</p>',
+      fertilityOrFamily:
+        '<p>X 连锁类型的家族成员可通过遗传咨询了解携带者检测、男性亲属筛查、产前诊断或胚胎植入前遗传学检测等选择。男性患者成年后可能需要评估性腺功能和生育相关问题。</p>',
+      emergencySigns:
+        '<p>严重呕吐不能进食、明显脱水、低血糖、意识改变、抽搐、低血压、休克、发热感染后精神状态变差，或疑似漏服关键药物后不适，应立即急诊，并主动说明疑似或确诊肾上腺功能不全。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: NR0B1-Related Adrenal Hypoplasia Congenita',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1431/',
+      },
+      {
+        name: 'MedlinePlus Genetics: X-linked adrenal hypoplasia congenita',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/x-linked-adrenal-hypoplasia-congenita/',
+      },
+      {
+        name: 'Orphanet: X-linked adrenal hypoplasia congenita',
+        type: 'review',
+        url: 'https://www.orpha.net/en/disease/detail/95702',
+      },
+    ],
+    symptoms:
+      '<p>可表现为低血糖、呕吐、脱水、低血压、低钠高钾、皮肤色素加深、休克，以及青春期延迟或性腺功能低下。</p>',
+    diagnosis:
+      '<p>评估包括血糖、电解质、皮质醇、ACTH、肾素-醛固酮轴、家族史和 NR0B1 等基因检测。</p>',
+    treatment:
+      '<p>管理依赖内分泌专科长期激素替代、应激处理计划和危象预防，患者不应自行调整药物。</p>',
+    prognosis:
+      '<p>早期识别和规范替代治疗可显著降低危象风险；长期预后取决于危象预防、随访和青春期/性腺功能管理。</p>',
+    sourceName: 'GeneReviews: NR0B1-Related Adrenal Hypoplasia Congenita',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1431/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['endocrine', 'genetic-counseling'],
+  },
+  {
+    ...entity(22, 'disease-congenital-hyperinsulinemic-hypoglycemia'),
+    name: '先天性高胰岛素性低血糖血症',
+    nameEn: 'Congenital Hyperinsulinemic Hypoglycemia',
+    alias: '先天性高胰岛素血症、遗传性高胰岛素性低血糖',
+    slug: 'congenital-hyperinsulinemic-hypoglycemia',
+    oneSentence:
+      '先天性高胰岛素性低血糖血症是一组遗传性低血糖疾病，胰岛素分泌调控异常会让婴幼儿或儿童反复出现低血糖，严重时可影响大脑。',
+    plainName: '胰岛素过多导致反复低血糖的罕见遗传病',
+    prevalence:
+      '总体罕见，严重程度从短暂新生儿期低血糖到持续性、难治性低血糖不等。',
+    quickLook: {
+      whatItIs:
+        '胰岛素会降低血糖。患儿在不该分泌胰岛素的时候仍然分泌过多，导致血糖难以维持，尤其在禁食、吃奶少或生病时更危险。',
+      whoToSeeFirst:
+        '新生儿或儿童反复低血糖、抽搐、嗜睡、喂养困难或出汗发抖时，应急诊或儿科处理；稳定后需要儿科内分泌/遗传代谢专科随访。',
+      isGenetic:
+        '许多病例与 KATP 通道或其他胰岛素分泌相关基因有关，遗传方式可为隐性、显性或新发变异。部分病例需要区分弥漫型和局灶型。',
+      hasTreatment:
+        '有专科治疗方案，包括快速纠正低血糖、长期营养和药物管理、影像定位和部分情况下手术评估。所有方案必须由儿科内分泌团队制定。',
+      commonDelayReason:
+        '低血糖表现可像喂养差、感染、惊厥或新生儿适应问题；如果没有在发作时采集关键样本，病因容易不清。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿期反复低血糖、喂养困难、嗜睡、肌张力低或惊厥。',
+        '低血糖发作时胰岛素不应升高却仍有胰岛素作用证据。',
+        '吃奶少、禁食时间稍长或感染后容易低血糖。',
+        '需要持续较高葡萄糖支持才能维持血糖。',
+        '家族中有婴幼儿低血糖、抽搐或类似内分泌诊断。',
+      ],
+      commonWrongTurns: [
+        '只纠正血糖，没有追查低血糖发生时的胰岛素和代谢指标。',
+        '把抽搐只按神经系统疾病处理，忽略低血糖诱因。',
+        '出院后缺少家庭监测、喂养和急诊计划，导致反复危象。',
+        '未区分暂时性低血糖和持续性遗传性高胰岛素血症。',
+      ],
+      firstDepartments: [
+        '急诊科/新生儿科（急性低血糖、抽搐或意识改变时）',
+        '儿科内分泌科',
+        '遗传代谢科/医学遗传科',
+        '营养科（在专科方案下配合喂养管理）',
+      ],
+      diagnosisChecklist: [
+        '保存每次低血糖发生时的血糖、胰岛素、酮体、游离脂肪酸、乳酸、皮质醇、生长激素等关键样本结果。',
+        '记录发作时间、与进食/禁食/感染的关系、纠正方式和是否有抽搐或意识改变。',
+        '询问是否需要高胰岛素血症相关基因检测。',
+        '确认医生是否评估弥漫型、局灶型或综合征相关低血糖。',
+        '准备家庭低血糖识别、监测和急诊就医计划。',
+      ],
+      testsToAskAbout: [
+        '低血糖发作时的关键血样和尿样。',
+        '胰岛素、C 肽、酮体、游离脂肪酸和代谢相关指标。',
+        'ABCC8、KCNJ11 等高胰岛素血症相关基因检测。',
+        '医生认为必要时的胰腺定位影像或专科中心评估。',
+        '神经发育随访和脑部评估。',
+      ],
+      questionsForDoctor: [
+        '孩子低血糖是否符合高胰岛素性低血糖？证据是什么？',
+        '家庭需要怎样监测血糖？什么情况必须急诊？',
+        '是否需要基因检测，结果会影响治疗选择吗？',
+        '饮食、夜间喂养和生病时计划应该如何写成可执行文件？',
+        '是否需要转诊到有先天性高胰岛素血症经验的中心？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>可表现为新生儿或婴幼儿反复低血糖、喂养困难、嗜睡、低体温、出汗、颤抖、抽搐、意识改变或发育风险。低血糖持续时间和严重程度差异很大，部分患者需要长期管理。</p>',
+      diagnosis:
+        '<p>诊断关键是在低血糖发生时采集样本，评估胰岛素作用是否不恰当升高，并结合酮体、游离脂肪酸、代谢指标和基因检测。医生还会鉴别内分泌缺陷、代谢病、暂时性新生儿低血糖和综合征相关低血糖。</p>',
+      treatment:
+        '<p>急性低血糖需要立即由医疗团队处理。长期管理可能包括个体化喂养方案、药物、血糖监测、基因结果指导下的进一步评估，以及部分局灶型或难治病例的手术讨论。家长不要自行改变喂养间隔或药物。</p>',
+      longTermCare:
+        '<p>长期照护重点是预防低血糖、保护神经发育、制定夜间和生病时计划、定期评估生长发育和治疗副作用。家庭、幼儿园或学校应了解低血糖表现和急诊联系路径。</p>',
+      fertilityOrFamily:
+        '<p>遗传方式因基因和分型而异。明确基因结果后，父母、兄弟姐妹和有生育计划的家庭可通过遗传咨询了解复发风险、携带者检测、产前诊断或胚胎植入前遗传学检测等选择。</p>',
+      emergencySigns:
+        '<p>抽搐、意识改变、明显嗜睡、无法进食、反复呕吐、生病期间血糖难以维持，或家庭方案无法纠正低血糖时，应立即急诊，并告知医生疑似或确诊先天性高胰岛素性低血糖。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Nonsyndromic Genetic Hyperinsulinism Overview',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1375/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Congenital hyperinsulinism',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/congenital-hyperinsulinism/',
+      },
+      {
+        name: 'Orphanet: Congenital isolated hyperinsulinism',
+        type: 'review',
+        url: 'https://www.orpha.net/en/disease/detail/657',
+      },
+    ],
+    symptoms:
+      '<p>可表现为新生儿或儿童低血糖、喂养困难、嗜睡、出汗、颤抖、抽搐或意识改变。</p>',
+    diagnosis:
+      '<p>评估重点是在低血糖发作时采集关键样本，并结合胰岛素作用指标、代谢检查和相关基因检测。</p>',
+    treatment:
+      '<p>管理需儿科内分泌团队制定，包括急性低血糖处理、长期喂养/药物方案、监测和部分病例的手术评估。</p>',
+    prognosis:
+      '<p>早期识别和避免反复严重低血糖可降低神经发育风险；预后受分型、治疗反应和随访质量影响。</p>',
+    sourceName: 'GeneReviews: Nonsyndromic Genetic Hyperinsulinism Overview',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1375/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['endocrine', 'genetic-counseling'],
+  },
+  {
+    ...entity(23, 'disease-congenital-myasthenic-syndrome'),
+    name: '先天性肌无力综合征',
+    nameEn: 'Congenital Myasthenic Syndrome',
+    alias: 'CMS、先天性神经肌肉接头病',
+    slug: 'congenital-myasthenic-syndrome',
+    oneSentence:
+      '先天性肌无力综合征是一组遗传性神经肌肉接头疾病，常表现为从婴幼儿期开始的波动性肌无力、易疲劳、眼睑下垂、吞咽或呼吸相关问题。',
+    plainName: '神经和肌肉之间信号传递先天异常导致的肌无力',
+    prevalence:
+      '总体罕见，相关基因和亚型较多，不同亚型的起病年龄、严重程度和治疗反应差异明显。',
+    quickLook: {
+      whatItIs:
+        '神经给肌肉发出“收缩”信号时，需要通过神经肌肉接头传递。CMS 的问题就在这个接头，导致肌肉容易疲劳或无力。',
+      whoToSeeFirst:
+        '婴幼儿吃奶无力、容易呛咳、眼睑下垂、反复呼吸问题或活动后明显疲劳时，可到儿神经科/神经肌肉病专科；呼吸困难或严重呛咳应急诊。',
+      isGenetic:
+        '是。多数亚型为常染色体隐性遗传，也有显性遗传或新发变异。基因分型会影响治疗选择，因此需要专业解释。',
+      hasTreatment:
+        '部分亚型有针对性治疗，但不同基因亚型对药物反应可能相反。治疗必须由神经肌肉病专科根据分型制定。',
+      commonDelayReason:
+        '症状可与获得性重症肌无力、肌病、脑瘫或单纯发育迟缓相似；如果未做电生理和基因检测，容易长期无法分型。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '婴儿吃奶容易疲劳、吮吸弱、哭声低、眼睑下垂或眼球活动受限。',
+        '儿童活动后明显无力，休息后缓解，下午或疲劳后症状更明显。',
+        '反复呛咳、吞咽困难、呼吸肌无力或感染后呼吸问题加重。',
+        '肌张力低、抬头或运动发育迟缓，但肌酸激酶不明显升高。',
+        '家族中有类似肌无力、婴儿期呼吸问题或兄弟姐妹受累。',
+      ],
+      commonWrongTurns: [
+        '只按获得性重症肌无力治疗，没有考虑先天性遗传亚型。',
+        '把肌张力低或发育迟缓作为最终诊断，未继续做神经肌肉接头评估。',
+        '未进行基因检测，导致治疗选择缺少分型依据。',
+        '忽视吞咽和呼吸肌受累，直到感染或呛咳后才急诊。',
+      ],
+      firstDepartments: [
+        '儿神经科',
+        '神经内科（神经肌肉病专科）',
+        '康复医学科',
+        '呼吸科/重症医学科（呼吸受累时）',
+        '医学遗传科/遗传咨询门诊',
+      ],
+      diagnosisChecklist: [
+        '记录症状是否随疲劳、运动、发热或一天中时间变化而波动。',
+        '带上肌电图、重复神经刺激、单纤维肌电图、CK、抗体检查和基因检测资料。',
+        '请医生区分先天性肌无力综合征、获得性重症肌无力、肌病和运动神经元/周围神经病。',
+        '确认是否评估吞咽安全、肺功能和睡眠/夜间呼吸。',
+        '询问基因结果如何影响治疗选择和禁忌。',
+      ],
+      testsToAskAbout: [
+        '重复神经刺激和单纤维肌电图。',
+        '神经肌肉接头相关基因 panel 或外显子组检测。',
+        '获得性重症肌无力相关抗体，用于鉴别诊断。',
+        '吞咽评估、肺功能和呼吸肌力量评估。',
+        '康复和发育评估。',
+      ],
+      questionsForDoctor: [
+        '目前证据更支持 CMS 还是获得性重症肌无力？',
+        '基因分型是否已经明确？它会怎样影响用药选择？',
+        '需要监测吞咽和呼吸功能吗？哪些情况需要急诊？',
+        '康复训练和日常活动强度应该怎样安排？',
+        '家属是否需要携带者检测或遗传咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>CMS 常表现为波动性肌无力和易疲劳，可累及眼肌、面部、吞咽肌、呼吸肌和四肢近端肌肉。婴儿可出现吃奶无力、哭声弱、肌张力低、眼睑下垂或呼吸问题；儿童和成人可表现为活动后无力、上楼困难、眼睑下垂、复视或吞咽困难。不同基因亚型差异很大。</p>',
+      diagnosis:
+        '<p>诊断需要结合疲劳性症状、神经系统查体、电生理检查和基因检测。重复神经刺激、单纤维肌电图等可提示神经肌肉接头传递异常；基因检测有助于明确亚型并指导治疗。医生还会排除获得性重症肌无力、肌病、周围神经病和中枢神经系统疾病。</p>',
+      treatment:
+        '<p>治疗高度依赖亚型。某些药物对部分亚型有帮助，但也可能对另一些亚型无效或加重症状，因此不能照搬他人方案。管理还包括呼吸和吞咽评估、感染时风险预案、康复训练、营养支持和学校/生活适配。</p>',
+      longTermCare:
+        '<p>长期随访重点包括肌力、疲劳、吞咽安全、呼吸功能、睡眠呼吸、营养、生长发育和日常活动能力。家庭应保存基因报告、电生理报告、用药反应和急诊说明，并让学校或照护者了解疲劳和呼吸风险。</p>',
+      fertilityOrFamily:
+        '<p>多数 CMS 亚型为常染色体隐性遗传，少数为显性遗传。明确致病变异后，家属可通过遗传咨询了解携带者检测、复发风险、产前诊断或胚胎植入前遗传学检测等选择。</p>',
+      emergencySigns:
+        '<p>呼吸困难、明显发绀、严重呛咳后呼吸急促、无法进食饮水、感染后肌无力快速加重、意识改变或反复误吸，应尽快急诊，并说明疑似或确诊先天性肌无力综合征。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Congenital Myasthenic Syndromes Overview',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1168/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Congenital myasthenic syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/congenital-myasthenic-syndrome/',
+      },
+      {
+        name: 'Orphanet: Congenital myasthenic syndrome',
+        type: 'review',
+        url: 'https://www.orpha.net/en/disease/detail/590',
+      },
+    ],
+    symptoms:
+      '<p>可表现为眼睑下垂、复视、吃奶或吞咽困难、活动后无力、呼吸肌受累和易疲劳，常有波动性。</p>',
+    diagnosis:
+      '<p>评估通常包括神经系统查体、重复神经刺激、单纤维肌电图、相关抗体鉴别和基因检测。</p>',
+    treatment:
+      '<p>治疗需按基因亚型个体化选择，并配合呼吸/吞咽评估、康复训练和急性加重预案。</p>',
+    prognosis:
+      '<p>预后取决于亚型、呼吸和吞咽受累程度、治疗反应和感染时管理；明确分型有助于减少误治风险。</p>',
+    sourceName: 'GeneReviews: Congenital Myasthenic Syndromes Overview',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1168/',
+    categorySlug: 'neurological',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['neuromuscular', 'genetic-counseling'],
+  },
 ];
