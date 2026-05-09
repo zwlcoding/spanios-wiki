@@ -86,6 +86,11 @@ function renderQueue(entries) {
     '',
     'Do not recommend hospitals. Provide department and care-navigation suggestions only.',
     'Do not invent hospitals, charity organizations, contacts, or disease-resource relationships.',
+    '',
+    'Source quality gate:',
+    '- draft.zh.json.sources may include only official, guideline, GeneReviews/NCBI, MedlinePlus, Orphanet, OMIM, GARD, professional society, peer-reviewed review, or recognized patient-organization URLs.',
+    '- Baidu Baike, Baidu Wenku, Zhihu/Zhuanlan, Sohu, QQ/WeChat aggregators, Maigoo, Book118, generic SEO pages, and hospital marketing pages are search leads only; put them in sources.md as non-citation leads, never in draft.zh.json.sources.',
+    '- If only weak sources are found, write change-summary.md explaining the source gap and do not create draft.zh.json.',
   );
 
   return `${lines.join('\n')}\n`;

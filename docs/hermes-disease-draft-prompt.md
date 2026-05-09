@@ -84,12 +84,13 @@ high-quality sources support the claim.
    - Do not use them as the only source for diagnosis or treatment claims unless
      they cite professional guidance.
 
-Do not use Baidu Baike, Tencent Medipedia, SEO pages, hospital marketing pages,
+Do not use Baidu Baike, Baidu Wenku, Tencent Medipedia, Zhihu/Zhuanlan, Sohu,
+QQ/WeChat aggregators, Maigoo, Book118, SEO pages, hospital marketing pages,
 forum posts, social media, or generic commercial medical portals as formal
 citations. They can only provide search leads or vocabulary hints. If a draft
 mentions these sources, mark them clearly as non-citation leads in `sources.md`
-and do not include them in `draft.zh.json.sources` unless there are no better
-sources and the limitation is explicitly noted.
+and never include them in `draft.zh.json.sources`. If no stronger source can
+support the article, create only `change-summary.md` explaining the source gap.
 
 ## Image Rules
 
