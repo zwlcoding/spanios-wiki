@@ -26,6 +26,7 @@ const bannedCitationHostPatterns = [
   ['renrendoc', /(^|\.)renrendoc\.com$/],
   ['sogou-baike', /(^|\.)baike\.sogou\.com$/],
   ['sohu', /(^|\.)sohu\.com$/],
+  ['wendoc', /(^|\.)wendoc\.com$/],
   ['zhihu', /(^|\.)zhihu\.com$/],
 ];
 
