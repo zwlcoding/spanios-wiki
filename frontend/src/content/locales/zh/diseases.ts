@@ -5051,4 +5051,614 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     reviewStatus: 'draft',
     tagSlugs: ['genetic-counseling'],
   },
+  {
+    ...entity(47, 'disease-homocysteinemia'),
+    name: '同型半胱氨酸血症',
+    nameEn: 'Homocysteinemia',
+    slug: 'homocysteinemia',
+    oneSentence:
+      '同型半胱氨酸血症是一类因氨基酸代谢异常导致血液中同型半胱氨酸升高的遗传代谢病，典型表现包括眼部异常、骨骼问题、智力障碍和血栓风险增加。',
+    plainName: '同型半胱氨酸血症（胱硫醚β合成酶缺乏症）',
+    prevalence:
+      '经典型（胱硫醚β合成酶缺乏）全球患病率约为 1/200,000～1/350,000，不同地区差异较大。',
+    quickLook: {
+      whatItIs:
+        '这是一类先天性代谢障碍，由于相关酶缺乏导致体内同型半胱氨酸无法正常代谢而在血液中积累，累及眼睛、骨骼、心血管系统和神经系统。',
+      whoToSeeFirst:
+        '优先到内分泌科或代谢遗传科就诊；出现眼部症状时可能需要眼科联合评估；若有血栓迹象应紧急就医。',
+      isGenetic:
+        '多为常染色体隐性遗传。CBS 缺乏导致的经典同型半胱氨酸尿症最常见；其他同型半胱氨酸代谢异常也可能涉及不同基因和辅因子通路。',
+      hasTreatment:
+        '有代谢专科管理方案，包括饮食、维生素/辅因子反应性评估、甜菜碱等治疗选择和血栓风险管理。具体方案必须由遗传代谢专科制定。',
+      commonDelayReason:
+        '早期症状隐匿，患者常因视力问题、骨质疏松或血栓事件反复就诊，却未追溯到代谢根源；婴幼儿期发育迟缓易被误认为发育晚。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '儿童或青少年出现原因不明的近视、眼球晶状体脱位（向上移位）。',
+        '身高明显偏矮、骨质疏松或出现脊柱侧弯等骨骼异常。',
+        '有血栓栓塞病史（如年轻起病的深静脉血栓或肺栓塞）。',
+        '家族中有不明原因的早发心血管事件或代谢异常。',
+      ],
+      commonWrongTurns: [
+        '仅针对眼部症状做屈光手术，未排查全身代谢问题。',
+        '骨质疏松单独补钙治疗，忽略代谢性骨病评估。',
+        '血栓事件后就医处理，未进一步寻找遗传代谢原因。',
+      ],
+      firstDepartments: [
+        '内分泌科或代谢遗传科',
+        '儿科（儿童患者）',
+        '眼科（晶状体异常时）',
+        '心血管内科（出现血栓或动脉硬化时）',
+      ],
+      diagnosisChecklist: [
+        '血液总同型半胱氨酸浓度测定（空腹状态下采血）。',
+        '尿有机酸分析或气相色谱-质谱（GC-MS）检测尿中同型半胱氨酸。',
+        '血浆氨基酸分析，评估甲硫氨酸水平是否正常或偏低。',
+        '相关酶活性检测（如红细胞胱硫醚β合成酶活性）。',
+        '基因检测确认具体基因突变类型（MTHFR、CBS、MTR、MTRR 等）。',
+      ],
+      testsToAskAbout: [
+        '我的同型半胱氨酸水平是多少，属于哪种严重程度？',
+        '需要做哪些检查来明确我是哪种类型的同型半胱氨酸血症？',
+        '是否建议进行基因检测，对治疗方案有什么影响？',
+        '我的家人需要做哪些筛查？',
+      ],
+      questionsForDoctor: [
+        '我的情况更像是哪一种代谢亚型，不同亚型的治疗方案有区别吗？',
+        '饮食方面具体应该怎么调整，需要限制哪些食物？',
+        '如果计划怀孕，孕期需要特别注意什么？',
+        '需要补充哪些维生素或营养素？由谁制定方案，如何监测效果和副作用？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '主要累及眼睛（晶状体脱位、近视）、骨骼（骨质疏松、脊柱侧弯、关节松弛）、中枢神经系统（智力障碍、发育迟缓）和心血管系统（血栓、动脉硬化）。部分患者有面部特征如颧骨隆起、下颌后缩。症状轻重因酶缺乏程度和类型而异。',
+      diagnosis:
+        '靠血液同型半胱氨酸浓度升高（通常 > 15 µmol/L）及尿同型半胱氨酸检测确诊；进一步靠酶活性检测和基因检测区分亚型；血浆甲硫氨酸水平有助于区分不同代谢缺陷。',
+      treatment:
+        '治疗需要先明确病因和维生素 B6 反应性。管理可能包括低甲硫氨酸饮食、特殊营养配方、维生素/辅因子、甜菜碱和血栓风险处理等，但具体组合、目标值和调整频率必须由遗传代谢专科制定。眼科、骨科和血管并发症需相应专科共同管理。',
+      longTermCare:
+        '需要多学科长期随访：代谢科、内分泌科、眼科、骨科；定期监测血液同型半胱氨酸浓度；关注骨骼健康和心脑血管状态；患者及家属可考虑遗传咨询，了解生育风险。',
+      fertilityOrFamily:
+        '为常染色体隐性遗传，子女患病风险为 25%（双亲均为携带者）；有生育计划者建议孕前进行遗传咨询；部分类型对孕期代谢控制要求较高，需多学科协作管理。',
+      emergencySigns:
+        '突发胸痛，呼吸困难或单侧肢体肿胀（可能为肺栓塞或深静脉血栓）；眼部疼痛伴视力急剧下降（晶状体脱位）；剧烈头痛或神经系统局部体征（需排除脑血管事件）。',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Homocystinuria due to Cystathionine Beta-Synthase Deficiency',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1524/',
+      },
+      {
+        name: 'MedlinePlus Medical Encyclopedia: Homocystinuria',
+        type: 'official',
+        url: 'https://medlineplus.gov/ency/article/001199.htm',
+      },
+    ],
+    sourceName:
+      'GeneReviews: Homocystinuria due to Cystathionine Beta-Synthase Deficiency',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1524/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(48, 'disease-homozygous-hypercholesterolemia'),
+    name: '纯合子家族性高胆固醇血症',
+    nameEn: 'Homozygous Familial Hypercholesterolemia',
+    slug: 'homozygous-hypercholesterolemia',
+    oneSentence:
+      '纯合子家族性高胆固醇血症是一种严重遗传性脂代谢疾病，患者LDL-C水平极度升高，童年期即可出现皮肤黄色瘤和早发动脉粥样硬化。',
+    plainName: '纯合子家族性高胆固醇血症',
+    prevalence:
+      '极为罕见，全球患病率约为 1/160,000～1/300,000，部分人群因奠基者效应而更高。',
+    quickLook: {
+      whatItIs:
+        '这是家族性高胆固醇血症中最严重的形式之一，患者从出生起 LDL-C 明显升高，儿童期即可出现黄色瘤和早发动脉粥样硬化风险。',
+      whoToSeeFirst:
+        '优先到心血管内科或内分泌科就诊；儿童患者建议在儿科心脏病专科随访；如已有胸痛或心脏症状，应到心脏科评估；脂代谢专科或罕见病中心可提供更全面的管理。',
+      isGenetic:
+        '通常与 LDLR、APOB、PCSK9、LDLRAP1 等基因有关。临床上可见双等位变异、复合杂合或功能上接近纯合的严重表型，遗传解释需要结合基因检测和家系资料。',
+      hasTreatment:
+        '需要脂代谢/心血管专科长期管理，可能涉及多药联合降脂、脂蛋白单采、冠脉风险评估和少数情况下更复杂治疗选择；不能自行套用普通高胆固醇方案。',
+      commonDelayReason:
+        '儿童期LDL-C升高常被忽视或归因于饮食；皮肤黄色瘤易被误认为普通皮肤问题；胸痛等症状出现时动脉硬化已相当严重。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '皮肤（尤其手背、跟腱、肘部、膝部）出现黄色或橙色丘疹样结节（黄色瘤）。',
+        '未成年出现胸闷、心绞痛等心脏症状。',
+        '家庭成员中有多人年轻时因心脏病去世或需要放支架。',
+        '血生化检查发现LDL-C水平显著升高（远高于正常上限，需警惕极高水平）。',
+      ],
+      commonWrongTurns: [
+        '仅以饮食控制为主，未认识到这是基因突变引起的代谢疾病。',
+        '皮肤黄色瘤被误诊为普通疣或脂肪瘤，未做血脂检查。',
+        '年轻患者出现心脏病症状，未追查遗传性高胆固醇血症可能。',
+      ],
+      firstDepartments: [
+        '心血管内科',
+        '内分泌科或脂代谢专科',
+        '儿科（儿童患者）',
+        '皮肤科（黄色瘤评估）',
+      ],
+      diagnosisChecklist: [
+        '空腹血脂全套：总胆固醇、LDL-C、HDL-C、甘油三酯水平。',
+        '脂蛋白（a）水平检测。',
+        '心血管评估：颈动脉超声、心脏彩超、冠脉CT或冠脉造影（根据年龄和症状）。',
+        '跟腱和皮肤黄色瘤检查及记录。',
+        '基因检测明确 LDLR、ApoB、PCSK9、LDLRAP1 等基因突变类型。',
+        '家族成员 cascade 筛查（级联筛查）。',
+      ],
+      testsToAskAbout: [
+        '我的LDL-C具体数值是多少，比正常值高出多少？',
+        '是否需要做基因检测来确认具体类型？',
+        '我需要进行哪些心血管检查，间隔多久复查一次？',
+        '我的家人应该如何进行筛查？',
+      ],
+      questionsForDoctor: [
+        '目前 LDL-C 水平和动脉粥样硬化风险处于什么阶段？',
+        '需要哪些药物或非药物治疗组合？治疗目标和监测频率是什么？',
+        '是否需要脂蛋白单采或转诊到脂代谢/心血管专科中心评估？',
+        '家族成员应如何筛查血脂和基因风险？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '自幼出现的皮肤黄色瘤（好发于跟腱、手背、肘部、臀部）、早发角膜环（40岁前）、进行性动脉粥样硬化（可累及冠脉、颈动脉、主动脉），严重者在儿童期或青少年期即出现心绞痛、心肌梗死，甚至需要接受介入或搭桥手术。',
+      diagnosis:
+        '依据极高 LDL-C 水平（未治疗时远高于正常上限）、皮肤黄色瘤、早发心血管病家族史，以及基因检测（LDLR 等基因突变）确诊；级联筛查有助于发现更多家族成员。',
+      treatment:
+        '治疗通常需要在脂代谢和心血管专科下进行强化、长期和联合管理，包括生活方式支持、多类降脂药物、脂蛋白单采和动脉粥样硬化并发症处理。是否适合新型药物、介入、外科或移植相关评估，需要根据基因类型、LDL-C 水平、心血管受累和当地可及性由专科团队判断。',
+      longTermCare:
+        '需要心血管内科、代谢内分泌科、营养科等多学科长期管理；每3～6个月复查血脂，每1～2年评估动脉硬化进展；严格低饱和脂肪、低胆固醇饮食；避免剧烈运动诱发心脏事件，但适度有氧运动有益；关注患者及家属心理健康。',
+      fertilityOrFamily:
+        '建议家庭成员进行系统性的级联筛查，早期发现、尽早干预；患者妊娠需多学科评估，脂质代谢专科、产科和心脏科共同管理；他汀类药物在孕期通常停用。',
+      emergencySigns:
+        '突发胸痛或压迫感（可能为急性冠脉事件）；胸闷伴呼吸困难、心悸（心绞痛或心功能不全表现）；单侧肢体无力或言语不清（需排除脑血管事件）。',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Familial Hypercholesterolemia',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Familial hypercholesterolemia',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/familial-hypercholesterolemia/',
+      },
+      {
+        name: 'European Atherosclerosis Society consensus update on HoFH',
+        type: 'guideline',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10314327/',
+      },
+    ],
+    sourceName: 'GeneReviews: Familial Hypercholesterolemia',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(49, 'disease-huntington-disease'),
+    name: '亨廷顿舞蹈病',
+    nameEn: 'Huntington Disease',
+    slug: 'huntington-disease',
+    oneSentence:
+      '亨廷顿舞蹈病是一种罕见的常染色体显性遗传性神经退行性疾病，主要表现为不自主的舞蹈样动作、精神异常和进行性认知功能下降。',
+    plainName: '亨廷顿舞蹈病',
+    prevalence:
+      '全球患病率约为 5～10/10万；欧洲和北美人群患病率较高，亚洲相对较低。',
+    quickLook: {
+      whatItIs:
+        '这是第4号染色体上HTT基因中CAG三核苷酸重复序列异常扩增导致的神经退行性疾病，脑部纹状体（尾状核和壳核）神经元选择性死亡，临床上出现运动、精神和认知三方面症状。',
+      whoToSeeFirst:
+        '优先到神经内科就诊；出现明显精神症状时可联合精神科；基因检测和遗传咨询建议在专科医生指导下进行；有运动功能障碍时需要康复医学科协助。',
+      isGenetic:
+        '常染色体显性遗传，只要从父母一方继承一个突变基因拷贝即可能患病，子女患病概率为 50%；男性遗传时通常发病更早（父系传递现象）；有生育计划者建议进行遗传咨询和生殖选择讨论。',
+      hasTreatment:
+        '目前管理以症状控制、康复、吞咽营养安全、精神心理支持、照护规划和遗传咨询为主。基因相关治疗仍需以临床试验和监管批准信息为准。',
+      commonDelayReason:
+        '早期症状个体差异大，易被误认为焦虑、抑郁或强迫症；舞蹈样动作早期轻微时可能被忽略或被认为是习惯性动作；认知下降常被归因于工作压力或正常老化。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '出现不明原因的面部或肢体不自主运动（如挤眉弄眼、撅嘴、肢体快速抖动）。',
+        '家人发现患者情绪、性格明显改变，或出现抑郁、冲动控制障碍。',
+        '工作或生活中出现记忆力下降、做事效率明显不如从前。',
+        '有亨廷顿舞蹈病家族史，本人出现任何上述症状或仅感觉动作不灵活。',
+      ],
+      commonWrongTurns: [
+        '仅以精神科诊断（抑郁症、焦虑症）处理，忽略了舞蹈样动作和认知下降的组合。',
+        '将动作异常误认为是癫痫或其他运动障碍。',
+        '未了解家族史就排除遗传性神经退行性疾病的可能。',
+      ],
+      firstDepartments: [
+        '神经内科',
+        '精神科（出现明显精神症状时）',
+        '康复医学科（运动和语言功能支持）',
+        '遗传咨询科（遗传评估和家系筛查）',
+      ],
+      diagnosisChecklist: [
+        '详细的神经系统检查，评估舞蹈样动作的类型和严重程度。',
+        '血液常规和代谢筛查排除其他原因。',
+        'HTT基因CAG重复数目检测（重复数 >= 36 提示携带突变）。',
+        '颅脑MRI或CT：特征性尾状核和壳核萎缩，侧脑室扩大。',
+        '神经心理学评估：认知功能基线测评。',
+        '精神科评估：情绪、行为和人格改变评估。',
+      ],
+      testsToAskAbout: [
+        '我的HTT基因检测CAG重复数具体是多少？',
+        '我的脑影像学检查有什么发现，尾状核有没有萎缩？',
+        '有没有出现认知功能下降，需要做什么评估？',
+        '我的家人需要做基因筛查吗，应该怎么安排？',
+      ],
+      questionsForDoctor: [
+        '目前运动、认知和精神行为受累分别处于什么阶段？',
+        '哪些症状需要药物或康复介入？治疗目标和副作用如何监测？',
+        '吞咽、营养、跌倒和驾驶/工作安全需要怎样评估？',
+        '无症状亲属是否适合预测性基因检测？需要怎样的遗传咨询流程？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '主要分为三大类：①运动障碍：舞蹈样动作（面部、躯干、四肢的不自主舞蹈样抽动）、肌张力障碍、眼球运动异常、后期出现运动僵直；②精神障碍：抑郁、焦虑、冲动控制障碍、人格改变，部分出现精神病性症状；③认知障碍：执行功能下降、记忆力减退、注意力不集中、反应迟钝，晚期可发展为全面痴呆。青少年型（20岁前起病）常表现为运动减少、强直和癫痫发作。',
+      diagnosis:
+        '依据典型临床三联征（舞蹈样动作、精神异常、进行性认知下降）+ 阳性家族史 + HTT基因检测（CAG重复数 >= 36 可确诊）+ 颅脑MRI特征性尾状核萎缩；基因检测可在出现症状前进行，此时需要遗传咨询支持。',
+      treatment:
+        '治疗以多学科症状管理为主，可能包括运动症状控制、精神心理治疗、睡眠和行为管理、吞咽营养评估、物理/作业/语言治疗和照护计划。具体药物和是否参加临床研究需要由神经内科、精神心理和遗传咨询团队共同判断。',
+      longTermCare:
+        '建议神经内科长期随访，每6～12个月评估运动、精神和认知状态；保持适度体力活动但注意防跌倒；居家环境需做安全改造（防摔、防碰撞）；注意营养和吞咽功能监测；心理支持对患者和照护者均十分重要；建议加入患者互助组织获取持续支持。',
+      fertilityOrFamily:
+        '患者子女有50%概率遗传突变基因；有生育意愿者建议在计划生育前进行遗传咨询，讨论胚胎植入前遗传学检测（PGD）等选项；家系成员是否做基因检测应充分讨论利弊后个人自主决定；对无症状但有家族史者，不建议贸然进行基因检测，建议遗传咨询先行。',
+      emergencySigns:
+        '突发跌倒或外伤（舞蹈样动作失去平衡）；吞咽困难加重、进食呛咳（需排除吸入性肺炎）；情绪剧烈波动出现自伤或他伤行为（急性精神科危机）；意识状态急剧变化（需排除感染或其他神经系统急症）。',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Huntington Disease',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1305/',
+      },
+      {
+        name: 'MedlinePlus: Huntington disease',
+        type: 'official',
+        url: 'https://medlineplus.gov/huntingtonsdisease.html',
+      },
+      {
+        name: 'MedlinePlus Genetics: Huntington disease',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/huntington-disease/',
+      },
+    ],
+    sourceName: 'GeneReviews: Huntington Disease',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1305/',
+    categorySlug: 'neurological',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(
+      50,
+      'disease-hyperornithinaemia-hyperammonaemia-homocitrullinuria-syndrome',
+    ),
+    name: 'HHH综合征',
+    nameEn: 'Hyperornithinemia-Hyperammonemia-Homocitrullinuria Syndrome',
+    alias: '高鸟氨酸血症-高氨血症-同型瓜氨酸尿症综合征、鸟氨酸转移酶缺乏症',
+    slug: 'hyperornithinaemia-hyperammonaemia-homocitrullinuria-syndrome',
+    oneSentence:
+      'HHH综合征是一种罕见的常染色体隐性遗传病，因SLC25A15基因突变导致线粒体鸟氨酸转运障碍，引起血氨、血鸟氨酸和同型瓜氨酸升高，累及神经系统和肝脏。',
+    plainName: 'HHH综合征',
+    prevalence: '极为罕见，全球报告少于100例，为尿素循环障碍中最罕见类型之一',
+    quickLook: {
+      whatItIs:
+        'HHH综合征即高鸟氨酸血症-高氨血症-同型瓜氨酸尿症综合征，是由于编码线粒体鸟氨酸转运蛋白1（ORNT1）的SLC25A15基因突变，导致鸟氨酸无法正常进入线粒体参与尿素循环，从而引起血氨蓄积、血鸟氨酸升高、同型瓜氨酸从尿中排出的罕见遗传代谢病。属常染色体隐性遗传，2018年列入国家《第一批罕见病目录》。',
+      whoToSeeFirst:
+        '新生儿或儿童出现高氨血症、嗜睡、呕吐、抽搐、发育迟缓、痉挛或不明原因肝功能异常时，应尽快到急诊/儿科、遗传代谢科或儿童神经内科评估。',
+      isGenetic: '是，常染色体隐性遗传',
+      hasTreatment:
+        '有尿素循环障碍相关管理方案，包括急性高氨血症处理、蛋白摄入管理、氨清除相关药物和氨基酸补充评估，必须由遗传代谢专科制定。',
+      commonDelayReason:
+        '症状与脑病、癫痫、肝病相似，易被误诊；发病年龄跨度大（从新生儿到成年），增加了识别难度',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿期出现嗜睡、拒食、呕吐、昏迷伴呼吸性碱中毒',
+        '儿童期出现智力运动发育落后或倒退',
+        '不明原因肝功能异常伴神经精神症状',
+        '对高蛋白食物明显厌恶或耐受性差',
+        '惊厥、共济失调或意识障碍反复发作',
+      ],
+      commonWrongTurns: [
+        '仅按癫痫或脑性瘫痪治疗，忽视血氨检测',
+        '将肝功能异常归因于病毒性肝炎或其他肝病',
+        '未进行尿代谢筛查，错失关键诊断线索',
+        '成人期发病易被误诊为精神障碍',
+      ],
+      firstDepartments: [
+        '儿科或儿童神经内科（优先就诊）',
+        '遗传代谢科',
+        '肝病科或消化内科（辅助评估肝损害）',
+        '急诊科（急性发作时）',
+      ],
+      diagnosisChecklist: [
+        '血氨、血糖、肝肾功能',
+        '血鸟氨酸浓度检测（持续升高是关键线索）',
+        '尿同型瓜氨酸检测（尿液代谢筛查）',
+        '血氨、鸟氨酸、同型瓜氨酸三者联合检测',
+        'SLC25A15基因分子检测（金标准）',
+        '皮肤成纤维细胞ORNT1活性测定（辅助手段）',
+        '头颅MRI或CT（评估神经系统并发症）',
+        '脑电图（评估癫痫样活动）',
+      ],
+      testsToAskAbout: [
+        '血氨检测（是否升高）',
+        '血鸟氨酸浓度',
+        '尿氨基酸分析（含同型瓜氨酸）',
+        'SLC25A15基因检测',
+        '肝脏功能及凝血功能',
+      ],
+      questionsForDoctor: [
+        '血氨目前控制到什么水平？需要多久复查一次？',
+        '孩子的饮食具体需要怎样调整？蛋白质摄入量如何控制？',
+        '目前是否需要精氨酸、瓜氨酸或氨清除相关治疗？由谁制定方案，如何监测？',
+        '孩子的发育水平需要多久评估一次？',
+        '需要警惕哪些急性发作的诱因？',
+        '父母若想再生育，需要做哪些遗传学准备？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '新生儿期多在出生48小时后出现嗜睡、喂养困难、呕吐、昏迷及呼吸性碱中毒。婴儿及儿童期表现为急慢性脑病，出现智力运动发育迟缓或倒退、痉挛步态、肌阵挛、癫痫发作。部分患者有共济失调和认知障碍。肝功能损害表现为肝脏增大、肝功能异常、凝血障碍。成人期发病者症状相对轻，常因高蛋白饮食诱发出现精神行为异常或意识障碍。',
+      diagnosis:
+        '依据典型三联征（高鸟氨酸血症、高氨血症、同型瓜氨酸尿症）可临床诊断。确诊依赖SLC25A15基因分析或皮肤成纤维细胞ORNT1活性测定（正常活性的20%~25%即支持诊断）。新生儿筛查可通过检测血鸟氨酸浓度早期发现。头颅CT/MRI可见脑萎缩、白质改变或硬膜下出血等异常。',
+      treatment:
+        '急性高氨血症需要按代谢急症处理，避免长时间禁食，并由专科团队评估能量支持、暂停或调整蛋白摄入、氨清除治疗、氨基酸补充以及必要时透析。长期管理通常包括个体化蛋白摄入、代谢指标监测、发育和神经系统随访。所有方案都应写成可执行的生病/急诊计划。',
+      longTermCare:
+        '长期管理以饮食控制为核心，需在营养师指导下制定个性化低蛋白食谱，避免高蛋白食物诱发急性发作。定期监测血氨、肝功能、血鸟氨酸浓度。关注神经发育里程碑，及时进行康复训练。家长应学习高氨血症急性发作的早期识别和就医流程。成人患者需注意避免长期严格限制蛋白导致营养不良。建议每3~6个月复查血氨和相关代谢指标。',
+      fertilityOrFamily:
+        '本病为常染色体隐性遗传，父母双方各为携带者时，每次妊娠有25%概率生出患儿。建议进行遗传咨询，明确SLC25A15基因突变位点后，可通过产前诊断或胚胎植入前遗传学检测（PGT）指导生育。新生儿出生后应尽快完善血鸟氨酸筛查。',
+      emergencySigns:
+        '出现嗜睡、烦躁、呕吐、抽搐或意识障碍等急性脑病表现，提示可能发生高氨血症危象，需立即就医。伴有凝血功能障碍（如皮肤瘀斑、出血难止）提示严重肝功能损害，需紧急处理。',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Hyperornithinemia-Hyperammonemia-Homocitrullinuria Syndrome',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK97260/',
+      },
+      {
+        name: 'NCBI GTR: Hyperornithinemia-hyperammonemia-homocitrullinuria syndrome',
+        type: 'official',
+        url: 'https://www.ncbi.nlm.nih.gov/gtr/conditions/C0268540/',
+      },
+    ],
+    sourceName:
+      'GeneReviews: Hyperornithinemia-Hyperammonemia-Homocitrullinuria Syndrome',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK97260/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(51, 'disease-hyperphenylalaninemia'),
+    name: '高苯丙氨酸血症',
+    nameEn: 'Hyperphenylalaninemia',
+    alias:
+      'HPA、高苯丙氨酸血症综合征、四氢生物蝶呤缺乏症、苯丙氨酸羟化酶缺乏症',
+    slug: 'hyperphenylalaninemia',
+    oneSentence:
+      '高苯丙氨酸血症是一组因苯丙氨酸羟化酶（PAH）或其辅酶四氢生物蝶呤（BH4）缺乏，导致血苯丙氨酸升高的常见氨基酸代谢遗传病，包括苯丙酮尿症（PKU）及其他表型。',
+    plainName: '高苯丙氨酸血症',
+    prevalence:
+      '中国1985~2011年新生儿发病率约1/10397；全球各地区发病率差异较大',
+    quickLook: {
+      whatItIs:
+        '高苯丙氨酸血症（Hyperphenylalaninemia，简称HPA）是由于苯丙氨酸代谢途径中苯丙氨酸羟化酶（PAH）缺乏或其辅酶四氢生物蝶呤（BH4）缺乏，导致血苯丙氨酸（Phe）水平升高的一组最常见氨基酸代谢病。2018年列入国家《第一批罕见病目录》。根据缺乏酶的类型分为PAH缺乏症和BH4缺乏症两大类，治疗方案有所不同。常见诊断年龄为新生儿筛查，成年女性患者常于产检或畸形儿出生后发现。',
+      whoToSeeFirst: '儿科、遗传代谢科或新生儿筛查随访门诊',
+      isGenetic: '是，常染色体隐性遗传',
+      hasTreatment:
+        '有长期饮食、特殊医学食品、BH4 反应性评估和代谢随访方案。PAH 缺乏和 BH4 相关疾病路径不同，需要新筛/遗传代谢团队区分。',
+      commonDelayReason:
+        '新生儿期无明显症状，易被忽视；轻型患儿症状轻微，易误认为发育慢或行为问题',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿筛查发现血苯丙氨酸升高',
+        '皮肤颜色浅淡、头发由黑变黄',
+        '尿液、汗液有鼠臭味（霉臭味）',
+        '智力发育迟缓或倒退',
+        '癫痫发作、小头畸形',
+        '行为异常（多动、自残、攻击倾向）',
+        '婴儿期反复呕吐、喂养困难、湿疹',
+      ],
+      commonWrongTurns: [
+        '轻型患儿因症状轻微被延误诊治',
+        '只关注头发皮肤颜色，忽视认知发育评估',
+        '未区分PAH缺乏与BH4缺乏，治疗方案选择不当',
+        '饮食管理不规范，导致血Phe波动',
+        '儿童期行为问题被误认为心理问题',
+      ],
+      firstDepartments: [
+        '儿科或遗传代谢科（优先就诊）',
+        '新生儿筛查随访门诊',
+        '儿童神经内科（出现抽搐或发育落后时）',
+        '儿童康复科（发育支持）',
+      ],
+      diagnosisChecklist: [
+        '血苯丙氨酸（Phe）浓度检测（>120μmol/L为升高）',
+        '血苯丙氨酸/酪氨酸比值（Phe/Tyr > 2.0）',
+        '尿喋呤谱分析（鉴别BH4缺乏）',
+        'BH4负荷试验（判断是否为BH4反应型）',
+        'PAH及相关基因检测',
+        '脑电图（出现抽搐时）',
+        '头颅MRI（评估脑发育）',
+        '发育商或智力评估',
+      ],
+      testsToAskAbout: [
+        '血苯丙氨酸浓度及控制范围',
+        '是否为BH4反应型',
+        'PAH基因突变类型',
+        '发育水平评估结果',
+        '脑电图和头颅MRI是否需要做',
+      ],
+      questionsForDoctor: [
+        '血苯丙氨酸目前控制在什么范围？不同年龄目标值是多少？',
+        '孩子是PAH缺乏还是BH4缺乏？是否需要补充BH4？',
+        '低苯丙氨酸饮食具体怎么执行？需要吃多久？',
+        '特殊医学食品和营养支持如何申请、购买和随访？',
+        '孩子的智力发育目前处于什么水平？需要哪些康复支持？',
+        '若想生二胎，需要做哪些遗传学准备？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        'PAH缺乏症（苯丙酮尿症型）：新生儿期大多无临床症状，出生3~4个月后逐渐出现头发由黑变黄、皮肤颜色浅淡、尿液和汗液有鼠臭味。随着年龄增长可出现智力发育迟缓、小头畸形、癫痫发作，以及行为、性格、认知异常（如多动、自残、攻击、自闭症倾向）。BH4缺乏症：除上述症状外，还可出现嗜睡或失眠、运动障碍、吞咽困难、肌张力减低、眼球震颤，病情往往比PAH缺乏症更重。婴儿期还常见呕吐和湿疹。',
+      diagnosis:
+        '新生儿筛查为最主要早期发现手段，检测血Phe浓度及Phe/Tyr比值。诊断需排除暂时性高苯丙氨酸血症，明确是PAH缺乏还是BH4缺乏。尿喋呤谱分析和BH4负荷试验是区分两类的关键检查。基因检测（PAH、PTS、QDPR、DNAJC12等基因）可确定具体突变类型，指导治疗和预后判断。',
+      treatment:
+        '管理取决于 PAH 缺乏、BH4 相关疾病或其他原因。常见路径包括低苯丙氨酸饮食、特殊医学食品、血苯丙氨酸监测、BH4 反应性评估和神经发育随访。妊娠前和妊娠期需要严格的代谢专科管理。不要根据网络目标值自行调整饮食或补充剂。',
+      longTermCare:
+        '需终身随访血苯丙氨酸浓度，1岁内建议每月监测，1岁后每3个月监测一次。饮食管理是长期任务，特殊奶粉和低蛋白食品需持续使用。家长需学习制作低Phe食谱，确保营养均衡（尤其注意酪氨酸的补充，因其为必需氨基酸）。儿童期定期评估智力、运动和语言发育，及时进行康复训练。关注牙齿健康（BH4缺乏症患儿尤其注意）。成人患者计划妊娠前应进行遗传咨询和血Phe控制优化。',
+      fertilityOrFamily:
+        '本病为常染色体隐性遗传。父母双方均为携带者时，每次妊娠有25%概率生出患儿。建议进行遗传咨询，明确基因突变位点后可行产前诊断或PGT。女性患者妊娠期需严格控制血Phe，对胎儿神经系统发育至关重要。高苯丙氨酸血症患者父母若想生育二胎，强烈建议在生育前完成遗传咨询。',
+      emergencySigns:
+        '出现难以控制的抽搐、意识障碍或发育倒退，提示血Phe控制不佳或存在其他代谢问题，需尽快复诊。出现反复感染、严重呕吐、腹泻或拒食，需监测酸碱平衡和营养状态，必要时住院调整饮食方案。',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Phenylalanine Hydroxylase Deficiency',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1504/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Phenylketonuria',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/phenylketonuria/',
+      },
+    ],
+    sourceName: 'GeneReviews: Phenylalanine Hydroxylase Deficiency',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1504/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(52, 'disease-hypophosphatasia'),
+    name: '低碱性磷酸酶血症',
+    nameEn: 'Hypophosphatasia',
+    alias: '低磷酸酯酶症、HPP、遗传性低磷酸酯酶症',
+    slug: 'hypophosphatasia',
+    oneSentence:
+      '低碱性磷酸酶血症是一种因ALPL基因突变导致碱性磷酸酶活性降低，引起骨骼和牙齿矿化障碍的罕见单基因遗传病，2018年列入国家《第一批罕见病目录》。',
+    plainName: '低碱性磷酸酶血症',
+    prevalence: '严重型发病率约1/100000，轻型发病率相对更高；我国属于罕见病',
+    quickLook: {
+      whatItIs:
+        '低碱性磷酸酶血症（Hypophosphatasia，简称HPP）是由编码组织非特异性碱性磷酸酶的ALPL基因（又称TNSALP基因）突变所致。基因突变导致体内碱性磷酸酶（ALP）活性显著下降，其底物（包括无机焦磷酸盐、磷酸吡哆醛等）异常蓄积，进而引起骨骼和牙齿矿化障碍，并可累及多个器官。呈常染色体显性或隐性遗传，隐性遗传者病情通常更重。2018年列入国家《第一批罕见病目录》。',
+      whoToSeeFirst: '儿科、骨科（骨骼症状明显时）或口腔科（牙齿症状）',
+      isGenetic: '是，常染色体显性或隐性遗传',
+      hasTreatment:
+        '有针对严重儿童型的酶替代治疗和多学科支持管理，但是否适合、何时使用和如何监测需由代谢骨病/内分泌/骨科团队评估。',
+      commonDelayReason:
+        '临床表现差异大，从牙齿早脱到新生儿致死，跨度极大；轻型易被误认为普通骨质疏松或牙齿问题',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '乳牙在1~3岁前过早脱落（通常从切牙开始）',
+        '儿童身材矮小、骨骼畸形或佝偻病表现',
+        '反复骨折或骨痛，骨折愈合缓慢',
+        '不明原因骨骼矿化减少',
+        '婴儿期出现颅缝早闭或颅内压增高表现',
+        '成人患者出现不明原因骨软化或假性骨折',
+        '碱性磷酸酶（ALP）持续偏低',
+      ],
+      commonWrongTurns: [
+        '牙齿早脱被误认为普通口腔问题或牙周病',
+        '儿童骨折被误认为外伤或普通骨质疏松',
+        '骨骼畸形被误诊为佝偻病或其他代谢性骨病',
+        '成人型被误认为普通骨质疏松或关节炎',
+        '未检测ALP，仅关注钙磷指标',
+        '围生期型因病情危重被误认为其他致命性疾病',
+      ],
+      firstDepartments: [
+        '儿科或遗传代谢科（优先就诊）',
+        '儿童骨科（骨骼症状明显时）',
+        '口腔科（牙齿症状明显时）',
+        '骨科或内分泌科（成人患者）',
+        '新生儿科（围生期或婴儿期起病）',
+      ],
+      diagnosisChecklist: [
+        '血清碱性磷酸酶（ALP）测定（持续性偏低为核心指标）',
+        '血钙、磷、甲状旁腺激素（PTH）',
+        'ALPL基因分子检测（确诊金标准）',
+        '尿磷酸乙醇胺（PEA）检测（HPP特征性代谢物）',
+        '血磷酸吡哆醛（PLP）检测（升高支持诊断）',
+        '骨骼X线片（评估矿化程度和骨骼畸形）',
+        '牙齿曲面体层片（评估牙齿结构）',
+        '骨密度检测（评估骨折风险）',
+      ],
+      testsToAskAbout: [
+        '碱性磷酸酶（ALP）的具体数值',
+        'ALPL基因是否做了检测',
+        '骨骼X线或骨密度检查结果',
+        '血钙、磷和PTH水平',
+        '牙齿脱落的具体情况和原因',
+      ],
+      questionsForDoctor: [
+        'ALP偏低多少可以确诊为HPP？需要重复检测吗？',
+        '孩子目前的骨骼发育情况如何？有哪些需要特别注意的？',
+        '是否需要使用酶替代治疗（asfotase alfa）？',
+        '牙齿护理有哪些特别需要注意的地方？',
+        '日常生活中如何预防骨折？运动和饮食有什么限制？',
+        '父母若想再生育，需要做哪些遗传学准备？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '临床表现多样，根据起病年龄分为六大类：围生期型（致死型，胎儿期即发病，严重骨矿化不良，多在围生期死亡）；良性新生儿型（宫内有骨骼畸形但出生后改善）；婴儿型（出生6个月内起病，出现纳差、肌张力低、颅缝早闭、呼吸异常、骨折，6个月前死亡率较高）；儿童型（6个月后起病，最复杂，表现为乳牙早脱、身材矮小、佝偻病、骨痛、反复骨折、步态蹒跚）；成人型（牙齿异常、骨软化、反复骨折、骨骼关节疼痛、肌无力，易与骨质疏松混淆）；单纯牙型（最轻，仅表现为乳牙或恒牙早脱，通常无骨骼系统异常）。',
+      diagnosis:
+        '核心实验室指标为血清ALP持续性降低，同时排除继发性因素（如维生素D缺乏、甲状腺功能减退等）。确诊依赖ALPL基因检测。X线片可见骨骼矿化减少、骨骼畸形、骨折等表现。骨密度检测显示骨量减少或骨质疏松。尿PEA和血PLP升高对诊断有参考价值。',
+      treatment:
+        '管理取决于起病年龄和严重程度。严重围产期、婴儿期或儿童型可由专科评估酶替代治疗；所有患者都需要骨骼、牙科、疼痛、肾脏钙磷代谢和康复支持。钙、维生素 D、骨质疏松药物或手术处理必须由熟悉 HPP 的团队判断，避免按普通佝偻病或骨质疏松自行处理。',
+      longTermCare:
+        '需多学科长期随访：骨科（骨折预防和畸形矫正）、口腔科（牙齿保护，养成专业口腔护理习惯，避免不必要拔牙）、康复科（运动指导，维持安全活动量）、营养科（均衡营养，避免营养不良）。患者和照护者需了解骨折风险，做好活动环境安全管理。成人患者应关注假性骨折和骨痛。定期复查ALP、骨密度、X线片。建议每6~12个月全面评估一次。',
+      fertilityOrFamily:
+        '本病可呈常染色体显性或隐性遗传。建议进行遗传咨询，明确ALPL基因突变类型后可行产前诊断或PGT。显性遗传患者每次妊娠有50%概率遗传突变，但病情轻重不一定与父母相同；隐性遗传者病情通常更重。若家族中已有患者，建议所有家庭成员进行基因筛查和ALP检测。',
+      emergencySigns:
+        '婴儿型出现呼吸困难、紫绀或反复呼吸暂停，提示严重呼吸系统受累，需立即就医。出现难以愈合的骨折、骨骼畸形加重或新发骨折，提示骨骼系统恶化，需尽快评估。出现癫痫发作，提示可能存在维生素B6代谢异常（婴儿型特有），需紧急处理。牙龈感染可能波及牙槽骨，口腔科急诊处理。',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Hypophosphatasia',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1150/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Hypophosphatasia',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/hypophosphatasia/',
+      },
+    ],
+    sourceName: 'GeneReviews: Hypophosphatasia',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1150/',
+    categorySlug: 'skeletal-connective-tissue',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
 ];
