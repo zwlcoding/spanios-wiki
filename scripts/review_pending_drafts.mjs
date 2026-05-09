@@ -13,6 +13,12 @@ const pendingDrafts = [];
 const skippedPublishedDrafts = [];
 
 for (const draftPath of draftPaths) {
+  const pathSlug = getDraftSlugFromPath(draftPath);
+  if (pathSlug && detailedSlugs.has(pathSlug)) {
+    skippedPublishedDrafts.push(draftPath);
+    continue;
+  }
+
   const draft = readJson(draftPath);
   if (draft.review?.status !== 'pending-codex-review') {
     continue;
@@ -128,7 +134,22 @@ function findDrafts(dir) {
 }
 
 function readJson(filePath) {
-  return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  try {
+    return JSON.parse(fs.readFileSync(filePath, 'utf8'));
+  } catch (error) {
+    console.error(
+      `Could not parse draft JSON ${path.relative(root, filePath)}: ${error.message}`,
+    );
+    return {};
+  }
+}
+
+function getDraftSlugFromPath(filePath) {
+  const relativePath = path.relative(draftsRoot, filePath);
+  if (relativePath.startsWith('..')) {
+    return '';
+  }
+  return relativePath.split(path.sep)[0] ?? '';
 }
 
 function readDetailedDiseaseSlugs() {
