@@ -4612,4 +4612,443 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     reviewStatus: 'draft',
     tagSlugs: ['genetic-counseling'],
   },
+  {
+    ...entity(43, 'disease-hereditary-hypomagnesemia'),
+    name: '遗传性低镁血症',
+    nameEn: 'Hereditary Hypomagnesemia',
+    alias: '家族性低镁血症、原发性低镁血症、遗传性镁代谢障碍',
+    slug: 'hereditary-hypomagnesemia',
+    oneSentence:
+      '遗传性低镁血症是一组影响肠道吸收或肾脏保留镁的遗传病，可导致低镁、低钙、抽搐、心律风险或肾钙化等不同表现。',
+    plainName: '身体吸收或保留镁的能力出问题，导致血镁长期偏低的一组遗传病',
+    prevalence:
+      '总体罕见，不同基因类型差异很大；有些婴儿期发病，有些在儿童或成人期因低镁、肾钙化或家族筛查发现。',
+    quickLook: {
+      whatItIs:
+        '这不是一种单一疾病，而是一组遗传性镁转运障碍。问题可能发生在肠道吸收、肾小管重吸收，或同时影响钙、钾、肾脏和神经系统。',
+      whoToSeeFirst:
+        '反复低镁、低钙抽搐、手足搐搦、心律异常、肾结石/肾钙化或原因不明低钾低镁时，可到肾内科、儿科肾脏科、遗传代谢科或急诊评估。',
+      isGenetic:
+        '是，遗传方式因类型而异，可为常染色体隐性或显性。TRPM6、CLDN16、CLDN19、CNNM2 等都可能相关。',
+      hasTreatment:
+        '有长期补镁、处理相关电解质异常和肾脏/心电随访方案，但具体目标和药物形式需按类型和肾功能个体化。',
+      commonDelayReason:
+        '抽搐可能先按癫痫或缺钙处理，低镁只被短期纠正；若不查尿镁、肾钙化和家族史，容易漏掉遗传性原因。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '婴幼儿出现低镁伴低钙、抽搐、手足搐搦或喂养生长问题。',
+        '反复低镁、低钾、心悸、QT 间期异常或肌肉痉挛。',
+        '儿童或青年出现肾结石、肾钙化、肾功能异常并伴低镁。',
+        '血镁长期低，补充后仍反复下降，尤其尿镁排泄不恰当升高。',
+        '家族中有低镁、抽搐、肾钙化、早发肾病或近亲婚配史。',
+      ],
+      commonWrongTurns: [
+        '只补钙或抗癫痫治疗，没有发现低镁是上游问题。',
+        '把低镁归因于饮食差，未区分胃肠丢失和肾性丢失。',
+        '没有做肾脏超声或尿钙尿镁评估，漏掉肾钙化相关类型。',
+        '长期自行补充，未监测肾功能、电解质和心电图。',
+      ],
+      firstDepartments: [
+        '肾内科',
+        '儿科肾脏科',
+        '遗传代谢科/医学遗传科',
+        '急诊科（抽搐或心律风险时）',
+        '心内科（心电异常时）',
+      ],
+      diagnosisChecklist: [
+        '保存多次血镁、血钙、血钾、肌酐、甲状旁腺激素和尿电解质结果。',
+        '记录抽搐、手足搐搦、心悸、肾结石、肾钙化和家族史。',
+        '询问是否需要 24 小时尿镁或镁排泄分数评估。',
+        '询问是否需要低镁相关基因 panel 或外显子组检测。',
+        '确认长期补充、复查和急性低镁处理路径。',
+      ],
+      testsToAskAbout: [
+        '血镁、血钙、血钾、磷、肌酐和酸碱状态。',
+        '尿镁、尿钙、尿钾和肾性丢失评估。',
+        '甲状旁腺激素和维生素 D 相关检查。',
+        '心电图和必要时动态心电图。',
+        '肾脏超声及相关基因检测。',
+      ],
+      questionsForDoctor: [
+        '低镁更像肠道吸收问题还是肾脏丢失问题？',
+        '是否需要排查特定遗传性低镁血症类型？',
+        '我的补镁目标、复查频率和肾功能监测怎么安排？',
+        '哪些症状提示抽搐或心律风险，需要急诊？',
+        '家属是否需要筛查血镁、尿镁或基因？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>遗传性低镁血症可表现为婴儿期低钙抽搐、手足搐搦、肌肉痉挛、乏力、心悸或心电异常，也可出现低钾、肾结石、肾钙化、肾功能受损、生长发育问题或神经发育受累。不同基因类型的表现和风险不同。</p>',
+      diagnosis:
+        '<p>诊断需要确认低镁是否持续存在，并区分胃肠吸收不足和肾性镁丢失。评估通常包括血尿电解质、肾功能、尿钙尿镁、心电图、肾脏影像和遗传检测。医生还会排除药物、腹泻、营养不良、糖尿病和其他获得性低镁原因。</p>',
+      treatment:
+        '<p>管理包括纠正低镁和相关低钙/低钾、监测心律和肾功能、处理肾钙化或肾结石风险，并按具体类型制定长期补充方案。补充方式和剂量必须由医生根据年龄、症状、肾功能和耐受性调整。</p>',
+      longTermCare:
+        '<p>长期照护重点是稳定电解质、保护肾功能、预防抽搐和心律风险，并保存基因和急诊说明。儿童还需要关注生长发育、神经发育和学校照护计划。</p>',
+      fertilityOrFamily:
+        '<p>遗传方式因基因而异。明确致病基因后，家属可通过遗传咨询了解携带者检测、亲属筛查、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>抽搐、意识改变、严重手足搐搦、明显心悸或晕厥、持续呕吐腹泻、低镁低钙快速加重时，应急诊并说明遗传性低镁血症风险。</p>',
+    },
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Hypomagnesemia with secondary hypocalcemia',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/hypomagnesemia-with-secondary-hypocalcemia',
+      },
+      {
+        name: 'NCBI Bookshelf StatPearls: Hypomagnesemia',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK500003/',
+      },
+      {
+        name: 'Genetic causes of hypomagnesemia, a clinical overview',
+        type: 'review',
+        url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5440500/',
+      },
+    ],
+    symptoms:
+      '<p>可表现为低镁、低钙抽搐、手足搐搦、低钾、心律异常、肾结石或肾钙化。</p>',
+    diagnosis:
+      '<p>评估包括血尿电解质、肾性镁丢失判断、心电图、肾脏影像、获得性原因排除和基因检测。</p>',
+    treatment:
+      '<p>管理以个体化补镁、相关电解质纠正、心电和肾功能随访、遗传咨询为核心。</p>',
+    prognosis:
+      '<p>预后取决于具体基因类型、低镁控制、肾脏受累和是否早期识别急性风险。</p>',
+    sourceName:
+      'MedlinePlus Genetics: Hypomagnesemia with secondary hypocalcemia',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/hypomagnesemia-with-secondary-hypocalcemia',
+    categorySlug: 'renal-urologic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(44, 'disease-cadasil'),
+    name: '遗传性多发脑梗死性痴呆',
+    nameEn: 'CADASIL',
+    alias:
+      'CADASIL、伴皮质下梗死和白质脑病的常染色体显性脑动脉病、NOTCH3 相关脑小血管病',
+    slug: 'hereditary-multi-infarct-dementia-cerebral-autosomal-dominant-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy-cadasil',
+    oneSentence:
+      'CADASIL 是 NOTCH3 相关遗传性脑小血管病，可导致偏头痛先兆、反复腔隙性卒中、情绪变化、认知下降和脑白质改变。',
+    plainName: '家族性脑小血管容易出问题，反复小中风和认知变化的遗传病',
+    prevalence:
+      '总体罕见，但 NOTCH3 相关表型范围较宽；有些家族表现典型，也有人症状较轻或较晚识别。',
+    quickLook: {
+      whatItIs:
+        'CADASIL 会影响脑内小到中等动脉，造成白质病变和腔隙性缺血事件。它不同于单纯高血压或动脉粥样硬化导致的普通脑小血管病。',
+      whoToSeeFirst:
+        '年轻或中年反复短暂性脑缺血/脑梗死、偏头痛伴先兆、脑 MRI 白质改变明显或家族中多人早发卒中/痴呆时，可到神经内科脑血管病或遗传神经病门诊。',
+      isGenetic: '是，通常为常染色体显性遗传，与 NOTCH3 致病变异有关。',
+      hasTreatment:
+        '目前以卒中风险管理、症状处理、康复和遗传咨询为主；没有适用于所有患者的根治方案。',
+      commonDelayReason:
+        '影像白质改变容易被归因于高血压、老化或普通偏头痛；如果发病年龄偏早、家族史明显或 MRI 分布典型，应考虑遗传性脑小血管病。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '40-50 岁前后或更早出现反复腔隙性脑梗死或短暂性脑缺血。',
+        '偏头痛伴先兆、情绪变化或认知下降与脑白质病变并存。',
+        '脑 MRI 显示广泛白质高信号，尤其累及颞极或外囊等提示性部位。',
+        '家族中多人早发卒中、步态问题、认知下降或精神行为变化。',
+      ],
+      commonWrongTurns: [
+        '只按普通偏头痛处理，没有看脑 MRI 和家族史。',
+        '年轻患者脑白质改变被简单解释为压力或老化。',
+        '反复小中风只控制血压血脂，未评估遗传性脑小血管病。',
+        '未进行遗传咨询就对无症状亲属做预测检测。',
+      ],
+      firstDepartments: [
+        '神经内科脑血管病门诊',
+        '遗传神经病门诊',
+        '医学遗传科/遗传咨询门诊',
+        '康复医学科',
+        '精神心理科（情绪或行为问题时）',
+      ],
+      diagnosisChecklist: [
+        '整理所有脑 MRI/CT、卒中病历、偏头痛和认知/情绪变化记录。',
+        '画出家族中卒中、偏头痛、痴呆和精神症状谱系。',
+        '询问 NOTCH3 基因检测及结果解释。',
+        '讨论无症状亲属是否、何时、如何进行预测性检测。',
+        '建立卒中预防、康复、认知和心理支持计划。',
+      ],
+      testsToAskAbout: [
+        '脑 MRI 和脑血管评估。',
+        'NOTCH3 基因检测。',
+        '必要时皮肤活检电镜/免疫组化。',
+        '血压、血脂、血糖和其他可干预卒中风险评估。',
+        '认知、情绪和步态功能评估。',
+      ],
+      questionsForDoctor: [
+        '我的 MRI 和病史是否符合 CADASIL？',
+        'NOTCH3 变异是否足以确认诊断？',
+        '哪些卒中风险因素需要积极管理？',
+        '亲属检测需要怎样的遗传咨询流程？',
+        '认知、情绪和工作生活支持如何安排？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>CADASIL 可表现为偏头痛伴先兆、短暂性脑缺血、反复腔隙性脑梗死、步态不稳、情绪障碍、淡漠、执行功能下降和逐渐认知受损。症状和发病年龄在家族内外都可有差异。</p>',
+      diagnosis:
+        '<p>诊断依赖临床表现、脑 MRI 特征、家族史和 NOTCH3 基因检测。基因结果不明确时，部分病例可能需要皮肤活检寻找特征性血管改变。医生还会鉴别高血压脑小血管病、多发性硬化、炎症性血管病和其他遗传性白质病。</p>',
+      treatment:
+        '<p>管理以降低可干预卒中风险、处理偏头痛和情绪认知问题、康复训练和家庭支持为主。抗栓、降压、降脂等策略需由神经内科根据个体情况决定，不能照搬普通卒中方案。</p>',
+      longTermCare:
+        '<p>长期随访关注卒中复发、步态、认知、情绪、工作能力、驾驶安全和照护安排。患者和家属应保存影像、基因报告和急诊说明。</p>',
+      fertilityOrFamily:
+        '<p>CADASIL 通常为常染色体显性遗传。一级亲属有风险，但无症状预测性检测应在充分遗传咨询后进行，特别要讨论心理影响、保险/职业影响和个人知情选择。</p>',
+      emergencySigns:
+        '<p>突发口角歪斜、肢体无力麻木、言语不清、视物异常、严重头痛或意识改变，应按卒中急症立即就医，并告知 CADASIL 或家族性脑小血管病风险。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: CADASIL',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1500/',
+      },
+      {
+        name: 'MedlinePlus Genetics: CADASIL',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/cadasil/',
+      },
+    ],
+    symptoms:
+      '<p>可表现为偏头痛伴先兆、反复短暂性脑缺血或腔隙性脑梗死、脑白质改变、情绪和认知下降。</p>',
+    diagnosis:
+      '<p>评估包括脑 MRI、家族史、NOTCH3 基因检测，必要时皮肤活检和卒中风险因素评估。</p>',
+    treatment:
+      '<p>管理以卒中风险控制、偏头痛和情绪认知处理、康复、遗传咨询和家庭支持为主。</p>',
+    prognosis:
+      '<p>病程差异较大，受卒中复发、认知变化、家族变异和可干预风险因素管理影响。</p>',
+    sourceName: 'GeneReviews: CADASIL',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1500/',
+    categorySlug: 'neurological',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(45, 'disease-hereditary-spastic-paraplegia'),
+    name: '遗传性痉挛性截瘫',
+    nameEn: 'Hereditary Spastic Paraplegia',
+    alias: 'HSP、遗传性痉挛性下肢瘫、Strumpell-Lorrain 综合征',
+    slug: 'hereditary-spastic-paraplegia',
+    oneSentence:
+      '遗传性痉挛性截瘫是一组以双下肢痉挛、僵硬和行走困难为核心表现的遗传性神经系统疾病。',
+    plainName: '下肢越来越僵硬、走路容易绊倒的一组遗传性神经病',
+    prevalence:
+      '总体罕见，相关基因很多，起病年龄可从儿童到成人不等，进展速度差异很大。',
+    quickLook: {
+      whatItIs:
+        'HSP 主要影响控制下肢运动的长神经通路。单纯型多以双下肢痉挛和行走困难为主，复杂型还可伴共济失调、周围神经病、认知、癫痫、视神经或其他系统表现。',
+      whoToSeeFirst:
+        '逐渐出现双腿僵硬、剪刀步、容易绊倒、足尖走路、肌张力高或腱反射亢进时，可到神经内科、神经遗传门诊或康复医学科评估。',
+      isGenetic:
+        '是，遗传方式可为常染色体显性、隐性、X 连锁或线粒体相关，需结合家族史和基因检测判断。',
+      hasTreatment:
+        '目前多数类型以症状管理、康复、步态辅助、痉挛管理和并发症处理为主；部分可治疗的遗传/代谢病需要在鉴别诊断中主动排查。',
+      commonDelayReason:
+        '儿童起病可能被当作脑瘫或姿势问题，成人起病可能被当作腰椎病、运动少或普通痉挛；如果家族中多人类似，应考虑 HSP。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '双下肢逐渐僵硬、走路拖步、足尖着地、剪刀步或反复绊倒。',
+        '神经查体提示下肢肌张力高、腱反射亢进、病理反射阳性。',
+        '症状多年缓慢进展，或儿童期被诊断为痉挛型脑瘫但无明确围产期原因。',
+        '伴尿急、轻度感觉异常，或复杂型相关的共济失调、认知、癫痫、视力听力问题。',
+        '家族中多人有类似行走困难、拐杖/轮椅使用或早发下肢僵硬。',
+      ],
+      commonWrongTurns: [
+        '只按腰椎间盘突出、骨科问题或脑瘫处理，没有神经系统定位和家族史评估。',
+        '没有排查可治疗的遗传代谢病、维生素缺乏、炎症或脊髓病变。',
+        '基因检测只看单个基因，未结合表型和家系解释结果。',
+        '只关注诊断名称，忽视康复、痉挛管理、膀胱功能和跌倒预防。',
+      ],
+      firstDepartments: [
+        '神经内科',
+        '神经遗传门诊/医学遗传科',
+        '康复医学科',
+        '骨科或足踝门诊（畸形评估时）',
+        '泌尿科（尿急或膀胱问题时）',
+      ],
+      diagnosisChecklist: [
+        '记录起病年龄、进展速度、跌倒、运动能力和家族中类似症状。',
+        '带上脑/脊髓 MRI、肌电图、诱发电位和既往神经查体资料。',
+        '询问是否需要 HSP/运动神经通路相关基因 panel、外显子组或基因组检测。',
+        '排查可治疗的鉴别诊断，如代谢、维生素、免疫、感染或结构性脊髓病变。',
+        '评估步态、肌张力、关节活动度、足踝畸形、膀胱和跌倒风险。',
+      ],
+      testsToAskAbout: [
+        '脑和脊髓 MRI。',
+        'HSP 相关基因检测或综合基因组检测。',
+        '肌电图、神经传导和诱发电位（医生认为需要时）。',
+        '维生素、代谢、感染和免疫相关鉴别检查。',
+        '步态和康复功能评估。',
+      ],
+      questionsForDoctor: [
+        '我的表现更像单纯型还是复杂型 HSP？',
+        '哪些可治疗的疾病需要先排除？',
+        '基因检测结果会如何影响家属筛查和生育咨询？',
+        '痉挛、疼痛、足踝问题和跌倒风险怎样管理？',
+        '需要哪些康复训练和辅助器具评估？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>HSP 的核心表现是双下肢痉挛、僵硬、无力和行走困难，常伴腱反射亢进、病理反射阳性、足下垂或剪刀步。部分患者有尿急、轻度感觉异常。复杂型还可出现共济失调、周围神经病、癫痫、认知障碍、视神经或其他系统表现。</p>',
+      diagnosis:
+        '<p>诊断需要神经系统查体、脑脊髓影像、家族史、鉴别诊断筛查和遗传检测。HSP 相关基因很多，阴性结果不一定完全排除，阳性结果也需要结合症状、遗传方式和家系验证解释。</p>',
+      treatment:
+        '<p>治疗以功能管理为主，包括康复训练、拉伸和步态训练、痉挛和疼痛管理、辅助器具、跌倒预防、足踝畸形处理和膀胱症状管理。若鉴别出可治疗的代谢或营养相关疾病，应按对应疾病处理。</p>',
+      longTermCare:
+        '<p>长期照护关注步行能力、跌倒、关节挛缩、疼痛、膀胱功能、心理和工作生活支持。定期康复评估比单纯等待基因结果更能改善日常功能。</p>',
+      fertilityOrFamily:
+        '<p>HSP 遗传方式多样。明确致病基因后，家属可通过遗传咨询了解亲属筛查、预测检测、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>行走能力突然恶化、急性尿潴留、明显背痛伴神经功能变化、感染后快速加重或新发上肢/吞咽/呼吸问题，应尽快就医，避免把急性问题都归因于 HSP。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Uncomplicated Hereditary Spastic Paraplegia Overview',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1509/',
+      },
+      {
+        name: 'NINDS: Hereditary Spastic Paraplegia',
+        type: 'official',
+        url: 'https://www.ninds.nih.gov/health-information/disorders/hereditary-spastic-paraplegia',
+      },
+    ],
+    symptoms:
+      '<p>主要表现为双下肢痉挛、僵硬、无力、剪刀步、容易绊倒，可伴尿急或复杂神经系统表现。</p>',
+    diagnosis:
+      '<p>评估包括神经查体、脑脊髓 MRI、可治疗病因排查、HSP 相关基因检测和康复功能评估。</p>',
+    treatment:
+      '<p>管理以康复训练、痉挛和疼痛管理、辅助器具、跌倒预防、膀胱和足踝问题处理为主。</p>',
+    prognosis:
+      '<p>多数单纯型进展缓慢且不明显缩短寿命，但功能影响差异大；复杂型取决于相关系统受累。</p>',
+    sourceName:
+      'GeneReviews: Uncomplicated Hereditary Spastic Paraplegia Overview',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1509/',
+    categorySlug: 'neurological',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(46, 'disease-holocarboxylase-synthetase-deficiency'),
+    name: '全羧化酶合成酶缺乏症',
+    nameEn: 'Holocarboxylase Synthetase Deficiency',
+    alias: 'HLCS 缺乏症、早发型多种羧化酶缺乏症、生物素反应性多羧化酶缺乏症',
+    slug: 'holocarboxylase-synthetase-deficiency',
+    oneSentence:
+      '全羧化酶合成酶缺乏症是一种影响生物素利用的遗传代谢病，婴儿期可出现喂养困难、皮疹、脱发、呼吸问题、嗜睡、酸中毒或抽搐。',
+    plainName: '身体不能有效使用生物素，导致多个代谢酶工作异常的遗传病',
+    prevalence:
+      'MedlinePlus Genetics 提到估计约每 87,000 人 1 例；实际识别受新生儿筛查和代谢检测可及性影响。',
+    quickLook: {
+      whatItIs:
+        'HLCS 酶负责把生物素连接到多个羧化酶上。酶功能不足会让蛋白质、脂肪和碳水化合物代谢受影响，属于多种羧化酶缺乏症的一类。',
+      whoToSeeFirst:
+        '新生儿或婴儿出现喂养差、反复呕吐、皮疹、脱发、呼吸困难、嗜睡、抽搐或代谢性酸中毒时，应急诊/新生儿科处理，稳定后转遗传代谢科。',
+      isGenetic: '是，通常为常染色体隐性遗传，与 HLCS 双等位致病变异有关。',
+      hasTreatment:
+        '多数患者需要尽早、长期在医生指导下使用生物素相关治疗和代谢随访。具体剂量和调整不能自行决定。',
+      commonDelayReason:
+        '皮疹、脱发、喂养差和呼吸问题容易被分散处理；若没有把酸中毒、酮症、有机酸异常和皮肤线索联系起来，可能延误。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿或婴儿出现喂养困难、呕吐、嗜睡、呼吸急促或代谢性酸中毒。',
+        '皮疹、脂溢性/湿疹样改变、脱发与发育或代谢异常并存。',
+        '抽搐、肌张力异常、发育迟缓或反复危重发作。',
+        '尿有机酸提示多种羧化酶相关代谢异常。',
+        '新生儿筛查或家族史提示生物素代谢相关疾病。',
+      ],
+      commonWrongTurns: [
+        '只按湿疹、感染或胃肠问题处理，没有查代谢性酸中毒和有机酸。',
+        '把抽搐单独按神经系统疾病处理，未评估可治疗代谢病。',
+        '确诊后症状改善就自行停用生物素或减少随访。',
+        '未与生物素酶缺乏症等其他生物素相关疾病鉴别。',
+      ],
+      firstDepartments: [
+        '新生儿科/儿科急诊',
+        '遗传代谢科',
+        '儿童神经内科',
+        '皮肤科',
+        '营养科（代谢营养方向）',
+      ],
+      diagnosisChecklist: [
+        '保存新生儿筛查、血气、乳酸、氨、酮体、尿有机酸和酰基肉碱结果。',
+        '记录皮疹、脱发、喂养、呼吸、抽搐和危重发作时间线。',
+        '询问 HLCS 基因检测和生物素酶缺乏症鉴别。',
+        '确认长期治疗、复查和生病时应急方案。',
+        '安排发育、听力、视力、皮肤和营养随访。',
+      ],
+      testsToAskAbout: [
+        '血气和代谢性酸中毒评估。',
+        '尿有机酸、血酰基肉碱、乳酸、氨和酮体。',
+        'HLCS 基因检测。',
+        '生物素酶活性检测用于鉴别。',
+        '神经发育、皮肤和营养评估。',
+      ],
+      questionsForDoctor: [
+        '目前证据是否支持 HLCS 缺乏症？还需要排除哪些生物素相关疾病？',
+        '治疗需要终身吗？复查哪些指标？',
+        '发热、呕吐、不能进食时应急方案是什么？',
+        '皮肤、发育和神经系统需要哪些长期随访？',
+        '家属筛查和再次生育风险如何评估？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>全羧化酶合成酶缺乏症多在婴儿期出现喂养困难、呕吐、呼吸问题、嗜睡、皮疹、脱发、代谢性酸中毒、抽搐或昏迷风险。未及时识别可能造成发育迟缓、神经系统损伤或危及生命的代谢危象。</p>',
+      diagnosis:
+        '<p>诊断依靠临床表现、血气和代谢检查、尿有机酸、酰基肉碱谱及 HLCS 基因检测。医生还会与生物素酶缺乏症、其他有机酸血症、脂肪酸氧化障碍、感染和癫痫等鉴别。</p>',
+      treatment:
+        '<p>治疗通常对生物素相关方案有反应，但必须由遗传代谢专科确定剂量、监测指标和长期计划。急性代谢危象需要医院处理，并避免自行停药或仅凭症状调整。</p>',
+      longTermCare:
+        '<p>长期管理重点是坚持治疗、监测代谢稳定性、发育评估、皮肤和营养照护，以及为发热、呕吐、手术或不能进食准备应急说明。</p>',
+      fertilityOrFamily:
+        '<p>本病通常为常染色体隐性遗传。明确 HLCS 变异后，父母、兄弟姐妹和有生育计划的亲属可通过遗传咨询了解携带者检测、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>嗜睡、呼吸急促、反复呕吐、抽搐、不能进食、脱水、酸中毒或感染后精神状态变差时，应立即急诊并说明疑似或确诊 HLCS 缺乏症。</p>',
+    },
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Holocarboxylase synthetase deficiency',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/holocarboxylase-synthetase-deficiency/',
+      },
+      {
+        name: 'NCBI MedGen: Holocarboxylase synthetase deficiency',
+        type: 'official',
+        url: 'https://www.ncbi.nlm.nih.gov/medgen/120653',
+      },
+    ],
+    symptoms:
+      '<p>婴儿期可出现喂养困难、呼吸问题、皮疹、脱发、嗜睡、代谢性酸中毒、抽搐或昏迷风险。</p>',
+    diagnosis:
+      '<p>评估包括血气、尿有机酸、酰基肉碱、HLCS 基因检测，并鉴别生物素酶缺乏症等疾病。</p>',
+    treatment:
+      '<p>管理以遗传代谢专科指导下的长期生物素相关治疗、代谢监测和生病应急方案为核心。</p>',
+    prognosis:
+      '<p>早期识别和持续治疗可避免许多严重并发症；延误或停药会增加代谢危象和神经发育风险。</p>',
+    sourceName: 'MedlinePlus Genetics: Holocarboxylase synthetase deficiency',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/holocarboxylase-synthetase-deficiency/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
 ];
