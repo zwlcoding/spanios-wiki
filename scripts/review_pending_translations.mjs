@@ -8,8 +8,15 @@ const root = process.cwd();
 const draftsRoot = path.join(root, 'content-drafts');
 const summaryPath = path.join(draftsRoot, 'translation-review-summary.md');
 const draftPaths = findDrafts(draftsRoot);
+const localeSlugCache = new Map();
 const pendingDrafts = draftPaths.filter((draftPath) => {
   const draft = readJson(draftPath);
+  if (draft.slug && draft.targetLocale) {
+    const publishedSlugs = readDetailedDiseaseSlugs(draft.targetLocale);
+    if (publishedSlugs.has(draft.slug)) {
+      return false;
+    }
+  }
   return draft.review?.status === 'pending-codex-review';
 });
 
@@ -110,4 +117,46 @@ function run(command, args) {
   }
 
   return { status: result.status ?? 0 };
+}
+
+function readDetailedDiseaseSlugs(locale) {
+  if (localeSlugCache.has(locale)) {
+    return localeSlugCache.get(locale);
+  }
+
+  const localePath = path.join(
+    root,
+    'frontend/src/content/locales',
+    locale,
+    'diseases.ts',
+  );
+  const slugs = new Set();
+  if (!fs.existsSync(localePath)) {
+    localeSlugCache.set(locale, slugs);
+    return slugs;
+  }
+
+  const content = fs.readFileSync(localePath, 'utf8');
+  const blocks = splitDiseaseBlocks(content);
+  for (const block of blocks) {
+    if (!/quickLook:/.test(block)) {
+      continue;
+    }
+    const slug = block.match(/slug:\s*(['"])([^'"]+)\1/)?.[2];
+    if (slug) {
+      slugs.add(slug);
+    }
+  }
+
+  localeSlugCache.set(locale, slugs);
+  return slugs;
+}
+
+function splitDiseaseBlocks(content) {
+  const markers = [...content.matchAll(/\.\.\.entity\(/g)].map(
+    (match) => match.index ?? 0,
+  );
+  return markers.map((start, index) =>
+    content.slice(start, markers[index + 1] ?? content.length),
+  );
 }
