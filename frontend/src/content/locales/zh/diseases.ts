@@ -2732,4 +2732,340 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     reviewStatus: 'draft',
     tagSlugs: ['genetic-counseling'],
   },
+  {
+    ...entity(26, 'disease-erdheim-chester-disease'),
+    name: 'Erdheim-Chester病',
+    nameEn: 'Erdheim-Chester Disease',
+    alias: 'ECD、Erdheim-Chester disease、非朗格汉斯细胞组织细胞增生症',
+    slug: 'erdheim-chester-disease',
+    oneSentence:
+      'Erdheim-Chester病是一种极罕见的组织细胞肿瘤/组织细胞增生症，可累及长骨、肾脏周围组织、心血管、肺、眼眶、脑和垂体等多个部位。',
+    plainName: '组织细胞异常增多并浸润多个器官的罕见血液免疫相关疾病',
+    prevalence:
+      '全球病例数很少，主要见于成人，实际患病人数可能因误诊和漏诊而被低估。',
+    quickLook: {
+      whatItIs:
+        '组织细胞是免疫系统中的一种细胞。ECD 中这些细胞异常增多并进入组织器官，造成炎症、纤维化或器官损伤；不少患者可检测到 BRAF 或 MAPK-ERK 通路相关体细胞变异。',
+      whoToSeeFirst:
+        '出现不明原因双侧长骨痛、眼球突出、尿崩症、肾周/腹膜后纤维化、心包或主动脉周围病变、肺或中枢神经受累时，可到血液科/组织细胞疾病专科或肿瘤内科评估。',
+      isGenetic:
+        '通常不是家族遗传病。相关突变多为后天获得的体细胞变异，不代表一定会遗传给子女。',
+      hasTreatment:
+        '有分子检测指导下的靶向治疗、免疫/抗炎治疗和器官支持治疗等方案，但必须由有经验的多学科团队根据累及器官和突变状态制定。',
+      commonDelayReason:
+        '症状分散在骨科、眼科、肾内、心血管、呼吸、神经和内分泌等多个专科，且影像表现容易被当作纤维化、炎症或其他肿瘤。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '成年人出现长期双侧小腿或大腿骨痛，影像提示对称性长骨硬化。',
+        '尿崩症、眼眶肿块或眼球突出与骨痛、腹膜后或心血管影像异常并存。',
+        'CT/MRI 提示肾周包绕、腹膜后纤维化、主动脉周围包绕或右心房假性肿块。',
+        '肺、心脏、肾脏、中枢神经或垂体多系统受累，普通诊断无法解释。',
+        '活检提示非朗格汉斯细胞组织细胞增生，并需要进一步分子检测。',
+      ],
+      commonWrongTurns: [
+        '只按骨关节炎、纤维化、IgG4 相关病、淋巴瘤或转移瘤处理，没有组织病理和分子检测。',
+        '各器官问题分散就诊，没人把骨痛、尿崩症、眼眶和腹膜后影像联系起来。',
+        '只有影像怀疑但没有取得合适组织活检，导致无法确认分型和突变状态。',
+        '忽略心血管和中枢神经受累，这些部位会显著影响风险评估。',
+      ],
+      firstDepartments: [
+        '血液科/组织细胞疾病专科',
+        '肿瘤内科',
+        '风湿免疫科（鉴别 IgG4 相关病、血管炎等）',
+        '内分泌科（尿崩症或垂体受累时）',
+        '心血管、肾内、呼吸、神经、眼科等受累器官专科',
+      ],
+      diagnosisChecklist: [
+        '整理骨痛、尿量变化、眼部症状、胸闷气促、神经症状、肾脏或腹膜后影像资料。',
+        '带上 PET-CT、骨扫描、CT/MRI、心脏影像和既往病理切片/蜡块信息。',
+        '向医生确认是否需要病变组织活检，并进行 BRAF 和 MAPK-ERK 通路相关分子检测。',
+        '评估心脏、中枢神经、肺、肾脏和内分泌受累范围。',
+        '确认是否已鉴别 Langerhans 细胞组织细胞增生、Rosai-Dorfman 病、IgG4 相关病、淋巴瘤和感染。',
+      ],
+      testsToAskAbout: [
+        '病变组织活检、免疫组化和血液病理/组织细胞病专家复核。',
+        'BRAF V600E 及 MAPK-ERK 通路相关分子检测。',
+        '全身 PET-CT、骨扫描或针对长骨的影像检查。',
+        '心脏 MRI/超声、胸腹部 CT、脑和垂体 MRI。',
+        '肾功能、炎症指标、内分泌功能和尿崩症相关评估。',
+      ],
+      questionsForDoctor: [
+        '我的影像和病理是否符合 ECD？还需要复核哪些组织或影像？',
+        '有没有 BRAF 或其他 MAPK 通路变异？这会怎样影响治疗选择？',
+        '目前哪些器官受累最影响风险？需要哪些专科共同管理？',
+        '治疗效果用什么指标判断？多久复查影像和器官功能？',
+        '哪些症状提示心脏、中枢神经或肾脏问题需要急诊？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>ECD 可累及长骨、皮肤、肺、心脏、肾脏、腹膜后、眼眶、脑、垂体和其他组织。常见线索包括骨痛、乏力、发热、体重下降、眼球突出或眼眶肿块、尿崩症、肾周或腹膜后纤维化、肺部症状、心血管受累和神经系统症状。不同患者差异很大，也可能以单一器官问题起病。</p>',
+      diagnosis:
+        '<p>诊断需要结合典型影像、受累器官表现、病变组织活检、免疫组化和分子检测。国际共识强调，即使影像高度提示，也应尽量取得病变组织以确认诊断并检测 BRAF/MAPK-ERK 通路变异。医生还需要鉴别其他组织细胞病、IgG4 相关病、血管炎、淋巴瘤、感染和转移性肿瘤。</p>',
+      treatment:
+        '<p>治疗取决于症状严重程度、器官受累范围和分子检测结果，可能包括靶向治疗、免疫或抗炎治疗、局部/器官支持治疗和多学科随访。心脏、中枢神经、肺或肾脏受累者通常需要更严密管理。患者不要自行按肿瘤或炎症经验用药。</p>',
+      longTermCare:
+        '<p>长期照护重点是监测受累器官功能、治疗反应、影像变化和药物不良反应。建议保存病理报告、分子检测结果、PET-CT/CT/MRI 资料和关键实验室指标，复诊时帮助多学科团队判断进展。</p>',
+      fertilityOrFamily:
+        '<p>ECD 通常不是遗传性疾病，常见分子改变多为体细胞变异。有生育计划时，重点是与主诊团队讨论疾病活动度、器官受累和正在使用治疗对妊娠的影响。</p>',
+      emergencySigns:
+        '<p>突发胸痛、气促、晕厥、神经功能缺损、剧烈头痛、意识改变、尿量明显变化、肾功能快速恶化或眼眶症状快速加重时，应尽快急诊或联系主管团队。</p>',
+    },
+    sources: [
+      {
+        name: 'NCI Dictionary: Erdheim-Chester disease',
+        type: 'official',
+        url: 'https://www.cancer.gov/publications/dictionaries/cancer-terms/def/erdheim-chester-disease',
+      },
+      {
+        name: 'GARD: Erdheim-Chester disease',
+        type: 'official',
+        url: 'https://rarediseases.info.nih.gov/diseases/6369/erdheim-chester-disease/',
+      },
+      {
+        name: 'Blood: ECD consensus recommendations in the molecular era',
+        type: 'guideline',
+        url: 'https://ashpublications.org/blood/article/135/22/1929/452713/Erdheim-Chester-disease-consensus-recommendations',
+      },
+    ],
+    symptoms:
+      '<p>可表现为长骨痛、尿崩症、眼眶病变、腹膜后/肾周纤维化、肺、心脏或中枢神经受累，以及发热、乏力、体重下降。</p>',
+    diagnosis:
+      '<p>评估依赖影像、受累组织活检、免疫组化、BRAF/MAPK 通路分子检测和多系统受累评估。</p>',
+    treatment:
+      '<p>治疗需按突变状态和器官受累个体化制定，可能涉及靶向治疗、免疫/抗炎治疗和器官支持。</p>',
+    prognosis:
+      '<p>预后差异很大，取决于心脏、中枢神经、肺、肾等关键器官受累和治疗反应。</p>',
+    sourceName: 'GARD: Erdheim-Chester disease',
+    sourceUrl:
+      'https://rarediseases.info.nih.gov/diseases/6369/erdheim-chester-disease/',
+    categorySlug: 'hematological',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: [],
+  },
+  {
+    ...entity(27, 'disease-fabry-disease'),
+    name: '法布雷病',
+    nameEn: 'Fabry Disease',
+    alias: 'Fabry病、Anderson-Fabry病、α-半乳糖苷酶A缺乏症',
+    slug: 'fabry-disease',
+    oneSentence:
+      '法布雷病是一种 X 连锁溶酶体贮积病，可累及神经、皮肤、肾脏、心脏、脑血管、眼和胃肠道，常因多系统症状分散而延迟诊断。',
+    plainName: '一种会让代谢物在多个器官中逐渐沉积的遗传代谢病',
+    prevalence:
+      '经典型罕见，晚发型可能更常见但容易漏诊；不同筛查人群的发现率差异很大。',
+    quickLook: {
+      whatItIs:
+        'GLA 基因变异会导致 α-半乳糖苷酶 A 活性不足，使糖脂类物质在细胞内沉积，逐渐影响神经、肾脏、心脏和脑血管等系统。',
+      whoToSeeFirst:
+        '青少年或成人有肢端烧灼痛、少汗/无汗、血管角质瘤、角膜涡状混浊、原因不明蛋白尿、左心室肥厚或年轻卒中时，可从肾内科、心内科、神经内科或遗传代谢/罕见病门诊切入。',
+      isGenetic:
+        '是，X 连锁遗传。男性通常更早更重，女性也可能因 X 染色体失活差异出现明显症状。',
+      hasTreatment:
+        '有特异性治疗和器官保护管理方案，但是否适合、何时开始和如何监测需要专科团队结合基因、酶活、器官受累和当地可及性判断。',
+      commonDelayReason:
+        '疼痛、胃肠道、皮肤、心脏、肾脏和脑血管症状常分散到不同科室，女性或晚发型表现不典型，更容易多年后才被联系起来。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '儿童或青少年起出现手脚烧灼痛、遇热/运动/发热后加重，伴少汗或无汗。',
+        '皮肤有血管角质瘤，尤其在躯干、腹股沟、臀部或大腿根部。',
+        '年轻人原因不明蛋白尿、肾功能下降、左心室肥厚、心律失常或卒中/TIA。',
+        '眼科发现角膜涡状混浊，同时有疼痛、肾脏或心脏线索。',
+        '家族中男性较早出现肾衰、心脏病、卒中，或有已知 GLA 变异。',
+      ],
+      commonWrongTurns: [
+        '肢端疼痛长期按风湿、神经痛或生长痛处理。',
+        '蛋白尿、心肌肥厚、卒中分别就诊，未追问皮肤、出汗、疼痛和家族史。',
+        '女性酶活性不低后就完全排除法布雷病，没有结合基因检测和临床表现。',
+        '只关注特异性治疗，忽略肾脏、心脏、脑血管和心理支持的长期管理。',
+      ],
+      firstDepartments: [
+        '肾内科',
+        '心内科',
+        '神经内科',
+        '皮肤科/眼科（识别线索时）',
+        '遗传代谢科/医学遗传科/罕见病门诊',
+      ],
+      diagnosisChecklist: [
+        '整理疼痛、出汗、皮疹、胃肠道、听力、眼部、肾脏、心脏和脑血管症状。',
+        '收集尿蛋白、肾功能、心电图、心脏超声/MRI、脑 MRI、眼科和皮肤科资料。',
+        '男性询问 α-Gal A 酶活检测；女性或疑难病例重点询问 GLA 基因检测。',
+        '请医生解释 GLA 变异是否致病，以及是否需要家系筛查。',
+        '确认肾、心、脑血管等器官受累基线和随访计划。',
+      ],
+      testsToAskAbout: [
+        'α-半乳糖苷酶 A 活性检测。',
+        'GLA 基因检测和家系级联检测。',
+        'Lyso-Gb3/相关生物标志物（医生认为适合时）。',
+        '尿蛋白、eGFR、肾脏评估。',
+        '心电图、动态心电图、心脏超声或心脏 MRI。',
+        '脑 MRI、眼科裂隙灯、听力和神经病理性疼痛评估。',
+      ],
+      questionsForDoctor: [
+        '我的表现更像经典型还是晚发型法布雷病？证据是什么？',
+        '我的 GLA 变异如何解释？家人从谁开始筛查？',
+        '目前哪些器官已经受累？需要多久复查？',
+        '特异性治疗是否适合我？治疗目标和监测指标是什么？',
+        '疼痛、肾脏、心脏、卒中风险和心理压力分别怎么管理？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>法布雷病可表现为手脚烧灼痛、少汗或无汗、血管角质瘤、角膜涡状混浊、腹痛腹泻、听力下降、蛋白尿或肾功能下降、左心室肥厚、心律失常、胸痛、年轻卒中或白质病变。男性经典型通常较早出现，女性和晚发型可能更隐匿。</p>',
+      diagnosis:
+        '<p>诊断需要结合多系统线索、家族史、α-半乳糖苷酶 A 活性、GLA 基因检测和器官评估。男性酶活降低有重要提示意义；女性酶活可能正常，不能仅凭酶活排除。基因结果需要结合临床和数据库解释。</p>',
+      treatment:
+        '<p>治疗包括特异性治疗、肾脏和心血管保护、疼痛管理、卒中风险管理、胃肠道和心理支持。是否使用酶替代、药物伴侣或其他方案，需要由熟悉法布雷病的团队根据分型、器官受累和可及性决定。</p>',
+      longTermCare:
+        '<p>长期随访通常需要肾内科、心内科、神经内科、眼科、皮肤科和遗传咨询协作。重点监测尿蛋白/eGFR、心脏结构和节律、脑血管风险、疼痛、听力、生活质量和家族筛查进展。</p>',
+      fertilityOrFamily:
+        '<p>法布雷病为 X 连锁遗传。男性患者会把 GLA 变异传给所有女儿而不会传给儿子；女性患者每次妊娠将变异传给子女的概率通常为 50%。有生育计划时可通过遗传咨询了解产前诊断或胚胎植入前遗传学检测等选择。</p>',
+      emergencySigns:
+        '<p>突发偏瘫、言语不清、剧烈胸痛、晕厥、严重心悸、急性呼吸困难、尿量明显减少或肾功能快速恶化，应立即急诊，并告知医生疑似或确诊法布雷病及既往心肾脑血管受累情况。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Fabry Disease',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1292/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Fabry disease',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/fabry-disease/',
+      },
+    ],
+    symptoms:
+      '<p>可表现为肢端烧灼痛、少汗、血管角质瘤、角膜涡状混浊、蛋白尿、心肌肥厚、心律失常、胃肠道症状或年轻卒中。</p>',
+    diagnosis:
+      '<p>评估包括 α-Gal A 酶活、GLA 基因检测、Lyso-Gb3/相关指标和肾、心、脑、眼、皮肤等器官受累检查。</p>',
+    treatment:
+      '<p>管理包括特异性治疗评估、器官保护、疼痛和心肾脑血管风险管理，以及家系筛查。</p>',
+    prognosis:
+      '<p>早期识别和器官受累监测有助于减少不可逆损害；预后取决于分型、治疗时机和心肾脑血管受累程度。</p>',
+    sourceName: 'GeneReviews: Fabry Disease',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1292/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(28, 'disease-familial-mediterranean-fever'),
+    name: '家族性地中海热',
+    nameEn: 'Familial Mediterranean Fever',
+    alias: 'FMF、复发性多浆膜炎、MEFV 相关自炎症病',
+    slug: 'familial-mediterranean-fever',
+    oneSentence:
+      '家族性地中海热是一种遗传性自炎症病，表现为反复短暂发热，并可伴腹痛、胸痛、关节痛、皮疹或淀粉样变风险。',
+    plainName: '反复发热和浆膜炎发作的遗传性自炎症病',
+    prevalence:
+      '在地中海沿岸相关族群中更常见，包括部分犹太、亚美尼亚、阿拉伯、土耳其和北非人群；其他人群也可发生。',
+    quickLook: {
+      whatItIs:
+        'FMF 与先天免疫系统过度炎症反应有关。发作常突然开始，持续一两天左右后缓解，但反复发作和长期炎症可带来肾脏淀粉样变等风险。',
+      whoToSeeFirst:
+        '反复不明原因发热，伴腹痛、胸痛、单关节炎、腿部红斑样皮疹或家族史时，可到风湿免疫科/儿科风湿免疫科评估。',
+      isGenetic:
+        '通常与 MEFV 基因相关，多为常染色体隐性遗传，也有显性或单个变异即可发病的情况。基因结果需结合临床发作特点解释。',
+      hasTreatment:
+        '有长期预防和发作管理方案，可降低发作和淀粉样变风险。具体用药、监测和特殊情况处理需由风湿免疫专科制定。',
+      commonDelayReason:
+        '腹痛发作像急腹症，关节痛像感染或关节炎，儿童可能只有反复发热；发作间歇期正常，容易多年找不到原因。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '反复短暂高热，伴腹痛、胸痛、关节痛或皮疹，发作间歇期基本正常。',
+        '多次因急腹症样腹痛就诊，但检查或手术不能解释反复发作。',
+        '大关节反复红肿痛，尤其下肢关节，常伴发热。',
+        '足踝或小腿出现丹毒样红斑，伴发热或关节痛。',
+        '家族中有 FMF、反复发热腹痛、肾淀粉样变或不明原因肾衰。',
+      ],
+      commonWrongTurns: [
+        '每次腹痛都按胃肠炎、阑尾炎或妇科急腹症处理，没有识别周期性发作模式。',
+        '只看基因检测阳性或阴性，忽略临床诊断标准和发作特征。',
+        '症状缓解后停止随访，未监测尿蛋白或炎症指标。',
+        '把反复发热简单归为免疫力低或感染。',
+      ],
+      firstDepartments: [
+        '风湿免疫科',
+        '儿科风湿免疫科',
+        '肾内科（蛋白尿或淀粉样变风险时）',
+        '遗传咨询门诊',
+        '急诊科（急腹症样发作或严重胸痛时）',
+      ],
+      diagnosisChecklist: [
+        '记录每次发作的日期、持续时间、体温、腹痛/胸痛/关节痛/皮疹部位和是否自行缓解。',
+        '整理族源背景、家族史、既往手术或反复急诊记录。',
+        '带上发作期和间歇期的炎症指标、血常规、尿检和肾功能结果。',
+        '询问是否符合 Tel Hashomer 等临床标准，是否需要 MEFV 基因检测。',
+        '长期随访时关注尿蛋白、肾功能和淀粉样变风险。',
+      ],
+      testsToAskAbout: [
+        '发作期 CRP/ESR、血常规、血清淀粉样蛋白 A（可及时）。',
+        '尿常规、尿蛋白和肾功能。',
+        'MEFV 基因检测及变异解释。',
+        '腹痛、胸痛或关节痛发作时的必要影像和鉴别诊断。',
+        '与其他周期性发热/自炎症综合征的鉴别。',
+      ],
+      questionsForDoctor: [
+        '我的发作模式是否符合 FMF？还需要排除哪些疾病？',
+        'MEFV 结果怎么解释？只有一个变异是否有意义？',
+        '长期预防治疗的目标是什么？如何监测效果和副作用？',
+        '什么时候需要急诊，而不是等发作自行缓解？',
+        '家人是否需要检查？备孕前需要遗传咨询吗？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>FMF 常表现为反复短暂发热，伴腹膜炎样腹痛、胸膜炎样胸痛、关节炎或关节痛、丹毒样红斑和肌痛。发作间歇期可能完全正常。未经充分控制的长期炎症可增加 AA 淀粉样变和肾脏受累风险。</p>',
+      diagnosis:
+        '<p>诊断主要依赖临床发作模式、家族和族源背景、炎症指标、治疗反应和 MEFV 基因检测。GeneReviews 指出，即使基因检测未发现双等位致病变异，也不能完全排除 FMF；医生需要与其他周期性发热综合征、感染、炎症性肠病和急腹症鉴别。</p>',
+      treatment:
+        '<p>长期管理目标是减少发作、控制炎症并预防淀粉样变。具体药物、剂量、妊娠期安排和耐药/不耐受处理需由风湿免疫专科制定，患者不要自行停药或调整。</p>',
+      longTermCare:
+        '<p>长期随访重点包括发作频率、炎症指标、尿蛋白、肾功能、治疗依从性和副作用监测。患者可保存发作日记和检查结果，帮助医生判断是否控制充分。</p>',
+      fertilityOrFamily:
+        '<p>FMF 多为常染色体隐性遗传，但也存在更复杂的遗传表现。明确 MEFV 变异后，患者和伴侣可通过遗传咨询了解复发风险、携带者检测和生育选择。</p>',
+      emergencySigns:
+        '<p>剧烈持续腹痛、胸痛、呼吸困难、意识改变、不能进食饮水、疑似感染或与既往发作模式明显不同的症状，应及时急诊，避免把所有腹痛都归因于 FMF。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Familial Mediterranean Fever',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1227/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Familial Mediterranean fever',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/familial-mediterranean-fever/',
+      },
+      {
+        name: 'Orphanet: Familial Mediterranean fever',
+        type: 'review',
+        url: 'https://www.orpha.net/en/disease/detail/342',
+      },
+    ],
+    symptoms:
+      '<p>反复短暂发热，可伴腹痛、胸痛、关节痛/关节炎、丹毒样红斑和肌痛，发作间歇期常较正常。</p>',
+    diagnosis:
+      '<p>评估包括临床发作模式、炎症指标、尿蛋白/肾功能、MEFV 基因检测和与其他周期性发热疾病鉴别。</p>',
+    treatment:
+      '<p>长期预防和炎症控制需风湿免疫专科制定，目标是减少发作并预防淀粉样变和肾损害。</p>',
+    prognosis:
+      '<p>规范管理通常可明显降低发作和淀粉样变风险；延误诊断或控制不足会增加肾脏并发症风险。</p>',
+    sourceName: 'GeneReviews: Familial Mediterranean Fever',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1227/',
+    categorySlug: 'immunological-rheumatologic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
 ];
