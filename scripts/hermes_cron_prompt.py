@@ -6,7 +6,7 @@ from pathlib import Path
 
 
 SPANIOS_ROOT = Path('/Volumes/acasis/coding/spanios-wiki')
-DEFAULT_BATCH_LIMIT = "6"
+DEFAULT_BATCH_LIMIT = "3"
 
 
 def main() -> None:

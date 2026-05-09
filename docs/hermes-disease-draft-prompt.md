@@ -14,7 +14,7 @@ tired, anxious, and unfamiliar with medical vocabulary.
 Run:
 
 ```bash
-pnpm run hermes:queue -- --limit 5 --locale zh
+pnpm run hermes:queue -- --limit 3 --locale zh
 ```
 
 Use the disease list printed by the command as the only batch for this run.

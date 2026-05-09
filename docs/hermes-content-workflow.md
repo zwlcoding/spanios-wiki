@@ -21,7 +21,7 @@ Hermes is the content producer. Codex is the reviewer and integrator.
 
 ## Draft Lifecycle
 
-1. Hermes scheduled job runs `pnpm run hermes:queue -- --limit 5 --locale zh`
+1. Hermes scheduled job runs `pnpm run hermes:queue -- --limit 3 --locale zh`
    to select the next small batch.
 2. Hermes creates a dated draft folder for each queued disease.
 3. Hermes writes `draft.<locale>.json`, `sources.md`, and `change-summary.md`.
@@ -141,7 +141,7 @@ Example cron:
 ```bash
 cp scripts/hermes_cron_prompt.py ~/.hermes/scripts/hermes_cron_prompt.py
 
-hermes cron create "30 0-6 * * *" \
+hermes cron create "0,30 0-7 * * *" \
   --name "spanios-disease-draft-batch" \
   --workdir /Volumes/acasis/coding/spanios-wiki \
   --script hermes_cron_prompt.py \
@@ -151,8 +151,8 @@ hermes cron create "30 0-6 * * *" \
 Hermes cron scripts are resolved from `~/.hermes/scripts/`, not the project
 working directory. Keep the source copy in this repo, then copy it into
 `~/.hermes/scripts/` whenever it changes.
-The schedule above runs seven times overnight. The cron script emits a small
-batch per run so Hermes can collect sources and image candidates without
+The schedule above runs every 30 minutes overnight. The cron script emits a
+small batch per run so Hermes can collect sources and image candidates without
 silently touching production content. In the morning, inspect the generated
 draft folders, then run
 `pnpm run review` and ask Codex to audit and merge approved content.
