@@ -13,6 +13,21 @@ const resolvedPath = path.resolve(draftPath);
 const draft = readJson(resolvedPath);
 const errors = [];
 const warnings = [];
+const bannedCitationHostPatterns = [
+  ['baidu', /(^|\.)baidu\.com$/],
+  ['baidu-wenku', /(^|\.)wenku\.baidu\.com$/],
+  ['book118', /(^|\.)book118\.com$/],
+  ['doc88', /(^|\.)doc88\.com$/],
+  ['familydoctor', /(^|\.)familydoctor\.com\.cn$/],
+  ['haodf', /(^|\.)haodf\.com$/],
+  ['maigoo', /(^|\.)maigoo\.com$/],
+  ['medlive', /(^|\.)medlive\.cn$/],
+  ['qq-baike', /(^|\.)baike\.qq\.com$/],
+  ['renrendoc', /(^|\.)renrendoc\.com$/],
+  ['sogou-baike', /(^|\.)baike\.sogou\.com$/],
+  ['sohu', /(^|\.)sohu\.com$/],
+  ['zhihu', /(^|\.)zhihu\.com$/],
+];
 
 requireString(draft.slug, 'slug');
 if (draft.slug && !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(draft.slug)) {
@@ -46,6 +61,15 @@ if (!Array.isArray(draft.sources) || draft.sources.length === 0) {
     requireString(source.type, `sources[${index}].type`);
     if (source.url && !/^https?:\/\//.test(source.url)) {
       errors.push(`sources[${index}].url must be an http(s) URL.`);
+    }
+    const host = getUrlHost(source.url);
+    const bannedHost = bannedCitationHostPatterns.find(([, pattern]) =>
+      pattern.test(host),
+    );
+    if (bannedHost) {
+      errors.push(
+        `sources[${index}].url uses a low-quality citation host (${bannedHost[0]}). Keep it in sources.md as a lead, not draft sources.`,
+      );
     }
   });
 }
@@ -154,6 +178,14 @@ function resolveDraftAssetPath(assetPath, draftFilePath) {
   }
 
   return path.resolve(process.cwd(), assetPath);
+}
+
+function getUrlHost(url) {
+  try {
+    return new URL(url).hostname.toLowerCase();
+  } catch {
+    return '';
+  }
 }
 
 function fail(message) {
