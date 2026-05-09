@@ -136,6 +136,10 @@ Images must:
 - feel calm, practical, and respectful;
 - be suitable for a patient navigation page.
 
+If image generation fails once during a run, stop trying to generate images for
+the remaining diseases in that run. Keep `image-prompt.md` and continue the
+text/source draft work; images are optional and must not block draft creation.
+
 Images may include abstract clinic paperwork, abstract charts, or non-readable
 background forms when they are clearly decorative and do not look like real
 medical records or diagnostic instructions. If the generated image has borderline

@@ -103,6 +103,7 @@ function renderQueue(entries) {
     'Do not invent hospitals, charity organizations, contacts, or disease-resource relationships.',
     'Do not create helper scripts, validators, temp files, or notes outside content-drafts/.',
     'Before finishing, run `node scripts/validate_content_draft.mjs <draft.zh.json>` for each draft and fix validation failures.',
+    'If image generation fails once in this run, stop image generation for the remaining diseases and keep only image-prompt.md.',
     '',
     'Source quality gate:',
     '- draft.zh.json.sources may include only official, guideline, GeneReviews/NCBI, MedlinePlus, Orphanet, OMIM, GARD, professional society, peer-reviewed review, or recognized patient-organization URLs.',

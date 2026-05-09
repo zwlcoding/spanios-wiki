@@ -126,6 +126,9 @@ Hard rules:
 - Generated images must contain no readable text, no logos, no diagnostic
   diagrams, and no misleading clinical detail. Abstract non-readable paperwork
   or chart-like decoration can be accepted after human review.
+- If image generation fails once during a scheduled run, stop trying to generate
+  images for that run. Keep `image-prompt.md`; image files are optional and must
+  not block draft creation.
 
 Output:
 - content-drafts/<slug>/<yyyy-mm-dd>/draft.<locale>.json
