@@ -4178,4 +4178,438 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     reviewStatus: 'draft',
     tagSlugs: ['genetic-counseling'],
   },
+  {
+    ...entity(39, 'disease-hepatolenticular-degeneration-wilson-disease'),
+    name: '肝豆状核变性',
+    nameEn: 'Hepatolenticular Degeneration (Wilson Disease)',
+    alias: 'Wilson 病、威尔逊病、铜代谢障碍、ATP7B 相关铜蓄积病',
+    slug: 'hepatolenticular-degeneration-wilson-disease',
+    oneSentence:
+      '肝豆状核变性是一种 ATP7B 相关铜代谢病，铜在肝脏、脑和其他组织蓄积后可造成肝病、运动障碍、精神行为变化或溶血等表现。',
+    plainName: '身体排铜能力下降，铜逐渐伤害肝脏和神经系统的遗传病',
+    prevalence:
+      '总体罕见，常在儿童、青少年或青年期发现，但发病年龄范围较宽，年龄本身不能完全排除诊断。',
+    quickLook: {
+      whatItIs:
+        '正常情况下多余的铜会经胆汁排出。ATP7B 功能异常会让铜排出受阻，先影响肝脏，也可能影响脑部、眼睛、血液和精神行为。',
+      whoToSeeFirst:
+        '原因不明肝功能异常、肝硬化、急性肝衰竭伴溶血，或出现震颤、动作变慢、说话吞咽困难、性格行为变化时，可到肝病科/消化科、神经内科或遗传代谢科评估。',
+      isGenetic: '是，通常为常染色体隐性遗传，与 ATP7B 双等位致病变异有关。',
+      hasTreatment:
+        '有长期去铜和维持治疗方案，关键是早诊断、坚持随访和避免自行停药；急性或终末期肝衰竭可能需要肝移植评估。',
+      commonDelayReason:
+        '早期可像脂肪肝、病毒性肝炎、自身免疫性肝炎、精神心理问题或帕金森样运动障碍，若没有查铜代谢和眼部线索，容易绕路。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '儿童或青年出现不明原因转氨酶升高、脂肪肝样改变、肝脾大或肝硬化。',
+        '急性肝损伤或肝衰竭伴 Coombs 阴性溶血、黄疸或凝血异常。',
+        '震颤、动作笨拙、肌张力障碍、说话不清、吞咽困难或步态异常。',
+        '情绪、学习、行为或精神症状与肝功能异常并存。',
+        '家族中有 Wilson 病、早发肝病、不明原因肝衰竭或兄弟姐妹类似表现。',
+      ],
+      commonWrongTurns: [
+        '只按脂肪肝、病毒性肝炎或自身免疫性肝炎处理，未做铜代谢评估。',
+        '运动或精神症状单独在神经/精神科处理，没有回头看肝功能和家族史。',
+        '眼科未做裂隙灯检查或未寻找 Kayser-Fleischer 环线索。',
+        '确诊后症状好转就自行停药，导致铜重新蓄积和复发风险。',
+      ],
+      firstDepartments: [
+        '肝病科/消化内科',
+        '神经内科（运动障碍方向）',
+        '遗传代谢科/医学遗传科',
+        '眼科（裂隙灯检查）',
+        '肝移植中心（急性或终末期肝衰竭评估时）',
+      ],
+      diagnosisChecklist: [
+        '保存肝功能、凝血、血常规、溶血指标、腹部影像和既往肝病检查。',
+        '询问血清铜蓝蛋白、尿铜、眼科裂隙灯和肝铜相关评估。',
+        '准备神经症状视频、学习/行为变化记录和脑 MRI 资料。',
+        '询问 ATP7B 基因检测和兄弟姐妹筛查。',
+        '确诊后建立长期用药、复查和不能自行停药的随访计划。',
+      ],
+      testsToAskAbout: [
+        '血清铜蓝蛋白、血清铜和 24 小时尿铜。',
+        '肝功能、凝血、血常规和溶血相关检查。',
+        '眼科裂隙灯检查 Kayser-Fleischer 环。',
+        'ATP7B 基因检测，必要时家系验证。',
+        '腹部影像、脑 MRI 和医生认为必要的肝铜评估。',
+      ],
+      questionsForDoctor: [
+        '我的表现更偏肝型、神经型，还是混合型？目前器官受累程度如何？',
+        '诊断证据是否充分？还需要哪些铜代谢或基因检查？',
+        '治疗目标、复查指标和复查频率是什么？',
+        '哪些食物、药物或补充剂需要先问医生？',
+        '兄弟姐妹和未来生育计划需要怎样筛查和咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Wilson 病表现多样，可有转氨酶升高、脂肪肝样改变、黄疸、肝脾大、肝硬化、急性肝衰竭、溶血，也可有震颤、肌张力障碍、动作变慢、说话吞咽困难、步态异常、学习或行为变化、抑郁焦虑等神经精神表现。经典的肝病、运动障碍和 Kayser-Fleischer 环三联征并不总是同时出现。</p>',
+      diagnosis:
+        '<p>诊断通常综合临床表现、血清铜蓝蛋白、尿铜、肝脏和神经系统评估、眼科裂隙灯检查以及 ATP7B 基因检测。医生会与病毒性肝炎、自身免疫性肝病、脂肪肝、其他代谢性肝病、帕金森样疾病和精神心理疾病鉴别。</p>',
+      treatment:
+        '<p>治疗以长期减少体内铜负荷和维持稳定为目标，包括去铜或阻铜相关药物、饮食和随访管理。具体药物选择、切换和监测必须由肝病/神经/遗传代谢团队制定。急性肝衰竭或失代偿肝病需要及时评估肝移植可能性。</p>',
+      longTermCare:
+        '<p>长期照护重点是肝功能、铜代谢指标、神经精神状态、用药副作用、依从性和家族筛查。患者应保存诊断证明和治疗方案，避免自行停药或只根据症状好转减少随访。</p>',
+      fertilityOrFamily:
+        '<p>Wilson 病为常染色体隐性遗传。明确 ATP7B 变异后，兄弟姐妹需要评估；有生育计划的家庭可通过遗传咨询了解携带者检测、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>黄疸迅速加重、意识改变、出血倾向、腹水或严重乏力，急性精神/运动症状加重，或疑似急性肝衰竭表现时应立即就医，并说明 Wilson 病或疑似铜代谢病风险。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Wilson Disease',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1512/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Wilson disease',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/wilson-disease/',
+      },
+    ],
+    symptoms:
+      '<p>可表现为肝功能异常、肝硬化、急性肝衰竭、溶血、震颤、肌张力障碍、说话吞咽困难或精神行为变化。</p>',
+    diagnosis:
+      '<p>评估包括铜蓝蛋白、尿铜、肝功能和溶血检查、眼科裂隙灯、ATP7B 基因检测及肝脏/脑部评估。</p>',
+    treatment:
+      '<p>管理依赖长期去铜或阻铜治疗、饮食和随访管理，急性或终末期肝衰竭需肝移植评估。</p>',
+    prognosis:
+      '<p>早期诊断和持续治疗可显著改善预后；自行停药、急性肝衰竭或严重神经受累会增加风险。</p>',
+    sourceName: 'GeneReviews: Wilson Disease',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1512/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(40, 'disease-hereditary-angioedema-hae'),
+    name: '遗传性血管性水肿',
+    nameEn: 'Hereditary Angioedema (HAE)',
+    alias: 'HAE、遗传性血管神经性水肿、C1 抑制物缺乏相关血管性水肿',
+    slug: 'hereditary-angioedema-hae',
+    oneSentence:
+      '遗传性血管性水肿是一类反复发作的深部肿胀疾病，可累及皮肤、胃肠道和上气道，上气道发作可能危及生命。',
+    plainName: '反复突然肿胀、常不痒也不起风团的遗传性血管水肿',
+    prevalence: '总体罕见，症状常从儿童或青春期开始，也可能成年后才被识别。',
+    quickLook: {
+      whatItIs:
+        'HAE 的肿胀通常不是普通过敏。常见类型与 C1 抑制物数量或功能不足有关，缓激肽通路异常使血管渗漏增加，导致皮肤、腹部或气道肿胀。',
+      whoToSeeFirst:
+        '反复面部、手脚、外生殖器肿胀，反复剧烈腹痛呕吐，或喉咙/舌头肿胀时，可到变态反应科/免疫科、急诊或皮肤科评估；气道症状应立即急诊。',
+      isGenetic:
+        '多为常染色体显性遗传，但也可出现新发变异。家族史阴性不能排除。',
+      hasTreatment:
+        '有急性发作处理、短期预防和长期预防策略，但普通抗过敏药通常不能可靠控制 HAE 发作，需专科制定方案。',
+      commonDelayReason:
+        '常被当作荨麻疹、食物过敏、胃肠炎、阑尾炎或焦虑；没有风团和瘙痒、抗组胺/激素反应差时应重新考虑 HAE。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '反复无明显风团或瘙痒的深部肿胀，常持续较久后自行缓解。',
+        '反复剧烈腹痛、恶心、呕吐或腹胀，检查难以解释。',
+        '牙科、手术、感染、压力、月经或外伤后出现肿胀发作。',
+        '喉部、舌头或咽喉肿胀、声音变化、吞咽或呼吸困难。',
+        '家族中有人反复水肿、腹痛或不明原因窒息死亡史。',
+      ],
+      commonWrongTurns: [
+        '长期按过敏或荨麻疹处理，未查补体 C4 和 C1 抑制物。',
+        '腹部发作反复被当作急腹症，甚至经历不必要手术。',
+        '气道发作时没有说明 HAE 风险，延误专科急救路径。',
+        '只在发作时就诊，缓解后没有建立长期预防和家庭应急计划。',
+      ],
+      firstDepartments: [
+        '变态反应科/临床免疫科',
+        '急诊科（气道或严重腹部发作时）',
+        '皮肤科',
+        '消化科（反复腹部发作时）',
+        '遗传咨询门诊',
+      ],
+      diagnosisChecklist: [
+        '记录每次肿胀部位、持续时间、诱因、有无风团瘙痒和抗过敏药反应。',
+        '保存腹痛发作时影像、急诊记录和是否做过手术。',
+        '询问补体 C4、C1 抑制物水平和功能检测。',
+        '记录家族中反复肿胀、腹痛、窒息或类似诊断。',
+        '确诊后准备急性发作、手术牙科前预防和旅行应急计划。',
+      ],
+      testsToAskAbout: [
+        '补体 C4。',
+        'C1 抑制物水平和功能。',
+        '必要时 C1q 等用于鉴别获得性血管性水肿。',
+        'HAE 相关基因检测（医生认为需要时）。',
+        '腹部发作时影像和气道风险评估。',
+      ],
+      questionsForDoctor: [
+        '我的表现更像 HAE 还是普通过敏性血管性水肿？',
+        '我属于哪种类型？需要复查 C4/C1 抑制物吗？',
+        '气道、腹部和皮肤发作分别应该怎么处理？',
+        '牙科、手术、内镜或旅行前需要短期预防吗？',
+        '家属需要筛查吗？哪些药物或诱因需要避免或提前告知医生？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>HAE 典型表现是反复发生的深部水肿，常不痒、没有典型风团，可累及手脚、面部、外生殖器、胃肠道和上气道。胃肠道发作可出现剧烈腹痛、呕吐、腹胀或腹泻；喉部或舌咽部水肿可导致呼吸道阻塞风险。</p>',
+      diagnosis:
+        '<p>诊断通常从补体 C4、C1 抑制物水平和功能检测开始，并结合发作特点、家族史和用药反应。医生还会鉴别普通过敏性血管性水肿、荨麻疹、获得性 C1 抑制物缺乏、药物相关血管性水肿和急腹症等。</p>',
+      treatment:
+        '<p>管理包括急性发作治疗、气道风险处理、手术牙科等诱发场景的短期预防，以及发作频繁或风险较高时的长期预防。具体药物和获取路径因地区而异，需要由熟悉 HAE 的专科医生制定。</p>',
+      longTermCare:
+        '<p>长期照护重点是识别诱因、准备急诊说明、评估发作频率和生活影响、规划手术和旅行、家属筛查及心理支持。患者应把 HAE 诊断和急救计划告知急诊、麻醉、牙科和产科团队。</p>',
+      fertilityOrFamily:
+        '<p>HAE 多为常染色体显性遗传。确诊后一级亲属应考虑筛查。妊娠、分娩、避孕和激素用药可能影响发作风险，需要变态反应/免疫科与妇产科共同评估。</p>',
+      emergencySigns:
+        '<p>舌头、喉咙、声音改变、吞咽困难、胸闷或呼吸困难，或腹痛剧烈伴脱水、低血压、反复呕吐时，应立即急诊并说明 HAE 风险。</p>',
+    },
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Hereditary angioedema',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/hereditary-angioedema/',
+      },
+      {
+        name: 'NCBI Bookshelf StatPearls: Hereditary Angioedema',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK482266/',
+      },
+    ],
+    symptoms:
+      '<p>反复深部肿胀、腹痛呕吐、面部或四肢水肿，严重时可有喉部水肿和呼吸道阻塞风险。</p>',
+    diagnosis:
+      '<p>评估包括补体 C4、C1 抑制物水平和功能、家族史、发作特点及过敏性血管性水肿鉴别。</p>',
+    treatment:
+      '<p>管理包括急性发作处理、气道风险预案、短期和长期预防策略，需由免疫/变态反应专科制定。</p>',
+    prognosis:
+      '<p>规范识别和预案可降低严重发作风险；喉部发作是最需要快速处理的风险点。</p>',
+    sourceName: 'MedlinePlus Genetics: Hereditary angioedema',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/hereditary-angioedema/',
+    categorySlug: 'immunological-rheumatologic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(41, 'disease-hereditary-epidermolysis-bullosa'),
+    name: '遗传性大疱性表皮松解症',
+    nameEn: 'Hereditary Epidermolysis Bullosa',
+    alias: '大疱性表皮松解症、EB、蝴蝶宝贝、遗传性皮肤脆弱症',
+    slug: 'hereditary-epidermolysis-bullosa',
+    oneSentence:
+      '遗传性大疱性表皮松解症是一组皮肤和黏膜异常脆弱的遗传病，轻微摩擦即可出现水疱、糜烂、慢性伤口和疼痛。',
+    plainName: '皮肤像很薄的保护层，轻微摩擦也容易起疱破损的遗传病',
+    prevalence: '总体罕见，亚型很多，严重程度从局部水疱到多系统受累差异很大。',
+    quickLook: {
+      whatItIs:
+        'EB 不是普通水疱病，而是皮肤结构蛋白异常导致皮肤层之间连接不牢。不同亚型的起疱层次、遗传方式、并发症和长期风险不同。',
+      whoToSeeFirst:
+        '新生儿或儿童反复水疱、皮肤破损、口腔糜烂、指趾甲异常或伤口难愈时，应到皮肤科，最好是熟悉遗传性皮肤病和创面护理的团队评估。',
+      isGenetic:
+        '是，可为常染色体显性或隐性遗传，也可能为新发变异。基因检测有助于明确亚型和家族风险。',
+      hasTreatment:
+        '目前管理重点是创面护理、疼痛控制、感染预防、营养支持、并发症监测和部分亚型的靶向/基因相关治疗评估。',
+      commonDelayReason:
+        '早期可能被当作感染、烫伤、湿疹或外伤；若没有认识到“轻微摩擦即起疱”和家族/新生儿线索，容易延误亚型诊断和护理教育。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '出生后或婴幼儿期轻微摩擦、贴胶布、抱扶或穿衣后出现水疱和糜烂。',
+        '反复口腔、食管、眼部或外阴黏膜破损，伴进食困难或疼痛。',
+        '伤口愈合慢、瘢痕、粟丘疹、指趾甲异常、手足粘连或活动受限。',
+        '慢性贫血、营养不良、生长迟缓或反复感染与皮肤破损并存。',
+        '家族中有人从小反复水疱、皮肤脆弱、瘢痕或类似诊断。',
+      ],
+      commonWrongTurns: [
+        '按普通感染、湿疹、烫伤或虐待疑虑处理，没有评估遗传性皮肤脆弱。',
+        '使用强粘性敷料或粗暴清创，加重皮肤损伤。',
+        '只处理单个伤口，忽略营养、疼痛、贫血、牙科、眼科和手部功能。',
+        '严重亚型未建立皮肤肿瘤和慢性伤口长期监测。',
+      ],
+      firstDepartments: [
+        '皮肤科/儿童皮肤科',
+        '医学遗传科/遗传咨询门诊',
+        '伤口造口/创面护理门诊',
+        '营养科、口腔科、眼科',
+        '康复医学科/手外科（瘢痕挛缩或功能受限时）',
+      ],
+      diagnosisChecklist: [
+        '记录起疱年龄、诱因、部位、瘢痕、指甲、口腔/眼部/食管等受累。',
+        '拍照保存水疱和伤口变化，带上既往病理、免疫荧光或电镜报告。',
+        '询问是否需要 EB 相关基因检测和亚型确认。',
+        '评估营养、贫血、疼痛、感染、牙齿、眼部和手足功能。',
+        '学习低损伤换药、敷料选择和急诊说明。',
+      ],
+      testsToAskAbout: [
+        'EB 相关基因 panel 或外显子组检测。',
+        '皮肤活检的免疫荧光抗原定位或电镜检查（医生认为需要时）。',
+        '血常规、铁代谢、营养状态和炎症/感染评估。',
+        '口腔、眼科、消化道和手足功能评估。',
+        '长期慢性伤口或可疑皮损的皮肤肿瘤筛查。',
+      ],
+      questionsForDoctor: [
+        '我/孩子属于哪一种 EB 亚型？这会影响护理和长期风险吗？',
+        '哪些敷料、胶带、清洁和换药方式更安全？',
+        '疼痛、瘙痒、营养和贫血应该怎样一起管理？',
+        '哪些伤口变化提示感染或肿瘤风险，需要尽快复诊？',
+        '家属筛查和再次生育需要哪些遗传咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>EB 可表现为皮肤反复水疱、糜烂、慢性伤口、疼痛、瘙痒、瘢痕、粟丘疹和指趾甲异常。较重亚型可累及口腔、眼睛、食管、泌尿生殖道，造成进食困难、营养不良、贫血、感染、手足挛缩或活动受限。部分亚型长期慢性伤口有皮肤鳞状细胞癌风险。</p>',
+      diagnosis:
+        '<p>诊断通常结合出生和起疱史、皮损分布、家族史、皮肤活检相关检查和基因检测。明确亚型很重要，因为不同 EB 类型在遗传方式、预后、创面护理、并发症筛查和治疗可及性上差异明显。</p>',
+      treatment:
+        '<p>管理以减少摩擦、保护皮肤、规范创面护理、控制疼痛和瘙痒、预防感染、改善营养和监测并发症为核心。部分亚型可能有靶向或基因相关治疗评估机会，但是否适合需要专科团队判断。</p>',
+      longTermCare:
+        '<p>长期照护需要皮肤科、创面护理、营养、疼痛管理、口腔、眼科、康复和遗传咨询协作。家庭应建立低损伤换药流程、急诊说明和慢性伤口观察记录。</p>',
+      fertilityOrFamily:
+        '<p>EB 可为显性或隐性遗传，也可由新发变异导致。明确基因和亚型后，家属可通过遗传咨询了解携带者检测、复发风险、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>发热、伤口红肿热痛或脓性渗出、快速扩大的皮肤破损、脱水、进食困难、呼吸或吞咽困难、眼痛畏光，或慢性伤口出现异常增生、出血、恶臭或疼痛改变时，应尽快就医。</p>',
+    },
+    sources: [
+      {
+        name: 'NCBI Bookshelf StatPearls: Epidermolysis Bullosa',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK599531/',
+      },
+      {
+        name: 'GeneReviews: Dystrophic Epidermolysis Bullosa',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK1304/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Epidermolysis bullosa',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/epidermolysis-bullosa/',
+      },
+    ],
+    symptoms:
+      '<p>轻微摩擦后反复水疱、糜烂、慢性伤口、疼痛、瘢痕、指甲异常，也可累及口腔、眼部、食管和手足功能。</p>',
+    diagnosis:
+      '<p>评估包括皮损和家族史、皮肤活检相关检查、EB 相关基因检测，以及营养、感染和多系统并发症筛查。</p>',
+    treatment:
+      '<p>管理重点是低损伤创面护理、疼痛和瘙痒控制、感染预防、营养支持、康复和长期并发症监测。</p>',
+    prognosis:
+      '<p>预后高度取决于亚型和严重程度；重型患者需要长期多学科照护和慢性伤口/皮肤肿瘤风险监测。</p>',
+    sourceName: 'NCBI Bookshelf StatPearls: Epidermolysis Bullosa',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK599531/',
+    categorySlug: 'skeletal-connective-tissue',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(42, 'disease-hereditary-fructose-intolerance'),
+    name: '遗传性果糖不耐受症',
+    nameEn: 'Hereditary Fructose Intolerance',
+    alias: 'HFI、ALDOB 相关果糖不耐受、遗传性果糖代谢障碍',
+    slug: 'hereditary-fructose-intolerance',
+    oneSentence:
+      '遗传性果糖不耐受症是一种 ALDOB 相关果糖代谢病，摄入果糖、蔗糖或山梨醇后可出现呕吐、低血糖、肝肾损伤等风险。',
+    plainName: '吃到某些含果糖的食物或成分后会严重不适的遗传代谢病',
+    prevalence:
+      'MedlinePlus Genetics 估计全球每年发病约 1/20,000-1/30,000；轻症或饮食自发回避者可能较晚识别。',
+    quickLook: {
+      whatItIs:
+        'HFI 与醛缩酶 B 功能不足有关。果糖代谢中间产物在肝、肾和肠道积累，可导致低血糖、呕吐、肝功能异常和长期器官损伤。',
+      whoToSeeFirst:
+        '婴儿添加水果、果汁、含蔗糖食物或某些配方/药品后反复呕吐、出汗、嗜睡、低血糖或肝功能异常时，应到遗传代谢科、儿科消化肝病或急诊评估。',
+      isGenetic: '是，通常为常染色体隐性遗传，与 ALDOB 双等位致病变异有关。',
+      hasTreatment:
+        '有明确的饮食回避和营养随访管理路径。疑似时不应做果糖负荷试验，应由代谢专科和营养师制定安全饮食方案。',
+      commonDelayReason:
+        '常被当作挑食、胃肠炎、食物过敏、乳糖不耐受或普通低血糖；孩子可能自然厌恶甜食和水果，反而掩盖线索。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '添加水果、果汁、甜食、蔗糖或含山梨醇成分后出现呕吐、出汗、嗜睡或低血糖。',
+        '婴儿喂养后反复腹痛、腹胀、拒食、体重增长差或肝大。',
+        '不明原因肝功能异常、黄疸、凝血异常、低血糖或肾功能问题与饮食有关。',
+        '儿童明显厌恶甜食、水果或含糖食物，且有吃后不适史。',
+        '家族中有 HFI、婴幼儿低血糖、肝肾损伤或近亲婚配史。',
+      ],
+      commonWrongTurns: [
+        '把症状当成普通胃肠炎或食物过敏，没有追问具体糖类成分。',
+        '尝试反复“训练”孩子吃水果甜食，导致反复暴露。',
+        '把果糖吸收不良和遗传性果糖不耐受混淆，低估低血糖和肝肾风险。',
+        '使用含蔗糖、果糖或山梨醇的药品、补充剂或口服液前未核对成分。',
+      ],
+      firstDepartments: [
+        '遗传代谢科/医学遗传科',
+        '儿科消化肝病科',
+        '儿科急诊（低血糖、嗜睡、抽搐或肝衰竭风险时）',
+        '营养科（代谢营养方向）',
+        '肾内科/肝病科（器官受累时）',
+      ],
+      diagnosisChecklist: [
+        '整理每次发作前吃过的食物、配方、药品、补充剂和症状时间线。',
+        '保存低血糖、乳酸、尿酸、肝肾功能、凝血和尿检结果。',
+        '询问 ALDOB 基因检测，避免自行或非专科安排果糖负荷试验。',
+        '请营养师帮助核对日常食物、药品辅料和学校/托育饮食。',
+        '家属有生育计划时准备基因报告做遗传咨询。',
+      ],
+      testsToAskAbout: [
+        'ALDOB 基因检测。',
+        '低血糖发作时血糖、乳酸、电解质、尿酸和酸碱状态。',
+        '肝功能、胆红素、凝血、白蛋白和腹部超声。',
+        '肾功能、电解质和尿检。',
+        '营养状态和微量营养素评估。',
+      ],
+      questionsForDoctor: [
+        '孩子的症状是否符合 HFI？哪些成分需要马上回避？',
+        '是否可以通过基因检测确认？为什么不建议果糖负荷试验？',
+        '日常食品、药品、疫苗或口服液成分应该怎样核对？',
+        '已经出现肝肾影响了吗？需要多久复查？',
+        '家属筛查和未来生育需要哪些遗传咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>HFI 常在婴儿接触果糖、蔗糖或山梨醇后出现恶心、呕吐、出汗、嗜睡、低血糖、腹痛、腹胀、拒食、体重增长差和肝大。反复暴露可能导致黄疸、肝功能异常、凝血问题、肾功能受累，严重时可有抽搐、昏迷或肝肾衰竭风险。</p>',
+      diagnosis:
+        '<p>诊断依赖饮食暴露后症状、代谢和肝肾检查，以及 ALDOB 基因检测。GeneReviews 明确提示果糖耐受/负荷试验有危险，不应作为常规诊断方式。医生还会鉴别果糖吸收不良、食物过敏、胃肠炎、糖原累积病、半乳糖血症和其他低血糖/肝病原因。</p>',
+      treatment:
+        '<p>管理核心是严格回避果糖、蔗糖、山梨醇等相关来源，并由代谢营养师确保营养均衡和微量营养素补充。急性低血糖或肝肾受累需要医院处理。所有饮食和药品辅料核对都应按专科方案执行。</p>',
+      longTermCare:
+        '<p>长期照护重点是食品和药品成分识别、学校托育沟通、营养状态、肝肾功能和低血糖预防。家庭可准备一份“禁用成分和急诊说明”，避免误食和医疗场景误用含果糖成分。</p>',
+      fertilityOrFamily:
+        '<p>HFI 为常染色体隐性遗传。明确 ALDOB 变异后，父母、兄弟姐妹和有生育计划的亲属可通过遗传咨询了解携带者检测、产前诊断或胚胎植入前遗传学检测选择。</p>',
+      emergencySigns:
+        '<p>误食后反复呕吐、嗜睡、出汗、抽搐、低血糖、黄疸、出血倾向、尿量减少或精神状态改变，应立即急诊并说明疑似或确诊 HFI，避免继续摄入相关糖类来源。</p>',
+    },
+    sources: [
+      {
+        name: 'GeneReviews: Hereditary Fructose Intolerance',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK333439/',
+      },
+      {
+        name: 'MedlinePlus Genetics: Hereditary fructose intolerance',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/hereditary-fructose-intolerance/',
+      },
+    ],
+    symptoms:
+      '<p>摄入果糖、蔗糖或山梨醇后可出现呕吐、出汗、低血糖、腹痛、拒食、肝大、黄疸或肝肾受累。</p>',
+    diagnosis:
+      '<p>评估包括饮食暴露史、低血糖和肝肾代谢检查、ALDOB 基因检测；应避免危险的果糖负荷试验。</p>',
+    treatment:
+      '<p>管理以严格回避相关糖类来源、营养师随访、药品辅料核对和急性低血糖/肝肾风险处理为核心。</p>',
+    prognosis:
+      '<p>早期识别并避免暴露后，多数患者可稳定生活；反复误食或延误识别会增加肝肾损伤风险。</p>',
+    sourceName: 'GeneReviews: Hereditary Fructose Intolerance',
+    sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK333439/',
+    categorySlug: 'metabolic',
+    charityIds: [],
+    hospitalIds: [],
+    reviewStatus: 'draft',
+    tagSlugs: ['genetic-counseling'],
+  },
 ];
