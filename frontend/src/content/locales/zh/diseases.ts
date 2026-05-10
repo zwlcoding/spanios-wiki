@@ -340,6 +340,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 306,
+      name: 'alport-syndrome-journey.png',
+      url: '/images/diseases/alport-syndrome-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -444,6 +449,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 307,
+      name: 'angelman-syndrome-journey.png',
+      url: '/images/diseases/angelman-syndrome-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -773,6 +783,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 308,
+      name: 'atypical-hemolytic-uremic-syndrome-journey.png',
+      url: '/images/diseases/atypical-hemolytic-uremic-syndrome-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -883,6 +898,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 309,
+      name: 'autoimmune-encephalitis-journey.png',
+      url: '/images/diseases/autoimmune-encephalitis-journey.png',
+    },
     tagSlugs: [],
   },
   {
@@ -993,6 +1013,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 310,
+      name: 'amyotrophic-lateral-sclerosis-journey.png',
+      url: '/images/diseases/amyotrophic-lateral-sclerosis-journey.png',
+    },
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -1354,6 +1379,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 311,
+      name: 'autoimmune-insulin-receptopathy-type-b-insulin-resistance-journey.png',
+      url: '/images/diseases/autoimmune-insulin-receptopathy-type-b-insulin-resistance-journey.png',
+    },
     tagSlugs: ['endocrine'],
   },
   {
