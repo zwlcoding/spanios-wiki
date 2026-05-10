@@ -1255,6 +1255,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 312,
+      name: 'autoimmune-hypophysitis-journey.png',
+      url: '/images/diseases/autoimmune-hypophysitis-journey.png',
+    },
     tagSlugs: ['endocrine'],
   },
   {
@@ -1497,6 +1502,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 313,
+      name: 'beta-ketothiolase-deficiency-journey.png',
+      url: '/images/diseases/beta-ketothiolase-deficiency-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1608,6 +1618,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 314,
+      name: 'biotinidase-deficiency-journey.png',
+      url: '/images/diseases/biotinidase-deficiency-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1720,6 +1735,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 315,
+      name: 'carnitine-deficiency-journey.png',
+      url: '/images/diseases/carnitine-deficiency-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1839,6 +1859,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 316,
+      name: 'cardic-ion-channelopathies-journey.png',
+      url: '/images/diseases/cardic-ion-channelopathies-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1954,6 +1979,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 317,
+      name: 'charcot-marie-tooth-disease-journey.png',
+      url: '/images/diseases/charcot-marie-tooth-disease-journey.png',
+    },
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -2074,6 +2104,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 318,
+      name: 'citrullinemia-journey.png',
+      url: '/images/diseases/citrullinemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -2194,6 +2229,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 319,
+      name: 'castleman-disease-journey.png',
+      url: '/images/diseases/castleman-disease-journey.png',
+    },
     tagSlugs: [],
   },
   {
@@ -2306,6 +2346,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 320,
+      name: 'congenital-adrenal-hypoplasia-journey.png',
+      url: '/images/diseases/congenital-adrenal-hypoplasia-journey.png',
+    },
     tagSlugs: ['endocrine', 'genetic-counseling'],
   },
   {
@@ -2418,6 +2463,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 321,
+      name: 'congenital-hyperinsulinemic-hypoglycemia-journey.png',
+      url: '/images/diseases/congenital-hyperinsulinemic-hypoglycemia-journey.png',
+    },
     tagSlugs: ['endocrine', 'genetic-counseling'],
   },
   {
@@ -2531,6 +2581,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 322,
+      name: 'congenital-myasthenic-syndrome-journey.png',
+      url: '/images/diseases/congenital-myasthenic-syndrome-journey.png',
+    },
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -2647,6 +2702,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 323,
+      name: 'congenital-myotonia-syndrome-non-dystrophic-myotonia-ndm-journey.png',
+      url: '/images/diseases/congenital-myotonia-syndrome-non-dystrophic-myotonia-ndm-journey.png',
+    },
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -2760,6 +2820,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 324,
+      name: 'diamond-blackfan-anemia-journey.png',
+      url: '/images/diseases/diamond-blackfan-anemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -2874,6 +2939,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 325,
+      name: 'erdheim-chester-disease-journey.png',
+      url: '/images/diseases/erdheim-chester-disease-journey.png',
+    },
     tagSlugs: [],
   },
   {
@@ -2983,6 +3053,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 326,
+      name: 'fabry-disease-journey.png',
+      url: '/images/diseases/fabry-disease-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3096,6 +3171,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 327,
+      name: 'familial-mediterranean-fever-journey.png',
+      url: '/images/diseases/familial-mediterranean-fever-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3203,6 +3283,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 328,
+      name: 'fanconi-anemia-journey.png',
+      url: '/images/diseases/fanconi-anemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3311,6 +3396,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 329,
+      name: 'galactosemia-journey.png',
+      url: '/images/diseases/galactosemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3419,6 +3509,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 330,
+      name: 'gauchers-disease-journey.png',
+      url: '/images/diseases/gauchers-disease-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3531,6 +3626,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 331,
+      name: 'generalized-myasthenia-gravis-journey.png',
+      url: '/images/diseases/generalized-myasthenia-gravis-journey.png',
+    },
     tagSlugs: ['neuromuscular'],
   },
   {
@@ -3645,6 +3745,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 332,
+      name: 'congenital-scoliosis-journey.png',
+      url: '/images/diseases/congenital-scoliosis-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3759,6 +3864,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 333,
+      name: 'coronary-artery-ectasia-journey.png',
+      url: '/images/diseases/coronary-artery-ectasia-journey.png',
+    },
     tagSlugs: [],
   },
   {
@@ -3872,6 +3982,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 334,
+      name: 'gitelman-syndrome-journey.png',
+      url: '/images/diseases/gitelman-syndrome-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3979,6 +4094,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 335,
+      name: 'glutaric-acidemia-type-i-journey.png',
+      url: '/images/diseases/glutaric-acidemia-type-i-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4092,6 +4212,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 336,
+      name: 'glycogen-storage-disease-type-i-ii-journey.png',
+      url: '/images/diseases/glycogen-storage-disease-type-i-ii-journey.png',
+    },
     tagSlugs: ['genetic-counseling', 'neuromuscular'],
   },
   {
@@ -4206,6 +4331,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 337,
+      name: 'hemophilia-journey.png',
+      url: '/images/diseases/hemophilia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4313,6 +4443,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 338,
+      name: 'hepatolenticular-degeneration-wilson-disease-journey.png',
+      url: '/images/diseases/hepatolenticular-degeneration-wilson-disease-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4421,6 +4556,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 339,
+      name: 'hereditary-angioedema-hae-journey.png',
+      url: '/images/diseases/hereditary-angioedema-hae-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4533,6 +4673,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 340,
+      name: 'hereditary-epidermolysis-bullosa-journey.png',
+      url: '/images/diseases/hereditary-epidermolysis-bullosa-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4640,6 +4785,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 341,
+      name: 'hereditary-fructose-intolerance-journey.png',
+      url: '/images/diseases/hereditary-fructose-intolerance-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4755,6 +4905,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 342,
+      name: 'hereditary-hypomagnesemia-journey.png',
+      url: '/images/diseases/hereditary-hypomagnesemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4862,6 +5017,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 343,
+      name: 'hereditary-multi-infarct-dementia-cerebral-autosomal-dominant-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy-cadasil-journey.png',
+      url: '/images/diseases/hereditary-multi-infarct-dementia-cerebral-autosomal-dominant-arteriopathy-with-subcortical-infarcts-and-leukoencephalopathy-cadasil-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4971,6 +5131,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 344,
+      name: 'hereditary-spastic-paraplegia-journey.png',
+      url: '/images/diseases/hereditary-spastic-paraplegia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5079,6 +5244,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 345,
+      name: 'holocarboxylase-synthetase-deficiency-journey.png',
+      url: '/images/diseases/holocarboxylase-synthetase-deficiency-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5174,6 +5344,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 346,
+      name: 'homocysteinemia-journey.png',
+      url: '/images/diseases/homocysteinemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5274,6 +5449,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 347,
+      name: 'homozygous-hypercholesterolemia-journey.png',
+      url: '/images/diseases/homozygous-hypercholesterolemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5374,6 +5554,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 348,
+      name: 'huntington-disease-journey.png',
+      url: '/images/diseases/huntington-disease-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5479,6 +5664,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 349,
+      name: 'hyperornithinaemia-hyperammonaemia-homocitrullinuria-syndrome-journey.png',
+      url: '/images/diseases/hyperornithinaemia-hyperammonaemia-homocitrullinuria-syndrome-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5584,6 +5774,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 350,
+      name: 'hyperphenylalaninemia-journey.png',
+      url: '/images/diseases/hyperphenylalaninemia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5689,6 +5884,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 351,
+      name: 'hypophosphatasia-journey.png',
+      url: '/images/diseases/hypophosphatasia-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5793,6 +5993,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 352,
+      name: 'hypophosphatemic-rickets-journey.png',
+      url: '/images/diseases/hypophosphatemic-rickets-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5907,6 +6112,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 353,
+      name: 'idiopathic-cardiomyopathy-journey.png',
+      url: '/images/diseases/idiopathic-cardiomyopathy-journey.png',
+    },
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -6017,6 +6227,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     charityIds: [],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 354,
+      name: 'idiopathic-hypogonadotropic-hypogonadism-journey.png',
+      url: '/images/diseases/idiopathic-hypogonadotropic-hypogonadism-journey.png',
+    },
     tagSlugs: ['endocrine', 'genetic-counseling'],
   },
 ];
