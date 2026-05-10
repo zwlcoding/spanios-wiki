@@ -1,8 +1,8 @@
-import { categoriesByLocale } from '@/content/data/categories';
 import {
   createCatalogDiseaseDrafts,
   getCatalogDiseaseMetadata,
 } from '@/content/data/catalogs';
+import { categoriesByLocale } from '@/content/data/categories';
 import { charityDraftsByLocale } from '@/content/data/charities';
 import { diseaseDraftsByLocale } from '@/content/data/diseases';
 import {
@@ -16,10 +16,10 @@ import type {
   ContentResponse,
   ContentSource,
   Disease,
-  HospitalService,
   Hospital,
-  LocalizedRecord,
+  HospitalService,
   Locale,
+  LocalizedRecord,
   WikiContent,
 } from '@/types/content';
 import {
@@ -113,6 +113,7 @@ export function getWikiContent(locale: string): WikiContent {
     ...service,
     diseases: service.diseaseSlugs
       .map((slug) => diseases.find((disease) => disease.slug === slug))
+      .filter((disease) => disease && isPublishedDisease(disease))
       .filter(Boolean),
     hospital: compactHospital(
       hospitals.find((hospital) => hospital.id === service.hospitalId),
@@ -140,14 +141,17 @@ export function getWikiContent(locale: string): WikiContent {
       ...charity,
       diseases: diseaseSlugs
         .map((slug) => diseases.find((disease) => disease.slug === slug))
+        .filter((disease) => disease && isPublishedDisease(disease))
         .filter(Boolean),
     };
   });
 
   const enrichedDiseases = diseases.map((disease) => {
     const { _charityIds, _hospitalIds, ...publicDisease } = disease;
-    const diseaseHospitalServices = hospitalServices.filter((service) =>
-      service.diseaseSlugs.includes(disease.slug),
+    const diseaseHospitalServices = hospitalServices.filter(
+      (service) =>
+        service.diseaseSlugs.includes(disease.slug) &&
+        isPublishedDisease(disease),
     );
     const serviceHospitals = diseaseHospitalServices
       .map((service) => service.hospital)
@@ -246,4 +250,11 @@ function compactHospital(hospital: Hospital | undefined) {
 
   const { diseases: _diseases, services: _services, ...compact } = hospital;
   return compact;
+}
+
+function isPublishedDisease(disease: Pick<Disease, 'reviewStatus'>) {
+  return (
+    disease.reviewStatus === 'patient-reviewed' ||
+    disease.reviewStatus === 'medical-reviewed'
+  );
 }

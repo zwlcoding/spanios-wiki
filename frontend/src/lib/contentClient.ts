@@ -32,6 +32,10 @@ export async function fetchDiseases(
   filters?: DiseaseFilters,
 ): Promise<ContentResponse<Disease[]>> {
   const diseases = getContent().diseases.filter((disease) => {
+    if (!isPublishedDisease(disease)) {
+      return false;
+    }
+
     const matchesCategory =
       !filters?.category ||
       filters.category === 'all' ||
@@ -83,7 +87,7 @@ export async function fetchDiseaseBySlug(
 ): Promise<ContentResponse<Disease>> {
   const disease = getContent().diseases.find((item) => item.slug === slug);
 
-  if (!disease) {
+  if (!disease || !isPublishedDisease(disease)) {
     throw new Error('Disease not found');
   }
 
@@ -223,4 +227,11 @@ function normalize(value: string | undefined) {
     .replace(/<[^>]*>/g, '')
     .toLocaleLowerCase()
     .trim();
+}
+
+export function isPublishedDisease(disease: Pick<Disease, 'reviewStatus'>) {
+  return (
+    disease.reviewStatus === 'patient-reviewed' ||
+    disease.reviewStatus === 'medical-reviewed'
+  );
 }

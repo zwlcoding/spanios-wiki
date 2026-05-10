@@ -10,6 +10,7 @@
     "review:translation:validate": "node scripts/validate_translation_draft.mjs",
     "review:validate": "node scripts/validate_content_draft.mjs",
     "review:translation:promote": "node scripts/promote_translation_draft.mjs",
-    "review:promote": "node scripts/promote_content_draft.mjs"
+    "review:promote": "node scripts/promote_content_draft.mjs",
+    "translate:en": "node scripts/translate_en_diseases_with_mmx.mjs"
   }
 }

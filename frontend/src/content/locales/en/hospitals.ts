@@ -183,7 +183,7 @@ export const enHospitalServiceDrafts: HospitalServiceDraft[] = [
     departmentId: 301,
     departmentName: 'Hematology',
     serviceName: 'Coagulation and bleeding disorder assessment',
-    diseaseSlugs: ['hemophilia-a'],
+    diseaseSlugs: ['hemophilia'],
     stage: 'treatment',
     relationKind: 'department-service',
     serviceKind: 'department',

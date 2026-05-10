@@ -61,7 +61,7 @@ const warnings = [];
 const missingFeaturedImages = [];
 
 for (const block of detailedBlocks) {
-  if (/reviewStatus:\s*['"]draft['"]/.test(block.text)) {
+  if (propertyPattern('reviewStatus', '[\'"]draft[\'"]').test(block.text)) {
     errors.push(
       `${block.slug}: detailed page is still marked reviewStatus draft.`,
     );
@@ -73,9 +73,9 @@ for (const block of detailedBlocks) {
     }
   }
 
-  const urls = [...block.text.matchAll(/url:\s*['"]([^'"]+)['"]/g)].map(
-    (match) => match[1],
-  );
+  const urls = [
+    ...block.text.matchAll(/["']?url["']?\s*:\s*['"]([^'"]+)['"]/g),
+  ].map((match) => match[1]);
   for (const url of urls) {
     const hostname = safeHostname(url);
     if (
@@ -88,11 +88,11 @@ for (const block of detailedBlocks) {
     }
   }
 
-  if (!/sources:\s*\[/.test(block.text)) {
+  if (!propertyPattern('sources', '\\[').test(block.text)) {
     warnings.push(`${block.slug}: no structured sources array.`);
   }
 
-  if (!/featuredImage:\s*\{/.test(block.text)) {
+  if (!propertyPattern('featuredImage', '\\{').test(block.text)) {
     missingFeaturedImages.push(block.slug);
   }
 }
@@ -118,7 +118,9 @@ for (const block of hospitalServiceBlocks) {
     warnings.push(`${block.id}: hospital service has no lastVerifiedAt.`);
   }
 
-  if (!/(evidence:\s*\[|evidenceUrl:\s*['"]|sourceUrl:\s*['"])/.test(block.text)) {
+  if (
+    !/(evidence:\s*\[|evidenceUrl:\s*['"]|sourceUrl:\s*['"])/.test(block.text)
+  ) {
     errors.push(`${block.id}: hospital service must include public evidence.`);
   }
 
@@ -162,19 +164,21 @@ if (errors.length > 0) {
 console.log('\nNo blocking content quality issues found.');
 
 function readDetailedDiseaseBlocks(text) {
-  const markers = [...text.matchAll(/\.\.\.entity\(/g)].map(
-    (match) => match.index ?? 0,
-  );
+  const markers = [
+    ...text.matchAll(
+      /\n\s*\{\s*\n\s*(?:\.\.\.entity\(|["']?createdAt["']?\s*:)/g,
+    ),
+  ].map((match) => match.index ?? 0);
   const blocks = [];
 
   for (const [index, start] of markers.entries()) {
     const end = markers[index + 1] ?? text.length;
     const block = text.slice(start, end);
-    if (!/quickLook:/.test(block)) {
+    if (!propertyPattern('quickLook', '\\{').test(block)) {
       continue;
     }
 
-    const slug = extract(block, /slug:\s*['"]([^'"]+)['"]/);
+    const slug = extract(block, /["']?slug["']?\s*:\s*['"]([^'"]+)['"]/);
     blocks.push({
       slug: slug ?? `block-${index + 1}`,
       text: block,
@@ -217,6 +221,10 @@ function readHospitalServiceBlocks(text) {
 function extract(text, pattern) {
   const match = text.match(pattern);
   return match?.[1];
+}
+
+function propertyPattern(name, valuePattern) {
+  return new RegExp(`["']?${name}["']?\\s*:\\s*${valuePattern}`);
 }
 
 function safeHostname(url) {

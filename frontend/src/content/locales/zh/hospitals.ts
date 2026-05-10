@@ -176,7 +176,7 @@ export const zhHospitalServiceDrafts: HospitalServiceDraft[] = [
     departmentId: 301,
     departmentName: '血液科',
     serviceName: '凝血与出血性疾病评估',
-    diseaseSlugs: ['hemophilia-a'],
+    diseaseSlugs: ['hemophilia'],
     stage: 'treatment',
     relationKind: 'department-service',
     serviceKind: 'department',
