@@ -111,6 +111,16 @@ export async function fetchHospitals(
         service.serviceName,
         service.notes,
         service.evidenceSummary,
+        service.relationKind,
+        service.serviceKind,
+        service.confidence,
+        ...(service.patientPrep ?? []),
+        ...(service.evidence?.flatMap((evidence) => [
+          evidence.title,
+          evidence.publisher,
+          evidence.summary,
+          evidence.kind,
+        ]) ?? []),
         ...(service.diseases?.map((disease) => disease.name) ?? []),
       ]) ?? []),
     ]);

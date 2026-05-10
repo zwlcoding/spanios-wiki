@@ -85,14 +85,14 @@ function HospitalsListPage() {
               首页
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="strong-text">医院列表</span>
+            <span className="strong-text">就医资源</span>
           </nav>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
               <h1 className="section-title text-4xl mb-2">罕见病就医资源</h1>
               <p className="section-copy">
-                按地区查找公开医院、科室和联系方式，作为就医前的信息参考
+                按地区查看公开医院、科室/服务、关联疾病和来源证据，作为就医前的信息参考
               </p>
             </div>
 
@@ -121,7 +121,7 @@ function HospitalsListPage() {
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
                   <input
                     type="text"
-                    placeholder="搜索医院名称..."
+                    placeholder="搜索医院、科室、疾病或服务..."
                     className="input-warm pl-10"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
@@ -171,7 +171,7 @@ function HospitalsListPage() {
                       公开就医信息
                     </h3>
                     <p className="text-xs text-stone-600 dark:text-stone-400">
-                      收录公开可核对的医院、科室与服务信息，不构成医疗推荐
+                      优先展示可核对的科室/服务证据，不按医院做推荐排序
                     </p>
                   </div>
                 </div>
@@ -192,7 +192,7 @@ function HospitalsListPage() {
                     <span className="font-semibold text-teal-600">
                       {hospitals.length}
                     </span>{' '}
-                    家医院
+                    个机构
                   </span>
                 )}
               </div>
@@ -232,9 +232,11 @@ function HospitalsListPage() {
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center">
                     <Building2 className="w-10 h-10 text-stone-400" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">未找到相关医院</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    未找到相关就医资源
+                  </h3>
                   <p className="mb-4">
-                    尝试使用其他关键词搜索，或浏览全部医院列表
+                    尝试使用疾病、科室、城市或服务关键词搜索
                   </p>
                   <button
                     type="button"
@@ -244,7 +246,7 @@ function HospitalsListPage() {
                     }}
                     className="btn-soft"
                   >
-                    查看全部医院
+                    查看全部资源
                   </button>
                 </div>
               ) : (
@@ -305,7 +307,7 @@ function HospitalsListPage() {
                             <div className="mt-3 pt-3 border-t border-stone-200 dark:border-stone-700">
                               <p className="text-sm text-stone-600 dark:text-stone-400">
                                 <span className="font-medium text-stone-800 dark:text-stone-200">
-                                  特色专科：
+                                  公开线索：
                                 </span>
                                 <span className="line-clamp-2">
                                   {hospital.specialties}
@@ -313,6 +315,30 @@ function HospitalsListPage() {
                               </p>
                             </div>
                           )}
+
+                          {hospital.services &&
+                            hospital.services.length > 0 && (
+                              <div className="mt-3 flex flex-wrap gap-2">
+                                {hospital.services
+                                  .slice(0, 3)
+                                  .map((service) => (
+                                    <span
+                                      key={service.id}
+                                      className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-xs text-stone-600 dark:border-stone-700 dark:bg-stone-900/50 dark:text-stone-300"
+                                    >
+                                      {service.departmentName}
+                                      {service.diseases?.length
+                                        ? ` · ${service.diseases.length} 个疾病`
+                                        : ''}
+                                    </span>
+                                  ))}
+                                {hospital.services.length > 3 && (
+                                  <span className="rounded-full border border-stone-200 bg-stone-50 px-3 py-1 text-xs text-stone-600 dark:border-stone-700 dark:bg-stone-900/50 dark:text-stone-300">
+                                    +{hospital.services.length - 3} 个服务线索
+                                  </span>
+                                )}
+                              </div>
+                            )}
                         </div>
 
                         {/* Arrow */}

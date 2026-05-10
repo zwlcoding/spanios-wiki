@@ -417,7 +417,8 @@ function DiseaseDetailPage() {
                 就医资源
               </h3>
               <p className="-mt-2 mb-4 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
-                以下为公开收录的科室或服务线索，不代表本站推荐或医疗背书。
+                以下为公开收录的科室、服务或 MDT
+                线索，不代表本站推荐或医疗背书。
               </p>
               <div className="space-y-3">
                 {disease.hospitalServices.map((service) => (
@@ -440,6 +441,9 @@ function DiseaseDetailPage() {
                     </div>
                     <div className="mt-1 text-xs text-stone-500">
                       {formatHospitalServiceStage(service.stage)}
+                      {service.relationKind
+                        ? ` · ${formatRelationKind(service.relationKind)}`
+                        : ''}
                       {service.hospital
                         ? ` · ${service.hospital.province} ${service.hospital.city}`
                         : ''}
@@ -459,6 +463,11 @@ function DiseaseDetailPage() {
                         查看公开来源
                         <ExternalLink className="h-3 w-3" />
                       </a>
+                    )}
+                    {service.lastVerifiedAt && (
+                      <div className="mt-1 text-xs text-stone-500">
+                        核验于 {service.lastVerifiedAt}
+                      </div>
                     )}
                   </div>
                 ))}
@@ -635,4 +644,15 @@ function formatHospitalServiceStage(stage?: string) {
   };
 
   return stage ? (labels[stage] ?? stage) : '就医信息参考';
+}
+
+function formatRelationKind(kind?: string) {
+  const labels: Record<string, string> = {
+    'clinic-or-mdt': '门诊/MDT',
+    'department-service': '科室服务',
+    'public-directory': '公开目录',
+    'rare-disease-network': '罕见病网络',
+  };
+
+  return kind ? (labels[kind] ?? kind) : '公开线索';
 }

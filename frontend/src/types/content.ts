@@ -169,6 +169,21 @@ export interface Department {
   publishedAt?: string;
 }
 
+export interface HospitalServiceEvidence {
+  accessedAt?: string;
+  kind:
+    | 'clinic-page'
+    | 'department-page'
+    | 'hospital-directory'
+    | 'medical-team-page'
+    | 'policy-or-network'
+    | 'public-notice';
+  publisher?: string;
+  summary?: string;
+  title: string;
+  url: string;
+}
+
 export interface HospitalService {
   appointmentUrl?: string;
   confidence?: 'low' | 'medium' | 'high';
@@ -176,17 +191,21 @@ export interface HospitalService {
   departmentName: string;
   diseases?: Disease[];
   diseaseSlugs: string[];
+  evidence?: HospitalServiceEvidence[];
   evidenceSummary?: string;
   evidenceUrl?: string;
   hospital?: Hospital;
   hospitalId: number;
   id: string;
+  lastVerifiedAt?: string;
   notes?: string;
+  patientPrep?: string[];
   relationKind?:
     | 'clinic-or-mdt'
     | 'department-service'
     | 'public-directory'
     | 'rare-disease-network';
+  serviceKind?: 'department' | 'mdt' | 'public-directory' | 'specialty-clinic';
   serviceName?: string;
   sourceUrl?: string;
   stage?: 'diagnosis' | 'follow-up' | 'genetic-counseling' | 'treatment';

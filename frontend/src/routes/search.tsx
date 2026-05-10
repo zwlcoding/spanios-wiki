@@ -173,7 +173,7 @@ function SearchPage() {
 
               {results.hospitals.length > 0 && (
                 <ResultSection
-                  title="医院"
+                  title="就医资源"
                   count={results.hospitals.length}
                   icon={Building2}
                 >
@@ -193,6 +193,12 @@ function SearchPage() {
                           <p className="mt-3 line-clamp-2 text-sm">
                             {hospital.address}
                           </p>
+                          {hospital.services &&
+                            hospital.services.length > 0 && (
+                              <p className="mt-2 text-xs text-stone-500">
+                                {hospital.services.length} 条公开科室/服务线索
+                              </p>
+                            )}
                         </div>
                         <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
                       </div>

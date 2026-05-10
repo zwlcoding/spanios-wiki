@@ -11,13 +11,23 @@ const filePath = path.join(
   locale,
   'diseases.ts',
 );
+const hospitalFilePath = path.join(
+  root,
+  'frontend/src/content/locales',
+  locale,
+  'hospitals.ts',
+);
 
 if (!fs.existsSync(filePath)) {
   fail(`Missing disease content file: ${path.relative(root, filePath)}`);
 }
 
 const source = fs.readFileSync(filePath, 'utf8');
+const hospitalSource = fs.existsSync(hospitalFilePath)
+  ? fs.readFileSync(hospitalFilePath, 'utf8')
+  : '';
 const detailedBlocks = readDetailedDiseaseBlocks(source);
+const hospitalServiceBlocks = readHospitalServiceBlocks(hospitalSource);
 const weakSourceHostPatterns = [
   /(^|\.)120ask\.com$/,
   /(^|\.)3zhijk\.com$/,
@@ -87,8 +97,41 @@ for (const block of detailedBlocks) {
   }
 }
 
+for (const block of hospitalServiceBlocks) {
+  if (!/hospitalId:\s*\d+/.test(block.text)) {
+    errors.push(`${block.id}: hospital service is missing hospitalId.`);
+  }
+
+  if (!/diseaseSlugs:\s*\[[^\]]+]/s.test(block.text)) {
+    errors.push(`${block.id}: hospital service must link to diseaseSlugs.`);
+  }
+
+  if (!/relationKind:\s*['"][^'"]+['"]/.test(block.text)) {
+    errors.push(`${block.id}: hospital service is missing relationKind.`);
+  }
+
+  if (!/confidence:\s*['"](low|medium|high)['"]/.test(block.text)) {
+    errors.push(`${block.id}: hospital service is missing confidence.`);
+  }
+
+  if (!/lastVerifiedAt:\s*['"]\d{4}-\d{2}-\d{2}['"]/.test(block.text)) {
+    warnings.push(`${block.id}: hospital service has no lastVerifiedAt.`);
+  }
+
+  if (!/(evidence:\s*\[|evidenceUrl:\s*['"]|sourceUrl:\s*['"])/.test(block.text)) {
+    errors.push(`${block.id}: hospital service must include public evidence.`);
+  }
+
+  for (const [label, pattern] of riskyTextPatterns) {
+    if (pattern.test(block.text)) {
+      errors.push(`${block.id}: risky wording matched ${label}.`);
+    }
+  }
+}
+
 console.log(`Content audit: ${locale}`);
 console.log(`Detailed disease pages: ${detailedBlocks.length}`);
+console.log(`Hospital service relations: ${hospitalServiceBlocks.length}`);
 
 if (warnings.length > 0) {
   console.log('\nWarnings:');
@@ -134,6 +177,36 @@ function readDetailedDiseaseBlocks(text) {
     const slug = extract(block, /slug:\s*['"]([^'"]+)['"]/);
     blocks.push({
       slug: slug ?? `block-${index + 1}`,
+      text: block,
+    });
+  }
+
+  return blocks;
+}
+
+function readHospitalServiceBlocks(text) {
+  if (!text) {
+    return [];
+  }
+
+  const serviceArrayStart = text.indexOf('HospitalServiceDraft[] = [');
+  if (serviceArrayStart === -1) {
+    return [];
+  }
+
+  const serviceText = text.slice(serviceArrayStart);
+  const markers = [...serviceText.matchAll(/\n\s*\{\s*\n\s*id:\s*['"]/g)].map(
+    (match) => serviceArrayStart + (match.index ?? 0),
+  );
+  const blocks = [];
+
+  for (const [index, start] of markers.entries()) {
+    const end = markers[index + 1] ?? text.length;
+    const block = text.slice(start, end);
+    const id = extract(block, /id:\s*['"]([^'"]+)['"]/);
+
+    blocks.push({
+      id: id ?? `hospital-service-${index + 1}`,
       text: block,
     });
   }

@@ -60,7 +60,7 @@ const quickLinks = [
   },
   {
     title: '就医资源',
-    description: '按地区查找公开医院、科室和联系方式',
+    description: '按地区查看公开科室/服务线索和来源证据',
     href: '/hospitals',
     icon: Hospital,
   },
