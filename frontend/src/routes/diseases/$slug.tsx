@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import {
-  ArrowLeft,
   AlertTriangle,
+  ArrowLeft,
   BookOpenCheck,
   Calendar,
   ClipboardCheck,
@@ -10,10 +10,10 @@ import {
   HelpCircle,
   Hospital,
   ListChecks,
+  type LucideIcon,
   Stethoscope,
   Tag,
   Users,
-  type LucideIcon,
 } from 'lucide-react';
 import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import { useDisease } from '@/hooks/useDiseases';
@@ -281,6 +281,15 @@ function DiseaseDetailPage() {
           </div>
         </section>
       )}
+
+      <section className="mb-8 rounded-md border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-stone-700 dark:border-amber-900/60 dark:bg-amber-950/30 dark:text-stone-300">
+        <div className="flex gap-3">
+          <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />
+          <p>
+            这页内容用于帮助患者和家属整理就医线索，不替代医生诊断或治疗方案。检查、用药、转诊、急诊处理和公益救助申请，请以医生、医疗机构、公益组织及官方渠道的最新信息为准。
+          </p>
+        </div>
+      </section>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Main Content */}

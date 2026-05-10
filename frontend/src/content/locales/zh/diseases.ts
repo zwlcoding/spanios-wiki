@@ -22,7 +22,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '通常是常染色体隐性遗传。父母是否携带、再次生育风险和家族成员是否需要检查，应由遗传咨询或专科医生结合基因检测结果判断。',
       hasTreatment:
-        '有规范治疗和随访方案，但需要长期由内分泌专科管理。药物种类、剂量和应激情况处理方案必须由医生个体化制定。',
+        '有规范治疗和随访方案，但需要长期由内分泌专科管理。药物种类、剂量和应激情况处理方案应由医生个体化制定。',
       commonDelayReason:
         '女婴外生殖器异常、男婴早期失盐危象、儿童生长过快或青春期高雄激素表现，容易被分别当作泌尿外科、胃肠道、普通性早熟或多囊卵巢问题处理。',
     },
@@ -76,7 +76,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常结合临床表现、新生儿筛查、血清 17-羟孕酮（17-OHP）、ACTH/皮质醇、电解质、肾素/醛固酮和肾上腺来源雄激素等检查。经典型患者 17-OHP 往往明显升高；非经典型可能需要清晨基础 17-OHP 或 ACTH 兴奋试验帮助判断。</p><p>CYP21A2 基因检测可用于明确遗传学诊断、分型参考和家族遗传咨询。医生还会根据年龄和表现鉴别其他性发育异常、性早熟、多囊卵巢综合征、肾上腺或垂体相关疾病。</p>',
       treatment:
-        '<p>治疗目标是在专科医生指导下补充缺乏的激素、降低过量雄激素影响，并维持正常生长发育和代谢稳定。经典型患者通常需要长期糖皮质激素替代；失盐型还可能需要盐皮质激素相关治疗和电解质监测。具体药物、剂量和调整时机必须由医生根据年龄、体重、激素水平、生长速度和应激情况决定。</p><p>涉及外生殖器评估、青春期发育、生育计划或心理支持时，常需要儿科内分泌、泌尿/妇科、生殖医学、遗传咨询和心理支持等多学科共同参与。</p>',
+        '<p>治疗目标是在专科医生指导下补充缺乏的激素、降低过量雄激素影响，并维持正常生长发育和代谢稳定。经典型患者通常需要长期糖皮质激素替代；失盐型还可能需要盐皮质激素相关治疗和电解质监测。具体药物、剂量和调整时机应由医生根据年龄、体重、激素水平、生长速度和应激情况决定。</p><p>涉及外生殖器评估、青春期发育、生育计划或心理支持时，常需要儿科内分泌、泌尿/妇科、生殖医学、遗传咨询和心理支持等多学科共同参与。</p>',
       longTermCare:
         '<p>长期管理重点包括规律复诊、监测身高体重和骨龄、复查激素和电解质、评估青春期发育、骨健康、代谢风险和生活质量。家属和患者应保存诊断资料、用药清单和急诊就医说明，避免漏诊肾上腺危象风险。</p><p>发热、腹泻、外伤、手术等应激情况可能改变治疗需求，应提前向主治医生确认书面应急方案。不要自行停药、加药或按网络经验调整剂量。</p>',
       fertilityOrFamily:
@@ -115,7 +115,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     featuredImage: {
       id: 302,
       name: '21-hydroxylase-deficiency-journey.png',
@@ -224,7 +224,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'dermatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     featuredImage: {
       id: 303,
       name: 'albinism-journey.png',
@@ -339,7 +339,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'renal-urologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -443,7 +443,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'genetic-developmental',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -465,7 +465,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '通常为常染色体隐性遗传。父母多为携带者，再次生育风险需要结合基因检测和遗传咨询判断。',
       hasTreatment:
-        '需要遗传代谢专科长期管理，通常围绕饮食、氨和氨基酸监测、药物评估、康复和急性代谢失衡处理。具体方案必须由专科医生制定。',
+        '需要遗传代谢专科长期管理，通常围绕饮食、氨和氨基酸监测、药物评估、康复和急性代谢失衡处理。具体方案应由专科医生制定。',
       commonDelayReason:
         '孩子早期可能发育基本正常，随后才出现痉挛、走路异常或学习倒退，容易被当作脑瘫、遗传性痉挛性截瘫或癫痫单独处理。',
     },
@@ -553,7 +553,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     featuredImage: {
       id: 304,
       name: 'arginase-deficiency-journey.png',
@@ -662,7 +662,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'skeletal-connective-tissue',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     featuredImage: {
       id: 305,
       name: 'asphyxiating-thoracic-dystrophy-jeune-syndrome-journey.png',
@@ -772,7 +772,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'renal-urologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -846,7 +846,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常结合病程、神经系统查体、脑脊液、脑电图、MRI、感染排查、神经自身抗体检测和肿瘤筛查。抗体结果有帮助，但医生仍需结合临床表现综合判断。</p>',
       treatment:
-        '<p>治疗通常包括免疫治疗、抗癫痫和重症支持，并根据情况处理潜在肿瘤。常见免疫治疗路径可能涉及激素、免疫球蛋白、血浆置换或后续免疫抑制治疗，具体方案必须由专科团队决定。</p>',
+        '<p>治疗通常包括免疫治疗、抗癫痫和重症支持，并根据情况处理潜在肿瘤。常见免疫治疗路径可能涉及激素、免疫球蛋白、血浆置换或后续免疫抑制治疗，具体方案应由专科团队决定。</p>',
       longTermCare:
         '<p>恢复期需要关注记忆、注意力、睡眠、情绪、癫痫控制、复学复工和家庭照护。部分患者需要神经康复、心理支持和较长时间复查。</p>',
       fertilityOrFamily:
@@ -882,7 +882,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: [],
   },
   {
@@ -992,7 +992,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -1108,7 +1108,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'genetic-developmental',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     featuredImage: {
       id: 301,
       name: 'kallmann-syndrome-journey.png',
@@ -1190,7 +1190,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常结合临床表现、垂体激素轴检查、鞍区 MRI、视野检查以及自身免疫或 IgG4 相关疾病线索。垂体活检可提供病理依据，但有创，通常只在诊断不清、病变进展、怀疑肿瘤或感染等情况下由专科团队权衡。</p><p>医生需要排除垂体腺瘤、Rathke 囊肿、颅咽管瘤、感染、结节病、朗格汉斯细胞组织细胞增生症、IgG4 相关疾病和免疫治疗相关垂体炎等情况。</p>',
       treatment:
-        '<p>治疗取决于是否存在压迫症状、激素缺乏、尿崩症、病变进展和潜在病因。管理可能包括激素替代、抗炎或免疫相关治疗、影像随访，以及少数情况下的神经外科评估。具体药物选择、先后顺序、疗程和减量必须由医生根据检查结果制定。</p>',
+        '<p>治疗取决于是否存在压迫症状、激素缺乏、尿崩症、病变进展和潜在病因。管理可能包括激素替代、抗炎或免疫相关治疗、影像随访，以及少数情况下的神经外科评估。具体药物选择、先后顺序、疗程和减量应由医生根据检查结果制定。</p>',
       longTermCare:
         '<p>长期随访重点包括垂体激素轴、视力视野、鞍区 MRI 变化、尿量/口渴情况和复发线索。已确认激素缺乏者应保存诊断资料、用药清单和急诊说明，感染、手术、外伤或严重疾病等应激情况下需提前向主治医生确认处理方案。</p>',
       fertilityOrFamily:
@@ -1229,7 +1229,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['endocrine'],
   },
   {
@@ -1254,7 +1254,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '通常不是遗传性胰岛素受体缺陷，而是自身免疫机制导致。家族中可有自身免疫病背景，但不能按单基因遗传病理解。',
       hasTreatment:
-        '有治疗思路，但证据多来自病例系列和专家经验。治疗通常同时关注血糖安全、低血糖预防和免疫疾病控制，具体方案必须由专科团队制定。',
+        '有治疗思路，但证据多来自病例系列和专家经验。治疗通常同时关注血糖安全、低血糖预防和免疫疾病控制，具体方案应由专科团队制定。',
       commonDelayReason:
         '因为非常罕见，常被当作普通 2 型糖尿病、严重胰岛素抵抗、多囊卵巢综合征、胰岛素瘤或其他低血糖原因处理，直到发现血糖异常程度和自身免疫背景不匹配。',
     },
@@ -1314,7 +1314,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       longTermCare:
         '<p>长期管理需要规律记录血糖、低血糖事件、用药变化和自身免疫病活动度。病情缓解后仍需警惕复发或治疗减量后的血糖波动。患者应与医生确认低血糖处理方案、急诊就医标准和随访频率。</p>',
       fertilityOrFamily:
-        '<p>本病通常不是遗传性胰岛素受体缺陷。育龄期女性若有月经、高雄激素或生育计划，需要由内分泌科、风湿免疫科和妇产/生殖医学团队共同评估。妊娠相关用药和血糖目标必须个体化制定。</p>',
+        '<p>本病通常不是遗传性胰岛素受体缺陷。育龄期女性若有月经、高雄激素或生育计划，需要由内分泌科、风湿免疫科和妇产/生殖医学团队共同评估。妊娠相关用药和血糖目标需要个体化制定。</p>',
       emergencySigns:
         '<p>反复或严重低血糖、意识模糊、抽搐、血糖极高伴脱水或酮症、恶心呕吐、腹痛、呼吸异常、感染后血糖失控，或自身免疫病明显加重时，应尽快急诊就医，并主动告知医生疑似或确诊 B 型胰岛素抵抗。</p>',
     },
@@ -1353,7 +1353,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['endocrine'],
   },
   {
@@ -1415,7 +1415,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       ],
       questionsForDoctor: [
         '这次发作更符合普通感染脱水，还是遗传代谢病相关酮症酸中毒？',
-        '孩子是否需要长期避免长时间空腹？发热或呕吐时何时必须去急诊？',
+        '孩子是否需要长期避免长时间空腹？发热或呕吐时什么情况需要去急诊？',
         '日常饮食要注意哪些原则？是否需要营养科参与？',
         '我们是否需要携带急诊说明卡？说明卡上应该写哪些内容？',
         'ACAT1 检测结果对兄弟姐妹筛查和再次生育有什么意义？',
@@ -1427,7 +1427,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常结合急性发作史、新生儿筛查、血酰基肉碱谱、尿有机酸分析和 ACAT1 基因检测。部分检测在发作期更容易显示异常，因此保存急诊时的血气、电解质、血糖、酮体、血氨和乳酸结果很有价值。</p>',
       treatment:
-        '<p>长期管理重点是减少代谢危象诱因，例如避免长时间空腹、感染或呕吐时尽早补充能量并联系医生、根据专科意见进行饮食和营养管理。急性发作时通常需要医院内补液、纠正代谢紊乱和监测生命体征。具体饮食限制、补充剂和急诊处理必须由遗传代谢专科个体化制定。</p>',
+        '<p>长期管理重点是减少代谢危象诱因，例如避免长时间空腹、感染或呕吐时尽早补充能量并联系医生、根据专科意见进行饮食和营养管理。急性发作时通常需要医院内补液、纠正代谢紊乱和监测生命体征。具体饮食限制、补充剂和急诊处理应由遗传代谢专科个体化制定。</p>',
       longTermCare:
         '<p>家庭需要保存诊断报告、基因结果和急诊说明卡，并与主治医生确认发热、腹泻、呕吐、手术或不能进食时的处理流程。随访通常关注发作频率、生长发育、营养状态、代谢指标和神经发育。</p>',
       fertilityOrFamily:
@@ -1466,7 +1466,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1577,7 +1577,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1599,7 +1599,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '是，通常为常染色体隐性遗传，与 SLC22A5 基因变异有关。筛查发现孩子低肉碱时，也要评估母亲是否存在原发性肉碱缺乏症。',
       hasTreatment:
-        '有明确治疗和随访方案，核心是医生指导下补充左卡尼汀、避免过久空腹，并在生病或不能进食时及时处理。具体剂量和调整必须由专科医生决定。',
+        '有明确治疗和随访方案，核心是医生指导下补充左卡尼汀、避免过久空腹，并在生病或不能进食时及时处理。具体剂量和调整应由专科医生决定。',
       commonDelayReason:
         '低血糖、肝功能异常、肌无力、心肌病或疲乏都不特异，可能被当作肝炎、心肌炎、癫痫、普通低血糖或运动耐力差处理。新生儿筛查低肉碱还可能反映母亲情况，需要母婴一起评估。',
     },
@@ -1651,7 +1651,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常从血游离肉碱明显降低和酰基肉碱谱异常开始，但低肉碱并不一定等于原发性肉碱缺乏症。医生需要排除继发性肉碱缺乏、早产、母体肉碱缺乏、药物或其他代谢病影响。SLC22A5 双等位基因致病变异可支持遗传学诊断，必要时还会评估肉碱转运功能。</p>',
       treatment:
-        '<p>治疗核心是医生指导下长期补充左卡尼汀，并避免超过年龄和病情允许的空腹时间。感染、呕吐、手术、不能进食或其他应激情况下，可能需要提前联系代谢中心或住院补充能量和监测代谢指标。具体补充方案、复查频率和调整标准必须个体化。</p>',
+        '<p>治疗核心是医生指导下长期补充左卡尼汀，并避免超过年龄和病情允许的空腹时间。感染、呕吐、手术、不能进食或其他应激情况下，可能需要提前联系代谢中心或住院补充能量和监测代谢指标。具体补充方案、复查频率和调整标准需要个体化。</p>',
       longTermCare:
         '<p>随访通常包括血肉碱水平、生长发育、肝功能、肌酸激酶、心电图和超声心动图。家庭应保存诊断资料、用药清单和急诊说明卡，并让学校或照护者了解不能长时间空腹和生病时需要及时处理。</p>',
       fertilityOrFamily:
@@ -1689,7 +1689,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1711,7 +1711,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '许多亚型有遗传背景，常见模式包括常染色体显性和隐性遗传，也存在外显率不完全、同一家族表现差异大的情况。基因结果需要结合心电图和病史解释。',
       hasTreatment:
-        '有风险分层和管理方案，包括避免触发因素、药物、植入设备、运动限制和家族筛查等。具体方案必须由心律失常专科根据亚型和风险制定。',
+        '有风险分层和管理方案，包括避免触发因素、药物、植入设备、运动限制和家族筛查等。具体方案应由心律失常专科根据亚型和风险制定。',
       commonDelayReason:
         '晕厥或抽搐容易被当作神经系统问题；静息心电图有时正常；年轻人首次严重表现可能就是心脏骤停或猝死，因此家族史和诱发场景非常关键。',
     },
@@ -1808,7 +1808,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'cardiovascular',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -1923,7 +1923,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -1945,7 +1945,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '是。I 型通常与 ASS1 相关，II 型与 SLC25A13 相关，常见遗传方式为常染色体隐性遗传。家族检测和生育咨询需要结合具体基因结果。',
       hasTreatment:
-        '有代谢专科管理方案，包括饮食和营养管理、降氨相关治疗、急性发作处理和部分情况下的肝移植评估。具体方案必须由遗传代谢专科制定。',
+        '有代谢专科管理方案，包括饮食和营养管理、降氨相关治疗、急性发作处理和部分情况下的肝移植评估。具体方案应由遗传代谢专科制定。',
       commonDelayReason:
         '发作早期像感染、喂养困难、肠胃问题或精神状态不好；间歇期可能接近正常；成人 II 型有时先按精神、神经或肝病问题处理。',
     },
@@ -2043,7 +2043,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -2163,7 +2163,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: [],
   },
   {
@@ -2185,7 +2185,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '是。经典 X 连锁类型与 NR0B1 相关，常影响男性；也存在其他遗传或发育相关原因。遗传咨询需要结合基因检测和家族史。',
       hasTreatment:
-        '有长期激素替代和危象预防方案，但必须由内分泌专科个体化制定。患者和家属需要了解生病、发热、手术等应激场景下何时就医。',
+        '有长期激素替代和危象预防方案，但需要由内分泌专科个体化制定。患者和家属需要了解生病、发热、手术等应激场景下何时就医。',
       commonDelayReason:
         '早期表现像喂养困难、胃肠炎、感染或普通低血糖；若未及时检查电解质、皮质醇/ACTH 和家族史，容易延误。',
     },
@@ -2237,7 +2237,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断需要结合急性发作时的血糖、电解质、皮质醇、ACTH、肾素-醛固酮轴、临床表现和家族史。NR0B1 等基因检测可帮助明确分型和家族风险。医生还需要排除其他原因导致的原发性肾上腺功能不全和先天性肾上腺皮质增生。</p>',
       treatment:
-        '<p>长期管理通常包括内分泌专科指导下的激素替代、应激场景处理计划、急诊说明和定期监测。剂量和调整必须由医生根据年龄、体重、生长、血压、电解质和临床状态决定，不能自行按网络信息加减药。</p>',
+        '<p>长期管理通常包括内分泌专科指导下的激素替代、应激场景处理计划、急诊说明和定期监测。剂量和调整应由医生根据年龄、体重、生长、血压、电解质和临床状态决定，不能自行按网络信息加减药。</p>',
       longTermCare:
         '<p>随访重点包括生长发育、血压、电解质、肾上腺危象预防、青春期和性腺功能、骨健康及家庭应急能力。建议保存诊断书、用药清单、急诊说明卡和主管医生联系方式，并让学校或照护者了解何时需要急诊。</p>',
       fertilityOrFamily:
@@ -2275,7 +2275,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['endocrine', 'genetic-counseling'],
   },
   {
@@ -2297,7 +2297,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '许多病例与 KATP 通道或其他胰岛素分泌相关基因有关，遗传方式可为隐性、显性或新发变异。部分病例需要区分弥漫型和局灶型。',
       hasTreatment:
-        '有专科治疗方案，包括快速纠正低血糖、长期营养和药物管理、影像定位和部分情况下手术评估。所有方案必须由儿科内分泌团队制定。',
+        '有专科治疗方案，包括快速纠正低血糖、长期营养和药物管理、影像定位和部分情况下手术评估。所有方案都应由儿科内分泌团队制定。',
       commonDelayReason:
         '低血糖表现可像喂养差、感染、惊厥或新生儿适应问题；如果没有在发作时采集关键样本，病因容易不清。',
     },
@@ -2337,7 +2337,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       ],
       questionsForDoctor: [
         '孩子低血糖是否符合高胰岛素性低血糖？证据是什么？',
-        '家庭需要怎样监测血糖？什么情况必须急诊？',
+        '家庭需要怎样监测血糖？什么情况需要急诊？',
         '是否需要基因检测，结果会影响治疗选择吗？',
         '饮食、夜间喂养和生病时计划应该如何写成可执行文件？',
         '是否需要转诊到有先天性高胰岛素血症经验的中心？',
@@ -2387,7 +2387,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['endocrine', 'genetic-counseling'],
   },
   {
@@ -2409,7 +2409,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '是。多数亚型为常染色体隐性遗传，也有显性遗传或新发变异。基因分型会影响治疗选择，因此需要专业解释。',
       hasTreatment:
-        '部分亚型有针对性治疗，但不同基因亚型对药物反应可能相反。治疗必须由神经肌肉病专科根据分型制定。',
+        '部分亚型有针对性治疗，但不同基因亚型对药物反应可能相反。治疗应由神经肌肉病专科根据分型制定。',
       commonDelayReason:
         '症状可与获得性重症肌无力、肌病、脑瘫或单纯发育迟缓相似；如果未做电生理和基因检测，容易长期无法分型。',
     },
@@ -2500,7 +2500,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -2616,7 +2616,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['neuromuscular', 'genetic-counseling'],
   },
   {
@@ -2729,7 +2729,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -2751,7 +2751,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '通常不是家族遗传病。相关突变多为后天获得的体细胞变异，不代表一定会遗传给子女。',
       hasTreatment:
-        '有分子检测指导下的靶向治疗、免疫/抗炎治疗和器官支持治疗等方案，但必须由有经验的多学科团队根据累及器官和突变状态制定。',
+        '有分子检测指导下的靶向治疗、免疫/抗炎治疗和器官支持治疗等方案，但需要由有经验的多学科团队根据累及器官和突变状态制定。',
       commonDelayReason:
         '症状分散在骨科、眼科、肾内、心血管、呼吸、神经和内分泌等多个专科，且影像表现容易被当作纤维化、炎症或其他肿瘤。',
     },
@@ -2843,7 +2843,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: [],
   },
   {
@@ -2952,7 +2952,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3065,7 +3065,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3172,7 +3172,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3280,7 +3280,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3388,7 +3388,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3500,7 +3500,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['neuromuscular'],
   },
   {
@@ -3614,7 +3614,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'skeletal-connective-tissue',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3636,7 +3636,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '多数不是单一遗传病。成人常与动脉粥样硬化相关，儿童和青少年需重视川崎病，部分患者需排查血管炎、结缔组织病或先天性冠脉异常。',
       hasTreatment:
-        '有风险分层和随访管理方案，但最佳方案取决于是否合并狭窄、血栓、川崎病后遗症或全身性疾病，需要心血管专科个体化判断。',
+        '有风险分层和随访管理方案，但合适方案取决于是否合并狭窄、血栓、川崎病后遗症或全身性疾病，需要心血管专科个体化判断。',
       commonDelayReason:
         '许多患者没有特异症状，或胸痛表现与普通冠心病重叠；如果只关注狭窄而不记录扩张范围、病因和血流风险，后续随访容易断档。',
     },
@@ -3690,7 +3690,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常依赖冠状动脉造影或冠脉 CTA，医生会判断扩张范围、血管直径、是否合并狭窄、血栓或冠脉瘤样改变。还需要结合年龄、危险因素、川崎病史、炎症线索、结缔组织病线索和既往介入史寻找病因。</p>',
       treatment:
-        '<p>目前缺乏适用于所有患者的单一治疗方案。管理重点包括控制动脉粥样硬化危险因素、评估缺血和血栓风险、处理合并狭窄或急性冠脉综合征，并在必要时由介入、心外科、儿科心血管或风湿免疫团队联合判断。抗血小板或抗凝等药物必须由医生权衡获益和出血风险。</p>',
+        '<p>目前缺乏适用于所有患者的单一治疗方案。管理重点包括控制动脉粥样硬化危险因素、评估缺血和血栓风险、处理合并狭窄或急性冠脉综合征，并在必要时由介入、心外科、儿科心血管或风湿免疫团队联合判断。抗血小板或抗凝等药物应由医生权衡获益和出血风险。</p>',
       longTermCare:
         '<p>长期随访应关注胸痛变化、心肌缺血风险、影像中扩张范围变化、血栓或狭窄进展，以及血压、血脂、血糖和吸烟等可干预因素。川崎病相关患者需要按儿科心血管随访路径长期监测。</p>',
       fertilityOrFamily:
@@ -3728,7 +3728,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'cardiovascular',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: [],
   },
   {
@@ -3841,7 +3841,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3915,7 +3915,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常结合新生儿筛查、血酰基肉碱、尿有机酸或定量代谢物、脑 MRI 和 GCDH 基因检测。若分子结果不明确，专科可能考虑酶活检测。医生还会与其他有机酸血症、脑炎、线粒体病和其他运动障碍鉴别。</p>',
       treatment:
-        '<p>管理需要遗传代谢团队参与，包括个体化营养方案、肉碱和相关代谢管理、感染或禁食时的应急处理、发育和运动障碍随访。具体饮食、补充和急诊处理必须按专科书面方案执行。</p>',
+        '<p>管理需要遗传代谢团队参与，包括个体化营养方案、肉碱和相关代谢管理、感染或禁食时的应急处理、发育和运动障碍随访。具体饮食、补充和急诊处理应按专科书面方案执行。</p>',
       longTermCare:
         '<p>长期照护重点是避免分解代谢状态、监测生长营养、发育和运动功能、肾功能，以及让家庭、学校和急诊医生都能看到清楚的应急说明。已出现运动障碍者需要康复、神经科和营养团队长期配合。</p>',
       fertilityOrFamily:
@@ -3948,7 +3948,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -3970,7 +3970,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '是，I 型和 II 型通常均为常染色体隐性遗传，但涉及基因和检测路径不同。',
       hasTreatment:
-        '有专科管理方案。GSD I 重点是避免低血糖和代谢失衡；庞贝病可评估酶替代治疗、呼吸和肌力管理。具体方案必须由专科制定。',
+        '有专科管理方案。GSD I 重点是避免低血糖和代谢失衡；庞贝病可评估酶替代治疗、呼吸和肌力管理。具体方案应由专科制定。',
       commonDelayReason:
         'GSD I 可能被当作普通低血糖、肝病或营养问题；庞贝病可能被当作肌病、心肌病、发育迟缓或呼吸问题，若不做酶活和基因检测容易延误。',
     },
@@ -4061,7 +4061,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling', 'neuromuscular'],
   },
   {
@@ -4175,7 +4175,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4249,7 +4249,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断通常综合临床表现、血清铜蓝蛋白、尿铜、肝脏和神经系统评估、眼科裂隙灯检查以及 ATP7B 基因检测。医生会与病毒性肝炎、自身免疫性肝病、脂肪肝、其他代谢性肝病、帕金森样疾病和精神心理疾病鉴别。</p>',
       treatment:
-        '<p>治疗以长期减少体内铜负荷和维持稳定为目标，包括去铜或阻铜相关药物、饮食和随访管理。具体药物选择、切换和监测必须由肝病/神经/遗传代谢团队制定。急性肝衰竭或失代偿肝病需要及时评估肝移植可能性。</p>',
+        '<p>治疗以长期减少体内铜负荷和维持稳定为目标，包括去铜或阻铜相关药物、饮食和随访管理。具体药物选择、切换和监测应由肝病/神经/遗传代谢团队制定。急性肝衰竭或失代偿肝病需要及时评估肝移植可能性。</p>',
       longTermCare:
         '<p>长期照护重点是肝功能、铜代谢指标、神经精神状态、用药副作用、依从性和家族筛查。患者应保存诊断证明和治疗方案，避免自行停药或只根据症状好转减少随访。</p>',
       fertilityOrFamily:
@@ -4282,7 +4282,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4390,7 +4390,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4502,7 +4502,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'skeletal-connective-tissue',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4609,7 +4609,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4684,7 +4684,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断需要确认低镁是否持续存在，并区分胃肠吸收不足和肾性镁丢失。评估通常包括血尿电解质、肾功能、尿钙尿镁、心电图、肾脏影像和遗传检测。医生还会排除药物、腹泻、营养不良、糖尿病和其他获得性低镁原因。</p>',
       treatment:
-        '<p>管理包括纠正低镁和相关低钙/低钾、监测心律和肾功能、处理肾钙化或肾结石风险，并按具体类型制定长期补充方案。补充方式和剂量必须由医生根据年龄、症状、肾功能和耐受性调整。</p>',
+        '<p>管理包括纠正低镁和相关低钙/低钾、监测心律和肾功能、处理肾钙化或肾结石风险，并按具体类型制定长期补充方案。补充方式和剂量应由医生根据年龄、症状、肾功能和耐受性调整。</p>',
       longTermCare:
         '<p>长期照护重点是稳定电解质、保护肾功能、预防抽搐和心律风险，并保存基因和急诊说明。儿童还需要关注生长发育、神经发育和学校照护计划。</p>',
       fertilityOrFamily:
@@ -4724,7 +4724,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'renal-urologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4831,7 +4831,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -4940,7 +4940,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5014,7 +5014,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '<p>诊断依靠临床表现、血气和代谢检查、尿有机酸、酰基肉碱谱及 HLCS 基因检测。医生还会与生物素酶缺乏症、其他有机酸血症、脂肪酸氧化障碍、感染和癫痫等鉴别。</p>',
       treatment:
-        '<p>治疗通常对生物素相关方案有反应，但必须由遗传代谢专科确定剂量、监测指标和长期计划。急性代谢危象需要医院处理，并避免自行停药或仅凭症状调整。</p>',
+        '<p>治疗通常对生物素相关方案有反应，但需要由遗传代谢专科确定剂量、监测指标和长期计划。急性代谢危象需要医院处理，并避免自行停药或仅凭症状调整。</p>',
       longTermCare:
         '<p>长期管理重点是坚持治疗、监测代谢稳定性、发育评估、皮肤和营养照护，以及为发热、呕吐、手术或不能进食准备应急说明。</p>',
       fertilityOrFamily:
@@ -5048,7 +5048,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5069,7 +5069,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       isGenetic:
         '多为常染色体隐性遗传。CBS 缺乏导致的经典同型半胱氨酸尿症最常见；其他同型半胱氨酸代谢异常也可能涉及不同基因和辅因子通路。',
       hasTreatment:
-        '有代谢专科管理方案，包括饮食、维生素/辅因子反应性评估、甜菜碱等治疗选择和血栓风险管理。具体方案必须由遗传代谢专科制定。',
+        '有代谢专科管理方案，包括饮食、维生素/辅因子反应性评估、甜菜碱等治疗选择和血栓风险管理。具体方案应由遗传代谢专科制定。',
       commonDelayReason:
         '早期症状隐匿，患者常因视力问题、骨质疏松或血栓事件反复就诊，却未追溯到代谢根源；婴幼儿期发育迟缓易被误认为发育晚。',
     },
@@ -5117,7 +5117,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '靠血液同型半胱氨酸浓度升高（通常 > 15 µmol/L）及尿同型半胱氨酸检测确诊；进一步靠酶活性检测和基因检测区分亚型；血浆甲硫氨酸水平有助于区分不同代谢缺陷。',
       treatment:
-        '治疗需要先明确病因和维生素 B6 反应性。管理可能包括低甲硫氨酸饮食、特殊营养配方、维生素/辅因子、甜菜碱和血栓风险处理等，但具体组合、目标值和调整频率必须由遗传代谢专科制定。眼科、骨科和血管并发症需相应专科共同管理。',
+        '治疗需要先明确病因和维生素 B6 反应性。管理可能包括低甲硫氨酸饮食、特殊营养配方、维生素/辅因子、甜菜碱和血栓风险处理等，但具体组合、目标值和调整频率应由遗传代谢专科制定。眼科、骨科和血管并发症需相应专科共同管理。',
       longTermCare:
         '需要多学科长期随访：代谢科、内分泌科、眼科、骨科；定期监测血液同型半胱氨酸浓度；关注骨骼健康和心脑血管状态；患者及家属可考虑遗传咨询，了解生育风险。',
       fertilityOrFamily:
@@ -5143,7 +5143,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5243,7 +5243,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5343,7 +5343,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5366,7 +5366,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
         '新生儿或儿童出现高氨血症、嗜睡、呕吐、抽搐、发育迟缓、痉挛或不明原因肝功能异常时，应尽快到急诊/儿科、遗传代谢科或儿童神经内科评估。',
       isGenetic: '是，常染色体隐性遗传',
       hasTreatment:
-        '有尿素循环障碍相关管理方案，包括急性高氨血症处理、蛋白摄入管理、氨清除相关药物和氨基酸补充评估，必须由遗传代谢专科制定。',
+        '有尿素循环障碍相关管理方案，包括急性高氨血症处理、蛋白摄入管理、氨清除相关药物和氨基酸补充评估，应由遗传代谢专科制定。',
       commonDelayReason:
         '症状与脑病、癫痫、肝病相似，易被误诊；发病年龄跨度大（从新生儿到成年），增加了识别难度',
     },
@@ -5395,7 +5395,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
         '血鸟氨酸浓度检测（持续升高是关键线索）',
         '尿同型瓜氨酸检测（尿液代谢筛查）',
         '血氨、鸟氨酸、同型瓜氨酸三者联合检测',
-        'SLC25A15基因分子检测（金标准）',
+        'SLC25A15 基因分子检测（重要确诊依据）',
         '皮肤成纤维细胞ORNT1活性测定（辅助手段）',
         '头颅MRI或CT（评估神经系统并发症）',
         '脑电图（评估癫痫样活动）',
@@ -5424,7 +5424,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       treatment:
         '急性高氨血症需要按代谢急症处理，避免长时间禁食，并由专科团队评估能量支持、暂停或调整蛋白摄入、氨清除治疗、氨基酸补充以及必要时透析。长期管理通常包括个体化蛋白摄入、代谢指标监测、发育和神经系统随访。所有方案都应写成可执行的生病/急诊计划。',
       longTermCare:
-        '长期管理以饮食控制为核心，需在营养师指导下制定个性化低蛋白食谱，避免高蛋白食物诱发急性发作。定期监测血氨、肝功能、血鸟氨酸浓度。关注神经发育里程碑，及时进行康复训练。家长应学习高氨血症急性发作的早期识别和就医流程。成人患者需注意避免长期严格限制蛋白导致营养不良。建议每3~6个月复查血氨和相关代谢指标。',
+        '长期管理以饮食控制为核心，需在营养师指导下制定个性化低蛋白食谱，避免高蛋白食物诱发急性发作。定期监测血氨、肝功能、血鸟氨酸浓度。关注神经发育里程碑，及时进行康复训练。家长应学习高氨血症急性发作的早期识别和就医流程。成人患者需注意避免长期严格限制蛋白导致营养不良。复查血氨和相关代谢指标的频率应由遗传代谢专科根据病情制定。',
       fertilityOrFamily:
         '本病为常染色体隐性遗传，父母双方各为携带者时，每次妊娠有25%概率生出患儿。建议进行遗传咨询，明确SLC25A15基因突变位点后，可通过产前诊断或胚胎植入前遗传学检测（PGT）指导生育。新生儿出生后应尽快完善血鸟氨酸筛查。',
       emergencySigns:
@@ -5448,7 +5448,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5553,7 +5553,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5604,7 +5604,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosisChecklist: [
         '血清碱性磷酸酶（ALP）测定（持续性偏低为核心指标）',
         '血钙、磷、甲状旁腺激素（PTH）',
-        'ALPL基因分子检测（确诊金标准）',
+        'ALPL 基因分子检测（重要确诊依据）',
         '尿磷酸乙醇胺（PEA）检测（HPP特征性代谢物）',
         '血磷酸吡哆醛（PLP）检测（升高支持诊断）',
         '骨骼X线片（评估矿化程度和骨骼畸形）',
@@ -5633,11 +5633,11 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '核心实验室指标为血清ALP持续性降低，同时排除继发性因素（如维生素D缺乏、甲状腺功能减退等）。确诊依赖ALPL基因检测。X线片可见骨骼矿化减少、骨骼畸形、骨折等表现。骨密度检测显示骨量减少或骨质疏松。尿PEA和血PLP升高对诊断有参考价值。',
       treatment:
-        '管理取决于起病年龄和严重程度。严重围产期、婴儿期或儿童型可由专科评估酶替代治疗；所有患者都需要骨骼、牙科、疼痛、肾脏钙磷代谢和康复支持。钙、维生素 D、骨质疏松药物或手术处理必须由熟悉 HPP 的团队判断，避免按普通佝偻病或骨质疏松自行处理。',
+        '管理取决于起病年龄和严重程度。严重围产期、婴儿期或儿童型可由专科评估酶替代治疗；所有患者都需要骨骼、牙科、疼痛、肾脏钙磷代谢和康复支持。钙、维生素 D、骨质疏松药物或手术处理应由熟悉 HPP 的团队判断，避免按普通佝偻病或骨质疏松自行处理。',
       longTermCare:
-        '需多学科长期随访：骨科（骨折预防和畸形矫正）、口腔科（牙齿保护，养成专业口腔护理习惯，避免不必要拔牙）、康复科（运动指导，维持安全活动量）、营养科（均衡营养，避免营养不良）。患者和照护者需了解骨折风险，做好活动环境安全管理。成人患者应关注假性骨折和骨痛。定期复查ALP、骨密度、X线片。建议每6~12个月全面评估一次。',
+        '需多学科长期随访：骨科（骨折预防和畸形矫正）、口腔科（牙齿保护，养成专业口腔护理习惯，避免不必要拔牙）、康复科（运动指导，维持安全活动量）、营养科（均衡营养，避免营养不良）。患者和照护者需了解骨折风险，做好活动环境安全管理。成人患者应关注假性骨折和骨痛。定期复查 ALP、骨密度和 X 线等项目，具体频率由专科团队根据年龄、病情和治疗计划决定。',
       fertilityOrFamily:
-        '本病可呈常染色体显性或隐性遗传。建议进行遗传咨询，明确ALPL基因突变类型后可行产前诊断或PGT。显性遗传患者每次妊娠有50%概率遗传突变，但病情轻重不一定与父母相同；隐性遗传者病情通常更重。若家族中已有患者，建议所有家庭成员进行基因筛查和ALP检测。',
+        '本病可呈常染色体显性或隐性遗传。建议进行遗传咨询，明确 ALPL 基因突变类型后可行产前诊断或PGT。显性遗传患者每次妊娠有50%概率遗传突变，但病情轻重不一定与父母相同；隐性遗传者病情通常更重。若家族中已有患者，可向医生咨询家庭成员基因筛查和 ALP 检测是否适用。',
       emergencySigns:
         '婴儿型出现呼吸困难、紫绀或反复呼吸暂停，提示严重呼吸系统受累，需立即就医。出现难以愈合的骨折、骨骼畸形加重或新发骨折，提示骨骼系统恶化，需尽快评估。出现癫痫发作，提示可能存在维生素B6代谢异常（婴儿型特有），需紧急处理。牙龈感染可能波及牙槽骨，口腔科急诊处理。',
     },
@@ -5658,7 +5658,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'skeletal-connective-tissue',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5737,7 +5737,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
       diagnosis:
         '诊断需综合临床表现、生化检查、影像学检查和基因检测。典型表现为低磷血症合并肾小管磷重吸收率降低、血碱性磷酸酶升高、血钙正常。X线显示佝偻病特征性改变。基因检测可明确具体类型和遗传方式，对家族遗传咨询有重要价值。获得性低磷性骨软化症需积极排查肿瘤。',
       treatment:
-        '治疗目标是改善磷代谢、骨骼矿化、疼痛和功能，并预防长期并发症。管理可能包括传统磷酸盐/活性维生素 D 相关方案或 FGF23 靶向治疗评估，同时需要监测血磷、血钙、尿钙、甲状旁腺激素、肾脏和牙科问题。具体药物、剂量、适用人群和监测频率必须由熟悉低磷性佝偻病的专科团队制定。',
+        '治疗目标是改善磷代谢、骨骼矿化、疼痛和功能，并预防长期并发症。管理可能包括传统磷酸盐/活性维生素 D 相关方案或 FGF23 靶向治疗评估，同时需要监测血磷、血钙、尿钙、甲状旁腺激素、肾脏和牙科问题。具体药物、剂量、适用人群和监测频率应由熟悉低磷性佝偻病的专科团队制定。',
       longTermCare:
         '低磷性佝偻病是慢性疾病，需长期乃至终身管理。儿童期需定期监测生长发育指标、血磷血钙、骨骼影像，及时调整药物。成年后仍需持续治疗和随访，关注骨骼并发症（如骨关节炎、骨折）、牙齿健康、听力变化等。避免剧烈冲撞性运动以降低骨折风险。遗传咨询和产前诊断对计划生育有重要帮助。定期评估心理健康，关注患者及家庭生活质量。',
       fertilityOrFamily:
@@ -5762,7 +5762,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'skeletal-connective-tissue',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5876,7 +5876,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'cardiovascular',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['genetic-counseling'],
   },
   {
@@ -5986,7 +5986,7 @@ export const zhDiseaseDrafts: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['endocrine', 'genetic-counseling'],
   },
 ];

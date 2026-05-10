@@ -3,9 +3,7 @@
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "scripts": {
-    "hermes:queue": "node scripts/hermes_content_queue.mjs",
-    "hermes:reminder": "python3 scripts/hermes_review_reminder.py",
-    "hermes:translate": "node scripts/hermes_translation_queue.mjs",
+    "audit:content": "node scripts/audit_content_quality.mjs",
     "review": "node scripts/review_pending_drafts.mjs",
     "review:translation": "node scripts/review_pending_translations.mjs",
     "review:resource": "node scripts/validate_resource_draft.mjs",

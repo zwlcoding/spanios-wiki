@@ -64,7 +64,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 
               <nav className="app-nav" aria-label="主导航">
                 <Link to="/diseases">疾病</Link>
-                <Link to="/hospitals">医院</Link>
+                <Link to="/hospitals">就医资源</Link>
                 <Link to="/charity">公益组织</Link>
                 <Link to="/search">搜索</Link>
               </nav>
