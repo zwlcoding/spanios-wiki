@@ -1,11 +1,11 @@
 services:
-  spanios-wiki:
-    image: crpi-yddandol1embdyi1.cn-shenzhen.personal.cr.aliyuncs.com/waylon_zhang/spanios-wiki:0.0.1
+  www-spanios-wiki:
+    image: crpi-yddandol1embdyi1.cn-shenzhen.personal.cr.aliyuncs.com/waylon_zhang/www-spanios-wiki:1.0.0
     ports:
       - 3000
     environment:
-      - NODE_ENV=${NODE_ENV}
-      
+      - NODE_ENV=product
+
     restart: unless-stopped
     networks:
       - dokploy-network
