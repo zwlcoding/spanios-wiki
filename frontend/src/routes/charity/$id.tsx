@@ -12,6 +12,8 @@ import {
 import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import { useCharityOrganization } from '@/hooks/useCharityOrganizations';
 import { fetchCharityOrganizationById } from '@/lib/contentClient';
+import { trackEvent } from '@/utils/analytics';
+import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/charity/$id')({
   loader: async ({ context, params }) => {
@@ -53,19 +55,24 @@ function CharityDetailPage() {
       <div className="page-container">
         <nav className="muted-text mb-4 flex items-center gap-2 text-sm">
           <Link to="/" className="hover:text-amber-700">
-            首页
+            {uiText('首页', 'Home')}
           </Link>
           <span>/</span>
           <Link to="/charity" className="hover:text-amber-700">
-            公益组织
+            {uiText('公益组织', 'Support Groups')}
           </Link>
         </nav>
         <div className="surface-card p-5">
-          <span>组织信息未找到或加载失败</span>
+          <span>
+            {uiText(
+              '组织信息未找到或加载失败',
+              'Organization information was not found or failed to load',
+            )}
+          </span>
         </div>
         <Link to="/charity" className="btn-primary-app mt-4">
           <ArrowLeft className="h-4 w-4 mr-2" />
-          返回组织列表
+          {uiText('返回组织列表', 'Back to Organizations')}
         </Link>
       </div>
     );
@@ -75,11 +82,11 @@ function CharityDetailPage() {
     <div className="page-container">
       <nav className="muted-text mb-4 flex flex-wrap items-center gap-2 text-sm">
         <Link to="/" className="hover:text-amber-700">
-          首页
+          {uiText('首页', 'Home')}
         </Link>
         <span>/</span>
         <Link to="/charity" className="hover:text-amber-700">
-          公益组织
+          {uiText('公益组织', 'Support Groups')}
         </Link>
         <span>/</span>
         <span className="strong-text">{organization.name}</span>
@@ -87,7 +94,7 @@ function CharityDetailPage() {
 
       <Link to="/charity" className="btn-subtle mb-5 self-start">
         <ArrowLeft className="h-4 w-4 mr-2" />
-        返回列表
+        {uiText('返回列表', 'Back to List')}
       </Link>
 
       <div className="surface-card mb-8 p-6 sm:p-7">
@@ -95,7 +102,7 @@ function CharityDetailPage() {
           <div>
             <div className="eyebrow mb-4">
               <Heart className="h-4 w-4" />
-              公益资源
+              {uiText('公益资源', 'Support Resource')}
             </div>
             <h1 className="section-title text-3xl sm:text-4xl">
               {organization.name}
@@ -120,7 +127,7 @@ function CharityDetailPage() {
             <div className="content-card mb-5 p-5">
               <h2 className="mb-3 flex items-center gap-2 font-semibold">
                 <Heart className="h-5 w-5 text-amber-700" />
-                组织简介
+                {uiText('组织简介', 'Organization Overview')}
               </h2>
               <SafeHTMLRenderer
                 html={organization.description}
@@ -133,7 +140,7 @@ function CharityDetailPage() {
             <div className="content-card p-5">
               <h2 className="mb-3 flex items-center gap-2 font-semibold">
                 <Users className="h-5 w-5 text-amber-700" />
-                服务内容
+                {uiText('服务内容', 'Services')}
               </h2>
               <SafeHTMLRenderer
                 html={organization.services}
@@ -145,19 +152,28 @@ function CharityDetailPage() {
 
         <div className="lg:col-span-1">
           <div className="content-card mb-5 p-5">
-            <h3 className="mb-4 font-semibold">联系信息</h3>
+            <h3 className="mb-4 font-semibold">
+              {uiText('联系信息', 'Contact Information')}
+            </h3>
             <div className="grid gap-3">
               {organization.contactPerson && (
-                <InfoRow icon={Users} label="联系人">
+                <InfoRow icon={Users} label={uiText('联系人', 'Contact')}>
                   {organization.contactPerson}
                 </InfoRow>
               )}
 
               {organization.phone && (
-                <InfoRow icon={Phone} label="电话">
+                <InfoRow icon={Phone} label={uiText('电话', 'Phone')}>
                   <a
                     href={`tel:${organization.phone}`}
                     className="text-amber-700"
+                    onClick={() =>
+                      trackEvent('charity_phone_click', {
+                        charity_id: organization.id,
+                        source: 'contact_info',
+                        type: organization.type,
+                      })
+                    }
                   >
                     {organization.phone}
                   </a>
@@ -165,10 +181,17 @@ function CharityDetailPage() {
               )}
 
               {organization.email && (
-                <InfoRow icon={Mail} label="邮箱">
+                <InfoRow icon={Mail} label={uiText('邮箱', 'Email')}>
                   <a
                     href={`mailto:${organization.email}`}
                     className="break-all text-amber-700"
+                    onClick={() =>
+                      trackEvent('charity_email_click', {
+                        charity_id: organization.id,
+                        source: 'contact_info',
+                        type: organization.type,
+                      })
+                    }
                   >
                     {organization.email}
                   </a>
@@ -176,12 +199,19 @@ function CharityDetailPage() {
               )}
 
               {organization.website && (
-                <InfoRow icon={Globe} label="网站">
+                <InfoRow icon={Globe} label={uiText('网站', 'Website')}>
                   <a
                     href={organization.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 break-all text-amber-700"
+                    onClick={() =>
+                      trackEvent('charity_website_click', {
+                        charity_id: organization.id,
+                        source: 'contact_info',
+                        type: organization.type,
+                      })
+                    }
                   >
                     {organization.website}
                     <ExternalLink className="h-3.5 w-3.5 shrink-0" />
@@ -190,7 +220,7 @@ function CharityDetailPage() {
               )}
 
               {organization.wechat && (
-                <InfoRow icon={Building2} label="微信">
+                <InfoRow icon={Building2} label={uiText('微信', 'WeChat')}>
                   {organization.wechat}
                 </InfoRow>
               )}
@@ -201,7 +231,7 @@ function CharityDetailPage() {
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold">
                 <Heart className="h-5 w-5 text-amber-700" />
-                关注疾病
+                {uiText('关注疾病', 'Focus Diseases')}
               </h3>
               <div className="space-y-3">
                 {organization.diseases.map((disease) => (
@@ -210,6 +240,13 @@ function CharityDetailPage() {
                     to="/diseases/$slug"
                     params={{ slug: disease.slug }}
                     className="block rounded-md border border-stone-200 bg-white p-3 transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-900/30"
+                    onClick={() =>
+                      trackEvent('related_disease_click', {
+                        disease_slug: disease.slug,
+                        source_id: organization.id,
+                        source_page: 'charity_detail',
+                      })
+                    }
                   >
                     <div className="font-medium">{disease.name}</div>
                     {disease.category && (
@@ -224,21 +261,40 @@ function CharityDetailPage() {
           )}
 
           <div className="content-card p-5">
-            <h3 className="mb-4 font-semibold">快速联系</h3>
+            <h3 className="mb-4 font-semibold">
+              {uiText('快速联系', 'Quick Contact')}
+            </h3>
             <div className="grid gap-3">
               {organization.phone && (
                 <a
                   href={`tel:${organization.phone}`}
                   className="btn-primary-app"
+                  onClick={() =>
+                    trackEvent('charity_phone_click', {
+                      charity_id: organization.id,
+                      source: 'quick_action',
+                      type: organization.type,
+                    })
+                  }
                 >
                   <Phone className="h-4 w-4" />
-                  电话联系
+                  {uiText('电话联系', 'Call')}
                 </a>
               )}
               {organization.email && (
-                <a href={`mailto:${organization.email}`} className="btn-subtle">
+                <a
+                  href={`mailto:${organization.email}`}
+                  className="btn-subtle"
+                  onClick={() =>
+                    trackEvent('charity_email_click', {
+                      charity_id: organization.id,
+                      source: 'quick_action',
+                      type: organization.type,
+                    })
+                  }
+                >
                   <Mail className="h-4 w-4" />
-                  发送邮件
+                  {uiText('发送邮件', 'Send Email')}
                 </a>
               )}
               {organization.website && (
@@ -247,9 +303,16 @@ function CharityDetailPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-subtle"
+                  onClick={() =>
+                    trackEvent('charity_website_click', {
+                      charity_id: organization.id,
+                      source: 'quick_action',
+                      type: organization.type,
+                    })
+                  }
                 >
                   <Globe className="h-4 w-4" />
-                  访问网站
+                  {uiText('访问网站', 'Visit Website')}
                 </a>
               )}
             </div>
@@ -282,10 +345,10 @@ function InfoRow({
 
 function formatOrganizationType(type?: string) {
   const labels: Record<string, string> = {
-    foundation: '基金会',
-    patient_org: '患者组织',
-    volunteer_team: '志愿者团队',
+    foundation: uiText('基金会', 'Foundation'),
+    patient_org: uiText('患者组织', 'Patient Group'),
+    volunteer_team: uiText('志愿者团队', 'Volunteer Team'),
   };
 
-  return type ? (labels[type] ?? type) : '未知类型';
+  return type ? (labels[type] ?? type) : uiText('未知类型', 'Unknown Type');
 }

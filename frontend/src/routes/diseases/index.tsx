@@ -17,10 +17,12 @@ import {
   Sparkles,
   Stethoscope,
 } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
 import { useDiseases } from '@/hooks/useDiseases';
 import { fetchDiseaseCategories, fetchDiseases } from '@/lib/contentClient';
+import { getSearchMeta, trackEvent } from '@/utils/analytics';
+import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/diseases/')({
   validateSearch: (search: Record<string, unknown>) => ({
@@ -66,6 +68,7 @@ function DiseasesListPage() {
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [debouncedSearch, setDebouncedSearch] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const lastTrackedSearch = useRef('');
 
   const { data: categoriesData, isLoading: isLoadingCategories } =
     useDiseaseCategories();
@@ -87,7 +90,12 @@ function DiseasesListPage() {
   }, [initialCategory]);
 
   const categories = [
-    { id: 'all', name: '全部疾病', slug: 'all', icon: Activity },
+    {
+      id: 'all',
+      name: uiText('全部疾病', 'All Diseases'),
+      slug: 'all',
+      icon: Activity,
+    },
     ...(categoriesData?.data?.map((cat) => ({
       id: cat.slug,
       name: cat.name,
@@ -101,6 +109,29 @@ function DiseasesListPage() {
   const diseases = diseasesData?.data || [];
   const isLoading = isLoadingCategories || isLoadingDiseases;
 
+  useEffect(() => {
+    if (!debouncedSearch || isLoadingDiseases) {
+      return;
+    }
+
+    const eventKey = `${debouncedSearch}:${selectedCategory}:${diseases.length}`;
+
+    if (lastTrackedSearch.current === eventKey) {
+      return;
+    }
+
+    lastTrackedSearch.current = eventKey;
+
+    trackEvent('search_results_view', {
+      source: 'disease_list',
+      ...getSearchMeta(debouncedSearch),
+      category: selectedCategory,
+      disease_count: diseases.length,
+      result_total: diseases.length,
+      zero_result: diseases.length === 0,
+    });
+  }, [debouncedSearch, diseases.length, isLoadingDiseases, selectedCategory]);
+
   return (
     <div className="page-container">
       <div className="w-full">
@@ -109,17 +140,24 @@ function DiseasesListPage() {
           {/* Breadcrumb */}
           <nav className="muted-text flex items-center gap-2 text-sm mb-4">
             <Link to="/" className="hover:text-amber-600 transition-colors">
-              首页
+              {uiText('首页', 'Home')}
             </Link>
             <ChevronRight className="w-4 h-4" />
-            <span className="strong-text">疾病列表</span>
+            <span className="strong-text">
+              {uiText('疾病列表', 'Disease List')}
+            </span>
           </nav>
 
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
             <div>
-              <h1 className="section-title text-4xl mb-2">罕见病列表</h1>
+              <h1 className="section-title text-4xl mb-2">
+                {uiText('罕见病列表', 'Rare Disease List')}
+              </h1>
               <p className="section-copy">
-                探索各类罕见病的基础知识、症状线索与治疗管理信息
+                {uiText(
+                  '探索各类罕见病的基础知识、症状线索与治疗管理信息',
+                  'Explore rare disease basics, symptom clues, diagnosis paths, and care management information',
+                )}
               </p>
             </div>
 
@@ -130,7 +168,7 @@ function DiseasesListPage() {
               className="sm:hidden btn-soft flex items-center gap-2"
             >
               <Filter className="w-4 h-4" />
-              <span>筛选</span>
+              <span>{uiText('筛选', 'Filters')}</span>
             </button>
           </div>
         </div>
@@ -149,7 +187,7 @@ function DiseasesListPage() {
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-stone-400" />
                   <input
                     type="text"
-                    placeholder="搜索疾病..."
+                    placeholder={uiText('搜索疾病...', 'Search diseases...')}
                     className="input-warm pl-10"
                     value={searchQuery}
                     onChange={(e) => setSearchQuery(e.target.value)}
@@ -161,7 +199,7 @@ function DiseasesListPage() {
               <div className="card-warm p-4">
                 <h2 className="font-semibold mb-4 flex items-center gap-2">
                   <Filter className="w-4 h-4 text-amber-500" />
-                  疾病分类
+                  {uiText('疾病分类', 'Disease Categories')}
                 </h2>
 
                 {isLoadingCategories ? (
@@ -182,6 +220,9 @@ function DiseasesListPage() {
                           type="button"
                           key={category.id}
                           onClick={() => {
+                            trackEvent('disease_filter_change', {
+                              category: category.id,
+                            });
                             setSelectedCategory(category.id);
                             setIsSidebarOpen(false);
                           }}
@@ -189,10 +230,12 @@ function DiseasesListPage() {
                             selectedCategory === category.id
                               ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/25'
                               : 'hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-400'
-                          }`}
+                          } text-left`}
                         >
-                          <Icon className="w-5 h-5" />
-                          <span className="font-medium">{category.name}</span>
+                          <Icon className="w-5 h-5 shrink-0" />
+                          <span className="min-w-0 text-left font-medium">
+                            {category.name}
+                          </span>
                         </button>
                       );
                     })}
@@ -208,10 +251,13 @@ function DiseasesListPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold text-stone-800 dark:text-stone-100 text-sm mb-1">
-                      数据持续更新
+                      {uiText('数据持续更新', 'Continuously Updated')}
                     </h3>
                     <p className="text-xs text-stone-600 dark:text-stone-400">
-                      我们不断完善罕见病数据库，确保信息的准确性和时效性
+                      {uiText(
+                        '我们不断完善罕见病数据库，确保信息的准确性和时效性',
+                        'We keep improving the rare disease database to maintain accuracy and freshness.',
+                      )}
                     </p>
                   </div>
                 </div>
@@ -225,14 +271,14 @@ function DiseasesListPage() {
             <div className="flex items-center justify-between mb-6">
               <div className="muted-text">
                 {isLoading ? (
-                  <span>加载中...</span>
+                  <span>{uiText('加载中...', 'Loading...')}</span>
                 ) : (
                   <span>
-                    共找到{' '}
+                    {uiText('共找到', 'Found')}{' '}
                     <span className="font-semibold text-amber-600">
                       {diseases.length}
                     </span>{' '}
-                    种疾病
+                    {uiText('种疾病', 'diseases')}
                   </span>
                 )}
               </div>
@@ -240,10 +286,16 @@ function DiseasesListPage() {
               {selectedCategory !== 'all' && (
                 <button
                   type="button"
-                  onClick={() => setSelectedCategory('all')}
+                  onClick={() => {
+                    trackEvent('filter_clear', {
+                      filter_type: 'category',
+                      page: 'disease_list',
+                    });
+                    setSelectedCategory('all');
+                  }}
                   className="text-sm text-amber-600 hover:text-amber-700 flex items-center gap-1"
                 >
-                  清除筛选
+                  {uiText('清除筛选', 'Clear Filter')}
                   <span className="text-lg">×</span>
                 </button>
               )}
@@ -272,29 +324,46 @@ function DiseasesListPage() {
                   <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-stone-100 dark:bg-stone-800 flex items-center justify-center">
                     <Search className="w-10 h-10 text-stone-400" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">未找到相关疾病</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {uiText('未找到相关疾病', 'No matching diseases')}
+                  </h3>
                   <p className="mb-4">
-                    尝试使用其他关键词搜索，或浏览全部疾病列表
+                    {uiText(
+                      '尝试使用其他关键词搜索，或浏览全部疾病列表',
+                      'Try another keyword or browse the full disease list.',
+                    )}
                   </p>
                   <button
                     type="button"
                     onClick={() => {
+                      trackEvent('filter_clear', {
+                        filter_type: 'search_and_category',
+                        page: 'disease_list',
+                      });
                       setSearchQuery('');
                       setSelectedCategory('all');
                     }}
                     className="btn-soft"
                   >
-                    查看全部疾病
+                    {uiText('查看全部疾病', 'View All Diseases')}
                   </button>
                 </div>
               ) : (
                 // Disease Cards
-                diseases.map((disease) => (
+                diseases.map((disease, index) => (
                   <Link
                     key={disease.id}
                     to="/diseases/$slug"
                     params={{ slug: disease.slug }}
                     className="group card-warm p-6 block hover:border-amber-300 dark:hover:border-amber-700"
+                    onClick={() =>
+                      trackEvent('disease_card_click', {
+                        category: disease.category?.slug,
+                        position: index + 1,
+                        source: 'disease_list',
+                        slug: disease.slug,
+                      })
+                    }
                   >
                     <div className="flex items-start justify-between gap-4">
                       <div className="flex-1">
@@ -331,7 +400,8 @@ function DiseasesListPage() {
                           )}
                           {disease.prevalence && (
                             <span className="badge-soft">
-                              患病率: {disease.prevalence}
+                              {uiText('患病率', 'Prevalence')}:{' '}
+                              {disease.prevalence}
                             </span>
                           )}
                           {disease.icd10Code && (
@@ -344,13 +414,19 @@ function DiseasesListPage() {
                               key={`${ref.catalogId}-${ref.itemNumber}`}
                               className="badge-muted"
                             >
-                              {ref.catalogName}第 {ref.itemNumber} 项
+                              {uiText(
+                                `${ref.catalogName}第 ${ref.itemNumber} 项`,
+                                `${ref.catalogName} item ${ref.itemNumber}`,
+                              )}
                             </span>
                           ))}
                           {!disease.catalogRefs?.length &&
                             disease.catalogNumber && (
                               <span className="badge-muted">
-                                目录第 {disease.catalogNumber} 项
+                                {uiText(
+                                  `目录第 ${disease.catalogNumber} 项`,
+                                  `Catalog item ${disease.catalogNumber}`,
+                                )}
                               </span>
                             )}
                         </div>

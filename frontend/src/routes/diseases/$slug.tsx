@@ -18,6 +18,8 @@ import {
 import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import { useDisease } from '@/hooks/useDiseases';
 import { fetchDiseaseBySlug } from '@/lib/contentClient';
+import { trackEvent } from '@/utils/analytics';
+import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/diseases/$slug')({
   loader: async ({ context, params }) => {
@@ -41,12 +43,12 @@ function DiseaseDetailPage() {
           <ul>
             <li>
               <Link to="/" className="link link-hover">
-                首页
+                {uiText('首页', 'Home')}
               </Link>
             </li>
             <li>
               <Link to="/diseases" className="link link-hover">
-                疾病列表
+                {uiText('疾病列表', 'Disease List')}
               </Link>
             </li>
             <li>
@@ -85,22 +87,27 @@ function DiseaseDetailPage() {
           <ul>
             <li>
               <Link to="/" className="link link-hover">
-                首页
+                {uiText('首页', 'Home')}
               </Link>
             </li>
             <li>
               <Link to="/diseases" className="link link-hover">
-                疾病列表
+                {uiText('疾病列表', 'Disease List')}
               </Link>
             </li>
           </ul>
         </div>
         <div className="alert alert-error">
-          <span>疾病信息未找到或加载失败</span>
+          <span>
+            {uiText(
+              '疾病信息未找到或加载失败',
+              'Disease information was not found or failed to load',
+            )}
+          </span>
         </div>
         <Link to="/diseases" className="btn btn-primary mt-4">
           <ArrowLeft className="h-4 w-4 mr-2" />
-          返回疾病列表
+          {uiText('返回疾病列表', 'Back to Disease List')}
         </Link>
       </div>
     );
@@ -113,61 +120,79 @@ function DiseaseDetailPage() {
   const quickLookItems = disease.quickLook
     ? [
         {
-          label: '先看哪个科',
+          label: uiText('先看哪个科', 'Where to Start'),
           value: disease.quickLook.whoToSeeFirst,
           tone: 'primary' as const,
         },
-        { label: '这是什么', value: disease.quickLook.whatItIs },
-        { label: '是否有治疗', value: disease.quickLook.hasTreatment },
-        { label: '是否遗传', value: disease.quickLook.isGenetic },
-        { label: '容易卡在哪里', value: disease.quickLook.commonDelayReason },
+        {
+          label: uiText('这是什么', 'What It Is'),
+          value: disease.quickLook.whatItIs,
+        },
+        {
+          label: uiText('是否有治疗', 'Treatment Available'),
+          value: disease.quickLook.hasTreatment,
+        },
+        {
+          label: uiText('是否遗传', 'Genetic'),
+          value: disease.quickLook.isGenetic,
+        },
+        {
+          label: uiText('容易卡在哪里', 'Common Delay'),
+          value: disease.quickLook.commonDelayReason,
+        },
       ].filter((item) => item.value)
     : [];
   const journeySections = disease.patientJourney
     ? [
         {
           icon: AlertTriangle,
-          title: '什么时候该怀疑',
+          title: uiText('什么时候该怀疑', 'When to Suspect It'),
           items: disease.patientJourney.whenToSuspect,
         },
         {
           icon: Compass,
-          title: '常见弯路',
+          title: uiText('常见弯路', 'Common Wrong Turns'),
           items: disease.patientJourney.commonWrongTurns,
         },
         {
           icon: Stethoscope,
-          title: '先看哪些科',
+          title: uiText('先看哪些科', 'Departments to Start With'),
           items: disease.patientJourney.firstDepartments,
         },
         {
           icon: ClipboardCheck,
-          title: '就诊前准备',
+          title: uiText('就诊前准备', 'Before the Visit'),
           items: disease.patientJourney.diagnosisChecklist,
         },
         {
           icon: BookOpenCheck,
-          title: '可向医生确认的检查',
+          title: uiText('可向医生确认的检查', 'Tests to Ask About'),
           items: disease.patientJourney.testsToAskAbout,
         },
         {
           icon: HelpCircle,
-          title: '可以问医生的问题',
+          title: uiText('可以问医生的问题', 'Questions for the Doctor'),
           items: disease.patientJourney.questionsForDoctor,
         },
       ].filter((section) => section.items?.length)
     : [];
   const medicalBlocks = [
-    { title: '症状表现', html: symptomsHtml },
-    { title: '诊断方法', html: diagnosisHtml },
-    { title: '治疗方法', html: treatmentHtml },
-    { title: '长期管理', html: disease.medicalSections?.longTermCare },
-    { title: '生育与家族', html: disease.medicalSections?.fertilityOrFamily },
+    { title: uiText('症状表现', 'Symptoms'), html: symptomsHtml },
+    { title: uiText('诊断方法', 'Diagnosis'), html: diagnosisHtml },
+    { title: uiText('治疗方法', 'Treatment'), html: treatmentHtml },
     {
-      title: '需要尽快就医的情况',
+      title: uiText('长期管理', 'Long-term Care'),
+      html: disease.medicalSections?.longTermCare,
+    },
+    {
+      title: uiText('生育与家族', 'Fertility and Family'),
+      html: disease.medicalSections?.fertilityOrFamily,
+    },
+    {
+      title: uiText('需要尽快就医的情况', 'When to Seek Urgent Care'),
       html: disease.medicalSections?.emergencySigns,
     },
-    { title: '预后情况', html: prognosisHtml },
+    { title: uiText('预后情况', 'Prognosis'), html: prognosisHtml },
   ].filter((block) => block.html);
 
   return (
@@ -175,11 +200,11 @@ function DiseaseDetailPage() {
       {/* Breadcrumb */}
       <nav className="mb-4 flex flex-wrap items-center gap-2 text-sm text-stone-500">
         <Link to="/" className="hover:text-amber-700">
-          首页
+          {uiText('首页', 'Home')}
         </Link>
         <span>/</span>
         <Link to="/diseases" className="hover:text-amber-700">
-          疾病列表
+          {uiText('疾病列表', 'Disease List')}
         </Link>
         <span>/</span>
         <span className="text-stone-800 dark:text-stone-200">
@@ -190,7 +215,7 @@ function DiseaseDetailPage() {
       {/* Back Button */}
       <Link to="/diseases" className="btn-subtle mb-5 self-start">
         <ArrowLeft className="h-4 w-4 mr-2" />
-        返回列表
+        {uiText('返回列表', 'Back to List')}
       </Link>
 
       {/* Disease Header */}
@@ -218,12 +243,18 @@ function DiseaseDetailPage() {
                 key={`${ref.catalogId}-${ref.itemNumber}`}
                 className="badge-muted"
               >
-                {ref.catalogName}第 {ref.itemNumber} 项
+                {uiText(
+                  `${ref.catalogName}第 ${ref.itemNumber} 项`,
+                  `${ref.catalogName} item ${ref.itemNumber}`,
+                )}
               </div>
             ))}
             {!disease.catalogRefs?.length && disease.catalogNumber && (
               <div className="badge-muted">
-                目录第 {disease.catalogNumber} 项
+                {uiText(
+                  `目录第 ${disease.catalogNumber} 项`,
+                  `Catalog item ${disease.catalogNumber}`,
+                )}
               </div>
             )}
           </div>
@@ -232,7 +263,7 @@ function DiseaseDetailPage() {
         {disease.alias && (
           <p className="mt-5 text-sm text-stone-600 dark:text-stone-400">
             <span className="font-semibold text-stone-900 dark:text-stone-100">
-              别名：
+              {uiText('别名：', 'Also known as:')}
             </span>
             {disease.alias}
           </p>
@@ -248,7 +279,10 @@ function DiseaseDetailPage() {
           <div className="mt-6 overflow-hidden rounded-md border border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-900">
             <img
               src={disease.featuredImage.url}
-              alt={`${disease.name}就医导航插图`}
+              alt={uiText(
+                `${disease.name}就医导航插图`,
+                `${disease.name} care navigation illustration`,
+              )}
               className="h-52 w-full object-cover sm:h-64"
               loading="lazy"
             />
@@ -262,10 +296,13 @@ function DiseaseDetailPage() {
             <div>
               <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Compass className="h-5 w-5 text-amber-700" />
-                先看这个
+                {uiText('先看这个', 'Start Here')}
               </h2>
               <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
-                先帮你判断下一步：看哪个科、准备什么材料、哪些问题要问医生。
+                {uiText(
+                  '先帮你判断下一步：看哪个科、准备什么材料、哪些问题要问医生。',
+                  'A quick guide to the next step: which department to start with, what to prepare, and what to ask.',
+                )}
               </p>
             </div>
           </div>
@@ -286,7 +323,10 @@ function DiseaseDetailPage() {
         <div className="flex gap-3">
           <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />
           <p>
-            这页内容用于帮助患者和家属整理就医线索，不替代医生诊断或治疗方案。检查、用药、转诊、急诊处理和公益救助申请，请以医生、医疗机构、公益组织及官方渠道的最新信息为准。
+            {uiText(
+              '这页内容用于帮助患者和家属整理就医线索，不替代医生诊断或治疗方案。检查、用药、转诊、急诊处理和公益救助申请，请以医生、医疗机构、公益组织及官方渠道的最新信息为准。',
+              'This page helps patients and families organize care leads. It does not replace a clinician’s diagnosis or treatment plan. For testing, medication, referrals, emergency care, and support applications, follow qualified clinicians, medical institutions, support organizations, and official sources.',
+            )}
           </p>
         </div>
       </section>
@@ -299,10 +339,13 @@ function DiseaseDetailPage() {
               <div className="mb-4">
                 <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                   <ListChecks className="h-5 w-5 text-amber-700" />
-                  确诊路线
+                  {uiText('确诊路线', 'Diagnosis Path')}
                 </h2>
                 <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
-                  按患者实际行动顺序整理：先识别线索，再避开常见弯路，最后准备就诊。
+                  {uiText(
+                    '按患者实际行动顺序整理：先识别线索，再避开常见弯路，最后准备就诊。',
+                    'Organized around the practical patient journey: identify clues, avoid common delays, then prepare for care.',
+                  )}
                 </p>
               </div>
               <div className="grid gap-4 md:grid-cols-2">
@@ -321,14 +364,16 @@ function DiseaseDetailPage() {
           {/* Basic Info */}
           <div className="content-card mb-5 p-5">
             <h2 className="mb-4 font-semibold text-stone-900 dark:text-stone-100">
-              基本信息
+              {uiText('基本信息', 'Basic Information')}
             </h2>
             <div className="grid gap-3 sm:grid-cols-2">
               {disease.prevalence && (
                 <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
                   <Users className="mt-0.5 h-5 w-5 text-amber-700" />
                   <div>
-                    <div className="text-sm font-semibold">患病率</div>
+                    <div className="text-sm font-semibold">
+                      {uiText('患病率', 'Prevalence')}
+                    </div>
                     <div className="text-sm text-stone-600 dark:text-stone-400">
                       {disease.prevalence}
                     </div>
@@ -339,7 +384,9 @@ function DiseaseDetailPage() {
                 <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
                   <Tag className="mt-0.5 h-5 w-5 text-amber-700" />
                   <div>
-                    <div className="text-sm font-semibold">分类</div>
+                    <div className="text-sm font-semibold">
+                      {uiText('分类', 'Category')}
+                    </div>
                     <div className="text-sm text-stone-600 dark:text-stone-400">
                       {disease.category.name}
                     </div>
@@ -350,7 +397,9 @@ function DiseaseDetailPage() {
                 <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
                   <Calendar className="mt-0.5 h-5 w-5 text-amber-700" />
                   <div>
-                    <div className="text-sm font-semibold">更新时间</div>
+                    <div className="text-sm font-semibold">
+                      {uiText('更新时间', 'Updated')}
+                    </div>
                     <div className="text-sm text-stone-600 dark:text-stone-400">
                       {new Date(disease.updatedAt).toLocaleDateString('zh-CN')}
                     </div>
@@ -361,13 +410,21 @@ function DiseaseDetailPage() {
                 <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
                   <BookOpenCheck className="mt-0.5 h-5 w-5 text-amber-700" />
                   <div>
-                    <div className="text-sm font-semibold">资料来源</div>
+                    <div className="text-sm font-semibold">
+                      {uiText('资料来源', 'Source')}
+                    </div>
                     {disease.sourceUrl ? (
                       <a
                         href={disease.sourceUrl}
                         target="_blank"
                         rel="noreferrer"
                         className="mt-1 inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-600"
+                        onClick={() =>
+                          trackEvent('disease_source_click', {
+                            disease_slug: disease.slug,
+                            source_kind: 'primary',
+                          })
+                        }
                       >
                         {disease.sourceName}
                         <ExternalLink className="h-3.5 w-3.5" />
@@ -388,10 +445,13 @@ function DiseaseDetailPage() {
               <div className="mb-4">
                 <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                   <BookOpenCheck className="h-5 w-5 text-amber-700" />
-                  医学说明
+                  {uiText('医学说明', 'Medical Notes')}
                 </h2>
                 <p className="mt-1 text-sm text-stone-600 dark:text-stone-400">
-                  这里保留更完整的医学解释，方便和医生沟通时核对概念。
+                  {uiText(
+                    '这里保留更完整的医学解释，方便和医生沟通时核对概念。',
+                    'More complete medical explanations are kept here for discussion with clinicians.',
+                  )}
                 </p>
               </div>
               <div className="space-y-4">
@@ -414,11 +474,13 @@ function DiseaseDetailPage() {
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Hospital className="h-5 w-5 text-amber-700" />
-                就医资源
+                {uiText('就医资源', 'Care Resources')}
               </h3>
               <p className="-mt-2 mb-4 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
-                以下为公开收录的科室、服务或 MDT
-                线索，不代表本站推荐或医疗背书。
+                {uiText(
+                  '以下为公开收录的科室、服务或 MDT 线索，不代表本站推荐或医疗背书。',
+                  'The following are publicly collected department, service, or MDT leads. They are not recommendations or medical endorsements.',
+                )}
               </p>
               <div className="space-y-3">
                 {disease.hospitalServices.map((service) => (
@@ -431,6 +493,13 @@ function DiseaseDetailPage() {
                         to="/hospitals/$id"
                         params={{ id: service.hospital.id.toString() }}
                         className="font-medium transition hover:text-amber-700"
+                        onClick={() =>
+                          trackEvent('disease_related_hospital_click', {
+                            disease_slug: disease.slug,
+                            hospital_id: service.hospital?.id,
+                            service_stage: service.stage,
+                          })
+                        }
                       >
                         {service.hospital.name}
                       </Link>
@@ -459,14 +528,22 @@ function DiseaseDetailPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="mt-2 inline-flex items-center gap-1 text-xs text-amber-700"
+                        onClick={() =>
+                          trackEvent('disease_source_click', {
+                            disease_slug: disease.slug,
+                            service_id: service.id,
+                            source_kind: 'hospital_service',
+                          })
+                        }
                       >
-                        查看公开来源
+                        {uiText('查看公开来源', 'View Public Source')}
                         <ExternalLink className="h-3 w-3" />
                       </a>
                     )}
                     {service.lastVerifiedAt && (
                       <div className="mt-1 text-xs text-stone-500">
-                        核验于 {service.lastVerifiedAt}
+                        {uiText('核验于', 'Verified on')}{' '}
+                        {service.lastVerifiedAt}
                       </div>
                     )}
                   </div>
@@ -480,7 +557,7 @@ function DiseaseDetailPage() {
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Users className="h-5 w-5 text-amber-700" />
-                相关公益组织
+                {uiText('相关公益组织', 'Related Support Groups')}
               </h3>
               <div className="space-y-3">
                 {disease.charityOrgs.map((org) => (
@@ -489,15 +566,22 @@ function DiseaseDetailPage() {
                     to="/charity/$id"
                     params={{ id: org.id.toString() }}
                     className="block rounded-md border border-stone-200 bg-white p-3 transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-900/30"
+                    onClick={() =>
+                      trackEvent('disease_related_charity_click', {
+                        charity_id: org.id,
+                        disease_slug: disease.slug,
+                        type: org.type,
+                      })
+                    }
                   >
                     <div className="font-medium">{org.name}</div>
                     <div className="mt-1 text-sm text-stone-500">
                       {org.type === 'patient_org'
-                        ? '患者组织'
+                        ? uiText('患者组织', 'Patient Group')
                         : org.type === 'foundation'
-                          ? '基金会'
+                          ? uiText('基金会', 'Foundation')
                           : org.type === 'volunteer_team'
-                            ? '志愿者团队'
+                            ? uiText('志愿者团队', 'Volunteer Team')
                             : org.type}
                     </div>
                   </Link>
@@ -511,7 +595,7 @@ function DiseaseDetailPage() {
             <div className="content-card p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <Tag className="h-5 w-5 text-amber-700" />
-                相关标签
+                {uiText('相关标签', 'Related Tags')}
               </h3>
               <div className="flex flex-wrap gap-2">
                 {disease.tags.map((tag) => (
@@ -527,7 +611,7 @@ function DiseaseDetailPage() {
             <div className="content-card mt-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
                 <BookOpenCheck className="h-5 w-5 text-amber-700" />
-                信息来源
+                {uiText('信息来源', 'Information Sources')}
               </h3>
               <div className="space-y-3">
                 {disease.sources.map((source) => (
@@ -537,6 +621,12 @@ function DiseaseDetailPage() {
                     target="_blank"
                     rel="noreferrer"
                     className="block rounded-md border border-stone-200 bg-white p-3 text-sm transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-900/30"
+                    onClick={() =>
+                      trackEvent('disease_source_click', {
+                        disease_slug: disease.slug,
+                        source_kind: source.type ?? 'source',
+                      })
+                    }
                   >
                     <span className="flex items-start justify-between gap-3">
                       <span>
@@ -637,22 +727,24 @@ function MedicalBlock({ html, title }: { html: string; title: string }) {
 
 function formatHospitalServiceStage(stage?: string) {
   const labels: Record<string, string> = {
-    diagnosis: '诊断评估',
-    'follow-up': '长期随访',
-    'genetic-counseling': '遗传咨询',
-    treatment: '治疗管理',
+    diagnosis: uiText('诊断评估', 'Diagnosis Evaluation'),
+    'follow-up': uiText('长期随访', 'Long-term Follow-up'),
+    'genetic-counseling': uiText('遗传咨询', 'Genetic Counseling'),
+    treatment: uiText('治疗管理', 'Treatment Management'),
   };
 
-  return stage ? (labels[stage] ?? stage) : '就医信息参考';
+  return stage
+    ? (labels[stage] ?? stage)
+    : uiText('就医信息参考', 'Care Information Reference');
 }
 
 function formatRelationKind(kind?: string) {
   const labels: Record<string, string> = {
-    'clinic-or-mdt': '门诊/MDT',
-    'department-service': '科室服务',
-    'public-directory': '公开目录',
-    'rare-disease-network': '罕见病网络',
+    'clinic-or-mdt': uiText('门诊/MDT', 'Clinic/MDT'),
+    'department-service': uiText('科室服务', 'Department Service'),
+    'public-directory': uiText('公开目录', 'Public Directory'),
+    'rare-disease-network': uiText('罕见病网络', 'Rare Disease Network'),
   };
 
-  return kind ? (labels[kind] ?? kind) : '公开线索';
+  return kind ? (labels[kind] ?? kind) : uiText('公开线索', 'Public Lead');
 }

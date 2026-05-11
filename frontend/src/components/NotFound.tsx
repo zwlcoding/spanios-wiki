@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { m } from '@/paraglide/messages';
+import { trackEvent } from '@/utils/analytics';
 
 const NotFound = () => {
   return (
@@ -16,7 +17,11 @@ const NotFound = () => {
         alt="404 Errors"
       />
 
-      <Link to="/" className="btn btn-primary mt-12 gap-2 sm:mt-16 xl:mt-20">
+      <Link
+        to="/"
+        className="btn btn-primary mt-12 gap-2 sm:mt-16 xl:mt-20"
+        onClick={() => trackEvent('not_found_return_home_click')}
+      >
         <span className="iconify lucide--arrow-left size-4.5"></span>
         {m.site_back_home()}
       </Link>

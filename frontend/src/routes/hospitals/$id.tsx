@@ -11,6 +11,8 @@ import {
 import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import { useHospital } from '@/hooks/useHospitals';
 import { fetchHospitalById } from '@/lib/contentClient';
+import { trackEvent } from '@/utils/analytics';
+import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/hospitals/$id')({
   loader: async ({ context, params }) => {
@@ -52,19 +54,24 @@ function HospitalDetailPage() {
       <div className="page-container">
         <nav className="muted-text mb-4 flex items-center gap-2 text-sm">
           <Link to="/" className="hover:text-amber-700">
-            首页
+            {uiText('首页', 'Home')}
           </Link>
           <span>/</span>
           <Link to="/hospitals" className="hover:text-amber-700">
-            就医资源
+            {uiText('就医资源', 'Care Resources')}
           </Link>
         </nav>
         <div className="surface-card p-5">
-          <span>就医资源未找到或加载失败</span>
+          <span>
+            {uiText(
+              '就医资源未找到或加载失败',
+              'Care resource was not found or failed to load',
+            )}
+          </span>
         </div>
         <Link to="/hospitals" className="btn-primary-app mt-4">
           <ArrowLeft className="h-4 w-4 mr-2" />
-          返回就医资源
+          {uiText('返回就医资源', 'Back to Care Resources')}
         </Link>
       </div>
     );
@@ -74,11 +81,11 @@ function HospitalDetailPage() {
     <div className="page-container">
       <nav className="muted-text mb-4 flex flex-wrap items-center gap-2 text-sm">
         <Link to="/" className="hover:text-amber-700">
-          首页
+          {uiText('首页', 'Home')}
         </Link>
         <span>/</span>
         <Link to="/hospitals" className="hover:text-amber-700">
-          就医资源
+          {uiText('就医资源', 'Care Resources')}
         </Link>
         <span>/</span>
         <span className="strong-text">{hospital.name}</span>
@@ -86,7 +93,7 @@ function HospitalDetailPage() {
 
       <Link to="/hospitals" className="btn-subtle mb-5 self-start">
         <ArrowLeft className="h-4 w-4 mr-2" />
-        返回列表
+        {uiText('返回列表', 'Back to List')}
       </Link>
 
       <div className="surface-card mb-8 p-6 sm:p-7">
@@ -94,7 +101,7 @@ function HospitalDetailPage() {
           <div>
             <div className="eyebrow mb-4">
               <Building className="h-4 w-4" />
-              公开就医资源
+              {uiText('公开就医资源', 'Public Care Resource')}
             </div>
             <h1 className="section-title text-3xl sm:text-4xl">
               {hospital.name}
@@ -114,9 +121,11 @@ function HospitalDetailPage() {
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
         <div className="lg:col-span-2">
           <div className="content-card mb-5 p-5">
-            <h2 className="mb-4 font-semibold">联系信息</h2>
+            <h2 className="mb-4 font-semibold">
+              {uiText('联系信息', 'Contact Information')}
+            </h2>
             <div className="grid gap-3">
-              <InfoRow icon={MapPin} label="地址">
+              <InfoRow icon={MapPin} label={uiText('地址', 'Address')}>
                 <span>{hospital.address}</span>
                 {hospital.province && hospital.city && (
                   <span className="muted-text ml-2">
@@ -126,20 +135,37 @@ function HospitalDetailPage() {
               </InfoRow>
 
               {hospital.phone && (
-                <InfoRow icon={Phone} label="电话">
-                  <a href={`tel:${hospital.phone}`} className="text-amber-700">
+                <InfoRow icon={Phone} label={uiText('电话', 'Phone')}>
+                  <a
+                    href={`tel:${hospital.phone}`}
+                    className="text-amber-700"
+                    onClick={() =>
+                      trackEvent('hospital_phone_click', {
+                        hospital_id: hospital.id,
+                        province: hospital.province,
+                        source: 'contact_info',
+                      })
+                    }
+                  >
                     {hospital.phone}
                   </a>
                 </InfoRow>
               )}
 
               {hospital.website && (
-                <InfoRow icon={Globe} label="网站">
+                <InfoRow icon={Globe} label={uiText('网站', 'Website')}>
                   <a
                     href={hospital.website}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 break-all text-amber-700"
+                    onClick={() =>
+                      trackEvent('hospital_website_click', {
+                        hospital_id: hospital.id,
+                        province: hospital.province,
+                        source: 'contact_info',
+                      })
+                    }
                   >
                     {hospital.website}
                     <ExternalLink className="h-3.5 w-3.5 shrink-0" />
@@ -148,14 +174,21 @@ function HospitalDetailPage() {
               )}
 
               {hospital.location && (
-                <InfoRow icon={Navigation} label="导航">
+                <InfoRow icon={Navigation} label={uiText('导航', 'Map')}>
                   <a
                     href={mapUrl(hospital)}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 text-amber-700"
+                    onClick={() =>
+                      trackEvent('hospital_map_click', {
+                        hospital_id: hospital.id,
+                        province: hospital.province,
+                        source: 'contact_info',
+                      })
+                    }
                   >
-                    查看地图位置
+                    {uiText('查看地图位置', 'View Map Location')}
                     <ExternalLink className="h-3.5 w-3.5" />
                   </a>
                 </InfoRow>
@@ -165,7 +198,9 @@ function HospitalDetailPage() {
 
           {hospital.specialties && (
             <div className="content-card mb-5 p-5">
-              <h2 className="mb-3 font-semibold">公开资源说明</h2>
+              <h2 className="mb-3 font-semibold">
+                {uiText('公开资源说明', 'Public Resource Notes')}
+              </h2>
               <SafeHTMLRenderer
                 html={hospital.specialties}
                 className="content-prose"
@@ -175,7 +210,9 @@ function HospitalDetailPage() {
 
           {hospital.departments && hospital.departments.length > 0 && (
             <div className="content-card mb-5 p-5">
-              <h2 className="mb-4 font-semibold">相关科室</h2>
+              <h2 className="mb-4 font-semibold">
+                {uiText('相关科室', 'Related Departments')}
+              </h2>
               <div className="grid gap-3">
                 {hospital.departments.map((dept) => (
                   <div
@@ -192,7 +229,7 @@ function HospitalDetailPage() {
                     {dept.expertDoctors && (
                       <p className="muted-text mt-3 text-sm">
                         <span className="strong-text font-medium">
-                          公开团队信息：
+                          {uiText('公开团队信息：', 'Public team info:')}
                         </span>
                         {dept.expertDoctors}
                       </p>
@@ -203,8 +240,15 @@ function HospitalDetailPage() {
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-subtle mt-3"
+                        onClick={() =>
+                          trackEvent('hospital_appointment_click', {
+                            department_id: dept.id,
+                            hospital_id: hospital.id,
+                            province: hospital.province,
+                          })
+                        }
                       >
-                        预约挂号
+                        {uiText('预约挂号', 'Book Appointment')}
                         <ExternalLink className="h-4 w-4" />
                       </a>
                     )}
@@ -216,10 +260,17 @@ function HospitalDetailPage() {
 
           {hospital.services && hospital.services.length > 0 && (
             <div className="content-card p-5">
-              <h2 className="mb-2 font-semibold">科室/服务证据与疾病关系</h2>
+              <h2 className="mb-2 font-semibold">
+                {uiText(
+                  '科室/服务证据与疾病关系',
+                  'Department/Service Evidence and Disease Links',
+                )}
+              </h2>
               <p className="muted-text mb-4 text-sm">
-                每条关系都应落在某个科室、服务或 MDT
-                线索上，并尽量保留公开来源；不构成医院推荐或疗效背书。
+                {uiText(
+                  '每条关系都应落在某个科室、服务或 MDT 线索上，并尽量保留公开来源；不构成医院推荐或疗效背书。',
+                  'Each relationship should be tied to a department, service, or MDT lead with public sources where possible. This is not a hospital recommendation or outcome endorsement.',
+                )}
               </p>
               <div className="grid gap-3">
                 {hospital.services.map((service) => (
@@ -238,7 +289,8 @@ function HospitalDetailPage() {
                         {formatRelationKind(service.relationKind)}
                       </span>
                       <span className="rounded-full bg-stone-100 px-2 py-0.5 text-xs font-medium text-stone-600 dark:bg-stone-800 dark:text-stone-300">
-                        证据强度：{formatConfidence(service.confidence)}
+                        {uiText('证据强度：', 'Evidence strength:')}
+                        {formatConfidence(service.confidence)}
                       </span>
                     </div>
                     {service.serviceName && (
@@ -254,6 +306,13 @@ function HospitalDetailPage() {
                             to="/diseases/$slug"
                             params={{ slug: disease.slug }}
                             className="rounded-full border border-stone-200 bg-white px-3 py-1 text-xs transition hover:border-amber-300 hover:text-amber-700 dark:border-stone-700 dark:bg-stone-950"
+                            onClick={() =>
+                              trackEvent('related_disease_click', {
+                                disease_slug: disease.slug,
+                                source_id: hospital.id,
+                                source_page: 'hospital_detail',
+                              })
+                            }
                           >
                             {disease.name}
                           </Link>
@@ -265,7 +324,9 @@ function HospitalDetailPage() {
                     )}
                     {service.patientPrep && service.patientPrep.length > 0 && (
                       <div className="mt-3 rounded-md bg-white p-3 text-sm dark:bg-stone-950/40">
-                        <div className="mb-2 font-medium">就诊前可准备</div>
+                        <div className="mb-2 font-medium">
+                          {uiText('就诊前可准备', 'Before the Visit')}
+                        </div>
                         <ul className="space-y-1 text-stone-600 dark:text-stone-400">
                           {service.patientPrep.map((item) => (
                             <li
@@ -287,6 +348,14 @@ function HospitalDetailPage() {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="rounded-md border border-stone-200 bg-white p-3 text-sm transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-950/40"
+                            onClick={() =>
+                              trackEvent('hospital_evidence_click', {
+                                confidence: service.confidence,
+                                evidence_kind: evidence.kind,
+                                hospital_id: hospital.id,
+                                service_stage: service.stage,
+                              })
+                            }
                           >
                             <span className="flex flex-wrap items-center gap-2">
                               <span className="font-medium text-stone-900 dark:text-stone-100">
@@ -304,7 +373,10 @@ function HospitalDetailPage() {
                                   ? ' · '
                                   : ''}
                                 {evidence.accessedAt
-                                  ? `核验于 ${evidence.accessedAt}`
+                                  ? uiText(
+                                      `核验于 ${evidence.accessedAt}`,
+                                      `Verified on ${evidence.accessedAt}`,
+                                    )
                                   : ''}
                               </span>
                             )}
@@ -323,15 +395,24 @@ function HospitalDetailPage() {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="mt-3 inline-flex items-center gap-1 text-sm text-amber-700"
+                          onClick={() =>
+                            trackEvent('hospital_evidence_click', {
+                              confidence: service.confidence,
+                              evidence_kind: 'fallback_source',
+                              hospital_id: hospital.id,
+                              service_stage: service.stage,
+                            })
+                          }
                         >
-                          查看公开来源
+                          {uiText('查看公开来源', 'View Public Source')}
                           <ExternalLink className="h-3.5 w-3.5" />
                         </a>
                       )
                     )}
                     {service.lastVerifiedAt && (
                       <p className="muted-text mt-3 text-xs">
-                        信息核验日期：{service.lastVerifiedAt}
+                        {uiText('信息核验日期：', 'Information verified on:')}
+                        {service.lastVerifiedAt}
                       </p>
                     )}
                   </div>
@@ -346,7 +427,7 @@ function HospitalDetailPage() {
             <div className="content-card mb-5 p-5">
               <h3 className="mb-4 flex items-center gap-2 font-semibold">
                 <Building className="h-5 w-5 text-amber-700" />
-                相关疾病信息
+                {uiText('相关疾病信息', 'Related Diseases')}
               </h3>
               <div className="space-y-3">
                 {hospital.diseases.map((disease) => (
@@ -355,6 +436,13 @@ function HospitalDetailPage() {
                     to="/diseases/$slug"
                     params={{ slug: disease.slug }}
                     className="block rounded-md border border-stone-200 bg-white p-3 transition hover:border-amber-300 dark:border-stone-700 dark:bg-stone-900/30"
+                    onClick={() =>
+                      trackEvent('related_disease_click', {
+                        disease_slug: disease.slug,
+                        source_id: hospital.id,
+                        source_page: 'hospital_detail',
+                      })
+                    }
                   >
                     <div className="font-medium">{disease.name}</div>
                     {disease.category && (
@@ -369,12 +457,24 @@ function HospitalDetailPage() {
           )}
 
           <div className="content-card p-5">
-            <h3 className="mb-4 font-semibold">快速操作</h3>
+            <h3 className="mb-4 font-semibold">
+              {uiText('快速操作', 'Quick Actions')}
+            </h3>
             <div className="grid gap-3">
               {hospital.phone && (
-                <a href={`tel:${hospital.phone}`} className="btn-primary-app">
+                <a
+                  href={`tel:${hospital.phone}`}
+                  className="btn-primary-app"
+                  onClick={() =>
+                    trackEvent('hospital_phone_click', {
+                      hospital_id: hospital.id,
+                      province: hospital.province,
+                      source: 'quick_action',
+                    })
+                  }
+                >
                   <Phone className="h-4 w-4" />
-                  联系电话
+                  {uiText('联系电话', 'Call')}
                 </a>
               )}
               {hospital.website && (
@@ -383,9 +483,16 @@ function HospitalDetailPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-subtle"
+                  onClick={() =>
+                    trackEvent('hospital_website_click', {
+                      hospital_id: hospital.id,
+                      province: hospital.province,
+                      source: 'quick_action',
+                    })
+                  }
                 >
                   <Globe className="h-4 w-4" />
-                  打开官网核对
+                  {uiText('打开官网核对', 'Open Official Website')}
                 </a>
               )}
               {hospital.location && (
@@ -394,9 +501,16 @@ function HospitalDetailPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-subtle"
+                  onClick={() =>
+                    trackEvent('hospital_map_click', {
+                      hospital_id: hospital.id,
+                      province: hospital.province,
+                      source: 'quick_action',
+                    })
+                  }
                 >
                   <Navigation className="h-4 w-4" />
-                  查看地图
+                  {uiText('查看地图', 'View Map')}
                 </a>
               )}
             </div>
@@ -429,10 +543,10 @@ function InfoRow({
 
 function formatHospitalLevel(level: string) {
   const labels: Record<string, string> = {
-    secondary_a: '二甲医院',
-    secondary_b: '二乙医院',
-    tertiary_a: '三甲医院',
-    tertiary_b: '三乙医院',
+    secondary_a: uiText('二甲医院', 'Secondary A Hospital'),
+    secondary_b: uiText('二乙医院', 'Secondary B Hospital'),
+    tertiary_a: uiText('三甲医院', 'Tertiary A Hospital'),
+    tertiary_b: uiText('三乙医院', 'Tertiary B Hospital'),
   };
 
   return labels[level] ?? level;
@@ -440,47 +554,56 @@ function formatHospitalLevel(level: string) {
 
 function formatHospitalServiceStage(stage?: string) {
   const labels: Record<string, string> = {
-    diagnosis: '诊断评估',
-    'follow-up': '长期随访',
-    'genetic-counseling': '遗传咨询',
-    treatment: '治疗管理',
+    diagnosis: uiText('诊断评估', 'Diagnosis Evaluation'),
+    'follow-up': uiText('长期随访', 'Long-term Follow-up'),
+    'genetic-counseling': uiText('遗传咨询', 'Genetic Counseling'),
+    treatment: uiText('治疗管理', 'Treatment Management'),
   };
 
-  return stage ? (labels[stage] ?? stage) : '就医信息参考';
+  return stage
+    ? (labels[stage] ?? stage)
+    : uiText('就医信息参考', 'Care Information Reference');
 }
 
 function formatRelationKind(kind?: string) {
   const labels: Record<string, string> = {
-    'clinic-or-mdt': '门诊/MDT 线索',
-    'department-service': '科室服务线索',
-    'public-directory': '公开目录线索',
-    'rare-disease-network': '罕见病网络线索',
+    'clinic-or-mdt': uiText('门诊/MDT 线索', 'Clinic/MDT Lead'),
+    'department-service': uiText('科室服务线索', 'Department Service Lead'),
+    'public-directory': uiText('公开目录线索', 'Public Directory Lead'),
+    'rare-disease-network': uiText(
+      '罕见病网络线索',
+      'Rare Disease Network Lead',
+    ),
   };
 
-  return kind ? (labels[kind] ?? kind) : '公开服务线索';
+  return kind
+    ? (labels[kind] ?? kind)
+    : uiText('公开服务线索', 'Public Service Lead');
 }
 
 function formatConfidence(confidence?: string) {
   const labels: Record<string, string> = {
-    high: '高',
-    low: '低',
-    medium: '中',
+    high: uiText('高', 'High'),
+    low: uiText('低', 'Low'),
+    medium: uiText('中', 'Medium'),
   };
 
-  return confidence ? (labels[confidence] ?? confidence) : '待核对';
+  return confidence
+    ? (labels[confidence] ?? confidence)
+    : uiText('待核对', 'To Verify');
 }
 
 function formatEvidenceKind(kind?: string) {
   const labels: Record<string, string> = {
-    'clinic-page': '门诊页面',
-    'department-page': '科室页面',
-    'hospital-directory': '医院官网',
-    'medical-team-page': '团队页面',
-    'policy-or-network': '政策/网络',
-    'public-notice': '公开通知',
+    'clinic-page': uiText('门诊页面', 'Clinic Page'),
+    'department-page': uiText('科室页面', 'Department Page'),
+    'hospital-directory': uiText('医院官网', 'Hospital Website'),
+    'medical-team-page': uiText('团队页面', 'Medical Team Page'),
+    'policy-or-network': uiText('政策/网络', 'Policy/Network'),
+    'public-notice': uiText('公开通知', 'Public Notice'),
   };
 
-  return kind ? (labels[kind] ?? kind) : '公开来源';
+  return kind ? (labels[kind] ?? kind) : uiText('公开来源', 'Public Source');
 }
 
 function mapUrl(hospital: {
