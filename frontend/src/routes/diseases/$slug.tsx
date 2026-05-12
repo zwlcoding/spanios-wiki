@@ -319,6 +319,22 @@ function DiseaseDetailPage() {
         </section>
       )}
 
+      {disease.searchIntents?.length ? (
+        <section className="content-card mb-8 p-5 sm:p-6">
+          <h2 className="flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
+            <HelpCircle className="h-5 w-5 text-amber-700" />
+            {uiText('常见搜索和就医问题', 'Common Search and Care Questions')}
+          </h2>
+          <div className="mt-4 flex flex-wrap gap-2">
+            {disease.searchIntents.map((intent) => (
+              <span className="badge-muted" key={intent}>
+                {intent}
+              </span>
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <section className="mb-8 rounded-md border border-amber-200 bg-amber-50 p-4 text-sm leading-6 text-stone-700 dark:border-amber-900/60 dark:bg-amber-950/30 dark:text-stone-300">
         <div className="flex gap-3">
           <AlertTriangle className="mt-0.5 h-5 w-5 shrink-0 text-amber-700" />

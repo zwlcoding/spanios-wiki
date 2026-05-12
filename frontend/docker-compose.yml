@@ -1,10 +1,12 @@
 services:
   www-spanios-wiki:
-    image: crpi-yddandol1embdyi1.cn-shenzhen.personal.cr.aliyuncs.com/waylon_zhang/www-spanios-wiki:1.0.0
-    ports:
-      - 3000
+    image: crpi-yddandol1embdyi1.cn-shenzhen.personal.cr.aliyuncs.com/waylon_zhang/www-spanios-wiki:1.0.1
+    expose:
+      - "3000"
     environment:
-      - NODE_ENV=product
+      - NODE_ENV=production
+      - PORT=3000
+      - VITE_SITE_URL=${VITE_SITE_URL:-https://spanios.qdkf.net}
 
     restart: unless-stopped
     networks:

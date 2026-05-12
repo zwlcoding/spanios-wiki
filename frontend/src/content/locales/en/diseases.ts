@@ -16,6 +16,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
     plainName: 'A congenital adrenal hormone synthesis disorder',
     prevalence:
       'Classic form occurs in approximately 1 in 12,000–15,000 live births; reported incidence in China is about 1/20,000–1/10,000, though actual identification rates are affected by screening and healthcare access.',
+    searchIntents: [
+      '21-hydroxylase deficiency which doctor',
+      'newborn screen high 17-OHP what next',
+      'congenital adrenal hyperplasia salt-wasting crisis',
+      '21-OHD CYP21A2 genetic testing',
+      '21-hydroxylase deficiency fertility genetic counseling',
+    ],
     quickLook: {
       whatItIs:
         "This is an autosomal recessive endocrine disorder. Insufficient 21-hydroxylase function impairs the adrenal glands' ability to produce cortisol and aldosterone while elevating androgens, with presentations ranging from neonatal crisis to hyperandrogenic problems at puberty.",
@@ -266,6 +273,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'A hereditary nephritis that may affect kidneys, hearing, and eyes',
     prevalence:
       'It is a rare hereditary kidney disease; true prevalence is affected by region, screening, and genetic testing availability.',
+    searchIntents: [
+      'Alport syndrome which doctor',
+      'child persistent hematuria hearing loss',
+      'hereditary nephritis COL4A5 genetic testing',
+      'Alport syndrome proteinuria management',
+      'Alport syndrome family screening',
+    ],
     quickLook: {
       whatItIs:
         'This condition affects the structure of the glomerular basement membrane and other tissues. Many patients first present with microscopic hematuria, then may develop proteinuria, declining kidney function; some patients also have sensorineural hearing loss or eye changes.',
@@ -388,6 +402,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'A hereditary neurodevelopmental disorder mainly affecting development, language, and seizures',
     prevalence:
       'Estimated to occur in approximately 1 in 12,000–20,000 newborns, with variations across different sources and regions.',
+    searchIntents: [
+      'Angelman syndrome which doctor',
+      'developmental delay no speech seizures',
+      'Angelman syndrome UBE3A testing',
+      'Angelman syndrome rehabilitation',
+      'Angelman syndrome recurrence risk',
+    ],
     quickLook: {
       whatItIs:
         'Angelman syndrome is mostly related to loss of UBE3A function from the maternal copy of chromosome 15. Children typically present with developmental delay in infancy and early childhood, then show significantly limited language, ataxia, seizures, sleep problems, and characteristic behaviors.',
@@ -744,6 +765,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'A blood and kidney emergency related to complement abnormalities',
     prevalence:
       'This is a rare disease. MedlinePlus estimates the annual incidence in the United States is about 1 in 500,000 people.',
+    searchIntents: [
+      'aHUS which doctor',
+      'low platelets hemolysis kidney injury',
+      'atypical HUS complement testing',
+      'aHUS vs typical HUS',
+      'aHUS recurrence genetic risk',
+    ],
     quickLook: {
       whatItIs:
         'aHUS causes abnormal blood clots to form in small blood vessels, red blood cells are destroyed, platelet counts drop, and acute kidney injury occurs. It is different from the more common infection-related typical HUS, and requires specialist evaluation to distinguish the cause.',
@@ -859,6 +887,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'Brain inflammation caused by the immune system mistakenly attacking the brain',
     prevalence:
       'A relatively uncommon but increasingly recognized neuroimmune disease; the exact prevalence varies depending on antibody testing and diagnostic capabilities.',
+    searchIntents: [
+      'autoimmune encephalitis early symptoms',
+      'sudden psychiatric symptoms seizures memory loss',
+      'autoimmune encephalitis neurology or psychiatry',
+      'autoimmune encephalitis antibody testing',
+      'autoimmune encephalitis recovery after treatment',
+    ],
     quickLook: {
       whatItIs:
         'Autoimmune encephalitis is different from ordinary viral or bacterial infectious encephalitis. It may be related to autoantibodies, tumors, post-infection immune responses, or other autoimmune conditions. Some patients can recover significantly with timely treatment.',
@@ -979,6 +1014,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
     plainName: 'Progressive Motor Neuron Disease',
     prevalence:
       'Estimated at approximately 2–5 per 100,000 people worldwide, though prevalence varies by region, age structure, and reporting methods.',
+    searchIntents: [
+      'ALS early symptoms',
+      'ALS which doctor to see',
+      'muscle twitching weakness ALS',
+      'motor neuron disease EMG testing',
+      'ALS swallowing breathing risk',
+    ],
     quickLook: {
       whatItIs:
         'ALS mainly affects the nerve cells that control voluntary movement. Sensation, consciousness, and eye movements are relatively preserved in many patients, but muscles of the limbs, speech, swallowing, and breathing may be progressively affected.',
@@ -1098,6 +1140,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
     plainName: 'Delayed puberty with reduced sense of smell',
     prevalence:
       'Estimated at about 1 in 30,000 males and 1 in 120,000 females; actual diagnosis rates may vary by care pathway.',
+    searchIntents: [
+      'Kallmann syndrome which doctor to see',
+      'delayed puberty poor sense of smell',
+      'hypogonadotropic hypogonadism testing',
+      'Kallmann syndrome fertility treatment',
+      'Kallmann syndrome genetic testing',
+    ],
     quickLook: {
       whatItIs:
         'It is a form of hypogonadotropic hypogonadism where the body lacks the hormone signals needed to start puberty. Some people also have reduced or absent smell.',
@@ -1588,6 +1637,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'An inherited condition where the body cannot properly recycle and use biotin.',
     prevalence:
       'It is a rare disease. Screening data varies widely across regions. Many countries and regions have already included it in newborn or genetic metabolic screening programs.',
+    searchIntents: [
+      'biotinidase deficiency newborn screen positive',
+      'BTD deficiency which doctor',
+      'low biotinidase activity follow-up test',
+      'biotinidase deficiency seizures rash hair loss',
+      'biotinidase deficiency can biotin be stopped',
+    ],
     quickLook: {
       whatItIs:
         "Biotin is a vitamin involved in the function of several metabolic enzymes. When biotinidase is deficient, the body's ability to recycle and use biotin decreases. Without treatment, this may affect the nervous system, skin, hair, hearing, and vision.",
@@ -3092,6 +3148,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'A genetic metabolic disorder where fatty substances gradually build up in multiple organs',
     prevalence:
       'The classic type is rare, while later-onset forms may be more common but are often missed; detection rates vary greatly depending on the population screened.',
+    searchIntents: [
+      'Fabry disease which doctor',
+      'burning hands feet reduced sweating proteinuria',
+      'Fabry disease GLA genetic testing',
+      'Fabry disease heart thickening kidney disease',
+      'can women have Fabry disease',
+    ],
     quickLook: {
       whatItIs:
         'Variants in the GLA gene cause reduced alpha-galactosidase A enzyme activity, leading to accumulation of glycolipid substances within cells, which progressively affects the nervous system, kidneys, heart, and cerebral blood vessels.',
@@ -4428,6 +4491,13 @@ export const enDiseaseDrafts: DiseaseDraft[] = [
       'An inherited condition where blood does not clot properly, leading to repeated bleeding',
     prevalence:
       'Hemophilia A is more common than Hemophilia B. Severity depends on clotting factor activity levels. Female carriers may also have bleeding symptoms.',
+    searchIntents: [
+      'hemophilia which doctor',
+      'hemophilia A vs B difference',
+      'repeated joint bleeding hemophilia',
+      'hemophilia inhibitor testing',
+      'female hemophilia carrier bleeding',
+    ],
     quickLook: {
       whatItIs:
         'Hemophilia A is linked to missing or low Factor VIII, while Hemophilia B is linked to missing or low Factor IX. When clotting factors are too low, bleeding lasts longer. Severe cases may have spontaneous joint or muscle bleeding.',

@@ -3,12 +3,10 @@ import { getWikiContent } from '@/content/wikiData';
 import { paraglideMiddleware } from '@/paraglide/server.js';
 import type { Disease } from '@/types/content';
 
-const siteUrl =
-  import.meta.env.VITE_SITE_URL?.replace(/\/$/, '') ?? 'https://spanios.org';
-
 export default {
   fetch(req: Request): Promise<Response> {
     const url = new URL(req.url);
+    const siteUrl = getSiteUrl(req);
 
     if (url.pathname === '/robots.txt') {
       return Promise.resolve(
@@ -25,7 +23,7 @@ export default {
 
     if (url.pathname === '/sitemap.xml') {
       return Promise.resolve(
-        new Response(createSitemap(), {
+        new Response(createSitemap(siteUrl), {
           headers: {
             'content-type': 'application/xml; charset=utf-8',
           },
@@ -41,13 +39,31 @@ export default {
       return Promise.resolve(unpublishedDiseaseResponse);
     }
 
-    return paraglideMiddleware(req, ({ request }: any) =>
+    return paraglideMiddleware(req, ({ request }: { request: Request }) =>
       handler.fetch(request),
     );
   },
 };
 
-function createSitemap() {
+function getSiteUrl(req: Request) {
+  const configuredSiteUrl =
+    (typeof process !== 'undefined' ? process.env.VITE_SITE_URL : undefined) ??
+    import.meta.env.VITE_SITE_URL;
+
+  if (configuredSiteUrl) {
+    return configuredSiteUrl.replace(/\/$/, '');
+  }
+
+  const url = new URL(req.url);
+  const forwardedProto = req.headers.get('x-forwarded-proto')?.split(',')[0];
+  const forwardedHost = req.headers.get('x-forwarded-host')?.split(',')[0];
+  const proto = (forwardedProto || url.protocol.replace(':', '')).trim();
+  const host = (forwardedHost || req.headers.get('host') || url.host).trim();
+
+  return `${proto}://${host}`.replace(/\/$/, '');
+}
+
+function createSitemap(siteUrl: string) {
   const paths = [
     '/',
     ...localizedSitemapPaths('zh'),

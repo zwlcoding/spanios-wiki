@@ -125,6 +125,7 @@ export interface Disease {
   plainName?: string;
   quickLook?: DiseaseQuickLook;
   patientJourney?: DiseasePatientJourney;
+  searchIntents?: string[];
   medicalSections?: DiseaseMedicalSections;
   navigation?: DiseaseNavigation;
   reviewStatus?: ReviewStatus;
