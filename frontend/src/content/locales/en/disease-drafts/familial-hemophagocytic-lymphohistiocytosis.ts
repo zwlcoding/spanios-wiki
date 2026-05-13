@@ -6,72 +6,77 @@ export const diseaseFamilialHemophagocyticLymphohistiocytosis: DiseaseDraft = {
   name: 'Familial hemophagocytic lymphohistiocytosis',
   nameEn: 'Familial hemophagocytic lymphohistiocytosis',
   alias:
-    '家族性噬血细胞淋巴组织细胞增生症; China Second Rare Disease Catalog item 26',
+    'FHL, familial HLH, primary hemophagocytic lymphohistiocytosis, China Second Rare Disease Catalog item 26',
   slug: 'familial-hemophagocytic-lymphohistiocytosis',
   oneSentence:
-    "Familial hemophagocytic lymphohistiocytosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Familial hemophagocytic lymphohistiocytosis is an inherited immune-regulation disorder in which overactive immune cells can quickly cause prolonged fever, cytopenias, enlarged liver or spleen, and organ damage.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Familial hemophagocytic lymphohistiocytosis',
+    'An inherited form of HLH where uncontrolled immune inflammation can become life-threatening',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it is very rare overall and often presents in infancy or childhood, although later presentation can occur.",
   quickLook: {
     whatItIs:
-      'Familial hemophagocytic lymphohistiocytosis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'FHL is a primary or inherited form of HLH. Genes such as PRF1, UNC13D, STX11, and STXBP2 affect immune-cell killing pathways, so infections or other triggers can lead to uncontrolled inflammation.',
     whoToSeeFirst:
-      'Start with Rare disease multidisciplinary clinic or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Persistent fever with cytopenias, enlarged liver or spleen, very high ferritin, coagulopathy, liver dysfunction, or neurologic symptoms needs urgent hematology, immunology, emergency, or intensive-care evaluation.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Most familial HLH is autosomal recessive. Parents may be healthy carriers, so confirmed cases need genetic counseling and family testing.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Active disease needs rapid control of inflammation, infection management, and organ support. For typical FHL, allogeneic hematopoietic stem cell transplantation is usually the key long-term curative strategy.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'It can look like severe infection, sepsis, hepatitis, leukemia, lymphoma, or rheumatic disease. Fever plus cytopenias, hepatosplenomegaly, high ferritin, and low fibrinogen should prompt HLH evaluation.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'An infant or child has persistent high fever with enlarged liver or spleen, swollen lymph nodes, rash, or reduced responsiveness.',
+      'Blood tests show cytopenias plus high ferritin, high triglycerides, abnormal liver tests, or low fibrinogen.',
+      'Inflammation worsens after infection, or there are seizures, sleepiness, or encephalitis-like symptoms.',
+      'There is a sibling with similar illness, unexplained infant death, consanguinity, or a known HLH-related gene variant.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Repeatedly changing antibiotics for presumed infection without checking HLH markers.',
+      'Waiting for hemophagocytosis on bone marrow before considering HLH, even though it may be absent early.',
+      'Treating the acute flare without arranging genetic testing and transplant-center input.',
+      'Stopping follow-up after improvement and missing relapse, infection prevention, neurologic, or transplant issues.',
     ],
     firstDepartments: [
-      'Rare disease multidisciplinary clinic',
-      'Medical genetics',
-      'Specialty for the main affected system',
+      'Pediatric hematology',
+      'Hematology',
+      'Clinical immunology',
+      'Emergency or intensive care',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record fever duration, highest temperatures, infection triggers, medication response, bleeding, seizures, and mental status changes.',
+      'Bring CBC, liver and kidney tests, coagulation studies, ferritin, triglycerides, fibrinogen, marrow results, infectious testing, and imaging.',
+      'Collect family history of severe early infections, HLH, infant deaths, or consanguinity.',
+      'Bring any genetic testing, NK-cell function, degranulation testing, or soluble IL-2 receptor results.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'HLH laboratory evaluation including blood counts, ferritin, triglycerides, fibrinogen, liver tests, coagulation, and soluble IL-2 receptor when available.',
+      'Testing for infectious triggers such as EBV, CMV, bacteria, fungi, and other viruses.',
+      'NK-cell function, cytotoxic degranulation assays, and HLH-related genetic testing.',
+      'Whether bone marrow testing, CSF or brain MRI, ICU evaluation, or transplant-center consultation is needed.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Does this meet HLH criteria, and does it look familial or secondary?',
+      'Which organ problems are most urgent, and do we need ICU or transfer to a transplant center?',
+      'How will treatment control inflammation, prevent infection, and prepare for transplant if needed?',
+      'Should relatives have carrier testing, and how will siblings be screened or considered as donors?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>FHL often presents as severe acute or subacute inflammation with prolonged fever, enlarged liver or spleen, cytopenias, fatigue, bleeding tendency, jaundice, liver dysfunction, coagulopathy, and increased infection risk. Rash and lymph node enlargement can occur.</p><p>Central nervous system involvement can cause irritability, sleepiness, seizures, encephalitis-like symptoms, or developmental regression. Many patients present in infancy, but presentation can occur later in childhood or adulthood.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines HLH clinical and laboratory criteria, evaluation for infectious, malignant, and rheumatologic triggers, immune-function testing, and genetic testing. Hemophagocytosis in marrow supports the diagnosis but is not required early.</p><p>Familial HLH is usually confirmed by pathogenic variants in genes such as PRF1, UNC13D, STX11, or STXBP2. Clinicians also assess secondary HLH, severe infection, leukemia or lymphoma, liver failure, and autoinflammatory disease.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Active disease requires rapid control of inflammation, often with corticosteroids, etoposide-based therapy, cyclosporine, or cytokine-targeted treatment, together with infection treatment, transfusion, coagulation, liver, kidney, and ICU support when needed.</p><p>For typical FHL, allogeneic hematopoietic stem cell transplantation is an important curative option. Timing and regimen should be planned by teams experienced in HLH, immunology, hematology, and transplant care.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up monitors relapse risk, infection prevention, blood count and liver recovery, neurologic outcomes, nutrition, and mental health support. Transplant recipients also need monitoring for graft function, rejection, infection, and long-term endocrine or fertility effects.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Most FHL is autosomal recessive. Parents are usually carriers, and recurrence risk in future pregnancies depends on the family variants. Siblings may need testing and may also be considered as potential donors.</p><p>Families can discuss carrier testing, prenatal diagnosis, preimplantation genetic testing, and donor selection for stem cell transplantation.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek emergency care for persistent fever with poor responsiveness, seizures, altered consciousness, breathing difficulty, significant bleeding, rapidly spreading bruising, severe jaundice, low urine output, unstable blood pressure, or shock-like symptoms.</p>',
   },
   sources: [
     {
@@ -79,15 +84,20 @@ export const diseaseFamilialHemophagocyticLymphohistiocytosis: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'GeneReviews: Familial Hemophagocytic Lymphohistiocytosis',
+      type: 'review',
+      url: 'https://www.ncbi.nlm.nih.gov/books/NBK1444/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common features include prolonged fever, enlarged liver or spleen, cytopenias, coagulopathy, liver dysfunction, bleeding tendency, infection risk, and neurologic signs such as seizures or altered consciousness.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines HLH criteria and labs, ferritin/triglyceride/fibrinogen testing, evaluation for infection or malignancy, immune-function studies, and HLH-related genetic testing.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Active disease needs urgent immunochemotherapy or targeted anti-inflammatory treatment plus infection and organ support; typical familial HLH usually requires evaluation for allogeneic stem cell transplantation.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Untreated active FHL can become life-threatening quickly. Earlier recognition, inflammation control, infection management, and appropriate transplant timing can improve survival and long-term outcome.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +105,11 @@ export const diseaseFamilialHemophagocyticLymphohistiocytosis: DiseaseDraft = {
   categorySlug: 'multisystem',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 381,
+    name: 'familial-hemophagocytic-lymphohistiocytosis-journey.png',
+    url: '/images/diseases/familial-hemophagocytic-lymphohistiocytosis-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

@@ -5,73 +5,79 @@ export const diseaseEpithelioidSarcoma: DiseaseDraft = {
   ...entity(2024, 'disease-epithelioid-sarcoma'),
   name: 'Epithelioid sarcoma',
   nameEn: 'Epithelioid sarcoma',
-  alias: '上皮样肉瘤; China Second Rare Disease Catalog item 24',
+  alias:
+    'ES, distal-type epithelioid sarcoma, proximal-type epithelioid sarcoma, INI1/SMARCB1-deficient soft tissue sarcoma, China Second Rare Disease Catalog item 24',
   slug: 'epithelioid-sarcoma',
   oneSentence:
-    "Epithelioid sarcoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Epithelioid sarcoma is a rare aggressive soft tissue sarcoma, often affecting teenagers and young adults, that may begin as a painless nodule or non-healing sore on the hand, forearm, foot, knee, or lower leg.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Epithelioid sarcoma',
+    'A rare soft tissue sarcoma that can start as a small firm lump or sore on the hands, feet, or limbs',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it is a rare soft tissue sarcoma, most often seen in adolescents and young to middle-aged adults, with incidence varying by registry.",
   quickLook: {
     whatItIs:
-      'Epithelioid sarcoma is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Epithelioid sarcoma can grow slowly but has risks of local recurrence, lymph node spread, and distant metastasis. It is often mistaken for infection, granuloma, cyst, or a chronic wound, so pathology is crucial.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'A painless but enlarging nodule, firm mass, or non-healing ulcer on the hand, foot, forearm, or lower leg should be evaluated by an orthopedic oncology or sarcoma team.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'It is usually not inherited. Many tumors show INI1/SMARCB1 loss at the tumor level, which helps pathology and treatment decisions.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Localized disease centers on complete surgery at a sarcoma center, often with radiation assessment. Unresectable or metastatic disease may use chemotherapy, targeted therapy such as tazemetostat, clinical trials, or palliative care.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'It can look like a chronic wound, wart, infection, rheumatoid nodule, or granuloma and may grow slowly without pain. Incision and drainage or wound care without biopsy delays diagnosis.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A small firm subcutaneous nodule on the finger, palm, forearm, foot, knee, or lower leg keeps enlarging.',
+      'A skin sore does not heal or repeatedly breaks down despite antibiotics or wound care.',
+      'The mass is painless or mildly painful, imaging suggests deep soft tissue involvement, or nearby lymph nodes enlarge.',
+      'Pathology suggests epithelioid or sarcomatoid tumor, INI1 loss, or uncertain diagnosis.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating it as infection, cyst, wart, foreign-body granuloma, or rheumatoid nodule for too long.',
+      'Incision, drainage, or small excision without proper pathology and margin review.',
+      'After diagnosis, not completing chest and lymph node staging or not referring to a sarcoma center.',
+      'Focusing only on the primary lesion while missing recurrence, lymph node, or lung spread risk.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
-      'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Sarcoma center',
+      'Orthopedic oncology',
+      'Medical oncology',
+      'Pathology',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record when the mass or sore began, growth speed, pain, ulceration, infection treatment, and surgeries.',
+      'Bring MRI, CT, ultrasound, chest imaging, lymph node tests, and original images.',
+      'Bring biopsy or surgery pathology, immunohistochemistry, INI1/SMARCB1, margins, and molecular tests.',
+      'Summarize function impact, prior radiation or chemotherapy, medicines, and family cancer history.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Core needle or incisional biopsy planned by the sarcoma team.',
+      'MRI of the primary site, chest CT, lymph node ultrasound or biopsy, or PET/CT for staging.',
+      'Pathology immunohistochemistry, including INI1/SMARCB1 expression when appropriate.',
+      'For unresectable or metastatic disease, whether tazemetostat, chemotherapy, radiation, or clinical trials fit.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Has a sarcoma pathologist confirmed the diagnosis, and is INI1 lost?',
+      'Is disease localized, lymph node-positive, or metastatic?',
+      'Can surgery preserve function and achieve clear margins, and is radiation needed?',
+      'If it recurs or spreads, what targeted therapy, chemotherapy, or trial options exist?',
+      'Which sites should be monitored and how often?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Epithelioid sarcoma often affects adolescents and young adults. Distal-type disease commonly appears on the hands, forearms, feet, knees, or lower legs as a slowly enlarging firm nodule, subcutaneous lump, or non-healing sore that may be painless.</p><p>Some patients have multiple nodules, ulceration, pain, or enlarged nearby lymph nodes. Proximal-type disease may occur in the trunk, perineum, or deep soft tissue and can be more aggressive.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis depends on imaging and pathology. MRI helps define local extent; chest CT and lymph node evaluation are used for staging. Biopsy should ideally be planned by the sarcoma team to avoid compromising later surgery.</p><p>Pathology needs immunohistochemistry and careful differential diagnosis, often including INI1/SMARCB1 loss. It can be confused with infectious granulomas, rheumatoid nodules, squamous cell carcinoma, melanoma, and other soft tissue sarcomas.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Localized disease is treated with complete surgical removal and negative margins when possible, while preserving limb function. Radiation may be used before or after surgery depending on size, location, margins, and recurrence risk.</p><p>Metastatic, recurrent, or unresectable disease may be treated with chemotherapy, targeted therapy, radiation, and clinical trials. NCI drug information lists tazemetostat for selected patients with locally advanced or metastatic epithelioid sarcoma that cannot be removed by surgery.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up includes examination of the primary site, local MRI or ultrasound when needed, chest imaging, and lymph node assessment. New lumps, sores, pain, cough, weight loss, or lymph node changes should be reported.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Epithelioid sarcoma is usually not inherited. Because many patients are young, fertility preservation should be discussed before chemotherapy, radiation, or targeted therapy when relevant.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek urgent care for heavy bleeding from an ulcerated tumor, infection with fever, marked limb swelling or pain, shortness of breath, chest pain, serious infection during treatment, or severe medicine reactions.</p>',
   },
   sources: [
     {
@@ -79,15 +85,25 @@ export const diseaseEpithelioidSarcoma: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'Mayo Clinic: Epithelioid sarcoma diagnosis and treatment',
+      type: 'review',
+      url: 'https://www.mayoclinic.org/diagnosis/dxc-20350146',
+    },
+    {
+      name: 'NCI: Tazemetostat Hydrobromide',
+      type: 'official',
+      url: 'https://www.cancer.gov/about-cancer/treatment/drugs/tazemetostathydrobromide',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>It often appears as a slowly enlarging painless subcutaneous nodule, firm mass, or non-healing sore on the hands, feet, forearms, or lower legs, sometimes with lymph node enlargement.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses sarcoma-team-planned biopsy, pathology immunohistochemistry, MRI of the primary site, chest and lymph node staging, and INI1/SMARCB1 assessment when appropriate.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Localized disease centers on complete surgery and selected radiation; recurrent, metastatic, or unresectable disease may use chemotherapy, tazemetostat, radiation, or clinical trials.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Outcome depends on location, size, margins, recurrence, and spread. Early sarcoma-center care, complete staging, and long-term follow-up are important.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +111,11 @@ export const diseaseEpithelioidSarcoma: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 378,
+    name: 'epithelioid-sarcoma-journey.png',
+    url: '/images/diseases/epithelioid-sarcoma-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

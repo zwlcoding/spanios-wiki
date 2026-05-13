@@ -5,72 +5,73 @@ export const diseaseSystemicJuvenileIdiopathicArthritis: DiseaseDraft = {
   ...entity(2074, 'disease-systemic-juvenile-idiopathic-arthritis'),
   name: 'Systemic juvenile idiopathic arthritis',
   nameEn: 'Systemic juvenile idiopathic arthritis',
-  alias: '全身型幼年特发性关节炎; China Second Rare Disease Catalog item 74',
-  slug: 'systemic-juvenile-idiopathic-arthritis',
+  alias:
+    'sJIA; systemic JIA; Still disease related; China Second Rare Disease Catalog item 74',
   oneSentence:
-    "Systemic juvenile idiopathic arthritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Systemic juvenile idiopathic arthritis is a childhood-onset autoinflammatory disease with recurrent high fever, rash, and arthritis, with macrophage activation syndrome as a serious complication.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Systemic juvenile idiopathic arthritis',
+    'A whole-body inflammatory disease in children with fever, rash, and arthritis',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; JIA is a group of childhood arthritis conditions, and systemic JIA is a less common subtype with frequency varying by population and criteria.",
   quickLook: {
     whatItIs:
-      'Systemic juvenile idiopathic arthritis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'sJIA is more than arthritis. Fever often spikes once or twice daily, children may look better between fever peaks, and the salmon-pink rash can come and go with fever.',
     whoToSeeFirst:
-      'Start with Rheumatology and immunology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Fever for more than two weeks with rash, swollen or painful joints, lymph node or liver/spleen enlargement, or very high inflammation markers should be assessed by pediatric rheumatology.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'It is usually not a single-gene inherited disorder and is linked to immune regulation. Genetics is most relevant when family periodic fever or monogenic autoinflammation is suspected.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Treatment aims to control inflammation quickly, protect joints, and prevent MAS. Options include NSAIDs, corticosteroids, methotrexate, and biologics targeting IL-1 or IL-6.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early disease may be treated as infection, drug rash, allergy, or fever of unknown origin. Negative cultures, fever-linked rash, and persistent inflammation should raise rheumatology concern.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Daily high fever in a child, often with transient pink rash, fatigue, and elevated inflammatory markers.',
+      'Joint swelling, pain, morning stiffness, or limited motion, sometimes appearing after fever begins.',
+      'Enlarged lymph nodes, liver or spleen, serositis, chest pain, breathlessness, pericardial or pleural effusion.',
+      'Persistent fever, falling blood counts, very high ferritin, liver abnormalities, or clotting problems suggesting MAS.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Repeated antibiotics for presumed infection without culture or pathogen support.',
+      'Using fever medicine only without tracking joints, ferritin, blood counts, liver tests, and coagulation.',
+      'Stopping treatment too quickly after fever and rash improve, leading to flare or steroid dependence.',
     ],
     firstDepartments: [
-      'Rheumatology and immunology',
       'Pediatric rheumatology',
-      'Immunology clinic',
+      'Pediatric infectious disease to exclude infection',
+      'Emergency or inpatient pediatrics for high fever or suspected MAS',
+      'Rehabilitation medicine',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring daily temperature curves, rash photos, joint locations, and response to fever medicines.',
+      'Bring CBC, CRP/ESR, ferritin, liver tests, coagulation, triglycerides, and infection workup.',
+      'Bring joint ultrasound or MRI, echocardiogram, chest or abdominal imaging, and prior antibiotic or steroid records.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Whether criteria fit systemic JIA and how infection, malignancy, and other autoinflammatory diseases were excluded.',
+      'MAS risk monitoring with ferritin, blood counts, liver enzymes, and coagulation.',
+      'Suitability for IL-1 or IL-6 inhibitors and how vaccines and infection screening should be handled.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is the current goal fever control, steroid taper, joint protection, or MAS prevention?',
+      'Which symptoms suggest MAS or severe infection and need emergency care?',
+      'How should exercise, school, vaccines, and growth monitoring be planned?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>sJIA often begins with recurrent high fever, sometimes with daily peaks, transient salmon-pink rash, fatigue, muscle pain, enlarged lymph nodes, liver or spleen enlargement, or serositis. Arthritis may be subtle early or later cause swelling, pain, morning stiffness, and limited motion.</p><p>The key acute complication is macrophage activation syndrome, with persistent fever, poor appearance, falling blood counts, very high ferritin, liver and coagulation abnormalities, and potential life-threatening inflammation.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis is based on the fever pattern, rash, joint disease, and laboratory inflammation while excluding infection, leukemia or lymphoma, Kawasaki disease, monogenic autoinflammatory disease, and other rheumatic diseases.</p><p>Tests include CBC, CRP/ESR, ferritin, liver tests, coagulation, triglycerides, microbiology, joint imaging, and echocardiography. Disease activity and MAS risk require serial assessment.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment depends on inflammation and organ involvement. Mild disease may use short-term NSAIDs, but many children need corticosteroids or earlier biologic therapy. IL-1 and IL-6 pathway inhibitors can control fever, inflammation, and joint damage.</p><p>Infection screening, vaccine planning, and adverse-effect monitoring are part of treatment. Suspected MAS requires rapid inpatient care, often with high-dose steroids, cyclosporine, or biologic therapy.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up tracks fever relapse, joint range of motion, inflammatory markers, ferritin, growth, bone density, eye screening, medication side effects, and infection risk. Rehabilitation helps maintain function.</p><p>Families should learn MAS red flags and keep records of fever, rash, medicines, and lab trends.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>sJIA is usually not a single-gene inherited disease. Family periodic fever, very early severe inflammation, or unusual treatment response may prompt autoinflammatory gene testing discussion.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Urgent care is needed for persistent high fever, poor responsiveness, petechiae or bruising, breathing difficulty, chest pain, severe abdominal pain, jaundice, seizures, reduced urine, or abnormal ferritin, coagulation, or blood counts flagged by the clinician.</p>',
   },
   sources: [
     {
@@ -78,22 +79,38 @@ export const diseaseSystemicJuvenileIdiopathicArthritis: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Juvenile idiopathic arthritis',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/juvenile-idiopathic-arthritis',
+    },
+    {
+      name: 'Cleveland Clinic: Juvenile Idiopathic Arthritis',
+      type: 'review',
+      url: 'https://my.clevelandclinic.org/health/diseases/10370-juvenile-idiopathic-arthritis',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Features include daily high fever, transient rash, joint swelling or morning stiffness, lymph node or liver/spleen enlargement, serositis, and high inflammation; MAS can occur.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines the childhood fever-rash-arthritis pattern, inflammatory tests, and imaging while excluding infection, malignancy, Kawasaki disease, and other autoinflammatory or rheumatic disease.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment may include NSAIDs, corticosteroids, methotrexate, and IL-1 or IL-6 inhibitors; suspected MAS requires rapid inpatient treatment.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Early inflammation control reduces joint damage and steroid toxicity. The course may remit, relapse, or become chronic arthritis, so long-term follow-up is needed.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+  slug: 'systemic-juvenile-idiopathic-arthritis',
   categorySlug: 'immunological-rheumatologic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 428,
+    name: 'systemic-juvenile-idiopathic-arthritis-journey.png',
+    url: '/images/diseases/systemic-juvenile-idiopathic-arthritis-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

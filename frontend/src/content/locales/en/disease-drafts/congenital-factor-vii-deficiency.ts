@@ -5,72 +5,80 @@ export const diseaseCongenitalFactorViiDeficiency: DiseaseDraft = {
   ...entity(2017, 'disease-congenital-factor-vii-deficiency'),
   name: 'Congenital factor VII deficiency',
   nameEn: 'Congenital factor VII deficiency',
-  alias: '先天性凝血因子VII缺乏症; China Second Rare Disease Catalog item 17',
+  alias:
+    'F7 deficiency, hypoproconvertinemia, Alexander disease, China Second Rare Disease Catalog item 17',
   slug: 'congenital-factor-vii-deficiency',
   oneSentence:
-    "Congenital factor VII deficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Congenital factor VII deficiency is a rare inherited bleeding disorder caused by F7 gene variants, ranging from no symptoms to nosebleeds, heavy menstrual bleeding, surgical bleeding, or rarely life-threatening bleeding.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Congenital factor VII deficiency',
+    'An inherited clotting factor condition that can make bleeding harder to stop',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 300,000 to 500,000 people and describes it as one of the more common rare clotting factor deficiencies.",
   quickLook: {
     whatItIs:
-      'Congenital factor VII deficiency is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Factor VII is part of the clotting cascade. In congenital deficiency, the extrinsic pathway is affected, often causing prolonged PT/INR with a usually normal APTT.',
     whoToSeeFirst:
-      'Start with Hematology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Recurrent nosebleeds, gum bleeding, easy bruising, prolonged bleeding after dental work or surgery, or heavy menstrual bleeding should be assessed by hematology or a coagulation clinic. Severe bleeding needs emergency care.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'It is usually autosomal recessive and related to the F7 gene. Parents may be healthy carriers, so genetic counseling and family assessment are useful after diagnosis.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Mild disease may need treatment only for bleeding, surgery, trauma, childbirth, or dental work. Severe or frequent bleeding may require recombinant activated factor VII, prothrombin complex concentrate, plasma, antifibrinolytics, or prophylaxis.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Some people have little everyday bleeding and are found only during preoperative testing. Prolonged PT may first be attributed to liver disease, vitamin K deficiency, or anticoagulants.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Repeated nosebleeds, gum bleeding, easy bruising, or bleeding that lasts longer than expected after minor injury.',
+      'Significant bleeding after dental extraction, surgery, circumcision, childbirth, or postpartum.',
+      'Heavy or prolonged menstrual bleeding with anemia or repeated iron treatment.',
+      'Laboratory tests show prolonged PT/INR with normal or near-normal APTT and usually normal platelets.',
+      'Umbilical stump bleeding, intracranial bleeding, gastrointestinal bleeding, or joint or muscle bleeding in infancy requires urgent attention.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating nose, gum, or menstrual bleeding without coagulation screening.',
+      'Giving vitamin K for prolonged PT without checking factor VII activity.',
+      'Proceeding with surgery, dental work, or childbirth without a hemostasis plan.',
+      'Not warning patients about aspirin, NSAIDs, intramuscular injections, or other avoidable bleeding risks.',
     ],
     firstDepartments: [
       'Hematology',
+      'Coagulation or rare bleeding disorder clinic',
       'Pediatric hematology',
-      'Coagulation or rare blood disease clinic',
+      'High-risk obstetrics',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record all bleeding events, including site, duration, trigger, transfusion, and hemostatic treatment.',
+      'Bring PT/INR, APTT, fibrinogen, platelets, liver tests, vitamin K treatment records, and factor activity results.',
+      'Summarize dental work, surgeries, childbirth, menstrual bleeding, anemia treatment, and family bleeding history.',
+      'List anticoagulants, antiplatelet medicines, pain medicines, and supplements.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Repeat coagulation screening: PT/INR, APTT, fibrinogen, and platelet count.',
+      'Factor VII activity, and sometimes other factor assays to rule out common pathway problems.',
+      'F7 genetic testing and family confirmation for genetic counseling.',
+      'Imaging or site-specific assessment for severe bleeding such as head, joint, muscle, urinary, or gastrointestinal bleeding.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'What is my factor VII activity, and how well does it predict my actual bleeding risk?',
+      'Do I need regular treatment or only treatment for bleeding, surgery, dental work, or childbirth?',
+      'Which medicines and procedures should I avoid, and how should injections or vaccines be handled?',
+      'Should relatives be tested, and how should pregnancy or future children be planned?',
+      'What should I do for nosebleeds, head injury, black stools, blood in urine, or joint swelling?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Congenital factor VII deficiency varies widely. Some people never have notable bleeding. Common symptoms include nosebleeds, gum bleeding, easy bruising, prolonged bleeding after injury or surgery, blood in urine, joint or muscle bleeding, and heavy menstrual or postpartum bleeding.</p><p>Severe cases may present in infancy with umbilical stump bleeding, intracranial bleeding, or gastrointestinal bleeding. Bleeding risk does not always match factor VII activity perfectly, so personal bleeding history matters.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>The typical laboratory clue is prolonged PT/INR with a usually normal APTT. Diagnosis requires factor VII activity testing and exclusion of vitamin K deficiency, liver disease, warfarin or other anticoagulants, acquired factor VII deficiency, and other clotting factor problems.</p><p>F7 genetic testing can support the congenital diagnosis and family counseling, but treatment decisions still combine bleeding history, factor activity, age, surgery or pregnancy plans, and medication access.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment is tailored to bleeding risk and the situation. Mild disease may require treatment only for surgery, dental work, trauma, childbirth, or active bleeding. Options include recombinant activated factor VII, prothrombin complex concentrate, plasma, and antifibrinolytic medicines, depending on bleeding site, severity, and thrombosis risk.</p><p>People with severe or frequent bleeding may need prophylaxis. Patients should avoid self-medicating with drugs that increase bleeding risk and should contact hematology before invasive procedures.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care includes a personal bleeding record, emergency card or diagnosis letter, dental and surgery plans, menstrual and pregnancy planning, anemia monitoring, and periodic review of factor activity and treatment response.</p><p>Children should be followed by a coagulation center, and schools or caregivers should know which injuries or symptoms require urgent care.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>The condition is usually autosomal recessive. Parents are often carriers, and sibling or child risk depends on partner and family variant status. Genetic counseling and selected relative testing are recommended after diagnosis.</p><p>Women with the condition need a delivery and postpartum bleeding plan jointly managed by hematology and obstetrics.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek emergency care for head injury followed by headache, vomiting, confusion, or seizures; black stools or vomiting blood; visible blood in urine; rapidly swollen painful joints or muscles; nosebleeds not controlled by pressure; postpartum bleeding; or any uncontrolled bleeding. State clearly that factor VII deficiency is present.</p>',
   },
   sources: [
     {
@@ -78,15 +86,25 @@ export const diseaseCongenitalFactorViiDeficiency: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Factor VII deficiency',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/factor-vii-deficiency/',
+    },
+    {
+      name: 'Great Ormond Street Hospital: Factor VII deficiency',
+      type: 'review',
+      url: 'https://www.gosh.nhs.uk/conditions-and-treatments/conditions-we-treat/factor-vii-deficiency/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Symptoms range from none to nosebleeds, gum bleeding, easy bruising, surgical or injury-related bleeding, blood in urine, joint or muscle bleeding, heavy periods, and rare intracranial or gastrointestinal bleeding.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses bleeding history, prolonged PT/INR with usually normal APTT, low factor VII activity, F7 genetic testing when useful, and exclusion of acquired causes.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment may include recombinant activated factor VII, prothrombin complex concentrate, plasma, antifibrinolytics, prophylaxis, and procedure-specific plans for surgery, dental work, and childbirth.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Many mildly affected people do well with situation-based bleeding plans, while severe bleeding phenotypes require long-term hematology follow-up and an emergency plan.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +112,15 @@ export const diseaseCongenitalFactorViiDeficiency: DiseaseDraft = {
   categorySlug: 'hematological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 371,
+    name: 'congenital-factor-vii-deficiency-journey.png',
+    url: '/images/diseases/congenital-factor-vii-deficiency-journey.png',
+  },
+  tagSlugs: [
+    'second-rare-disease-catalog',
+    'coagulation-care',
+    'genetic-counseling',
+  ],
 };

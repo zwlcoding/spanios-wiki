@@ -5,72 +5,76 @@ export const diseaseMonogenicNonSyndromicObesity: DiseaseDraft = {
   ...entity(2050, 'disease-monogenic-non-syndromic-obesity'),
   name: 'Monogenic non-syndromic obesity',
   nameEn: 'Monogenic non-syndromic obesity',
-  alias: '单基因非综合征性肥胖; China Second Rare Disease Catalog item 50',
+  alias:
+    'Monogenic obesity; non-syndromic genetic obesity; China Second Rare Disease Catalog item 50',
   slug: 'monogenic-non-syndromic-obesity',
   oneSentence:
-    "Monogenic non-syndromic obesity is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-  plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Monogenic non-syndromic obesity',
+    'Monogenic non-syndromic obesity is early-onset severe obesity caused by a single-gene change that often affects hunger, fullness, and energy regulation rather than willpower.',
+  plainName: 'Inherited early-onset obesity often marked by intense hunger',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it is rare overall, but should be considered in children with severe rapid weight gain before age 5 and persistent hyperphagia.",
   quickLook: {
     whatItIs:
-      'Monogenic non-syndromic obesity is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Many forms affect the leptin-melanocortin pathway. A child may be normal weight at birth but develop rapid early weight gain, poor satiety, and repeated food-seeking.',
     whoToSeeFirst:
-      'Start with Endocrinology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Start with pediatric endocrinology or endocrinology and metabolism, with nutrition, psychology, and medical genetics support. The goal is to identify biology and reduce blame.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Genes can include LEP, LEPR, POMC, PCSK1, MC4R, SIM1, and others. Inheritance depends on the gene, and results may affect family testing and treatment options.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Care includes non-stigmatizing lifestyle support, complication screening, and psychological and family support. Some people with POMC, PCSK1, or LEPR deficiency may be eligible for setmelanotide where available.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Families may be told the problem is simply overeating or poor self-control, while intense hunger, early onset, family history, and endocrine clues are missed.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Rapid, severe weight gain before age 5 with intense persistent hunger, poor satiety, or repeated food-seeking.',
+      'The family has made sustained diet and activity changes, but weight gain and hunger remain unusually strong.',
+      'Endocrine clues such as red hair and adrenal issues for POMC, hypoglycemia or chronic diarrhea for PCSK1, or puberty or immune issues for LEPR.',
+      'Family history of early severe obesity, consanguinity, or similarly affected siblings.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Focusing on willpower or blaming the family instead of evaluating biology behind early severe obesity and hyperphagia.',
+      'Giving general weight advice without screening for sleep apnea, fatty liver, glucose metabolism, blood pressure, and mental health.',
+      'Assuming all genetic obesity is syndromic and overlooking single-gene non-syndromic forms without obvious malformations or intellectual disability.',
     ],
     firstDepartments: [
-      'Endocrinology',
-      'Metabolic genetics clinic',
-      'Pediatric endocrinology/metabolism',
+      'Pediatric endocrinology',
+      'Endocrinology and metabolism',
+      'Medical genetics',
+      'Nutrition and psychology support clinic',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring height, weight, and BMI curves from birth onward and note the age when rapid gain began.',
+      'Record hunger, food-seeking, night eating, satiety, family interventions tried, and barriers to activity.',
+      'Bring glucose, insulin, lipid, liver, thyroid, cortisol, sleep breathing, and liver imaging results.',
+      'Prepare family weight history, consanguinity, puberty, immune, diarrhea, hypoglycemia, and adrenal history.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Growth chart review and endocrine evaluation to exclude hypothyroidism, Cushing syndrome, hypothalamic injury, and medication-related weight gain.',
+      'Genetic testing for monogenic obesity genes such as LEP, LEPR, POMC, PCSK1, MC4R, and SIM1.',
+      'Complication screening: glucose tolerance or HbA1c, lipids, liver tests and fatty liver, blood pressure, sleep apnea, joints, and mental health.',
+      'If a treatable pathway is found, whether setmelanotide or a clinical study is available and appropriate.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Do these signs suggest monogenic obesity rather than common polygenic or syndromic obesity?',
+      'How would genetic results change treatment, family testing, and reproductive counseling?',
+      'How can we manage intense hunger while protecting the child from shame and anxiety?',
+      'Which complications should be screened for, and are targeted medicines or studies available?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Monogenic non-syndromic obesity usually causes rapid severe weight gain beginning in infancy or early childhood, often with marked hyperphagia, poor satiety, repeated food-seeking, and hunger soon after eating. There may be no obvious syndromic facial features or multiple malformations, which can lead to misunderstanding.</p><p>Different genes can bring different clues. POMC deficiency may involve red hair, pale skin, and adrenal insufficiency; PCSK1 deficiency can include hypoglycemia, diarrhea, or endocrine problems; LEPR deficiency may involve puberty or immune issues. MC4R-related obesity is relatively more common and can feature early severe obesity and accelerated linear growth.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis starts with the growth curve: age at onset, BMI trajectory, hunger pattern, and family history are central. Clinicians also exclude hypothyroidism, Cushing syndrome, hypothalamic disease, medication-related weight gain, syndromic obesity, and common polygenic obesity.</p><p>Genetic testing is worth discussing when severe obesity starts before age 5, hyperphagia is prominent, family clustering is present, or endocrine clues exist. Results should be interpreted by genetics or endocrinology teams because gene, variant classification, and inheritance pattern affect diagnostic certainty, relative testing, and treatment choices.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Care should not start with blame. Core management includes structured nutrition, supportive home environments, activity matched to ability, sleep support, psychological care, and school coordination, while screening for glucose abnormalities, fatty liver, high blood pressure, dyslipidemia, sleep apnea, joint pain, and emotional distress.</p><p>Targeted treatment is changing care for some gene-defined forms. Setmelanotide has been approved in some countries for genetically confirmed obesity due to POMC, PCSK1, or LEPR deficiency; eligibility depends on the genetic result, age, local approval, and access. Severe cases may also need individualized discussion of medicines, metabolic surgery, or research options.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care should aim to reduce complications and improve quality of life, not focus only on the number on the scale. Follow-up can track height, weight, waist, blood pressure, sleep, liver and metabolic markers, bullying, eating distress, anxiety, depression, and family stress.</p><p>Families can work with clinicians on realistic environmental strategies such as regular meals, reducing high-trigger food exposure, protecting sleep, and choosing activity the child can sustain, while avoiding shame, punishment, or extreme dieting.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Genetic risk depends on the specific gene and inheritance pattern. In autosomal recessive forms, parents may both be carriers; in autosomal dominant forms, relatives may have variable expression. After diagnosis, family testing, carrier counseling, and reproductive options should be discussed.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Urgent care is needed for severe hypoglycemia, altered consciousness, dehydration, persistent vomiting or diarrhea, suspected adrenal crisis, markedly worsening sleep-related breathing, chest pain, or mental health crisis. People using targeted or other weight-management medicines should contact the care team promptly for severe allergy, major mood change, or other serious side effects flagged by their clinician.</p>',
   },
   sources: [
     {
@@ -78,15 +82,20 @@ export const diseaseMonogenicNonSyndromicObesity: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'U.S. FDA: FDA approves first treatment for weight management for people with certain rare genetic conditions',
+      type: 'official',
+      url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-weight-management-people-certain-rare-genetic-conditions',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Main features are rapid severe weight gain before age 5, intense hunger, poor satiety, and repeated food-seeking, sometimes with gene-specific endocrine or metabolic clues.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines growth curves, hyperphagia pattern, family history, endocrine evaluation, and testing of genes such as LEP, LEPR, POMC, PCSK1, MC4R, and SIM1, while excluding syndromic or secondary obesity.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care includes non-stigmatizing lifestyle and family support, complication screening, mental health support, and targeted treatment assessment such as setmelanotide for some genetically confirmed forms where available.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Long-term outcome depends on the gene, complication control, family and psychological support, and access to targeted therapy. Early diagnosis can reduce blame and avoidable delay.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +103,11 @@ export const diseaseMonogenicNonSyndromicObesity: DiseaseDraft = {
   categorySlug: 'metabolic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 404,
+    name: 'monogenic-non-syndromic-obesity-journey.png',
+    url: '/images/diseases/monogenic-non-syndromic-obesity-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'endocrine', 'genetic-counseling'],
 };

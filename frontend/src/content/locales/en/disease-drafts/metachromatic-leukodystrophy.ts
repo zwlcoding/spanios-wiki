@@ -5,73 +5,77 @@ export const diseaseMetachromaticLeukodystrophy: DiseaseDraft = {
   ...entity(2049, 'disease-metachromatic-leukodystrophy'),
   name: 'Metachromatic leukodystrophy',
   nameEn: 'Metachromatic leukodystrophy',
-  alias: '异染性脑白质营养不良; China Second Rare Disease Catalog item 49',
+  alias:
+    'MLD; arylsulfatase A deficiency; China Second Rare Disease Catalog item 49',
   slug: 'metachromatic-leukodystrophy',
   oneSentence:
-    "Metachromatic leukodystrophy is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Metachromatic leukodystrophy is usually an ARSA-related lysosomal storage disease in which sulfatides build up and progressively damage central and peripheral nerve myelin.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Metachromatic leukodystrophy',
+    'An inherited white-matter disease that progressively damages myelin',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; international estimates are about 1 in 40,000 to 160,000 people, with higher rates in some genetically isolated groups.",
   quickLook: {
     whatItIs:
-      'Metachromatic leukodystrophy is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'MLD is caused by deficient arylsulfatase A function, leading to sulfatide buildup that affects walking, language, learning, behavior, swallowing, vision, hearing, and peripheral nerves.',
     whoToSeeFirst:
-      'Start with Neurology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Children with regression, gait change, repeated falls, or learning and behavior changes should see pediatric neurology. Adults with psychiatric or cognitive onset need neurology and psychiatry coordination.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'It is usually autosomal recessive, most often involving ARSA and rarely PSAP. Parents are typically carriers, so recurrence risk needs genetic counseling.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'The treatment window matters. Presymptomatic or very early children may be assessed for stem cell transplant or gene therapy, while advanced disease relies more on symptom, rehabilitation, nutrition, and comfort care.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early disease can look like cerebral palsy, developmental delay, peripheral neuropathy, school problems, behavior disorders, or psychiatric illness. Low ARSA activity also needs confirmation to avoid pseudo-deficiency misdiagnosis.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A child who had learned to walk begins falling, develops gait problems, tone changes, or loses language or motor skills.',
+      'A school-age child develops falling grades, attention or behavior change, plus movement or peripheral nerve problems.',
+      'A teenager or adult has unexplained psychiatric symptoms, cognitive decline, or work or school decline with white-matter MRI changes.',
+      'Family history of MLD, leukodystrophy, early neurodegeneration, or unexplained childhood death.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only as cerebral palsy, autism, psychological illness, or ordinary neuropathy without repeat brain MRI and metabolic or genetic testing.',
+      'Diagnosing MLD from low ARSA activity alone without urine sulfatides and genetic confirmation.',
+      'Referral after major functional loss, when transplant or gene therapy windows may have closed.',
     ],
     firstDepartments: [
-      'Neurology',
       'Pediatric neurology',
+      'Neurology',
+      'Medical genetics',
       'Rehabilitation medicine',
-      'Genetic counseling',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Prepare a developmental and regression timeline, walking and language changes, school or behavior changes, seizures, and swallowing problems.',
+      'Bring brain MRI images, nerve conduction or EMG studies, eye and hearing evaluations, and metabolic screening results.',
+      'Record family history, consanguinity, sibling symptoms, miscarriages, or childhood deaths.',
+      'If treatment windows are being discussed, bring recent functional assessments and the pace of decline.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Brain MRI white-matter pattern and peripheral nerve conduction testing.',
+      'Arylsulfatase A enzyme activity, urine sulfatides, and ARSA/PSAP gene testing.',
+      'How pseudo-ARSA deficiency will be ruled out.',
+      'Whether stem cell transplant or gene therapy evaluation is still appropriate and what baseline tests are required.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is this late-infantile, juvenile, or adult MLD, and what stage is it now?',
+      'Is the diagnosis supported by enzyme, urine sulfatide, and genetic evidence, and has pseudo-deficiency been excluded?',
+      'Is there still a transplant or gene therapy evaluation window? If not, what supportive care should start now?',
+      'What carrier testing, prenatal diagnosis, or preimplantation counseling should relatives consider?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>MLD is often grouped by age at onset: late-infantile, juvenile, and adult. Late-infantile disease commonly causes gait problems, repeated falls, language or motor regression, tone changes, and peripheral neuropathy. Juvenile disease may begin with school decline, behavior change, and worsening coordination.</p><p>Adult-onset disease can begin with psychiatric symptoms, personality change, cognitive decline, or reduced work or school function. Progression may bring seizures, swallowing difficulty, vision or hearing loss, spasticity, pain, nutrition problems, and severe disability.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines the regressive clinical course, brain MRI white-matter changes, peripheral nerve involvement, ARSA enzyme activity, urine sulfatides, and genetic testing. ARSA is the most common gene, while PSAP accounts for rare cases.</p><p>Low ARSA activity alone is not enough, because pseudoarylsulfatase deficiency can lower enzyme activity without causing classic MLD. Clinicians usually integrate enzyme, urine sulfatide, and pathogenic variant evidence, while excluding other leukodystrophies, mitochondrial disease, inflammatory demyelination, and psychiatric disorders.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment options depend strongly on disease stage. Some presymptomatic or very early, more slowly progressive patients may be evaluated for hematopoietic stem cell transplant at experienced centers. In some countries, autologous hematopoietic stem cell gene therapy is approved for eligible children, but access, criteria, and cost must be checked case by case.</p><p>For people with clear neurologic progression, care focuses on seizure control, tone and pain management, swallowing and nutrition support, respiratory care, physical, occupational, and speech therapy, assistive devices, psychological support, and comfort-focused care. Early goals-of-care planning can reduce repeated crises.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term follow-up often involves neurology, genetics, rehabilitation, nutrition, pulmonology, gastroenterology, orthopedics, and palliative support. Caregivers can track swallowing, weight, sleep, pain, spasticity, seizures, and infections to guide adjustments.</p><p>Families may need school or workplace support, rehabilitation resources, nursing training, and advance care planning. Preventing aspiration, pressure injury, malnutrition, and uncontrolled pain becomes increasingly important as disease progresses.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>MLD is usually autosomal recessive. When both parents are carriers, each pregnancy has a 25% chance of being affected. After diagnosis, parents, siblings, and reproductive-age relatives should be offered genetic counseling about carrier testing, prenatal diagnosis, and preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Urgent care is needed for repeated choking, aspiration pneumonia, breathing difficulty, persistent fever, status epilepticus, severe dehydration, inability to feed, uncontrolled pain, or major change in consciousness. People after transplant or gene therapy should also follow center-specific instructions for infection, blood count, and treatment-related risks.</p>',
   },
   sources: [
     {
@@ -79,15 +83,25 @@ export const diseaseMetachromaticLeukodystrophy: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Metachromatic leukodystrophy',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/metachromatic-leukodystrophy/',
+    },
+    {
+      name: 'U.S. FDA: FDA Approves First Gene Therapy for Children with Metachromatic Leukodystrophy',
+      type: 'official',
+      url: 'https://www.fda.gov/news-events/press-announcements/fda-approves-first-gene-therapy-children-metachromatic-leukodystrophy',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Symptoms can include motor or language regression, gait problems, learning and behavior change, peripheral neuropathy, seizures, swallowing difficulty, vision or hearing loss, and adult psychiatric or cognitive changes.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines brain MRI, peripheral nerve evaluation, ARSA enzyme activity, urine sulfatides, and ARSA/PSAP gene testing, with pseudo-ARSA deficiency excluded.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Presymptomatic or very early patients may be assessed for stem cell transplant or eligible gene therapy; advanced disease focuses on seizures, tone, swallowing, nutrition, respiration, rehabilitation, and comfort care.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>MLD is usually progressive, and earlier-onset forms often decline faster. Early recognition of treatment windows and ongoing supportive care strongly affect function and quality of life.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +109,11 @@ export const diseaseMetachromaticLeukodystrophy: DiseaseDraft = {
   categorySlug: 'neurological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 403,
+    name: 'metachromatic-leukodystrophy-journey.png',
+    url: '/images/diseases/metachromatic-leukodystrophy-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

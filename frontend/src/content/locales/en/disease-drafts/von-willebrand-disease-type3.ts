@@ -2,75 +2,76 @@ import { entity } from '@/content/data/helpers';
 import type { DiseaseDraft } from '@/content/data/types';
 
 export const diseaseVonWillebrandDiseaseType3: DiseaseDraft = {
-  ...entity(2084, 'disease-von-willebrand-disease-type 3'),
+  ...entity(2084, 'disease-von-willebrand-disease-type3'),
   name: 'Von Willebrand disease type 3',
   nameEn: 'Von Willebrand disease type 3',
-  alias: '血管性血友病Ⅲ型; China Second Rare Disease Catalog item 84',
-  slug: 'von-willebrand-disease-type 3',
+  alias:
+    'VWD type 3; severe von Willebrand disease; China Second Rare Disease Catalog item 84',
+  slug: 'von-willebrand-disease-type3',
   oneSentence:
-    "Von Willebrand disease type 3 is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Von Willebrand disease type 3 is the rarest and most severe VWD type, with little or no functional VWF and often low factor VIII, causing recurrent mucosal, soft tissue, joint, and procedure-related bleeding from childhood.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Von Willebrand disease type 3',
+    'An inherited bleeding disorder that causes recurrent bleeding from childhood and needs coagulation specialist care',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; VWD overall is common, but type 3 is rare and usually autosomal recessive.",
   quickLook: {
     whatItIs:
-      'Von Willebrand disease type 3 is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'VWF helps platelets stick and protects factor VIII. In type 3, VWF is extremely low or absent, so nosebleeds, gum bleeding, heavy periods, and hemophilia-like joint or muscle bleeds can occur.',
     whoToSeeFirst:
-      'Start with Hematology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Recurrent childhood nosebleeds, gum bleeding, bruising, prolonged wound bleeding, heavy menstrual bleeding, or abnormal bleeding after dental work, surgery, or childbirth should be assessed by hematology.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Type 3 is usually autosomal recessive, and parents may be carriers. Patients and relatives planning pregnancy should ask about genetic counseling and carrier testing.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Treatment aims to prevent and control bleeding, usually with VWF-containing factor concentrates. Tranexamic acid may help mucosal bleeding; desmopressin is usually limited or ineffective in type 3 and needs specialist judgment.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Bleeding may be dismissed as frequent nosebleeds or heavy periods, or confused with hemophilia A. Testing only factor VIII without VWF antigen and activity can miss the diagnosis.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Recurrent childhood nosebleeds, gum bleeding, bruising, or prolonged bleeding after cuts or dental work.',
+      'Heavy menstrual bleeding, postpartum bleeding, joint or muscle bleeding, or anemia.',
+      'Family history of consanguinity, siblings with bleeding, VWD, or hemophilia-like illness.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating one organ or one episode without connecting the long-term pattern, family history, and prior results.',
+      'Watching common-disease explanations for too long without referral to the right specialty or rare disease clinic.',
+      'Not keeping imaging, pathology, genetic, treatment, and follow-up records, leading to repeated workups and delays.',
     ],
     firstDepartments: [
-      'Hematology',
+      'Hematology/coagulation clinic',
       'Pediatric hematology',
-      'Coagulation or rare blood disease clinic',
+      'High-risk gynecology/obstetrics',
+      'Medical genetics',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring bleeding history, surgical/dental/childbirth bleeding records, transfusion and factor use history.',
+      'Bring CBC, ferritin, APTT, FVIII, VWF antigen, VWF activity, multimer testing, and genetic testing.',
+      'Record menstrual bleeding, anemia, joint or muscle bleeding, and family bleeding history.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Whether this is type 3 VWD and whether hemophilia A or acquired VWD still needs exclusion.',
+      'Whether a home, school, or workplace bleeding plan and VWF concentrate access are needed.',
+      'How bleeding will be prevented before surgery, dental work, pregnancy, childbirth, and heavy periods.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'What are my baseline VWF and FVIII levels, and do I need prophylaxis or on-demand treatment?',
+      'Can I use tranexamic acid, menstrual management, or iron, and which medicines should I avoid?',
+      'How should relatives and future children be assessed for genetic risk?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Type 3 VWD can cause recurrent nosebleeds, gum bleeding, bruising, prolonged bleeding after wounds, dental work or surgery, heavy menstrual bleeding, and iron deficiency anemia from childhood. Severe cases can have muscle hematomas, joint bleeds, gastrointestinal bleeding, or major postpartum bleeding.</p><p>Because VWF is extremely low, FVIII can also be low, so symptoms may resemble hemophilia A, but all sexes can be affected.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis needs complete coagulation testing: CBC and iron status, APTT, FVIII, VWF antigen, VWF activity, sometimes multimer analysis, and VWF genetic testing. Type 3 usually has extremely low or undetectable VWF and low FVIII.</p><p>Clinicians distinguish hemophilia A, platelet function disorders, other VWD types, and acquired VWD. Once confirmed, patients need a personal bleeding emergency and peri-procedure plan.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Main treatment is VWF-containing factor concentrate for acute bleeding and before surgery, dental work, or childbirth; prophylaxis may be considered for recurrent severe bleeding. Tranexamic acid can support mucosal bleeding and heavy periods.</p><p>Desmopressin is usually not suitable or insufficient for type 3 and should be judged by a coagulation specialist. Avoid unnecessary aspirin and NSAIDs that increase bleeding risk.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care tracks bleeding frequency, joint health, anemia and iron deficiency, menstrual management, factor use, inhibitor or allergic reaction risk, and surgery, dental, sport, and travel planning.</p><p>Patients should carry diagnosis information and tell emergency, dental, obstetric, and anesthesia teams about type 3 VWD.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Type 3 VWD is usually autosomal recessive. Patients, partners, and relatives can consider carrier testing after genetic counseling. Pregnancy and childbirth need coordinated hematology and obstetric planning for factor replacement and postpartum bleeding prevention.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Emergency care is needed for head injury, persistent nosebleed, vomiting blood or black stools, blood in urine, rapidly swelling painful joint or muscle, very heavy periods with dizziness, post-surgical bleeding, or pregnancy/postpartum bleeding.</p>',
   },
   sources: [
     {
@@ -78,15 +79,20 @@ export const diseaseVonWillebrandDiseaseType3: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'CDC: About von Willebrand disease',
+      type: 'official',
+      url: 'https://www.cdc.gov/von-willebrand/about/index.html',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Features include recurrent nosebleeds, gum bleeding, bruising, prolonged wound or surgical bleeding, heavy periods, anemia, muscle hematomas, joint bleeding, and gastrointestinal bleeding.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines bleeding and family history with APTT, FVIII, VWF antigen and activity, multimer testing, and VWF genetic testing while distinguishing hemophilia A.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment mainly uses VWF-containing factor concentrates to prevent and control bleeding, with tranexamic acid for selected mucosal bleeding and planned coverage for procedures and childbirth.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Specialist care reduces severe bleeding and joint damage; unplanned surgery, childbirth, or trauma can carry high bleeding risk.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +100,11 @@ export const diseaseVonWillebrandDiseaseType3: DiseaseDraft = {
   categorySlug: 'hematological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 438,
+    name: 'von-willebrand-disease-type3-journey.png',
+    url: '/images/diseases/von-willebrand-disease-type3-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

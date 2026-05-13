@@ -5,73 +5,78 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
   ...entity(2028, 'disease-fibrodysplasia-ossificans-progressiva'),
   name: 'Fibrodysplasia ossificans progressiva',
   nameEn: 'Fibrodysplasia ossificans progressiva',
-  alias: '进行性骨化性纤维发育不良; China Second Rare Disease Catalog item 28',
+  alias:
+    'FOP, myositis ossificans progressiva, ACVR1-related heterotopic ossification, China Second Rare Disease Catalog item 28',
   slug: 'fibrodysplasia-ossificans-progressiva',
   oneSentence:
-    "Fibrodysplasia ossificans progressiva is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Fibrodysplasia ossificans progressiva is a rare ACVR1-related connective tissue disorder in which soft tissues gradually form extra bone after painful flare-ups, limiting movement over time.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Fibrodysplasia ossificans progressiva',
+    'A genetic condition in which soft tissues gradually form a second skeleton',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics describes an estimated frequency of about 1 in 1 million people worldwide, with several hundred reported cases.",
   quickLook: {
     whatItIs:
-      'Fibrodysplasia ossificans progressiva is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'The classic clue is malformed big toes at birth, followed in childhood by painful swelling of the neck, shoulders, back, or limbs that later turns into heterotopic bone. Trauma, injections, surgery, biopsy, and viral illness can trigger flare-ups.',
     whoToSeeFirst:
-      'Start with Orthopedics or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'A child with malformed big toes and recurrent soft-tissue lumps or stiffness should see an FOP-aware orthopedic, pediatric orthopedic, or genetics team. Avoid unnecessary biopsy, surgery, and intramuscular injections when FOP is suspected.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'FOP is usually caused by a new ACVR1 variant and follows an autosomal dominant mechanism. A small number of cases are inherited, so genetic counseling is still important.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Management focuses on avoiding trauma, treating flare-ups, preserving function, and protecting breathing. Palovarotene is approved in some countries for reducing new heterotopic ossification in eligible patients, but age limits, risks, and access require specialist review.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early lumps can be mistaken for cancer, hemangioma, fibromatosis, dermatomyositis, or post-traumatic hematoma. Biopsy or surgery can worsen ossification.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Malformed, short, bent, or deviated big toes are present at birth or in infancy.',
+      'A child develops recurrent painful soft-tissue swelling in the neck, back, shoulders, trunk, or limbs followed by hardening and loss of movement.',
+      'Stiffness or new bone formation worsens after minor falls, intramuscular injections, dental procedures, or infections.',
+      'Imaging shows heterotopic ossification without a better explanation such as major trauma, cancer, or infection.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Biopsying or removing early lumps as if they were tumors, which can trigger more bone formation.',
+      'Treating it as routine myositis, hematoma, or fibromatosis without checking the toes and ACVR1.',
+      'Using intramuscular injections, deep massage, forceful stretching, or high-risk procedures unnecessarily.',
+      'Focusing only on imaging and missing airway, dental, vaccination, fall-prevention, and home-adaptation planning.',
     ],
     firstDepartments: [
       'Orthopedics',
       'Pediatric orthopedics',
-      'Genetic counseling',
+      'Medical genetics',
       'Rehabilitation medicine',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Photograph toe, thumb, or skeletal findings and keep a timeline of each swelling flare-up.',
+      'Bring X-ray, CT, MRI, ultrasound, surgery, and biopsy records; state clearly that FOP is suspected to avoid repeat biopsy.',
+      'List triggers such as falls, injections, surgery, dental work, viral illness, and vaccination route.',
+      'Track jaw opening, swallowing, breathing, sleep, falls, pain, and daily function.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'ACVR1 genetic testing, especially when the clinical picture is typical but molecular confirmation is needed.',
+      'Low-trauma imaging to assess heterotopic ossification; avoid invasive tissue sampling for diagnosis when possible.',
+      'Pulmonary function, spine and chest-wall mobility, nutrition, and dental assessment when jaw or chest mobility is limited.',
+      'A written flare-up plan, pain plan, vaccination route guidance, and anesthesia or airway precautions.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Does this pattern fit FOP, and what tests can confirm it without causing trauma?',
+      'What should we do during a flare-up, and which procedures should be avoided?',
+      'Is palovarotene or a clinical trial relevant for me, and what are the risks and access issues?',
+      'How should dental care, vaccines, fall prevention, school or work adaptations, and emergency airway planning be handled?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>FOP often begins with congenital malformation of the big toes. In childhood, painful soft-tissue swelling or flare-ups can occur in the neck, back, shoulders, trunk, or limbs, followed by hardening and heterotopic bone that limits joint movement.</p><p>Over time, jaw opening, eating, speech, spine and chest-wall movement, mobility, pain, and breathing can be affected. Trauma, surgery, biopsy, intramuscular injections, and infections can trigger or worsen flare-ups.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Typical FOP is confirmed by congenital big-toe malformation, progressive heterotopic ossification, and an ACVR1 pathogenic variant. In many cases, clinical clues are strong enough that the priority is avoiding biopsy or excision done for diagnosis.</p><p>Differential diagnosis includes cancer, aggressive fibromatosis, dermatomyositis, traumatic myositis ossificans, hematoma, and vascular malformation. Suspected FOP should be referred to an experienced center.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>First-line management is prevention: avoid unnecessary surgery, biopsy, intramuscular injections, forceful rehabilitation, and high-risk trauma. During flare-ups, clinicians may use short-term anti-inflammatory or pain-control strategies to reduce pain and protect function.</p><p>Palovarotene is FDA-approved for eligible patients of specific ages to reduce the volume of new heterotopic ossification, but it has important risks including embryo-fetal toxicity and premature epiphyseal closure in growing children. Use requires FOP-specialist evaluation.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care includes fall prevention, low-trauma movement and positioning, pulmonary and chest-wall monitoring, nutrition, dental planning, pain care, mental health support, and home, school, or work adaptations. Any surgery, anesthesia, or dental procedure needs advance planning to minimize trauma.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Most FOP is caused by a new ACVR1 variant, but the inheritance mechanism is autosomal dominant. People with FOP who are planning pregnancy should discuss genetic risk, pregnancy risk, medication teratogenicity, delivery, and anesthesia planning.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek urgent care for breathing difficulty, severe chest or neck restriction, marked swallowing difficulty, severe pain or rapid loss of function after a fall, high fever with severe flare-up, suspected airway problems, or any need for emergency surgery or anesthesia.</p>',
   },
   sources: [
     {
@@ -79,15 +84,25 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Fibrodysplasia ossificans progressiva',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/fibrodysplasia-ossificans-progressiva/',
+    },
+    {
+      name: 'FDA: FDA approves first treatment for Fibrodysplasia Ossificans Progressiva',
+      type: 'official',
+      url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-fibrodysplasia-ossificans-progressiva',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Classic features are malformed big toes, recurrent painful soft-tissue swelling in childhood, and progressive heterotopic ossification that restricts jaw, shoulder, spine, chest, and limb movement.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses the clinical pattern, imaging showing heterotopic ossification, and ACVR1 testing; suspected FOP should not be biopsied or surgically sampled unnecessarily.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care focuses on avoiding trauma and triggers, managing flare-ups and pain, preserving function and breathing, and specialist assessment of whether treatments such as palovarotene are appropriate.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>FOP usually progresses over time. Early recognition and trauma avoidance can reduce preventable ossification and function loss, while respiratory, nutrition, dental, and adaptation planning shape quality of life.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +110,11 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
   categorySlug: 'skeletal-connective-tissue',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 382,
+    name: 'fibrodysplasia-ossificans-progressiva-journey.png',
+    url: '/images/diseases/fibrodysplasia-ossificans-progressiva-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

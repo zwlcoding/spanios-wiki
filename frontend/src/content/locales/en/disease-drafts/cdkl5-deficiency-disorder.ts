@@ -5,73 +5,79 @@ export const diseaseCdkl5DeficiencyDisorder: DiseaseDraft = {
   ...entity(2011, 'disease-cdkl5-deficiency-disorder'),
   name: 'CDKL5-deficiency disorder',
   nameEn: 'CDKL5-deficiency disorder',
-  alias: 'CDKL5缺乏症; China Second Rare Disease Catalog item 11',
+  alias:
+    'CDD, CDKL5-related developmental and epileptic encephalopathy, early infantile epileptic encephalopathy 2, China Second Rare Disease Catalog item 11',
   slug: 'cdkl5-deficiency-disorder',
   oneSentence:
-    "CDKL5-deficiency disorder is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'CDKL5-deficiency disorder is a rare X-linked dominant neurodevelopmental condition in which seizures often begin in early infancy and are followed by significant developmental delay.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: CDKL5-deficiency disorder',
+    'A genetic neurodevelopmental condition with early infant seizures and developmental challenges',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics estimates an incidence of about 1 in 40,000 to 60,000 newborns, with about 90% of diagnosed people being girls.",
   quickLook: {
     whatItIs:
-      'CDKL5-deficiency disorder is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'The CDKL5 gene is important for brain development and nerve cell function. Disease-causing variants can lead to early, often difficult-to-control seizures and developmental challenges involving movement, communication, vision, feeding, sleep, and daily care.',
     whoToSeeFirst:
-      'Start with Neurology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Infants with repeated early seizures, clear developmental delay, or abnormal muscle tone should be seen by pediatric neurology or an epilepsy center, with rehabilitation, ophthalmology, nutrition, and genetics involved as needed.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'This is an X-linked dominant genetic condition. Most cases are new variants, so it can occur without a known family history. Genetic counseling is still important after diagnosis.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Care focuses on reducing seizures, supporting development, and preventing complications. Anti-seizure medicines, specialist-accessible newer therapies, feeding support, rehabilitation, vision support, and a home emergency plan may all be part of care.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early signs may be treated as common infant seizures, refractory epilepsy, or Rett-like features. Diagnosis is delayed when early seizures, developmental delay, and genetic testing are not considered together.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Seizures, spasms, or repeated episodes begin in the first weeks or months of life, especially if treatment response is limited.',
+      'Head control, rolling, sitting, standing, walking, hand use, eye contact, or speech is clearly delayed.',
+      'There are feeding problems, constipation, reflux, sleep disturbance, low muscle tone, hand stereotypies, or poor visual attention.',
+      'Rett syndrome, infantile spasms, or another developmental and epileptic encephalopathy has been considered but does not fully explain the child.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Changing seizure medicines repeatedly without early epilepsy genetic testing.',
+      'Waiting for seizures to be controlled before starting developmental therapies.',
+      'Tracking seizure counts but not sleep, feeding, breathing, visual attention, and gastrointestinal problems.',
+      'Not discussing parental testing, mosaicism, and recurrence risk after a diagnosis.',
     ],
     firstDepartments: [
-      'Neurology',
-      'Pediatric neurology',
-      'Rehabilitation medicine',
-      'Genetic counseling',
+      'Pediatric neurology or epilepsy center',
+      'Medical genetics',
+      'Pediatric rehabilitation',
+      'Pediatric ophthalmology or low-vision clinic',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record birth history, age at first seizure, seizure videos, frequency, triggers, medicines, doses, and response.',
+      'Bring EEG reports, brain MRI, metabolic screening, hospital records, emergency records, and previous genetic testing.',
+      'Summarize developmental milestones, feeding, sleep, breathing, constipation or reflux, visual responses, and therapy history.',
+      'Prepare health information for parents and siblings so the genetics team can decide whether family testing is needed.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Long-term video EEG to classify seizure types and guide treatment.',
+      'Epilepsy or neurodevelopmental gene panel, exome sequencing, or targeted confirmation of a CDKL5 variant.',
+      'Brain MRI, developmental assessment, feeding and swallowing evaluation, ophthalmology assessment, and spine or bone monitoring.',
+      'Parental sample testing and genetic counseling after a diagnosis.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'What seizure types does my child have, and what is the realistic treatment goal right now?',
+      'Has testing covered CDKL5 and other developmental and epileptic encephalopathy genes?',
+      'Which medicines, dietary therapies, neuromodulation options, or newer therapies are appropriate at this stage?',
+      'How should rehabilitation, vision, feeding, sleep, and bone health follow-up be scheduled?',
+      'Should parents be tested, and what reproductive counseling is available?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>CDKL5-deficiency disorder typically presents with seizures in early infancy, often within the first few months of life. Seizure types may change over time and can be difficult to control. Many children also have significant delays in movement, communication, learning, hand use, and social interaction.</p><p>Other common issues include low muscle tone, repetitive hand movements, sleep disturbance, feeding difficulty, reflux, constipation, poor visual attention or cortical visual impairment. Severity varies, and although girls are more commonly diagnosed, boys can also be affected.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines the early seizure pattern, neurological and developmental assessment, EEG, imaging when needed, and genetic testing. A disease-causing or likely disease-causing CDKL5 variant in a child with compatible features supports the diagnosis.</p><p>Clinicians also consider Rett syndrome, other developmental and epileptic encephalopathies, metabolic disorders, and structural brain conditions. Genetic results should be interpreted with the clinical picture and, when possible, parental testing.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Management is long term and multidisciplinary. Seizure care may require combinations of anti-seizure medicines, and some patients may be assessed for newer disease-relevant medicines, ketogenic diet, or vagus nerve stimulation depending on local availability and clinical fit.</p><p>Developmental therapies, positioning and swallowing support, nutrition, sleep care, reflux and constipation management, visual support, bone and spine monitoring, and a caregiver emergency plan are also central parts of care.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term follow-up should track seizure frequency and videos, rescue medicine use, side effects, developmental goals, nutrition and growth, sleep, breathing, gastrointestinal symptoms, and bone or spine complications. The goal is usually to reduce severe seizures, preserve function, prevent complications, and improve quality of life.</p><p>Families should have a written plan for emergencies, school or therapy communication, medication updates, and regular reassessment of rehabilitation goals.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Most cases are caused by a new CDKL5 variant, but low-level parental mosaicism can affect recurrence risk. Families should be offered genetic counseling to discuss parental testing, sibling risk, and reproductive options.</p><p>A family history of early epilepsy, developmental delay, or unexplained infant death should be shared with the genetics team.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek emergency care for a seizure lasting longer than the care plan allows, repeated seizures without recovery, blue color or breathing trouble, marked sleepiness or altered consciousness, severe dehydration, repeated vomiting, aspiration concern, or fever with a clear increase in seizures. Bring the diagnosis, medicine list, and rescue plan.</p>',
   },
   sources: [
     {
@@ -79,15 +85,20 @@ export const diseaseCdkl5DeficiencyDisorder: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: CDKL5 deficiency disorder',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/cdkl5-deficiency-disorder/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Typical clues are seizures in the first months of life with developmental delay affecting movement, communication, vision, feeding, sleep, or gastrointestinal care.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis is based on the clinical pattern, EEG and developmental assessment, and genetic testing that identifies a disease-causing CDKL5 variant.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care combines epilepsy specialist treatment with rehabilitation, feeding and nutrition support, vision care, sleep and gastrointestinal management, bone monitoring, and a home rescue plan.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Most affected children need long-term support. Early diagnosis, structured seizure care, rehabilitation, and complication monitoring can reduce preventable risks.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +106,11 @@ export const diseaseCdkl5DeficiencyDisorder: DiseaseDraft = {
   categorySlug: 'neurological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 365,
+    name: 'cdkl5-deficiency-disorder-journey.png',
+    url: '/images/diseases/cdkl5-deficiency-disorder-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

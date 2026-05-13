@@ -5,73 +5,78 @@ export const diseaseLennoxGastautSyndrome: DiseaseDraft = {
   ...entity(2044, 'disease-lennox-gastaut-syndrome'),
   name: 'Lennox-Gastaut syndrome',
   nameEn: 'Lennox-Gastaut syndrome',
-  alias: 'Lennox-Gastaut 综合征; China Second Rare Disease Catalog item 44',
+  alias:
+    'LGS, developmental and epileptic encephalopathy, China Second Rare Disease Catalog item 44',
   slug: 'lennox-gastaut-syndrome',
   oneSentence:
-    "Lennox-Gastaut syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Lennox-Gastaut syndrome is a severe childhood-onset developmental and epileptic encephalopathy with multiple seizure types, drop attacks, cognitive and behavioral difficulties, and seizures that are often hard to fully control.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Lennox-Gastaut syndrome',
+    'A childhood epilepsy syndrome with multiple seizure types and developmental impact',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; Epilepsy Foundation describes it as an uncommon but severe childhood epilepsy syndrome.",
   quickLook: {
     whatItIs:
-      'Lennox-Gastaut syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'LGS usually combines multiple seizure types, characteristic EEG patterns, and developmental/cognitive-behavioral impact. Causes include brain injury or malformation, genetic or metabolic disease, prior infantile spasms, or unknown causes.',
     whoToSeeFirst:
-      'Start with Neurology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Repeated falls, tonic seizures during sleep, atypical absence-like episodes, myoclonic seizures, frequent seizures, or poor response to medicines should prompt pediatric neurology, an epilepsy center, or emergency care.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'LGS is a syndrome diagnosis, not one single genetic disease. Genetic, metabolic, and imaging workup depends on age at onset, development, imaging, and family history.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Treatment often requires combination therapy and may include ketogenic diet, vagus nerve stimulation, corpus callosotomy, or epilepsy surgery review. Goals often include fewer seizures, fewer injuries, and better function rather than guaranteed seizure freedom.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Seizure types vary and may be mistaken for ordinary epilepsy, attention problems, accidental falls, or developmental delay. Video recordings are very helpful.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A child has multiple seizure types, especially tonic seizures during sleep, atonic drop attacks, atypical absences, or seizure clusters.',
+      'Seizures are frequent, poorly responsive to usual antiseizure medicines, or lead to repeated emergency visits.',
+      'Language, cognition, behavior, or motor development plateaus or regresses.',
+      'EEG suggests slow spike-wave or sleep-related fast rhythmic activity.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Describing only falls or staring spells without showing seizure videos to an epilepsy specialist.',
+      'Changing medicines repeatedly without systematic cause, EEG, imaging, and non-drug treatment review.',
+      'Missing fall protection, helmets, sleep safety, school supports, and caregiver burden.',
+      'No written rescue medicine and emergency plan for prolonged or clustered seizures.',
     ],
     firstDepartments: [
-      'Neurology',
       'Pediatric neurology',
-      'Rehabilitation medicine',
-      'Genetic counseling',
+      'Epilepsy center',
+      'Neurology',
+      'Emergency medicine',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring seizure videos and record timing, sleep/wake state, duration, triggers, and recovery.',
+      'Bring EEG, long-term video EEG, brain MRI, genetic/metabolic testing, and medicine response records.',
+      'Record developmental milestones, learning/behavior changes, fall injuries, and prior infantile spasms or brain injury.',
+      'List all antiseizure medicines, doses, benefits, side effects, and reasons for stopping.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Long-term video EEG, especially including sleep.',
+      'High-quality brain MRI to look for structural causes.',
+      'Genetic testing, metabolic screening, or other cause-focused testing when indicated.',
+      'Assessment for ketogenic diet, vagus nerve stimulation, corpus callosotomy, or epilepsy surgery options.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Which seizure types does my child have, and which are most dangerous or highest priority?',
+      'What is our rescue plan, and when should we use rescue medicine or call emergency services?',
+      'Should we evaluate ketogenic diet, VNS, or corpus callosotomy?',
+      'What school, sleep, activity, and fall-protection supports are needed?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>LGS begins in childhood and causes multiple seizure types. Tonic seizures, atonic drop attacks, atypical absences, myoclonic seizures, generalized tonic-clonic seizures, and nonconvulsive status epilepticus can occur. Drop attacks can cause head, face, and limb injuries.</p><p>Many children also have cognitive, language, behavior, sleep, and motor-development difficulties. Seizures and medicine side effects can affect learning and family life.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines seizure history, developmental history, long-term video EEG, and brain MRI. Characteristic EEG findings include slow spike-wave and generalized fast rhythms during sleep, although patterns can change over time.</p><p>Clinicians look for causes such as brain malformations, hypoxic-ischemic or infection-related injury, tuberous sclerosis, genetic/metabolic disease, and prior infantile epileptic spasms syndrome, while distinguishing LGS from other developmental epileptic encephalopathies.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>LGS is often difficult to fully control, so treatment usually involves specialist-guided combination therapy. Medicines may include valproate, lamotrigine, topiramate, clobazam, rufinamide, felbamate, cannabidiol, or others depending on the child.</p><p>If medicines are not enough, ketogenic diet, vagus nerve stimulation, corpus callosotomy, or other epilepsy surgery strategies may be evaluated. Goals include fewer drop attacks and severe seizures, lower emergency risk, and better development and quality of life.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care includes a seizure diary, rescue medicine plan, fall and head protection, sleep planning, rehabilitation, speech and special education support, and support for caregiver stress.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>LGS has many causes and is not always inherited. If genetic or metabolic disease is suspected, identifying the cause guides family testing, recurrence-risk counseling, and reproductive planning.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>A seizure lasting more than 5 minutes, repeated seizures without recovery, blue color or breathing trouble, serious fall injury, fever with sharply increased seizures, persistent sleepiness, or suspected status epilepticus requires the rescue plan and emergency care.</p>',
   },
   sources: [
     {
@@ -79,15 +84,20 @@ export const diseaseLennoxGastautSyndrome: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'Epilepsy Foundation: Lennox-Gastaut Syndrome',
+      type: 'patient-organization',
+      url: 'https://www.epilepsy.com/what-is-epilepsy/syndromes/lennox-gastaut-syndrome',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common features include multiple seizure types, especially tonic seizures, atonic drop attacks, atypical absences, myoclonic seizures, and clusters, often with cognitive, language, behavior, and developmental problems.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines seizure videos and history, long-term video EEG, brain MRI, and cause-focused testing to identify characteristic EEG patterns and structural, genetic, or metabolic causes.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care is long-term epilepsy specialist management with medicine combinations, ketogenic diet, vagus nerve stimulation, corpus callosotomy, and rescue and fall-protection plans when appropriate.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>LGS often persists long term and seizure freedom is difficult, but systematic care can reduce severe seizures and injuries while supporting learning, rehabilitation, and family care.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +105,11 @@ export const diseaseLennoxGastautSyndrome: DiseaseDraft = {
   categorySlug: 'neurological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 398,
+    name: 'lennox-gastaut-syndrome-journey.png',
+    url: '/images/diseases/lennox-gastaut-syndrome-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

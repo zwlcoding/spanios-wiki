@@ -5,72 +5,78 @@ export const diseaseGiantCellArteritis: DiseaseDraft = {
   ...entity(2035, 'disease-giant-cell-arteritis'),
   name: 'Giant cell arteritis',
   nameEn: 'Giant cell arteritis',
-  alias: '巨细胞动脉炎; China Second Rare Disease Catalog item 35',
+  alias:
+    'GCA, temporal arteritis, large-vessel vasculitis, China Second Rare Disease Catalog item 35',
   slug: 'giant-cell-arteritis',
   oneSentence:
-    "Giant cell arteritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Giant cell arteritis is a medium- and large-vessel vasculitis mainly affecting people over 50, often causing new headache, scalp tenderness, jaw pain with chewing, and vision symptoms that can become permanent without urgent treatment.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Giant cell arteritis',
+    'A vasculitis in older adults where new headache and vision symptoms are urgent warning signs',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it mainly affects adults over age 50, with frequency varying by ancestry and region.",
   quickLook: {
     whatItIs:
-      'Giant cell arteritis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'GCA is inflammation of artery walls, often the temporal arteries but sometimes the aorta and major branches. It overlaps closely with polymyalgia rheumatica.',
     whoToSeeFirst:
-      'Start with Rheumatology and immunology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Anyone over 50 with new persistent headache, scalp tenderness, jaw claudication, double vision, or vision loss should contact rheumatology, ophthalmology, or emergency care immediately.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'GCA is not managed as a single-gene inherited condition, and relatives usually do not need genetic testing.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'High-dose corticosteroids are used urgently to prevent vision loss. Tocilizumab may help selected patients reduce steroid exposure or manage relapse.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'It can be mistaken for migraine, sinusitis, dental disease, neck problems, routine eye disease, or aging-related fatigue. Jaw claudication and visual symptoms are major red flags.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A person over 50 develops a new or very different headache, especially with temple or scalp tenderness.',
+      'Jaw pain or fatigue occurs while chewing, or there is double vision, transient blackout, or vision loss.',
+      'Fever, fatigue, weight loss, high ESR/CRP, or shoulder/hip morning stiffness suggests polymyalgia rheumatica overlap.',
+      'Arm claudication, unequal blood pressure, or aortic/large-vessel imaging abnormalities are present.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating it as migraine or neck pain without checking inflammatory and vasculitis clues.',
+      'Waiting for routine clinic review after transient vision symptoms.',
+      'Reducing steroids quickly after symptoms improve, causing relapse.',
+      'Using long-term steroids without bone, glucose, blood pressure, infection, and eye-side-effect planning.',
     ],
     firstDepartments: [
-      'Rheumatology and immunology',
-      'Pediatric rheumatology',
-      'Immunology clinic',
+      'Rheumatology',
+      'Ophthalmology',
+      'Neurology',
+      'Emergency medicine',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record headache onset, location, scalp tenderness, jaw claudication, vision changes, and systemic symptoms.',
+      'Bring ESR, CRP, CBC, liver/kidney tests, eye exam, and previous imaging.',
+      'Track shoulder/hip stiffness, polymyalgia symptoms, arm fatigue, and blood pressure differences.',
+      'Bring temporal artery ultrasound, PET-CT, CTA/MRA, or temporal artery biopsy reports if already done.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'ESR, CRP, CBC, and evaluation for infection, malignancy, or other mimics.',
+      'Temporal artery ultrasound, temporal artery biopsy, or CTA/MRA/PET-CT for large-vessel disease.',
+      'Urgent ophthalmology assessment when visual symptoms occur.',
+      'Bone density, glucose, blood pressure, lipids, and infection-risk prevention during long-term steroid therapy.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'How high is my vision risk, and do I need immediate steroids or hospital care?',
+      'Do I still need biopsy or imaging, and is testing useful after steroids have started?',
+      'How will steroids be tapered, and what symptoms suggest relapse?',
+      'Am I a candidate for tocilizumab or another steroid-sparing approach, and how are side effects monitored?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>GCA commonly causes new headache, temple or scalp tenderness, jaw pain with chewing, fever, fatigue, poor appetite, and weight loss. Eye involvement may cause double vision, transient vision loss, or sudden permanent vision loss.</p><p>Some patients have polymyalgia rheumatica with shoulder, neck, or hip morning stiffness and pain. Large-vessel involvement may cause arm claudication, unequal blood pressure, aortic dilation, or arterial narrowing.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines age, symptoms, examination, ESR/CRP, eye assessment, temporal artery ultrasound or biopsy, and large-vessel imaging. When vision is threatened, treatment should not wait for every test to be completed.</p><p>Mimics include migraine, tension headache, sinusitis, dental or jaw disease, cervical spine disease, infection, malignancy, other vasculitides, and ischemic eye disease.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>When GCA is suspected and visual risk is present, high-dose corticosteroids are started urgently to reduce blindness risk. Doses are then tapered based on symptoms, inflammatory markers, and imaging when relevant.</p><p>Tocilizumab can be used in selected patients to reduce steroid exposure or control relapse. Long-term care must also address osteoporosis, glucose, blood pressure, infection, GI, and eye side effects.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up monitors headache, jaw pain, vision, polymyalgia symptoms, ESR/CRP, medication side effects, and large-vessel complications. Patients should know relapse signs and avoid abruptly stopping steroids.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>GCA occurs mainly in older adults and is not managed as a single-gene inherited disease. Family members can still help watch for visual changes, relapse symptoms, and steroid side effects.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Any new vision loss, double vision, transient blackout, suddenly worse jaw claudication, severe new headache, stroke-like symptoms, chest or back pain, or possible aortic emergency requires immediate care.</p>',
   },
   sources: [
     {
@@ -78,15 +84,25 @@ export const diseaseGiantCellArteritis: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'American College of Rheumatology: Giant Cell Arteritis',
+      type: 'patient-organization',
+      url: 'https://rheumatology.org/patients/giant-cell-arteritis',
+    },
+    {
+      name: 'NIAMS: Polymyalgia Rheumatica and Giant Cell Arteritis',
+      type: 'official',
+      url: 'https://www.niams.nih.gov/health-topics/polymyalgia-rheumatica-giant-cell-arteritis/basics/diagnosis-treatment-and-steps-to-take',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common symptoms include new headache, scalp tenderness, jaw pain with chewing, fever, fatigue, weight loss, shoulder/hip stiffness, and urgent visual symptoms such as double vision or transient blackout.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines symptoms, ESR/CRP, eye assessment, temporal artery ultrasound or biopsy, and CTA/MRA/PET-CT when large-vessel disease is suspected; treatment should not wait when vision is threatened.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Urgent corticosteroids are central to preventing vision loss, followed by careful tapering; selected patients may use tocilizumab to reduce steroid exposure and relapse risk.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Prompt treatment usually relieves symptoms and lowers blindness risk. Delayed therapy, relapse, large-vessel complications, and steroid side effects require ongoing follow-up.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +110,11 @@ export const diseaseGiantCellArteritis: DiseaseDraft = {
   categorySlug: 'immunological-rheumatologic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 389,
+    name: 'giant-cell-arteritis-journey.png',
+    url: '/images/diseases/giant-cell-arteritis-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

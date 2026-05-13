@@ -738,14 +738,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2011, 'disease-cdkl5-deficiency-disorder'),
     name: 'CDKL5-deficiency disorder',
     nameEn: 'CDKL5-deficiency disorder',
-    alias: 'CDKL5缺乏症; China Second Rare Disease Catalog item 11',
+    alias:
+      'CDD, CDKL5-related developmental and epileptic encephalopathy, early infantile epileptic encephalopathy 2, China Second Rare Disease Catalog item 11',
     slug: 'cdkl5-deficiency-disorder',
     oneSentence:
-      "CDKL5-deficiency disorder is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'CDKL5-deficiency disorder is a rare X-linked dominant neurodevelopmental condition in which seizures often begin in early infancy and are followed by significant developmental delay.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: CDKL5-deficiency disorder',
+      'A genetic neurodevelopmental condition with early infant seizures and developmental challenges',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates an incidence of about 1 in 40,000 to 60,000 newborns, with about 90% of diagnosed people being girls.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -753,8 +754,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 365,
+      name: 'cdkl5-deficiency-disorder-journey.png',
+      url: '/images/diseases/cdkl5-deficiency-disorder-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(18, 'disease-charcot-marie-tooth-disease'),
@@ -787,14 +793,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2012, 'disease-choroideremia'),
     name: 'Choroideremia',
     nameEn: 'Choroideremia',
-    alias: '无脉络膜症; China Second Rare Disease Catalog item 12',
+    alias:
+      'CHM-related chorioretinal degeneration, progressive tapetochoroidal dystrophy, China Second Rare Disease Catalog item 12',
     slug: 'choroideremia',
     oneSentence:
-      "Choroideremia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Choroideremia is a rare X-linked inherited eye disease caused by CHM gene variants, usually starting with night blindness and gradually narrowing the visual field before central vision is affected later.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Choroideremia',
+      'An inherited retinal disease that often starts with night blindness and tunnel vision',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates a prevalence of about 1 in 50,000 to 100,000 people, and it may be underdiagnosed because it resembles other retinal disorders.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -802,8 +809,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'ophthalmologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 366,
+      name: 'choroideremia-journey.png',
+      url: '/images/diseases/choroideremia-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(
@@ -813,14 +825,14 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     name: 'Chronic inflammatory demyelinating polyneuropathy',
     nameEn: 'Chronic inflammatory demyelinating polyneuropathy',
     alias:
-      '慢性炎性脱髓鞘性多发性神经根神经病; China Second Rare Disease Catalog item 13',
+      'CIDP, chronic inflammatory demyelinating polyradiculoneuropathy, China Second Rare Disease Catalog item 13',
     slug: 'chronic-inflammatory-demyelinating-polyneuropathy',
     oneSentence:
-      "Chronic inflammatory demyelinating polyneuropathy is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Chronic inflammatory demyelinating polyneuropathy is an immune-mediated peripheral nerve disorder that often causes weakness, numbness, imbalance, and reduced reflexes that progress or relapse over more than 8 weeks.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Chronic inflammatory demyelinating polyneuropathy',
+      'An immune nerve condition that can cause progressive weakness and numbness in the arms and legs',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; estimates vary, and Cleveland Clinic cites about 0.8 to 8.9 new U.S. cases per 100,000 people each year.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -828,8 +840,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 367,
+      name: 'chronic-inflammatory-demyelinating-polyneuropathy-journey.png',
+      url: '/images/diseases/chronic-inflammatory-demyelinating-polyneuropathy-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'neuromuscular'],
   },
   {
     ...entity(19, 'disease-citrullinemia'),
@@ -861,14 +878,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2014, 'disease-clear-cell-sarcoma-of-kidney'),
     name: 'Clear cell sarcoma of kidney',
     nameEn: 'Clear cell sarcoma of kidney',
-    alias: '肾透明细胞肉瘤; China Second Rare Disease Catalog item 14',
+    alias:
+      'CCSK, pediatric clear cell sarcoma of the kidney, China Second Rare Disease Catalog item 14',
     slug: 'clear-cell-sarcoma-of-kidney',
     oneSentence:
-      "Clear cell sarcoma of kidney is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Clear cell sarcoma of kidney is a rare malignant kidney tumor of childhood, most often seen before age 3, that requires pathology confirmation and treatment by a pediatric oncology team.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Clear cell sarcoma of kidney',
+      'A rare childhood kidney cancer that needs expert pathology and pediatric oncology care',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NCI PDQ states that it accounts for about 5% of primary renal malignancies in children and about 20 new U.S. cases per year, most often before age 3.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -876,21 +894,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 368,
+      name: 'clear-cell-sarcoma-of-kidney-journey.png',
+      url: '/images/diseases/clear-cell-sarcoma-of-kidney-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2015, 'disease-cold-agglutinin-disease'),
     name: 'Cold agglutinin disease',
     nameEn: 'Cold agglutinin disease',
-    alias: '冷凝集素病; China Second Rare Disease Catalog item 15',
+    alias:
+      'CAD, cold antibody autoimmune hemolytic anemia, China Second Rare Disease Catalog item 15',
     slug: 'cold-agglutinin-disease',
     oneSentence:
-      "Cold agglutinin disease is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Cold agglutinin disease is a rare autoimmune hemolytic anemia in which cold-triggered antibodies can lead to red blood cell destruction, anemia, jaundice, dark urine, and cold-induced color changes in the hands or feet.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Cold agglutinin disease',
+      'A rare anemia where cold exposure can trigger immune destruction of red blood cells',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall, more often reported in adults and older adults, and estimates vary by whether primary and secondary cases are counted together.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -898,7 +922,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 369,
+      name: 'cold-agglutinin-disease-journey.png',
+      url: '/images/diseases/cold-agglutinin-disease-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -931,14 +960,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2016, 'disease-congenital-biliary-atresia'),
     name: 'Congenital biliary atresia',
     nameEn: 'Congenital biliary atresia',
-    alias: '先天性胆道闭锁; China Second Rare Disease Catalog item 16',
+    alias:
+      'Biliary atresia, Kasai-related cholestatic liver disease, China Second Rare Disease Catalog item 16',
     slug: 'congenital-biliary-atresia',
     oneSentence:
-      "Congenital biliary atresia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Congenital biliary atresia is a serious infant liver and bile duct disease in which bile cannot drain normally, leading to persistent jaundice, pale stools, dark urine, and progressive liver injury.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Congenital biliary atresia',
+      'An infant bile duct disease that needs urgent liver and surgery evaluation',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; Mayo Clinic cites about 1 in 10,000 to 20,000 live births, with variation by region and screening practice.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -946,21 +976,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'digestive-hepatic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 370,
+      name: 'congenital-biliary-atresia-journey.png',
+      url: '/images/diseases/congenital-biliary-atresia-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2017, 'disease-congenital-factor-vii-deficiency'),
     name: 'Congenital factor VII deficiency',
     nameEn: 'Congenital factor VII deficiency',
-    alias: '先天性凝血因子VII缺乏症; China Second Rare Disease Catalog item 17',
+    alias:
+      'F7 deficiency, hypoproconvertinemia, Alexander disease, China Second Rare Disease Catalog item 17',
     slug: 'congenital-factor-vii-deficiency',
     oneSentence:
-      "Congenital factor VII deficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Congenital factor VII deficiency is a rare inherited bleeding disorder caused by F7 gene variants, ranging from no symptoms to nosebleeds, heavy menstrual bleeding, surgical bleeding, or rarely life-threatening bleeding.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Congenital factor VII deficiency',
+      'An inherited clotting factor condition that can make bleeding harder to stop',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 300,000 to 500,000 people and describes it as one of the more common rare clotting factor deficiencies.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -968,8 +1004,17 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 371,
+      name: 'congenital-factor-vii-deficiency-journey.png',
+      url: '/images/diseases/congenital-factor-vii-deficiency-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'coagulation-care',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(22, 'disease-congenital-hyperinsulinemic-hypoglycemia'),
@@ -1107,18 +1152,18 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       2018,
       'disease-cryopyrin-associated-periodic-syndrome-nlrp3-associated-systemic-autoinflammatory-disease',
     ),
-    name: 'Cryopyrin-associated periodic syndrome/ NLRP3-associated systemic autoinflammatory disease',
+    name: 'Cryopyrin-associated periodic syndrome/NLRP3-associated systemic autoinflammatory disease',
     nameEn:
-      'Cryopyrin-associated periodic syndrome/ NLRP3-associated systemic autoinflammatory disease',
+      'Cryopyrin-associated periodic syndrome/NLRP3-associated systemic autoinflammatory disease',
     alias:
-      '冷吡啉（冷炎素）相关周期性综合征/ NLRP3相关自身炎症性疾病; China Second Rare Disease Catalog item 18',
+      'CAPS, NLRP3-AID, FCAS, Muckle-Wells syndrome, NOMID/CINCA, China Second Rare Disease Catalog item 18',
     slug: 'cryopyrin-associated-periodic-syndrome-nlrp3-associated-systemic-autoinflammatory-disease',
     oneSentence:
-      "Cryopyrin-associated periodic syndrome/ NLRP3-associated systemic autoinflammatory disease is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'CAPS/NLRP3-associated systemic autoinflammatory disease is a rare NLRP3-related condition that often begins in infancy or childhood with recurrent fever, hive-like rash, joint pain, and inflammation affecting the eyes, ears, kidneys, or nervous system.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Cryopyrin-associated periodic syndrome/ NLRP3-associated systemic autoinflammatory disease',
+      'A genetic autoinflammatory condition where the immune system repeatedly triggers inflammation',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates CAPS collectively at about 2 to 5 per million people, likely underdiagnosed.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1126,25 +1171,30 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 372,
+      name: 'cryopyrin-associated-periodic-syndrome-nlrp3-associated-systemic-autoinflammatory-disease-journey.png',
+      url: '/images/diseases/cryopyrin-associated-periodic-syndrome-nlrp3-associated-systemic-autoinflammatory-disease-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(
       2019,
       'disease-cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma',
     ),
-    name: 'Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma)',
-    nameEn: 'Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma)',
+    name: 'Cutaneous neuroendocrine carcinoma (Merkel cell carcinoma)',
+    nameEn: 'Cutaneous neuroendocrine carcinoma (Merkel cell carcinoma)',
     alias:
-      '皮肤神经内分泌癌（梅克尔细胞癌）; China Second Rare Disease Catalog item 19',
+      'Merkel cell carcinoma, MCC, primary cutaneous neuroendocrine carcinoma, China Second Rare Disease Catalog item 19',
     slug: 'cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma',
     oneSentence:
-      "Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma) is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Cutaneous neuroendocrine carcinoma, also called Merkel cell carcinoma, is a rare but aggressive skin cancer that often appears as a fast-growing painless lump on sun-exposed skin and needs biopsy, staging, and multidisciplinary treatment.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma)',
+      'A fast-growing rare skin cancer that needs prompt biopsy and staging',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NCI describes it as a very rare skin cancer, with sun exposure and weakened immunity increasing risk.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1152,21 +1202,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 373,
+      name: 'cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma-journey.png',
+      url: '/images/diseases/cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2020, 'disease-cutaneous-t-cell-lymphomas'),
     name: 'Cutaneous T-cell lymphomas',
     nameEn: 'Cutaneous T-cell lymphomas',
-    alias: '皮肤T细胞淋巴瘤; China Second Rare Disease Catalog item 20',
+    alias:
+      'CTCL, mycosis fungoides, Sézary syndrome, China Second Rare Disease Catalog item 20',
     slug: 'cutaneous-t-cell-lymphomas',
     oneSentence:
-      "Cutaneous T-cell lymphomas are a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Cutaneous T-cell lymphomas',
+      'Cutaneous T-cell lymphomas are non-Hodgkin lymphomas that mainly involve the skin, most often mycosis fungoides or Sézary syndrome, and may present for years as persistent itchy patches, plaques, or tumors.',
+    plainName: 'T-cell lymphomas that mainly affect the skin',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; they are rare overall, and estimates vary by subtype, stage, and registry definition.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1174,21 +1229,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 374,
+      name: 'cutaneous-t-cell-lymphomas-journey.png',
+      url: '/images/diseases/cutaneous-t-cell-lymphomas-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2021, 'disease-cystinosis'),
     name: 'Cystinosis',
     nameEn: 'Cystinosis',
-    alias: '胱氨酸贮积症; China Second Rare Disease Catalog item 21',
+    alias:
+      'CTNS-related cystinosis, nephropathic cystinosis, ocular cystinosis, China Second Rare Disease Catalog item 21',
     slug: 'cystinosis',
     oneSentence:
-      "Cystinosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Cystinosis is an inherited CTNS-related lysosomal storage disorder in which cystine builds up inside cells, mainly damaging the kidneys and eyes but also affecting the thyroid, muscles, pancreas, and reproductive system.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Cystinosis',
+      'A genetic metabolic disease where cystine builds up and first harms the kidneys and eyes',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 100,000 to 200,000 newborns worldwide, with regional variation.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1196,21 +1257,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 375,
+      name: 'cystinosis-journey.png',
+      url: '/images/diseases/cystinosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2022, 'disease-dermatofibrosarcoma-protuberans'),
     name: 'Dermatofibrosarcoma protuberans',
     nameEn: 'Dermatofibrosarcoma protuberans',
-    alias: '隆突性皮肤纤维肉瘤; China Second Rare Disease Catalog item 22',
+    alias: 'DFSP, China Second Rare Disease Catalog item 22',
     slug: 'dermatofibrosarcoma-protuberans',
     oneSentence:
-      "Dermatofibrosarcoma protuberans is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Dermatofibrosarcoma protuberans is a rare, usually slow-growing but locally aggressive skin soft tissue tumor that can extend into surrounding tissue and recur if not fully removed.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Dermatofibrosarcoma protuberans',
+      'A rare deep skin soft tissue tumor that can come back locally if not completely removed',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall and makes up a very small share of skin tumors, with estimates varying by registry.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1218,7 +1284,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 376,
+      name: 'dermatofibrosarcoma-protuberans-journey.png',
+      url: '/images/diseases/dermatofibrosarcoma-protuberans-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -1250,14 +1321,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2023, 'disease-eosinophilic-gastroenteritis'),
     name: 'Eosinophilic gastroenteritis',
     nameEn: 'Eosinophilic gastroenteritis',
-    alias: '嗜酸性粒细胞性胃肠炎; China Second Rare Disease Catalog item 23',
+    alias:
+      'EoGE, non-esophageal eosinophilic gastrointestinal disease, China Second Rare Disease Catalog item 23',
     slug: 'eosinophilic-gastroenteritis',
     oneSentence:
-      "Eosinophilic gastroenteritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Eosinophilic gastroenteritis is a rare chronic gastrointestinal inflammatory disorder in which excess eosinophils infiltrate the stomach, small intestine, colon, or multiple sites, causing recurrent abdominal pain, nausea, vomiting, diarrhea, malabsorption, or ascites.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Eosinophilic gastroenteritis',
+      'A digestive disease where eosinophils build up in the gut and cause repeated inflammation',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall and can affect children or adults, with true frequency affected by diagnostic criteria and biopsy practice.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1265,21 +1337,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'digestive-hepatic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 377,
+      name: 'eosinophilic-gastroenteritis-journey.png',
+      url: '/images/diseases/eosinophilic-gastroenteritis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2024, 'disease-epithelioid-sarcoma'),
     name: 'Epithelioid sarcoma',
     nameEn: 'Epithelioid sarcoma',
-    alias: '上皮样肉瘤; China Second Rare Disease Catalog item 24',
+    alias:
+      'ES, distal-type epithelioid sarcoma, proximal-type epithelioid sarcoma, INI1/SMARCB1-deficient soft tissue sarcoma, China Second Rare Disease Catalog item 24',
     slug: 'epithelioid-sarcoma',
     oneSentence:
-      "Epithelioid sarcoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Epithelioid sarcoma is a rare aggressive soft tissue sarcoma, often affecting teenagers and young adults, that may begin as a painless nodule or non-healing sore on the hand, forearm, foot, knee, or lower leg.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Epithelioid sarcoma',
+      'A rare soft tissue sarcoma that can start as a small firm lump or sore on the hands, feet, or limbs',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is a rare soft tissue sarcoma, most often seen in adolescents and young to middle-aged adults, with incidence varying by registry.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1287,7 +1365,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 378,
+      name: 'epithelioid-sarcoma-journey.png',
+      url: '/images/diseases/epithelioid-sarcoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -1353,14 +1436,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2025, 'disease-facioscapulohumeral-muscular-dystrophy'),
     name: 'Facioscapulohumeral muscular dystrophy',
     nameEn: 'Facioscapulohumeral muscular dystrophy',
-    alias: '面肩肱型肌营养不良症; China Second Rare Disease Catalog item 25',
+    alias:
+      'FSHD, facio-scapulo-humeral dystrophy, FSHD1, FSHD2, China Second Rare Disease Catalog item 25',
     slug: 'facioscapulohumeral-muscular-dystrophy',
     oneSentence:
-      "Facioscapulohumeral muscular dystrophy is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Facioscapulohumeral muscular dystrophy is an inherited muscle disorder that mainly causes progressive weakness of the face, shoulder blades, and upper arms, and can also affect the trunk, legs, hearing, retina, or breathing.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Facioscapulohumeral muscular dystrophy',
+      'An inherited muscular dystrophy that first affects facial expression, shoulder blades, and arm lifting',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 20,000 people, with about 95% of cases being FSHD1.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1368,21 +1452,31 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 379,
+      name: 'facioscapulohumeral-muscular-dystrophy-journey.png',
+      url: '/images/diseases/facioscapulohumeral-muscular-dystrophy-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'neuromuscular',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(2027, 'disease-familial-adenomatous-polyposis'),
     name: 'Familial adenomatous polyposis',
     nameEn: 'Familial adenomatous polyposis',
-    alias: '家族性腺瘤性息肉病; China Second Rare Disease Catalog item 27',
+    alias:
+      'FAP; APC-associated adenomatous polyposis; China Second Rare Disease Catalog item 27',
     slug: 'familial-adenomatous-polyposis',
     oneSentence:
-      "Familial adenomatous polyposis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Familial adenomatous polyposis is an APC-related inherited colorectal cancer predisposition syndrome in which many colon adenomas often begin in adolescence and require lifelong cancer-prevention care.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Familial adenomatous polyposis',
+      'An inherited condition that causes many colon polyps and needs lifelong cancer-prevention follow-up',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics describes an incidence of about 1 in 8,500 people and about 0.5% of all colorectal cancer.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1390,22 +1484,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'digestive-hepatic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 380,
+      name: 'familial-adenomatous-polyposis-journey.png',
+      url: '/images/diseases/familial-adenomatous-polyposis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2026, 'disease-familial-hemophagocytic-lymphohistiocytosis'),
     name: 'Familial hemophagocytic lymphohistiocytosis',
     nameEn: 'Familial hemophagocytic lymphohistiocytosis',
     alias:
-      '家族性噬血细胞淋巴组织细胞增生症; China Second Rare Disease Catalog item 26',
+      'FHL, familial HLH, primary hemophagocytic lymphohistiocytosis, China Second Rare Disease Catalog item 26',
     slug: 'familial-hemophagocytic-lymphohistiocytosis',
     oneSentence:
-      "Familial hemophagocytic lymphohistiocytosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Familial hemophagocytic lymphohistiocytosis is an inherited immune-regulation disorder in which overactive immune cells can quickly cause prolonged fever, cytopenias, enlarged liver or spleen, and organ damage.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Familial hemophagocytic lymphohistiocytosis',
+      'An inherited form of HLH where uncontrolled immune inflammation can become life-threatening',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is very rare overall and often presents in infancy or childhood, although later presentation can occur.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1413,8 +1512,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'multisystem',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 381,
+      name: 'familial-hemophagocytic-lymphohistiocytosis-journey.png',
+      url: '/images/diseases/familial-hemophagocytic-lymphohistiocytosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(28, 'disease-familial-mediterranean-fever'),
@@ -1472,14 +1576,14 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     name: 'Fibrodysplasia ossificans progressiva',
     nameEn: 'Fibrodysplasia ossificans progressiva',
     alias:
-      '进行性骨化性纤维发育不良; China Second Rare Disease Catalog item 28',
+      'FOP, myositis ossificans progressiva, ACVR1-related heterotopic ossification, China Second Rare Disease Catalog item 28',
     slug: 'fibrodysplasia-ossificans-progressiva',
     oneSentence:
-      "Fibrodysplasia ossificans progressiva is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Fibrodysplasia ossificans progressiva is a rare ACVR1-related connective tissue disorder in which soft tissues gradually form extra bone after painful flare-ups, limiting movement over time.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Fibrodysplasia ossificans progressiva',
+      'A genetic condition in which soft tissues gradually form a second skeleton',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics describes an estimated frequency of about 1 in 1 million people worldwide, with several hundred reported cases.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1487,21 +1591,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'skeletal-connective-tissue',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 382,
+      name: 'fibrodysplasia-ossificans-progressiva-journey.png',
+      url: '/images/diseases/fibrodysplasia-ossificans-progressiva-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2029, 'disease-fragile-x-syndrome'),
     name: 'Fragile X syndrome',
     nameEn: 'Fragile X syndrome',
-    alias: '脆性X综合征; China Second Rare Disease Catalog item 29',
+    alias:
+      'FXS, Martin-Bell syndrome, FMR1-related fragile X syndrome, China Second Rare Disease Catalog item 29',
     slug: 'fragile-x-syndrome',
     oneSentence:
-      "Fragile X syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Fragile X syndrome is an FMR1 CGG-repeat expansion disorder that can cause speech and cognitive delay, learning difficulties, attention and behavioral challenges, and autism-spectrum features.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Fragile X syndrome',
+      'An FMR1-related genetic condition that affects development, learning, and behavior',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics describes a frequency of about 1 in 4,000 males and 1 in 8,000 females.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1509,8 +1619,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 383,
+      name: 'fragile-x-syndrome-journey.png',
+      url: '/images/diseases/fragile-x-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(30, 'disease-galactosemia'),
@@ -1542,14 +1657,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2030, 'disease-gangliosidosis'),
     name: 'Gangliosidosis',
     nameEn: 'Gangliosidosis',
-    alias: '神经节苷脂贮积症; China Second Rare Disease Catalog item 30',
+    alias:
+      'GM1 gangliosidosis, GM2 gangliosidosis, Tay-Sachs disease, Sandhoff disease, China Second Rare Disease Catalog item 30',
     slug: 'gangliosidosis',
     oneSentence:
-      "Gangliosidosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Gangliosidosis refers to a group of autosomal recessive lysosomal storage disorders in which enzyme defects allow GM1 or GM2 gangliosides to build up, causing developmental regression, movement problems, seizures, and multisystem involvement.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Gangliosidosis',
+      'Inherited metabolic disorders where missing cleanup enzymes allow gangliosides to build up in the nervous system',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates GM1 gangliosidosis at about 1 in 100,000 to 200,000 newborns, while GM2 frequencies vary by population.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1557,21 +1673,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 384,
+      name: 'gangliosidosis-journey.png',
+      url: '/images/diseases/gangliosidosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2031, 'disease-gastroenteropancreatic-neuroendocrine-neoplasm'),
     name: 'Gastroenteropancreatic neuroendocrine neoplasm',
     nameEn: 'Gastroenteropancreatic neuroendocrine neoplasm',
-    alias: '胃肠胰神经内分泌肿瘤; China Second Rare Disease Catalog item 31',
+    alias:
+      'GEP-NEN, GEP-NET, GI or pancreatic neuroendocrine neoplasm, China Second Rare Disease Catalog item 31',
     slug: 'gastroenteropancreatic-neuroendocrine-neoplasm',
     oneSentence:
-      "Gastroenteropancreatic neuroendocrine neoplasm is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Gastroenteropancreatic neuroendocrine neoplasms are rare tumors from neuroendocrine cells in the digestive tract or pancreas; some grow slowly, while others secrete hormones that cause diarrhea, flushing, hypoglycemia, or ulcer symptoms.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Gastroenteropancreatic neuroendocrine neoplasm',
+      'A rare digestive or pancreatic tumor that may grow slowly or produce hormone-related symptoms',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon overall, and frequency estimates vary by site, grade, and registry method.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1579,21 +1701,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 385,
+      name: 'gastroenteropancreatic-neuroendocrine-neoplasm-journey.png',
+      url: '/images/diseases/gastroenteropancreatic-neuroendocrine-neoplasm-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2032, 'disease-gastrointestinal-stromal-tumor'),
     name: 'Gastrointestinal stromal tumor',
     nameEn: 'Gastrointestinal stromal tumor',
-    alias: '胃肠间质瘤; China Second Rare Disease Catalog item 32',
+    alias:
+      'GIST, gastrointestinal stromal tumor, China Second Rare Disease Catalog item 32',
     slug: 'gastrointestinal-stromal-tumor',
     oneSentence:
-      "Gastrointestinal stromal tumor is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Gastrointestinal stromal tumor is a rare tumor of the GI tract wall, often driven by KIT or PDGFRA variants, with treatment decisions guided by pathology, mutation type, size, and location.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Gastrointestinal stromal tumor',
+      'A rare tumor in the wall of the digestive tract that is often managed with surgery and targeted therapy',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NCI PDQ describes GISTs as less than 1% of all GI tumors, though very small indolent tumors may be undercounted.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1601,7 +1729,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 386,
+      name: 'gastrointestinal-stromal-tumor-journey.png',
+      url: '/images/diseases/gastrointestinal-stromal-tumor-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -1660,14 +1793,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2033, 'disease-generalized-pustular-psoriasis'),
     name: 'Generalized pustular psoriasis',
     nameEn: 'Generalized pustular psoriasis',
-    alias: '泛发性脓疱型银屑病; China Second Rare Disease Catalog item 33',
+    alias:
+      'GPP, von Zumbusch pustular psoriasis, China Second Rare Disease Catalog item 33',
     slug: 'generalized-pustular-psoriasis',
     oneSentence:
-      "Generalized pustular psoriasis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Generalized pustular psoriasis is a rare but potentially severe systemic inflammatory skin disease that can cause sudden widespread painful red skin, sterile pustules, fever, dehydration, and organ-complication risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Generalized pustular psoriasis',
+      'A severe pustular form of psoriasis that can flare suddenly and needs urgent recognition',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall, and flare frequency and severity vary widely.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1675,7 +1809,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 387,
+      name: 'generalized-pustular-psoriasis-journey.png',
+      url: '/images/diseases/generalized-pustular-psoriasis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -1683,14 +1822,14 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     name: 'Genetic hypoparathyroidism',
     nameEn: 'Genetic hypoparathyroidism',
     alias:
-      '遗传性甲状旁腺功能减退症; China Second Rare Disease Catalog item 34',
+      'Inherited hypoparathyroidism, hypocalcemia with low PTH, China Second Rare Disease Catalog item 34',
     slug: 'genetic-hypoparathyroidism',
     oneSentence:
-      "Genetic hypoparathyroidism is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Genetic hypoparathyroidism is a group of inherited low-calcium disorders caused by abnormal parathyroid development, PTH secretion, or calcium-sensing pathways, leading to hypocalcemia, hyperphosphatemia, spasms, seizures, and kidney-risk monitoring needs.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Genetic hypoparathyroidism',
+      'An inherited low-calcium condition caused by too little parathyroid hormone or related signaling',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall, with wide variation by genetic type and age at diagnosis.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1698,21 +1837,31 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 388,
+      name: 'genetic-hypoparathyroidism-journey.png',
+      url: '/images/diseases/genetic-hypoparathyroidism-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'genetic-counseling',
+      'endocrine',
+    ],
   },
   {
     ...entity(2035, 'disease-giant-cell-arteritis'),
     name: 'Giant cell arteritis',
     nameEn: 'Giant cell arteritis',
-    alias: '巨细胞动脉炎; China Second Rare Disease Catalog item 35',
+    alias:
+      'GCA, temporal arteritis, large-vessel vasculitis, China Second Rare Disease Catalog item 35',
     slug: 'giant-cell-arteritis',
     oneSentence:
-      "Giant cell arteritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Giant cell arteritis is a medium- and large-vessel vasculitis mainly affecting people over 50, often causing new headache, scalp tenderness, jaw pain with chewing, and vision symptoms that can become permanent without urgent treatment.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Giant cell arteritis',
+      'A vasculitis in older adults where new headache and vision symptoms are urgent warning signs',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it mainly affects adults over age 50, with frequency varying by ancestry and region.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1720,21 +1869,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 389,
+      name: 'giant-cell-arteritis-journey.png',
+      url: '/images/diseases/giant-cell-arteritis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2036, 'disease-giant-cell-tumor-of-bone'),
     name: 'Giant cell tumor of bone',
     nameEn: 'Giant cell tumor of bone',
-    alias: '骨巨细胞瘤; China Second Rare Disease Catalog item 36',
+    alias: 'GCTB, osteoclastoma, China Second Rare Disease Catalog item 36',
     slug: 'giant-cell-tumor-of-bone',
     oneSentence:
-      "Giant cell tumor of bone is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Giant cell tumor of bone is a rare primary bone tumor that is usually not cancer in the usual sense, but it can grow aggressively where it starts, damage bone, cause pain and swelling, and recur after treatment.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Giant cell tumor of bone',
+      'A rare bone tumor near joints that can damage bone and come back locally',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; GARD lists it as a rare disease that usually begins in adulthood, with frequency varying by registry and diagnostic definition.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1742,7 +1896,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 390,
+      name: 'giant-cell-tumor-of-bone-journey.png',
+      url: '/images/diseases/giant-cell-tumor-of-bone-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -1774,14 +1933,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2037, 'disease-glanzmann-thrombasthenia'),
     name: 'Glanzmann thrombasthenia',
     nameEn: 'Glanzmann thrombasthenia',
-    alias: '血小板无力症; China Second Rare Disease Catalog item 37',
+    alias:
+      'GT, Glanzmann disease, integrin alphaIIb beta3 deficiency, China Second Rare Disease Catalog item 37',
     slug: 'glanzmann-thrombasthenia',
     oneSentence:
-      "Glanzmann thrombasthenia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Glanzmann thrombasthenia is an autosomal recessive platelet function disorder in which platelet counts may be normal but platelets cannot aggregate properly, causing recurrent nosebleeds, gum bleeding, bruising, heavy menstrual bleeding, or prolonged bleeding after procedures.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Glanzmann thrombasthenia',
+      'An inherited bleeding disorder where platelet number may be normal but clotting function is weak',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 1 million people worldwide, with higher frequency in some communities.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1789,21 +1949,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 391,
+      name: 'glanzmann-thrombasthenia-journey.png',
+      url: '/images/diseases/glanzmann-thrombasthenia-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2038, 'disease-glioblastoma'),
     name: 'Glioblastoma',
     nameEn: 'Glioblastoma',
-    alias: '胶质母细胞瘤; China Second Rare Disease Catalog item 38',
+    alias:
+      'GBM, adult diffuse glioma grade 4, China Second Rare Disease Catalog item 38',
     slug: 'glioblastoma',
     oneSentence:
-      "Glioblastoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Glioblastoma is an aggressive adult primary central nervous system tumor that may cause new or worsening headache, seizures, weakness, speech or vision changes, and needs coordinated care from neurosurgery and neuro-oncology teams.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Glioblastoma',
+      'A fast-growing malignant brain glioma that needs multidisciplinary care',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is a rare central nervous system tumor, relatively common among adult malignant primary brain tumors but still uncommon in the general population.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1811,7 +1977,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 392,
+      name: 'glioblastoma-journey.png',
+      url: '/images/diseases/glioblastoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -1869,14 +2040,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2039, 'disease-gorlin-syndrome'),
     name: 'Gorlin syndrome',
     nameEn: 'Gorlin syndrome',
-    alias: '高林综合征; China Second Rare Disease Catalog item 39',
+    alias:
+      'Nevoid basal cell carcinoma syndrome, NBCCS, basal cell nevus syndrome, China Second Rare Disease Catalog item 39',
     slug: 'gorlin-syndrome',
     oneSentence:
-      "Gorlin syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Gorlin syndrome is an inherited tumor predisposition syndrome that can cause early or repeated basal cell carcinomas, jaw keratocysts, small pits on the palms or soles, and skeletal features, requiring long-term dermatology, oral/maxillofacial, and genetics follow-up.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Gorlin syndrome',
+      'An inherited syndrome that raises the risk of basal cell cancers and jaw cysts',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 31,000 people, although mild cases and variable family expression affect recognition.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -1884,8 +2056,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 393,
+      name: 'gorlin-syndrome-journey.png',
+      url: '/images/diseases/gorlin-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(38, 'disease-hemophilia'),
@@ -2109,14 +2286,14 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2040, 'disease-hidradenitis-suppurativa'),
     name: 'Hidradenitis suppurativa',
     nameEn: 'Hidradenitis suppurativa',
-    alias: '化脓性汗腺炎; China Second Rare Disease Catalog item 40',
+    alias: 'HS, acne inversa, China Second Rare Disease Catalog item 40',
     slug: 'hidradenitis-suppurativa',
     oneSentence:
-      "Hidradenitis suppurativa is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Hidradenitis suppurativa is a chronic, recurrent inflammatory skin disease that often causes painful nodules, abscesses, draining tunnels, and scarring in friction-prone areas such as the armpits, groin, buttocks, and under the breasts.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Hidradenitis suppurativa',
+      'A chronic inflammatory skin condition with painful recurring nodules and tunnels in friction areas',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; estimates vary widely, and underdiagnosis or misdiagnosis strongly affects statistics.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2124,7 +2301,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'dermatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 394,
+      name: 'hidradenitis-suppurativa-journey.png',
+      url: '/images/diseases/hidradenitis-suppurativa-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -2228,14 +2410,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2041, 'disease-hutchinson-gilford-progeria-syndrome'),
     name: 'Hutchinson-Gilford progeria syndrome',
     nameEn: 'Hutchinson-Gilford progeria syndrome',
-    alias: '早老症; China Second Rare Disease Catalog item 41',
+    alias:
+      'HGPS, progeria, childhood progeria, China Second Rare Disease Catalog item 41',
     slug: 'hutchinson-gilford-progeria-syndrome',
     oneSentence:
-      "Hutchinson-Gilford progeria syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Hutchinson-Gilford progeria syndrome is an extremely rare childhood premature-aging condition, usually caused by a new LMNA variant, with severe growth failure, loss of body fat, skin and hair changes, and high cardiovascular and stroke risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Hutchinson-Gilford progeria syndrome',
+      'A childhood premature-aging condition where cardiovascular monitoring is central',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics describes it as extremely rare, with most cases caused by new variants rather than inherited from a parent.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2243,8 +2426,13 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'genetic-developmental',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 395,
+      name: 'hutchinson-gilford-progeria-syndrome-journey.png',
+      url: '/images/diseases/hutchinson-gilford-progeria-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(
@@ -2403,14 +2591,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2042, 'disease-inflammatory-myofibroblastic-tumor'),
     name: 'Inflammatory myofibroblastic tumor',
     nameEn: 'Inflammatory myofibroblastic tumor',
-    alias: '炎性肌纤维母细胞瘤; China Second Rare Disease Catalog item 42',
+    alias:
+      'IMT, inflammatory pseudotumor-like tumor, China Second Rare Disease Catalog item 42',
     slug: 'inflammatory-myofibroblastic-tumor',
     oneSentence:
-      "Inflammatory myofibroblastic tumor is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Inflammatory myofibroblastic tumor is a rare intermediate soft tissue tumor that can arise in the lung, abdomen, pelvis, bladder, head and neck, or other sites, and often needs pathology plus ALK and other molecular testing to distinguish it from inflammation, infection, and other tumors.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Inflammatory myofibroblastic tumor',
+      'A rare soft tissue tumor that can look like inflammation but needs tumor specialist review',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; GARD lists inflammatory myofibroblastic tumor as a rare disease that can affect children, adolescents, and adults.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2418,7 +2607,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 396,
+      name: 'inflammatory-myofibroblastic-tumor-journey.png',
+      url: '/images/diseases/inflammatory-myofibroblastic-tumor-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -2455,14 +2649,15 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(2043, 'disease-leber-congenital-amaurosis'),
     name: 'Leber congenital amaurosis',
     nameEn: 'Leber congenital amaurosis',
-    alias: 'Leber先天性黑矇; China Second Rare Disease Catalog item 43',
+    alias:
+      'LCA, early-onset severe retinal dystrophy, China Second Rare Disease Catalog item 43',
     slug: 'leber-congenital-amaurosis',
     oneSentence:
-      "Leber congenital amaurosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Leber congenital amaurosis is a group of inherited retinal diseases beginning in infancy or early childhood, causing severe visual impairment, nystagmus, light sensitivity, or night blindness and requiring inherited-retina specialist care.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Leber congenital amaurosis',
+      'An inherited retinal disease where severe vision problems start very early in life',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics describes LCA as a rare condition accounting for a small share of retinal dystrophies.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2470,21 +2665,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'ophthalmologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 397,
+      name: 'leber-congenital-amaurosis-journey.png',
+      url: '/images/diseases/leber-congenital-amaurosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2044, 'disease-lennox-gastaut-syndrome'),
     name: 'Lennox-Gastaut syndrome',
     nameEn: 'Lennox-Gastaut syndrome',
-    alias: 'Lennox-Gastaut 综合征; China Second Rare Disease Catalog item 44',
+    alias:
+      'LGS, developmental and epileptic encephalopathy, China Second Rare Disease Catalog item 44',
     slug: 'lennox-gastaut-syndrome',
     oneSentence:
-      "Lennox-Gastaut syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Lennox-Gastaut syndrome is a severe childhood-onset developmental and epileptic encephalopathy with multiple seizure types, drop attacks, cognitive and behavioral difficulties, and seizures that are often hard to fully control.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Lennox-Gastaut syndrome',
+      'A childhood epilepsy syndrome with multiple seizure types and developmental impact',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; Epilepsy Foundation describes it as an uncommon but severe childhood epilepsy syndrome.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2492,21 +2693,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 398,
+      name: 'lennox-gastaut-syndrome-journey.png',
+      url: '/images/diseases/lennox-gastaut-syndrome-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2045, 'disease-limbal-stem-cell-deficiency'),
     name: 'Limbal stem cell deficiency',
     nameEn: 'Limbal stem cell deficiency',
-    alias: '角膜缘干细胞缺乏症; China Second Rare Disease Catalog item 45',
+    alias:
+      'LSCD, limbal stem cell dysfunction, China Second Rare Disease Catalog item 45',
     slug: 'limbal-stem-cell-deficiency',
     oneSentence:
-      "Limbal stem cell deficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Limbal stem cell deficiency occurs when the stem cells at the edge of the cornea are reduced or dysfunctional, causing recurrent redness, pain, light sensitivity, reduced vision, unstable corneal surface, and abnormal blood-vessel growth.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Limbal stem cell deficiency',
+      'An ocular surface disease where the cornea loses its normal repair system',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon and may follow chemical or thermal injury, severe ocular surface inflammation, congenital disease, contact lens damage, or repeated eye surgery.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2514,21 +2721,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'ophthalmologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 399,
+      name: 'limbal-stem-cell-deficiency-journey.png',
+      url: '/images/diseases/limbal-stem-cell-deficiency-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2046, 'disease-malignant-hyperthermia'),
     name: 'Malignant hyperthermia',
     nameEn: 'Malignant hyperthermia',
-    alias: '恶性高热; China Second Rare Disease Catalog item 46',
+    alias:
+      'MH; anesthesia-related malignant hyperthermia; China Second Rare Disease Catalog item 46',
     slug: 'malignant-hyperthermia',
     oneSentence:
-      "Malignant hyperthermia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Malignant hyperthermia is an inherited anesthesia emergency in which a person may feel well until certain inhaled anesthetics or succinylcholine trigger a fast, life-threatening high-metabolism reaction.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Malignant hyperthermia',
+      'An inherited anesthesia risk that can suddenly become an emergency',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; many susceptible people are never identified because they have not been exposed to triggering anesthetic drugs.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2536,21 +2749,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'multisystem',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 400,
+      name: 'malignant-hyperthermia-journey.png',
+      url: '/images/diseases/malignant-hyperthermia-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2047, 'disease-malignant-pleural-mesothelioma'),
     name: 'Malignant pleural mesothelioma',
     nameEn: 'Malignant pleural mesothelioma',
-    alias: '恶性胸膜间皮瘤; China Second Rare Disease Catalog item 47',
+    alias:
+      'MPM; pleural malignant mesothelioma; China Second Rare Disease Catalog item 47',
     slug: 'malignant-pleural-mesothelioma',
     oneSentence:
-      "Malignant pleural mesothelioma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Malignant pleural mesothelioma is a rare cancer of the pleural lining, often linked to asbestos exposure, that may first look like recurrent pleural fluid, breathlessness, or chest pain.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Malignant pleural mesothelioma',
+      'A rare pleural cancer that often causes fluid, breathlessness, and chest pain',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon overall, but risk is higher after asbestos or related occupational exposure, often many years earlier.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2558,21 +2777,25 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 401,
+      name: 'malignant-pleural-mesothelioma-journey.png',
+      url: '/images/diseases/malignant-pleural-mesothelioma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2048, 'disease-melanoma'),
     name: 'Melanoma',
     nameEn: 'Melanoma',
-    alias: '黑色素瘤; China Second Rare Disease Catalog item 48',
+    alias: 'Malignant melanoma; China Second Rare Disease Catalog item 48',
     slug: 'melanoma',
     oneSentence:
-      "Melanoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Melanoma',
+      "Melanoma is a cancer of melanocytes that can arise in skin, nails, mucosa, or the eye; it is included in China's second rare disease catalog, although frequency varies greatly by country and ancestry.",
+    plainName: 'A melanocyte cancer that needs early pathology confirmation',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; melanoma is not globally rare in every region, and acral or mucosal melanoma deserves particular attention in many Asian populations.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2580,21 +2803,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 402,
+      name: 'melanoma-journey.png',
+      url: '/images/diseases/melanoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2049, 'disease-metachromatic-leukodystrophy'),
     name: 'Metachromatic leukodystrophy',
     nameEn: 'Metachromatic leukodystrophy',
-    alias: '异染性脑白质营养不良; China Second Rare Disease Catalog item 49',
+    alias:
+      'MLD; arylsulfatase A deficiency; China Second Rare Disease Catalog item 49',
     slug: 'metachromatic-leukodystrophy',
     oneSentence:
-      "Metachromatic leukodystrophy is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Metachromatic leukodystrophy is usually an ARSA-related lysosomal storage disease in which sulfatides build up and progressively damage central and peripheral nerve myelin.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Metachromatic leukodystrophy',
+      'An inherited white-matter disease that progressively damages myelin',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; international estimates are about 1 in 40,000 to 160,000 people, with higher rates in some genetically isolated groups.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2602,21 +2831,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 403,
+      name: 'metachromatic-leukodystrophy-journey.png',
+      url: '/images/diseases/metachromatic-leukodystrophy-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2050, 'disease-monogenic-non-syndromic-obesity'),
     name: 'Monogenic non-syndromic obesity',
     nameEn: 'Monogenic non-syndromic obesity',
-    alias: '单基因非综合征性肥胖; China Second Rare Disease Catalog item 50',
+    alias:
+      'Monogenic obesity; non-syndromic genetic obesity; China Second Rare Disease Catalog item 50',
     slug: 'monogenic-non-syndromic-obesity',
     oneSentence:
-      "Monogenic non-syndromic obesity is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Monogenic non-syndromic obesity',
+      'Monogenic non-syndromic obesity is early-onset severe obesity caused by a single-gene change that often affects hunger, fullness, and energy regulation rather than willpower.',
+    plainName: 'Inherited early-onset obesity often marked by intense hunger',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall, but should be considered in children with severe rapid weight gain before age 5 and persistent hyperphagia.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2624,21 +2858,31 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 404,
+      name: 'monogenic-non-syndromic-obesity-journey.png',
+      url: '/images/diseases/monogenic-non-syndromic-obesity-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'endocrine',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(2051, 'disease-multiple-endocrine-neoplasia'),
     name: 'Multiple endocrine neoplasia',
     nameEn: 'Multiple endocrine neoplasia',
-    alias: '多发性内分泌腺瘤病; China Second Rare Disease Catalog item 51',
+    alias:
+      'MEN; multiple endocrine neoplasia syndrome; China Second Rare Disease Catalog item 51',
     slug: 'multiple-endocrine-neoplasia',
     oneSentence:
-      "Multiple endocrine neoplasia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Multiple endocrine neoplasia is a group of inherited endocrine tumor syndromes in which one person can develop tumors or overgrowth in two or more hormone-producing glands.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Multiple endocrine neoplasia',
+      'An inherited condition that can cause repeated tumors in endocrine glands',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MEN1 and MEN2 are each estimated internationally at roughly tens of thousands of people per case, while MEN4 is rarer.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2646,21 +2890,30 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 405,
+      name: 'multiple-endocrine-neoplasia-journey.png',
+      url: '/images/diseases/multiple-endocrine-neoplasia-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'endocrine',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(2052, 'disease-narcolepsy'),
     name: 'Narcolepsy',
     nameEn: 'Narcolepsy',
-    alias: '发作性睡病; China Second Rare Disease Catalog item 52',
+    alias:
+      'Narcolepsy; daytime sleep disorder; China Second Rare Disease Catalog item 52',
     slug: 'narcolepsy',
     oneSentence:
-      "Narcolepsy is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Narcolepsy',
+      'Narcolepsy is a chronic sleep-wake regulation disorder marked by uncontrollable daytime sleepiness, sometimes with cataplexy, sleep paralysis, hallucinations, and fragmented nighttime sleep.',
+    plainName: 'A sleep-wake brain regulation disorder',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; frequency varies by region, and mild or pediatric cases may be underdiagnosed.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2668,21 +2921,25 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 406,
+      name: 'narcolepsy-journey.png',
+      url: '/images/diseases/narcolepsy-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2053, 'disease-neuroblastoma'),
     name: 'Neuroblastoma',
     nameEn: 'Neuroblastoma',
-    alias: '神经母细胞瘤; China Second Rare Disease Catalog item 53',
+    alias: 'Childhood neuroblastoma; China Second Rare Disease Catalog item 53',
     slug: 'neuroblastoma',
     oneSentence:
-      "Neuroblastoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Neuroblastoma',
+      'Neuroblastoma is a sympathetic nervous system cancer seen mostly in infants and children, arising in the adrenal gland or paraspinal nerve tissue with highly variable risk and treatment intensity.',
+    plainName: 'A childhood nerve-cell cancer treated according to risk group',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is an uncommon childhood cancer, usually diagnosed before age 5, and sometimes found before birth or in infancy.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2690,21 +2947,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 407,
+      name: 'neuroblastoma-journey.png',
+      url: '/images/diseases/neuroblastoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2054, 'disease-neurofibromatosis'),
     name: 'Neurofibromatosis',
     nameEn: 'Neurofibromatosis',
-    alias: '神经纤维瘤病; China Second Rare Disease Catalog item 54',
+    alias:
+      'NF; NF1; NF2-related schwannomatosis; schwannomatosis; China Second Rare Disease Catalog item 54',
     slug: 'neurofibromatosis',
     oneSentence:
-      "Neurofibromatosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Neurofibromatosis is a group of inherited nervous-system tumor predisposition disorders that can affect skin, peripheral nerves, brain and spine, eyes, bones, hearing, and learning.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Neurofibromatosis',
+      'An inherited condition with nerve and skin tumors that needs lifelong surveillance',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NF1 is the most common form, while NF2-related schwannomatosis and other schwannomatoses are rarer.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2712,21 +2975,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'genetic-developmental',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 408,
+      name: 'neurofibromatosis-journey.png',
+      url: '/images/diseases/neurofibromatosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2055, 'disease-neuronal-ceroid-lipofuscinosis'),
     name: 'Neuronal ceroid lipofuscinosis',
     nameEn: 'Neuronal ceroid lipofuscinosis',
-    alias: '神经元蜡样脂褐质沉积症; China Second Rare Disease Catalog item 55',
+    alias:
+      'NCL; Batten disease; CLN-related disease; China Second Rare Disease Catalog item 55',
     slug: 'neuronal-ceroid-lipofuscinosis',
     oneSentence:
-      "Neuronal ceroid lipofuscinosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Neuronal ceroid lipofuscinosis is a group of inherited lysosomal neurodegenerative disorders that often cause vision loss, seizures, developmental or cognitive regression, movement problems, and increasing care needs.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Neuronal ceroid lipofuscinosis',
+      'Inherited neurodegenerative disorders that affect vision, seizures, and development',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NCLs are rare overall but are an important cause of inherited childhood neurodegeneration, with age of onset and speed varying by CLN type.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2734,21 +3003,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 409,
+      name: 'neuronal-ceroid-lipofuscinosis-journey.png',
+      url: '/images/diseases/neuronal-ceroid-lipofuscinosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2056, 'disease-neurotrophic-keratitis'),
     name: 'Neurotrophic keratitis',
     nameEn: 'Neurotrophic keratitis',
-    alias: '神经营养性角膜炎; China Second Rare Disease Catalog item 56',
+    alias:
+      'Neurotrophic keratopathy; NK; China Second Rare Disease Catalog item 56',
     slug: 'neurotrophic-keratitis',
     oneSentence:
-      "Neurotrophic keratitis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Neurotrophic keratitis is an ocular surface disease caused by impaired corneal sensory nerves, where the eye may not hurt much even while epithelial defects, ulcers, or perforation risk develop.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Neurotrophic keratitis',
+      'A corneal nerve disease where too little pain can hide serious injury',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon and often follows herpes eye disease, trigeminal nerve injury, ocular surgery, diabetes, or chronic ocular surface disease.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2756,21 +3031,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'ophthalmologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 410,
+      name: 'neurotrophic-keratitis-journey.png',
+      url: '/images/diseases/neurotrophic-keratitis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2057, 'disease-osteosarcoma'),
     name: 'Osteosarcoma',
     nameEn: 'Osteosarcoma',
-    alias: '骨肉瘤; China Second Rare Disease Catalog item 57',
+    alias: 'Osteogenic sarcoma; China Second Rare Disease Catalog item 57',
     slug: 'osteosarcoma',
     oneSentence:
-      "Osteosarcoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Osteosarcoma is a malignant bone tumor that makes abnormal bone-like tissue, often arising in adolescent long bones and usually requiring combined chemotherapy and surgery.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Osteosarcoma',
+      'A malignant bone tumor that often starts with persistent bone pain and swelling',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon overall, with a peak in adolescents and frequent involvement of long bones around the knee.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2778,21 +3058,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 411,
+      name: 'osteosarcoma-journey.png',
+      url: '/images/diseases/osteosarcoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2058, 'disease-pemphigus'),
     name: 'Pemphigus',
     nameEn: 'Pemphigus',
-    alias: '天疱疮; China Second Rare Disease Catalog item 58',
+    alias:
+      'Autoimmune blistering disease; pemphigus vulgaris; pemphigus foliaceus; China Second Rare Disease Catalog item 58',
     slug: 'pemphigus',
     oneSentence:
-      "Pemphigus is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Pemphigus is a group of autoimmune blistering diseases in which antibodies attack connections between skin or mucosal cells, causing recurrent blisters, erosions, and painful mouth or skin wounds.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Pemphigus',
+      'An autoimmune disease causing recurrent skin and mouth blisters and erosions',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; pemphigus is rare overall, with pemphigus vulgaris often involving the mouth and pemphigus foliaceus more often affecting superficial skin.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2800,21 +3086,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 412,
+      name: 'pemphigus-journey.png',
+      url: '/images/diseases/pemphigus-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2059, 'disease-persistent-pulmonary-hypertension-of-the-newborn'),
     name: 'Persistent pulmonary hypertension of the newborn',
     nameEn: 'Persistent pulmonary hypertension of the newborn',
-    alias: '新生儿持续肺动脉高压; China Second Rare Disease Catalog item 59',
+    alias:
+      'PPHN; persistent neonatal pulmonary hypertension; China Second Rare Disease Catalog item 59',
     slug: 'persistent-pulmonary-hypertension-of-the-newborn',
     oneSentence:
-      "Persistent pulmonary hypertension of the newborn is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Persistent pulmonary hypertension of the newborn is a critical newborn condition in which lung blood vessels fail to relax after birth, causing severe low oxygen that needs rapid NICU care.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Persistent pulmonary hypertension of the newborn',
+      'A newborn emergency where the lung circulation does not switch over after birth',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it often occurs with perinatal hypoxia, meconium aspiration, pneumonia or sepsis, abnormal lung development, or congenital diaphragmatic hernia.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2822,21 +3114,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'respiratory',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 413,
+      name: 'persistent-pulmonary-hypertension-of-the-newborn-journey.png',
+      url: '/images/diseases/persistent-pulmonary-hypertension-of-the-newborn-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2060, 'disease-pheochromocytoma'),
     name: 'Pheochromocytoma',
     nameEn: 'Pheochromocytoma',
-    alias: '嗜铬细胞瘤; China Second Rare Disease Catalog item 60',
+    alias:
+      'PCC; pheochromocytoma/paraganglioma; PPGL; China Second Rare Disease Catalog item 60',
     slug: 'pheochromocytoma',
     oneSentence:
-      "Pheochromocytoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Pheochromocytoma is a neuroendocrine tumor of adrenal medulla chromaffin cells that can release catecholamines and cause episodic or sustained hypertension, palpitations, headache, and sweating.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Pheochromocytoma',
+      'An endocrine tumor that can suddenly release blood-pressure hormones',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon among people with hypertension, but important because it can cause hypertensive crisis, arrhythmia, and anesthesia risk.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2844,22 +3142,31 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 414,
+      name: 'pheochromocytoma-journey.png',
+      url: '/images/diseases/pheochromocytoma-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'endocrine',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(2061, 'disease-pik3ca-related-overgrowth-syndrome'),
-    name: 'PIK3CA-related overgrowth syndrome',
-    nameEn: 'PIK3CA-related overgrowth syndrome',
+    name: 'PIK3CA-related overgrowth spectrum',
+    nameEn: 'PIK3CA-related overgrowth spectrum',
     alias:
-      'PIK3CA相关过度生长综合征; China Second Rare Disease Catalog item 61',
+      'PROS; PIK3CA-related overgrowth syndrome; China Second Rare Disease Catalog item 61',
     slug: 'pik3ca-related-overgrowth-syndrome',
     oneSentence:
-      "PIK3CA-related overgrowth syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'PIK3CA-related overgrowth spectrum is a group of disorders caused by activating mosaic PIK3CA variants, leading to asymmetric overgrowth of soft tissue, vessels, lymphatics, fat, bone, or brain tissue.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: PIK3CA-related overgrowth syndrome',
+      'A mosaic genetic overgrowth condition often involving vessels or lymphatics',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is rare overall and often delayed because findings are split across vascular malformation, limb overgrowth, spine, or neurologic clinics.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2867,21 +3174,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'genetic-developmental',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 415,
+      name: 'pik3ca-related-overgrowth-syndrome-journey.png',
+      url: '/images/diseases/pik3ca-related-overgrowth-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2062, 'disease-polycythaemia-vera'),
     name: 'Polycythaemia vera',
     nameEn: 'Polycythaemia vera',
-    alias: '真性红细胞增多症; China Second Rare Disease Catalog item 62',
+    alias: 'PV; polycythemia vera; China Second Rare Disease Catalog item 62',
     slug: 'polycythaemia-vera',
     oneSentence:
-      "Polycythaemia vera is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Polycythaemia vera is a myeloproliferative neoplasm in which the bone marrow makes too many red blood cells, often with high white cells or platelets, thickening blood and increasing clot risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Polycythaemia vera',
+      'A chronic bone marrow disorder with too many blood cells and clot risk',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is more common in older adults but can occur in younger people and must be distinguished from secondary erythrocytosis.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2889,21 +3201,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 416,
+      name: 'polycythaemia-vera-journey.png',
+      url: '/images/diseases/polycythaemia-vera-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2063, 'disease-primary-biliary-cholangitis'),
     name: 'Primary biliary cholangitis',
     nameEn: 'Primary biliary cholangitis',
-    alias: '原发性胆汁性胆管炎; China Second Rare Disease Catalog item 63',
+    alias:
+      'PBC; primary biliary cirrhosis (older name); China Second Rare Disease Catalog item 63',
     slug: 'primary-biliary-cholangitis',
     oneSentence:
-      "Primary biliary cholangitis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Primary biliary cholangitis is a chronic autoimmune cholestatic liver disease in which small intrahepatic bile ducts are gradually damaged, causing itch, fatigue, cholestasis, and fibrosis risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Primary biliary cholangitis',
+      'A chronic autoimmune disease that slowly injures small bile ducts in the liver',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is more common in middle-aged women, and many people are found before symptoms through alkaline phosphatase elevation and antimitochondrial antibodies.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2911,21 +3229,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'digestive-hepatic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 417,
+      name: 'primary-biliary-cholangitis-journey.png',
+      url: '/images/diseases/primary-biliary-cholangitis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2064, 'disease-primary-growth-hormone-deficiency'),
     name: 'Primary growth hormone deficiency',
     nameEn: 'Primary growth hormone deficiency',
-    alias: '原发性生长激素缺乏症; China Second Rare Disease Catalog item 64',
+    alias:
+      'GHD; primary GH deficiency; China Second Rare Disease Catalog item 64',
     slug: 'primary-growth-hormone-deficiency',
     oneSentence:
-      "Primary growth hormone deficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Primary growth hormone deficiency',
+      'Primary growth hormone deficiency is insufficient growth hormone secretion from pituitary or hypothalamic causes, most often noticed in children as slow growth and marked short stature.',
+    plainName: 'A growth hormone shortage that makes children grow too slowly',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; childhood GHD is uncommon, but should be assessed when growth velocity is clearly low or the height curve crosses downward.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2933,22 +3256,31 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 418,
+      name: 'primary-growth-hormone-deficiency-journey.png',
+      url: '/images/diseases/primary-growth-hormone-deficiency-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'endocrine',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(2065, 'disease-primary-igf1-deficiency'),
     name: 'Primary IGF1 deficiency',
     nameEn: 'Primary IGF1 deficiency',
     alias:
-      '原发性胰岛素样生长因子-1缺乏症; China Second Rare Disease Catalog item 65',
+      'Primary IGF-1 deficiency; severe primary IGF-1 deficiency; Laron syndrome related; China Second Rare Disease Catalog item 65',
     slug: 'primary-igf1-deficiency',
     oneSentence:
-      "Primary IGF1 deficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Primary IGF1 deficiency is a disorder in which the body cannot make enough IGF-1 or cannot respond properly to growth hormone, causing severe postnatal growth failure and short stature.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Primary IGF1 deficiency',
+      'A condition where growth hormone may be present but IGF-1 is too low for normal growth',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; severe primary IGF-1 deficiency is very rare and classically has very low height and IGF-1 with normal or high growth hormone.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2956,21 +3288,31 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'metabolic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 419,
+      name: 'primary-igf1-deficiency-journey.png',
+      url: '/images/diseases/primary-igf1-deficiency-journey.png',
+    },
+    tagSlugs: [
+      'second-rare-disease-catalog',
+      'endocrine',
+      'genetic-counseling',
+    ],
   },
   {
     ...entity(2066, 'disease-primary-immunodeficiency'),
     name: 'Primary immunodeficiency',
     nameEn: 'Primary immunodeficiency',
-    alias: '原发性免疫缺陷; China Second Rare Disease Catalog item 66',
+    alias:
+      'PID; PIDD; inborn errors of immunity; China Second Rare Disease Catalog item 66',
     slug: 'primary-immunodeficiency',
     oneSentence:
-      "Primary immunodeficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Primary immunodeficiency is a large group of inherited or inborn immune system disorders that can cause recurrent, severe, or unusual infections and may also involve autoimmunity, allergy, inflammation, or cancer risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Primary immunodeficiency',
+      'A group of rare conditions where parts of the immune defense are missing or do not work well',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; frequency varies greatly by subtype. NIAID notes more than 200 recognized forms and about 500,000 affected people in the United States.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -2978,21 +3320,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 420,
+      name: 'primary-immunodeficiency-journey.png',
+      url: '/images/diseases/primary-immunodeficiency-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2067, 'disease-primary-myelofibrosis'),
     name: 'Primary myelofibrosis',
     nameEn: 'Primary myelofibrosis',
-    alias: '原发性骨髓纤维化; China Second Rare Disease Catalog item 67',
+    alias:
+      'PMF; primary myelofibrosis; China Second Rare Disease Catalog item 67',
     slug: 'primary-myelofibrosis',
     oneSentence:
-      "Primary myelofibrosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Primary myelofibrosis is a rare myeloproliferative neoplasm in which bone marrow is gradually replaced by fibrous tissue, causing anemia, enlarged spleen, constitutional symptoms, bleeding, or clot risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Primary myelofibrosis',
+      'A chronic blood disorder where scar-like tissue makes bone marrow production harder',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 500,000 people worldwide, most often diagnosed at ages 50 to 80 but possible at any age.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3000,21 +3348,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 421,
+      name: 'primary-myelofibrosis-journey.png',
+      url: '/images/diseases/primary-myelofibrosis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2068, 'disease-primary-sclerosing-cholangitis'),
     name: 'Primary sclerosing cholangitis',
     nameEn: 'Primary sclerosing cholangitis',
-    alias: '原发性硬化性胆管炎; China Second Rare Disease Catalog item 68',
+    alias:
+      'PSC; primary sclerosing cholangitis; China Second Rare Disease Catalog item 68',
     slug: 'primary-sclerosing-cholangitis',
     oneSentence:
-      "Primary sclerosing cholangitis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Primary sclerosing cholangitis is a chronic bile duct disease in which inflammation and scarring narrow bile ducts inside and outside the liver, causing cholestasis, liver injury, and frequent association with inflammatory bowel disease.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Primary sclerosing cholangitis',
+      'A chronic liver and bile duct disease where bile ducts slowly narrow',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; PSC is rare overall, varies by population and geography, and is often seen in people with inflammatory bowel disease such as ulcerative colitis.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3022,7 +3376,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'digestive-hepatic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 422,
+      name: 'primary-sclerosing-cholangitis-journey.png',
+      url: '/images/diseases/primary-sclerosing-cholangitis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -3030,14 +3389,14 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     name: 'Progressive fibrosing interstitial lung disease',
     nameEn: 'Progressive fibrosing interstitial lung disease',
     alias:
-      '进行性纤维化性间质性肺疾病; China Second Rare Disease Catalog item 69',
+      'PF-ILD; PPF; progressive pulmonary fibrosis; China Second Rare Disease Catalog item 69',
     slug: 'progressive-fibrosing-interstitial-lung-disease',
     oneSentence:
-      "Progressive fibrosing interstitial lung disease is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Progressive fibrosing interstitial lung disease describes a progressive fibrosis pattern across several interstitial lung diseases, with worsening breathlessness, dry cough, lung function, or CT findings over time.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Progressive fibrosing interstitial lung disease',
+      'A progressive scarring pattern in the lungs that makes breathing harder over time',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is not one single disease but a progressive phenotype across ILDs, so rarity and causes vary by region, ancestry, exposure, and underlying condition.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3045,43 +3404,54 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'respiratory',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 423,
+      name: 'progressive-fibrosing-interstitial-lung-disease-journey.png',
+      url: '/images/diseases/progressive-fibrosing-interstitial-lung-disease-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2070, 'disease-recurrent-pericarditis'),
     name: 'Recurrent pericarditis',
     nameEn: 'Recurrent pericarditis',
-    alias: '复发性心包炎; China Second Rare Disease Catalog item 70',
+    alias:
+      'RP; recurrent pericarditis; China Second Rare Disease Catalog item 70',
     slug: 'recurrent-pericarditis',
     oneSentence:
-      "Recurrent pericarditis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Recurrent pericarditis is return of pericardial inflammation after a symptom-free interval, causing repeated chest pain and inflammation and sometimes pericardial effusion or tamponade risk.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Recurrent pericarditis',
+      'Repeated inflammation of the sac around the heart that causes recurring chest pain',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; the American Heart Association notes that about 15% to 30% of people treated for acute pericarditis may have recurrence, and colchicine lowers recurrence risk.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
-    categorySlug: 'immunological-rheumatologic',
+    categorySlug: 'cardiovascular',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 424,
+      name: 'recurrent-pericarditis-journey.png',
+      url: '/images/diseases/recurrent-pericarditis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2071, 'disease-retinopathy-of-prematurity'),
     name: 'Retinopathy of prematurity',
     nameEn: 'Retinopathy of prematurity',
-    alias: '早产儿视网膜病; China Second Rare Disease Catalog item 71',
+    alias: 'ROP; China Second Rare Disease Catalog item 71',
     slug: 'retinopathy-of-prematurity',
     oneSentence:
-      "Retinopathy of prematurity is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Retinopathy of prematurity is abnormal retinal blood vessel development in premature or very low birth weight infants, which can cause retinal detachment and lifelong vision loss if severe.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Retinopathy of prematurity',
+      'An eye disease in premature babies that needs timed retina screening',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; risk is driven mainly by gestational age, birth weight, and neonatal illness, with the smallest and earliest babies at highest risk.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3089,21 +3459,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'ophthalmologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 425,
+      name: 'retinopathy-of-prematurity-journey.png',
+      url: '/images/diseases/retinopathy-of-prematurity-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2072, 'disease-rett-syndrome'),
     name: 'Rett syndrome',
     nameEn: 'Rett syndrome',
-    alias: 'Rett综合征; China Second Rare Disease Catalog item 72',
+    alias: 'RTT; Rett syndrome; China Second Rare Disease Catalog item 72',
     slug: 'rett-syndrome',
     oneSentence:
-      "Rett syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Rett syndrome is a neurodevelopmental disorder usually caused by MECP2 variants, often causing early developmental regression, loss of purposeful hand use, repetitive hand movements, seizures, and breathing or movement problems.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Rett syndrome',
+      'A genetic neurodevelopmental condition with early regression and repetitive hand movements',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 9,000 to 10,000 females, while affected males are rare and often more severely affected.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3111,21 +3486,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 426,
+      name: 'rett-syndrome-journey.png',
+      url: '/images/diseases/rett-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2073, 'disease-short-bowel-syndrome'),
     name: 'Short bowel syndrome',
     nameEn: 'Short bowel syndrome',
-    alias: '短肠综合征; China Second Rare Disease Catalog item 73',
+    alias:
+      'SBS; short bowel syndrome; China Second Rare Disease Catalog item 73',
     slug: 'short-bowel-syndrome',
     oneSentence:
-      "Short bowel syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Short bowel syndrome occurs when the small intestine is too short or too damaged to absorb enough fluids, electrolytes, and nutrients, causing diarrhea, dehydration, malnutrition, and sometimes long-term parenteral nutrition needs.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Short bowel syndrome',
+      'A condition where there is not enough working intestine to absorb food and fluid well',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; chronic SBS is rare and often follows bowel resection, congenital intestinal disorders, necrotizing enterocolitis, or Crohn disease.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3133,21 +3514,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'digestive-hepatic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 427,
+      name: 'short-bowel-syndrome-journey.png',
+      url: '/images/diseases/short-bowel-syndrome-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2074, 'disease-systemic-juvenile-idiopathic-arthritis'),
     name: 'Systemic juvenile idiopathic arthritis',
     nameEn: 'Systemic juvenile idiopathic arthritis',
-    alias: '全身型幼年特发性关节炎; China Second Rare Disease Catalog item 74',
+    alias:
+      'sJIA; systemic JIA; Still disease related; China Second Rare Disease Catalog item 74',
     slug: 'systemic-juvenile-idiopathic-arthritis',
     oneSentence:
-      "Systemic juvenile idiopathic arthritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Systemic juvenile idiopathic arthritis is a childhood-onset autoinflammatory disease with recurrent high fever, rash, and arthritis, with macrophage activation syndrome as a serious complication.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Systemic juvenile idiopathic arthritis',
+      'A whole-body inflammatory disease in children with fever, rash, and arthritis',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; JIA is a group of childhood arthritis conditions, and systemic JIA is a less common subtype with frequency varying by population and criteria.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3155,21 +3542,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 428,
+      name: 'systemic-juvenile-idiopathic-arthritis-journey.png',
+      url: '/images/diseases/systemic-juvenile-idiopathic-arthritis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2075, 'disease-systemic-mastocytosis'),
     name: 'Systemic mastocytosis',
     nameEn: 'Systemic mastocytosis',
-    alias: '系统性肥大细胞增多症; China Second Rare Disease Catalog item 75',
+    alias:
+      'SM; systemic mastocytosis; China Second Rare Disease Catalog item 75',
     slug: 'systemic-mastocytosis',
     oneSentence:
-      "Systemic mastocytosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Systemic mastocytosis is a rare blood disorder in which mast cells accumulate in bone marrow and other organs, causing flushing, itching, diarrhea, bone pain, allergic reactions, or organ damage.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Systemic mastocytosis',
+      'A blood disorder where too many mast cells trigger repeated allergy-like episodes',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 10,000 to 20,000 people worldwide, with most adult cases linked to acquired KIT variants.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3177,21 +3570,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 429,
+      name: 'systemic-mastocytosis-journey.png',
+      url: '/images/diseases/systemic-mastocytosis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2076, 'disease-takayasu-arteritis'),
     name: 'Takayasu arteritis',
     nameEn: 'Takayasu arteritis',
-    alias: '大动脉炎/多发性大动脉炎; China Second Rare Disease Catalog item 76',
+    alias: 'TAK; pulseless disease; China Second Rare Disease Catalog item 76',
     slug: 'takayasu-arteritis',
     oneSentence:
-      "Takayasu arteritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Takayasu arteritis is a rare large-vessel vasculitis that mainly affects the aorta and its major branches, causing narrowing, blockage, or aneurysm that can affect blood pressure and blood flow to the arms, brain, heart, and kidneys.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Takayasu arteritis',
+      'An immune disease where large blood vessels stay inflamed, narrowed, or weakened',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is uncommon worldwide, reported more often in some Asian populations and in young women, but it can affect any sex or age.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3199,7 +3597,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 430,
+      name: 'takayasu-arteritis-journey.png',
+      url: '/images/diseases/takayasu-arteritis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
@@ -3207,17 +3610,16 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       2077,
       'disease-tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis',
     ),
-    name: 'Tenosynovial giant cell tumor / pigmented villonodular synovitis',
-    nameEn: 'Tenosynovial giant cell tumor / pigmented villonodular synovitis',
-    alias:
-      '腱鞘巨细胞瘤/色素沉着绒毛结节性滑膜炎; China Second Rare Disease Catalog item 77',
+    name: 'Tenosynovial giant cell tumor/Pigmented villonodular synovitis',
+    nameEn: 'Tenosynovial giant cell tumor/Pigmented villonodular synovitis',
+    alias: 'TGCT; PVNS; China Second Rare Disease Catalog item 77',
     slug: 'tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis',
     oneSentence:
-      "Tenosynovial giant cell tumor / pigmented villonodular synovitis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Tenosynovial giant cell tumor is a rare locally aggressive tumor of the synovium, tendon sheath, or bursa that is usually benign but can cause recurrent swelling, pain, locking, and joint damage.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Tenosynovial giant cell tumor / pigmented villonodular synovitis',
+      'A benign but difficult joint-area tumor that can keep limiting movement',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is a rare soft tissue and joint-area tumor, with localized disease more common and diffuse disease more likely to recur or impair function.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3225,21 +3627,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 431,
+      name: 'tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis-journey.png',
+      url: '/images/diseases/tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2078, 'disease-thalassemia-major'),
     name: 'Thalassemia major',
     nameEn: 'Thalassemia major',
-    alias: '地中海贫血（重型）; China Second Rare Disease Catalog item 78',
+    alias:
+      "Transfusion-dependent thalassemia; Cooley's anemia; China Second Rare Disease Catalog item 78",
     slug: 'thalassemia-major',
     oneSentence:
-      "Thalassemia major is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Thalassemia major is a severe inherited globin production disorder that causes serious anemia in infancy or early childhood and often requires regular transfusions, iron chelation, and lifelong specialist follow-up.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Thalassemia major',
+      'An inherited blood disorder causing severe early anemia that often needs long-term transfusions and iron removal',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; thalassemia carrier frequency varies greatly by ancestry and region, being more common around the Mediterranean, Middle East, South Asia, Southeast Asia, and parts of southern China, while severe transfusion-dependent disease remains a rare specialist-managed condition.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3247,21 +3655,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 432,
+      name: 'thalassemia-major-journey.png',
+      url: '/images/diseases/thalassemia-major-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2079, 'disease-thrombotic-thrombocytopenic-purpura'),
     name: 'Thrombotic thrombocytopenic purpura',
     nameEn: 'Thrombotic thrombocytopenic purpura',
-    alias: '血栓性血小板减少性紫癜; China Second Rare Disease Catalog item 79',
+    alias: 'TTP; China Second Rare Disease Catalog item 79',
     slug: 'thrombotic-thrombocytopenic-purpura',
     oneSentence:
-      "Thrombotic thrombocytopenic purpura is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Thrombotic thrombocytopenic purpura is a rare, life-threatening thrombotic microangiopathy in which severe ADAMTS13 deficiency causes tiny clots, low platelets, hemolytic anemia, and organ injury.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Thrombotic thrombocytopenic purpura',
+      'A blood emergency where platelets form dangerous tiny clots in small vessels',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; TTP is rare and may be acquired immune-mediated or congenital from ADAMTS13 deficiency, with sudden episodes that can be life-threatening.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3269,22 +3682,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 433,
+      name: 'thrombotic-thrombocytopenic-purpura-journey.png',
+      url: '/images/diseases/thrombotic-thrombocytopenic-purpura-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2080, 'disease-transthyretin-amyloidosis'),
     name: 'Transthyretin amyloidosis',
     nameEn: 'Transthyretin amyloidosis',
     alias:
-      '转甲状腺素蛋白淀粉样变性; China Second Rare Disease Catalog item 80',
+      'ATTR; hATTR; ATTR-CM; ATTR-PN; China Second Rare Disease Catalog item 80',
     slug: 'transthyretin-amyloidosis',
     oneSentence:
-      "Transthyretin amyloidosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Transthyretin amyloidosis is a systemic disease in which misfolded TTR protein deposits in nerves, the heart, and other tissues, causing peripheral neuropathy, cardiomyopathy, and autonomic or gastrointestinal symptoms.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Transthyretin amyloidosis',
+      'A systemic disease where abnormal protein deposits affect nerves, heart, and other organs',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; hereditary ATTR varies widely by family and region, while wild-type ATTR cardiomyopathy is more common in older adults and is probably underdiagnosed.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3292,21 +3710,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'multisystem',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 434,
+      name: 'transthyretin-amyloidosis-journey.png',
+      url: '/images/diseases/transthyretin-amyloidosis-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2082, 'disease-tumor-induced-osteomalacia'),
     name: 'Tumor-induced osteomalacia',
     nameEn: 'Tumor-induced osteomalacia',
-    alias: '肿瘤相关骨软化症; China Second Rare Disease Catalog item 82',
+    alias:
+      'TIO; oncogenic osteomalacia; China Second Rare Disease Catalog item 82',
     slug: 'tumor-induced-osteomalacia',
     oneSentence:
-      "Tumor-induced osteomalacia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Tumor-induced osteomalacia is a rare acquired phosphate-wasting bone disease, usually caused by a small hidden tumor producing excess FGF23 and leading to bone pain, muscle weakness, and fractures.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Tumor-induced osteomalacia',
+      'A hidden small tumor makes the body lose phosphate and softens bones',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; TIO is very rare, and the causative tumor is often small and difficult to locate, so diagnosis can be delayed for years.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3314,25 +3738,30 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 435,
+      name: 'tumor-induced-osteomalacia-journey.png',
+      url: '/images/diseases/tumor-induced-osteomalacia-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'endocrine'],
   },
   {
     ...entity(
       2081,
       'disease-tumor-necrosis-factor-receptor-associated-periodic-syndrome',
     ),
-    name: 'Tumor necrosis factor receptor associated periodic syndrome',
-    nameEn: 'Tumor necrosis factor receptor associated periodic syndrome',
+    name: 'Tumor necrosis factor receptor-associated periodic syndrome',
+    nameEn: 'Tumor necrosis factor receptor-associated periodic syndrome',
     alias:
-      '肿瘤坏死因子受体相关周期性综合征; China Second Rare Disease Catalog item 81',
+      'TRAPS; TNF receptor-associated periodic syndrome; China Second Rare Disease Catalog item 81',
     slug: 'tumor-necrosis-factor-receptor-associated-periodic-syndrome',
     oneSentence:
-      "Tumor necrosis factor receptor associated periodic syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'TRAPS is a rare inherited autoinflammatory disease in which TNFRSF1A variants cause recurrent long fever episodes with rash, muscle pain, abdominal pain, eye swelling, and high inflammatory markers.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Tumor necrosis factor receptor associated periodic syndrome',
+      'An inherited recurrent fever disease where the body repeatedly inflames itself for days to weeks',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; TRAPS is rare worldwide, often starts in childhood, and can also be diagnosed for the first time in adults.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3340,21 +3769,26 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 436,
+      name: 'tumor-necrosis-factor-receptor-associated-periodic-syndrome-journey.png',
+      url: '/images/diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(2083, 'disease-von-hippel-lindau-syndrome'),
     name: 'Von Hippel-Lindau syndrome',
     nameEn: 'Von Hippel-Lindau syndrome',
-    alias: 'Von Hippel-Lindau综合征; China Second Rare Disease Catalog item 83',
+    alias: 'VHL disease; China Second Rare Disease Catalog item 83',
     slug: 'von-hippel-lindau-syndrome',
     oneSentence:
-      "Von Hippel-Lindau syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Von Hippel-Lindau syndrome is an autosomal dominant tumor predisposition syndrome that can cause cysts and tumors in the retina, brain and spinal cord, kidneys, adrenal glands, pancreas, and inner ear.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Von Hippel-Lindau syndrome',
+      'An inherited syndrome where one gene variant raises tumor risk across several organs',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NCI patient materials commonly cite an estimate of about 1 in 36,000 people, with wide variation even within families.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3362,21 +3796,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 437,
+      name: 'von-hippel-lindau-syndrome-journey.png',
+      url: '/images/diseases/von-hippel-lindau-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
-    ...entity(2084, 'disease-von-willebrand-disease-type 3'),
+    ...entity(2084, 'disease-von-willebrand-disease-type3'),
     name: 'Von Willebrand disease type 3',
     nameEn: 'Von Willebrand disease type 3',
-    alias: '血管性血友病Ⅲ型; China Second Rare Disease Catalog item 84',
-    slug: 'von-willebrand-disease-type 3',
+    alias:
+      'VWD type 3; severe von Willebrand disease; China Second Rare Disease Catalog item 84',
+    slug: 'von-willebrand-disease-type3',
     oneSentence:
-      "Von Willebrand disease type 3 is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Von Willebrand disease type 3 is the rarest and most severe VWD type, with little or no functional VWF and often low factor VIII, causing recurrent mucosal, soft tissue, joint, and procedure-related bleeding from childhood.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Von Willebrand disease type 3',
+      'An inherited bleeding disorder that causes recurrent bleeding from childhood and needs coagulation specialist care',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; VWD overall is common, but type 3 is rare and usually autosomal recessive.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3384,25 +3824,28 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'hematological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 438,
+      name: 'von-willebrand-disease-type3-journey.png',
+      url: '/images/diseases/von-willebrand-disease-type3-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(
       2085,
       'disease-waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma',
     ),
-    name: 'Waldenström macroglobulinemia / lymphoplasmacytic lymphoma',
-    nameEn: 'Waldenström macroglobulinemia / lymphoplasmacytic lymphoma',
-    alias:
-      '华氏巨球蛋白血症/淋巴浆细胞淋巴瘤; China Second Rare Disease Catalog item 85',
+    name: 'Waldenström macroglobulinemia/Lymphoplasmacytic lymphoma',
+    nameEn: 'Waldenström macroglobulinemia/Lymphoplasmacytic lymphoma',
+    alias: 'WM; LPL; China Second Rare Disease Catalog item 85',
     slug: 'waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma',
     oneSentence:
-      "Waldenström macroglobulinemia / lymphoplasmacytic lymphoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Waldenström macroglobulinemia / lymphoplasmacytic lymphoma',
+      'Waldenström macroglobulinemia is a rare indolent B-cell lymphoma in which lymphoplasmacytic cells in bone marrow produce excess IgM, causing anemia, infection, bleeding, neuropathy, or hyperviscosity.',
+    plainName: 'A slow-growing blood cancer that makes too much IgM protein',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is a rare non-Hodgkin lymphoma, more often diagnosed in older adults.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3410,22 +3853,27 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 439,
+      name: 'waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma-journey.png',
+      url: '/images/diseases/waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   },
   {
     ...entity(2086, 'disease-west-syndrome-infantile-spasms-syndrome'),
-    name: 'West syndrome / infantile spasms syndrome',
-    nameEn: 'West syndrome / infantile spasms syndrome',
+    name: 'West syndrome/Infantile spasms syndrome',
+    nameEn: 'West syndrome/Infantile spasms syndrome',
     alias:
-      'West综合征/婴儿痉挛综合征; China Second Rare Disease Catalog item 86',
+      'Infantile epileptic spasms syndrome; IESS; China Second Rare Disease Catalog item 86',
     slug: 'west-syndrome-infantile-spasms-syndrome',
     oneSentence:
-      "West syndrome / infantile spasms syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'West syndrome/infantile spasms syndrome is a severe infant epilepsy syndrome with clusters of brief nodding, jackknife, or extension spasms, abnormal EEG, and possible developmental arrest or regression.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: West syndrome / infantile spasms syndrome',
+      'An infant epilepsy syndrome with clustered nodding or jackknife spasms that needs rapid treatment',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it most often appears in the first year of life and is a pediatric neurology emergency to recognize early.",
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -3433,7 +3881,12 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     categorySlug: 'neurological',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 440,
+      name: 'west-syndrome-infantile-spasms-syndrome-journey.png',
+      url: '/images/diseases/west-syndrome-infantile-spasms-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   },
 ];

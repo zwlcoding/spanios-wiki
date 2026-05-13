@@ -5,72 +5,77 @@ export const diseaseHidradenitisSuppurativa: DiseaseDraft = {
   ...entity(2040, 'disease-hidradenitis-suppurativa'),
   name: 'Hidradenitis suppurativa',
   nameEn: 'Hidradenitis suppurativa',
-  alias: '化脓性汗腺炎; China Second Rare Disease Catalog item 40',
+  alias: 'HS, acne inversa, China Second Rare Disease Catalog item 40',
   slug: 'hidradenitis-suppurativa',
   oneSentence:
-    "Hidradenitis suppurativa is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Hidradenitis suppurativa is a chronic, recurrent inflammatory skin disease that often causes painful nodules, abscesses, draining tunnels, and scarring in friction-prone areas such as the armpits, groin, buttocks, and under the breasts.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Hidradenitis suppurativa',
+    'A chronic inflammatory skin condition with painful recurring nodules and tunnels in friction areas',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; estimates vary widely, and underdiagnosis or misdiagnosis strongly affects statistics.",
   quickLook: {
     whatItIs:
-      'Hidradenitis suppurativa is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'HS is not simply an infection and is not caused by poor hygiene. It is related to hair follicles and immune inflammation, often recurring in areas where skin rubs together.',
     whoToSeeFirst:
-      'Start with Dermatology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Repeated painful deep nodules, abscesses, drainage, tunnels, or scars in the armpits, groin, buttock fold, perineal area, or under the breasts should be assessed by dermatology.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Most HS is not a single-gene disorder, but family clustering is common. Very early onset or multiple affected relatives can prompt discussion of family risk and associated conditions.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Treatment is staged by severity and may include topical medicines, oral antibiotics, hormonal/metabolic approaches, biologics, pain and wound care, and procedures such as deroofing or excision.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'HS is often mistaken for boils, folliculitis, acne, Bartholin cysts, or sexually transmitted infection. Repeated incision and drainage without a long-term inflammation and tunnel plan leads to relapse.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Painful deep nodules or abscesses recur in the armpits, groin, buttocks, perineal/perianal area, or under the breasts.',
+      'The same or mirrored areas repeatedly drain, form cord-like tunnels, scar, or restrict movement.',
+      'Flares interfere with walking, sitting, sleep, work, intimacy, or mood.',
+      'Symptoms quickly return after routine infection treatment, or family members have similar disease.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Using short antibiotic courses or incision and drainage each time without a long-term dermatology plan.',
+      'Blaming hygiene, which increases shame and delays care.',
+      'Treating one abscess at a time without assessing Hurley stage, pain, tunnels, scarring, and quality of life.',
+      'Missing smoking, weight, friction, menstrual flares, inflammatory bowel disease, joint pain, depression, or anxiety clues.',
     ],
     firstDepartments: [
       'Dermatology',
-      'Pediatric dermatology',
-      'Genetic counseling',
+      'Dermatologic surgery',
+      'Pain or wound care clinic',
+      'General surgery consultation',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record flare locations, frequency, duration, pain level, drainage, and scarring.',
+      'Bring non-exposing, non-intimate photos if they help show location and flare evolution.',
+      'List prior antibiotics, topical treatments, biologics, surgeries, or incision/drainage and the response.',
+      'Note smoking, weight changes, menstrual pattern, family history, inflammatory bowel disease, joint pain, and mood burden.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Clinical diagnosis by dermatology based on typical areas, recurrence, and lesion pattern.',
+      'Culture, ultrasound to map tunnels, or tests to exclude other infection, cyst, or inflammatory bowel disease-related lesions when needed.',
+      'Hurley stage, pain, quality-of-life assessment, and whether biologics or surgery fit the disease pattern.',
+      'Tuberculosis, hepatitis B, and other infection screening plus safety monitoring before biologic therapy.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'What stage is my HS, and is the current goal fewer flares, pain control, tunnel treatment, or surgery?',
+      'Do topical medicines, oral antibiotics, hormonal treatment, biologics, or dermatologic surgery fit my case?',
+      'Which daily factors worsen friction or pain, and how should wound care and pain relief be handled?',
+      'If I am planning pregnancy, pregnant, or breastfeeding, which medicines or procedures need adjustment?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>HS commonly recurs in the armpits, groin, buttock fold, perineal/perianal area, or under the breasts. Patients may have painful deep nodules, abscesses, drainage, tunnels, scarring, skin tightness, and limited movement.</p><p>Pain, odor, drainage, and relapse can affect sleep, walking, sitting, work, social life, and intimacy. Shame, anxiety, and depression are common burdens and deserve direct care.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>HS is usually a clinical diagnosis made by dermatology. The combination of typical locations, recurrent disease, and typical lesions strongly supports the diagnosis. No single blood test confirms HS.</p><p>Mimics include boils, folliculitis, acne, epidermoid cysts, Bartholin cysts, anal fistula, sexually transmitted infections, and inflammatory bowel disease-related perianal disease. Ultrasound can help map tunnels, and culture may be useful when secondary infection is suspected.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment is matched to severity and goals. Mild disease may use topical antibacterial or anti-inflammatory treatment, local care, and friction reduction. Moderate or severe disease may need oral antibiotics, hormonal or metabolic approaches, biologics, pain care, and wound care.</p><p>When tunnels, repeated same-site flares, or scarring are present, repeated incision and drainage alone usually does not solve the long-term problem. Dermatologic surgery may consider deroofing, local excision, or wider excision. Smoking, weight, comorbidities, and psychological stress also need attention.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care tracks flare frequency, pain scores, treatment response, wound needs, and quality of life. Soft breathable clothing, reduced friction, regular follow-up, and early flare management can reduce burden.</p><p>Biologic or long-term immune-modifying therapy requires infection screening and safety monitoring. HS is chronic, and treatment plans often need adjustment over time.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>HS can cluster in families, but most cases are not managed as a single-gene inherited disease. People who are planning pregnancy, pregnant, or breastfeeding should discuss medicine safety, pain control, and procedure timing with dermatology and obstetrics.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>High fever, chills, rapidly spreading redness or swelling, severe pain, confusion, infection while immunosuppressed, rapidly worsening perineal/perianal disease, uncontrolled bleeding, or dehydration requires emergency care.</p>',
   },
   sources: [
     {
@@ -78,15 +83,25 @@ export const diseaseHidradenitisSuppurativa: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'American Academy of Dermatology: Hidradenitis suppurativa diagnosis and treatment',
+      type: 'patient-organization',
+      url: 'https://www.aad.org/public/diseases/painful-skin-joints/hidradenitis-suppurativa',
+    },
+    {
+      name: 'Mayo Clinic: Hidradenitis suppurativa diagnosis and treatment',
+      type: 'review',
+      url: 'https://www.mayoclinic.org/diseases-conditions/hidradenitis-suppurativa/diagnosis-treatment/drc-20352311',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common symptoms are recurrent painful nodules, abscesses, drainage, tunnels, and scarring in the armpits, groin, buttock fold, perineal/perianal area, or under the breasts, affecting movement, sleep, and mood.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis is mainly clinical by dermatology, based on typical locations, recurrence, and lesion pattern; culture, ultrasound, or other tests may help exclude similar infections, cysts, or perianal disease.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment is staged and may include topical therapy, oral antibiotics, hormonal/metabolic approaches, biologics, pain and wound care, and dermatologic procedures such as deroofing or excision.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>HS often relapses for years, but early recognition, ongoing dermatology care, friction reduction, and comorbidity management can lower flares, pain, scarring, and quality-of-life impact.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +109,11 @@ export const diseaseHidradenitisSuppurativa: DiseaseDraft = {
   categorySlug: 'dermatologic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 394,
+    name: 'hidradenitis-suppurativa-journey.png',
+    url: '/images/diseases/hidradenitis-suppurativa-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

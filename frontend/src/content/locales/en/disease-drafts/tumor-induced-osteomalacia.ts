@@ -5,73 +5,73 @@ export const diseaseTumorInducedOsteomalacia: DiseaseDraft = {
   ...entity(2082, 'disease-tumor-induced-osteomalacia'),
   name: 'Tumor-induced osteomalacia',
   nameEn: 'Tumor-induced osteomalacia',
-  alias: '肿瘤相关骨软化症; China Second Rare Disease Catalog item 82',
+  alias:
+    'TIO; oncogenic osteomalacia; China Second Rare Disease Catalog item 82',
   slug: 'tumor-induced-osteomalacia',
   oneSentence:
-    "Tumor-induced osteomalacia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Tumor-induced osteomalacia is a rare acquired phosphate-wasting bone disease, usually caused by a small hidden tumor producing excess FGF23 and leading to bone pain, muscle weakness, and fractures.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Tumor-induced osteomalacia',
+    'A hidden small tumor makes the body lose phosphate and softens bones',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; TIO is very rare, and the causative tumor is often small and difficult to locate, so diagnosis can be delayed for years.",
   quickLook: {
     whatItIs:
-      'Tumor-induced osteomalacia is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Excess FGF23 makes the kidneys waste phosphate. Long-term low phosphate prevents normal bone mineralization, causing back, rib, or leg pain, weakness, difficulty walking, and pseudofractures.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Adults with new hypophosphatemia, high alkaline phosphatase, bone pain, or multiple fractures should start with endocrinology or a bone metabolism clinic, then involve imaging, nuclear medicine, orthopedic oncology, surgery, and pathology if a tumor is suspected.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'TIO is usually acquired rather than inherited, so relatives are not routinely screened as for a genetic disorder.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Finding and completely removing the tumor is the most effective treatment. If the tumor is not found, cannot be removed, or recurs, phosphate, active vitamin D, or burosumab may be considered with careful kidney and mineral monitoring.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Bone pain may be labeled osteoporosis, spine disease, rheumatic pain, or stress. Without phosphate, urine phosphate, FGF23, and whole-body imaging, the cause can be missed.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Adult-onset widespread bone pain, back or rib pain, difficulty walking, proximal muscle weakness, height loss, or multiple low-trauma fractures.',
+      'Low serum phosphate, renal phosphate wasting, high alkaline phosphatase, and normal or near-normal calcium.',
+      'A small lesion found on MRI, CT, bone scan, PET, or somatostatin receptor imaging, or phosphate improvement after removal.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only as ordinary osteoporosis or calcium deficiency without evaluating phosphate wasting.',
+      'Seeing orthopedics, pain, and rheumatology repeatedly without connecting phosphate, urine phosphate, FGF23, and osteomalacia.',
+      'Finding a possible lesion but not confirming localization and pathology through a multidisciplinary plan.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
-      'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Endocrinology/bone metabolism',
+      'Orthopedics or orthopedic oncology',
+      'Nuclear medicine/imaging',
+      'Rare disease multidisciplinary clinic',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record pain sites, fractures, height loss, weakness, walking ability, and response to calcium or osteoporosis medicines.',
+      'Bring phosphate, calcium, ALP, PTH, 25(OH)D, 1,25(OH)2D, kidney function, urine phosphate, TmP/GFR, and FGF23 results.',
+      'Bring bone density, X-ray/CT/MRI, bone scan, PET, or somatostatin receptor imaging.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Whether low phosphate is due to renal phosphate wasting and whether TmP/GFR and FGF23 support TIO.',
+      'Which tumor localization studies should be used next: whole-body MRI/CT, bone scan, PET-CT, or somatostatin receptor imaging.',
+      'If the tumor cannot be found or removed, what are the targets and risks of phosphate, active vitamin D, or burosumab.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Does my testing prove FGF23-mediated osteomalacia, and what genetic or drug causes still need exclusion?',
+      'Can the suspected tumor be completely removed, and when will phosphate and FGF23 be rechecked?',
+      'How long will bone pain, fractures, and weakness take to recover, and what rehabilitation is safe?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>TIO often causes gradually worsening leg, back, rib, or generalized bone pain, proximal muscle weakness, difficulty rising or climbing stairs, unsteady gait, height loss, pseudofractures, or multiple low-trauma fractures. Long delays can severely limit mobility and daily life.</p><p>Laboratory findings commonly include low serum phosphate, increased urine phosphate wasting, and high alkaline phosphatase, while calcium is often normal. The causative tumor is usually small and slow-growing.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis confirms that hypophosphatemia is caused by renal phosphate wasting and evaluates FGF23, TmP/GFR, mineral metabolism, vitamin D, PTH, and kidney function. Imaging may show osteomalacia, pseudofractures, or multiple abnormal bone sites.</p><p>Locating the tumor may require whole-body MRI/CT, bone scan, PET-CT, or somatostatin receptor imaging, with pathology after surgery. Clinicians also exclude hereditary hypophosphatemia, drug-induced phosphate wasting, Fanconi syndrome, and other metabolic bone disorders.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Complete tumor removal is first-line and often rapidly improves phosphate and FGF23, although bone recovery takes longer. If the tumor cannot be found, removed, or controlled, phosphate and active vitamin D may be used with monitoring for secondary hyperparathyroidism, nephrocalcinosis, and gastrointestinal effects.</p><p>Some patients with unresectable or unlocalized disease may be evaluated for anti-FGF23 therapy such as burosumab, depending on diagnostic certainty, indications, and access.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up tracks phosphate, urine phosphate, FGF23, ALP, PTH, vitamin D, kidney function, renal ultrasound, fracture healing, and recurrence imaging. A drop in phosphate after surgery may suggest residual or recurrent disease.</p><p>Rehabilitation focuses on pain control, strength, gait, and fall prevention while avoiding excessive loading before bone strength recovers.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>TIO is usually not inherited. Early onset or a family pattern of low phosphate or rickets should prompt evaluation for inherited hypophosphatemic disorders and genetic counseling.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Urgent care is needed for sudden inability to stand or walk, suspected fracture, severe chest or back pain, weakness affecting breathing, post-surgical fever or wound problems, or electrolyte-related symptoms such as seizures or arrhythmia during treatment.</p>',
   },
   sources: [
     {
@@ -79,15 +79,25 @@ export const diseaseTumorInducedOsteomalacia: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'Cleveland Clinic: Tumor-induced osteomalacia',
+      type: 'review',
+      url: 'https://my.clevelandclinic.org/health/diseases/tumor-induced-osteomalacia',
+    },
+    {
+      name: 'NIH GARD: Tumor-induced osteomalacia',
+      type: 'official',
+      url: 'https://rarediseases.info.nih.gov/diseases/12936/tumor-induced-osteomalacia',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common features include generalized bone pain, back or rib pain, weakness, difficulty walking, pseudofractures or low-trauma fractures, low phosphate, phosphate wasting, and high ALP.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis confirms FGF23-mediated renal phosphate wasting with blood and urine phosphate, TmP/GFR, FGF23, bone metabolism tests, and whole-body imaging to localize a small tumor.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Complete tumor removal is preferred; unlocalized or unresectable disease may need phosphate, active vitamin D, or burosumab with kidney and mineral monitoring.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Complete resection often leads to major improvement; unlocalized, incompletely removed, or recurrent tumors can cause persistent low phosphate, pain, and fractures.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +105,11 @@ export const diseaseTumorInducedOsteomalacia: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 435,
+    name: 'tumor-induced-osteomalacia-journey.png',
+    url: '/images/diseases/tumor-induced-osteomalacia-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'endocrine'],
 };

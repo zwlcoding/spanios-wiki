@@ -7,72 +7,75 @@ export const diseaseProgressiveFibrosingInterstitialLungDisease: DiseaseDraft =
     name: 'Progressive fibrosing interstitial lung disease',
     nameEn: 'Progressive fibrosing interstitial lung disease',
     alias:
-      '进行性纤维化性间质性肺疾病; China Second Rare Disease Catalog item 69',
-    slug: 'progressive-fibrosing-interstitial-lung-disease',
+      'PF-ILD; PPF; progressive pulmonary fibrosis; China Second Rare Disease Catalog item 69',
     oneSentence:
-      "Progressive fibrosing interstitial lung disease is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Progressive fibrosing interstitial lung disease describes a progressive fibrosis pattern across several interstitial lung diseases, with worsening breathlessness, dry cough, lung function, or CT findings over time.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Progressive fibrosing interstitial lung disease',
+      'A progressive scarring pattern in the lungs that makes breathing harder over time',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is not one single disease but a progressive phenotype across ILDs, so rarity and causes vary by region, ancestry, exposure, and underlying condition.",
     quickLook: {
       whatItIs:
-        'Progressive fibrosing interstitial lung disease is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+        'PF-ILD or PPF means that an ILD other than idiopathic pulmonary fibrosis has developed a progressive scarring pattern, such as connective tissue disease ILD, hypersensitivity pneumonitis, or unclassifiable ILD.',
       whoToSeeFirst:
-        'Start with Pulmonology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+        'Progressive exertional breathlessness, dry cough, low oxygen, clubbing, or fibrotic changes on CT that worsen over 6 to 12 months should be assessed in an ILD clinic.',
       isGenetic:
-        'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+        'Most cases are not typical inherited disorders, but family pulmonary fibrosis, early greying, marrow disease, or liver disease can suggest telomere-related or surfactant-related genetic disease.',
       hasTreatment:
-        'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+        'Care includes identifying and treating the underlying ILD, avoiding antigen or occupational exposure, selected immune-modulating treatment, antifibrotic assessment, oxygen, pulmonary rehabilitation, and transplant referral when needed.',
       commonDelayReason:
-        'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+        'Early breathlessness and cough may be labeled aging, deconditioning, asthma, COPD, or recurrent infection. Without high-resolution CT and serial lung function, progression can be missed.',
     },
     patientJourney: {
       whenToSuspect: [
-        'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-        'Several organs or test results seem connected but no single common condition explains them.',
-        'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+        'Exertional breathlessness and dry cough last for months, walking or stairs become harder, or oxygen drops at rest or activity.',
+        'High-resolution CT shows fibrosis, reticulation, traction bronchiectasis, or honeycombing and worsens on follow-up.',
+        'FVC or DLCO declines, or at least two of symptoms, CT, and lung function worsen within one year without another explanation.',
+        'Connective tissue disease, hypersensitivity pneumonitis, occupational, bird, mold, medicine, or radiation exposure history.',
       ],
       commonWrongTurns: [
-        'Treating each symptom separately without reviewing the full pattern.',
-        'Repeating routine visits without collecting prior test results for specialist review.',
-        'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+        'Treating as bronchitis, asthma, or anxiety without high-resolution CT and diffusion capacity testing.',
+        'Looking at only one CT scan instead of preserving old scans for side-by-side comparison.',
+        'Using cough medicines or antibiotics alone without assessing cause, exposure, immune treatment, and antifibrotic timing.',
       ],
       firstDepartments: [
         'Pulmonology',
-        'Pediatric pulmonology',
-        'Rare lung disease or ILD clinic',
+        'Interstitial lung disease or rare lung disease clinic',
+        'Rheumatology when connective tissue disease is possible',
+        'Rehabilitation and lung transplant center when progressive or hypoxemic',
       ],
       diagnosisChecklist: [
-        'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-        'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-        'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+        'Bring all chest CT image files, reports, and dates so doctors can compare progression.',
+        'Bring spirometry, DLCO, six-minute walk, oxygen readings, blood gas, echocardiogram, and oxygen-use records.',
+        'List occupational exposures, home mold, birds, feather bedding, dust, medicines, radiation, and smoking.',
+        'Record autoimmune symptoms such as Raynaud phenomenon, joint pain, rash, dry eyes or mouth, muscle weakness, and reflux or aspiration.',
       ],
       testsToAskAbout: [
-        'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-        'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-        'Genetic counseling or family testing when the condition may be inherited.',
+        'High-resolution CT pattern review and whether ILD multidisciplinary discussion is needed.',
+        'Lung-function trend: FVC, DLCO, six-minute walk, and oxygen decline meeting PPF or PF-ILD criteria.',
+        'Autoantibodies, myositis antibodies, hypersensitivity pneumonitis exposure assessment, bronchoscopy, or lung biopsy when needed.',
+        'Suitability for immune-modulating therapy, antifibrotic therapy such as nintedanib, oxygen, pulmonary rehabilitation, or transplant evaluation.',
       ],
       questionsForDoctor: [
-        'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-        'Which organs should be monitored, and what warning signs need emergency care?',
-        'What is the goal of treatment and follow-up for my situation?',
-        'How often should follow-up happen, and should relatives be screened?',
+        'What underlying ILD is most likely, and does my course meet criteria for progressive pulmonary fibrosis?',
+        'Which exposures or underlying diseases can be treated, and which goals are slowing decline rather than reversing fibrosis?',
+        'How often should lung function, CT, and oxygen be repeated, and what changes mean treatment should escalate?',
+        'Do I need home oxygen, pulmonary rehabilitation, vaccines, reflux management, or transplant-center review?',
       ],
     },
     medicalSections: {
       symptoms:
-        '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+        '<p>The core feature of PF-ILD or PPF is worsening fibrosis. Common symptoms include progressive exertional breathlessness, persistent dry cough, fatigue, reduced exercise capacity, low oxygen, and clubbing. Acute exacerbation can cause sudden breathlessness, oxygen decline, and imaging worsening.</p><p>Associated features depend on the underlying cause. Connective tissue disease ILD may include joint pain, Raynaud phenomenon, rash, or myositis. Hypersensitivity pneumonitis can relate to birds, mold, or occupational exposure. Medicines, radiation, and reflux or aspiration may also contribute.</p>',
       diagnosis:
-        '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+        '<p>Diagnosis first confirms ILD and lung fibrosis, then determines whether disease is progressing. The 2022 ATS/ERS/JRS/ALAT guideline defines PPF as fibrotic ILD other than IPF with at least two of worsening symptoms, physiologic progression, and radiologic progression within the past year, with no alternative explanation.</p><p>Assessment usually includes high-resolution CT, FVC and DLCO, six-minute walk, oxygen assessment, exposure history, autoimmune testing, and when needed bronchoscopy or lung biopsy. Many cases benefit from multidisciplinary review by pulmonology, radiology, pathology, and rheumatology.</p>',
       treatment:
-        '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+        '<p>Treatment starts with the underlying cause: antigen or occupational exposure avoidance, connective tissue disease treatment, stopping offending medicines, or reflux management. ILDs with inflammatory activity may need corticosteroids or immunosuppressive therapy, balanced against infection and adverse effects.</p><p>For progressive non-IPF fibrotic ILD, international guidance gives a conditional recommendation for nintedanib, while more research is needed for pirfenidone. Supportive care includes smoking cessation, vaccination, oxygen, pulmonary rehabilitation, nutrition, symptom-focused care, and transplant referral when appropriate.</p>',
       longTermCare:
-        '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+        '<p>Follow-up tracks FVC, DLCO, six-minute walk, oxygen, CT change, exacerbations, pulmonary hypertension, infections, and medicine side effects. Keeping old CT image files is important because progression often depends on direct comparison.</p><p>Home pulse oximetry and activity logs can help. If oxygen falls, exercise capacity declines, or daily activities become limited, oxygen therapy and pulmonary rehabilitation should be discussed early.</p>',
       fertilityOrFamily:
-        '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+        '<p>Most PF-ILD is not a single-gene inherited disorder. Family pulmonary fibrosis, early greying, bone marrow failure, liver disease, or several affected relatives should prompt discussion of telomere-related or other genetic pulmonary fibrosis assessment.</p>',
       emergencySigns:
-        '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+        '<p>Emergency care is needed for breathlessness at rest, oxygen persistently below the threshold set by the clinician, coughing blood, chest pain, fever with breathlessness, confusion, bluish lips, or breathing that worsens markedly over days.</p>',
     },
     sources: [
       {
@@ -80,22 +83,38 @@ export const diseaseProgressiveFibrosingInterstitialLungDisease: DiseaseDraft =
         type: 'clinical-guideline',
         url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
       },
+      {
+        name: 'ATS/ERS/JRS/ALAT Clinical Practice Guideline: Progressive Pulmonary Fibrosis in Adults',
+        type: 'clinical-guideline',
+        url: 'https://www.atsjournals.org/doi/10.1164/rccm.202202-0399ST',
+      },
+      {
+        name: 'American Lung Association: Pulmonary Fibrosis Symptoms',
+        type: 'patient-organization',
+        url: 'https://www.lung.org/lung-health-diseases/lung-disease-lookup/pulmonary-fibrosis/introduction/symptoms',
+      },
     ],
     symptoms:
-      '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+      '<p>Common features include exertional breathlessness, dry cough, fatigue, reduced exercise capacity, low oxygen, and clubbing; acute exacerbation can cause rapid breathing and oxygen worsening.</p>',
     diagnosis:
-      '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+      '<p>Diagnosis confirms fibrotic ILD and uses serial symptoms, lung function, and high-resolution CT to determine progressive pulmonary fibrosis while searching for the underlying cause.</p>',
     treatment:
-      '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+      '<p>Care includes treating underlying disease and exposures, selected immune modulation, antifibrotic assessment for progression, oxygen, pulmonary rehabilitation, vaccination, symptom care, and transplant evaluation.</p>',
     prognosis:
-      '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+      '<p>Outlook depends on the underlying ILD, fibrosis extent, rate of lung-function decline, hypoxemia, acute exacerbations, and treatment response. Serial monitoring is more informative than one test.</p>',
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+    slug: 'progressive-fibrosing-interstitial-lung-disease',
     categorySlug: 'respiratory',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 423,
+      name: 'progressive-fibrosing-interstitial-lung-disease-journey.png',
+      url: '/images/diseases/progressive-fibrosing-interstitial-lung-disease-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   };

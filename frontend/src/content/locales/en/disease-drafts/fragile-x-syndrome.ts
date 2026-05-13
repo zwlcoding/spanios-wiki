@@ -5,73 +5,78 @@ export const diseaseFragileXSyndrome: DiseaseDraft = {
   ...entity(2029, 'disease-fragile-x-syndrome'),
   name: 'Fragile X syndrome',
   nameEn: 'Fragile X syndrome',
-  alias: '脆性X综合征; China Second Rare Disease Catalog item 29',
+  alias:
+    'FXS, Martin-Bell syndrome, FMR1-related fragile X syndrome, China Second Rare Disease Catalog item 29',
   slug: 'fragile-x-syndrome',
   oneSentence:
-    "Fragile X syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Fragile X syndrome is an FMR1 CGG-repeat expansion disorder that can cause speech and cognitive delay, learning difficulties, attention and behavioral challenges, and autism-spectrum features.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Fragile X syndrome',
+    'An FMR1-related genetic condition that affects development, learning, and behavior',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics describes a frequency of about 1 in 4,000 males and 1 in 8,000 females.",
   quickLook: {
     whatItIs:
-      'Fragile X syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'When the FMR1 CGG repeat expands beyond 200 copies, the gene is usually silenced and too little FMRP is made. This affects synapse development, learning, and memory. Boys are often more severely affected than girls.',
     whoToSeeFirst:
-      'Start with Neurology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'A child with marked speech delay by around age 2, developmental delay, attention or behavior problems, or autism-spectrum features should see developmental pediatrics, pediatric neurology, rehabilitation, and genetics.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Fragile X is X-linked. Premutation carriers may not have FXS but can have risks related to children with full mutation, primary ovarian insufficiency, or adult tremor/ataxia syndrome.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'There is no curative medicine for FXS. Care focuses on early intervention, speech, occupational and behavioral therapies, special education, and management of seizures, anxiety, ADHD, sleep, and GI issues.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early signs may be labeled as late talking, developmental delay, autism, or ADHD. Family history of developmental disability, early ovarian insufficiency, or adult tremor/ataxia should prompt FMR1 testing.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A baby or child has significant speech delay, learning difficulty, intellectual disability, or social-communication challenges.',
+      'There is inattention, hyperactivity, anxiety, sensory sensitivity, repetitive behavior, hand flapping, or autism-spectrum features.',
+      'A boy has features such as a long face, large ears, loose joints, flat feet, or enlarged testes after puberty.',
+      'Family history includes unexplained intellectual disability, developmental delay, early ovarian insufficiency, or adult tremor/ataxia.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only autism, ADHD, or speech delay without looking for a genetic explanation that affects family risk.',
+      'Assuming genetics is negative after routine chromosome or exome testing and missing FMR1 repeat-expansion testing.',
+      'Focusing only on the child and not counseling maternal relatives about premutation-related risks.',
+      'Waiting to see if the child catches up and missing early therapy and school-support windows.',
     ],
     firstDepartments: [
-      'Neurology',
+      'Developmental-behavioral pediatrics',
       'Pediatric neurology',
       'Rehabilitation medicine',
       'Genetic counseling',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring a timeline of speech, motor, social, learning, and behavior milestones plus school or therapy records.',
+      'Record seizures, sleep, anxiety, hyperactivity, GI symptoms, feeding, and sensory sensitivity.',
+      'Collect family history of developmental delay, intellectual disability, early ovarian insufficiency, tremor, or ataxia.',
+      'Bring developmental testing, EEG, hearing, vision, and genetic testing reports.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'FMR1 CGG repeat-expansion testing and methylation analysis, the core diagnostic tests for FXS.',
+      'Developmental, cognitive, adaptive behavior, speech-language, autism-spectrum, and ADHD evaluations.',
+      'EEG if seizures are suspected, plus hearing, vision, sleep, and GI assessment as needed.',
+      'FMR1 premutation or full-mutation testing and genetic counseling for parents and at-risk relatives.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is the result a full mutation, premutation, or another FMR1 finding, and what does that mean for symptoms and family risk?',
+      'Which early-intervention, school, and behavioral supports are priorities, and how will goals be measured?',
+      'Do seizures, anxiety, ADHD, sleep, or GI symptoms need separate treatment?',
+      'Which relatives should be tested, and what should female premutation carriers or adult male carriers watch for?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>FXS commonly causes speech and cognitive delay, learning difficulty, inattention, hyperactivity, anxiety, sensory sensitivity, and social-communication difficulty. Some individuals have autism-spectrum features, and seizures can occur.</p><p>Physical features may become more apparent with age, including long face, large ears, prominent jaw or forehead, loose joints, flat feet, and enlarged testes after puberty in males. Females may be more mildly or atypically affected.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis relies on FMR1 CGG repeat-expansion testing and methylation analysis. A full mutation is usually more than 200 CGG repeats and silences FMR1; a premutation is usually 55-200 repeats and carries different carrier-related risks.</p><p>Clinicians also consider other causes of developmental delay, autism-spectrum disorder, intellectual disability, epilepsy syndromes, and chromosomal or single-gene conditions. Routine chromosome testing or exome sequencing may miss FMR1 repeat expansions.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Care is supportive and focused on coexisting problems. Early speech therapy, occupational therapy, behavioral intervention, special education, and family training can help communication, learning, and daily function.</p><p>Clinicians may treat ADHD, anxiety, sleep problems, seizures, GI symptoms, or mood and behavior concerns when present. Goals should be adjusted over time based on age, function, and family needs.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care includes developmental and learning reassessment, school support plans, behavioral and mental health care, puberty transition, vocational planning, and independent-living supports. Keep genetic and developmental reports for school and medical transitions.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>FMR1 genetic counseling is central. Female premutation carriers can have a risk of expansion to a full mutation in children and a risk of fragile X-associated primary ovarian insufficiency. Adult premutation carriers should also understand tremor/ataxia-related risks.</p><p>Families planning pregnancy can discuss carrier testing, prenatal diagnosis, or preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek urgent care for a first seizure, prolonged seizure, altered consciousness, serious self-injury or safety risk, dehydration, severe sleep-related safety issues, or severe medication adverse effects.</p>',
   },
   sources: [
     {
@@ -79,15 +84,20 @@ export const diseaseFragileXSyndrome: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Fragile X syndrome',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/fragile-x-syndrome/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common signs include speech and cognitive delay, learning difficulties, inattention, hyperactivity, anxiety, sensory sensitivity, autism-spectrum features, and sometimes seizures or characteristic physical features.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses FMR1 CGG repeat-expansion and methylation testing, together with developmental, cognitive, speech, autism-spectrum, and behavioral evaluations.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>There is no cure; care focuses on early intervention, speech, occupational and behavioral therapy, special education, and treatment of ADHD, anxiety, seizures, sleep, and other coexisting issues.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Outcomes vary widely. Early diagnosis, ongoing therapy, school support, and coexisting-problem management can improve communication, learning, and daily function, while genetic counseling reduces family diagnostic delays.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +105,11 @@ export const diseaseFragileXSyndrome: DiseaseDraft = {
   categorySlug: 'neurological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 383,
+    name: 'fragile-x-syndrome-journey.png',
+    url: '/images/diseases/fragile-x-syndrome-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

@@ -5,72 +5,78 @@ export const diseaseGeneticHypoparathyroidism: DiseaseDraft = {
   ...entity(2034, 'disease-genetic-hypoparathyroidism'),
   name: 'Genetic hypoparathyroidism',
   nameEn: 'Genetic hypoparathyroidism',
-  alias: '遗传性甲状旁腺功能减退症; China Second Rare Disease Catalog item 34',
+  alias:
+    'Inherited hypoparathyroidism, hypocalcemia with low PTH, China Second Rare Disease Catalog item 34',
   slug: 'genetic-hypoparathyroidism',
   oneSentence:
-    "Genetic hypoparathyroidism is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Genetic hypoparathyroidism is a group of inherited low-calcium disorders caused by abnormal parathyroid development, PTH secretion, or calcium-sensing pathways, leading to hypocalcemia, hyperphosphatemia, spasms, seizures, and kidney-risk monitoring needs.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Genetic hypoparathyroidism',
+    'An inherited low-calcium condition caused by too little parathyroid hormone or related signaling',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it is rare overall, with wide variation by genetic type and age at diagnosis.",
   quickLook: {
     whatItIs:
-      'Genetic hypoparathyroidism is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'The shared biochemical pattern is low calcium, high phosphorus, and low or inappropriately normal PTH. Genetic causes can involve CASR, GCM2, PTH, GATA3, TBX1, or syndromic disorders.',
     whoToSeeFirst:
-      'Start with Endocrinology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Recurrent tingling, cramps, spasms, seizures, low calcium, or childhood dental/developmental clues should prompt endocrinology or pediatric endocrinology review.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Inheritance varies by cause and may be autosomal dominant, recessive, X-linked, or syndromic. Genetic counseling is useful after diagnosis.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Treatment commonly uses calcium, active vitamin D, magnesium correction, and diet planning. The goal is symptom control while avoiding excess urine calcium and kidney complications.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Symptoms may be mild for years and mistaken for anxiety, hyperventilation, epilepsy, migraine, or routine calcium deficiency. PTH, phosphorus, magnesium, and urine calcium are often the missing clues.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Repeated tingling around the mouth, fingers, or toes, muscle cramps, carpopedal spasm, or throat spasm.',
+      'Low calcium with high phosphorus and low or inappropriately normal PTH.',
+      'Childhood seizures, enamel defects, cataracts, basal ganglia calcification, developmental findings, or recurrent hypocalcemia.',
+      'Family history of low calcium, seizures, kidney stones, hearing issues, immune problems, or syndromic clues.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating it as simple calcium deficiency without checking PTH, phosphorus, magnesium, and urine calcium.',
+      'Treating seizures without rechecking electrolytes and ECG QT interval.',
+      'Monitoring only blood calcium after treatment and missing urine calcium, kidney function, and kidney imaging.',
+      'Not separating surgical, autoimmune, genetic, and low-magnesium causes.',
     ],
     firstDepartments: [
       'Endocrinology',
-      'Metabolic genetics clinic',
-      'Pediatric endocrinology/metabolism',
+      'Pediatric endocrinology',
+      'Metabolic genetics',
+      'Nephrology',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Document all low-calcium episodes, seizures, spasms, tingling, throat tightness, and treatment response.',
+      'Bring calcium, ionized or albumin-corrected calcium, phosphorus, magnesium, PTH, vitamin D, kidney function, and urine calcium results.',
+      'Bring ECG, brain imaging, kidney ultrasound, eye, dental, and hearing records.',
+      'Record neck surgery, radiation, autoimmune disease, family low calcium, and syndromic features.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Repeat calcium, phosphorus, magnesium, and PTH plus 24-hour urine calcium or urine calcium/creatinine ratio.',
+      'Kidney ultrasound or other assessment for stones, nephrocalcinosis, and kidney function.',
+      'ECG QT interval, cataract, dental, neurologic, and hearing assessments when relevant.',
+      'Genetic or syndrome testing such as CASR, GCM2, PTH, GATA3, or TBX1 based on the pattern.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is this genetic hypoparathyroidism, postsurgical hypoparathyroidism, low magnesium, pseudohypoparathyroidism, or another cause?',
+      'What calcium range is safest for me, and how do we avoid high urine calcium and kidney complications?',
+      'How should calcium, calcitriol or active vitamin D, magnesium, and diet be adjusted?',
+      'Do relatives need testing, and how should doses change during pregnancy, surgery, or infection?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Low calcium can cause tingling around the mouth and in the hands or feet, muscle cramps, carpopedal spasm, throat spasm, seizures, abnormal heart rhythm, fatigue, anxiety-like symptoms, and cognitive difficulty. Chronic disease can cause cataracts, dental changes, skin, hair, or nail changes, and brain calcifications.</p><p>Some people have mild symptoms and are diagnosed through labs, seizure evaluation, or ECG findings. Children may need assessment for development, teeth, hearing, immunity, or syndromic features.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis confirms low calcium, high phosphorus, and low or inappropriately low PTH, while checking magnesium, vitamin D, kidney function, and urine calcium. Low magnesium can cause reversible PTH problems and must be corrected.</p><p>Genetic hypoparathyroidism is distinguished from postsurgical, autoimmune, pseudohypoparathyroidism, vitamin D deficiency, kidney disease, and medication-related hypocalcemia. Genetic testing can clarify family risk.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Acute symptomatic hypocalcemia, seizures, or ECG changes may require IV calcium with heart monitoring. Long-term care usually uses oral calcium, calcitriol or active vitamin D, magnesium when needed, and diet planning.</p><p>The goal is symptom relief while reducing risks of high urine calcium, kidney stones, nephrocalcinosis, and kidney-function decline. Selected difficult cases may be evaluated for PTH-related therapy.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Monitoring includes calcium, phosphorus, magnesium, creatinine/eGFR, urine calcium, kidney imaging, ECG, eye, and dental follow-up. Illness, diarrhea, pregnancy, breastfeeding, surgery, or medication changes can alter calcium needs.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Inheritance depends on the specific gene. Once a variant is known, testing can be offered to parents, siblings, children, and other at-risk relatives. Pregnancy and breastfeeding need endocrine and obstetric coordination.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek emergency care for seizures, throat tightness or breathing difficulty, fainting, palpitations or chest pain, confusion, severe spasms, or vomiting/diarrhea that prevents taking medicines.</p>',
   },
   sources: [
     {
@@ -78,15 +84,25 @@ export const diseaseGeneticHypoparathyroidism: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Medical Encyclopedia: Hypoparathyroidism',
+      type: 'official',
+      url: 'https://medlineplus.gov/ency/article/000385.htm',
+    },
+    {
+      name: 'NICHD: How is hypoparathyroidism treated?',
+      type: 'official',
+      url: 'https://www.nichd.nih.gov/health/topics/hypopara/conditioninfo/treatment',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Low calcium can cause tingling, cramps, carpopedal spasm, throat spasm, seizures, arrhythmias, cataracts, dental changes, and brain calcifications.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses low calcium, high phosphorus, low or inappropriately normal PTH, and assessment of magnesium, vitamin D, urine calcium, kidney function, and genetic causes.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment includes IV calcium for acute severe episodes and long-term oral calcium, active vitamin D, magnesium correction, and urine/kidney monitoring; selected cases may need PTH-related therapy review.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Careful monitoring and individualized supplementation can reduce symptoms and emergencies. Long-term risks include recurrent hypocalcemia, high urine calcium, kidney stones, nephrocalcinosis, and overtreatment.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +110,11 @@ export const diseaseGeneticHypoparathyroidism: DiseaseDraft = {
   categorySlug: 'metabolic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 388,
+    name: 'genetic-hypoparathyroidism-journey.png',
+    url: '/images/diseases/genetic-hypoparathyroidism-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling', 'endocrine'],
 };

@@ -7,76 +7,79 @@ export const diseaseCutaneousNeuroendocrineCarcinomaMerkelCellCarcinoma: Disease
       2019,
       'disease-cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma',
     ),
-    name: 'Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma)',
-    nameEn: 'Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma)',
+    name: 'Cutaneous neuroendocrine carcinoma (Merkel cell carcinoma)',
+    nameEn: 'Cutaneous neuroendocrine carcinoma (Merkel cell carcinoma)',
     alias:
-      '皮肤神经内分泌癌（梅克尔细胞癌）; China Second Rare Disease Catalog item 19',
+      'Merkel cell carcinoma, MCC, primary cutaneous neuroendocrine carcinoma, China Second Rare Disease Catalog item 19',
     slug: 'cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma',
     oneSentence:
-      "Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma) is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Cutaneous neuroendocrine carcinoma, also called Merkel cell carcinoma, is a rare but aggressive skin cancer that often appears as a fast-growing painless lump on sun-exposed skin and needs biopsy, staging, and multidisciplinary treatment.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma)',
+      'A fast-growing rare skin cancer that needs prompt biopsy and staging',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; NCI describes it as a very rare skin cancer, with sun exposure and weakened immunity increasing risk.",
     quickLook: {
       whatItIs:
-        'Cutaneous neuroendocrine carcinoma(Merkel cell carcinoma) is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+        'MCC arises from neuroendocrine-related cells in the skin and can recur locally or spread to lymph nodes and distant organs. It may look like a common skin bump, so early biopsy matters.',
       whoToSeeFirst:
-        'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+        'Persistent, rapidly changing, or pathology-suspicious skin tumors or lymphomas should start with dermatology and quickly involve oncology, hematology, pathology, and radiation oncology as needed.',
       isGenetic:
-        'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+        'This is usually not a typical inherited family condition. The focus is pathology confirmation, staging, immune status, and treatment planning rather than genetic screening of relatives.',
       hasTreatment:
-        'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+        'Treatment is stage-based. Early disease often uses wide excision and sentinel node evaluation, sometimes with radiation. Unresectable, recurrent, or metastatic disease may use immune checkpoint inhibitors, radiation, or other systemic therapy.',
       commonDelayReason:
-        'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+        'Early appearance can resemble common rashes, benign bumps, or other skin problems. Delay happens when biopsy, pathology review, or staging is postponed.',
     },
     patientJourney: {
       whenToSuspect: [
-        'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-        'Several organs or test results seem connected but no single common condition explains them.',
-        'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+        'A pink, red, purple, or skin-colored lump grows quickly and is often painless.',
+        'The lump is on sun-exposed skin such as the head, neck, or arms, or the patient is older or immunosuppressed.',
+        'Nearby lymph nodes enlarge, or the skin tumor ulcerates, bleeds, or changes rapidly.',
       ],
       commonWrongTurns: [
-        'Treating each symptom separately without reviewing the full pattern.',
-        'Repeating routine visits without collecting prior test results for specialist review.',
-        'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+        'Watching a fast-growing painless lump as a cyst, mole, vascular lesion, or simple skin infection.',
+        'Removing the skin lesion without pathology immunostains, lymph node evaluation, and staging.',
+        'Not involving a skin cancer or oncology multidisciplinary team after diagnosis.',
       ],
       firstDepartments: [
-        'Oncology',
-        'Hematology',
-        'Relevant surgical specialty',
-        'Pathology or molecular diagnostics',
+        'Dermatology',
+        'Skin cancer surgery or plastic surgery',
+        'Medical oncology',
+        'Radiation oncology',
       ],
       diagnosisChecklist: [
-        'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-        'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-        'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+        'Record when the skin change began, growth speed, itch, pain, ulceration, bleeding, previous treatments, and response.',
+        'Bring clear photos, dermoscopy or imaging if available, prior pathology slides, immunohistochemistry, and molecular or clonality results.',
+        'Record enlarged nodes, fever, night sweats, weight loss, immunosuppressive medicines, transplant history, or prior cancer.',
+        'Prepare a full medication list, especially immunosuppressants, anticoagulants, and prior radiation, chemotherapy, or immunotherapy.',
       ],
       testsToAskAbout: [
-        'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-        'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-        'Genetic counseling or family testing when the condition may be inherited.',
+        'Skin biopsy, pathology immunohistochemistry, and expert pathology consultation when needed.',
+        'Lymph node examination, ultrasound, needle biopsy or excision, and CT, PET/CT, or MRI for staging.',
+        'CBC, chemistry, LDH, viral screening, and treatment baseline tests.',
+        'Disease-specific tests such as sentinel node biopsy, TCR clonality, peripheral blood flow cytometry, or bone marrow evaluation when appropriate.',
       ],
       questionsForDoctor: [
-        'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-        'Which organs should be monitored, and what warning signs need emergency care?',
-        'What is the goal of treatment and follow-up for my situation?',
-        'How often should follow-up happen, and should relatives be screened?',
+        'Is the pathology diagnosis definite, and should it be reviewed by a specialist pathologist?',
+        'What is the stage, and are lymph nodes, blood, or organs involved?',
+        'Is the treatment goal cure, lower recurrence risk, disease control, or symptom relief?',
+        'What are the benefits and risks of surgery, radiation, systemic therapy, or immunotherapy?',
+        'How often should follow-up, skin self-checks, node checks, sun protection, and infection prevention be done?',
       ],
     },
     medicalSections: {
       symptoms:
-        '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+        '<p>Cutaneous neuroendocrine carcinoma, also called Merkel cell carcinoma, is a rare but aggressive skin cancer that often appears as a fast-growing painless lump on sun-exposed skin and needs biopsy, staging, and multidisciplinary treatment.</p><p>A pink, red, purple, or skin-colored lump grows quickly and is often painless.The lump is on sun-exposed skin such as the head, neck, or arms, or the patient is older or immunosuppressed.Nearby lymph nodes enlarge, or the skin tumor ulcerates, bleeds, or changes rapidly.</p>',
       diagnosis:
-        '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+        '<p>Diagnosis depends on skin biopsy with pathology and immunohistochemistry, followed by staging with sentinel lymph node biopsy, lymph node ultrasound or biopsy, CT, PET/CT, or MRI when indicated.</p><p>Because these conditions can mimic common rashes or other skin tumors, pathology review and complete staging often determine the treatment path.</p>',
       treatment:
-        '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+        '<p>Treatment is stage-based. Early disease often uses wide excision and sentinel node evaluation, sometimes with radiation. Unresectable, recurrent, or metastatic disease may use immune checkpoint inhibitors, radiation, or other systemic therapy.</p><p>Before treatment, clinicians should confirm stage, immune status, comorbidities, and personal goals, and discuss side effects, recurrence monitoring, and clinical trial options.</p>',
       longTermCare:
-        '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+        '<p>Long-term care includes skin and lymph node self-checks, scheduled visits, imaging or blood tests when needed, side effect monitoring, sun protection, and infection prevention. New fast-growing skin lesions, lymph nodes, or systemic symptoms should be reported promptly.</p>',
       fertilityOrFamily:
-        '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+        '<p>These conditions are usually not typical inherited diseases, and relatives generally do not need genetic screening. If radiation, chemotherapy, immune therapy, or targeted therapy is planned, fertility goals should be discussed with oncology and reproductive or obstetric specialists.</p>',
       emergencySigns:
-        '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+        '<p>Seek emergency care for a rapidly enlarging lesion with ulceration or bleeding, fever or chills, serious infection signs during treatment, breathing trouble, confusion, severe dehydration, severe diarrhea, shortness of breath or jaundice during immunotherapy, or possible blood clot symptoms. Tell the team the diagnosis and current treatment.</p>',
     },
     sources: [
       {
@@ -84,15 +87,25 @@ export const diseaseCutaneousNeuroendocrineCarcinomaMerkelCellCarcinoma: Disease
         type: 'clinical-guideline',
         url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
       },
+      {
+        name: 'NCI PDQ: Merkel Cell Carcinoma Treatment',
+        type: 'official',
+        url: 'https://www.cancer.gov/types/skin/patient/merkel-cell-treatment-pdq',
+      },
+      {
+        name: 'American Cancer Society: Signs and Symptoms of Merkel Cell Carcinoma',
+        type: 'review',
+        url: 'https://www.cancer.org/cancer/types/merkel-cell-skin-cancer/detection-diagnosis-staging/signs-and-symptoms.html',
+      },
     ],
     symptoms:
-      '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+      '<p>A pink, red, purple, or skin-colored lump grows quickly and is often painless.The lump is on sun-exposed skin such as the head, neck, or arms, or the patient is older or immunosuppressed.Nearby lymph nodes enlarge, or the skin tumor ulcerates, bleeds, or changes rapidly.</p>',
     diagnosis:
-      '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+      '<p>Diagnosis depends on skin biopsy with pathology and immunohistochemistry, followed by staging with sentinel lymph node biopsy, lymph node ultrasound or biopsy, CT, PET/CT, or MRI when indicated.</p>',
     treatment:
-      '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+      '<p>Treatment is stage-based. Early disease often uses wide excision and sentinel node evaluation, sometimes with radiation. Unresectable, recurrent, or metastatic disease may use immune checkpoint inhibitors, radiation, or other systemic therapy.</p>',
     prognosis:
-      '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+      '<p>Outcome depends on stage, lymph node involvement, immune status, treatment completeness, and recurrence. Earlier biopsy and staging help guide treatment.</p>',
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -100,6 +113,11 @@ export const diseaseCutaneousNeuroendocrineCarcinomaMerkelCellCarcinoma: Disease
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 373,
+      name: 'cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma-journey.png',
+      url: '/images/diseases/cutaneous-neuroendocrine-carcinoma-merkel-cell-carcinoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   };

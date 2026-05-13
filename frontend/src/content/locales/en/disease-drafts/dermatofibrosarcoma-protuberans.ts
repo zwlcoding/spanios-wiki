@@ -5,73 +5,78 @@ export const diseaseDermatofibrosarcomaProtuberans: DiseaseDraft = {
   ...entity(2022, 'disease-dermatofibrosarcoma-protuberans'),
   name: 'Dermatofibrosarcoma protuberans',
   nameEn: 'Dermatofibrosarcoma protuberans',
-  alias: '隆突性皮肤纤维肉瘤; China Second Rare Disease Catalog item 22',
+  alias: 'DFSP, China Second Rare Disease Catalog item 22',
   slug: 'dermatofibrosarcoma-protuberans',
   oneSentence:
-    "Dermatofibrosarcoma protuberans is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Dermatofibrosarcoma protuberans is a rare, usually slow-growing but locally aggressive skin soft tissue tumor that can extend into surrounding tissue and recur if not fully removed.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Dermatofibrosarcoma protuberans',
+    'A rare deep skin soft tissue tumor that can come back locally if not completely removed',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it is rare overall and makes up a very small share of skin tumors, with estimates varying by registry.",
   quickLook: {
     whatItIs:
-      'Dermatofibrosarcoma protuberans is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'DFSP usually starts in the dermis and extends into tissue with irregular root-like projections. Distant spread is uncommon, but local recurrence risk makes surgical margins and pathology review important.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'A long-standing, gradually enlarging, firm, red-brown, scar-like, or plaque-like skin lump should be evaluated by dermatology or skin cancer surgery, with referral to a sarcoma center when needed.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'DFSP is usually not inherited. Some tumors have a COL1A1-PDGFB fusion, which helps pathology or targeted therapy decisions but does not mean relatives need genetic screening.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Complete surgery is the main treatment. Mohs surgery or wide excision with careful margin control reduces recurrence. Radiation or imatinib may be considered for unresectable, recurrent, or fusion-positive disease.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early DFSP can look like a scar, dermatofibroma, cyst, or firm plaque and may grow slowly without pain, so biopsy is often delayed.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A firm plaque, nodule, or raised lesion on the trunk, shoulder, abdomen, thigh, or head and neck persists and enlarges slowly.',
+      'The lesion looks skin-colored, red-brown, purple-red, or scar-like and feels progressively firmer.',
+      'A presumed scar, dermatofibroma, cyst, or benign lump was removed and then recurred at the same site.',
+      'Pathology suggests a spindle cell tumor, CD34 positivity, or possible DFSP.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Watching it as a scar or benign skin lump without biopsy.',
+      'Doing a simple excision without adequate margins or margin assessment.',
+      'Repeating small excisions after recurrence instead of involving a skin cancer or sarcoma team.',
+      'Not continuing long-term follow-up because recurrence can occur years later.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
-      'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Dermatology',
+      'Skin cancer surgery or Mohs clinic',
+      'Plastic surgery',
+      'Sarcoma or medical oncology',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record when the lesion appeared, growth speed, pain or ulceration, prior trauma, scar, or surgery.',
+      'Bring clear photos, dermoscopy, ultrasound or MRI, and prior operative notes.',
+      'Bring pathology report, immunohistochemistry, margin status, and any molecular testing.',
+      'Record recurrence history and the size of each prior excision.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Skin or soft tissue biopsy with pathology and immunohistochemistry.',
+      'MRI or ultrasound to assess depth, fascia or muscle involvement, and surgical planning.',
+      'Margin assessment and whether Mohs or wide excision is most appropriate.',
+      'COL1A1-PDGFB or related molecular testing and sarcoma center review for recurrent or unresectable disease.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is DFSP confirmed, are margins clear, and should pathology be reviewed?',
+      'Am I a candidate for Mohs surgery or do I need wide excision and reconstruction?',
+      'Does the tumor involve fascia, muscle, or bone, and do I need MRI?',
+      'What is my recurrence risk and follow-up schedule?',
+      'If complete surgery is not possible, are radiation or imatinib appropriate?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>DFSP often appears as a slowly enlarging firm plaque, nodule, or raised lesion that may be skin-colored, red-brown, or purple-red. It is common on the trunk and proximal limbs. Early lesions are often painless and can be mistaken for scars, dermatofibromas, or cysts.</p><p>As it grows, it can form multiple protruding nodules and extend into subcutaneous tissue, fascia, or muscle. Distant spread is uncommon, but local recurrence is a major concern when margins are inadequate.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis requires biopsy with pathology and immunohistochemistry, often including CD34. Because DFSP can resemble other spindle cell tumors, expert dermatopathology or sarcoma pathology review may be needed.</p><p>Ultrasound or MRI may help define deep extent before surgery. Molecular testing for COL1A1-PDGFB fusion can be useful in recurrent, unresectable, or targeted-therapy situations.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>The core treatment is complete removal with confirmed margins. Mohs surgery or other margin-controlled surgery can lower recurrence while sparing tissue; wide local excision is used when Mohs is not suitable.</p><p>Radiation may be considered when margins remain positive and more surgery is not feasible. Imatinib may be used for selected unresectable, recurrent, metastatic, or fusion-positive tumors. Planning should balance recurrence control with function and reconstruction.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term follow-up is needed, especially during the first several years, with continued self-checks afterward because DFSP can recur late. A new firm area, raised change, color change, or pain near the scar should prompt review.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>DFSP is usually not a hereditary cancer syndrome, so relatives generally do not need screening. Fertility goals should be discussed before targeted therapy, radiation, or major surgery when relevant.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>DFSP is usually not an emergency, but rapid enlargement, ulceration with bleeding, infected redness and pain, wound breakdown, fever after surgery, or severe medicine reactions should prompt urgent care.</p>',
   },
   sources: [
     {
@@ -79,15 +84,25 @@ export const diseaseDermatofibrosarcomaProtuberans: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'Mayo Clinic: Dermatofibrosarcoma protuberans diagnosis and treatment',
+      type: 'review',
+      url: 'https://www.mayoclinic.org/diseases-conditions/dermatofibrosarcoma-protuberans/diagnosis-treatment/drc-20576979',
+    },
+    {
+      name: 'Cleveland Clinic: Dermatofibrosarcoma Protuberans',
+      type: 'review',
+      url: 'https://my.clevelandclinic.org/health/diseases/24068-dermatofibrosarcoma-protuberans',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>DFSP often appears as a slowly enlarging firm plaque, nodule, or raised scar-like lesion, usually painless early and often on the trunk or proximal limbs.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses skin or soft tissue biopsy, pathology immunohistochemistry, margin assessment, and MRI or molecular testing when needed.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Complete surgical removal is preferred, often with Mohs or margin-controlled surgery; radiation or imatinib may be considered for unresectable, recurrent, or margin-positive disease.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Distant spread is uncommon, but recurrence depends on margins and treatment method. Complete excision and long-term follow-up are important.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +110,11 @@ export const diseaseDermatofibrosarcomaProtuberans: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 376,
+    name: 'dermatofibrosarcoma-protuberans-journey.png',
+    url: '/images/diseases/dermatofibrosarcoma-protuberans-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

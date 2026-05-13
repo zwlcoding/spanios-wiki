@@ -5,72 +5,78 @@ export const diseaseGangliosidosis: DiseaseDraft = {
   ...entity(2030, 'disease-gangliosidosis'),
   name: 'Gangliosidosis',
   nameEn: 'Gangliosidosis',
-  alias: '神经节苷脂贮积症; China Second Rare Disease Catalog item 30',
+  alias:
+    'GM1 gangliosidosis, GM2 gangliosidosis, Tay-Sachs disease, Sandhoff disease, China Second Rare Disease Catalog item 30',
   slug: 'gangliosidosis',
   oneSentence:
-    "Gangliosidosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Gangliosidosis refers to a group of autosomal recessive lysosomal storage disorders in which enzyme defects allow GM1 or GM2 gangliosides to build up, causing developmental regression, movement problems, seizures, and multisystem involvement.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Gangliosidosis',
+    'Inherited metabolic disorders where missing cleanup enzymes allow gangliosides to build up in the nervous system',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics estimates GM1 gangliosidosis at about 1 in 100,000 to 200,000 newborns, while GM2 frequencies vary by population.",
   quickLook: {
     whatItIs:
-      'Gangliosidosis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'This is a group rather than one disease. GM1 is usually related to GLB1 and beta-galactosidase deficiency; GM2 can involve HEXA, HEXB, or GM2A and the beta-hexosaminidase pathway. Progressive neurologic decline is often the main issue.',
     whoToSeeFirst:
-      'Start with Endocrinology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Developmental plateau or regression, abnormal tone, exaggerated startle, seizures, cherry-red spot, vision loss, feeding problems, enlarged liver or spleen, or skeletal findings should prompt pediatric neurology and metabolic genetics referral.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Most forms are autosomal recessive. Parents are often carriers, so confirmed cases need genetic counseling, parental testing, and sibling risk assessment.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Most forms are managed with supportive care: seizure control, swallowing and nutrition care, respiratory support, rehabilitation, pain and comfort care. Some therapies are under study, and trial suitability depends on the exact type and stage.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early disease may be labeled as cerebral palsy, epilepsy, autism, developmental delay, or unexplained neurodegeneration. Regression plus eye, liver-spleen, skeletal, or enzyme clues should prompt lysosomal storage testing.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A baby or child stops gaining skills or loses skills such as head control, sitting, movement, or words.',
+      'There is low or high muscle tone, exaggerated startle, seizures, vision loss, swallowing difficulty, or recurrent chest infections.',
+      'Eye exam shows a cherry-red spot, or there are coarse facial features, enlarged liver or spleen, skeletal changes, cardiomyopathy, or hearing problems.',
+      'Family history includes developmental regression, childhood deaths, consanguinity, or known GLB1, HEXA, HEXB, or related variants.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only cerebral palsy or epilepsy without asking whether previously gained skills were lost.',
+      'Doing only brain MRI or EEG without eye, enzyme, and metabolic-genetic evaluation.',
+      'Treating feeding problems and pneumonia separately without assessing swallowing and neurologic progression.',
+      'Missing carrier and recurrence-risk counseling for parents and siblings after diagnosis.',
     ],
     firstDepartments: [
-      'Endocrinology',
+      'Pediatric neurology',
       'Metabolic genetics clinic',
-      'Pediatric endocrinology/metabolism',
+      'Rehabilitation medicine',
+      'Pediatric ophthalmology',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'List developmental milestones by month, when progress slowed or regressed, seizure types, and medication response.',
+      'Bring brain MRI, EEG, eye exam, hearing, heart, abdominal ultrasound, skeletal imaging, and metabolic screening results.',
+      'Record feeding, swallowing, choking, pneumonia, sleep, pain, tone, and nutrition changes.',
+      'Collect family history of childhood regression, early deaths, consanguinity, or known carrier status.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Relevant enzyme activity testing in leukocytes or fibroblasts, such as beta-galactosidase or beta-hexosaminidase A/B.',
+      'Genetic testing for GLB1, HEXA, HEXB, GM2A, and related genes with parental confirmation.',
+      'Eye exam for cherry-red spot, brain MRI, EEG, hearing, heart, liver-spleen, and skeletal assessments.',
+      'Swallow study, nutrition evaluation, respiratory and sleep assessment, and seizure-plan review.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is this GM1, Tay-Sachs, Sandhoff, or another GM2-related type, and how is the age-of-onset form classified?',
+      'Which problems need priority now: seizures, swallowing and nutrition, breathing, pain, or rehabilitation?',
+      'Are any clinical trials or specialty centers relevant, and what are realistic supportive-care goals?',
+      'What testing do parents and siblings need, and what reproductive options are available before another pregnancy?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Gangliosidoses often cause progressive neurologic involvement. Infantile forms may show developmental plateau or regression, abnormal tone, exaggerated startle, seizures, vision loss, feeding and swallowing difficulty, and recurrent respiratory infections.</p><p>Some patients have a cherry-red spot, enlarged liver or spleen, coarse facial features, skeletal changes, cardiomyopathy, or hearing problems. Later-onset forms may present with ataxia, dystonia, language or cognitive decline, psychiatric or behavioral issues, or gradual loss of motor function.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines clinical progression, eye and imaging clues, enzyme activity testing, and genetic testing. GM1 usually involves beta-galactosidase and GLB1; GM2-related disease may involve beta-hexosaminidase A/B and genes such as HEXA, HEXB, or GM2A.</p><p>Differential diagnosis includes neuronal ceroid lipofuscinosis, mitochondrial disease, other lysosomal storage disorders, genetic epileptic encephalopathies, cerebral palsy, and degenerative leukodystrophies.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Most forms are currently managed with supportive care, including seizure control, nutrition and swallowing management, reflux and constipation care, respiratory infection prevention, rehabilitation, pain and spasticity management, and family support.</p><p>Substrate reduction, enzyme replacement, gene therapy, and other approaches are being studied or may be available only in trials or specific settings. Suitability depends on the exact type, age, and disease stage.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care should center on function, comfort, and family goals, with regular review of seizures, swallowing, nutrition, breathing, sleep, pain, tone, vision, hearing, and caregiver burden. As disease progresses, families may need anticipatory guidance, palliative care, and home support.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Gangliosidoses are usually autosomal recessive. Parents are typically carriers, and recurrence risk in future pregnancies depends on the specific family variants.</p><p>Once variants are known, siblings and high-risk relatives can receive carrier testing, and families can discuss prenatal diagnosis or preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek urgent care for prolonged or clustered seizures, breathing difficulty, choking, cyanosis, dehydration, infection with reduced responsiveness, inability to maintain feeding, uncontrolled pain, or any situation where caregivers cannot provide safe care at home.</p>',
   },
   sources: [
     {
@@ -78,15 +84,25 @@ export const diseaseGangliosidosis: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: GM1 gangliosidosis',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/gm1-gangliosidosis/',
+    },
+    {
+      name: 'MedlinePlus Genetics: HEXA gene',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/gene/hexa/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common features include developmental plateau or regression, abnormal tone, exaggerated startle, seizures, vision loss, swallowing difficulty, recurrent respiratory infections, and sometimes cherry-red spot, enlarged liver or spleen, skeletal, or cardiac involvement.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses clinical progression, eye and imaging assessment, relevant enzyme activity testing, and genetic testing for genes such as GLB1, HEXA, HEXB, and GM2A.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Most forms are managed supportively with seizure, swallowing, nutrition, breathing, rehabilitation, pain, and comfort care; trial or experimental options require metabolic-genetics review.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Outlook depends on the exact type and age of onset. Early-onset forms often progress quickly, while later-onset forms may progress more slowly; early diagnosis helps guide care and family-risk planning.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +110,11 @@ export const diseaseGangliosidosis: DiseaseDraft = {
   categorySlug: 'metabolic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 384,
+    name: 'gangliosidosis-journey.png',
+    url: '/images/diseases/gangliosidosis-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

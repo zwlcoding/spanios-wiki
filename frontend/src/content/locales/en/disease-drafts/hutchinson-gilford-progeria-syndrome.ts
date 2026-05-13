@@ -5,72 +5,78 @@ export const diseaseHutchinsonGilfordProgeriaSyndrome: DiseaseDraft = {
   ...entity(2041, 'disease-hutchinson-gilford-progeria-syndrome'),
   name: 'Hutchinson-Gilford progeria syndrome',
   nameEn: 'Hutchinson-Gilford progeria syndrome',
-  alias: '早老症; China Second Rare Disease Catalog item 41',
+  alias:
+    'HGPS, progeria, childhood progeria, China Second Rare Disease Catalog item 41',
   slug: 'hutchinson-gilford-progeria-syndrome',
   oneSentence:
-    "Hutchinson-Gilford progeria syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Hutchinson-Gilford progeria syndrome is an extremely rare childhood premature-aging condition, usually caused by a new LMNA variant, with severe growth failure, loss of body fat, skin and hair changes, and high cardiovascular and stroke risk.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Hutchinson-Gilford progeria syndrome',
+    'A childhood premature-aging condition where cardiovascular monitoring is central',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics describes it as extremely rare, with most cases caused by new variants rather than inherited from a parent.",
   quickLook: {
     whatItIs:
-      'Hutchinson-Gilford progeria syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'HGPS produces an abnormal lamin A protein that affects cell structure and blood vessel health. Intelligence is usually not affected, but growth, skin, bones, teeth, and cardiovascular health need long-term care.',
     whoToSeeFirst:
-      'Start with Medical genetics or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Severe growth delay, loss of body fat, changing facial features, hair loss, tight skin, or limited joints in a young child should prompt medical genetics, pediatrics, cardiology, or a rare disease clinic.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Most cases are due to a new LMNA pathogenic variant. Parents are usually not carriers, but genetic counseling is still important for recurrence risk and reproductive options.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Care centers on multidisciplinary support and cardiovascular risk management. Lonafarnib is used in some countries/regions, but suitability and access require specialist review.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early signs can be mistaken for feeding problems, short stature, skin disease, or malnutrition. Normal cognitive development with marked body growth delay is an important clue.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'After infancy, height and weight fall far behind while communication and cognition are relatively age-appropriate.',
+      'Hair loss, visible scalp veins, tight skin, small jaw, delayed teeth, or limited joint movement appear.',
+      'Bone imaging shows changes affecting clavicles, fingertips, hips, or other skeletal features.',
+      'A child develops high blood pressure, vascular narrowing, chest pain, brief neurologic symptoms, or stroke-like events.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only nutrition or growth hormone concerns without connecting skin, hair, skeletal, and vascular clues.',
+      'Focusing on appearance while missing early heart and brain blood-vessel surveillance.',
+      'Delaying LMNA testing and family counseling.',
+      'Not alerting dental, surgical, or anesthesia teams to HGPS and vascular risk.',
     ],
     firstDepartments: [
       'Medical genetics',
-      'Pediatrics or developmental pediatrics',
-      'Relevant organ specialty',
+      'Pediatrics/child health',
+      'Pediatric cardiology',
+      'Pediatric neurology',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring growth charts, height/weight/head circumference records, feeding history, and developmental assessments.',
+      'Collect skin, hair, dental, joint, skeletal imaging, and previous cardiovascular records.',
+      'Summarize family history, pregnancy/birth history, and any genetic testing.',
+      'Ask about LMNA testing, baseline heart/brain vessel assessment, and a multidisciplinary follow-up plan.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'LMNA genetic testing, with parental testing when useful.',
+      'Echocardiogram, ECG, blood pressure, lipids, carotid/brain vessel imaging, and cardiovascular risk review.',
+      'Skeletal X-rays, hip assessment, dental care, hearing, and vision screening.',
+      'Nutrition, activity, rehabilitation, pain, and anesthesia-risk assessment.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'How often should cardiovascular and stroke risk be checked, and which symptoms require emergency care?',
+      'Is lonafarnib or a related program available and appropriate for my child?',
+      'What daily activity, diet, dental, and anesthesia precautions are needed?',
+      'How should recurrence risk be assessed before another pregnancy?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Children with HGPS often appear normal at birth, then develop severe growth failure, poor weight gain, loss of subcutaneous fat, hair loss, prominent scalp veins, tight skin, small jaw, delayed teeth, and limited joint motion during infancy or early childhood.</p><p>Intelligence is usually relatively preserved. Progressive atherosclerosis creates major risks of heart attack, stroke, and transient ischemic attacks, while bones, hips, teeth, hearing, and vision also need surveillance.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines characteristic clinical features, growth patterns, skeletal and cardiovascular assessment, and confirmation by LMNA genetic testing. Early diagnosis allows earlier vascular monitoring and genetic counseling.</p><p>Mimics include Werner syndrome, other progeroid syndromes, congenital lipodystrophy, short-stature disorders, malnutrition, scleroderma-like disease, and other genetic developmental syndromes.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Care involves pediatrics, medical genetics, cardiology, neurology, nutrition, rehabilitation, orthopedics, dentistry, and psychological support. Preventing and monitoring cardiovascular and cerebrovascular events is central.</p><p>Lonafarnib is approved in some countries for HGPS and certain progeroid laminopathies and may improve disease-related outcomes, but access, indication, and side effects require specialist review.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up tracks growth, blood pressure, lipids, cardiac and brain-vessel imaging, joint motion, hips, teeth, hearing, vision, nutrition, and pain. Families should keep all genetic and imaging records.</p><p>School and caregivers should understand that cognition is usually not affected, but stamina, joints, skin protection, and emergency recognition need support.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Most HGPS is caused by a new variant, so recurrence risk for parents is usually low but not zero. Genetic counseling can explain parental testing, possible germline mosaicism, prenatal diagnosis, and preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Chest pain, shortness of breath, fainting, sudden weakness or speech difficulty, seizure, altered consciousness, severe headache, persistent vomiting, dehydration, or unusual postoperative symptoms require emergency care with HGPS and vascular risk clearly identified.</p>',
   },
   sources: [
     {
@@ -78,15 +84,25 @@ export const diseaseHutchinsonGilfordProgeriaSyndrome: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Hutchinson-Gilford progeria syndrome',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/hutchinson-gilford-progeria-syndrome/',
+    },
+    {
+      name: 'FDA: First treatment for Hutchinson-Gilford progeria syndrome',
+      type: 'official',
+      url: 'https://www.fda.gov/news-events/press-announcements/fda-approves-first-treatment-hutchinson-gilford-progeria-syndrome-and-some-progeroid',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Typical signs include severe growth failure, loss of body fat, hair loss, tight skin, small jaw, delayed teeth, limited joints, preserved cognition, and high heart and stroke risk.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines clinical features, growth and skeletal/cardiovascular assessment, and LMNA genetic testing while excluding other progeroid and growth disorders.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care focuses on multidisciplinary support, cardiovascular and cerebrovascular monitoring, nutrition, and rehabilitation; lonafarnib may be discussed where available and appropriate.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Outcome is strongly shaped by cardiovascular and stroke complications. Early diagnosis, surveillance, supportive care, and disease-specific therapy can reduce risk and improve quality of life.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +110,11 @@ export const diseaseHutchinsonGilfordProgeriaSyndrome: DiseaseDraft = {
   categorySlug: 'genetic-developmental',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 395,
+    name: 'hutchinson-gilford-progeria-syndrome-journey.png',
+    url: '/images/diseases/hutchinson-gilford-progeria-syndrome-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

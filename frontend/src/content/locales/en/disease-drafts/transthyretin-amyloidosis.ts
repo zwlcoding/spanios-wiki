@@ -5,72 +5,73 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
   ...entity(2080, 'disease-transthyretin-amyloidosis'),
   name: 'Transthyretin amyloidosis',
   nameEn: 'Transthyretin amyloidosis',
-  alias: '转甲状腺素蛋白淀粉样变性; China Second Rare Disease Catalog item 80',
+  alias:
+    'ATTR; hATTR; ATTR-CM; ATTR-PN; China Second Rare Disease Catalog item 80',
   slug: 'transthyretin-amyloidosis',
   oneSentence:
-    "Transthyretin amyloidosis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Transthyretin amyloidosis is a systemic disease in which misfolded TTR protein deposits in nerves, the heart, and other tissues, causing peripheral neuropathy, cardiomyopathy, and autonomic or gastrointestinal symptoms.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Transthyretin amyloidosis',
+    'A systemic disease where abnormal protein deposits affect nerves, heart, and other organs',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; hereditary ATTR varies widely by family and region, while wild-type ATTR cardiomyopathy is more common in older adults and is probably underdiagnosed.",
   quickLook: {
     whatItIs:
-      'Transthyretin amyloidosis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Unstable TTR protein forms amyloid deposits. Hereditary ATTR is caused by TTR gene variants and may affect nerves and heart; wild-type ATTR has no inherited variant and often mainly affects the heart.',
     whoToSeeFirst:
-      'Start with Rare disease multidisciplinary clinic or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Unexplained neuropathy, bilateral carpal tunnel syndrome, orthostatic low blood pressure, alternating diarrhea and constipation, weight loss, or unexplained thickened heart muscle or heart failure should prompt neurology, cardiology, or an amyloidosis clinic.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Hereditary ATTR is autosomal dominant, but carrying a variant does not guarantee disease. Confirmed cases need TTR genetic testing and family genetic counseling. Wild-type ATTR is not managed as inherited disease.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Treatment now includes targeted options such as TTR stabilizers, RNA-silencing therapies, organ support, and rarely transplant, depending on heart or nerve involvement, genotype, and local access.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early disease can look like diabetic neuropathy, spine disease, carpal tunnel syndrome, ordinary heart failure, or hypertensive heart disease. Missing amyloidosis and failing to exclude AL amyloidosis can delay correct care.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Progressive numbness, burning pain, weakness, unsteady walking, with orthostatic symptoms, diarrhea/constipation, urinary retention, or sexual dysfunction.',
+      'Thickened heart muscle, heart failure with preserved ejection fraction, arrhythmia, or conduction disease, especially with bilateral carpal tunnel syndrome, spinal stenosis, or tendon rupture history.',
+      'Family history of similar neuropathy, heart failure, early death, or known TTR variant.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only as diabetic neuropathy, spine disease, or ordinary heart failure without connecting nerve, heart, and autonomic symptoms.',
+      'Not excluding AL amyloidosis first, which can send treatment in the wrong direction.',
+      'Confirming hereditary ATTR but not offering genetic counseling and planned surveillance to first-degree relatives.',
     ],
     firstDepartments: [
-      'Rare disease multidisciplinary clinic',
+      'Neurology',
+      'Cardiology/cardiomyopathy clinic',
+      'Amyloidosis multidisciplinary clinic',
       'Medical genetics',
-      'Specialty for the main affected system',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Create a timeline of numbness, pain, weakness, falls, GI, autonomic, and heart symptoms.',
+      'Bring EMG/nerve conduction, ECG, echocardiogram, cardiac MRI, bone scintigraphy, NT-proBNP/troponin, and kidney tests.',
+      'Bring serum/urine immunofixation, free light chains, Congo red biopsy results, and TTR genetic testing.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Whether AL amyloidosis has been fully excluded with serum and urine immunofixation and free light chains.',
+      'Whether TTR genetic testing is needed to distinguish hereditary from wild-type ATTR and guide relatives.',
+      'Whether cardiac findings can be confirmed by bone scintigraphy, cardiac MRI, or biopsy, and whether nerve testing should include small fiber or autonomic assessment.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is my pattern mainly cardiac, neurologic, or mixed, and how is organ damage being measured?',
+      'Am I eligible for a TTR stabilizer, RNA-silencing therapy, supportive care, or a clinical trial, and what monitoring is needed?',
+      'When should relatives have genetic testing and follow-up, and how should asymptomatic carriers be monitored?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>ATTR can cause peripheral neuropathy with numbness, pain, burning, weakness, muscle wasting, and unsteady gait. Autonomic involvement may cause orthostatic low blood pressure, fainting, alternating diarrhea and constipation, nausea, early satiety, urinary problems, and sexual dysfunction.</p><p>Cardiac involvement can cause thickened heart muscle, heart failure with preserved ejection fraction, arrhythmias, conduction disease, shortness of breath, swelling, and reduced exercise capacity. Carpal tunnel syndrome, spinal stenosis, tendon rupture, eye disease, or kidney involvement can be clues.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis first distinguishes ATTR from AL amyloidosis, usually with serum and urine immunofixation and serum free light chains. ATTR cardiomyopathy may be confirmed with bone scintigraphy, cardiac MRI, echocardiography, and sometimes biopsy; neurologic involvement is assessed with nerve conduction, EMG, and autonomic testing.</p><p>TTR genetic testing distinguishes hereditary from wild-type ATTR and guides family counseling. Tissue biopsy from fat, nerve, heart, or another involved organ can confirm amyloid by Congo red staining and protein typing.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment depends on the main organ involvement and access. ATTR cardiomyopathy may be evaluated for TTR stabilizers such as tafamidis and careful volume management; hereditary ATTR polyneuropathy may be evaluated for therapies that lower TTR production, including RNA-silencing medicines.</p><p>Supportive care includes neuropathic pain treatment, orthostatic hypotension and GI autonomic symptom management, arrhythmia or conduction care, nutrition, rehabilitation, and fall prevention. Transplant or clinical trials may be discussed in selected patients.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term follow-up tracks neurologic scores, walking ability, autonomic symptoms, weight and nutrition, echocardiography or cardiac MRI, NT-proBNP, troponin, rhythm, kidney function, and medication adverse effects.</p><p>Care works best when neurology, cardiology, genetics, rehabilitation, and nutrition are coordinated instead of treating each organ in isolation.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Hereditary ATTR is autosomal dominant. First-degree relatives can consider predictive testing after informed genetic counseling. Carriers need a surveillance plan based on age, genotype, and family pattern.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Urgent care is needed for new or worsening chest pain, severe shortness of breath, rapidly worsening swelling, fainting, very slow or fast heart rate, fall with injury, severe dehydration, persistent vomiting or diarrhea, or sudden neurologic change.</p>',
   },
   sources: [
     {
@@ -78,15 +79,25 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Transthyretin amyloidosis',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/transthyretin-amyloidosis/',
+    },
+    {
+      name: 'MedlinePlus: Tafamidis',
+      type: 'official',
+      url: 'https://medlineplus.gov/druginfo/meds/a622032.html',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Features include progressive peripheral neuropathy, autonomic symptoms, carpal tunnel syndrome, GI problems, thickened heart muscle, heart failure, rhythm or conduction disease, and sometimes kidney or eye involvement.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis first excludes AL amyloidosis, then uses TTR genetic testing, cardiac scintigraphy/MRI/echo, nerve testing, and sometimes tissue biopsy with amyloid protein typing.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care is tailored to cardiac, neurologic, or mixed disease with TTR stabilizers, RNA-silencing therapies, heart failure and autonomic support, rehabilitation, genetic counseling, and selected transplant or trial options.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Outlook depends on hereditary versus wild-type disease, heart and nerve involvement, and early access to appropriate therapy; coordinated multidisciplinary care improves management.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +105,11 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
   categorySlug: 'multisystem',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 434,
+    name: 'transthyretin-amyloidosis-journey.png',
+    url: '/images/diseases/transthyretin-amyloidosis-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

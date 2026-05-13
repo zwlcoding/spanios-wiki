@@ -5,73 +5,77 @@ export const diseaseGiantCellTumorOfBone: DiseaseDraft = {
   ...entity(2036, 'disease-giant-cell-tumor-of-bone'),
   name: 'Giant cell tumor of bone',
   nameEn: 'Giant cell tumor of bone',
-  alias: '骨巨细胞瘤; China Second Rare Disease Catalog item 36',
+  alias: 'GCTB, osteoclastoma, China Second Rare Disease Catalog item 36',
   slug: 'giant-cell-tumor-of-bone',
   oneSentence:
-    "Giant cell tumor of bone is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Giant cell tumor of bone is a rare primary bone tumor that is usually not cancer in the usual sense, but it can grow aggressively where it starts, damage bone, cause pain and swelling, and recur after treatment.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Giant cell tumor of bone',
+    'A rare bone tumor near joints that can damage bone and come back locally',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; GARD lists it as a rare disease that usually begins in adulthood, with frequency varying by registry and diagnostic definition.",
   quickLook: {
     whatItIs:
-      'Giant cell tumor of bone is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'GCTB often arises at the end of long bones near joints, such as around the knee. It is usually locally aggressive rather than a typical spreading cancer, but it can destroy bone and recur.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Persistent bone pain, swelling near a joint, limited motion, an imaging report describing a lytic bone lesion, or a fracture with little trauma should prompt review by orthopedic oncology, orthopedics, or oncology.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Most GCTB is not inherited, and relatives usually do not need genetic screening. Multiple bone lesions may lead doctors to check for other bone or metabolic conditions.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Surgery is the main treatment, using curettage, local adjuvant measures, bone graft/cement, or reconstruction. Denosumab, radiation, or trials may be discussed for unresectable, recurrent, or difficult-site disease.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early symptoms can look like sports injury, arthritis, sprain, or a benign bone cyst. Worsening pain, night pain, swelling, or abnormal imaging needs specialist review.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Pain or swelling near the knee, wrist, hip, shoulder, or another joint slowly worsens and begins limiting activity.',
+      'X-ray, CT, or MRI shows a lytic lesion near the end of a bone, thinning cortex, or a pathologic fracture.',
+      'Pain, swelling, or limited motion progresses despite treatment for injury or arthritis.',
+      'After prior GCTB treatment, pain or swelling returns at the original site, or chest imaging shows nodules that need explanation.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Repeatedly treating it as joint inflammation or sports injury without repeating imaging.',
+      'Rushing to surgery before the imaging, biopsy, pathology, and plan are reviewed by a bone tumor team.',
+      'Not keeping preoperative imaging, pathology material, and operative reports, making recurrence decisions harder.',
+      'Stopping follow-up once pain improves and missing local recurrence or rare lung involvement.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
-      'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Orthopedic oncology',
+      'Orthopedics',
+      'Medical oncology',
+      'Pathology/radiology review',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record when pain or swelling began, whether pain occurs at night, and whether weight-bearing or joint motion is limited.',
+      'Bring original X-ray, CT, MRI, bone scan, or PET-CT images and reports.',
+      'Bring biopsy, surgery, pathology, slide/block information, and operative notes if already performed.',
+      'Note prior bone disease, parathyroid problems, radiation exposure, recurrence history, and chest imaging results.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'X-ray, CT, and MRI of the lesion to define bone destruction, soft tissue extension, and joint involvement.',
+      'Needle or open biopsy reviewed by a bone tumor pathologist.',
+      'Chest CT or other surveillance when recurrence, higher-risk disease, or physician concern is present.',
+      'Whether a multidisciplinary plan is needed and whether curettage, wide resection, reconstruction, or denosumab fits the case.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is my tumor suitable for curettage, or does it require a wider operation, and how will this affect joint function?',
+      'What factors drive my recurrence risk, and how often should imaging be repeated?',
+      'Do I need denosumab, and how will benefits, stopping plans, and side effects be monitored?',
+      'If pain or swelling returns later, which team should I contact and what records should I bring?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>The most common symptoms are gradually worsening pain, swelling, and reduced motion near the affected bone or joint. Because GCTB often sits near the end of a long bone, symptoms may first feel like knee, wrist, hip, or shoulder trouble.</p><p>Bone weakening can cause a visible lump, joint fluid, or a pathologic fracture. Some tumors recur locally after treatment, and rare cases involve the lungs, so follow-up cannot rely on symptoms alone.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines history, examination, X-ray, CT, MRI, and pathology. Even when imaging looks typical, confirmation usually requires biopsy or surgical tissue reviewed by a team familiar with bone tumors.</p><p>Mimics include chondroblastoma, aneurysmal bone cyst, brown tumor, osteosarcoma, metastatic tumor, and other lytic bone lesions. Defining tumor extent before treatment matters because the operation affects both recurrence risk and function.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Surgery is the main treatment. Options include curettage, local adjuvant measures, filling with bone graft or cement, or wider resection with reconstruction when bone destruction or soft tissue extension is extensive.</p><p>For unresectable tumors, recurrence, difficult sites such as spine or pelvis, or selected cases where shrinking the tumor may help, clinicians may discuss denosumab. Radiation is generally reserved for situations where surgery is not possible because long-term risks must be weighed.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up looks for local recurrence, joint function, bone healing, hardware or reconstruction problems, and rare lung lesions. Local imaging is common, and some patients need chest imaging.</p><p>Rehabilitation should be guided by the orthopedic team so weight-bearing and joint motion return gradually without raising fracture or hardware risks.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>GCTB is usually not managed as an inherited condition, so relatives do not usually need screening. Young patients who need long-term medication, radiation, or complex surgery can ask about pregnancy plans, breastfeeding, and bone-growth considerations.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Sudden severe pain at the lesion site, inability to bear weight, deformity, or suspected fracture needs urgent care. Fever after surgery, worsening wound redness or drainage, limb numbness or weakness, chest pain, or shortness of breath also warrants prompt evaluation.</p>',
   },
   sources: [
     {
@@ -79,15 +83,25 @@ export const diseaseGiantCellTumorOfBone: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'GARD: Giant cell tumor of bone',
+      type: 'official',
+      url: 'https://rarediseases.info.nih.gov/diseases/13046/giant-cell-tumor-of-bone',
+    },
+    {
+      name: 'NCI: Denosumab',
+      type: 'official',
+      url: 'https://www.cancer.gov/about-cancer/treatment/drugs/denosumab',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Typical symptoms are gradually worsening bone pain, swelling near a joint, limited movement, a lump, and sometimes a pathologic fracture when bone is weakened.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis relies on orthopedic oncology review, X-ray/CT/MRI to map the lesion, and biopsy or surgical pathology to confirm GCTB and exclude similar bone tumors.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Surgery is the main treatment, using curettage, local adjuvant measures, bone graft/cement, or reconstruction; denosumab may be discussed for unresectable, recurrent, or difficult-site disease.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Many patients achieve local control with proper treatment, but recurrence is a real risk and rare lung involvement can occur, so long-term imaging and rehabilitation matter.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +109,11 @@ export const diseaseGiantCellTumorOfBone: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 390,
+    name: 'giant-cell-tumor-of-bone-journey.png',
+    url: '/images/diseases/giant-cell-tumor-of-bone-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

@@ -5,72 +5,79 @@ export const diseaseChoroideremia: DiseaseDraft = {
   ...entity(2012, 'disease-choroideremia'),
   name: 'Choroideremia',
   nameEn: 'Choroideremia',
-  alias: '无脉络膜症; China Second Rare Disease Catalog item 12',
+  alias:
+    'CHM-related chorioretinal degeneration, progressive tapetochoroidal dystrophy, China Second Rare Disease Catalog item 12',
   slug: 'choroideremia',
   oneSentence:
-    "Choroideremia is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Choroideremia is a rare X-linked inherited eye disease caused by CHM gene variants, usually starting with night blindness and gradually narrowing the visual field before central vision is affected later.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Choroideremia',
+    'An inherited retinal disease that often starts with night blindness and tunnel vision',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics estimates a prevalence of about 1 in 50,000 to 100,000 people, and it may be underdiagnosed because it resembles other retinal disorders.",
   quickLook: {
     whatItIs:
-      'Choroideremia is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'CHM gene variants affect the long-term survival of retinal and choroidal cells. Males are usually more clearly affected. Female carriers often have mild findings but can still develop eye changes or vision problems.',
     whoToSeeFirst:
-      'Start with Ophthalmology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Night blindness, narrowing side vision, bumping into objects, or a family pattern of affected males should prompt evaluation by a retina or inherited eye disease clinic and genetic counseling.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Choroideremia is usually X-linked recessive. A male with one disease-causing CHM variant is affected. Female carriers often have milder findings but may still need eye follow-up and reproductive counseling.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Routine care focuses on diagnosis, low-vision support, protecting remaining vision, and genetic counseling. Gene therapy research and trials require specialist review of eligibility and availability.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Early symptoms may be treated as myopia, night vision trouble, or retinitis pigmentosa. Without retinal imaging, electrophysiology, and CHM genetic testing, the diagnosis may remain nonspecific.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Night blindness begins in childhood or adolescence, with slow adaptation from bright to dim environments.',
+      'Side vision narrows over time, causing bumps into objects, steps, or doorways.',
+      'Retinal examination shows chorioretinal atrophy, or retinitis pigmentosa has been diagnosed but the family pattern suggests X-linked inheritance.',
+      'Several male relatives have night blindness, tunnel vision, or severe adult vision loss, while female relatives may be mildly affected.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Repeating glasses prescriptions while missing that night blindness and field loss are not explained by myopia alone.',
+      'Stopping at a broad label of retinitis pigmentosa without molecular testing.',
+      'Not assessing female relatives as possible carriers.',
+      'Waiting until central vision declines before arranging low-vision support and environmental adaptations.',
     ],
     firstDepartments: [
-      'Ophthalmology',
-      'Retina/cornea/inherited eye disease clinic',
-      'Genetic counseling',
+      'Retina clinic',
+      'Inherited eye disease clinic',
+      'Low-vision rehabilitation',
+      'Medical genetics',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record the age night blindness began, visual field changes, reading or mobility problems, and school or work impact.',
+      'Bring fundus photos, OCT, fundus autofluorescence, visual field, ERG, and prior diagnosis records.',
+      'Summarize male relatives with vision loss, age at night blindness, age at severe vision loss, and possible female carrier findings.',
+      'Bring the original genetic report if testing has already been done.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Fundus photography, OCT, fundus autofluorescence, and visual field testing to document disease extent.',
+      'Full-field ERG or multifocal ERG to measure retinal function.',
+      'CHM gene testing or an inherited retinal disease panel.',
+      'Carrier testing for female relatives, genetic counseling, and low-vision assessment.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Does my pattern fit choroideremia or another inherited retinal degeneration?',
+      'How much central vision, peripheral field, and retinal structure are currently preserved?',
+      'Will CHM genetic testing change family screening or reproductive counseling?',
+      'Which low-vision tools, mobility training, lighting changes, and school or work accommodations should start now?',
+      'Are any clinical studies or gene therapy evaluations appropriate for me?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Choroideremia usually begins with night blindness, often in childhood or adolescence. Peripheral vision then narrows gradually, making mobility, sports, stairs, and night travel harder. Central vision may be preserved for many years but can decline in later disease.</p><p>Males are usually more clearly affected. Female carriers may have few symptoms, but retinal changes can be seen on examination and some carriers develop vision or field problems over time.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines an eye examination with molecular testing. Fundus photography, OCT, fundus autofluorescence, visual field testing, and ERG can document progressive retinal and choroidal atrophy.</p><p>A disease-causing CHM variant confirms the molecular diagnosis and helps distinguish choroideremia from retinitis pigmentosa and other inherited retinal degenerations. Family analysis is important for carrier counseling.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Standard care focuses on protecting useful vision, low-vision rehabilitation, home and school or work adaptations, and regular follow-up with an inherited retinal disease specialist. Associated eye problems should be treated when present.</p><p>CHM-related gene therapy and other studies are evolving. Eligibility, availability, and risk-benefit decisions depend on the genetic result, remaining retinal structure, and specialist assessment.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care may include periodic retinal imaging, visual field testing, OCT or ERG, low-vision devices, mobility training, improved lighting, and digital accessibility tools. Education, driving, and work planning should be discussed early.</p><p>Patients should keep their genetic testing report because it may be needed for family testing, follow-up at other centers, and future treatment or trial screening.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Choroideremia is usually X-linked recessive. An affected male does not pass the X-linked variant to sons but passes it to all daughters, who become carriers. A female carrier can pass the variant to children in each pregnancy.</p><p>Families planning pregnancy should consider genetic counseling to discuss relative testing and reproductive options such as prenatal or preimplantation genetic testing when appropriate.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Choroideremia itself is usually not an emergency, but sudden major vision loss, eye pain, eye trauma, new flashes with many floaters, or a curtain-like visual field loss should prompt urgent eye care to rule out other treatable eye problems.</p>',
   },
   sources: [
     {
@@ -78,15 +85,20 @@ export const diseaseChoroideremia: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Choroideremia',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/choroideremia/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Typical features are childhood or adolescent night blindness, slow dark adaptation, progressive peripheral field loss, and later central vision impairment.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses retinal imaging, OCT, visual field testing, ERG, and CHM genetic testing to confirm the inherited retinal disorder and guide family counseling.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care focuses on inherited eye disease follow-up, low-vision rehabilitation, practical adaptations, and genetic counseling; gene therapy or study options require specialist review.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>The condition usually progresses slowly and many people develop severe vision impairment later in life. Early diagnosis helps with low-vision support, family counseling, and future treatment eligibility.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -94,6 +106,11 @@ export const diseaseChoroideremia: DiseaseDraft = {
   categorySlug: 'ophthalmologic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 366,
+    name: 'choroideremia-journey.png',
+    url: '/images/diseases/choroideremia-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

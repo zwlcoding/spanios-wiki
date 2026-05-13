@@ -8,70 +8,72 @@ export const diseaseWaldenstromMacroglobulinemiaLymphoplasmacyticLymphoma: Disea
       'disease-waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma',
     ),
     name: '华氏巨球蛋白血症/淋巴浆细胞淋巴瘤',
-    nameEn: 'Waldenström macroglobulinemia/ Lymphoplasmacytic lymphoma',
-    alias:
-      '第二批罕见病目录第 85 项；Waldenström macroglobulinemia/ Lymphoplasmacytic lymphoma',
+    nameEn: 'Waldenström macroglobulinemia/Lymphoplasmacytic lymphoma',
+    alias: 'WM；LPL；第二批罕见病目录第 85 项',
     slug: 'waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma',
     oneSentence:
-      '淋巴浆细胞淋巴瘤/华氏巨球蛋白血症（lymphoplasmacytic lymphoma/ Waldenströmmacroglobulinemia，LPL/WM）是一种少见的惰性成熟 B 细胞淋巴瘤，在非霍奇金淋巴瘤中所占比例＜2％。',
-    plainName:
-      '需要专科确认和长期管理的罕见病：华氏巨球蛋白血症/淋巴浆细胞淋巴瘤',
+      '华氏巨球蛋白血症是一种少见的惰性 B 细胞淋巴瘤，骨髓中异常淋巴浆细胞产生过多 IgM，可导致贫血、感染、出血、神经病变或高黏滞综合征。',
+    plainName: '一种进展较慢、会产生过多 IgM 的血液肿瘤',
     prevalence:
-      '已纳入国家第二批罕见病目录；具体患病率因地区、人群和诊断标准不同而不同。',
+      '已纳入中国第二批罕见病目录；属于少见非霍奇金淋巴瘤，常见于中老年人。',
     quickLook: {
       whatItIs:
-        '淋巴浆细胞淋巴瘤/华氏巨球蛋白血症（lymphoplasmacytic lymphoma/ Waldenströmmacroglobulinemia，LPL/WM）是一种少见的惰性成熟 B 细胞淋巴瘤，在非霍奇金淋巴瘤中所占比例＜2％。',
+        'WM/LPL 常进展缓慢，部分人只是体检发现 IgM 单克隆蛋白并可观察随访。需要治疗的原因通常是贫血、症状性高黏滞、神经病变、淋巴结/脾大、肾脏或冷球蛋白相关问题。',
       whoToSeeFirst:
-        '如果出现发现罕见肿瘤、持续肿块、异常影像或病理提示特殊类型肿瘤，可以先到肿瘤科或罕见病多学科门诊评估；急性严重症状应先去急诊。',
+        'IgM 单克隆蛋白、原因不明贫血、血沉很高、反复感染、出血、视物模糊、头痛、手脚麻木或高黏滞症状，应到血液科/淋巴瘤专科。',
       isGenetic:
-        '通常不是典型的家族遗传病，但具体病因和是否需要家属评估，应由专科医生结合诊断判断。',
+        '通常不是典型家族遗传病。少数家庭有淋巴浆细胞疾病聚集，但家属一般不按遗传病筛查。',
       hasTreatment:
-        '有些患者可以通过药物、手术、支持治疗、康复或长期随访获益；治疗目标和可选方案需要由专科医生按病情决定。',
+        '无症状者不一定马上治疗。需要治疗时可用利妥昔单抗联合方案、BTK 抑制剂、蛋白酶体抑制剂等；高黏滞急症需先血浆置换快速降低 IgM。',
       commonDelayReason:
-        '罕见病常因早期症状分散、跨多个科室或检查结果不典型而延迟确诊。把既往检查、家族史和症状时间线整理好，有助于医生更快判断。',
+        '早期无症状或只有疲劳贫血，容易被当成缺铁、慢性炎症或 MGUS。若未做血清蛋白电泳、IgM 定量和骨髓检查，可能漏诊。',
     },
     patientJourney: {
       whenToSuspect: [
-        '出现发现罕见肿瘤、持续肿块、异常影像或病理提示特殊类型肿瘤，且按常见病处理后仍反复或进展。',
-        '多个科室检查都提示异常，但没有一个常见诊断能解释全部表现。',
-        '家族中有类似表现、早发重症、反复住院或不明原因死亡史。',
+        '不明原因贫血、乏力、体重下降、夜汗、反复感染或淋巴结/脾大。',
+        'IgM 单克隆蛋白、血清黏滞度高，或头痛、视物模糊、鼻牙龈出血、意识混乱。',
+        '手脚麻木疼痛、冷刺激后肢端变色、肾脏异常或冷球蛋白/冷凝集相关表现。',
       ],
       commonWrongTurns: [
-        '只处理单个症状，没有把不同系统的表现放在一起分析。',
-        '检查结果轻度异常时反复观察，但没有到相应专科或罕见病门诊进一步评估。',
-        '没有保存既往影像、化验、病理或基因检测资料，导致重复检查和判断延迟。',
+        '只处理一个器官或一次发作，没有把长期模式、家族史和既往检查串起来。',
+        '检查异常被解释为常见病后长期观察，但没有转到对应专科或罕见病多学科门诊。',
+        '没有保存影像、病理、基因、用药和随访记录，导致重复检查和判断延迟。',
       ],
-      firstDepartments: ['肿瘤科', '血液科', '相关外科', '病理科/分子诊断门诊'],
+      firstDepartments: [
+        '血液科',
+        '淋巴瘤/浆细胞疾病专科',
+        '急诊科（高黏滞症状）',
+        '神经内科/肾内科（按并发症）',
+      ],
       diagnosisChecklist: [
-        '按时间顺序整理症状、发作诱因、用药反应和家族史。',
-        '带齐既往化验、影像、病理、手术记录、出院小结和基因检测结果。',
-        '请医生确认是否需要专科检查、遗传检测、病理复核或多学科会诊。',
+        '带血常规、IgM 定量、血清蛋白电泳/免疫固定、游离轻链和血清黏滞度。',
+        '带骨髓涂片/活检、流式、MYD88/CXCR4 检测、影像和既往感染出血记录。',
+        '记录头痛视物模糊、出血、神经病变、B 症状和用药史。',
       ],
       testsToAskAbout: [
-        '基础血液和生化检查，以及与主要受累系统相关的专科检查。',
-        '医生可能会根据指南中的辅助检查建议选择影像、功能、病理或分子检测。',
-        '如果怀疑遗传或家族相关疾病，可咨询是否需要基因检测和遗传咨询。',
+        '目前是 IgM MGUS、无症状 WM 还是需要治疗的 WM？',
+        '是否需要检查 MYD88 L265P、CXCR4、β2 微球蛋白、血清黏滞度和器官受累。',
+        '如果用利妥昔单抗，是否有 IgM flare 风险，是否先血浆置换。',
       ],
       questionsForDoctor: [
-        '目前最可能的诊断是什么？还需要排除哪些相似疾病？',
-        '我的病情主要影响哪些器官或系统？哪些情况需要急诊？',
-        '治疗目标是什么：缓解症状、预防并发症、延缓进展，还是争取根治？',
-        '需要多久复查一次？复查哪些指标？家属是否需要筛查？',
+        '我现在需要治疗还是观察？启动治疗的具体指标是什么？',
+        '最适合我的方案如何兼顾疗效、感染风险、神经病变和生活质量？',
+        '哪些症状提示高黏滞，需要立刻急诊？',
       ],
     },
     medicalSections: {
       symptoms:
-        '<p>主要临床表现包括：WM 起病隐匿、缓慢，早期常无不适。</p><p>不同患者不一定会出现所有表现，症状轻重也可能随年龄、病程和合并问题而变化。</p>',
+        '<p>WM 可长期无症状。出现症状时常见贫血相关乏力气短、反复感染、淋巴结或脾大、体重下降、夜汗、出血倾向，以及 IgM 造成的高黏滞综合征：头痛、头晕、视物模糊、鼻牙龈出血、意识改变。</p><p>IgM 还可引起周围神经病变、冷球蛋白血症、冷凝集素病、肾脏受累或淀粉样变相关问题。</p>',
       diagnosis:
-        '<p>诊断通常需要把病史、体格检查、专科检查和必要的实验室/影像/病理或遗传检测放在一起判断。WM 诊断标准：（1）血清中检测到单克隆性IgM（不论数量）。</p><p>还需要与表现相近的疾病鉴别：与 IgM 型意义未明的单克隆免疫球蛋白血症（MGUS）、多发性骨髓瘤（MM）等鉴别（1）IgM 型 MGUS： IgM 型 MGUS 的诊断标准 ①有血清单克隆 IgM 蛋白；</p>',
+        '<p>诊断需要证明 IgM 单克隆蛋白和骨髓淋巴浆细胞性浸润，并结合免疫表型、血清蛋白电泳/免疫固定、IgM 定量、骨髓活检、MYD88 L265P 和 CXCR4 等检测。</p><p>医生会与 IgM MGUS、多发性骨髓瘤、边缘区淋巴瘤、慢性淋巴细胞白血病和其他小 B 细胞淋巴瘤鉴别。</p>',
       treatment:
-        '<p>治疗应由相关专科根据疾病阶段、严重程度、受累器官和药物可及性制定。1.治疗指征无症状的 WM 患者不需要治疗。</p>',
+        '<p>无症状 WM 不需要因诊断本身立刻治疗，而是规律观察。治疗指征包括症状性贫血、高黏滞、器官受累、明显 B 症状、神经病变或冷球蛋白相关问题。</p><p>治疗可选择利妥昔单抗联合化疗/免疫治疗、BTK 抑制剂、蛋白酶体抑制剂等。高黏滞综合征是急症，通常先血浆置换，再进行抗肿瘤治疗。</p>',
       longTermCare:
-        '<p>长期管理的重点是定期复查、识别并发症、记录治疗反应，并在需要时进行多学科协作。如果症状变化、检查指标恶化或准备手术/妊娠/侵入性操作，应提前和主管医生沟通。</p>',
+        '<p>长期随访包括血常规、IgM、M 蛋白、肾功能、感染风险、疫苗计划、神经病变、血清黏滞度和治疗副作用。观察期也需要明确复诊频率和启动治疗标准。</p><p>患者应携带 WM 诊断信息，出现高黏滞症状时不要等门诊复查。</p>',
       fertilityOrFamily:
-        '<p>通常不是典型的家族遗传病，但具体病因和是否需要家属评估，应由专科医生结合诊断判断。</p>',
+        '<p>WM 通常不是遗传病，常规不要求家属筛查。治疗前如涉及生育、长期靶向药或化疗，应讨论生育力保存、感染预防和疫苗。</p>',
       emergencySigns:
-        '<p>如果出现呼吸困难、意识改变、持续高热或严重疼痛、快速加重的出血/肿胀、抽搐、胸痛、明显脱水或其他危及生命的表现，应立即急诊。就诊时主动说明已怀疑或确诊的罕见病名称。</p>',
+        '<p>视物模糊、严重头痛、意识改变、胸闷气短、鼻牙龈出血不止、黑便呕血、发热寒战或严重贫血症状，应及时急诊，尤其要提示可能存在高黏滞综合征。</p>',
     },
     sources: [
       {
@@ -79,18 +81,31 @@ export const diseaseWaldenstromMacroglobulinemiaLymphoplasmacyticLymphoma: Disea
         type: 'clinical-guideline',
         url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
       },
+      {
+        name: 'National Cancer Institute: Waldenström macroglobulinemia treatment',
+        type: 'official',
+        url: 'https://www.cancer.gov/types/lymphoma/patient/waldenstrom-treatment-pdq',
+      },
     ],
-    symptoms: '<p>WM 起病隐匿、缓慢，早期常无不适。</p>',
-    diagnosis: '<p>WM 诊断标准：（1）血清中检测到单克隆性IgM（不论数量）。</p>',
-    treatment: '<p>治疗指征无症状的 WM 患者不需要治疗。</p>',
+    symptoms:
+      '<p>可无症状；也可有贫血乏力、感染、出血、淋巴结/脾大、神经病变、冷球蛋白相关症状和高黏滞导致的头痛、视物模糊、意识改变。</p>',
+    diagnosis:
+      '<p>诊断结合 IgM 单克隆蛋白、骨髓淋巴浆细胞浸润、免疫表型、MYD88/CXCR4 等检测，并与 IgM MGUS 和其他小 B 细胞淋巴瘤鉴别。</p>',
+    treatment:
+      '<p>无症状可观察；有治疗指征时可用利妥昔单抗联合方案、BTK 抑制剂等，高黏滞急症需先血浆置换。</p>',
     prognosis:
-      '<p>预后差异较大，取决于疾病类型、发现时间、受累器官、并发症和治疗可及性。尽早明确诊断并规范随访，有助于降低风险。</p>',
+      '<p>多数进展较慢，可长期管理；高黏滞、感染、贫血、神经病变和治疗副作用是随访重点。</p>',
     sourceName: '国家卫生健康委办公厅：86个罕见病病种诊疗指南（2025年版）',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 439,
+      name: 'waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma-journey.png',
+      url: '/images/diseases/waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   };

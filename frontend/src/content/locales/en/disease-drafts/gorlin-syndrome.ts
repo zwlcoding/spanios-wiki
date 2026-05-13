@@ -5,73 +5,78 @@ export const diseaseGorlinSyndrome: DiseaseDraft = {
   ...entity(2039, 'disease-gorlin-syndrome'),
   name: 'Gorlin syndrome',
   nameEn: 'Gorlin syndrome',
-  alias: '高林综合征; China Second Rare Disease Catalog item 39',
+  alias:
+    'Nevoid basal cell carcinoma syndrome, NBCCS, basal cell nevus syndrome, China Second Rare Disease Catalog item 39',
   slug: 'gorlin-syndrome',
   oneSentence:
-    "Gorlin syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Gorlin syndrome is an inherited tumor predisposition syndrome that can cause early or repeated basal cell carcinomas, jaw keratocysts, small pits on the palms or soles, and skeletal features, requiring long-term dermatology, oral/maxillofacial, and genetics follow-up.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Gorlin syndrome',
+    'An inherited syndrome that raises the risk of basal cell cancers and jaw cysts',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; MedlinePlus Genetics estimates about 1 in 31,000 people, although mild cases and variable family expression affect recognition.",
   quickLook: {
     whatItIs:
-      'Gorlin syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Gorlin syndrome, also called nevoid basal cell carcinoma syndrome, is often related to PTCH1 or SUFU. It is not just a skin condition; it can affect skin, jaw, bones, nervous system, and reproductive organs.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Multiple basal cell carcinomas at a young age, repeated jaw cysts, palm or sole pits, or family members with similar features should prompt dermatology, oral/maxillofacial surgery, medical genetics, or cancer genetics review.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'It is usually autosomal dominant but can arise as a new variant. Genetic counseling helps with family testing, child surveillance, and reproductive planning.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'There is no one-time cure. Care focuses on sun protection, avoiding unnecessary radiation exposure, and early detection and treatment of basal cell carcinomas, jaw cysts, and other related tumor risks.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Features are often treated separately as skin growths, dental cysts, or minor skeletal findings. The pattern of young age, multiple lesions, recurrence, and family history is the clue.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'A child, teen, or young adult develops repeated or multiple basal cell carcinomas, or far more lesions than expected for age.',
+      'Repeated jaw keratocysts, tooth eruption problems, or facial bone features occur with skin tumors or palm/sole pits.',
+      'Family history includes multiple basal cell cancers, jaw cysts, childhood medulloblastoma, or a known PTCH1/SUFU variant.',
+      'Imaging shows falx calcification, rib/spine abnormalities, or there are clues such as ovarian or cardiac fibromas.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Removing each skin cancer separately without asking about age, number of lesions, jaw cysts, and family history.',
+      'Treating repeated jaw cysts without referral to genetics or a skin tumor team.',
+      'Missing the need to reduce unnecessary radiation exposure when possible.',
+      'Not creating a family testing and surveillance plan for children, siblings, or offspring after diagnosis.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
-      'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Dermatology',
+      'Oral and maxillofacial surgery',
+      'Medical genetics',
+      'Cancer genetics clinic',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'List all basal cell carcinomas, suspicious skin lesions, pathology reports, and treatment dates.',
+      'Bring dental panoramic imaging, jaw CT/MRI, jaw cyst pathology, and operative reports.',
+      'Record palm/sole pits, head size, skeletal findings, childhood tumors, and family history.',
+      'Bring prior genetic testing, or be ready to discuss PTCH1, SUFU, and related testing.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Full skin examination plus dermoscopy or biopsy of suspicious lesions.',
+      'Oral/maxillofacial imaging to detect or follow jaw keratocysts.',
+      'PTCH1, SUFU, and related gene testing with family confirmation when useful.',
+      'Age- and gene-specific screening for medulloblastoma, ovarian fibroma, cardiac fibroma, or skeletal findings when appropriate.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Do my findings suggest PTCH1-related or SUFU-related disease, and how does surveillance differ?',
+      'How often should I have skin and jaw follow-up, and which tests should avoid unnecessary radiation?',
+      'Do relatives or children need testing, and what follow-up is needed if they are positive but well?',
+      'If basal cell cancers become numerous, what local or systemic treatment options are available besides repeated surgery?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Gorlin syndrome varies widely. Common clues include multiple or repeated basal cell carcinomas at a young age, jaw keratocysts, small pits on the palms or soles, larger head size, rib or spine differences, and characteristic facial or skeletal features.</p><p>Some patients have a risk of childhood medulloblastoma, especially depending on the gene involved. Ovarian fibromas can occur in females, and cardiac fibromas can occur in some children. Not every person has every feature.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines skin pathology, jaw findings, physical signs, imaging, family history, and genetic testing. PTCH1 is the most common gene, while SUFU and others can produce overlapping disease with different tumor-risk patterns.</p><p>Mimics include ordinary sporadic basal cell carcinoma, other jaw-cyst syndromes, Sotos syndrome, Bazex-Dupre-Christol syndrome, and related conditions. A genetic result helps guide family testing and individualized surveillance.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Management is long term rather than one procedure. Skin care includes strict sun protection, regular full-body skin exams, early biopsy, and local treatment or surgery. When basal cell carcinomas are numerous or difficult to manage, specialists may discuss Hedgehog pathway inhibitors.</p><p>Jaw cysts need oral/maxillofacial follow-up and treatment that balances recurrence reduction with dental and jaw development. Unnecessary radiation exposure should be avoided when possible, especially in children and people with many skin tumors.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up may include dermatology, oral/maxillofacial surgery, medical genetics, pediatrics, gynecology, or neuro-oncology depending on age, gene, tumor history, and family history.</p><p>Patients and families should learn to notice new skin lesions, maintain sun protection, keep pathology and imaging records, and tell new clinicians about the Gorlin syndrome diagnosis.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Gorlin syndrome is usually autosomal dominant, so an affected person often has a 50% chance of passing the variant to each child. Genetic counseling can discuss family testing, child surveillance, prenatal diagnosis, or preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>A child with persistent headache, vomiting, unsteady walking, abnormal eye movements, or altered consciousness needs urgent evaluation for possible intracranial disease. Rapidly enlarging skin tumors, uncontrolled bleeding, infection, or painful facial/jaw swelling also needs prompt care.</p>',
   },
   sources: [
     {
@@ -79,15 +84,20 @@ export const diseaseGorlinSyndrome: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Gorlin syndrome',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/gorlin-syndrome/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Common signs include multiple or repeated basal cell carcinomas at young age, jaw keratocysts, palm or sole pits, larger head size, skeletal features, and in some patients childhood medulloblastoma or ovarian fibroma risk.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis combines skin and jaw history, pathology, imaging, physical findings, family history, and PTCH1/SUFU or related genetic testing to guide family testing and surveillance.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Care focuses on long-term surveillance, sun protection, treatment of basal cell carcinomas and jaw cysts, possible Hedgehog pathway inhibitors in selected cases, and avoiding unnecessary radiation exposure.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Many risks can be managed with early detection and ongoing surveillance. Long-term dermatology and oral/maxillofacial care, family testing, and radiation-sparing choices are central.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +105,11 @@ export const diseaseGorlinSyndrome: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 393,
+    name: 'gorlin-syndrome-journey.png',
+    url: '/images/diseases/gorlin-syndrome-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

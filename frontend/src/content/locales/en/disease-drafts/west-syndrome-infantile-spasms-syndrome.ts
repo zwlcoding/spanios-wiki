@@ -3,75 +3,75 @@ import type { DiseaseDraft } from '@/content/data/types';
 
 export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
   ...entity(2086, 'disease-west-syndrome-infantile-spasms-syndrome'),
-  name: 'West syndrome / infantile spasms syndrome',
-  nameEn: 'West syndrome / infantile spasms syndrome',
-  alias: 'West综合征/婴儿痉挛综合征; China Second Rare Disease Catalog item 86',
+  name: 'West syndrome/Infantile spasms syndrome',
+  nameEn: 'West syndrome/Infantile spasms syndrome',
+  alias:
+    'Infantile epileptic spasms syndrome; IESS; China Second Rare Disease Catalog item 86',
   slug: 'west-syndrome-infantile-spasms-syndrome',
   oneSentence:
-    "West syndrome / infantile spasms syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'West syndrome/infantile spasms syndrome is a severe infant epilepsy syndrome with clusters of brief nodding, jackknife, or extension spasms, abnormal EEG, and possible developmental arrest or regression.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: West syndrome / infantile spasms syndrome',
+    'An infant epilepsy syndrome with clustered nodding or jackknife spasms that needs rapid treatment',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it most often appears in the first year of life and is a pediatric neurology emergency to recognize early.",
   quickLook: {
     whatItIs:
-      'West syndrome / infantile spasms syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'Spasms are brief and may be mistaken for startles, colic, or shivers. Typical episodes occur in clusters around sleep-wake transitions, with head drops, jackknife bending, arm extension, or sudden body extension.',
     whoToSeeFirst:
-      'Start with Neurology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Clusters of head drops, jackknife movements, sudden extension, or developmental plateau/regression should prompt urgent pediatric neurology or epilepsy center evaluation; frequent events, altered consciousness, or breathing problems need emergency care.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Causes include brain malformations, perinatal injury, tuberous sclerosis, metabolic disease, and genetic epilepsies. Need for genetic testing depends on MRI, history, and specialist evaluation.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Earlier control is better. First-line treatment commonly includes ACTH, oral corticosteroids, and vigabatrin; focal structural causes may require epilepsy surgery evaluation.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Movements are short and look like ordinary infant behavior. If home videos are not reviewed or EEG does not include sleep, diagnosis may be delayed.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Infant aged about 3-12 months with clusters of head drops, jackknife flexion, arm extension, or sudden extension, often around waking.',
+      'Crying after clusters, developmental plateau or regression, or fewer social smiles, visual tracking, or motor skills.',
+      'Tuberous sclerosis, brain injury, brain malformation, metabolic/genetic disease, or neonatal seizures.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating one organ or one episode without connecting the long-term pattern, family history, and prior results.',
+      'Watching common-disease explanations for too long without referral to the right specialty or rare disease clinic.',
+      'Not keeping imaging, pathology, genetic, treatment, and follow-up records, leading to repeated workups and delays.',
     ],
     firstDepartments: [
-      'Neurology',
       'Pediatric neurology',
-      'Rehabilitation medicine',
-      'Genetic counseling',
+      'Epilepsy center',
+      'Pediatric emergency department',
+      'Rehabilitation/developmental pediatrics',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring clear event videos, daily frequency, number per cluster, sleep relationship, and after-event behavior.',
+      'Bring EEG, especially whether sleep EEG was done; bring brain MRI, metabolic, and genetic results.',
+      'Prepare birth history, perinatal hypoxia/infection, milestones, medicines, and family epilepsy history.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Whether urgent video EEG or sleep EEG is needed to confirm hypsarrhythmia or other spasm-related EEG abnormality.',
+      'Whether cause evaluation needs brain MRI, tuberous sclerosis screening, metabolic testing, and epilepsy gene panel.',
+      'How ACTH, oral steroids, vigabatrin, or combination therapy will be chosen, and when response is judged.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is the goal complete spasm freedom plus EEG improvement, and when will EEG be repeated?',
+      'How will side effects, infection risk, blood pressure/glucose, and visual monitoring be handled?',
+      'When should epilepsy surgery, rehabilitation, feeding, nutrition, and early intervention be assessed?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Infantile spasms are brief, sudden, repeated flexion, extension, or mixed movements. They can look like head drops, jackknife bending, arm spreading, or a whole-body jerk. Clusters often occur around falling asleep or waking.</p><p>Many children have developmental arrest or regression, less interaction, feeding issues, and sleep problems. Later epilepsy types and developmental outcomes vary by cause and treatment response.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis uses caregiver videos, event description, and EEG, especially sleep recording. EEG may show hypsarrhythmia or other abnormalities supporting spasms, but it is not always classic.</p><p>Cause evaluation often includes brain MRI, examination for tuberous sclerosis and other skin or eye signs, metabolic screening, genetic testing, and review of brain injury or infection history.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment should start quickly, aiming for complete spasm cessation and EEG improvement. Common first-line treatments include ACTH, oral corticosteroids, and vigabatrin; vigabatrin is especially considered for tuberous sclerosis-associated spasms.</p><p>If first-line therapy fails, treatment should be changed promptly. Focal structural causes or drug-resistant spasms may need epilepsy surgery evaluation. Developmental therapy, rehabilitation, nutrition, and family support should start early.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care repeats EEG when needed and tracks spasm relapse, other seizure types, medication adverse effects, development, vision, hearing, feeding, sleep, and rehabilitation progress. Early intervention should not wait until seizures are perfectly controlled.</p><p>Families should keep videos and a treatment timeline and contact the epilepsy team quickly for possible relapse.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Some cases are genetic or metabolic. MRI, examination, and history guide genetic testing and family evaluation; recurrence risk counseling is useful before another pregnancy.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Emergency care is needed for frequent clusters, prolonged seizure, blue breathing episodes, dehydration from poor feeding, marked sleepiness or altered consciousness, fever or infection, or worsening condition during steroid treatment.</p>',
   },
   sources: [
     {
@@ -79,15 +79,20 @@ export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'National Institute of Neurological Disorders and Stroke: Infantile spasms',
+      type: 'official',
+      url: 'https://www.ninds.nih.gov/health-information/disorders/infantile-spasms',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Features include brief clustered head drops, jackknife, flexion, or extension spasms around sleep-wake transitions, often with developmental arrest or regression.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses home video, history, video/sleep EEG, and cause evaluation with brain MRI, metabolic testing, tuberous sclerosis assessment, and genetic testing.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Rapid treatment often uses ACTH, oral corticosteroids, or vigabatrin; nonresponse should prompt quick adjustment, surgery review for focal causes, and early rehabilitation.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Earlier spasm and EEG control is associated with better chances; outcome depends on cause, treatment response, and developmental support.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +100,11 @@ export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
   categorySlug: 'neurological',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 440,
+    name: 'west-syndrome-infantile-spasms-syndrome-journey.png',
+    url: '/images/diseases/west-syndrome-infantile-spasms-syndrome-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };

@@ -7,76 +7,74 @@ export const diseaseTenosynovialGiantCellTumorPigmentedVillonodularSynovitis: Di
       2077,
       'disease-tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis',
     ),
-    name: 'Tenosynovial giant cell tumor / pigmented villonodular synovitis',
-    nameEn: 'Tenosynovial giant cell tumor / pigmented villonodular synovitis',
-    alias:
-      '腱鞘巨细胞瘤/色素沉着绒毛结节性滑膜炎; China Second Rare Disease Catalog item 77',
+    name: 'Tenosynovial giant cell tumor/Pigmented villonodular synovitis',
+    nameEn: 'Tenosynovial giant cell tumor/Pigmented villonodular synovitis',
+    alias: 'TGCT; PVNS; China Second Rare Disease Catalog item 77',
     slug: 'tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis',
     oneSentence:
-      "Tenosynovial giant cell tumor / pigmented villonodular synovitis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'Tenosynovial giant cell tumor is a rare locally aggressive tumor of the synovium, tendon sheath, or bursa that is usually benign but can cause recurrent swelling, pain, locking, and joint damage.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Tenosynovial giant cell tumor / pigmented villonodular synovitis',
+      'A benign but difficult joint-area tumor that can keep limiting movement',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is a rare soft tissue and joint-area tumor, with localized disease more common and diffuse disease more likely to recur or impair function.",
     quickLook: {
       whatItIs:
-        'Tenosynovial giant cell tumor / pigmented villonodular synovitis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+        'TGCT is not cancer in the usual sense and usually does not spread far away, but it can grow in or around a joint. Knees, hips, ankles, and fingers can be affected; diffuse disease was historically called PVNS.',
       whoToSeeFirst:
-        'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+        'Persistent single-joint swelling, pain, limited motion, catching or locking, recurrent effusion, or MRI showing abnormal synovium should be assessed by orthopedics, sports medicine, orthopedic oncology, or a joint specialist.',
       isGenetic:
-        'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+        'Most cases are not inherited. They are often linked to local cell changes involving the CSF1 pathway, so family screening is not usually needed.',
       hasTreatment:
-        'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+        'Localized disease is often treated with surgery. Diffuse disease requires careful planning around arthroscopic or open surgery, recurrence risk, rehabilitation, and sometimes radiation or CSF1R-targeted systemic therapy when surgery is not expected to help.',
       commonDelayReason:
-        'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+        'Symptoms can look like sports injury, synovitis, meniscal disease, arthritis, or a ganglion cyst. Without MRI and pathology, diagnosis may be delayed for years.',
     },
     patientJourney: {
       whenToSuspect: [
-        'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-        'Several organs or test results seem connected but no single common condition explains them.',
-        'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+        'Persistent swelling, lump, pain, or reduced motion around one joint or tendon sheath that recurs despite rest and routine anti-inflammatory care.',
+        'Catching, popping, locking, recurrent joint fluid, or warmth without infection or a clear rheumatologic explanation.',
+        'MRI showing synovial thickening, hemosiderin, or nodular disease, or pathology reporting TGCT/PVNS.',
       ],
       commonWrongTurns: [
-        'Treating each symptom separately without reviewing the full pattern.',
-        'Repeating routine visits without collecting prior test results for specialist review.',
-        'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+        'Treating for sprain, synovitis, or ordinary arthritis without MRI or referral to a joint or tumor specialist.',
+        'Planning surgery without clarifying localized versus diffuse disease and the recurrence and function tradeoffs.',
+        'Managing recurrence only with aspiration or pain medicine without reassessing imaging, pathology, and systemic options.',
       ],
       firstDepartments: [
-        'Oncology',
-        'Hematology',
-        'Relevant surgical specialty',
-        'Pathology or molecular diagnostics',
+        'Orthopedics or joint surgery',
+        'Sports medicine',
+        'Orthopedic oncology or sarcoma/soft tissue tumor clinic',
+        'Rehabilitation medicine after treatment',
       ],
       diagnosisChecklist: [
-        'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-        'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-        'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+        'Record the affected joint, swelling, pain, locking, effusions, motion limits, and prior procedures.',
+        'Bring MRI images and reports, X-ray/CT, joint fluid results, operation notes, and pathology slides or reports.',
+        'Describe work, sport, and daily function limits and whether disease has recurred.',
       ],
       testsToAskAbout: [
-        'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-        'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-        'Genetic counseling or family testing when the condition may be inherited.',
+        'Whether MRI defines localized versus diffuse TGCT and maps intra-articular and extra-articular disease.',
+        'Whether biopsy or excision pathology is needed to confirm TGCT and rule out gout, infection, inflammatory arthritis, or synovial sarcoma.',
+        'Whether recurrent or unresectable disease needs multidisciplinary review for radiation, CSF1R-targeted therapy, or trials.',
       ],
       questionsForDoctor: [
-        'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-        'Which organs should be monitored, and what warning signs need emergency care?',
-        'What is the goal of treatment and follow-up for my situation?',
-        'How often should follow-up happen, and should relatives be screened?',
+        'Is my disease localized or diffuse, and which part is driving symptoms?',
+        'Is the surgical goal complete removal, symptom control, or joint preservation, and what is the recurrence risk?',
+        'If surgery is high risk or disease recurs, what medicines or trials are realistic and what safety monitoring is needed?',
       ],
     },
     medicalSections: {
       symptoms:
-        '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+        '<p>TGCT often causes swelling, a lump, pain, stiffness, reduced range of motion, catching, popping, locking, or recurrent fluid around one joint or tendon sheath. Localized hand or foot disease may feel like a small painless lump, while diffuse knee, hip, or ankle disease more often limits joint function.</p><p>The tumor usually does not metastasize, but it can damage cartilage, bone, and surrounding tissues and can interfere with walking, gripping, work, and sport.</p>',
       diagnosis:
-        '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+        '<p>Diagnosis usually starts with history, examination, and MRI. MRI helps show synovial thickening, nodules, hemosiderin, and disease extent, which guides surgery.</p><p>Pathology confirms the diagnosis. Clinicians may rule out gout, rheumatoid or other inflammatory arthritis, infection, ganglion cyst, lipoma, synovial sarcoma, and other soft tissue tumors.</p>',
       treatment:
-        '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+        '<p>Localized TGCT is often controlled with surgical excision. Diffuse TGCT is more complex and requires balancing complete removal, joint function, complications, and recurrence risk; arthroscopic, open, or combined approaches may be used.</p><p>Adults with symptomatic TGCT causing severe morbidity or functional limitation and not likely to improve with surgery may be evaluated for CSF1R-targeted therapy such as pexidartinib, which requires careful liver safety monitoring.</p>',
       longTermCare:
-        '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+        '<p>After surgery or medicine, follow-up tracks MRI findings and joint function. Diffuse, incompletely removed, or recurrent disease needs longer surveillance for pain, range of motion, strength, gait, and joint degeneration.</p><p>Rehabilitation should be coordinated with the surgical team so that protection and loading are matched to healing and function goals.</p>',
       fertilityOrFamily:
-        '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+        '<p>TGCT is usually not inherited, and family screening is not routine. Patients considering long-term targeted therapy, radiation, or repeated surgery should discuss pregnancy plans, contraception, and medication safety.</p>',
       emergencySigns:
-        '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+        '<p>Urgent care is needed for sudden inability to bear weight, a hot red joint with fever, severe pain, wound redness or drainage after surgery, marked leg swelling and pain, or chest pain and shortness of breath.</p>',
     },
     sources: [
       {
@@ -84,15 +82,25 @@ export const diseaseTenosynovialGiantCellTumorPigmentedVillonodularSynovitis: Di
         type: 'clinical-guideline',
         url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
       },
+      {
+        name: 'National Cancer Institute: Tenosynovial giant cell tumor',
+        type: 'official',
+        url: 'https://www.cancer.gov/publications/dictionaries/cancer-terms/def/tenosynovial-giant-cell-tumor',
+      },
+      {
+        name: 'FDA: Pexidartinib for tenosynovial giant cell tumor',
+        type: 'official',
+        url: 'https://www.fda.gov/drugs/resources-information-approved-drugs/fda-approves-pexidartinib-tenosynovial-giant-cell-tumor',
+      },
     ],
     symptoms:
-      '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+      '<p>Symptoms include swelling, lump, pain, stiffness, reduced motion, catching, locking, and recurrent effusion around one joint or tendon sheath; diffuse disease is more likely to recur and damage function.</p>',
     diagnosis:
-      '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+      '<p>Diagnosis uses examination and MRI to define extent and type, with biopsy or excision pathology to confirm TGCT and exclude infection, inflammatory arthritis, gout, and malignant soft tissue tumors.</p>',
     treatment:
-      '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+      '<p>Localized disease is usually treated with excision; diffuse disease is individualized with surgery, rehabilitation, sometimes radiation or CSF1R-targeted therapy, and recurrence surveillance.</p>',
     prognosis:
-      '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+      '<p>Most cases are not life-threatening, but diffuse or recurrent disease can cause long-term joint disability; careful imaging, surgical planning, and follow-up help protect function.</p>',
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -100,6 +108,11 @@ export const diseaseTenosynovialGiantCellTumorPigmentedVillonodularSynovitis: Di
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 431,
+      name: 'tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis-journey.png',
+      url: '/images/diseases/tenosynovial-giant-cell-tumor-pigmented-villonodular-synovitis-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   };

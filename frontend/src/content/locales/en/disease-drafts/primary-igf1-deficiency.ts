@@ -6,72 +6,76 @@ export const diseasePrimaryIgf1Deficiency: DiseaseDraft = {
   name: 'Primary IGF1 deficiency',
   nameEn: 'Primary IGF1 deficiency',
   alias:
-    '原发性胰岛素样生长因子-1缺乏症; China Second Rare Disease Catalog item 65',
+    'Primary IGF-1 deficiency; severe primary IGF-1 deficiency; Laron syndrome related; China Second Rare Disease Catalog item 65',
   slug: 'primary-igf1-deficiency',
   oneSentence:
-    "Primary IGF1 deficiency is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Primary IGF1 deficiency is a disorder in which the body cannot make enough IGF-1 or cannot respond properly to growth hormone, causing severe postnatal growth failure and short stature.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Primary IGF1 deficiency',
+    'A condition where growth hormone may be present but IGF-1 is too low for normal growth',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; severe primary IGF-1 deficiency is very rare and classically has very low height and IGF-1 with normal or high growth hormone.",
   quickLook: {
     whatItIs:
-      'Primary IGF1 deficiency is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'IGF-1 is a key downstream signal through which growth hormone supports height gain. In primary IGF-1 deficiency, the problem is GH resistance or IGF-1 production, not simply GH shortage.',
     whoToSeeFirst:
-      'Start with Endocrinology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Severe short stature with slow growth, very low IGF-1, and normal or high GH stimulation results should be reviewed by pediatric endocrinology and medical genetics.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'Genes can include GHR, STAT5B, IGF1, IGFALS, and related pathway genes. Some forms are autosomal recessive, so genetic counseling is important after diagnosis.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Growth hormone is not a substitute for IGF-1 therapy. Eligible children with severe primary IGF-1 deficiency may receive mecasermin where available, with careful hypoglycemia prevention.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'It can be mistaken for ordinary GHD or familial short stature if GH, IGF-1, nutrition, thyroid, and chronic disease causes are not separated.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Birth length is near normal or low, followed by persistently very slow growth and severe short stature.',
+      'IGF-1 and/or IGFBP-3 are very low while GH secretion is normal or high.',
+      'Infant hypoglycemia, prominent forehead, depressed nasal bridge, blue sclerae, small hands and feet, delayed puberty, or low muscle strength.',
+      'Consanguinity, multiple relatives with severe short stature, or poor response to prior GH therapy.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Assuming severe short stature is familial after normal GH stimulation without evaluating the IGF-1 pathway.',
+      'Using mecasermin as if it were ordinary growth hormone, despite it not being for GH deficiency, malnutrition, hypothyroidism, or steroid-related secondary low IGF-1.',
+      'Giving treatment without meal timing or exercise planning, increasing hypoglycemia risk.',
     ],
     firstDepartments: [
-      'Endocrinology',
-      'Metabolic genetics clinic',
-      'Pediatric endocrinology/metabolism',
+      'Pediatric endocrinology',
+      'Medical genetics',
+      'Nutrition to exclude secondary causes',
+      'Ophthalmology or ENT for treatment monitoring',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring birth data, serial height and weight curves, parental heights, and puberty records.',
+      'Bring IGF-1, IGFBP-3, GH stimulation, thyroid, nutrition, liver, kidney, and inflammation screening results.',
+      'Record hypoglycemia, feeding, teeth, hearing, vision, snoring, puberty, and family short stature history.',
+      'If GH or IGF-1 treatment was tried, record dose, adherence, growth response, and hypoglycemia events.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Confirming severe primary IGF-1 deficiency using height SDS, IGF-1 SDS, normal or high GH, and exclusion of secondary causes.',
+      'GHR, STAT5B, IGF1, IGFALS, and related gene testing.',
+      'Bone age, puberty, pituitary, and broader endocrine assessment.',
+      'For mecasermin: hypoglycemia prevention, intracranial hypertension, tonsil or adenoid enlargement, hip problems, and tumor contraindications.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Is this primary IGF-1 deficiency, or secondary low IGF-1 from GHD, nutrition, hypothyroidism, or chronic disease?',
+      'Does my child meet criteria for mecasermin, and why might GH treatment be ineffective or inappropriate?',
+      'How should injections, meals, exercise, and glucose monitoring be organized?',
+      'Do relatives need carrier testing, and what reproductive options exist?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Primary IGF-1 deficiency centers on severe growth failure and short stature. In classic Laron syndrome, postnatal growth is very slow and may be accompanied by prominent forehead, depressed nasal bridge, blue sclerae, small hands and feet, dental abnormalities, reduced muscle strength or endurance, infant hypoglycemia, and delayed puberty.</p><p>Features vary by gene. STAT5B-related disease can include immune dysfunction or lung disease; IGFALS deficiency can cause low IGF-1 and IGFBP-3 with variable short stature.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>The key is distinguishing primary from secondary low IGF-1. Malnutrition, hypothyroidism, chronic inflammation, liver or kidney disease, glucocorticoid exposure, and GHD can all lower IGF-1 and should be excluded.</p><p>Severe primary IGF-1 deficiency typically has height SDS <= -3, basal IGF-1 SDS <= -3, and normal or elevated GH. Genetic testing can identify GHR, IGF1, STAT5B, IGFALS, and related pathway disorders and guide counseling.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment is not the same as GHD treatment. If the problem is GH insensitivity, recombinant GH usually has limited effect. Eligible children may be assessed for recombinant human IGF-1, mecasermin, which must be given with a meal or snack to reduce hypoglycemia risk.</p><p>Monitoring includes growth velocity, weight, bone age, glucose, IGF-1 response, intracranial hypertension, tonsil or adenoid enlargement, sleep breathing, slipped capital femoral epiphysis, and malignancy contraindications. Closed growth plates or active malignancy limit treatment.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care involves pediatric endocrinology, genetics, nutrition, dentistry, ophthalmology, and ENT. Families should track injection timing, meals, hypoglycemia symptoms, exercise, height, weight, and adverse effects.</p><p>Puberty and bone-age advancement shape the final height window. Adults may still need attention to metabolism, bone health, body composition, and reproductive issues.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>Many primary IGF-1 deficiency disorders are autosomal recessive, so parents may be carriers; other inheritance patterns exist. Once the gene is known, relatives can discuss carrier testing, prenatal diagnosis, or preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>During treatment, hypoglycemia symptoms such as sweating, trembling, confusion, or seizures need urgent action. Severe headache, vomiting, blurred vision, worsening snoring or apnea, hip or knee pain, or limp should prompt urgent medical review.</p>',
   },
   sources: [
     {
@@ -79,15 +83,25 @@ export const diseasePrimaryIgf1Deficiency: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'MedlinePlus Genetics: Laron syndrome',
+      type: 'official',
+      url: 'https://medlineplus.gov/genetics/condition/laron-syndrome/',
+    },
+    {
+      name: 'INCRELEX Prescribing Information: Severe Primary IGF-1 Deficiency',
+      type: 'official',
+      url: 'https://medlibrary.org/lib/rx/meds/increlex-1/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Main features are severe short stature and slow growth with very low IGF-1 despite normal or high GH, sometimes with infant hypoglycemia, characteristic facial features, small hands and feet, delayed puberty, and low muscle strength.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis excludes secondary low IGF-1 and combines height SDS, IGF-1 SDS, GH levels, bone age, and gene testing such as GHR, IGF1, STAT5B, and IGFALS.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Eligible children with severe primary IGF-1 deficiency may be assessed for mecasermin; it is not a substitute for GH and requires meal-linked dosing and monitoring for hypoglycemia, intracranial hypertension, tonsil/adenoid enlargement, and hip risk.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Outlook depends on gene, age at diagnosis, treatment access, and adherence. Early recognition helps avoid treating GH insensitivity as ordinary GHD.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +109,11 @@ export const diseasePrimaryIgf1Deficiency: DiseaseDraft = {
   categorySlug: 'metabolic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 419,
+    name: 'primary-igf1-deficiency-journey.png',
+    url: '/images/diseases/primary-igf1-deficiency-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'endocrine', 'genetic-counseling'],
 };

@@ -5,73 +5,78 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
   ...entity(2042, 'disease-inflammatory-myofibroblastic-tumor'),
   name: 'Inflammatory myofibroblastic tumor',
   nameEn: 'Inflammatory myofibroblastic tumor',
-  alias: '炎性肌纤维母细胞瘤; China Second Rare Disease Catalog item 42',
+  alias:
+    'IMT, inflammatory pseudotumor-like tumor, China Second Rare Disease Catalog item 42',
   slug: 'inflammatory-myofibroblastic-tumor',
   oneSentence:
-    "Inflammatory myofibroblastic tumor is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Inflammatory myofibroblastic tumor is a rare intermediate soft tissue tumor that can arise in the lung, abdomen, pelvis, bladder, head and neck, or other sites, and often needs pathology plus ALK and other molecular testing to distinguish it from inflammation, infection, and other tumors.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Inflammatory myofibroblastic tumor',
+    'A rare soft tissue tumor that can look like inflammation but needs tumor specialist review',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; GARD lists inflammatory myofibroblastic tumor as a rare disease that can affect children, adolescents, and adults.",
   quickLook: {
     whatItIs:
-      'Inflammatory myofibroblastic tumor is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'IMT is made of myofibroblast-like tumor cells mixed with inflammatory cells. Many grow locally, while some recur, invade, or rarely metastasize. ALK, ROS1, NTRK, and other fusions can guide therapy.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'An unexplained mass, persistent inflammatory signs with a solid lesion on imaging, or pathology suggesting IMT should be reviewed by oncology, the relevant surgical team, and pathology/molecular diagnostics.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'IMT is usually not inherited, so relatives usually do not need screening. Molecular testing is mainly for diagnosis and targeted-treatment planning.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Complete surgical removal is central when feasible. Unresectable, recurrent, metastatic, or ALK-positive disease may lead to discussion of ALK inhibitors or other targeted therapy, systemic treatment, or trials.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Fever, anemia, high inflammatory markers, or local pain can make IMT look like infection, an inflammatory mass, or a benign tumor for a long time.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Imaging shows a lung, abdominal, pelvic, bladder, head/neck, or soft tissue mass that does not resolve with routine infection treatment.',
+      'A mass is accompanied by recurrent fever, weight loss, anemia, high platelets, or high CRP/ESR.',
+      'A pathology report mentions IMT, spindle cell lesion, ALK positivity, or inflammatory pseudotumor-like features.',
+      'A previously treated lesion recurs locally or new lesions appear on imaging.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Repeated antibiotics for an inflammatory mass without tissue diagnosis.',
+      'No expert pathology review or immunohistochemistry/molecular testing when pathology is unusual.',
+      'Local treatment without asking about ALK, ROS1, NTRK, or other targetable tests.',
+      'Assuming no follow-up is needed after resection.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
+      'Medical oncology',
       'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Pathology/molecular diagnostics',
+      'Radiology review',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring all CT, MRI, ultrasound, or PET-CT images and reports.',
+      'Bring biopsy/surgical pathology, immunohistochemistry, molecular testing, and slide/block information.',
+      'Record fever, pain, weight change, anemia, inflammatory markers, and response to antibiotics.',
+      'Collect operative notes, margin status, recurrence timeline, and prior tumor treatment.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Contrast CT/MRI of the lesion to define extent, adjacent organs, and resectability.',
+      'Pathology review plus ALK immunohistochemistry, with NGS or fusion testing when needed.',
+      'Whole-body or site-specific staging and recurrence assessment.',
+      'Whether complete resection, observation, targeted therapy, or clinical trial fits the case.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Can my tumor be completely removed, and how does margin status affect recurrence risk?',
+      'Have ALK, ROS1, NTRK, or related tests been done, and can they guide treatment?',
+      'If we observe for now, what are the risks and imaging intervals?',
+      'For recurrence or unresectable disease, what targeted medicines, systemic therapies, or trials are options?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>Symptoms depend on location. Lung lesions may cause cough, chest pain, or be found incidentally. Abdominal or pelvic tumors may cause pain, bloating, or bowel obstruction-like symptoms. Bladder tumors may cause blood in urine or urinary symptoms. Some patients have fever, fatigue, weight loss, anemia, high platelets, or high inflammatory markers.</p><p>Some people have few symptoms and are diagnosed after imaging finds a mass. Local recurrence can occur, and a small subset behaves more aggressively.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis depends on pathology, often supported by immunohistochemistry and molecular testing. ALK positivity supports the diagnosis and can guide targeted therapy, but ALK-negative tumors can still be IMT, so clinicians may test ROS1, NTRK, RET, or other fusions.</p><p>Mimics include infectious inflammatory masses, inflammatory pseudotumor, IgG4-related disease, smooth muscle tumors, gastrointestinal stromal tumor, sarcoma, lymphoma, and metastatic tumor. Complex cases should have expert pathology review.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>When localized IMT can be completely removed, surgery is usually preferred. Observation, repeat surgery, or additional treatment depends on location, margins, recurrence risk, and pathology/molecular findings.</p><p>For unresectable, recurrent, or metastatic IMT, ALK-positive tumors may be treated with ALK inhibitors; other fusion-positive tumors may have matching targeted options. Multidisciplinary planning is important.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Follow-up tracks local imaging, symptoms, inflammatory markers, post-surgical function, and medication side effects. Intervals depend on site, completeness of resection, molecular findings, and recurrence risk.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>IMT is usually not managed as an inherited disease. Young patients who need long-term targeted therapy, chemotherapy, or pelvic surgery/radiation should ask about fertility preservation, pregnancy safety, and contraception.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Bowel obstruction-like pain and vomiting, coughing blood, severe blood in urine, shortness of breath, persistent high fever, severe pain, postoperative infection, or serious targeted-therapy side effects require urgent care.</p>',
   },
   sources: [
     {
@@ -79,15 +84,20 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'GARD: Inflammatory myofibroblastic tumor',
+      type: 'official',
+      url: 'https://rarediseases.info.nih.gov/diseases/13007/inflammatory-myofibroblastic-tumor',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Symptoms vary by site and may include cough, chest pain, abdominal pain, bloating, blood in urine, or a mass, sometimes with fever, fatigue, anemia, weight loss, and high inflammatory markers.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis relies on pathology, immunohistochemistry, and molecular testing, especially ALK and other fusions, while excluding infection, inflammatory masses, and other soft tissue tumors.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Surgery is central when complete resection is possible; unresectable, recurrent, or metastatic disease may be treated based on ALK, ROS1, NTRK, or other targetable results.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Many localized tumors can be controlled with proper treatment, but recurrence can occur and a minority behave aggressively, so follow-up depends on margins and molecular findings.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +105,11 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 396,
+    name: 'inflammatory-myofibroblastic-tumor-journey.png',
+    url: '/images/diseases/inflammatory-myofibroblastic-tumor-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

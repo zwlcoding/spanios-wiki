@@ -5,73 +5,79 @@ export const diseaseEosinophilicGastroenteritis: DiseaseDraft = {
   ...entity(2023, 'disease-eosinophilic-gastroenteritis'),
   name: 'Eosinophilic gastroenteritis',
   nameEn: 'Eosinophilic gastroenteritis',
-  alias: '嗜酸性粒细胞性胃肠炎; China Second Rare Disease Catalog item 23',
+  alias:
+    'EoGE, non-esophageal eosinophilic gastrointestinal disease, China Second Rare Disease Catalog item 23',
   slug: 'eosinophilic-gastroenteritis',
   oneSentence:
-    "Eosinophilic gastroenteritis is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Eosinophilic gastroenteritis is a rare chronic gastrointestinal inflammatory disorder in which excess eosinophils infiltrate the stomach, small intestine, colon, or multiple sites, causing recurrent abdominal pain, nausea, vomiting, diarrhea, malabsorption, or ascites.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Eosinophilic gastroenteritis',
+    'A digestive disease where eosinophils build up in the gut and cause repeated inflammation',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; it is rare overall and can affect children or adults, with true frequency affected by diagnostic criteria and biopsy practice.",
   quickLook: {
     whatItIs:
-      'Eosinophilic gastroenteritis is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'EoGE is part of eosinophilic gastrointestinal disorders outside the esophagus. Symptoms depend on location and depth: mucosal disease causes diarrhea and malabsorption, muscular disease can obstruct, and serosal disease can cause ascites.',
     whoToSeeFirst:
-      'Start with Gastroenterology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Persistent abdominal pain, diarrhea, vomiting, weight loss, or protein loss should start with gastroenterology or pediatric GI; allergy history or eosinophilia should be highlighted.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'It is usually not a single-gene inherited disease. Allergy and immune responses may contribute, but parasites, medicines, inflammatory bowel disease, cancer, and hypereosinophilic syndrome must be ruled out.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'Care may include nutrition and diet management, corticosteroids, and selected anti-allergy, immune, or biologic therapies. Response is judged by symptoms, labs, endoscopy, and biopsy when needed.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Symptoms resemble gastritis, irritable bowel syndrome, food intolerance, inflammatory bowel disease, or parasitic infection. Insufficient biopsies or failure to exclude secondary causes delays diagnosis.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Abdominal pain, nausea, vomiting, diarrhea, bloating, early fullness, or weight loss recurs despite usual treatment.',
+      'Blood eosinophils or IgE are elevated, or there is allergic rhinitis, asthma, eczema, or food allergy history.',
+      'There is low albumin, swelling, anemia, malnutrition, bowel wall thickening, or ascites.',
+      'GI biopsies show increased eosinophils and infection, medicines, or other diseases do not explain it.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating only gastritis, IBS, or food intolerance without multi-site biopsies.',
+      'Diagnosing from eosinophilia alone without excluding parasites, medicines, malignancy, and systemic disease.',
+      'Starting strict long-term food avoidance without dietitian support or objective monitoring.',
+      'Not reassessing after symptom improvement, missing relapse, steroid side effects, or nutrition problems.',
     ],
     firstDepartments: [
       'Gastroenterology',
-      'Hepatology or hepatobiliary surgery',
-      'Pediatric GI/hepatology',
+      'Pediatric gastroenterology',
+      'Allergy and immunology',
       'Nutrition',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Record symptoms, diet, allergy history, medicines, travel or parasite exposure, and weight changes.',
+      'Bring CBC with eosinophils, IgE, albumin, ferritin, stool tests, inflammation markers, and imaging.',
+      'Bring endoscopy reports, pathology from each biopsy site, and prior treatment response.',
+      'Summarize asthma, rhinitis, eczema, food allergy, and family allergy history.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Upper and lower endoscopy with multi-site biopsies and eosinophil counts by site.',
+      'CBC with eosinophils, IgE, albumin, liver and kidney tests, iron and vitamin nutrition assessment.',
+      'Evaluation for parasites, infection, medicine reaction, IBD, connective tissue disease, malignancy, and hypereosinophilic syndrome.',
+      'Ultrasound, CT, MRI, ascites testing, or allergy and nutrition evaluation when indicated.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Which areas are involved: stomach, small bowel, colon, or several sites?',
+      'Is the disease mainly mucosal, muscular, or serosal?',
+      'Have parasites, medicines, IBD, cancer, and hypereosinophilic syndrome been excluded?',
+      'Which foods, if any, should be removed, and how do we prevent malnutrition?',
+      'Do I need steroids or other medicines, and how will response and side effects be monitored?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>EoGE symptoms depend on the affected site and depth. Mucosal disease may cause abdominal pain, nausea, vomiting, diarrhea, bleeding, anemia, low albumin, and malabsorption. Muscular disease can cause bowel wall thickening and obstruction-like pain or vomiting. Serosal disease can cause ascites and abdominal swelling.</p><p>Many patients have allergic rhinitis, asthma, eczema, or food allergy history, and some have elevated blood eosinophils. Symptoms may flare and remit.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis requires gastrointestinal symptoms, tissue eosinophil-predominant inflammation, and exclusion of secondary causes. Endoscopic appearance can be nonspecific, so multi-site biopsies are important.</p><p>Clinicians must rule out parasites and infection, medicine reactions, inflammatory bowel disease, celiac disease, connective tissue disease, blood cancers, lymphoma, and hypereosinophilic syndrome. Blood eosinophilia alone is not diagnostic.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment aims to relieve symptoms, improve nutrition, reduce tissue inflammation, and prevent relapse. Options include diet management, nutrition support, and corticosteroids; some patients may be considered for anti-allergy medicines, leukotriene inhibitors, immune therapies, or biologics.</p><p>Food elimination should be guided by clinicians and dietitians to avoid unnecessary long-term restriction. Follow-up may include symptoms, weight, labs, albumin, endoscopy, and biopsy.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>Long-term care monitors relapse, nutrition, child growth, steroid side effects, anemia, and low albumin. A diary of diet, symptoms, medicines, and weight can help identify triggers and treatment response.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>EoGE is usually not a single-gene inherited disease, so relatives generally do not need genetic screening. Allergic tendency can cluster in families, and children may need allergy or immunology involvement.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Seek emergency care for severe abdominal pain with persistent vomiting, inability to drink, dehydration, black stools or heavy bleeding, worsening abdominal distension, suspected obstruction, fever with peritoneal signs, or severe swelling with shortness of breath.</p>',
   },
   sources: [
     {
@@ -79,15 +85,25 @@ export const diseaseEosinophilicGastroenteritis: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'GARD: Eosinophilic gastroenteritis',
+      type: 'official',
+      url: 'https://rarediseases.info.nih.gov/diseases/9142/eosinophilic-gastroenteritis',
+    },
+    {
+      name: 'NCBI Bookshelf StatPearls: Eosinophilic Gastroenteritis',
+      type: 'review',
+      url: 'https://www.ncbi.nlm.nih.gov/books/NBK547729/',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Symptoms may include recurrent abdominal pain, nausea, vomiting, diarrhea, weight loss, anemia, low-protein swelling, obstruction-like symptoms, or ascites, often with allergy history or eosinophilia.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses GI symptoms, multi-site biopsies showing eosinophilic infiltration, and exclusion of parasites, medicines, IBD, malignancy, and hypereosinophilic syndrome.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment includes nutrition and diet management, corticosteroids, and selected anti-allergy, immune, or biologic therapies, with response assessed by symptoms, labs, and sometimes endoscopy or biopsy.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>The disease is usually not acutely fatal but can relapse and be delayed in diagnosis. Careful exclusion of secondary causes, inflammation control, and nutrition support improve long-term quality of life.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +111,11 @@ export const diseaseEosinophilicGastroenteritis: DiseaseDraft = {
   categorySlug: 'digestive-hepatic',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 377,
+    name: 'eosinophilic-gastroenteritis-journey.png',
+    url: '/images/diseases/eosinophilic-gastroenteritis-journey.png',
+  },
   tagSlugs: ['second-rare-disease-catalog'],
 };

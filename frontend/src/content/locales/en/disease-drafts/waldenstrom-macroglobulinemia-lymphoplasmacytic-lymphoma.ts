@@ -7,76 +7,73 @@ export const diseaseWaldenstromMacroglobulinemiaLymphoplasmacyticLymphoma: Disea
       2085,
       'disease-waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma',
     ),
-    name: 'Waldenström macroglobulinemia / lymphoplasmacytic lymphoma',
-    nameEn: 'Waldenström macroglobulinemia / lymphoplasmacytic lymphoma',
-    alias:
-      '华氏巨球蛋白血症/淋巴浆细胞淋巴瘤; China Second Rare Disease Catalog item 85',
+    name: 'Waldenström macroglobulinemia/Lymphoplasmacytic lymphoma',
+    nameEn: 'Waldenström macroglobulinemia/Lymphoplasmacytic lymphoma',
+    alias: 'WM; LPL; China Second Rare Disease Catalog item 85',
     slug: 'waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma',
     oneSentence:
-      "Waldenström macroglobulinemia / lymphoplasmacytic lymphoma is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
-    plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Waldenström macroglobulinemia / lymphoplasmacytic lymphoma',
+      'Waldenström macroglobulinemia is a rare indolent B-cell lymphoma in which lymphoplasmacytic cells in bone marrow produce excess IgM, causing anemia, infection, bleeding, neuropathy, or hyperviscosity.',
+    plainName: 'A slow-growing blood cancer that makes too much IgM protein',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; it is a rare non-Hodgkin lymphoma, more often diagnosed in older adults.",
     quickLook: {
       whatItIs:
-        'Waldenström macroglobulinemia / lymphoplasmacytic lymphoma is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+        'WM/LPL often grows slowly. Some people only have an IgM monoclonal protein and are monitored. Treatment is usually needed for anemia, symptomatic hyperviscosity, neuropathy, lymph node or spleen enlargement, kidney disease, or cryoglobulin-related problems.',
       whoToSeeFirst:
-        'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+        'IgM monoclonal protein, unexplained anemia, very high ESR, recurrent infections, bleeding, blurred vision, headache, numbness, or hyperviscosity symptoms should be assessed by hematology/lymphoma specialists.',
       isGenetic:
-        'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+        'It is usually not inherited in a simple pattern. Some families show clustering of related blood disorders, but relatives are not routinely screened as for a genetic disease.',
       hasTreatment:
-        'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+        'Asymptomatic patients may not need immediate treatment. When treatment is needed, options include rituximab-based therapy, BTK inhibitors, proteasome inhibitor regimens, and urgent plasma exchange for hyperviscosity.',
       commonDelayReason:
-        'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+        'Early disease may be silent or look like fatigue and anemia. Without serum protein electrophoresis, IgM measurement, and marrow evaluation, diagnosis may be missed.',
     },
     patientJourney: {
       whenToSuspect: [
-        'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-        'Several organs or test results seem connected but no single common condition explains them.',
-        'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+        'Unexplained anemia, fatigue, weight loss, night sweats, recurrent infections, lymph nodes, or enlarged spleen.',
+        'IgM monoclonal protein, high serum viscosity, headache, blurred vision, gum/nose bleeding, or confusion.',
+        'Numbness or pain in feet/hands, cold-induced color change, kidney abnormalities, cryoglobulin, or cold agglutinin features.',
       ],
       commonWrongTurns: [
-        'Treating each symptom separately without reviewing the full pattern.',
-        'Repeating routine visits without collecting prior test results for specialist review.',
-        'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+        'Treating one organ or one episode without connecting the long-term pattern, family history, and prior results.',
+        'Watching common-disease explanations for too long without referral to the right specialty or rare disease clinic.',
+        'Not keeping imaging, pathology, genetic, treatment, and follow-up records, leading to repeated workups and delays.',
       ],
       firstDepartments: [
-        'Oncology',
         'Hematology',
-        'Relevant surgical specialty',
-        'Pathology or molecular diagnostics',
+        'Lymphoma/plasma cell disorder clinic',
+        'Emergency department for hyperviscosity symptoms',
+        'Neurology or nephrology as complications require',
       ],
       diagnosisChecklist: [
-        'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-        'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-        'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+        'Bring CBC, IgM level, serum protein electrophoresis/immunofixation, free light chains, and serum viscosity.',
+        'Bring marrow aspirate/biopsy, flow cytometry, MYD88/CXCR4 testing, imaging, and infection or bleeding history.',
+        'Record headache, vision change, bleeding, neuropathy, B symptoms, and medicines.',
       ],
       testsToAskAbout: [
-        'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-        'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-        'Genetic counseling or family testing when the condition may be inherited.',
+        'Whether this is IgM MGUS, asymptomatic WM, or symptomatic WM requiring treatment.',
+        'Need for MYD88 L265P, CXCR4, beta-2 microglobulin, serum viscosity, and organ involvement testing.',
+        'Whether rituximab could cause IgM flare and whether plasma exchange is needed first.',
       ],
       questionsForDoctor: [
-        'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-        'Which organs should be monitored, and what warning signs need emergency care?',
-        'What is the goal of treatment and follow-up for my situation?',
-        'How often should follow-up happen, and should relatives be screened?',
+        'Do I need treatment now or watchful waiting, and what exact findings would trigger treatment?',
+        'Which regimen best balances response, infection risk, neuropathy, and quality of life for me?',
+        'Which hyperviscosity symptoms mean immediate emergency care?',
       ],
     },
     medicalSections: {
       symptoms:
-        '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+        '<p>WM can be asymptomatic for years. Symptoms may include anemia-related fatigue or shortness of breath, recurrent infections, enlarged lymph nodes or spleen, weight loss, night sweats, bleeding, and IgM-related hyperviscosity with headache, dizziness, blurred vision, nose or gum bleeding, or confusion.</p><p>IgM can also cause peripheral neuropathy, cryoglobulinemia, cold agglutinin disease, kidney involvement, or amyloidosis-related problems.</p>',
       diagnosis:
-        '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+        '<p>Diagnosis shows IgM monoclonal protein plus bone marrow lymphoplasmacytic infiltration, supported by immunophenotyping, serum protein electrophoresis/immunofixation, IgM quantification, marrow biopsy, and often MYD88 L265P and CXCR4 testing.</p><p>Clinicians distinguish IgM MGUS, multiple myeloma, marginal zone lymphoma, chronic lymphocytic leukemia, and other small B-cell lymphomas.</p>',
       treatment:
-        '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+        '<p>Asymptomatic WM is not treated just because it is diagnosed; it is monitored. Treatment indications include symptomatic anemia, hyperviscosity, organ involvement, significant B symptoms, neuropathy, or cryoglobulin-related disease.</p><p>Options include rituximab-based chemoimmunotherapy, BTK inhibitors, proteasome inhibitor regimens, and others. Hyperviscosity is an emergency usually treated first with plasma exchange, followed by lymphoma-directed therapy.</p>',
       longTermCare:
-        '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+        '<p>Follow-up tracks CBC, IgM, M protein, kidney function, infection risk, vaccines, neuropathy, serum viscosity, and treatment side effects. Watchful waiting should still have a clear visit schedule and treatment triggers.</p><p>Patients should carry their WM diagnosis and seek urgent care for hyperviscosity symptoms instead of waiting for routine follow-up.</p>',
       fertilityOrFamily:
-        '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+        '<p>WM is usually not inherited, and family screening is not routine. Before chemotherapy or long-term targeted treatment, discuss fertility preservation when relevant, infection prevention, and vaccination.</p>',
       emergencySigns:
-        '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+        '<p>Urgent care is needed for blurred vision, severe headache, confusion, chest tightness or shortness of breath, persistent nose or gum bleeding, black stools or vomiting blood, fever or chills, or severe anemia symptoms, especially when hyperviscosity is possible.</p>',
     },
     sources: [
       {
@@ -84,15 +81,20 @@ export const diseaseWaldenstromMacroglobulinemiaLymphoplasmacyticLymphoma: Disea
         type: 'clinical-guideline',
         url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
       },
+      {
+        name: 'National Cancer Institute: Waldenström macroglobulinemia treatment',
+        type: 'official',
+        url: 'https://www.cancer.gov/types/lymphoma/patient/waldenstrom-treatment-pdq',
+      },
     ],
     symptoms:
-      '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+      '<p>Patients may be asymptomatic or have anemia, fatigue, infection, bleeding, enlarged nodes or spleen, neuropathy, cryoglobulin symptoms, and hyperviscosity with headache, blurred vision, or confusion.</p>',
     diagnosis:
-      '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+      '<p>Diagnosis combines IgM monoclonal protein, marrow lymphoplasmacytic infiltration, immunophenotype, MYD88/CXCR4 testing, and distinction from IgM MGUS and other small B-cell lymphomas.</p>',
     treatment:
-      '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+      '<p>Asymptomatic disease can be observed; symptomatic disease may use rituximab-based therapy, BTK inhibitors, and other regimens, with plasma exchange first for hyperviscosity emergency.</p>',
     prognosis:
-      '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+      '<p>Many cases are slow-growing and manageable long term; hyperviscosity, infection, anemia, neuropathy, and treatment side effects require follow-up.</p>',
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -100,6 +102,11 @@ export const diseaseWaldenstromMacroglobulinemiaLymphoplasmacyticLymphoma: Disea
     categorySlug: 'oncology',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 439,
+      name: 'waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma-journey.png',
+      url: '/images/diseases/waldenstrom-macroglobulinemia-lymphoplasmacytic-lymphoma-journey.png',
+    },
     tagSlugs: ['second-rare-disease-catalog'],
   };

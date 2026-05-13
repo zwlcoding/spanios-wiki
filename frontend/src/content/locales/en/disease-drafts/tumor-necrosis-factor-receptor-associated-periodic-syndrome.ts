@@ -7,75 +7,75 @@ export const diseaseTumorNecrosisFactorReceptorAssociatedPeriodicSyndrome: Disea
       2081,
       'disease-tumor-necrosis-factor-receptor-associated-periodic-syndrome',
     ),
-    name: 'Tumor necrosis factor receptor associated periodic syndrome',
-    nameEn: 'Tumor necrosis factor receptor associated periodic syndrome',
+    name: 'Tumor necrosis factor receptor-associated periodic syndrome',
+    nameEn: 'Tumor necrosis factor receptor-associated periodic syndrome',
     alias:
-      '肿瘤坏死因子受体相关周期性综合征; China Second Rare Disease Catalog item 81',
+      'TRAPS; TNF receptor-associated periodic syndrome; China Second Rare Disease Catalog item 81',
     slug: 'tumor-necrosis-factor-receptor-associated-periodic-syndrome',
     oneSentence:
-      "Tumor necrosis factor receptor associated periodic syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+      'TRAPS is a rare inherited autoinflammatory disease in which TNFRSF1A variants cause recurrent long fever episodes with rash, muscle pain, abdominal pain, eye swelling, and high inflammatory markers.',
     plainName:
-      'A rare disease that needs specialist confirmation and follow-up: Tumor necrosis factor receptor associated periodic syndrome',
+      'An inherited recurrent fever disease where the body repeatedly inflames itself for days to weeks',
     prevalence:
-      "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+      "Included in China's second rare disease catalog; TRAPS is rare worldwide, often starts in childhood, and can also be diagnosed for the first time in adults.",
     quickLook: {
       whatItIs:
-        'Tumor necrosis factor receptor associated periodic syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+        'TRAPS is an autoinflammatory disease. Flares can last days to weeks and may include migratory rash, deep muscle pain, abdominal pain, chest pain, joint pain, and swelling around the eyes.',
       whoToSeeFirst:
-        'Start with Rheumatology and immunology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+        'Recurrent unexplained fever, high inflammatory markers, poor response to antibiotics, family history, rash, abdominal pain, or muscle pain should prompt rheumatology, pediatric rheumatology, or an autoinflammatory disease clinic.',
       isGenetic:
-        'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+        'It is usually linked to TNFRSF1A variants and often follows autosomal dominant inheritance with incomplete penetrance, so genetic counseling and family assessment are important.',
       hasTreatment:
-        'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+        'Treatment aims to control attacks and chronic inflammation and prevent AA amyloidosis. IL-1 inhibitors are often used when long-term control is needed; corticosteroids or other anti-inflammatory plans may be used in selected situations.',
       commonDelayReason:
-        'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+        'Fever, abdominal pain, and rash are repeatedly treated as infection, allergy, gastroenteritis, or rheumatic fever. A fever diary, inflammatory marker pattern, and family history help shorten delay.',
     },
     patientJourney: {
       whenToSuspect: [
-        'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-        'Several organs or test results seem connected but no single common condition explains them.',
-        'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+        'Recurrent fever episodes lasting days to weeks, with limited antibiotic benefit and improvement between attacks.',
+        'Fever with migratory red rash, deep muscle pain, abdominal pain, chest pain, joint pain, eye swelling, or conjunctivitis.',
+        'Family members with recurrent fever, abdominal pain, kidney disease, proteinuria, amyloidosis, or unexplained inflammatory illness.',
       ],
       commonWrongTurns: [
-        'Treating each symptom separately without reviewing the full pattern.',
-        'Repeating routine visits without collecting prior test results for specialist review.',
-        'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+        'Treating every episode as infection without reviewing duration, triggers, and well intervals.',
+        'Only evaluating allergy, gastrointestinal disease, or infection without considering autoinflammatory disease and TNFRSF1A testing.',
+        'Using steroids for temporary relief without monitoring SAA, urine protein, and kidney function.',
       ],
       firstDepartments: [
-        'Rheumatology and immunology',
+        'Rheumatology',
         'Pediatric rheumatology',
-        'Immunology clinic',
+        'Autoinflammatory or rare immune disease clinic',
+        'Medical genetics',
       ],
       diagnosisChecklist: [
-        'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-        'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-        'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+        'Record start and end dates of fever, maximum temperature, rash photos, abdominal, chest, muscle, and joint pain, and medicine response.',
+        'Bring flare and baseline CBC, CRP, ESR, SAA, liver and kidney function, urinalysis, and infection workup.',
+        'Bring family history of recurrent fever, kidney disease, proteinuria, amyloidosis, early death, and genetic reports.',
       ],
       testsToAskAbout: [
-        'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-        'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-        'Genetic counseling or family testing when the condition may be inherited.',
+        'Whether an autoinflammatory gene panel should assess TNFRSF1A and other periodic fever genes.',
+        'How CRP, ESR, SAA, and urine protein during and between attacks will guide amyloidosis risk.',
+        'Whether IL-1 inhibition, short steroid courses, or other treatment is appropriate and how infection risk is monitored.',
       ],
       questionsForDoctor: [
-        'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-        'Which organs should be monitored, and what warning signs need emergency care?',
-        'What is the goal of treatment and follow-up for my situation?',
-        'How often should follow-up happen, and should relatives be screened?',
+        'Is my TNFRSF1A variant clearly disease-causing, and how should relatives be tested or followed?',
+        'How can we tell ordinary infection from a TRAPS flare, and when is emergency care needed?',
+        'Is the long-term goal no flares, normal inflammatory markers, or amyloidosis prevention?',
       ],
     },
     medicalSections: {
       symptoms:
-        '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+        '<p>TRAPS flares often last days to weeks and can include recurrent fever, chills, fatigue, migratory red or patchy rash, deep muscle pain, abdominal pain, nausea, vomiting, chest pain, joint pain, swelling around the eyes, and conjunctivitis. Some patients have low-grade inflammation between attacks.</p><p>Uncontrolled long-term inflammation can cause AA amyloidosis with proteinuria, declining kidney function, and swelling, which is a major preventable complication.</p>',
       diagnosis:
-        '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+        '<p>Diagnosis uses the recurrent fever pattern, associated symptoms, raised inflammatory markers during flares, family history, and TNFRSF1A genetic testing. Clinicians compare flare and baseline CRP, ESR, SAA, CBC, and urine protein.</p><p>Infection, cancer, autoimmune disease, inflammatory bowel disease, and other autoinflammatory diseases such as FMF, CAPS, MKD, and PFAPA must be considered.</p>',
       treatment:
-        '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+        '<p>Milder or infrequent attacks may be relieved with NSAIDs or short corticosteroid courses under specialist guidance, but these may not fully prevent chronic inflammation or amyloidosis risk.</p><p>Patients needing long-term control or with persistently high inflammation are often evaluated for IL-1 inhibitors. Monitoring includes infection risk, vaccines, CBC, liver and kidney function, SAA, urine protein, and quality of life.</p>',
       longTermCare:
-        '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+        '<p>Long-term care includes a flare diary, rash photos, triggers, inflammatory markers, SAA, urinalysis and protein, kidney function, and treatment safety. Children also need growth, school, and activity planning.</p><p>A written flare plan helps avoid restarting from scratch with every fever while still staying alert for real infections.</p>',
       fertilityOrFamily:
-        '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+        '<p>TRAPS is usually autosomal dominant, but penetrance and severity vary. First-degree relatives can consider testing after genetic counseling; pregnancy planning should review inheritance risk and medicine safety.</p>',
       emergencySigns:
-        '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+        '<p>Emergency care is needed for persistent high fever with poor responsiveness, dehydration, severe abdominal or chest pain, breathing trouble, altered consciousness, severe eye pain or vision change, reduced urination or swelling, or suspected serious infection during immune treatment.</p>',
     },
     sources: [
       {
@@ -83,15 +83,20 @@ export const diseaseTumorNecrosisFactorReceptorAssociatedPeriodicSyndrome: Disea
         type: 'clinical-guideline',
         url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
       },
+      {
+        name: 'MedlinePlus Genetics: Tumor necrosis factor receptor-associated periodic syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/tumor-necrosis-factor-receptor-associated-periodic-syndrome/',
+      },
     ],
     symptoms:
-      '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+      '<p>Recurrent fever lasts days to weeks and may include migratory rash, deep muscle pain, abdominal pain, chest pain, joint pain, eye swelling, conjunctivitis, and high inflammatory markers.</p>',
     diagnosis:
-      '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+      '<p>Diagnosis combines fever pattern, flare and baseline inflammatory markers, SAA/urine protein, family history, and TNFRSF1A genetic testing while excluding infection, malignancy, autoimmune disease, and other periodic fever syndromes.</p>',
     treatment:
-      '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+      '<p>Care aims to control flares and chronic inflammation and prevent AA amyloidosis; short anti-inflammatory or steroid treatment may help flares, while IL-1 inhibition is often considered for long-term control.</p>',
     prognosis:
-      '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+      '<p>Regular monitoring and anti-inflammatory treatment can reduce attacks; persistent inflammation and AA amyloidosis are the major threats to kidney outcome.</p>',
     sourceName:
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
@@ -99,6 +104,11 @@ export const diseaseTumorNecrosisFactorReceptorAssociatedPeriodicSyndrome: Disea
     categorySlug: 'immunological-rheumatologic',
     charityIds: [],
     hospitalIds: [],
-    reviewStatus: 'draft',
-    tagSlugs: ['second-rare-disease-catalog'],
+    reviewStatus: 'patient-reviewed',
+    featuredImage: {
+      id: 436,
+      name: 'tumor-necrosis-factor-receptor-associated-periodic-syndrome-journey.png',
+      url: '/images/diseases/tumor-necrosis-factor-receptor-associated-periodic-syndrome-journey.png',
+    },
+    tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
   };

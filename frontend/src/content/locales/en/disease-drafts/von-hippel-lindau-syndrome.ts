@@ -5,73 +5,72 @@ export const diseaseVonHippelLindauSyndrome: DiseaseDraft = {
   ...entity(2083, 'disease-von-hippel-lindau-syndrome'),
   name: 'Von Hippel-Lindau syndrome',
   nameEn: 'Von Hippel-Lindau syndrome',
-  alias: 'Von Hippel-Lindau综合征; China Second Rare Disease Catalog item 83',
+  alias: 'VHL disease; China Second Rare Disease Catalog item 83',
   slug: 'von-hippel-lindau-syndrome',
   oneSentence:
-    "Von Hippel-Lindau syndrome is a rare disease included in China's second rare disease catalog. Care usually starts with recognizing the main symptoms, confirming the diagnosis with the right specialty tests, and planning follow-up around the affected organs.",
+    'Von Hippel-Lindau syndrome is an autosomal dominant tumor predisposition syndrome that can cause cysts and tumors in the retina, brain and spinal cord, kidneys, adrenal glands, pancreas, and inner ear.',
   plainName:
-    'A rare disease that needs specialist confirmation and follow-up: Von Hippel-Lindau syndrome',
+    'An inherited syndrome where one gene variant raises tumor risk across several organs',
   prevalence:
-    "Included in China's second rare disease catalog; frequency varies by population, diagnostic criteria, and reporting source.",
+    "Included in China's second rare disease catalog; NCI patient materials commonly cite an estimate of about 1 in 36,000 people, with wide variation even within families.",
   quickLook: {
     whatItIs:
-      'Von Hippel-Lindau syndrome is included in the 2025 Chinese national rare disease guideline. Because symptoms and affected organs can vary, diagnosis and follow-up should be planned with the relevant specialist team.',
+      'The VHL gene acts as a tumor brake. When it does not work, people can develop retinal or CNS hemangioblastomas, clear cell kidney cancer, pheochromocytoma, pancreatic cysts or neuroendocrine tumors, and endolymphatic sac tumors. Planned surveillance is the main protection.',
     whoToSeeFirst:
-      'Start with Oncology or a rare disease multidisciplinary clinic when symptoms are persistent, unexplained, or involve several systems. Use emergency care for severe acute symptoms.',
+      'Retinal angioma, CNS hemangioblastoma, young-onset or bilateral/multifocal kidney cancer, pheochromocytoma, multiple pancreatic cysts, or family history should prompt genetics, hereditary cancer, or VHL multidisciplinary care.',
     isGenetic:
-      'Ask the specialist whether this diagnosis may have a genetic component, and whether genetic counseling, family testing, or reproductive planning is relevant.',
+      'VHL is inherited in an autosomal dominant pattern. First-degree relatives should be offered genetic counseling and VHL testing; asymptomatic carriers still need age-based surveillance.',
     hasTreatment:
-      'Treatment may include disease-specific therapy, symptom control, surgery or procedures, rehabilitation, surveillance, and prevention of complications. The plan should be individualized by specialists.',
+      'The inherited risk cannot be removed, but surveillance can find small tumors early. Treatment may include surgery, laser, cryotherapy, ablation, radiation, or HIF-2 alpha inhibitor therapy depending on tumor type and access.',
     commonDelayReason:
-      'Diagnosis may be delayed because early symptoms can look like common conditions or be split across different specialties.',
+      'Many lesions are silent early, and one tumor may be treated as sporadic. Without family history and VHL testing, other organ screening may be missed.',
   },
   patientJourney: {
     whenToSuspect: [
-      'Symptoms persist, recur, progress, or do not fit a common diagnosis.',
-      'Several organs or test results seem connected but no single common condition explains them.',
-      'There is a family history, early-onset severe disease, or repeated unexplained hospital visits.',
+      'Young-onset, bilateral, or multifocal kidney cancer/cysts, or combined brain, retina, pancreas, and adrenal lesions.',
+      'Vision change, retinal angioma, repeated headaches, imbalance, limb weakness, or spinal cord symptoms.',
+      'Hypertension, palpitations, sweating suggesting pheochromocytoma, or a relative with VHL.',
     ],
     commonWrongTurns: [
-      'Treating each symptom separately without reviewing the full pattern.',
-      'Repeating routine visits without collecting prior test results for specialist review.',
-      'Missing family history, pathology, imaging, or genetic testing records that could shorten the diagnostic path.',
+      'Treating one organ or one episode without connecting the long-term pattern, family history, and prior results.',
+      'Watching common-disease explanations for too long without referral to the right specialty or rare disease clinic.',
+      'Not keeping imaging, pathology, genetic, treatment, and follow-up records, leading to repeated workups and delays.',
     ],
     firstDepartments: [
-      'Oncology',
-      'Hematology',
-      'Relevant surgical specialty',
-      'Pathology or molecular diagnostics',
+      'Medical genetics',
+      'Hereditary cancer/rare tumor clinic',
+      'Retina specialist',
+      'Neurosurgery, urology, or endocrinology as needed',
     ],
     diagnosisChecklist: [
-      'Create a timeline of symptoms, triggers, treatments tried, and family history.',
-      'Bring previous lab tests, imaging, pathology, discharge summaries, and genetic reports.',
-      'Ask whether specialty testing, molecular testing, pathology review, or a multidisciplinary visit is needed.',
+      'Bring retina exams, brain/spine MRI, abdominal MRI/CT, adrenal hormone tests, prior operations, and pathology.',
+      'Prepare personal and three-generation family tumor history, age at diagnosis, and bilateral or multifocal lesions.',
+      'Bring VHL genetic testing; if not done, ask about germline testing.',
     ],
     testsToAskAbout: [
-      'Baseline blood and chemistry tests plus specialty tests for the main affected system.',
-      'Imaging, functional testing, pathology, or molecular testing when recommended by the specialist.',
-      'Genetic counseling or family testing when the condition may be inherited.',
+      'Whether VHL germline testing is needed and how relatives should have predictive testing.',
+      'Starting age and interval for retina exams, brain/spine MRI, abdominal MRI, hearing, and pheochromocytoma screening.',
+      'What size, growth, or symptoms trigger treatment for each lesion.',
     ],
     questionsForDoctor: [
-      'What diagnosis is most likely, and what similar diseases still need to be ruled out?',
-      'Which organs should be monitored, and what warning signs need emergency care?',
-      'What is the goal of treatment and follow-up for my situation?',
-      'How often should follow-up happen, and should relatives be screened?',
+      'Which organs are involved now, and what are the top risks this year?',
+      'How should relative testing, childhood surveillance, and reproductive planning be handled?',
+      'How will kidney lesion treatment balance cancer control and kidney preservation?',
     ],
   },
   medicalSections: {
     symptoms:
-      '<p>Symptoms can vary by subtype, age, and affected organs. Keep a written symptom timeline and bring photos, lab results, imaging, and prior reports to specialist visits.</p>',
+      '<p>VHL can cause retinal hemangioblastomas with vision loss or bleeding, CNS hemangioblastomas with headache, vomiting, imbalance, weakness, or spinal symptoms, and kidney cysts or clear cell kidney cancer.</p><p>Other features include pheochromocytoma causing episodic hypertension, palpitations, headache, and sweating; pancreatic cysts or neuroendocrine tumors; and endolymphatic sac tumors causing hearing loss, tinnitus, or vertigo. Expression varies widely.</p>',
     diagnosis:
-      '<p>Diagnosis usually combines medical history, examination, targeted laboratory tests, imaging or functional studies, and sometimes pathology review or genetic testing.</p>',
+      '<p>Diagnosis combines typical lesions, family history, and VHL germline genetic testing. Even one related tumor should prompt genetics when onset is young, multifocal, bilateral, or familial.</p><p>Confirmed patients need baseline and continuing surveillance with retina examination, brain and spine MRI, abdominal MRI/CT, adrenal biochemical testing, and hearing/inner ear assessment.</p>',
     treatment:
-      '<p>Treatment should be planned by the relevant specialty team and may include disease-specific therapy, symptom management, rehabilitation, procedures, and long-term surveillance.</p>',
+      '<p>Treatment is based on timing: observe until intervention protects function or cancer control. Options include laser or cryotherapy, microsurgery, ablation, radiation, nephron-sparing surgery, or targeted medicine depending on lesion type.</p><p>For VHL-related kidney cancer and selected non-surgical lesions, multidisciplinary teams may evaluate HIF-2 alpha inhibitor therapy such as belzutifan depending on indication and access.</p>',
     longTermCare:
-      '<p>Long-term care focuses on monitoring complications, tracking response to treatment, preparing for procedures or pregnancy when relevant, and coordinating care across specialties.</p>',
+      '<p>VHL management is lifelong surveillance, not symptom-only care. Follow-up should track location, size, growth, prior treatment, and function impact of each lesion.</p><p>A consistent genetics and tumor team helps keep organ-specific care coordinated.</p>',
     fertilityOrFamily:
-      '<p>Ask whether genetic counseling, family screening, prenatal counseling, or reproductive planning is relevant for this specific diagnosis.</p>',
+      '<p>VHL is autosomal dominant. Children of an affected person have inheritance risk, so genetic counseling can address relative testing, childhood surveillance, prenatal diagnosis, or preimplantation genetic testing.</p>',
     emergencySigns:
-      '<p>Seek emergency care for breathing trouble, altered consciousness, seizures, severe bleeding or swelling, chest pain, severe dehydration, rapidly worsening pain, or any life-threatening symptom.</p>',
+      '<p>Urgent care is needed for sudden vision loss, severe headache or vomiting, imbalance or weakness, spinal cord symptoms, severe hypertension with palpitations, sweating or chest pain, visible blood in urine, or acute abdominal pain.</p>',
   },
   sources: [
     {
@@ -79,15 +78,20 @@ export const diseaseVonHippelLindauSyndrome: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     },
+    {
+      name: 'National Cancer Institute: Von Hippel-Lindau disease',
+      type: 'official',
+      url: 'https://www.cancer.gov/types/brain/patient/vhl-pdq',
+    },
   ],
   symptoms:
-    '<p>Symptoms depend on the main affected organ system and should be reviewed by the appropriate specialist.</p>',
+    '<p>Features include retinal and CNS hemangioblastomas, kidney cysts or clear cell kidney cancer, pheochromocytoma, pancreatic lesions, hearing loss, or vertigo; early disease may be silent.</p>',
   diagnosis:
-    '<p>Diagnosis requires targeted specialist evaluation and may include laboratory, imaging, pathology, functional, or genetic testing.</p>',
+    '<p>Diagnosis uses multisystem lesions, family history, and VHL germline testing, followed by retina, brain/spine, abdominal, adrenal, and hearing surveillance.</p>',
   treatment:
-    '<p>Treatment is individualized and may include disease-specific therapy, supportive care, procedures, rehabilitation, and surveillance.</p>',
+    '<p>Treatment uses observation, surgery, laser/cryotherapy, ablation, radiation, or targeted therapy at the right time to preserve organ function.</p>',
   prognosis:
-    '<p>Outlook varies widely. Earlier diagnosis, appropriate specialty care, and regular follow-up can reduce preventable complications.</p>',
+    '<p>Regular surveillance can find lesions early and improve outcomes; kidney cancer, CNS tumors, and pheochromocytoma require lifelong management.</p>',
   sourceName:
     'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
   sourceUrl:
@@ -95,6 +99,11 @@ export const diseaseVonHippelLindauSyndrome: DiseaseDraft = {
   categorySlug: 'oncology',
   charityIds: [],
   hospitalIds: [],
-  reviewStatus: 'draft',
-  tagSlugs: ['second-rare-disease-catalog'],
+  reviewStatus: 'patient-reviewed',
+  featuredImage: {
+    id: 437,
+    name: 'von-hippel-lindau-syndrome-journey.png',
+    url: '/images/diseases/von-hippel-lindau-syndrome-journey.png',
+  },
+  tagSlugs: ['second-rare-disease-catalog', 'genetic-counseling'],
 };
