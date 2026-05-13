@@ -1,4 +1,4 @@
-export const supportedLocales = ['zh', 'en', 'zh-Hant'] as const;
+export const supportedLocales = ['zh', 'en'] as const;
 
 export type Locale = (typeof supportedLocales)[number];
 
@@ -6,7 +6,6 @@ export const defaultLocale = 'zh' as const;
 
 export const localeFallbacks: Partial<Record<Locale, Locale[]>> = {
   en: ['zh'],
-  'zh-Hant': ['zh'],
 };
 
 export type LocalizedRecord<T> = Partial<Record<Locale, T>> &

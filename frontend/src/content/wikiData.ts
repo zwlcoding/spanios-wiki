@@ -4,13 +4,17 @@ import {
 } from '@/content/data/catalogs';
 import { categoriesByLocale } from '@/content/data/categories';
 import { charityDraftsByLocale } from '@/content/data/charities';
-import { diseaseDraftsByLocale } from '@/content/data/diseases';
+import {
+  diseaseSummariesByLocale,
+  loadDiseaseDraft,
+} from '@/content/data/diseases';
 import {
   hospitalDraftsByLocale,
   hospitalServiceDraftsByLocale,
 } from '@/content/data/hospitals';
 import { siteSettingsByLocale } from '@/content/data/settings';
 import { tagsByLocale } from '@/content/data/tags';
+import type { DiseaseDraft } from '@/content/data/types';
 import type {
   CharityOrganization,
   ContentResponse,
@@ -38,19 +42,58 @@ export function getWikiContent(locale: string): WikiContent {
     return cached;
   }
 
-  const categories = resolveLocalized(categoriesByLocale, normalizedLocale);
-  const tags = resolveLocalized(tagsByLocale, normalizedLocale);
-  const detailedDiseaseDrafts = resolveLocalized(
-    diseaseDraftsByLocale,
+  const content = buildWikiContent(
+    normalizedLocale,
+    resolveLocalized(diseaseSummariesByLocale, normalizedLocale),
+  );
+
+  contentCache.set(normalizedLocale, content);
+  return content;
+}
+
+export async function getWikiDiseaseContent(
+  locale: string,
+  slug: string,
+): Promise<Disease | undefined> {
+  const normalizedLocale = normalizeLocale(locale);
+  const summaryDrafts = resolveLocalized(
+    diseaseSummariesByLocale,
     normalizedLocale,
   );
+  const detailedDiseaseDraft = await loadDiseaseDraft(normalizedLocale, slug);
+
+  if (!detailedDiseaseDraft) {
+    return getWikiContent(normalizedLocale).diseases.find(
+      (disease) => disease.slug === slug,
+    );
+  }
+
+  const diseaseDrafts: DiseaseDraft[] = summaryDrafts.some(
+    (draft) => draft.slug === slug,
+  )
+    ? summaryDrafts.map((draft) =>
+        draft.slug === slug ? { ...draft, ...detailedDiseaseDraft } : draft,
+      )
+    : [...summaryDrafts, detailedDiseaseDraft];
+
+  return buildWikiContent(normalizedLocale, diseaseDrafts).diseases.find(
+    (disease) => disease.slug === slug,
+  );
+}
+
+function buildWikiContent(
+  normalizedLocale: Locale,
+  detailedDiseaseDrafts: DiseaseDraft[],
+): WikiContent {
+  const categories = resolveLocalized(categoriesByLocale, normalizedLocale);
+  const tags = resolveLocalized(tagsByLocale, normalizedLocale);
   const catalogDiseaseDrafts = createCatalogDiseaseDrafts(
     normalizedLocale,
     new Set(detailedDiseaseDrafts.map((draft) => draft.slug)),
   );
   const diseaseDrafts = [...detailedDiseaseDrafts, ...catalogDiseaseDrafts];
 
-  const diseases = diseaseDrafts.map((draft) => {
+  const diseases: InternalDisease[] = diseaseDrafts.map((draft) => {
     const { categorySlug, charityIds, hospitalIds, tagSlugs, ...disease } =
       draft;
     const catalogMetadata = getCatalogDiseaseMetadata(
@@ -84,7 +127,7 @@ export function getWikiContent(locale: string): WikiContent {
       hospitals: [],
       tags: mergedTagSlugs
         .map((tagSlug) => tags.find((tagItem) => tagItem.slug === tagSlug))
-        .filter(Boolean),
+        .filter(isDefined),
       _charityIds: charityIds,
       _hospitalIds: hospitalIds,
     };
@@ -94,7 +137,7 @@ export function getWikiContent(locale: string): WikiContent {
     hospitalDraftsByLocale,
     normalizedLocale,
   );
-  const hospitals = hospitalDrafts.map((draft) => {
+  const hospitals: Hospital[] = hospitalDrafts.map((draft) => {
     const { departments, ...hospital } = draft;
 
     return {
@@ -109,16 +152,18 @@ export function getWikiContent(locale: string): WikiContent {
     hospitalServiceDraftsByLocale,
     normalizedLocale,
   );
-  const hospitalServices = hospitalServiceDrafts.map((service) => ({
-    ...service,
-    diseases: service.diseaseSlugs
-      .map((slug) => diseases.find((disease) => disease.slug === slug))
-      .filter((disease) => disease && isPublishedDisease(disease))
-      .filter(Boolean),
-    hospital: compactHospital(
-      hospitals.find((hospital) => hospital.id === service.hospitalId),
-    ),
-  }));
+  const hospitalServices: HospitalService[] = hospitalServiceDrafts.map(
+    (service) => ({
+      ...service,
+      diseases: service.diseaseSlugs
+        .map((slug) => diseases.find((disease) => disease.slug === slug))
+        .filter(isDefined)
+        .filter(isPublishedDisease),
+      hospital: compactHospital(
+        hospitals.find((hospital) => hospital.id === service.hospitalId),
+      ),
+    }),
+  );
 
   for (const hospital of hospitals) {
     const services = hospitalServices.filter(
@@ -134,19 +179,19 @@ export function getWikiContent(locale: string): WikiContent {
     charityDraftsByLocale,
     normalizedLocale,
   );
-  const charities = charityDrafts.map((draft) => {
+  const charities: CharityOrganization[] = charityDrafts.map((draft) => {
     const { diseaseSlugs, ...charity } = draft;
 
     return {
       ...charity,
       diseases: diseaseSlugs
         .map((slug) => diseases.find((disease) => disease.slug === slug))
-        .filter((disease) => disease && isPublishedDisease(disease))
-        .filter(Boolean),
+        .filter(isDefined)
+        .filter(isPublishedDisease),
     };
   });
 
-  const enrichedDiseases = diseases.map((disease) => {
+  const enrichedDiseases: Disease[] = diseases.map((disease) => {
     const { _charityIds, _hospitalIds, ...publicDisease } = disease;
     const diseaseHospitalServices = hospitalServices.filter(
       (service) =>
@@ -155,16 +200,16 @@ export function getWikiContent(locale: string): WikiContent {
     );
     const serviceHospitals = diseaseHospitalServices
       .map((service) => service.hospital)
-      .filter(Boolean);
+      .filter(isDefined);
     const directHospitals = _hospitalIds
       .map((id) => hospitals.find((hospital) => hospital.id === id))
-      .filter(Boolean);
+      .filter(isDefined);
 
     return {
       ...publicDisease,
       charityOrgs: _charityIds
         .map((id) => charities.find((charity) => charity.id === id))
-        .filter(Boolean),
+        .filter(isDefined),
       hospitalServices: diseaseHospitalServices,
       hospitals: uniqueById([...serviceHospitals, ...directHospitals]),
     };
@@ -173,21 +218,29 @@ export function getWikiContent(locale: string): WikiContent {
   const content: WikiContent = {
     assistancePrograms: [],
     categories,
-    charities: charities as CharityOrganization[],
-    diseases: enrichedDiseases as Disease[],
-    hospitalServices: hospitalServices as HospitalService[],
-    hospitals: hospitals as Hospital[],
+    charities,
+    diseases: enrichedDiseases,
+    hospitalServices,
+    hospitals,
     medicines: [],
     siteSettings: resolveLocalized(siteSettingsByLocale, normalizedLocale),
     tags,
   };
 
-  contentCache.set(normalizedLocale, content);
   return content;
 }
 
 export function toResponse<T>(data: T): ContentResponse<T> {
   return { data };
+}
+
+type InternalDisease = Disease & {
+  _charityIds: number[];
+  _hospitalIds: number[];
+};
+
+function isDefined<T>(value: T | null | undefined): value is T {
+  return value !== null && value !== undefined;
 }
 
 function normalizeLocale(locale: string): Locale {
@@ -243,7 +296,7 @@ function uniqueById<T extends { id: number }>(items: T[]) {
   return uniqueItems;
 }
 
-function compactHospital(hospital: Hospital | undefined) {
+function compactHospital(hospital: Hospital | undefined): Hospital | undefined {
   if (!hospital) {
     return undefined;
   }
@@ -252,7 +305,9 @@ function compactHospital(hospital: Hospital | undefined) {
   return compact;
 }
 
-function isPublishedDisease(disease: Pick<Disease, 'reviewStatus'>) {
+function isPublishedDisease<T extends Pick<Disease, 'reviewStatus'>>(
+  disease: T,
+): disease is T {
   return (
     disease.reviewStatus === 'patient-reviewed' ||
     disease.reviewStatus === 'medical-reviewed'

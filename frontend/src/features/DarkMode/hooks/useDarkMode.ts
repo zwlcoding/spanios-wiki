@@ -14,24 +14,35 @@ export const useDarkModeStore = create<DarkModeState>((set) => ({
 export const useDarkMode = () => {
   const { mode, setMode } = useDarkModeStore();
 
-  const changeMode = (mode: 'system' | 'dark' | 'light') => {
-    document.documentElement.dataset.theme = '';
-    document.documentElement.dataset.theme = mode;
-    setMode(mode);
-    localStorage.setItem('theme', mode);
-  };
+  const changeMode = React.useCallback(
+    (mode: 'system' | 'dark' | 'light') => {
+      document.documentElement.dataset.theme = '';
+      document.documentElement.dataset.theme = mode;
+      setMode(mode);
+      localStorage.setItem('theme', mode);
+    },
+    [setMode],
+  );
 
-  const getSystemTheme = () => {
+  const getSystemTheme = React.useCallback(() => {
     const darkModeMediaQuery = window.matchMedia(
       '(prefers-color-scheme: dark)',
     );
     const isDarkMode = darkModeMediaQuery.matches;
     return isDarkMode ? 'dark' : 'light';
-  };
+  }, []);
 
-  const handleDarkModeChange = (e: MediaQueryListEvent) => {
-    const mode = e.matches ? 'dark' : 'light';
-    changeMode(mode);
+  const handleDarkModeChange = React.useCallback(
+    (e: MediaQueryListEvent) => {
+      const mode = e.matches ? 'dark' : 'light';
+      changeMode(mode);
+    },
+    [changeMode],
+  );
+
+  const toggleDarkMode = () => {
+    const newMode = mode === 'dark' ? 'light' : 'dark';
+    changeMode(newMode);
   };
 
   React.useEffect(() => {
@@ -46,7 +57,7 @@ export const useDarkMode = () => {
     } else {
       changeMode(getSystemTheme());
     }
-  }, []);
+  }, [changeMode, getSystemTheme]);
 
   React.useEffect(() => {
     const darkModeMediaQuery = window.matchMedia(
@@ -55,12 +66,7 @@ export const useDarkMode = () => {
     darkModeMediaQuery.addEventListener('change', handleDarkModeChange);
     return () =>
       darkModeMediaQuery.removeEventListener('change', handleDarkModeChange);
-  }, []);
-
-  const toggleDarkMode = () => {
-    const newMode = mode === 'dark' ? 'light' : 'dark';
-    changeMode(newMode);
-  };
+  }, [handleDarkModeChange]);
 
   return { mode, toggleDarkMode };
 };

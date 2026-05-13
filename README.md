@@ -13,7 +13,6 @@
 ## 启动
 
 ```bash
-cd frontend
 pnpm dev
 ```
 
@@ -22,7 +21,6 @@ pnpm dev
 ## 构建
 
 ```bash
-cd frontend
 pnpm build
 pnpm start
 ```
@@ -31,10 +29,16 @@ pnpm start
 
 主要内容写在：
 
-- `frontend/src/content/wikiData.ts`
-- `frontend/src/types/content.ts`
+- `frontend/src/content/data/`：跨语言的目录、分类、标签和关系聚合逻辑
+- `frontend/src/content/locales/zh/`：中文内容
+- `frontend/src/content/locales/en/`：英文内容
+- `frontend/src/content/locales/<locale>/disease-drafts/<slug>.ts`：单个疾病详情
+- `frontend/src/content/locales/<locale>/disease-summaries.ts`：列表、搜索和站点地图使用的轻量疾病索引
+- `frontend/src/content/locales/<locale>/disease-loaders.ts`：详情页按 slug 懒加载完整疾病文件
 
-新增疾病、医院、公益组织时，在 `wikiData.ts` 中分别补充中英文数据。页面仍通过 hooks 读取内容，所以列表页、详情页、搜索页和 SSR 预取逻辑都可以继续复用。
+新增疾病详情时，为中英文各建一个同名 slug 文件，并同步补充对应语言的
+`disease-summaries.ts` 轻量索引。医院、公益组织和服务线索仍按 locale
+维护在各自内容文件中。列表页和搜索页读取轻量索引，详情页再懒加载完整正文。
 
 ## 已实现页面
 

@@ -1,7 +1,6 @@
 .git
 .github
 .pnpm-store
-content-drafts
 docs
 node_modules
 frontend/node_modules

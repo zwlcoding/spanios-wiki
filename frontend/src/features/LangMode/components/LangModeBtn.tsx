@@ -7,13 +7,11 @@ type LangModeBtnProps = {
 };
 
 export const LangModeBtn = ({ handleChanged }: LangModeBtnProps) => {
-  // const { lang, toggleLang, locales } = useLangMode();
-
   const lang = getLocale();
 
-  const handleSelect = (newLang: string) => {
+  const handleSelect = (newLang: (typeof locales)[number]) => {
     if (newLang === lang) return;
-    // toggleLang(newLang);
+
     setLocale(newLang);
     handleChanged?.(newLang);
   };
@@ -29,7 +27,7 @@ export const LangModeBtn = ({ handleChanged }: LangModeBtnProps) => {
         className="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-20"
         aria-label={uiText('语言列表', 'Language list')}
       >
-        {locales.map((locale: string) => (
+        {locales.map((locale) => (
           <li key={locale}>
             <button
               type="button"

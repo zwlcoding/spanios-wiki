@@ -47,7 +47,11 @@ function DiseaseDetailPage() {
               </Link>
             </li>
             <li>
-              <Link to="/diseases" className="link link-hover">
+              <Link
+                to="/diseases"
+                search={{ category: 'all' }}
+                className="link link-hover"
+              >
                 {uiText('疾病列表', 'Disease List')}
               </Link>
             </li>
@@ -91,7 +95,11 @@ function DiseaseDetailPage() {
               </Link>
             </li>
             <li>
-              <Link to="/diseases" className="link link-hover">
+              <Link
+                to="/diseases"
+                search={{ category: 'all' }}
+                className="link link-hover"
+              >
                 {uiText('疾病列表', 'Disease List')}
               </Link>
             </li>
@@ -105,7 +113,11 @@ function DiseaseDetailPage() {
             )}
           </span>
         </div>
-        <Link to="/diseases" className="btn btn-primary mt-4">
+        <Link
+          to="/diseases"
+          search={{ category: 'all' }}
+          className="btn btn-primary mt-4"
+        >
           <ArrowLeft className="h-4 w-4 mr-2" />
           {uiText('返回疾病列表', 'Back to Disease List')}
         </Link>
@@ -203,7 +215,11 @@ function DiseaseDetailPage() {
           {uiText('首页', 'Home')}
         </Link>
         <span>/</span>
-        <Link to="/diseases" className="hover:text-amber-700">
+        <Link
+          to="/diseases"
+          search={{ category: 'all' }}
+          className="hover:text-amber-700"
+        >
           {uiText('疾病列表', 'Disease List')}
         </Link>
         <span>/</span>
@@ -213,7 +229,11 @@ function DiseaseDetailPage() {
       </nav>
 
       {/* Back Button */}
-      <Link to="/diseases" className="btn-subtle mb-5 self-start">
+      <Link
+        to="/diseases"
+        search={{ category: 'all' }}
+        className="btn-subtle mb-5 self-start"
+      >
         <ArrowLeft className="h-4 w-4 mr-2" />
         {uiText('返回列表', 'Back to List')}
       </Link>

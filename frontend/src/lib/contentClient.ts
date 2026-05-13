@@ -1,4 +1,8 @@
-import { getWikiContent, toResponse } from '@/content/wikiData';
+import {
+  getWikiContent,
+  getWikiDiseaseContent,
+  toResponse,
+} from '@/content/wikiData';
 import { getLocale } from '@/paraglide/runtime.js';
 import type {
   CharityOrganization,
@@ -22,6 +26,13 @@ type HospitalFilters = {
 type CharityFilters = {
   type?: string;
   search?: string;
+};
+
+export type DiseaseInventoryStats = {
+  draftCount: number;
+  publishedCount: number;
+  totalCatalogReferences: number;
+  totalCount: number;
 };
 
 export async function fetchSiteSettings(): Promise<SiteSettings> {
@@ -82,10 +93,27 @@ export async function fetchDiseases(
   return toResponse(diseases);
 }
 
+export async function fetchDiseaseInventoryStats(): Promise<
+  ContentResponse<DiseaseInventoryStats>
+> {
+  const diseases = getContent().diseases;
+
+  return toResponse({
+    draftCount: diseases.filter((disease) => disease.reviewStatus === 'draft')
+      .length,
+    publishedCount: diseases.filter(isPublishedDisease).length,
+    totalCatalogReferences: diseases.reduce(
+      (total, disease) => total + (disease.catalogRefs?.length ?? 0),
+      0,
+    ),
+    totalCount: diseases.length,
+  });
+}
+
 export async function fetchDiseaseBySlug(
   slug: string,
 ): Promise<ContentResponse<Disease>> {
-  const disease = getContent().diseases.find((item) => item.slug === slug);
+  const disease = await getWikiDiseaseContent(getLocale(), slug);
 
   if (!disease || !isPublishedDisease(disease)) {
     throw new Error('Disease not found');

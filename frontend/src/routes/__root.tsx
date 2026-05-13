@@ -1,5 +1,6 @@
+import type { QueryClient } from '@tanstack/react-query';
 import {
-  createRootRoute,
+  createRootRouteWithContext,
   HeadContent,
   Link,
   Scripts,
@@ -14,7 +15,11 @@ import { trackEvent } from '@/utils/analytics';
 import { uiText } from '@/utils/localeText';
 import styles from '../styles.css?url';
 
-export const Route = createRootRoute({
+type RouterContext = {
+  queryClient: QueryClient;
+};
+
+export const Route = createRootRouteWithContext<RouterContext>()({
   head: () => ({
     meta: [
       {
@@ -83,6 +88,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
               >
                 <Link
                   to="/diseases"
+                  search={{ category: 'all' }}
                   onClick={() =>
                     trackEvent('nav_click', {
                       location: 'header',
@@ -116,6 +122,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
                 </Link>
                 <Link
                   to="/search"
+                  search={{ q: '' }}
                   onClick={() =>
                     trackEvent('nav_click', {
                       location: 'header',

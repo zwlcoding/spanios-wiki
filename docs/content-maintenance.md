@@ -24,9 +24,14 @@ Spanios.wiki is a public-interest rare disease knowledge project. Content should
 - `frontend/src/content/data/catalogs/catalogClassification.ts`
   Assigns catalog entries into medical categories. Explicit slug overrides come first; keyword rules are only a fallback for new catalog entries.
 
-- `frontend/src/content/locales/zh/diseases.ts`
-- `frontend/src/content/locales/en/diseases.ts`
-  Store detailed disease articles. These entries override generated catalog placeholders by slug and can attach hospitals, charities, tags, ICD codes, and richer patient-facing content.
+- `frontend/src/content/locales/<locale>/disease-summaries.ts`
+  Stores the lightweight disease index used by disease lists, search, sitemap generation, and relationship assembly. Keep only card/search metadata here, not full patient-journey or medical-section text.
+
+- `frontend/src/content/locales/<locale>/disease-loaders.ts`
+  Provides the lazy-loading bridge from a disease slug to `disease-drafts/<slug>.ts`. This keeps full article bodies out of the initial client bundle.
+
+- `frontend/src/content/locales/<locale>/disease-drafts/<slug>.ts`
+  Stores one detailed disease article per file. These entries override generated catalog placeholders by slug and can attach hospitals, charities, tags, ICD codes, sources, and richer patient-facing content.
 
 - `frontend/src/content/locales/<locale>/hospitals.ts`
   Stores localized hospital display fields and service-level disease relationships. Relationships should stay neutral and evidence-backed at department, clinic, MDT, or service level.
@@ -35,7 +40,7 @@ Spanios.wiki is a public-interest rare disease knowledge project. Content should
   Stores localized charity and patient-organization entries when there is direct evidence for disease-resource relationships.
 
 - `frontend/src/content/wikiData.ts`
-  Assembles localized categories, detailed disease articles, generated catalog placeholders, hospitals, charities, tags, and source references. It resolves locale fallbacks so a new language can reuse the base Chinese content until a translation is available.
+  Assembles localized categories, lightweight disease summaries, generated catalog placeholders, hospitals, charities, tags, and source references. Disease detail routes call the async disease loader so only the requested full article is assembled with rich body fields.
 
 ## Patient Journey Article Shape
 
@@ -95,14 +100,15 @@ Every detailed article should eventually include sources for symptoms, diagnosis
 
 ## Content Production Workflow
 
-Use external research or generation tools only for drafts. Generated patient-facing text should be reviewed before moving beyond `draft`.
+Detailed articles are maintained directly in the locale-specific disease draft files. Use external research or generation tools only outside the repository or in a temporary workspace. Generated patient-facing text should be reviewed before moving beyond `draft`.
 
 Recommended flow:
 
 1. Collect official and high-quality sources.
-2. Draft patient-friendly content using the patient journey shape.
+2. Create or update `frontend/src/content/locales/<locale>/disease-drafts/<slug>.ts`.
 3. Mark unsupported or uncertain points explicitly rather than smoothing them over.
 4. Add source URLs to `sources`.
-5. Move `reviewStatus` only after patient or medical review.
+5. Add or update the lightweight entry in `frontend/src/content/locales/<locale>/disease-summaries.ts`, keeping only fields needed for cards, search, source provenance, relationships, and review status.
+6. Move `reviewStatus` only after patient or medical review.
 
-MiniMax can be used later for web search, image understanding, and illustration generation if its CLI or MCP is installed and authenticated. Do not commit API keys or generated medical claims without source review.
+Do not commit API keys, temporary research artifacts, generated drafts, or unsupported medical claims. Production content should live in the typed content files and carry source references.

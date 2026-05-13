@@ -3,14 +3,13 @@
   "private": true,
   "packageManager": "pnpm@10.11.0",
   "scripts": {
-    "audit:content": "node scripts/audit_content_quality.mjs",
-    "review": "node scripts/review_pending_drafts.mjs",
-    "review:translation": "node scripts/review_pending_translations.mjs",
-    "review:resource": "node scripts/validate_resource_draft.mjs",
-    "review:translation:validate": "node scripts/validate_translation_draft.mjs",
-    "review:validate": "node scripts/validate_content_draft.mjs",
-    "review:translation:promote": "node scripts/promote_translation_draft.mjs",
-    "review:promote": "node scripts/promote_content_draft.mjs",
-    "translate:en": "node scripts/translate_en_diseases_with_mmx.mjs"
+    "build": "pnpm --filter spanios-wiki-fe build",
+    "check": "pnpm --filter spanios-wiki-fe check",
+    "dev": "pnpm --filter spanios-wiki-fe dev",
+    "format": "pnpm --filter spanios-wiki-fe format",
+    "lint": "pnpm --filter spanios-wiki-fe lint",
+    "start": "pnpm --filter spanios-wiki-fe start",
+    "test": "pnpm --filter spanios-wiki-fe test",
+    "typecheck": "pnpm --filter spanios-wiki-fe exec tsc --noEmit"
   }
 }

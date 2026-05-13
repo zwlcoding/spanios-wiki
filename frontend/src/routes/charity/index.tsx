@@ -65,7 +65,7 @@ function CharityListPage() {
     },
   ];
 
-  const getTypeIcon = (type: string) => {
+  const getTypeIcon = (type: string | undefined) => {
     const icons: Record<
       string,
       { icon: typeof Users; label: string; gradient: string }
@@ -87,9 +87,9 @@ function CharityListPage() {
       },
     };
     return (
-      icons[type] || {
+      (type ? icons[type] : undefined) || {
         icon: HandHeart,
-        label: type,
+        label: type ?? uiText('其他', 'Other'),
         gradient: 'from-stone-400 to-stone-500',
       }
     );

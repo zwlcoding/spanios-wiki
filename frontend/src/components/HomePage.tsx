@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 import { useState } from 'react';
 import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
-import { useDiseases } from '@/hooks/useDiseases';
+import { useDiseaseInventoryStats, useDiseases } from '@/hooks/useDiseases';
 import { useHospitals } from '@/hooks/useHospitals';
 import { getSearchMeta, trackEvent } from '@/utils/analytics';
 import { uiText } from '@/utils/localeText';
@@ -58,14 +58,12 @@ export default function HomePage() {
   const navigate = useNavigate();
   const { data: categoriesData } = useDiseaseCategories();
   const { data: diseasesData } = useDiseases();
+  const { data: diseaseStatsData } = useDiseaseInventoryStats();
   const { data: hospitalsData } = useHospitals();
   const categories = categoriesData?.data ?? [];
   const diseases = diseasesData?.data ?? [];
+  const diseaseStats = diseaseStatsData?.data;
   const hospitals = hospitalsData?.data ?? [];
-  const catalogReferenceCount = diseases.reduce(
-    (total, disease) => total + (disease.catalogRefs?.length ?? 0),
-    0,
-  );
   const quickLinks = [
     {
       title: uiText('疾病资料', 'Disease Guides'),
@@ -234,6 +232,7 @@ export default function HomePage() {
           </div>
           <Link
             to="/diseases"
+            search={{ category: 'all' }}
             className="btn-subtle self-start"
             onClick={() =>
               trackEvent('home_quick_link_click', { target: '/diseases' })
@@ -284,14 +283,18 @@ export default function HomePage() {
       </section>
 
       <section className="py-8">
-        <div className="grid gap-3 sm:grid-cols-3">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {[
             {
-              value: `${diseases.length}`,
-              label: uiText('疾病条目', 'Disease Entries'),
+              value: `${diseaseStats?.totalCount ?? diseases.length}`,
+              label: uiText('已整理疾病', 'Organized Diseases'),
             },
             {
-              value: `${catalogReferenceCount}`,
+              value: `${diseaseStats?.publishedCount ?? diseases.length}`,
+              label: uiText('已发布资料', 'Published Guides'),
+            },
+            {
+              value: `${diseaseStats?.totalCatalogReferences ?? 0}`,
               label: uiText('官方目录条目', 'Official Catalog Items'),
             },
             {

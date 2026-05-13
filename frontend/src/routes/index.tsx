@@ -4,6 +4,7 @@ import MaintenancePage from '@/components/MaintenancePage';
 import { useSiteSettings } from '@/hooks/useSiteSettings';
 import {
   fetchDiseaseCategories,
+  fetchDiseaseInventoryStats,
   fetchDiseases,
   fetchHospitals,
   fetchSiteSettings,
@@ -23,6 +24,10 @@ export const Route = createFileRoute('/')({
       context.queryClient.prefetchQuery({
         queryKey: ['diseases', undefined],
         queryFn: () => fetchDiseases(),
+      }),
+      context.queryClient.prefetchQuery({
+        queryKey: ['diseaseInventoryStats'],
+        queryFn: fetchDiseaseInventoryStats,
       }),
       context.queryClient.prefetchQuery({
         queryKey: ['hospitals', undefined],

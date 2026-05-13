@@ -12,11 +12,7 @@ count.txt
 .output
 .vinxi
 todos.json
-
-# Hermes draft workspace
-content-drafts/*
-!content-drafts/.gitkeep
-!content-drafts/README.md
+source/
 
 # Python cache
 __pycache__/
