@@ -3,26 +3,28 @@ import {
   AlertTriangle,
   ArrowLeft,
   BookOpenCheck,
-  Calendar,
   ClipboardCheck,
   Compass,
   ExternalLink,
   HelpCircle,
-  Hospital,
   ListChecks,
-  type LucideIcon,
   Stethoscope,
   Tag,
   Users,
 } from 'lucide-react';
-import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
+import {
+  BasicInfoSection,
+  CareResourcesSection,
+  DiseaseHeader,
+} from '@/components/disease';
+import {
+  JourneyList,
+  MedicalBlock,
+  QuickLookItem,
+} from '@/components/disease/detail-blocks';
 import { useDisease } from '@/hooks/useDiseases';
 import { fetchDiseaseBySlug } from '@/lib/contentClient';
 import { trackEvent } from '@/utils/analytics';
-import {
-  formatHospitalServiceStage,
-  formatRelationKind,
-} from '@/utils/formatters';
 import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/diseases/$slug')({
@@ -242,77 +244,17 @@ function DiseaseDetailPage() {
         {uiText('返回列表', 'Back to List')}
       </Link>
 
-      {/* Disease Header */}
-      <div className="surface-card mb-8 p-6 sm:p-7">
-        <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
-          <div>
-            {disease.category && (
-              <span className="badge-warm mb-4">{disease.category.name}</span>
-            )}
-            <h1 className="section-title text-3xl sm:text-4xl">
-              {disease.name}
-            </h1>
-            {disease.nameEn && (
-              <p className="mt-2 text-lg text-stone-600 dark:text-stone-400">
-                {disease.nameEn}
-              </p>
-            )}
-          </div>
-          <div className="flex flex-wrap gap-2 self-start">
-            {disease.icd10Code && (
-              <div className="badge-muted">ICD-10: {disease.icd10Code}</div>
-            )}
-            {disease.catalogRefs?.map((ref) => (
-              <div
-                key={`${ref.catalogId}-${ref.itemNumber}`}
-                className="badge-muted"
-              >
-                {uiText(
-                  `${ref.catalogName}第 ${ref.itemNumber} 项`,
-                  `${ref.catalogName} item ${ref.itemNumber}`,
-                )}
-              </div>
-            ))}
-            {!disease.catalogRefs?.length && disease.catalogNumber && (
-              <div className="badge-muted">
-                {uiText(
-                  `目录第 ${disease.catalogNumber} 项`,
-                  `Catalog item ${disease.catalogNumber}`,
-                )}
-              </div>
-            )}
-          </div>
-        </div>
-
-        {disease.alias && (
-          <p className="mt-5 text-sm text-stone-600 dark:text-stone-400">
-            <span className="font-semibold text-stone-900 dark:text-stone-100">
-              {uiText('别名：', 'Also known as:')}
-            </span>
-            {disease.alias}
-          </p>
-        )}
-
-        {disease.oneSentence && (
-          <p className="mt-5 max-w-3xl text-base leading-7 text-stone-700 dark:text-stone-300">
-            {disease.oneSentence}
-          </p>
-        )}
-
-        {disease.featuredImage?.url && (
-          <div className="mt-6 overflow-hidden rounded-md border border-stone-200 bg-stone-100 dark:border-stone-800 dark:bg-stone-900">
-            <img
-              src={disease.featuredImage.url}
-              alt={uiText(
-                `${disease.name}就医导航插图`,
-                `${disease.name} care navigation illustration`,
-              )}
-              className="h-52 w-full object-cover sm:h-64"
-              loading="lazy"
-            />
-          </div>
-        )}
-      </div>
+      <DiseaseHeader
+        alias={disease.alias}
+        catalogNumber={disease.catalogNumber}
+        catalogRefs={disease.catalogRefs}
+        category={disease.category}
+        featuredImage={disease.featuredImage}
+        icd10Code={disease.icd10Code}
+        name={disease.name}
+        nameEn={disease.nameEn}
+        oneSentence={disease.oneSentence}
+      />
 
       {quickLookItems.length > 0 && (
         <section className="content-card mb-8 p-5 sm:p-6">
@@ -401,84 +343,14 @@ function DiseaseDetailPage() {
             </div>
           )}
 
-          {/* Basic Info */}
-          <div className="content-card mb-5 p-5">
-            <h2 className="mb-4 font-semibold text-stone-900 dark:text-stone-100">
-              {uiText('基本信息', 'Basic Information')}
-            </h2>
-            <div className="grid gap-3 sm:grid-cols-2">
-              {disease.prevalence && (
-                <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
-                  <Users className="mt-0.5 h-5 w-5 text-amber-700" />
-                  <div>
-                    <div className="text-sm font-semibold">
-                      {uiText('患病率', 'Prevalence')}
-                    </div>
-                    <div className="text-sm text-stone-600 dark:text-stone-400">
-                      {disease.prevalence}
-                    </div>
-                  </div>
-                </div>
-              )}
-              {disease.category && (
-                <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
-                  <Tag className="mt-0.5 h-5 w-5 text-amber-700" />
-                  <div>
-                    <div className="text-sm font-semibold">
-                      {uiText('分类', 'Category')}
-                    </div>
-                    <div className="text-sm text-stone-600 dark:text-stone-400">
-                      {disease.category.name}
-                    </div>
-                  </div>
-                </div>
-              )}
-              {disease.updatedAt && (
-                <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
-                  <Calendar className="mt-0.5 h-5 w-5 text-amber-700" />
-                  <div>
-                    <div className="text-sm font-semibold">
-                      {uiText('更新时间', 'Updated')}
-                    </div>
-                    <div className="text-sm text-stone-600 dark:text-stone-400">
-                      {new Date(disease.updatedAt).toLocaleDateString('zh-CN')}
-                    </div>
-                  </div>
-                </div>
-              )}
-              {disease.sourceName && (
-                <div className="flex items-start gap-3 rounded-md bg-stone-50 p-3 dark:bg-stone-900/30">
-                  <BookOpenCheck className="mt-0.5 h-5 w-5 text-amber-700" />
-                  <div>
-                    <div className="text-sm font-semibold">
-                      {uiText('资料来源', 'Source')}
-                    </div>
-                    {disease.sourceUrl ? (
-                      <a
-                        href={disease.sourceUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-1 inline-flex items-center gap-1 text-sm text-amber-700 hover:text-amber-600"
-                        onClick={() =>
-                          trackEvent('disease_source_click', {
-                            disease_slug: disease.slug,
-                            source_kind: 'primary',
-                          })
-                        }
-                      >
-                        {disease.sourceName}
-                        <ExternalLink className="h-3.5 w-3.5" />
-                      </a>
-                    ) : (
-                      <div className="text-sm text-stone-600 dark:text-stone-400">
-                        {disease.sourceName}
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+          <BasicInfoSection
+            category={disease.category}
+            diseaseSlug={disease.slug}
+            prevalence={disease.prevalence}
+            sourceName={disease.sourceName}
+            sourceUrl={disease.sourceUrl}
+            updatedAt={disease.updatedAt}
+          />
 
           {medicalBlocks.length > 0 && (
             <div className="content-card p-5">
@@ -509,88 +381,10 @@ function DiseaseDetailPage() {
 
         {/* Sidebar */}
         <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
-          {/* Care resources */}
-          {disease.hospitalServices && disease.hospitalServices.length > 0 && (
-            <div className="content-card mb-5 p-5">
-              <h3 className="mb-4 flex items-center gap-2 font-semibold text-stone-900 dark:text-stone-100">
-                <Hospital className="h-5 w-5 text-amber-700" />
-                {uiText('就医资源', 'Care Resources')}
-              </h3>
-              <p className="-mt-2 mb-4 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
-                {uiText(
-                  '以下为公开收录的科室、服务或 MDT 线索，不代表本站推荐或医疗背书。',
-                  'The following are publicly collected department, service, or MDT leads. They are not recommendations or medical endorsements.',
-                )}
-              </p>
-              <div className="space-y-3">
-                {disease.hospitalServices.map((service) => (
-                  <div
-                    key={service.id}
-                    className="rounded-md border border-stone-200 bg-white p-3 dark:border-stone-700 dark:bg-stone-900/30"
-                  >
-                    {service.hospital && (
-                      <Link
-                        to="/hospitals/$id"
-                        params={{ id: service.hospital.id.toString() }}
-                        className="font-medium transition hover:text-amber-700"
-                        onClick={() =>
-                          trackEvent('disease_related_hospital_click', {
-                            disease_slug: disease.slug,
-                            hospital_id: service.hospital?.id,
-                            service_stage: service.stage,
-                          })
-                        }
-                      >
-                        {service.hospital.name}
-                      </Link>
-                    )}
-                    <div className="mt-1 text-sm text-stone-600 dark:text-stone-400">
-                      {service.departmentName}
-                      {service.serviceName ? ` · ${service.serviceName}` : ''}
-                    </div>
-                    <div className="mt-1 text-xs text-stone-500">
-                      {formatHospitalServiceStage(service.stage)}
-                      {service.relationKind
-                        ? ` · ${formatRelationKind(service.relationKind)}`
-                        : ''}
-                      {service.hospital
-                        ? ` · ${service.hospital.province} ${service.hospital.city}`
-                        : ''}
-                    </div>
-                    {service.notes && (
-                      <p className="mt-2 text-xs leading-relaxed text-stone-500 dark:text-stone-400">
-                        {service.notes}
-                      </p>
-                    )}
-                    {(service.evidenceUrl || service.sourceUrl) && (
-                      <a
-                        href={service.evidenceUrl ?? service.sourceUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="mt-2 inline-flex items-center gap-1 text-xs text-amber-700"
-                        onClick={() =>
-                          trackEvent('disease_source_click', {
-                            disease_slug: disease.slug,
-                            service_id: service.id,
-                            source_kind: 'hospital_service',
-                          })
-                        }
-                      >
-                        {uiText('查看公开来源', 'View Public Source')}
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
-                    )}
-                    {service.lastVerifiedAt && (
-                      <div className="mt-1 text-xs text-stone-500">
-                        {uiText('核验于', 'Verified on')}{' '}
-                        {service.lastVerifiedAt}
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+          <CareResourcesSection
+            diseaseSlug={disease.slug}
+            hospitalServices={disease.hospitalServices ?? []}
+          />
 
           {/* Related Charity Organizations */}
           {disease.charityOrgs && disease.charityOrgs.length > 0 && (
@@ -687,80 +481,5 @@ function DiseaseDetailPage() {
         </div>
       </div>
     </div>
-  );
-}
-
-function QuickLookItem({
-  label,
-  tone,
-  value,
-}: {
-  label: string;
-  tone?: 'primary';
-  value?: string;
-}) {
-  if (!value) {
-    return null;
-  }
-
-  return (
-    <div
-      className={`rounded-md border p-3 ${
-        tone === 'primary'
-          ? 'border-amber-200 bg-amber-50 dark:border-amber-800 dark:bg-amber-950/30'
-          : 'border-stone-200 bg-stone-50 dark:border-stone-800 dark:bg-stone-900/30'
-      }`}
-    >
-      <div className="text-xs font-semibold uppercase tracking-wide text-stone-500 dark:text-stone-400">
-        {label}
-      </div>
-      <p className="mt-2 text-sm leading-6 text-stone-700 dark:text-stone-300">
-        {value}
-      </p>
-    </div>
-  );
-}
-
-function JourneyList({
-  icon: Icon,
-  items,
-  title,
-}: {
-  icon: LucideIcon;
-  items?: string[];
-  title: string;
-}) {
-  if (!items?.length) {
-    return null;
-  }
-
-  return (
-    <section className="rounded-md border border-stone-200 bg-stone-50 p-4 dark:border-stone-800 dark:bg-stone-900/30">
-      <h3 className="mb-2 flex items-center gap-2 text-sm font-semibold text-stone-900 dark:text-stone-100">
-        <Icon className="h-4 w-4 text-amber-700" />
-        {title}
-      </h3>
-      <ul className="space-y-2">
-        {items.map((item) => (
-          <li
-            key={item}
-            className="text-sm leading-6 text-stone-600 before:mr-2 before:text-amber-700 before:content-['•'] dark:text-stone-400"
-          >
-            {item}
-          </li>
-        ))}
-      </ul>
-    </section>
-  );
-}
-
-function MedicalBlock({ html, title }: { html: string; title: string }) {
-  return (
-    <section className="rounded-md border border-stone-200 p-4 dark:border-stone-800">
-      <h3 className="mb-2 text-sm font-semibold text-stone-900 dark:text-stone-100">
-        {title}
-      </h3>
-      <SafeHTMLRenderer html={html} className="content-prose" />
-    </section>
   );
 }
