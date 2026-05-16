@@ -17,6 +17,7 @@ import { tagsByLocale } from '@/content/data/tags';
 import type { DiseaseDraft } from '@/content/data/types';
 import type {
   CharityOrganization,
+  DiseaseCategory,
   ContentResponse,
   ContentSource,
   Disease,
@@ -24,6 +25,7 @@ import type {
   HospitalService,
   Locale,
   LocalizedRecord,
+  Tag,
   WikiContent,
 } from '@/types/content';
 import {
@@ -81,25 +83,66 @@ export async function getWikiDiseaseContent(
   );
 }
 
+/* ------------------------------------------------------------------ */
+/*  Build pipeline                                                     */
+/* ------------------------------------------------------------------ */
+
 function buildWikiContent(
   normalizedLocale: Locale,
   detailedDiseaseDrafts: DiseaseDraft[],
 ): WikiContent {
   const categories = resolveLocalized(categoriesByLocale, normalizedLocale);
   const tags = resolveLocalized(tagsByLocale, normalizedLocale);
-  const catalogDiseaseDrafts = createCatalogDiseaseDrafts(
+
+  const diseases = buildDiseaseGraph(
     normalizedLocale,
+    detailedDiseaseDrafts,
+    categories,
+    tags,
+  );
+
+  const { hospitals, hospitalServices } = buildHospitalGraph(
+    normalizedLocale,
+    diseases,
+  );
+
+  const charities = buildCharityGraph(normalizedLocale, diseases);
+
+  const enrichedDiseases = enrichDiseaseGraph(
+    diseases,
+    hospitalServices,
+    charities,
+    hospitals,
+  );
+
+  return assembleWikiContent({
+    categories,
+    charities,
+    diseases: enrichedDiseases,
+    hospitalServices,
+    hospitals,
+    normalizedLocale,
+    tags,
+  });
+}
+
+/* Stage 1 — diseases */
+function buildDiseaseGraph(
+  locale: Locale,
+  detailedDiseaseDrafts: DiseaseDraft[],
+  categories: DiseaseCategory[],
+  tags: Tag[],
+): InternalDisease[] {
+  const catalogDiseaseDrafts = createCatalogDiseaseDrafts(
+    locale,
     new Set(detailedDiseaseDrafts.map((draft) => draft.slug)),
   );
   const diseaseDrafts = [...detailedDiseaseDrafts, ...catalogDiseaseDrafts];
 
-  const diseases: InternalDisease[] = diseaseDrafts.map((draft) => {
+  return diseaseDrafts.map((draft) => {
     const { categorySlug, charityIds, hospitalIds, tagSlugs, ...disease } =
       draft;
-    const catalogMetadata = getCatalogDiseaseMetadata(
-      normalizedLocale,
-      disease.slug,
-    );
+    const catalogMetadata = getCatalogDiseaseMetadata(locale, disease.slug);
     const sources = mergeSources([
       ...(disease.sources ?? []),
       ...(catalogMetadata?.sources ?? []),
@@ -132,11 +175,14 @@ function buildWikiContent(
       _hospitalIds: hospitalIds,
     };
   });
+}
 
-  const hospitalDrafts = resolveLocalized(
-    hospitalDraftsByLocale,
-    normalizedLocale,
-  );
+/* Stage 2 — hospitals + services */
+function buildHospitalGraph(
+  locale: Locale,
+  diseases: InternalDisease[],
+): { hospitals: Hospital[]; hospitalServices: HospitalService[] } {
+  const hospitalDrafts = resolveLocalized(hospitalDraftsByLocale, locale);
   const hospitals: Hospital[] = hospitalDrafts.map((draft) => {
     const { departments, ...hospital } = draft;
 
@@ -150,7 +196,7 @@ function buildWikiContent(
 
   const hospitalServiceDrafts = resolveLocalized(
     hospitalServiceDraftsByLocale,
-    normalizedLocale,
+    locale,
   );
   const hospitalServices: HospitalService[] = hospitalServiceDrafts.map(
     (service) => ({
@@ -175,11 +221,17 @@ function buildWikiContent(
     );
   }
 
-  const charityDrafts = resolveLocalized(
-    charityDraftsByLocale,
-    normalizedLocale,
-  );
-  const charities: CharityOrganization[] = charityDrafts.map((draft) => {
+  return { hospitals, hospitalServices };
+}
+
+/* Stage 3 — charities */
+function buildCharityGraph(
+  locale: Locale,
+  diseases: InternalDisease[],
+): CharityOrganization[] {
+  const charityDrafts = resolveLocalized(charityDraftsByLocale, locale);
+
+  return charityDrafts.map((draft) => {
     const { diseaseSlugs, ...charity } = draft;
 
     return {
@@ -190,8 +242,16 @@ function buildWikiContent(
         .filter(isPublishedDisease),
     };
   });
+}
 
-  const enrichedDiseases: Disease[] = diseases.map((disease) => {
+/* Stage 4 — enrich diseases with relations */
+function enrichDiseaseGraph(
+  diseases: InternalDisease[],
+  hospitalServices: HospitalService[],
+  charities: CharityOrganization[],
+  hospitals: Hospital[],
+): Disease[] {
+  return diseases.map((disease) => {
     const { _charityIds, _hospitalIds, ...publicDisease } = disease;
     const diseaseHospitalServices = hospitalServices.filter(
       (service) =>
@@ -214,25 +274,50 @@ function buildWikiContent(
       hospitals: uniqueById([...serviceHospitals, ...directHospitals]),
     };
   });
+}
 
-  const content: WikiContent = {
+/* Stage 5 — assemble */
+function assembleWikiContent({
+  categories,
+  charities,
+  diseases,
+  hospitalServices,
+  hospitals,
+  normalizedLocale,
+  tags,
+}: {
+  categories: DiseaseCategory[];
+  charities: CharityOrganization[];
+  diseases: Disease[];
+  hospitalServices: HospitalService[];
+  hospitals: Hospital[];
+  normalizedLocale: Locale;
+  tags: Tag[];
+}): WikiContent {
+  return {
     assistancePrograms: [],
     categories,
     charities,
-    diseases: enrichedDiseases,
+    diseases,
     hospitalServices,
     hospitals,
     medicines: [],
     siteSettings: resolveLocalized(siteSettingsByLocale, normalizedLocale),
     tags,
   };
-
-  return content;
 }
+
+/* ------------------------------------------------------------------ */
+/*  Public helpers                                                     */
+/* ------------------------------------------------------------------ */
 
 export function toResponse<T>(data: T): ContentResponse<T> {
   return { data };
 }
+
+/* ------------------------------------------------------------------ */
+/*  Internal types & utilities                                         */
+/* ------------------------------------------------------------------ */
 
 type InternalDisease = Disease & {
   _charityIds: number[];
