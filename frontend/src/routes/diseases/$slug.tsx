@@ -19,6 +19,10 @@ import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import { useDisease } from '@/hooks/useDiseases';
 import { fetchDiseaseBySlug } from '@/lib/contentClient';
 import { trackEvent } from '@/utils/analytics';
+import {
+  formatHospitalServiceStage,
+  formatRelationKind,
+} from '@/utils/formatters';
 import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/diseases/$slug')({
@@ -759,28 +763,4 @@ function MedicalBlock({ html, title }: { html: string; title: string }) {
       <SafeHTMLRenderer html={html} className="content-prose" />
     </section>
   );
-}
-
-function formatHospitalServiceStage(stage?: string) {
-  const labels: Record<string, string> = {
-    diagnosis: uiText('诊断评估', 'Diagnosis Evaluation'),
-    'follow-up': uiText('长期随访', 'Long-term Follow-up'),
-    'genetic-counseling': uiText('遗传咨询', 'Genetic Counseling'),
-    treatment: uiText('治疗管理', 'Treatment Management'),
-  };
-
-  return stage
-    ? (labels[stage] ?? stage)
-    : uiText('就医信息参考', 'Care Information Reference');
-}
-
-function formatRelationKind(kind?: string) {
-  const labels: Record<string, string> = {
-    'clinic-or-mdt': uiText('门诊/MDT', 'Clinic/MDT'),
-    'department-service': uiText('科室服务', 'Department Service'),
-    'public-directory': uiText('公开目录', 'Public Directory'),
-    'rare-disease-network': uiText('罕见病网络', 'Rare Disease Network'),
-  };
-
-  return kind ? (labels[kind] ?? kind) : uiText('公开线索', 'Public Lead');
 }

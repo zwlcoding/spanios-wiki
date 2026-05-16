@@ -12,6 +12,7 @@ import type {
   Hospital,
   SiteSettings,
 } from '@/types/content';
+import { diseaseMatchesSearch } from '@/utils/searchableText';
 
 type DiseaseFilters = {
   category?: string;
@@ -51,41 +52,7 @@ export async function fetchDiseases(
       !filters?.category ||
       filters.category === 'all' ||
       disease.category?.slug === filters.category;
-    const matchesSearch = matchesQuery(filters?.search, [
-      disease.name,
-      disease.nameEn,
-      disease.alias,
-      disease.icd10Code,
-      disease.oneSentence,
-      disease.plainName,
-      disease.prevalence,
-      disease.quickLook?.whatItIs,
-      disease.quickLook?.whoToSeeFirst,
-      disease.quickLook?.commonDelayReason,
-      ...(disease.patientJourney?.whenToSuspect ?? []),
-      ...(disease.patientJourney?.commonWrongTurns ?? []),
-      ...(disease.patientJourney?.diagnosisChecklist ?? []),
-      ...(disease.patientJourney?.firstDepartments ?? []),
-      ...(disease.patientJourney?.questionsForDoctor ?? []),
-      ...(disease.patientJourney?.testsToAskAbout ?? []),
-      disease.symptoms,
-      disease.diagnosis,
-      disease.treatment,
-      disease.medicalSections?.symptoms,
-      disease.medicalSections?.diagnosis,
-      disease.medicalSections?.treatment,
-      disease.medicalSections?.longTermCare,
-      disease.medicalSections?.fertilityOrFamily,
-      disease.medicalSections?.emergencySigns,
-      disease.sourceName,
-      disease.catalogNumber ? `目录第 ${disease.catalogNumber} 项` : undefined,
-      ...(disease.catalogRefs?.map(
-        (ref) => `${ref.catalogName} 第 ${ref.itemNumber} 项`,
-      ) ?? []),
-      ...(disease.sources?.map((source) => source.name) ?? []),
-      disease.category?.name,
-      ...(disease.tags?.map((tag) => tag.name) ?? []),
-    ]);
+    const matchesSearch = diseaseMatchesSearch(disease, filters?.search);
 
     return matchesCategory && matchesSearch;
   });

@@ -2,26 +2,16 @@ import { createFileRoute, Link } from '@tanstack/react-router';
 import {
   Activity,
   ArrowUpRight,
-  Bone,
-  Brain,
   ChevronRight,
-  Dna,
-  Droplet,
-  Eye,
   Filter,
-  FlaskConical,
-  HeartPulse,
-  Network,
   Search,
-  Shield,
-  Sparkles,
-  Stethoscope,
 } from 'lucide-react';
 import { useEffect, useRef, useState } from 'react';
 import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
 import { useDiseases } from '@/hooks/useDiseases';
 import { fetchDiseaseCategories, fetchDiseases } from '@/lib/contentClient';
 import { getSearchMeta, trackEvent } from '@/utils/analytics';
+import { getCategoryIcon } from '@/utils/categoryIcons';
 import { uiText } from '@/utils/localeText';
 
 export const Route = createFileRoute('/diseases/')({
@@ -44,23 +34,6 @@ export const Route = createFileRoute('/diseases/')({
   },
   component: DiseasesListPage,
 });
-
-const categoryIconByName = {
-  activity: Activity,
-  bone: Bone,
-  brain: Brain,
-  dna: Dna,
-  droplet: Droplet,
-  eye: Eye,
-  flask: FlaskConical,
-  'heart-pulse': HeartPulse,
-  kidney: Droplet,
-  lungs: Activity,
-  network: Network,
-  shield: Shield,
-  sparkles: Sparkles,
-  stethoscope: Stethoscope,
-};
 
 function DiseasesListPage() {
   const { category: initialCategory = 'all' } = Route.useSearch();
@@ -100,9 +73,7 @@ function DiseasesListPage() {
       id: cat.slug,
       name: cat.name,
       slug: cat.slug,
-      icon:
-        categoryIconByName[cat.icon as keyof typeof categoryIconByName] ??
-        Stethoscope,
+      icon: getCategoryIcon(cat.icon),
     })) || []),
   ];
 

@@ -1,46 +1,19 @@
 import { Link, useNavigate } from '@tanstack/react-router';
 import {
-  Activity,
   ArrowRight,
-  Bone,
   BookOpenCheck,
-  Brain,
-  Dna,
-  Droplet,
-  Eye,
-  FlaskConical,
   HandHeart,
   HeartPulse,
   Hospital,
-  Network,
   Search,
-  Shield,
-  Sparkles,
-  Stethoscope,
 } from 'lucide-react';
 import { useState } from 'react';
 import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
 import { useDiseaseInventoryStats, useDiseases } from '@/hooks/useDiseases';
 import { useHospitals } from '@/hooks/useHospitals';
 import { getSearchMeta, trackEvent } from '@/utils/analytics';
+import { getCategoryIcon } from '@/utils/categoryIcons';
 import { uiText } from '@/utils/localeText';
-
-const categoryIconByName = {
-  activity: Activity,
-  bone: Bone,
-  brain: Brain,
-  dna: Dna,
-  droplet: Droplet,
-  eye: Eye,
-  flask: FlaskConical,
-  'heart-pulse': HeartPulse,
-  kidney: Droplet,
-  lungs: Activity,
-  network: Network,
-  shield: Shield,
-  sparkles: Sparkles,
-  stethoscope: Stethoscope,
-};
 
 const categoryTones = [
   'text-violet-700 bg-violet-50 border-violet-100',
@@ -245,10 +218,7 @@ export default function HomePage() {
 
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category, index) => {
-            const Icon =
-              categoryIconByName[
-                category.icon as keyof typeof categoryIconByName
-              ] ?? Stethoscope;
+            const Icon = getCategoryIcon(category.icon);
             const count = diseases.filter(
               (disease) => disease.category?.slug === category.slug,
             ).length;
