@@ -70,11 +70,11 @@ export async function getWikiDiseaseContent(
     );
   }
 
-  const diseaseDrafts: DiseaseDraft[] = summaryDrafts.some(
-    (draft) => draft.slug === slug,
-  )
+  const diseaseDrafts = summaryDrafts.some((draft) => draft.slug === slug)
     ? summaryDrafts.map((draft) =>
-        draft.slug === slug ? { ...draft, ...detailedDiseaseDraft } : draft,
+        draft.slug === slug
+          ? mergeDiseaseDraft(draft, detailedDiseaseDraft)
+          : draft,
       )
     : [...summaryDrafts, detailedDiseaseDraft];
 
@@ -313,6 +313,23 @@ function assembleWikiContent({
 
 export function toResponse<T>(data: T): ContentResponse<T> {
   return { data };
+}
+
+/**
+ * Merge a summary draft with its detailed (lazy-loaded) draft.
+ *
+ * The detailed draft is the source of truth for any field it provides;
+ * the summary supplies fallback values for fields not present in the
+ * detailed draft (e.g. id, slug, categorySlug, charityIds, hospitalIds).
+ *
+ * This keeps the eager summary file small while allowing the lazy draft
+ * to override or extend any shared field.
+ */
+function mergeDiseaseDraft(
+  summary: DiseaseDraft,
+  detailed: DiseaseDraft,
+): DiseaseDraft {
+  return { ...summary, ...detailed };
 }
 
 /* ------------------------------------------------------------------ */
