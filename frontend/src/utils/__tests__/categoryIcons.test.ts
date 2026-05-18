@@ -1,5 +1,5 @@
-import { describe, expect, it } from 'vitest';
 import { Activity, Bone, Brain, Eye } from 'lucide-react';
+import { describe, expect, it } from 'vitest';
 import { categoryIconByName, getCategoryIcon } from '../categoryIcons';
 
 describe('categoryIconByName', () => {

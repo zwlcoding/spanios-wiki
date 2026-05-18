@@ -1,5 +1,10 @@
-import { BookOpenCheck, Calendar, Tag, Users } from 'lucide-react';
-import { ExternalLink } from 'lucide-react';
+import {
+  BookOpenCheck,
+  Calendar,
+  ExternalLink,
+  Tag,
+  Users,
+} from 'lucide-react';
 import { trackEvent } from '@/utils/analytics';
 import { uiText } from '@/utils/localeText';
 

@@ -17,10 +17,10 @@ import { tagsByLocale } from '@/content/data/tags';
 import type { DiseaseDraft } from '@/content/data/types';
 import type {
   CharityOrganization,
-  DiseaseCategory,
   ContentResponse,
   ContentSource,
   Disease,
+  DiseaseCategory,
   Hospital,
   HospitalService,
   Locale,

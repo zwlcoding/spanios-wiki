@@ -1,12 +1,12 @@
 import { createFileRoute, Link } from '@tanstack/react-router';
 import { ArrowLeft, Building, ExternalLink } from 'lucide-react';
-import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import {
   HospitalContactSection,
   HospitalHeader,
   HospitalQuickActions,
   HospitalServicesSection,
 } from '@/components/hospital';
+import { SafeHTMLRenderer } from '@/components/SafeHTMLRenderer';
 import { useHospital } from '@/hooks/useHospitals';
 import { fetchHospitalById } from '@/lib/contentClient';
 import { trackEvent } from '@/utils/analytics';

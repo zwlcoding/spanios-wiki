@@ -1,10 +1,10 @@
 import { describe, expect, it } from 'vitest';
+import type { Disease } from '@/types/content';
 import {
   diseaseMatchesSearch,
   normalizeSearchText,
   toSearchableText,
 } from '../searchableText';
-import type { Disease } from '@/types/content';
 
 function makeDisease(partial: Partial<Disease> = {}): Disease {
   return {
@@ -78,7 +78,12 @@ describe('toSearchableText', () => {
     const disease = makeDisease({
       catalogNumber: 42,
       catalogRefs: [
-        { catalogId: 'first', catalogName: '第一批', itemNumber: 42, sourceUrl: '' },
+        {
+          catalogId: 'first',
+          catalogName: '第一批',
+          itemNumber: 42,
+          sourceUrl: '',
+        },
       ],
     });
 
@@ -89,7 +94,16 @@ describe('toSearchableText', () => {
 
   it('includes tag names when present', () => {
     const disease = makeDisease({
-      tags: [{ id: 1, documentId: 'tag-1', name: '遗传咨询', slug: 'genetic-counseling', createdAt: '', updatedAt: '' }],
+      tags: [
+        {
+          id: 1,
+          documentId: 'tag-1',
+          name: '遗传咨询',
+          slug: 'genetic-counseling',
+          createdAt: '',
+          updatedAt: '',
+        },
+      ],
     });
 
     const text = toSearchableText(disease);
