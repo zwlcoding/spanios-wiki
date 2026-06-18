@@ -7,9 +7,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'China-Dolls Center for Rare Disorders (CCRD)',
     type: 'patient_org',
     description:
-      'China-Dolls Center for Rare Disorders (CCRD) is a patient/support organization lead related to osteogenesis imperfecta (OI), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'China-Dolls Center for Rare Disorders (CCRD) is a patient/support organization lead related to osteogenesis imperfecta (OI), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '010-63458713',
+    email: 'info@chinadolls.org.cn',
+    website: 'http://www.chinadolls.org.cn',
+    wechat: '瓷娃娃罕见病关爱中心',
     diseaseSlugs: ['osteogenesis-imperfecta-brittle-bone-disease'],
   },
   {
@@ -17,9 +21,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Jinzhou China-Dolls Charity Association',
     type: 'patient_org',
     description:
-      'Jinzhou China-Dolls Charity Association is a patient/support organization lead related to osteogenesis imperfecta, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Jinzhou China-Dolls Charity Association is a patient/support organization lead related to osteogenesis imperfecta, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '谭纯慧',
+    website: 'https://jzcww.wohenok.com/',
     diseaseSlugs: ['osteogenesis-imperfecta-brittle-bone-disease'],
   },
   {
@@ -27,9 +33,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'LAM China',
     type: 'patient_org',
     description:
-      'LAM China is a patient/support organization lead related to lymphangioleiomyomatosis (LAM), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'LAM China is a patient/support organization lead related to lymphangioleiomyomatosis (LAM), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '01083545711',
+    email: 'lam_org@sina.com',
+    website: 'http://www.lamchina.com.cn/index.html',
     diseaseSlugs: ['lymphangioleiomyomatosis-lam'],
   },
   {
@@ -37,9 +46,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'CMT Care Center',
     type: 'patient_org',
     description:
-      'CMT Care Center is a patient/support organization lead related to Charcot-Marie-Tooth disease (CMT), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'CMT Care Center is a patient/support organization lead related to Charcot-Marie-Tooth disease (CMT), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'cmt@cmtchina.org',
+    website: 'http://www.cmtchina.org/',
     diseaseSlugs: ['charcot-marie-tooth-disease'],
   },
   {
@@ -47,9 +58,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Hyacinth Huntington Disease Care',
     type: 'patient_org',
     description:
-      'Hyacinth Huntington Disease Care is a patient/support organization lead related to Huntington disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Hyacinth Huntington Disease Care is a patient/support organization lead related to Huntington disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '15982091701',
+    email: 'cao@hdcare.org.cn',
+    website: 'http://www.hdcare.org.cn/',
+    wechat: '风信子亨廷顿舞蹈症',
     diseaseSlugs: ['huntington-disease'],
   },
   {
@@ -57,9 +72,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'FSHD-China Patient Support Group',
     type: 'patient_org',
     description:
-      'FSHD-China Patient Support Group is a patient/support organization lead related to facioscapulohumeral muscular dystrophy (FSHD), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'FSHD-China Patient Support Group is a patient/support organization lead related to facioscapulohumeral muscular dystrophy (FSHD), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '13206865756',
+    email: 'fshd_china@163.com',
+    website: 'http://www.fshd-china.org/',
+    wechat: '你并不孤单FSHD',
     diseaseSlugs: ['facioscapulohumeral-muscular-dystrophy'],
   },
   {
@@ -67,9 +86,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Tianjin Hezhong Rare Disease Care and Aid Center',
     type: 'patient_org',
     description:
-      'Tianjin Hezhong Rare Disease Care and Aid Center is a patient/support organization lead related to Klinefelter syndrome, Kallmann syndrome, idiopathic hypogonadotropic hypogonadism and related sex-development conditions, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Tianjin Hezhong Rare Disease Care and Aid Center is a patient/support organization lead related to Klinefelter syndrome, Kallmann syndrome, idiopathic hypogonadotropic hypogonadism and related sex-development conditions, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '022-60466328',
+    email: 'tjhzxxy47gland@sina.com',
+    website: 'http://www.xxy47chirl',
+    wechat: '克氏综合征',
     diseaseSlugs: [
       'idiopathic-hypogonadotropic-hypogonadism',
       'kallmann-syndrome',
@@ -80,9 +103,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Old K Home',
     type: 'patient_org',
     description:
-      'Old K Home is a patient/support organization lead related to Kallmann syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Old K Home is a patient/support organization lead related to Kallmann syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '15600115813',
+    email: 'kallmann@163.com',
+    wechat: '老K之家；kallmann',
     diseaseSlugs: ['kallmann-syndrome'],
   },
   {
@@ -90,9 +116,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Moon Child Home',
     type: 'patient_org',
     description:
-      'Moon Child Home is a patient/support organization lead related to albinism, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Moon Child Home is a patient/support organization lead related to albinism, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '029-81940112',
+    email: 'info@albinism.org.cn',
+    website: 'https://albinism.org.cn/',
+    wechat: '月亮孩子之家',
     diseaseSlugs: ['albinism'],
   },
   {
@@ -100,9 +130,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Anan Rett Syndrome Rare Disease Institute',
     type: 'patient_org',
     description:
-      'Anan Rett Syndrome Rare Disease Institute is a patient/support organization lead related to Rett syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Anan Rett Syndrome Rare Disease Institute is a patient/support organization lead related to Rett syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'tam@rscri.org',
+    website: 'http://www.rscri.org/',
     diseaseSlugs: ['rett-syndrome'],
   },
   {
@@ -110,9 +142,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'DEBRA China / Butterfly Baby Care Center',
     type: 'patient_org',
     description:
-      'DEBRA China / Butterfly Baby Care Center is a patient/support organization lead related to hereditary epidermolysis bullosa, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'DEBRA China / Butterfly Baby Care Center is a patient/support organization lead related to hereditary epidermolysis bullosa, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '13918503042',
+    email: 'debra_china@163.com',
+    website: 'http://www.debra.org.cn',
+    wechat: 'DebRA-China',
     diseaseSlugs: ['hereditary-epidermolysis-bullosa'],
   },
   {
@@ -120,9 +156,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Aili Myasthenia Gravis Care Center',
     type: 'patient_org',
     description:
-      'Aili Myasthenia Gravis Care Center is a patient/support organization lead related to myasthenia gravis, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Aili Myasthenia Gravis Care Center is a patient/support organization lead related to myasthenia gravis, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '爱力办公室主任丁江波 djb@ailimg.com',
+    email: 'djb@ailimg.com',
+    website: 'http://www.ailimg.org/',
+    wechat: '爱力关爱中心',
     diseaseSlugs: ['generalized-myasthenia-gravis'],
   },
   {
@@ -130,9 +170,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'China Alport Syndrome Family Association',
     type: 'patient_org',
     description:
-      'China Alport Syndrome Family Association is a patient/support organization lead related to Alport syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'China Alport Syndrome Family Association is a patient/support organization lead related to Alport syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '民政注册名称：赤峰福慧达罕见病关爱中心',
+    email: 'alport_cn@126.com',
+    website: 'http://www.alport.cn/',
+    wechat: 'alportjy（Alport家园）',
     diseaseSlugs: ['alport-syndrome'],
   },
   {
@@ -140,9 +184,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'MS and NMO Patient Association',
     type: 'patient_org',
     description:
-      'MS and NMO Patient Association is a patient/support organization lead related to multiple sclerosis and neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'MS and NMO Patient Association is a patient/support organization lead related to multiple sclerosis and neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    website: 'https://www.mszj.com/portal.php',
     diseaseSlugs: ['multiple-sclerosis', 'neuromyelitis-optica'],
   },
   {
@@ -150,9 +195,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Multiple Sclerosis Home',
     type: 'patient_org',
     description:
-      'Multiple Sclerosis Home is a patient/support organization lead related to multiple sclerosis and neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Multiple Sclerosis Home is a patient/support organization lead related to multiple sclerosis and neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: 'MS和NMO病友会联合创始人“村长”高稳',
+    website: 'https://app.mszj.com//homePage',
+    wechat: '多发性硬化之家',
     diseaseSlugs: ['multiple-sclerosis', 'neuromyelitis-optica'],
   },
   {
@@ -160,9 +208,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'NMO Shanghai Home',
     type: 'patient_org',
     description:
-      'NMO Shanghai Home is a patient/support organization lead related to neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'NMO Shanghai Home is a patient/support organization lead related to neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '丁晓燕',
     diseaseSlugs: ['neuromyelitis-optica'],
   },
   {
@@ -170,9 +219,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'NMO Chengdu Home',
     type: 'patient_org',
     description:
-      'NMO Chengdu Home is a patient/support organization lead related to neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'NMO Chengdu Home is a patient/support organization lead related to neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['neuromyelitis-optica'],
   },
   {
@@ -180,9 +229,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'NMO Care Center',
     type: 'patient_org',
     description:
-      'NMO Care Center is a patient/support organization lead related to neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'NMO Care Center is a patient/support organization lead related to neuromyelitis optica, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['neuromyelitis-optica'],
   },
   {
@@ -190,9 +239,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'PNH Patient Home',
     type: 'patient_org',
     description:
-      'PNH Patient Home is a patient/support organization lead related to paroxysmal nocturnal hemoglobinuria (PNH), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'PNH Patient Home is a patient/support organization lead related to paroxysmal nocturnal hemoglobinuria (PNH), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    website: 'http://www.pnhchina.org',
     diseaseSlugs: ['paroxysmal-nocturnal-hemoglobinuria'],
   },
   {
@@ -200,9 +250,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Narcolepsy Mutual Aid Alliance',
     type: 'patient_org',
     description:
-      'Narcolepsy Mutual Aid Alliance is a patient/support organization lead related to narcolepsy, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Narcolepsy Mutual Aid Alliance is a patient/support organization lead related to narcolepsy, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '86-10-67500717',
+    email: 'public@cord.org.cn',
+    website: 'http://www.narcolepsychina.org.cn/',
     diseaseSlugs: ['narcolepsy'],
   },
   {
@@ -210,9 +263,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'CAH & AHC Mutual Aid Center',
     type: 'patient_org',
     description:
-      'CAH & AHC Mutual Aid Center is a patient/support organization lead related to congenital adrenal hyperplasia and congenital adrenal hypoplasia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'CAH & AHC Mutual Aid Center is a patient/support organization lead related to congenital adrenal hyperplasia and congenital adrenal hypoplasia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: [
       '21-hydroxylase-deficiency',
       'congenital-adrenal-hypoplasia',
@@ -223,9 +276,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'CAH Mutual Aid Home',
     type: 'patient_org',
     description:
-      'CAH Mutual Aid Home is a patient/support organization lead related to congenital adrenal hyperplasia (CAH), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'CAH Mutual Aid Home is a patient/support organization lead related to congenital adrenal hyperplasia (CAH), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    wechat: 'CAH互助之家；CAH_Family',
     diseaseSlugs: ['21-hydroxylase-deficiency'],
   },
   {
@@ -233,9 +287,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Beijing Kangxin Marfan Syndrome Care Center',
     type: 'patient_org',
     description:
-      'Beijing Kangxin Marfan Syndrome Care Center is a patient/support organization lead related to Marfan syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Beijing Kangxin Marfan Syndrome Care Center is a patient/support organization lead related to Marfan syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['marfan-syndrome'],
   },
   {
@@ -243,9 +297,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Inflammatory Myofibroblastic Tumor Home',
     type: 'patient_org',
     description:
-      'Inflammatory Myofibroblastic Tumor Home is a patient/support organization lead related to inflammatory myofibroblastic tumor, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Inflammatory Myofibroblastic Tumor Home is a patient/support organization lead related to inflammatory myofibroblastic tumor, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    wechat: 'IMT-FAMILY',
     diseaseSlugs: ['inflammatory-myofibroblastic-tumor'],
   },
   {
@@ -253,9 +308,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'China Fabry Patient Association',
     type: 'patient_org',
     description:
-      'China Fabry Patient Association is a patient/support organization lead related to Fabry disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'China Fabry Patient Association is a patient/support organization lead related to Fabry disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    wechat: '法布雷病病友会',
     diseaseSlugs: ['fabry-disease'],
   },
   {
@@ -263,9 +319,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Pompe Rare Disease Care Center',
     type: 'patient_org',
     description:
-      'Pompe Rare Disease Care Center is a patient/support organization lead related to Pompe disease / glycogen storage disease type II, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Pompe Rare Disease Care Center is a patient/support organization lead related to Pompe disease / glycogen storage disease type II, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'public@pompe.org.cn',
+    website: 'https://www.pompe.org.cn',
+    wechat: '庞贝氏罕见病关爱中心；PompeChina',
     diseaseSlugs: ['glycogen-storage-disease-type-i-ii'],
   },
   {
@@ -273,9 +332,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Hemophilia Home Beijing',
     type: 'patient_org',
     description:
-      'Hemophilia Home Beijing is a patient/support organization lead related to hemophilia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Hemophilia Home Beijing is a patient/support organization lead related to hemophilia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '010-59425987',
+    email: 'hhc@xueyou.org',
+    website: 'http://web.bjxueyou.cn/index.aspx',
+    wechat: '血友之家',
     diseaseSlugs: ['hemophilia'],
   },
   {
@@ -283,9 +346,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Tianjin Youai Rare Disease Care Service Center',
     type: 'patient_org',
     description:
-      'Tianjin Youai Rare Disease Care Service Center is a patient/support organization lead related to hemophilia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Tianjin Youai Rare Disease Care Service Center is a patient/support organization lead related to hemophilia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '王会长',
+    phone: '18622027181；022-24147728',
+    email: 'wanglx@yajy.org',
+    wechat: 'tianjinxueyou',
     diseaseSlugs: ['hemophilia'],
   },
   {
@@ -293,9 +360,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Heilongjiang Hemophilia Home',
     type: 'patient_org',
     description:
-      'Heilongjiang Hemophilia Home is a patient/support organization lead related to hemophilia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Heilongjiang Hemophilia Home is a patient/support organization lead related to hemophilia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '15946523979',
+    website: 'http://www.hljxyzj.com/',
     diseaseSlugs: ['hemophilia'],
   },
   {
@@ -303,9 +372,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Beijing Zhengyu MPS Rare Disease Care Center',
     type: 'patient_org',
     description:
-      'Beijing Zhengyu MPS Rare Disease Care Center is a patient/support organization lead related to mucopolysaccharidosis, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Beijing Zhengyu MPS Rare Disease Care Center is a patient/support organization lead related to mucopolysaccharidosis, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    wechat: '粘多糖罕见病关爱中心',
     diseaseSlugs: ['mucopolysaccharidosis'],
   },
   {
@@ -313,9 +383,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Neurofibromatosis Bubble Home',
     type: 'patient_org',
     description:
-      'Neurofibromatosis Bubble Home is a patient/support organization lead related to neurofibromatosis, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Neurofibromatosis Bubble Home is a patient/support organization lead related to neurofibromatosis, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['neurofibromatosis'],
   },
   {
@@ -323,9 +393,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Wilson Disease Copper Dolls Care Center',
     type: 'patient_org',
     description:
-      'Wilson Disease Copper Dolls Care Center is a patient/support organization lead related to Wilson disease / hepatolenticular degeneration, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Wilson Disease Copper Dolls Care Center is a patient/support organization lead related to Wilson disease / hepatolenticular degeneration, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'wilson-china@wilson-china.org.cn',
     diseaseSlugs: ['hepatolenticular-degeneration-wilson-disease'],
   },
   {
@@ -333,9 +404,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Tongxin Wilson Disease Information Service Center',
     type: 'patient_org',
     description:
-      'Tongxin Wilson Disease Information Service Center is a patient/support organization lead related to Wilson disease / hepatolenticular degeneration, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Tongxin Wilson Disease Information Service Center is a patient/support organization lead related to Wilson disease / hepatolenticular degeneration, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    wechat: '同馨肝豆',
     diseaseSlugs: ['hepatolenticular-degeneration-wilson-disease'],
   },
   {
@@ -343,9 +415,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Beijing Dongfang Siyu ALS Care Center',
     type: 'patient_org',
     description:
-      'Beijing Dongfang Siyu ALS Care Center is a patient/support organization lead related to amyotrophic lateral sclerosis (ALS), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Beijing Dongfang Siyu ALS Care Center is a patient/support organization lead related to amyotrophic lateral sclerosis (ALS), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '王金环女士',
+    phone: '010-59473804',
+    email: 'als@jiandongren.org',
+    website: 'http://www.jiandongren.org',
     diseaseSlugs: ['amyotrophic-lateral-sclerosis'],
   },
   {
@@ -353,9 +429,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Shanghai Pudong Dandelion ALS Care Center',
     type: 'patient_org',
     description:
-      'Shanghai Pudong Dandelion ALS Care Center is a patient/support organization lead related to amyotrophic lateral sclerosis (ALS), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Shanghai Pudong Dandelion ALS Care Center is a patient/support organization lead related to amyotrophic lateral sclerosis (ALS), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'alsshanghai@126.com',
+    website: 'http://www.alshome.cn',
+    wechat: '蒲公英渐冻人',
     diseaseSlugs: ['amyotrophic-lateral-sclerosis'],
   },
   {
@@ -363,9 +442,13 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'China Gaucher Patient Association',
     type: 'patient_org',
     description:
-      'China Gaucher Patient Association is a patient/support organization lead related to Gaucher disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'China Gaucher Patient Association is a patient/support organization lead related to Gaucher disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '王军（',
+    phone: '13552701892',
+    website: 'http://www.gaucherchina.com',
+    wechat: '戈谢病病友会；820349622',
     diseaseSlugs: ['gauchers-disease'],
   },
   {
@@ -373,9 +456,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Peutz-Jeghers Syndrome Care Center',
     type: 'patient_org',
     description:
-      'Peutz-Jeghers Syndrome Care Center is a patient/support organization lead related to Peutz-Jeghers syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Peutz-Jeghers Syndrome Care Center is a patient/support organization lead related to Peutz-Jeghers syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['peutz-jeghers-syndrome'],
   },
   {
@@ -383,9 +466,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: '1.3m Vision Achondroplasia Patient Group',
     type: 'patient_org',
     description:
-      '1.3m Vision Achondroplasia Patient Group is a patient/support organization lead related to achondroplasia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      '1.3m Vision Achondroplasia Patient Group is a patient/support organization lead related to achondroplasia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['achondroplasia'],
   },
   {
@@ -393,9 +476,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'China Niemann-Pick Care Center',
     type: 'patient_org',
     description:
-      'China Niemann-Pick Care Center is a patient/support organization lead related to Niemann-Pick disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'China Niemann-Pick Care Center is a patient/support organization lead related to Niemann-Pick disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '13884680368',
     diseaseSlugs: ['niemann-pick-disease'],
   },
   {
@@ -403,9 +487,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Pituitary Tumor GH Patient Group',
     type: 'patient_org',
     description:
-      'Pituitary Tumor GH Patient Group is a patient/support organization lead related to acromegaly / pituitary GH-related disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Pituitary Tumor GH Patient Group is a patient/support organization lead related to acromegaly / pituitary GH-related disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '柳春青',
+    email: 'capawapo@qq.com',
+    website: 'https://capa.wohenok.com/',
     diseaseSlugs: ['acromegaly'],
   },
   {
@@ -413,9 +500,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Transthyretin Amyloidosis Patient Group',
     type: 'patient_org',
     description:
-      'Transthyretin Amyloidosis Patient Group is a patient/support organization lead related to transthyretin amyloidosis, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Transthyretin Amyloidosis Patient Group is a patient/support organization lead related to transthyretin amyloidosis, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['transthyretin-amyloidosis'],
   },
   {
@@ -423,9 +510,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'MMA Hope Home',
     type: 'patient_org',
     description:
-      'MMA Hope Home is a patient/support organization lead related to methylmalonic acidemia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'MMA Hope Home is a patient/support organization lead related to methylmalonic acidemia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '喆爸',
     diseaseSlugs: ['methylmalonic-academia'],
   },
   {
@@ -433,9 +521,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'MMA and PA Home',
     type: 'patient_org',
     description:
-      'MMA and PA Home is a patient/support organization lead related to methylmalonic acidemia and propionic acidemia, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'MMA and PA Home is a patient/support organization lead related to methylmalonic acidemia and propionic acidemia, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '刘英娜',
     diseaseSlugs: ['methylmalonic-academia'],
   },
   {
@@ -443,9 +532,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'PID Jiayou Baby Care Center',
     type: 'patient_org',
     description:
-      'PID Jiayou Baby Care Center is a patient/support organization lead related to primary immunodeficiency (PID), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'PID Jiayou Baby Care Center is a patient/support organization lead related to primary immunodeficiency (PID), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    website: 'http://www.chinapid.org.cn',
+    wechat: 'China_PID；China_PID | 网址：www.chinapid.org.cn',
     diseaseSlugs: ['primary-immunodeficiency'],
   },
   {
@@ -453,9 +544,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Beijing Daai Tianshi PKU Rare Disease Care Center',
     type: 'patient_org',
     description:
-      'Beijing Daai Tianshi PKU Rare Disease Care Center is a patient/support organization lead related to phenylketonuria (PKU), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Beijing Daai Tianshi PKU Rare Disease Care Center is a patient/support organization lead related to phenylketonuria (PKU), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '赵宁',
+    website: 'http://www.pkuunion.org/',
     diseaseSlugs: ['phenylketonuria'],
   },
   {
@@ -463,9 +556,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Beijing iSEEK Pulmonary Hypertension Care Center',
     type: 'patient_org',
     description:
-      'Beijing iSEEK Pulmonary Hypertension Care Center is a patient/support organization lead related to pulmonary arterial hypertension, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Beijing iSEEK Pulmonary Hypertension Care Center is a patient/support organization lead related to pulmonary arterial hypertension, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '黄欢',
+    phone: '400-7788-120',
+    website: 'http://www.iseek.org.cn/',
     diseaseSlugs: ['idiopathic-pulmonary-arterial-hypertension'],
   },
   {
@@ -473,9 +569,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'PAH China Patient Alliance',
     type: 'patient_org',
     description:
-      'PAH China Patient Alliance is a patient/support organization lead related to pulmonary arterial hypertension, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'PAH China Patient Alliance is a patient/support organization lead related to pulmonary arterial hypertension, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '86-10-67500717',
+    email: 'public@cord.org.cn',
     diseaseSlugs: ['idiopathic-pulmonary-arterial-hypertension'],
   },
   {
@@ -483,9 +581,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Tianjin PAH Together Rare Disease Patient Aid Center',
     type: 'patient_org',
     description:
-      'Tianjin PAH Together Rare Disease Patient Aid Center is a patient/support organization lead related to pulmonary arterial hypertension, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Tianjin PAH Together Rare Disease Patient Aid Center is a patient/support organization lead related to pulmonary arterial hypertension, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'pahchina@163.com',
     diseaseSlugs: ['idiopathic-pulmonary-arterial-hypertension'],
   },
   {
@@ -493,9 +592,12 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Glycogen Storage Disease Care Center',
     type: 'patient_org',
     description:
-      'Glycogen Storage Disease Care Center is a patient/support organization lead related to glycogen storage disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Glycogen Storage Disease Care Center is a patient/support organization lead related to glycogen storage disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'agsdcn@qq.com',
+    website: 'http://www.agsd.org.cn',
+    wechat: '糖原累积症关爱中心；agsdcn',
     diseaseSlugs: ['glycogen-storage-disease-type-i-ii'],
   },
   {
@@ -503,9 +605,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Alagille Angel Baby Care Home',
     type: 'patient_org',
     description:
-      'Alagille Angel Baby Care Home is a patient/support organization lead related to Alagille syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Alagille Angel Baby Care Home is a patient/support organization lead related to Alagille syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '张芷仪',
     diseaseSlugs: ['alagille-syndrome'],
   },
   {
@@ -513,9 +616,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'HiHAE Hereditary Angioedema Care Center',
     type: 'patient_org',
     description:
-      'HiHAE Hereditary Angioedema Care Center is a patient/support organization lead related to hereditary angioedema, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'HiHAE Hereditary Angioedema Care Center is a patient/support organization lead related to hereditary angioedema, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '章南',
+    wechat: 'Hi-HAE',
     diseaseSlugs: ['hereditary-angioedema-hae'],
   },
   {
@@ -523,9 +628,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Light Chaser Leber Care Center',
     type: 'patient_org',
     description:
-      'Light Chaser Leber Care Center is a patient/support organization lead related to Leber hereditary optic neuropathy, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Light Chaser Leber Care Center is a patient/support organization lead related to Leber hereditary optic neuropathy, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    email: 'lilimeng@cord.org.cn',
     diseaseSlugs: ['leber-hereditary-optic-neuropathy'],
   },
   {
@@ -533,9 +639,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Angel Coral FOP Care Home',
     type: 'patient_org',
     description:
-      'Angel Coral FOP Care Home is a patient/support organization lead related to fibrodysplasia ossificans progressiva (FOP), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Angel Coral FOP Care Home is a patient/support organization lead related to fibrodysplasia ossificans progressiva (FOP), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '明明',
+    email: 'fop-cn@qq.com',
     diseaseSlugs: ['fibrodysplasia-ossificans-progressiva'],
   },
   {
@@ -543,9 +651,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Pemphigus Home',
     type: 'patient_org',
     description:
-      'Pemphigus Home is a patient/support organization lead related to pemphigus / autoimmune blistering disease, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Pemphigus Home is a patient/support organization lead related to pemphigus / autoimmune blistering disease, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    contactPerson: '发起人&负责人周斌',
+    wechat: '疱病之家',
     diseaseSlugs: ['pemphigus'],
   },
   {
@@ -553,9 +663,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Guli FD/MAS Care Center',
     type: 'patient_org',
     description:
-      'Guli FD/MAS Care Center is a patient/support organization lead related to fibrous dysplasia / McCune-Albright syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Guli FD/MAS Care Center is a patient/support organization lead related to fibrous dysplasia / McCune-Albright syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['mccune-albright-syndrome'],
   },
   {
@@ -563,9 +673,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Deep Breath for Love IPF Care Center',
     type: 'patient_org',
     description:
-      'Deep Breath for Love IPF Care Center is a patient/support organization lead related to idiopathic pulmonary fibrosis (IPF), identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Deep Breath for Love IPF Care Center is a patient/support organization lead related to idiopathic pulmonary fibrosis (IPF), identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '0571-26271523',
+    email: 'wen.wang@cord.org.cn',
     diseaseSlugs: ['idiopathic-pulmonary-fibrosis'],
   },
   {
@@ -573,9 +685,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'aHUS China Home',
     type: 'patient_org',
     description:
-      'aHUS China Home is a patient/support organization lead related to atypical hemolytic uremic syndrome, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'aHUS China Home is a patient/support organization lead related to atypical hemolytic uremic syndrome, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['atypical-hemolytic-uremic-syndrome'],
   },
   {
@@ -583,9 +695,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Hypophosphatemic Rickets Patient Care Home',
     type: 'patient_org',
     description:
-      'Hypophosphatemic Rickets Patient Care Home is a patient/support organization lead related to hypophosphatemic rickets, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Hypophosphatemic Rickets Patient Care Home is a patient/support organization lead related to hypophosphatemic rickets, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['hypophosphatemic-rickets'],
   },
   {
@@ -593,9 +705,11 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Demyelinating Disease Patient Home',
     type: 'patient_org',
     description:
-      'Demyelinating Disease Patient Home is a patient/support organization lead related to multiple sclerosis, neuromyelitis optica spectrum disorders and related demyelinating diseases, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Demyelinating Disease Patient Home is a patient/support organization lead related to multiple sclerosis, neuromyelitis optica spectrum disorders and related demyelinating diseases, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    phone: '4000408772',
+    wechat: '脱髓鞘碎碎念',
     diseaseSlugs: ['multiple-sclerosis', 'neuromyelitis-optica'],
   },
   {
@@ -603,9 +717,10 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Yimi Yangguang Infantile Spasms Patient Group',
     type: 'patient_org',
     description:
-      'Yimi Yangguang Infantile Spasms Patient Group is a patient/support organization lead related to infantile spasms and pediatric refractory epilepsy, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Yimi Yangguang Infantile Spasms Patient Group is a patient/support organization lead related to infantile spasms and pediatric refractory epilepsy, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
+    wechat: '一米阳光松松爸；yimisb',
     diseaseSlugs: ['west-syndrome-infantile-spasms-syndrome'],
   },
   {
@@ -613,9 +728,9 @@ export const enCharityDrafts: CharityDraft[] = [
     name: 'Antenna Baby Mitochondrial Encephalomyopathy Care Center',
     type: 'patient_org',
     description:
-      'Antenna Baby Mitochondrial Encephalomyopathy Care Center is a patient/support organization lead related to mitochondrial encephalomyopathy, identified in Gene Jianghu’s 2023 patient organization directory.',
+      'Antenna Baby Mitochondrial Encephalomyopathy Care Center is a patient/support organization lead related to mitochondrial encephalomyopathy, identified in Gene Jianghu’s 2023 patient organization directory. The Chinese source image includes an OCR-derived organization profile and public contact details where readable.',
     services:
-      'Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.',
+      '<p><strong>OCR-derived details:</strong> Public contact fields shown on this page were extracted from the Chinese source image when readable. The fuller source-language organization summary is maintained in the Chinese locale to avoid over-translating uncertain OCR text.</p><p><strong>Source and risk note:</strong> Source: Gene Jianghu WeChat article “Revised | China Rare Disease Patient Organization Directory (2023)” (https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ). This entry was organized from a 2023 public post and OCR output for navigation only. Organization status, contact details, service scope, and aid eligibility may change; Spanios does not endorse the organization or guarantee contactability or aid. Verify through the organization’s latest official channels.</p>',
     diseaseSlugs: ['mitochodrial-encephalomyopathy'],
   },
 ];
