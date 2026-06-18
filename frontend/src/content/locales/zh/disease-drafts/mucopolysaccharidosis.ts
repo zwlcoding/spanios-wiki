@@ -113,6 +113,11 @@ export const diseaseMucopolysaccharidosis: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/579',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>面容粗陋、骨骼畸形、关节僵硬、肝脾大、角膜混浊、听力下降、发育迟缓或智力倒退。不同亚型表现侧重不同。</p>',
@@ -125,7 +130,7 @@ export const diseaseMucopolysaccharidosis: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1162/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [30],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

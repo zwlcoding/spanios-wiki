@@ -88,6 +88,11 @@ export const diseaseKallmannSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK538210/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>典型表现包括青春期发育延迟、性腺功能减退、不孕或生育困难，以及嗅觉减退或缺失。</p>',
@@ -98,7 +103,7 @@ export const diseaseKallmannSyndrome: DiseaseDraft = {
   prognosis:
     '<p>多数患者经规范治疗可获得良好第二性征发育，部分患者可通过促性腺激素治疗实现生育。</p>',
   categorySlug: 'genetic-developmental',
-  charityIds: [],
+  charityIds: [7, 8],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

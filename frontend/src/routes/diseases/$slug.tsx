@@ -12,6 +12,7 @@ import {
   Tag,
   Users,
 } from 'lucide-react';
+import { useEffect } from 'react';
 import {
   BasicInfoSection,
   CareResourcesSection,
@@ -41,6 +42,20 @@ function DiseaseDetailPage() {
   const { slug } = Route.useParams();
   const { data: diseaseData, isLoading, error } = useDisease(slug);
   const disease = diseaseData?.data;
+
+  useEffect(() => {
+    if (!disease) {
+      return;
+    }
+
+    trackEvent('disease_detail_view', {
+      category: disease.category?.slug,
+      charity_count: disease.charityOrgs?.length ?? 0,
+      has_hospital_services: (disease.hospitalServices?.length ?? 0) > 0,
+      hospital_service_count: disease.hospitalServices?.length ?? 0,
+      slug: disease.slug,
+    });
+  }, [disease]);
 
   if (isLoading) {
     return (
@@ -383,6 +398,7 @@ function DiseaseDetailPage() {
         <div className="lg:col-span-1 lg:sticky lg:top-24 lg:self-start">
           <CareResourcesSection
             diseaseSlug={disease.slug}
+            firstDepartments={disease.patientJourney?.firstDepartments}
             hospitalServices={disease.hospitalServices ?? []}
           />
 

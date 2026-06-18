@@ -112,6 +112,11 @@ export const diseaseOsteogenesisImperfectaBrittleBoneDisease: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/osteogenesis-imperfecta/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Bone fragility with frequent fractures from minimal trauma, blue sclerae, short stature, skeletal deformities, hearing loss, dentinogenesis imperfecta, joint hypermobility, and scoliosis. Severity ranges from mild to lethal.</p>',
@@ -124,7 +129,7 @@ export const diseaseOsteogenesisImperfectaBrittleBoneDisease: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1295/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [1, 2],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

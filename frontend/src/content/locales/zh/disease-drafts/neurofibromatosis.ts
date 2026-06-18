@@ -91,6 +91,11 @@ export const diseaseNeurofibromatosis: DiseaseDraft = {
       type: 'official',
       url: 'https://www.ninds.nih.gov/health-information/disorders/neurofibromatosis',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为咖啡牛奶斑、雀斑样色素、神经纤维瘤、学习困难、骨骼问题、视力或听力下降、耳鸣、平衡障碍、多发神经鞘瘤和慢性疼痛。</p>',
@@ -104,7 +109,7 @@ export const diseaseNeurofibromatosis: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'genetic-developmental',
-  charityIds: [],
+  charityIds: [31],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -112,6 +112,11 @@ export const diseasePhenylketonuria: DiseaseDraft = {
       type: 'official',
       url: 'https://www.nhc.gov.cn/yjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Newborns appear normal; by 3–6 months untreated infants show developmental delay, hypopigmentation, eczema, and a musty odor. Without treatment, progressive intellectual disability, seizures, behavioral problems, and microcephaly develop. Adults with poor control may have cognitive decline and mood disorders.</p>',
@@ -124,7 +129,7 @@ export const diseasePhenylketonuria: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Phenylketonuria (PKU)',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK535378/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [45],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

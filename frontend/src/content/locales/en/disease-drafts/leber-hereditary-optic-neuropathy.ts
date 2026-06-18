@@ -97,6 +97,11 @@ export const diseaseLeberHereditaryOpticNeuropathy: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/leber-hereditary-optic-neuropathy/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Painless subacute central vision loss in one eye, color vision impairment, central scotoma; fellow eye typically affected weeks to months later; chronic optic disc pallor.</p>',
@@ -109,7 +114,7 @@ export const diseaseLeberHereditaryOpticNeuropathy: DiseaseDraft = {
   sourceName: 'GeneReviews: Leber Hereditary Optic Neuropathy',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1174/',
   categorySlug: 'ophthalmologic',
-  charityIds: [],
+  charityIds: [52],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

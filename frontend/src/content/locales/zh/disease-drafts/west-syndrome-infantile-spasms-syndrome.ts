@@ -82,6 +82,11 @@ export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://www.ninds.nih.gov/health-information/disorders/infantile-spasms',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>表现为婴儿短促成串的点头、抱团、屈曲或伸展样痉挛，常在睡醒前后发生，可伴发育停滞或倒退。</p>',
@@ -95,7 +100,7 @@ export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [60],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

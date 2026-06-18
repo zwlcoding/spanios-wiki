@@ -94,6 +94,11 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
       type: 'official',
       url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-fibrodysplasia-ossificans-progressiva',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Classic features are malformed big toes, recurrent painful soft-tissue swelling in childhood, and progressive heterotopic ossification that restricts jaw, shoulder, spine, chest, and limb movement.</p>',
@@ -108,7 +113,7 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [53],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

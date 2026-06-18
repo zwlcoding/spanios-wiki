@@ -102,6 +102,11 @@ export const diseaseIdiopathicPulmonaryFibrosis: DiseaseDraft = {
       type: 'official',
       url: 'https://www.nhc.gov.cn/yjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>隐匿起病的进行性劳力性气短和持续性干咳；Velcro 啰音和杵状指；晚期低氧血症、肺动脉高压和右心衰竭。</p>',
@@ -114,7 +119,7 @@ export const diseaseIdiopathicPulmonaryFibrosis: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Idiopathic Pulmonary Fibrosis',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK448162/',
   categorySlug: 'respiratory',
-  charityIds: [],
+  charityIds: [56],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

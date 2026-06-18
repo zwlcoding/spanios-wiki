@@ -87,6 +87,11 @@ export const diseaseRettSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-rett-syndrome',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见发育停滞或倒退、语言和手功能丢失、重复手动作、步态异常、癫痫、呼吸睡眠问题、喂养困难、便秘和脊柱侧弯。</p>',
@@ -101,7 +106,7 @@ export const diseaseRettSyndrome: DiseaseDraft = {
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   slug: 'rett-syndrome',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [10],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

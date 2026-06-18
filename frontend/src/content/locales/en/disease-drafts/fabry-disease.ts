@@ -102,6 +102,11 @@ export const diseaseFabryDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/fabry-disease/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>May present with burning pain in the hands and feet, reduced sweating, angiokeratomas, corneal whorl-like opacities, proteinuria, heart muscle thickening, heart rhythm abnormalities, gastrointestinal symptoms, or stroke at a young age.</p>',
@@ -114,7 +119,7 @@ export const diseaseFabryDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Fabry Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1292/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [25],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

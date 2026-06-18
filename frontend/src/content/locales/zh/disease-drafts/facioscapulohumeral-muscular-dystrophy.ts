@@ -93,6 +93,11 @@ export const diseaseFacioscapulohumeralMuscularDystrophy: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/ency/article/000707.htm',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见面部无力、闭眼不全、不能吹口哨、肩胛翘起、抬臂困难、上臂无力、足下垂、腰椎前凸、疼痛和疲劳。</p>',
@@ -106,7 +111,7 @@ export const diseaseFacioscapulohumeralMuscularDystrophy: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [6],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

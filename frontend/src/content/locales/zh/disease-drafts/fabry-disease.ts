@@ -100,6 +100,11 @@ export const diseaseFabryDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/fabry-disease/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为肢端烧灼痛、少汗、血管角质瘤、角膜涡状混浊、蛋白尿、心肌肥厚、心律失常、胃肠道症状或年轻卒中。</p>',
@@ -112,7 +117,7 @@ export const diseaseFabryDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Fabry Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1292/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [25],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -92,6 +92,11 @@ export const diseasePemphigus: DiseaseDraft = {
       type: 'patient-organization',
       url: 'https://www.aad.org/public/diseases/a-z/pemphigus-overview',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可出现反复口腔或黏膜糜烂、松弛性水疱、皮肤破溃、痂皮、疼痛、进食困难、渗液和继发感染。</p>',
@@ -105,7 +110,7 @@ export const diseasePemphigus: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [54],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

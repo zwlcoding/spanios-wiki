@@ -88,6 +88,11 @@ export const diseaseRettSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-rett-syndrome',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Features include developmental stagnation or regression, loss of speech and hand function, repetitive hand movements, gait problems, seizures, breathing and sleep problems, feeding difficulty, constipation, and scoliosis.</p>',
@@ -103,7 +108,7 @@ export const diseaseRettSyndrome: DiseaseDraft = {
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   slug: 'rett-syndrome',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [10],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

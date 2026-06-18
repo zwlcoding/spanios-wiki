@@ -96,6 +96,11 @@ export const diseaseAlbinism: DiseaseDraft = {
       url: 'https://doi.org/10.1186/1750-1172-2-43',
       type: 'review',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common manifestations of albinism include lighter skin, hair, eyebrows, or eyelashes, and easy reddening or sunburn after sun exposure; eyes may show photophobia, nystagmus, strabismus, refractive errors, low vision, reduced fundus pigmentation, or macular hypoplasia. Manifestations vary greatly between different types — some patients have no obvious skin color changes but more prominent eye problems.</p><p>A few syndromic albinism cases may involve bleeding tendency, easy bruising, lung or intestinal problems, or immune function abnormalities. If these clues appear, further evaluation for related syndromes is needed beyond basic albinism assessment.</p>',
@@ -109,7 +114,7 @@ export const diseaseAlbinism: DiseaseDraft = {
   sourceUrl:
     'https://medlineplus.gov/genetics/condition/oculocutaneous-albinism/',
   categorySlug: 'dermatologic',
-  charityIds: [],
+  charityIds: [9],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

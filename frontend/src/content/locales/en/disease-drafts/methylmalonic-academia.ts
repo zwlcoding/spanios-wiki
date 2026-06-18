@@ -107,6 +107,11 @@ export const diseaseMethylmalonicAcademia: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/289',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Early-onset forms present with neonatal vomiting, lethargy, hypotonia, and metabolic acidosis; late-onset forms show developmental delay, seizures, and intellectual disability. Long-term complications can affect kidneys, pancreas, and heart.</p>',
@@ -119,7 +124,7 @@ export const diseaseMethylmalonicAcademia: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1231/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [42, 43],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

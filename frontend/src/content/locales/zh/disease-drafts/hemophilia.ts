@@ -105,6 +105,11 @@ export const diseaseHemophilia: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/hemophilia/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为关节或肌肉出血、外伤/拔牙/手术后出血时间长、反复瘀斑、鼻出血、尿血或深部出血。</p>',
@@ -117,7 +122,7 @@ export const diseaseHemophilia: DiseaseDraft = {
   sourceName: 'GeneReviews: Hemophilia A',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1404/',
   categorySlug: 'hematological',
-  charityIds: [],
+  charityIds: [27, 28, 29],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -87,6 +87,11 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
       type: 'official',
       url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-first-treatment-fibrodysplasia-ossificans-progressiva',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>典型表现为先天大脚趾畸形，儿童期反复软组织疼痛肿胀并逐渐异位骨化，导致张口、肩颈、脊柱、胸廓和四肢活动受限。</p>',
@@ -100,7 +105,7 @@ export const diseaseFibrodysplasiaOssificansProgressiva: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [53],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

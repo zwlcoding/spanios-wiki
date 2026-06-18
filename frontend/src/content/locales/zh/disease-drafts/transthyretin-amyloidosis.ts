@@ -87,6 +87,11 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/druginfo/meds/a622032.html',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可有进行性周围神经病、自主神经症状、腕管综合征、胃肠问题、心肌肥厚、心衰、心律/传导异常、肾或眼部受累。</p>',
@@ -100,7 +105,7 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'multisystem',
-  charityIds: [],
+  charityIds: [41],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

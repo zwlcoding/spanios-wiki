@@ -101,6 +101,11 @@ export const diseaseMarfanSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/marfan-syndrome/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>身材瘦高、蜘蛛指/趾、胸廓畸形、脊柱侧弯、高度近视、晶状体脱位、主动脉根部扩张、二尖瓣脱垂、自发性气胸。</p>',
@@ -113,7 +118,7 @@ export const diseaseMarfanSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews: Marfan Syndrome',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1335/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [23],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

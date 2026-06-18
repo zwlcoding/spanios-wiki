@@ -92,6 +92,11 @@ export const diseaseKallmannSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK538210/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Typical signs include delayed puberty, hypogonadism, infertility or fertility difficulty, and reduced or absent sense of smell.</p>',
@@ -102,7 +107,7 @@ export const diseaseKallmannSyndrome: DiseaseDraft = {
   prognosis:
     '<p>Most patients can develop secondary sex characteristics with structured treatment, and some can achieve fertility with gonadotropin therapy.</p>',
   categorySlug: 'genetic-developmental',
-  charityIds: [],
+  charityIds: [7, 8],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

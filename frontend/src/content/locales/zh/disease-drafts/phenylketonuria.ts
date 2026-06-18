@@ -110,6 +110,11 @@ export const diseasePhenylketonuria: DiseaseDraft = {
       type: 'official',
       url: 'https://www.nhc.gov.cn/yjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>新生儿期通常无症状，3–6 个月起出现发育迟缓、皮肤毛发变浅、湿疹、霉味尿；未治疗者可进展为智力障碍、癫痫、行为异常、小头畸形。成人控制不佳者可有认知下降和情绪障碍。</p>',
@@ -122,7 +127,7 @@ export const diseasePhenylketonuria: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Phenylketonuria (PKU)',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK535378/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [45],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

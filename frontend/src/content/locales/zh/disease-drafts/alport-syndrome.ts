@@ -103,6 +103,11 @@ export const diseaseAlportSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/63',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见线索包括持续血尿、蛋白尿、肾功能下降、感音神经性听力下降和眼部异常。</p>',
@@ -113,7 +118,7 @@ export const diseaseAlportSyndrome: DiseaseDraft = {
   prognosis:
     '<p>病程与遗传方式、性别、蛋白尿和肾功能变化有关。规律随访有助于较早识别肾脏进展和听力眼部问题。</p>',
   categorySlug: 'renal-urologic',
-  charityIds: [],
+  charityIds: [13],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

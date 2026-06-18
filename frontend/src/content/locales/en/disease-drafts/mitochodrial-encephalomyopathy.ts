@@ -109,6 +109,11 @@ export const diseaseMitochodrialEncephalomyopathy: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/68373',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Highly variable presentation including stroke-like episodes, seizures, myoclonus, progressive muscle weakness, exercise intolerance, hearing loss, visual impairment, short stature, diabetes, and cardiac conduction abnormalities.</p>',
@@ -121,7 +126,7 @@ export const diseaseMitochodrialEncephalomyopathy: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1224/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [61],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -98,6 +98,11 @@ export const diseaseCongenitalAdrenalHypoplasia: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/95702',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Manifestations may include hypoglycemia, vomiting, dehydration, low blood pressure, low sodium and high potassium, skin darkening, shock, as well as delayed puberty or hypogonadism.</p>',
@@ -110,7 +115,7 @@ export const diseaseCongenitalAdrenalHypoplasia: DiseaseDraft = {
   sourceName: 'GeneReviews: NR0B1-Related Adrenal Hypoplasia Congenita',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1431/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [21],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

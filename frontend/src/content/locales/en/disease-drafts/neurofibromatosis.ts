@@ -93,6 +93,11 @@ export const diseaseNeurofibromatosis: DiseaseDraft = {
       type: 'official',
       url: 'https://www.ninds.nih.gov/health-information/disorders/neurofibromatosis',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Features can include cafe-au-lait spots, freckling, neurofibromas, learning issues, bone problems, vision or hearing loss, tinnitus, balance problems, multiple schwannomas, and chronic pain.</p>',
@@ -107,7 +112,7 @@ export const diseaseNeurofibromatosis: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'genetic-developmental',
-  charityIds: [],
+  charityIds: [31],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

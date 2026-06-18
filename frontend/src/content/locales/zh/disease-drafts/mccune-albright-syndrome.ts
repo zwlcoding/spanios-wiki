@@ -101,6 +101,11 @@ export const diseaseMccuneAlbrightSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/mccune-albright-syndrome/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>骨纤维发育不良（骨痛、骨折、畸形）、不规则边界咖啡牛奶斑、外周性性早熟、甲亢、肢端肥大症、库欣综合征。</p>',
@@ -113,7 +118,7 @@ export const diseaseMccuneAlbrightSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews: McCune-Albright Syndrome',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK274564/',
   categorySlug: 'genetic-developmental',
-  charityIds: [],
+  charityIds: [55],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

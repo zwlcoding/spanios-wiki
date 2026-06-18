@@ -93,6 +93,11 @@ export const diseaseHereditaryAngioedemaHae: DiseaseDraft = {
       type: 'review',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK482266/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Recurrent deep swelling, abdominal pain with vomiting, facial or limb swelling; severe cases may involve laryngeal edema and risk of airway obstruction.</p>',
@@ -106,7 +111,7 @@ export const diseaseHereditaryAngioedemaHae: DiseaseDraft = {
   sourceUrl:
     'https://medlineplus.gov/genetics/condition/hereditary-angioedema/',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [51],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

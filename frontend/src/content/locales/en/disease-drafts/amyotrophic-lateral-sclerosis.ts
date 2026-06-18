@@ -103,6 +103,11 @@ export const diseaseAmyotrophicLateralSclerosis: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/amyotrophic-lateral-sclerosis/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common features include progressive muscle weakness, muscle atrophy, fasciculations, swallowing or speech difficulty. Most patients retain relatively preserved consciousness and sensory function.</p>',
@@ -113,7 +118,7 @@ export const diseaseAmyotrophicLateralSclerosis: DiseaseDraft = {
   prognosis:
     '<p>Disease course varies widely. Early identification of respiratory, swallowing, and nutritional risks, with proactive arrangement of supportive measures, can help improve quality of life and continuity of care.</p>',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [34, 35],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

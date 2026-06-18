@@ -92,6 +92,11 @@ export const diseaseGauchersDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/gaucher-disease/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为肝脾肿大、贫血、血小板减少、疲乏、出血倾向、骨痛、骨危象、骨折或神经系统表现。</p>',
@@ -104,7 +109,7 @@ export const diseaseGauchersDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Gaucher Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1269/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [36],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

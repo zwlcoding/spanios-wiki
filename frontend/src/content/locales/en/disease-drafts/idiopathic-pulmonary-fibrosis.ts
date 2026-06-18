@@ -99,6 +99,11 @@ export const diseaseIdiopathicPulmonaryFibrosis: DiseaseDraft = {
       type: 'official',
       url: 'https://www.fda.gov/drugs/news-events-human-drugs/fda-approves-nerandomilast-idiopathic-pulmonary-fibrosis',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Insidious progressive exertional dyspnea and persistent dry cough; Velcro rales and digital clubbing; late hypoxemia, pulmonary hypertension, and right heart failure.</p>',
@@ -111,7 +116,7 @@ export const diseaseIdiopathicPulmonaryFibrosis: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Idiopathic Pulmonary Fibrosis',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK448162/',
   categorySlug: 'respiratory',
-  charityIds: [],
+  charityIds: [56],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

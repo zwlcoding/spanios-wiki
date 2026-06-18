@@ -1,4 +1,9 @@
-import { createFileRoute, Link, useSearch } from '@tanstack/react-router';
+import {
+  createFileRoute,
+  Link,
+  useNavigate,
+  useSearch,
+} from '@tanstack/react-router';
 import {
   ArrowRight,
   Building2,
@@ -10,6 +15,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useGlobalSearch } from '@/hooks/useGlobalSearch';
 import { getSearchMeta, trackEvent } from '@/utils/analytics';
 import { uiText } from '@/utils/localeText';
+import type { SearchMatch } from '@/utils/searchableText';
 
 export const Route = createFileRoute('/search')({
   component: SearchPage,
@@ -20,6 +26,7 @@ export const Route = createFileRoute('/search')({
 
 function SearchPage() {
   const { q: initialQuery = '' } = useSearch({ from: '/search' });
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState(initialQuery);
   const [debouncedQuery, setDebouncedQuery] = useState(initialQuery);
   const lastTrackedResults = useRef('');
@@ -27,8 +34,13 @@ function SearchPage() {
   const { data: searchResults, isLoading } = useGlobalSearch(debouncedQuery);
 
   useEffect(() => {
+    setSearchQuery(initialQuery);
+    setDebouncedQuery(initialQuery);
+  }, [initialQuery]);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
-      setDebouncedQuery(searchQuery);
+      setDebouncedQuery(searchQuery.trim());
     }, 250);
 
     return () => clearTimeout(timer);
@@ -44,6 +56,17 @@ function SearchPage() {
     });
 
     setDebouncedQuery(query);
+    navigate({ to: '/search', search: { q: query }, replace: true });
+  };
+
+  const handleSuggestionClick = (term: string, source: string) => {
+    trackEvent('search_suggestion_click', {
+      source,
+      ...getSearchMeta(term),
+    });
+    setSearchQuery(term);
+    setDebouncedQuery(term);
+    navigate({ to: '/search', search: { q: term }, replace: true });
   };
 
   const results = searchResults || {
@@ -163,7 +186,11 @@ function SearchPage() {
                 '试试疾病名称、英文名、症状或医院名称。',
                 'Try a disease name, English name, symptom, or hospital name.',
               )}
-            />
+            >
+              <SearchSuggestions
+                onSelect={(term) => handleSuggestionClick(term, 'zero_result')}
+              />
+            </EmptySearch>
           ) : (
             <div className="space-y-8">
               {results.diseases.length > 0 && (
@@ -172,71 +199,78 @@ function SearchPage() {
                   count={results.diseases.length}
                   icon={FileText}
                 >
-                  {results.diseases.map((disease, index) => (
-                    <Link
-                      key={disease.id}
-                      to="/diseases/$slug"
-                      params={{ slug: disease.slug }}
-                      className="card-warm block p-5"
-                      onClick={() =>
-                        trackEvent('search_result_click', {
-                          position: index + 1,
-                          query_length: debouncedQuery.trim().length,
-                          result_id: disease.slug,
-                          result_type: 'disease',
-                        })
-                      }
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <h3 className="font-semibold">{disease.name}</h3>
-                          {disease.nameEn && (
-                            <p className="mt-1 text-sm">{disease.nameEn}</p>
-                          )}
-                          {(disease.oneSentence || disease.symptoms) && (
-                            <p className="mt-3 line-clamp-2 text-sm">
-                              {plainText(
-                                disease.oneSentence ?? disease.symptoms ?? '',
-                              )}
-                            </p>
-                          )}
-                        </div>
-                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
-                      </div>
-                      <div className="mt-4 flex flex-wrap gap-2">
-                        {disease.category && (
-                          <span className="badge-warm">
-                            {disease.category.name}
-                          </span>
-                        )}
-                        {disease.icd10Code && (
-                          <span className="badge-muted">
-                            ICD-10: {disease.icd10Code}
-                          </span>
-                        )}
-                        {disease.catalogRefs?.map((ref) => (
-                          <span
-                            key={`${ref.catalogId}-${ref.itemNumber}`}
-                            className="badge-muted"
-                          >
-                            {uiText(
-                              `${ref.catalogName}第 ${ref.itemNumber} 项`,
-                              `${ref.catalogName} item ${ref.itemNumber}`,
+                  {results.diseases.map((result, index) => {
+                    const disease = result.item;
+
+                    return (
+                      <Link
+                        key={disease.id}
+                        to="/diseases/$slug"
+                        params={{ slug: disease.slug }}
+                        className="card-warm block p-5"
+                        onClick={() =>
+                          trackEvent('search_result_click', {
+                            position: index + 1,
+                            query_length: debouncedQuery.trim().length,
+                            match_field: result.match.field,
+                            match_kind: result.match.kind,
+                            result_id: disease.slug,
+                            result_type: 'disease',
+                          })
+                        }
+                      >
+                        <div className="flex items-start justify-between gap-4">
+                          <div>
+                            <h3 className="font-semibold">{disease.name}</h3>
+                            {disease.nameEn && (
+                              <p className="mt-1 text-sm">{disease.nameEn}</p>
                             )}
-                          </span>
-                        ))}
-                        {!disease.catalogRefs?.length &&
-                          disease.catalogNumber && (
-                            <span className="badge-muted">
-                              {uiText(
-                                `目录第 ${disease.catalogNumber} 项`,
-                                `Catalog item ${disease.catalogNumber}`,
-                              )}
+                            {(disease.oneSentence || disease.symptoms) && (
+                              <p className="mt-3 line-clamp-2 text-sm">
+                                {plainText(
+                                  disease.oneSentence ?? disease.symptoms ?? '',
+                                )}
+                              </p>
+                            )}
+                            <SearchMatchHint match={result.match} />
+                          </div>
+                          <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
+                        </div>
+                        <div className="mt-4 flex flex-wrap gap-2">
+                          {disease.category && (
+                            <span className="badge-warm">
+                              {disease.category.name}
                             </span>
                           )}
-                      </div>
-                    </Link>
-                  ))}
+                          {disease.icd10Code && (
+                            <span className="badge-muted">
+                              ICD-10: {disease.icd10Code}
+                            </span>
+                          )}
+                          {disease.catalogRefs?.map((ref) => (
+                            <span
+                              key={`${ref.catalogId}-${ref.itemNumber}`}
+                              className="badge-muted"
+                            >
+                              {uiText(
+                                `${ref.catalogName}第 ${ref.itemNumber} 项`,
+                                `${ref.catalogName} item ${ref.itemNumber}`,
+                              )}
+                            </span>
+                          ))}
+                          {!disease.catalogRefs?.length &&
+                            disease.catalogNumber && (
+                              <span className="badge-muted">
+                                {uiText(
+                                  `目录第 ${disease.catalogNumber} 项`,
+                                  `Catalog item ${disease.catalogNumber}`,
+                                )}
+                              </span>
+                            )}
+                        </div>
+                      </Link>
+                    );
+                  })}
                 </ResultSection>
               )}
 
@@ -246,44 +280,51 @@ function SearchPage() {
                   count={results.hospitals.length}
                   icon={Building2}
                 >
-                  {results.hospitals.map((hospital, index) => (
-                    <Link
-                      key={hospital.id}
-                      to="/hospitals/$id"
-                      params={{ id: hospital.id.toString() }}
-                      className="card-warm block p-5"
-                      onClick={() =>
-                        trackEvent('search_result_click', {
-                          position: index + 1,
-                          query_length: debouncedQuery.trim().length,
-                          result_id: hospital.id,
-                          result_type: 'hospital',
-                        })
-                      }
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <h3 className="font-semibold">{hospital.name}</h3>
-                          <p className="mt-1 text-sm">
-                            {hospital.province} {hospital.city}
-                          </p>
-                          <p className="mt-3 line-clamp-2 text-sm">
-                            {hospital.address}
-                          </p>
-                          {hospital.services &&
-                            hospital.services.length > 0 && (
-                              <p className="mt-2 text-xs text-stone-500">
-                                {uiText(
-                                  `${hospital.services.length} 条公开科室/服务线索`,
-                                  `${hospital.services.length} public department/service leads`,
-                                )}
-                              </p>
-                            )}
+                  {results.hospitals.map((result, index) => {
+                    const hospital = result.item;
+
+                    return (
+                      <Link
+                        key={hospital.id}
+                        to="/hospitals/$id"
+                        params={{ id: hospital.id.toString() }}
+                        className="card-warm block p-5"
+                        onClick={() =>
+                          trackEvent('search_result_click', {
+                            position: index + 1,
+                            query_length: debouncedQuery.trim().length,
+                            match_field: result.match.field,
+                            match_kind: result.match.kind,
+                            result_id: hospital.id,
+                            result_type: 'hospital',
+                          })
+                        }
+                      >
+                        <div className="flex items-start justify-between gap-4">
+                          <div>
+                            <h3 className="font-semibold">{hospital.name}</h3>
+                            <p className="mt-1 text-sm">
+                              {hospital.province} {hospital.city}
+                            </p>
+                            <p className="mt-3 line-clamp-2 text-sm">
+                              {hospital.address}
+                            </p>
+                            {hospital.services &&
+                              hospital.services.length > 0 && (
+                                <p className="mt-2 text-xs text-stone-500">
+                                  {uiText(
+                                    `${hospital.services.length} 条公开科室/服务线索`,
+                                    `${hospital.services.length} public department/service leads`,
+                                  )}
+                                </p>
+                              )}
+                            <SearchMatchHint match={result.match} />
+                          </div>
+                          <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
                         </div>
-                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
-                      </div>
-                    </Link>
-                  ))}
+                      </Link>
+                    );
+                  })}
                 </ResultSection>
               )}
 
@@ -293,34 +334,41 @@ function SearchPage() {
                   count={results.charities.length}
                   icon={Users}
                 >
-                  {results.charities.map((org, index) => (
-                    <Link
-                      key={org.id}
-                      to="/charity/$id"
-                      params={{ id: org.id.toString() }}
-                      className="card-warm block p-5"
-                      onClick={() =>
-                        trackEvent('search_result_click', {
-                          position: index + 1,
-                          query_length: debouncedQuery.trim().length,
-                          result_id: org.id,
-                          result_type: 'charity',
-                        })
-                      }
-                    >
-                      <div className="flex items-start justify-between gap-4">
-                        <div>
-                          <h3 className="font-semibold">{org.name}</h3>
-                          {org.description && (
-                            <p className="mt-3 line-clamp-2 text-sm">
-                              {plainText(org.description)}
-                            </p>
-                          )}
+                  {results.charities.map((result, index) => {
+                    const org = result.item;
+
+                    return (
+                      <Link
+                        key={org.id}
+                        to="/charity/$id"
+                        params={{ id: org.id.toString() }}
+                        className="card-warm block p-5"
+                        onClick={() =>
+                          trackEvent('search_result_click', {
+                            position: index + 1,
+                            query_length: debouncedQuery.trim().length,
+                            match_field: result.match.field,
+                            match_kind: result.match.kind,
+                            result_id: org.id,
+                            result_type: 'charity',
+                          })
+                        }
+                      >
+                        <div className="flex items-start justify-between gap-4">
+                          <div>
+                            <h3 className="font-semibold">{org.name}</h3>
+                            {org.description && (
+                              <p className="mt-3 line-clamp-2 text-sm">
+                                {plainText(org.description)}
+                              </p>
+                            )}
+                            <SearchMatchHint match={result.match} />
+                          </div>
+                          <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
                         </div>
-                        <ArrowRight className="mt-1 h-4 w-4 shrink-0 text-stone-400" />
-                      </div>
-                    </Link>
-                  ))}
+                      </Link>
+                    );
+                  })}
                 </ResultSection>
               )}
             </div>
@@ -333,10 +381,68 @@ function SearchPage() {
             '可以从卡尔曼综合征、血友病 A、北京协和医院等关键词开始。',
             'Try terms like Kallmann syndrome, Hemophilia A, or a hospital name.',
           )}
-        />
+        >
+          <SearchSuggestions
+            onSelect={(term) => handleSuggestionClick(term, 'empty_search')}
+          />
+        </EmptySearch>
       )}
     </div>
   );
+}
+
+function SearchSuggestions({ onSelect }: { onSelect: (term: string) => void }) {
+  const suggestions = [
+    uiText('卡尔曼综合征', 'Kallmann syndrome'),
+    uiText('血友病 A', 'Hemophilia A'),
+    uiText('渐冻症', 'ALS'),
+    uiText('内分泌科', 'Endocrinology'),
+    uiText('遗传咨询', 'Genetic counseling'),
+    uiText('北京协和医院', 'Peking Union Medical College Hospital'),
+  ];
+
+  return (
+    <div className="mt-5 flex flex-wrap justify-center gap-2">
+      {suggestions.map((term) => (
+        <button
+          type="button"
+          key={term}
+          className="badge-muted hover:bg-stone-200 dark:hover:bg-stone-700"
+          onClick={() => onSelect(term)}
+        >
+          {term}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+function SearchMatchHint({ match }: { match: SearchMatch }) {
+  return (
+    <div className="mt-3 flex flex-wrap items-center gap-2 text-xs">
+      <span className="badge-muted">{formatMatchKind(match.kind)}</span>
+      {match.snippet && (
+        <span className="line-clamp-1 text-stone-500 dark:text-stone-400">
+          {match.snippet}
+        </span>
+      )}
+    </div>
+  );
+}
+
+function formatMatchKind(kind: SearchMatch['kind']) {
+  const labels: Record<SearchMatch['kind'], string> = {
+    alias: uiText('命中别名', 'Alias match'),
+    care: uiText('命中就医线索', 'Care clue match'),
+    category: uiText('命中分类', 'Category match'),
+    content: uiText('命中正文', 'Content match'),
+    identifier: uiText('命中编码', 'Code match'),
+    name: uiText('命中名称', 'Name match'),
+    source: uiText('命中来源', 'Source match'),
+    symptom: uiText('命中症状', 'Symptom match'),
+  };
+
+  return labels[kind];
 }
 
 function ResultSection({
@@ -367,9 +473,11 @@ function ResultSection({
 }
 
 function EmptySearch({
+  children,
   description,
   title,
 }: {
+  children?: React.ReactNode;
   description: string;
   title: string;
 }) {
@@ -380,6 +488,7 @@ function EmptySearch({
       </div>
       <h3 className="mt-4 font-semibold">{title}</h3>
       <p className="mx-auto mt-2 max-w-md text-sm">{description}</p>
+      {children}
     </div>
   );
 }

@@ -92,6 +92,11 @@ export const diseaseNarcolepsy: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/narcolepsy/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Main features are uncontrollable daytime sleepiness, sometimes with emotion-triggered cataplexy, sleep paralysis, hallucinations while falling asleep or waking, fragmented nighttime sleep, and automatic behaviors.</p>',
@@ -106,7 +111,7 @@ export const diseaseNarcolepsy: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [20],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

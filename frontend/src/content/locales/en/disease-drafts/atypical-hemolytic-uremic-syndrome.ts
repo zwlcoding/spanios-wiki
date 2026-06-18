@@ -98,6 +98,11 @@ export const diseaseAtypicalHemolyticUremicSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/atypical-hemolytic-uremic-syndrome/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common clues include hemolytic anemia, low platelets, decreased urine output, abnormal kidney function, high blood pressure, and neurological symptoms.</p>',
@@ -108,7 +113,7 @@ export const diseaseAtypicalHemolyticUremicSyndrome: DiseaseDraft = {
   prognosis:
     '<p>The disease course and recurrence risk vary considerably. Early recognition, appropriate acute management, and long-term kidney follow-up are important.</p>',
   categorySlug: 'renal-urologic',
-  charityIds: [],
+  charityIds: [57],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

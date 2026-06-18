@@ -102,6 +102,11 @@ export const diseaseLymphangioleiomyomatosisLam: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/lymphangioleiomyomatosis/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>进行性呼吸困难、反复气胸、乳糜胸/腹水、干咳、咯血；可伴肾血管平滑肌脂肪瘤。</p>',
@@ -114,7 +119,7 @@ export const diseaseLymphangioleiomyomatosisLam: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Lymphangioleiomyomatosis',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK470348/',
   categorySlug: 'respiratory',
-  charityIds: [],
+  charityIds: [3],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

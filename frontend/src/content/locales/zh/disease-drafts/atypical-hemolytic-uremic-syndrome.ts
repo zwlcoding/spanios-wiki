@@ -98,6 +98,11 @@ export const diseaseAtypicalHemolyticUremicSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/atypical-hemolytic-uremic-syndrome/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见线索包括溶血性贫血、血小板减少、尿量减少、肾功能异常、高血压和神经系统症状。</p>',
@@ -108,7 +113,7 @@ export const diseaseAtypicalHemolyticUremicSyndrome: DiseaseDraft = {
   prognosis:
     '<p>病程和复发风险差异较大，早期识别、规范急性期处理和长期肾脏随访很重要。</p>',
   categorySlug: 'renal-urologic',
-  charityIds: [],
+  charityIds: [57],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

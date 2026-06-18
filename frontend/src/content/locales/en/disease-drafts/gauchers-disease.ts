@@ -94,6 +94,11 @@ export const diseaseGauchersDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/gaucher-disease/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>May present as enlarged liver and spleen, anemia, low platelets, fatigue, bleeding tendency, bone pain, bone crises, fractures, or neurological symptoms.</p>',
@@ -106,7 +111,7 @@ export const diseaseGauchersDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Gaucher Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1269/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [36],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -97,6 +97,11 @@ export const diseaseGlycogenStorageDiseaseTypeIIi: DiseaseDraft = {
       type: 'review',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK470558/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>I 型主要表现为低血糖、肝大、乳酸/尿酸/血脂异常；II 型庞贝病主要表现为肌无力、心肌或呼吸肌受累。</p>',
@@ -109,7 +114,7 @@ export const diseaseGlycogenStorageDiseaseTypeIIi: DiseaseDraft = {
   sourceName: 'GeneReviews: Glycogen Storage Disease Type I',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1312/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [26, 49],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

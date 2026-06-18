@@ -98,6 +98,11 @@ export const diseaseCharcotMarieToothDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://www.ninds.nih.gov/health-information/disorders/charcot-marie-tooth-disease',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见表现包括足下垂、容易绊倒、高弓足、远端肌肉萎缩、手脚麻木或感觉减退，进展通常较慢。</p>',
@@ -110,7 +115,7 @@ export const diseaseCharcotMarieToothDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Charcot-Marie-Tooth Hereditary Neuropathy Overview',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1358/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [4],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

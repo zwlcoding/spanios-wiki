@@ -109,6 +109,11 @@ export const diseaseNiemannPickDisease: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/646',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>A/B型以肝脾肿大和肺受累为主；C型以神经系统症状为主，包括共济失调、垂直凝视麻痹、构音障碍、癫痫和精神症状。</p>',
@@ -121,7 +126,7 @@ export const diseaseNiemannPickDisease: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1296/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [39],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

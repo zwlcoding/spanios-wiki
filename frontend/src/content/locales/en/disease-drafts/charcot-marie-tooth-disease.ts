@@ -100,6 +100,11 @@ export const diseaseCharcotMarieToothDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://www.ninds.nih.gov/health-information/disorders/charcot-marie-tooth-disease',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common features include foot drop, frequent tripping, high arches, distal muscle wasting, numbness or decreased sensation in the hands and feet, with usually slow progression.</p>',
@@ -112,7 +117,7 @@ export const diseaseCharcotMarieToothDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Charcot-Marie-Tooth Hereditary Neuropathy Overview',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1358/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [4],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

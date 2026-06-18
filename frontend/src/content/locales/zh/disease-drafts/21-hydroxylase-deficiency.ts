@@ -106,6 +106,11 @@ export const disease21HydroxylaseDeficiency: DiseaseDraft = {
       type: 'official',
       url: 'https://www.endocrine.org/patient-engagement/endocrine-library/congenital-adrenal-hyperplasia',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为新生儿失盐危象、女婴外生殖器男性化、儿童生长加速或青春期/成年期高雄激素相关问题。</p>',
@@ -119,7 +124,7 @@ export const disease21HydroxylaseDeficiency: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/201902/073540e8f83b4a54a28684d23e2ae2f5/files/1732871139221_41526.pdf',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [21, 22],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

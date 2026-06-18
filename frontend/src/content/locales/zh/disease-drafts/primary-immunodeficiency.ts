@@ -90,6 +90,11 @@ export const diseasePrimaryImmunodeficiency: DiseaseDraft = {
       type: 'review',
       url: 'https://www.mayoclinic.org/diseases-conditions/primary-immunodeficiency/diagnosis-treatment/drc-20376910',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见表现为反复、严重或不寻常感染，也可有自身免疫、炎症、过敏、淋巴脾大、生长差、慢性腹泻或肿瘤风险增加。</p>',
@@ -104,7 +109,7 @@ export const diseasePrimaryImmunodeficiency: DiseaseDraft = {
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   slug: 'primary-immunodeficiency',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [44],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

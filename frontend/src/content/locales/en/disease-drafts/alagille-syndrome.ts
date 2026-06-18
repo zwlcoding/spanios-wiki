@@ -92,6 +92,11 @@ export const diseaseAlagilleSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/alagille-syndrome/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common clues include infant cholestasis, persistent jaundice, dark urine, pale stools, itching, xanthomas, poor growth, and possible heart, eye, spine, kidney, vascular, or facial features.</p>',
@@ -106,7 +111,7 @@ export const diseaseAlagilleSyndrome: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'digestive-hepatic',
-  charityIds: [],
+  charityIds: [50],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

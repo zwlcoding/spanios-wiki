@@ -96,6 +96,11 @@ export const diseaseCongenitalAdrenalHypoplasia: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/95702',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为低血糖、呕吐、脱水、低血压、低钠高钾、皮肤色素加深、休克，以及青春期延迟或性腺功能低下。</p>',
@@ -108,7 +113,7 @@ export const diseaseCongenitalAdrenalHypoplasia: DiseaseDraft = {
   sourceName: 'GeneReviews: NR0B1-Related Adrenal Hypoplasia Congenita',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1431/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [21],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -86,6 +86,11 @@ export const diseaseAcromegaly: DiseaseDraft = {
       type: 'official',
       url: 'https://www.niddk.nih.gov/health-information/endocrine-diseases/acromegaly',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见线索包括手脚变大、面容变粗、牙缝变宽、多汗、皮肤增厚、声音变低、头痛、视野问题、打鼾、关节痛、手麻以及血糖血压异常。</p>',
@@ -99,7 +104,7 @@ export const diseaseAcromegaly: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [40],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

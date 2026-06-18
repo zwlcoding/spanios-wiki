@@ -105,6 +105,11 @@ export const disease21HydroxylaseDeficiency: DiseaseDraft = {
       url: 'https://www.endocrine.org/patient-engagement/endocrine-library/congenital-adrenal-hyperplasia',
       type: 'official',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Manifestations of 21-hydroxylase deficiency vary by type. Classic forms include salt-wasting and simple virilizing types; salt-wasting infants may present with poor feeding, vomiting, failure to thrive, dehydration, hyponatremia, and hyperkalemia, and can develop adrenal crisis. 46,XX females may have varying degrees of external genitalia masculinization due to prenatal androgen exposure.</p><p>Simple virilizing type typically lacks obvious salt-wasting but may present in childhood with growth acceleration, advanced bone age, early pubic hair, acne, or precocious puberty-like features. Non-classic type often appears later and may present with hirsutism, acne, menstrual irregularities, or fertility difficulties, and may be milder.</p>',
@@ -119,7 +124,7 @@ export const disease21HydroxylaseDeficiency: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/201902/073540e8f83b4a54a28684d23e2ae2f5/files/1732871139221_41526.pdf',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [21, 22],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

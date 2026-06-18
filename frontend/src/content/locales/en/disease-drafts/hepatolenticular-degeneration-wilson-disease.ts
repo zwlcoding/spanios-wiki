@@ -94,6 +94,11 @@ export const diseaseHepatolenticularDegenerationWilsonDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/wilson-disease/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>May present as liver function abnormalities, cirrhosis, acute liver failure, hemolysis, tremor, dystonia, difficulty speaking or swallowing, or psychiatric or behavioral changes.</p>',
@@ -106,7 +111,7 @@ export const diseaseHepatolenticularDegenerationWilsonDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Wilson Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1512/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [32, 33],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

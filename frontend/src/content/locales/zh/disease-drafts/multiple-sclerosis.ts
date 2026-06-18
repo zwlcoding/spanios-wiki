@@ -106,6 +106,11 @@ export const diseaseMultipleSclerosis: DiseaseDraft = {
       type: 'patient-organization',
       url: 'https://www.nationalmssociety.org/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见症状包括视神经炎、肢体麻木无力、感觉异常、共济失调、眩晕、疲劳、排尿障碍和认知下降。病程多为复发-缓解型。</p>',
@@ -118,7 +123,7 @@ export const diseaseMultipleSclerosis: DiseaseDraft = {
   sourceName: 'NCBI StatPearls',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK499849/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [14, 15, 59],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

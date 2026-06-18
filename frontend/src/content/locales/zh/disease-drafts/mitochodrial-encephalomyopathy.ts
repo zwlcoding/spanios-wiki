@@ -112,6 +112,11 @@ export const diseaseMitochodrialEncephalomyopathy: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/551',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>多系统受累：癫痫、卒中样发作、肌无力、听力下降、糖尿病、心肌病、身材矮小等。表现因类型和突变负荷差异很大。</p>',
@@ -124,7 +129,7 @@ export const diseaseMitochodrialEncephalomyopathy: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1233/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [61],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

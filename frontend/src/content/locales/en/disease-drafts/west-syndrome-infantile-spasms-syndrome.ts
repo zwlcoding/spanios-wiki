@@ -84,6 +84,11 @@ export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://www.ninds.nih.gov/health-information/disorders/infantile-spasms',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Features include brief clustered head drops, jackknife, flexion, or extension spasms around sleep-wake transitions, often with developmental arrest or regression.</p>',
@@ -98,7 +103,7 @@ export const diseaseWestSyndromeInfantileSpasmsSyndrome: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [60],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

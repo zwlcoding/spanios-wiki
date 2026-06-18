@@ -96,6 +96,11 @@ export const diseaseHereditaryEpidermolysisBullosa: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/epidermolysis-bullosa/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>轻微摩擦后反复水疱、糜烂、慢性伤口、疼痛、瘢痕、指甲异常，也可累及口腔、眼部、食管和手足功能。</p>',
@@ -108,7 +113,7 @@ export const diseaseHereditaryEpidermolysisBullosa: DiseaseDraft = {
   sourceName: 'NCBI Bookshelf StatPearls: Epidermolysis Bullosa',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK599531/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [11],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

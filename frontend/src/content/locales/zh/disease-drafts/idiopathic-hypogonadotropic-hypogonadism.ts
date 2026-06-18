@@ -101,11 +101,16 @@ export const diseaseIdiopathicHypogonadotropicHypogonadism: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/ency/article/000390.htm',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   sourceName: 'GeneReviews: Isolated Gonadotropin-Releasing Hormone Deficiency',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1334/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [7],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

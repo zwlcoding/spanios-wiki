@@ -98,6 +98,11 @@ export const diseaseGeneralizedMyastheniaGravis: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/myasthenia-gravis',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>May include drooping eyelids, double vision, swallowing or speech difficulty, neck and limb weakness, and respiratory muscle involvement, typically worsening with activity and improving with rest.</p>',
@@ -110,7 +115,7 @@ export const diseaseGeneralizedMyastheniaGravis: DiseaseDraft = {
   sourceName: 'NINDS: Myasthenia Gravis',
   sourceUrl: 'https://www.ninds.nih.gov/node/733',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [12],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

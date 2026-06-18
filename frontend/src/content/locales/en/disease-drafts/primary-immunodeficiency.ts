@@ -92,6 +92,11 @@ export const diseasePrimaryImmunodeficiency: DiseaseDraft = {
       type: 'review',
       url: 'https://www.mayoclinic.org/diseases-conditions/primary-immunodeficiency/diagnosis-treatment/drc-20376910',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Features include recurrent, severe, or unusual infections, and sometimes autoimmunity, inflammation, allergy, enlarged lymph nodes or spleen, poor growth, chronic diarrhea, or cancer risk.</p>',
@@ -107,7 +112,7 @@ export const diseasePrimaryImmunodeficiency: DiseaseDraft = {
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   slug: 'primary-immunodeficiency',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [44],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

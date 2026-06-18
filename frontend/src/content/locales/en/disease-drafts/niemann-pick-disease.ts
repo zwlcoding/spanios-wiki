@@ -110,6 +110,11 @@ export const diseaseNiemannPickDisease: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/646',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Types A/B primarily involve hepatosplenomegaly and pulmonary involvement; type C is characterized by neurological symptoms including ataxia, vertical gaze palsy, dysarthria, seizures, and psychiatric symptoms.</p>',
@@ -122,7 +127,7 @@ export const diseaseNiemannPickDisease: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1296/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [39],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

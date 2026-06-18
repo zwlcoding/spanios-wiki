@@ -95,6 +95,11 @@ export const diseaseFacioscapulohumeralMuscularDystrophy: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/ency/article/000707.htm',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common features include facial weakness, incomplete eye closure, inability to whistle, scapular winging, difficulty lifting arms, upper arm weakness, foot drop, lordosis, pain, and fatigue.</p>',
@@ -109,7 +114,7 @@ export const diseaseFacioscapulohumeralMuscularDystrophy: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [6],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

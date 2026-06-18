@@ -12,7 +12,14 @@ import type {
   Hospital,
   SiteSettings,
 } from '@/types/content';
-import { diseaseMatchesSearch } from '@/utils/searchableText';
+import {
+  diseaseMatchesSearch,
+  findBestDiseaseSearchMatch,
+  findBestMatch,
+  type MatchCandidate,
+  normalizeSearchText,
+  type RankedSearchMatch,
+} from '@/utils/searchableText';
 
 type DiseaseFilters = {
   category?: string;
@@ -27,6 +34,12 @@ type HospitalFilters = {
 type CharityFilters = {
   type?: string;
   search?: string;
+};
+
+export type RankedSearchResult<T> = {
+  item: T;
+  match: RankedSearchMatch['match'];
+  score: number;
 };
 
 export type DiseaseInventoryStats = {
@@ -183,20 +196,20 @@ export async function fetchDiseaseCategories(): Promise<
 }
 
 export async function globalSearch(query: string): Promise<{
-  diseases: Disease[];
-  hospitals: Hospital[];
-  charities: CharityOrganization[];
+  diseases: RankedSearchResult<Disease>[];
+  hospitals: RankedSearchResult<Hospital>[];
+  charities: RankedSearchResult<CharityOrganization>[];
 }> {
   const [diseasesRes, hospitalsRes, charitiesRes] = await Promise.all([
-    fetchDiseases({ search: query }),
-    fetchHospitals({ search: query }),
-    fetchCharityOrganizations({ search: query }),
+    fetchDiseases(),
+    fetchHospitals(),
+    fetchCharityOrganizations(),
   ]);
 
   return {
-    charities: charitiesRes.data,
-    diseases: diseasesRes.data,
-    hospitals: hospitalsRes.data,
+    charities: rankCharities(charitiesRes.data, query),
+    diseases: rankDiseases(diseasesRes.data, query),
+    hospitals: rankHospitals(hospitalsRes.data, query),
   };
 }
 
@@ -229,4 +242,156 @@ export function isPublishedDisease(disease: Pick<Disease, 'reviewStatus'>) {
     disease.reviewStatus === 'patient-reviewed' ||
     disease.reviewStatus === 'medical-reviewed'
   );
+}
+
+function rankDiseases(diseases: Disease[], query: string) {
+  return diseases
+    .map((disease) => {
+      const rankedMatch = findBestDiseaseSearchMatch(disease, query);
+
+      return rankedMatch
+        ? {
+            item: disease,
+            match: rankedMatch.match,
+            score: rankedMatch.score,
+          }
+        : undefined;
+    })
+    .filter(isDefined)
+    .sort(bySearchRank);
+}
+
+function rankHospitals(hospitals: Hospital[], query: string) {
+  return hospitals
+    .map((hospital) =>
+      toRankedSearchResult(
+        hospital,
+        query,
+        [
+          { field: 'name', kind: 'name', score: 92, value: hospital.name },
+          {
+            field: 'region',
+            kind: 'category',
+            score: 72,
+            value: [hospital.province, hospital.city, hospital.address],
+          },
+          {
+            field: 'department',
+            kind: 'care',
+            score: 68,
+            value: [
+              ...(hospital.departments?.map((department) => department.name) ??
+                []),
+              ...(hospital.services?.map((service) => service.departmentName) ??
+                []),
+              ...(hospital.services?.map((service) => service.serviceName) ??
+                []),
+            ],
+          },
+          {
+            field: 'related_disease',
+            kind: 'care',
+            score: 64,
+            value: hospital.diseases?.flatMap((disease) => [
+              disease.name,
+              disease.nameEn,
+              disease.alias,
+            ]),
+          },
+          {
+            field: 'public_lead',
+            kind: 'content',
+            score: 48,
+            value: [
+              hospital.specialties,
+              ...(hospital.services?.flatMap((service) => [
+                service.notes,
+                service.evidenceSummary,
+              ]) ?? []),
+            ],
+          },
+        ],
+        hospital.name,
+      ),
+    )
+    .filter(isDefined)
+    .sort(bySearchRank);
+}
+
+function rankCharities(charities: CharityOrganization[], query: string) {
+  return charities
+    .map((charity) =>
+      toRankedSearchResult(
+        charity,
+        query,
+        [
+          { field: 'name', kind: 'name', score: 92, value: charity.name },
+          {
+            field: 'organization_type',
+            kind: 'category',
+            score: 62,
+            value: charity.type,
+          },
+          {
+            field: 'related_disease',
+            kind: 'care',
+            score: 64,
+            value: charity.diseases?.flatMap((disease) => [
+              disease.name,
+              disease.nameEn,
+              disease.alias,
+            ]),
+          },
+          {
+            field: 'service',
+            kind: 'content',
+            score: 52,
+            value: [
+              charity.description,
+              charity.services,
+              charity.contactPerson,
+              charity.email,
+              charity.wechat,
+            ],
+          },
+        ],
+        charity.name,
+      ),
+    )
+    .filter(isDefined)
+    .sort(bySearchRank);
+}
+
+function toRankedSearchResult<T>(
+  item: T,
+  query: string,
+  candidates: MatchCandidate[],
+  fallbackSnippet: string,
+): RankedSearchResult<T> | undefined {
+  const normalizedQuery = normalizeSearchText(query);
+
+  if (!normalizedQuery) {
+    return {
+      item,
+      match: { field: 'name', kind: 'name', snippet: fallbackSnippet },
+      score: 0,
+    };
+  }
+
+  const rankedMatch = findBestMatch(normalizedQuery, candidates);
+
+  return rankedMatch
+    ? { item, match: rankedMatch.match, score: rankedMatch.score }
+    : undefined;
+}
+
+function bySearchRank<T>(
+  first: RankedSearchResult<T>,
+  second: RankedSearchResult<T>,
+) {
+  return second.score - first.score;
+}
+
+function isDefined<T>(value: T | null | undefined): value is T {
+  return value !== null && value !== undefined;
 }

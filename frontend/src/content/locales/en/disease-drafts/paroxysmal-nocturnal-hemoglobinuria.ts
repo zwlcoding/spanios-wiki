@@ -108,6 +108,11 @@ export const diseaseParoxysmalNocturnalHemoglobinuria: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/447',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Intravascular hemolysis (dark urine, anemia, jaundice), thrombosis (especially abdominal and cerebral veins), and bone marrow failure (cytopenias). Smooth muscle spasm causes abdominal pain and dysphagia.</p>',
@@ -120,7 +125,7 @@ export const diseaseParoxysmalNocturnalHemoglobinuria: DiseaseDraft = {
   sourceName: 'NCBI StatPearls',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK538475/',
   categorySlug: 'hematological',
-  charityIds: [],
+  charityIds: [19],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

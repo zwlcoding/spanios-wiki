@@ -90,6 +90,11 @@ export const diseaseAchondroplasia: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/achondroplasia/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common signs include short-limbed disproportionate short stature, large head size, prominent forehead, short fingers, and possible sleep, ear, hearing, spine, or nerve complications.</p>',
@@ -104,7 +109,7 @@ export const diseaseAchondroplasia: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [38],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

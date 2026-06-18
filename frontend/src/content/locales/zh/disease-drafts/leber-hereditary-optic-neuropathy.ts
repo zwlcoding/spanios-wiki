@@ -93,6 +93,11 @@ export const diseaseLeberHereditaryOpticNeuropathy: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/leber-hereditary-optic-neuropathy/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>单眼无痛性亚急性中心视力下降、色觉减退、中心暗点；数周至数月后累及另一只眼；慢性期视盘苍白萎缩。</p>',
@@ -105,7 +110,7 @@ export const diseaseLeberHereditaryOpticNeuropathy: DiseaseDraft = {
   sourceName: 'GeneReviews: Leber Hereditary Optic Neuropathy',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1174/',
   categorySlug: 'ophthalmologic',
-  charityIds: [],
+  charityIds: [52],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

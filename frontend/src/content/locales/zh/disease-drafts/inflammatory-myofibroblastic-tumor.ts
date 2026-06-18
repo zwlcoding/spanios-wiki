@@ -87,6 +87,11 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
       type: 'official',
       url: 'https://rarediseases.info.nih.gov/diseases/13007/inflammatory-myofibroblastic-tumor',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>症状取决于部位，可有咳嗽、胸痛、腹痛、腹胀、血尿或局部肿块，也可伴发热、乏力、贫血、体重下降和炎症指标升高。</p>',
@@ -100,7 +105,7 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'oncology',
-  charityIds: [],
+  charityIds: [24],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

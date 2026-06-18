@@ -104,6 +104,11 @@ export const diseaseLymphangioleiomyomatosisLam: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/lymphangioleiomyomatosis/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Progressive dyspnea, recurrent pneumothorax, chylothorax/ascites, dry cough, hemoptysis; may be associated with renal angiomyolipoma.</p>',
@@ -116,7 +121,7 @@ export const diseaseLymphangioleiomyomatosisLam: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Lymphangioleiomyomatosis',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK470348/',
   categorySlug: 'respiratory',
-  charityIds: [],
+  charityIds: [3],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -67,9 +67,26 @@ export default function HomePage() {
     },
   ];
   const hotTerms = [
-    uiText('卡尔曼综合征', 'Kallmann syndrome'),
-    uiText('渐冻症', 'ALS'),
-    uiText('血友病 A', 'Hemophilia A'),
+    {
+      kind: 'disease',
+      label: uiText('卡尔曼综合征', 'Kallmann syndrome'),
+      query: uiText('卡尔曼综合征', 'Kallmann syndrome'),
+    },
+    {
+      kind: 'disease',
+      label: uiText('血友病 A', 'Hemophilia A'),
+      query: uiText('血友病 A', 'Hemophilia A'),
+    },
+    {
+      kind: 'care',
+      label: uiText('遗传咨询', 'Genetic counseling'),
+      query: uiText('遗传咨询', 'Genetic counseling'),
+    },
+    {
+      kind: 'hospital',
+      label: uiText('北京协和医院', 'PUMCH'),
+      query: uiText('北京协和医院', 'Peking Union Medical College Hospital'),
+    },
   ];
 
   const handleSearch = (e: React.FormEvent) => {
@@ -137,19 +154,21 @@ export default function HomePage() {
 
           <div className="mt-4 flex flex-wrap items-center gap-2 text-sm text-stone-500">
             <span>{uiText('热门：', 'Popular:')}</span>
-            {hotTerms.map((term) => (
+            {hotTerms.map((term, index) => (
               <button
                 type="button"
-                key={term}
+                key={`${term.kind}-${term.query}`}
                 onClick={() => {
                   trackEvent('home_hot_search_click', {
-                    term_key: term,
+                    position: index + 1,
+                    term_kind: term.kind,
+                    ...getSearchMeta(term.query),
                   });
-                  navigate({ to: '/search', search: { q: term } });
+                  navigate({ to: '/search', search: { q: term.query } });
                 }}
                 className="badge-muted hover:bg-stone-200 dark:hover:bg-stone-700"
               >
-                {term}
+                {term.label}
               </button>
             ))}
           </div>
@@ -219,9 +238,11 @@ export default function HomePage() {
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {categories.map((category, index) => {
             const Icon = getCategoryIcon(category.icon);
-            const count = diseases.filter(
+            const categoryDiseases = diseases.filter(
               (disease) => disease.category?.slug === category.slug,
-            ).length;
+            );
+            const count = categoryDiseases.length;
+            const examples = categoryDiseases.slice(0, 2);
 
             return (
               <Link
@@ -246,6 +267,18 @@ export default function HomePage() {
                 <p className="mt-1 text-sm">
                   {uiText(`当前收录 ${count} 种`, `${count} listed`)}
                 </p>
+                {examples.length > 0 && (
+                  <div className="mt-3 flex flex-wrap gap-1.5">
+                    {examples.map((disease) => (
+                      <span
+                        key={disease.slug}
+                        className="rounded-full bg-stone-100 px-2 py-1 text-xs text-stone-600 dark:bg-stone-800 dark:text-stone-300"
+                      >
+                        {disease.name}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </Link>
             );
           })}

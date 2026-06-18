@@ -85,6 +85,11 @@ export const diseaseAlagilleSyndrome: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/alagille-syndrome/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见线索包括婴幼儿胆汁淤积、持续黄疸、尿深便浅、瘙痒、黄瘤、生长受影响，并可合并心脏、眼、脊柱、肾脏、血管和特殊面容等表现。</p>',
@@ -98,7 +103,7 @@ export const diseaseAlagilleSyndrome: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'digestive-hepatic',
-  charityIds: [],
+  charityIds: [50],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -89,6 +89,11 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
       type: 'official',
       url: 'https://rarediseases.info.nih.gov/diseases/13007/inflammatory-myofibroblastic-tumor',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Symptoms vary by site and may include cough, chest pain, abdominal pain, bloating, blood in urine, or a mass, sometimes with fever, fatigue, anemia, weight loss, and high inflammatory markers.</p>',
@@ -103,7 +108,7 @@ export const diseaseInflammatoryMyofibroblasticTumor: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'oncology',
-  charityIds: [],
+  charityIds: [24],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

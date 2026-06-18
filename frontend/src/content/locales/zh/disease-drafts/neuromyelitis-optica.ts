@@ -107,6 +107,11 @@ export const diseaseNeuromyelitisOptica: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/635',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>反复发作的视神经炎（视力下降、眼痛）和长节段横贯性脊髓炎（肢体无力、感觉障碍、排尿排便障碍），可伴顽固性呃逆、恶心呕吐。</p>',
@@ -119,7 +124,7 @@ export const diseaseNeuromyelitisOptica: DiseaseDraft = {
   sourceName: 'NCBI StatPearls',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK572108/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [14, 15, 16, 17, 18, 59],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -110,6 +110,11 @@ export const diseaseOsteogenesisImperfectaBrittleBoneDisease: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/666',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>反复骨折、蓝巩膜、牙本质发育不全、进行性听力下降、身材矮小和骨骼畸形。严重程度从轻度偶尔骨折到致死性宫内骨折不等。</p>',
@@ -122,7 +127,7 @@ export const diseaseOsteogenesisImperfectaBrittleBoneDisease: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1295/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [1, 2],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

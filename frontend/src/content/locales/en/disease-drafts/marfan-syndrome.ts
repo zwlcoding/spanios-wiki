@@ -103,6 +103,11 @@ export const diseaseMarfanSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/marfan-syndrome/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Tall slender stature, arachnodactyly, chest deformity, scoliosis, high myopia, lens dislocation, aortic root dilation, mitral valve prolapse, spontaneous pneumothorax.</p>',
@@ -115,7 +120,7 @@ export const diseaseMarfanSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews: Marfan Syndrome',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1335/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [23],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

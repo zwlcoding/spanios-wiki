@@ -90,6 +90,11 @@ export const diseaseHereditaryAngioedemaHae: DiseaseDraft = {
       type: 'review',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK482266/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>反复深部肿胀、腹痛呕吐、面部或四肢水肿，严重时可有喉部水肿和呼吸道阻塞风险。</p>',
@@ -103,7 +108,7 @@ export const diseaseHereditaryAngioedemaHae: DiseaseDraft = {
   sourceUrl:
     'https://medlineplus.gov/genetics/condition/hereditary-angioedema/',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [51],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

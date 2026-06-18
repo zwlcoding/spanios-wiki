@@ -104,6 +104,11 @@ export const diseaseAlportSyndrome: DiseaseDraft = {
       url: 'https://www.orpha.net/en/disease/detail/63',
       type: 'review',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Alport syndrome often presents with persistent microscopic hematuria as an early clue, gradually developing proteinuria, hypertension, and declining kidney function. Some patients develop sensorineural hearing loss, usually detected in late childhood, adolescence, or early adulthood. Eye findings may include anterior lenticonus, retinal changes, or corneal issues.</p>',
@@ -116,7 +121,7 @@ export const diseaseAlportSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews: Alport Syndrome',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1207/',
   categorySlug: 'renal-urologic',
-  charityIds: [],
+  charityIds: [13],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   tagSlugs: ['genetic-counseling'],

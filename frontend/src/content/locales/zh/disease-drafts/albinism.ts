@@ -90,6 +90,11 @@ export const diseaseAlbinism: DiseaseDraft = {
       type: 'review',
       url: 'https://doi.org/10.1186/1750-1172-2-43',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见线索包括皮肤、毛发和眼睛色素减少，畏光、眼球震颤、斜视、屈光不正、低视力，以及日晒后容易晒伤。</p>',
@@ -100,7 +105,7 @@ export const diseaseAlbinism: DiseaseDraft = {
   prognosis:
     '<p>白化病通常需要长期管理。早期视力支持、严格防晒和皮肤筛查可减少可避免的生活影响和皮肤风险。</p>',
   categorySlug: 'dermatologic',
-  charityIds: [],
+  charityIds: [9],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

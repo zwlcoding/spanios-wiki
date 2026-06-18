@@ -91,6 +91,11 @@ export const diseaseNarcolepsy: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/narcolepsy/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>主要表现为白天不可控制的嗜睡，可伴情绪触发的猝倒、睡瘫、入睡或醒来时幻觉、夜间睡眠破碎和自动行为。</p>',
@@ -104,7 +109,7 @@ export const diseaseNarcolepsy: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [20],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

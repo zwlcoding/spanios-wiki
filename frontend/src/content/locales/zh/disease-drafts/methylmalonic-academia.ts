@@ -106,6 +106,11 @@ export const diseaseMethylmalonicAcademia: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/289',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>早发型表现为新生儿期呕吐、嗜睡、肌张力低下、代谢性酸中毒；晚发型表现为发育迟缓、癫痫、智力障碍。长期可累及肾脏、胰腺和心脏。</p>',
@@ -118,7 +123,7 @@ export const diseaseMethylmalonicAcademia: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1231/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [42, 43],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

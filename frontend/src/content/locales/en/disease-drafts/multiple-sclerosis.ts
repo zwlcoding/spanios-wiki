@@ -107,6 +107,11 @@ export const diseaseMultipleSclerosis: DiseaseDraft = {
       type: 'patient-organization',
       url: 'https://www.nationalmssociety.org/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common symptoms include optic neuritis, limb numbness and weakness, sensory disturbances, ataxia, vertigo, fatigue, bladder dysfunction, and cognitive decline. The typical course is relapsing-remitting.</p>',
@@ -119,7 +124,7 @@ export const diseaseMultipleSclerosis: DiseaseDraft = {
   sourceName: 'NCBI StatPearls',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK499849/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [14, 15, 59],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

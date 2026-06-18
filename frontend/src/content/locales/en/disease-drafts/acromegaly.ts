@@ -92,6 +92,11 @@ export const diseaseAcromegaly: DiseaseDraft = {
       type: 'official',
       url: 'https://www.niddk.nih.gov/health-information/endocrine-diseases/acromegaly',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Common clues include enlarged hands and feet, coarser facial features, widened tooth spaces, sweating, thick skin, deeper voice, headaches, vision problems, snoring, joint pain, hand numbness, and abnormal glucose or blood pressure.</p>',
@@ -106,7 +111,7 @@ export const diseaseAcromegaly: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [40],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

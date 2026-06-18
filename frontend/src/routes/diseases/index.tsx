@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
+import { createFileRoute, Link, useNavigate } from '@tanstack/react-router';
 import {
   Activity,
   ArrowUpRight,
@@ -10,6 +10,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
 import { useDiseases } from '@/hooks/useDiseases';
 import { fetchDiseaseCategories, fetchDiseases } from '@/lib/contentClient';
+import type { Disease } from '@/types/content';
 import { getSearchMeta, trackEvent } from '@/utils/analytics';
 import { getCategoryIcon } from '@/utils/categoryIcons';
 import { uiText } from '@/utils/localeText';
@@ -37,6 +38,7 @@ export const Route = createFileRoute('/diseases/')({
 
 function DiseasesListPage() {
   const { category: initialCategory = 'all' } = Route.useSearch();
+  const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
   const [debouncedSearch, setDebouncedSearch] = useState('');
@@ -45,6 +47,8 @@ function DiseasesListPage() {
 
   const { data: categoriesData, isLoading: isLoadingCategories } =
     useDiseaseCategories();
+  const { data: allDiseasesData, isLoading: isLoadingAllDiseases } =
+    useDiseases();
 
   const { data: diseasesData, isLoading: isLoadingDiseases } = useDiseases({
     category: selectedCategory !== 'all' ? selectedCategory : undefined,
@@ -62,14 +66,19 @@ function DiseasesListPage() {
     setSelectedCategory(initialCategory || 'all');
   }, [initialCategory]);
 
+  const allDiseases = allDiseasesData?.data || [];
   const categories = [
     {
+      count: allDiseases.length,
       id: 'all',
       name: uiText('全部疾病', 'All Diseases'),
       slug: 'all',
       icon: Activity,
     },
     ...(categoriesData?.data?.map((cat) => ({
+      count: allDiseases.filter(
+        (disease) => disease.category?.slug === cat.slug,
+      ).length,
       id: cat.slug,
       name: cat.name,
       slug: cat.slug,
@@ -79,6 +88,24 @@ function DiseasesListPage() {
 
   const diseases = diseasesData?.data || [];
   const isLoading = isLoadingCategories || isLoadingDiseases;
+
+  const selectCategory = (
+    categoryId: string,
+    options: { trackChange?: boolean } = {},
+  ) => {
+    if (options.trackChange !== false) {
+      trackEvent('disease_filter_change', {
+        category: categoryId,
+      });
+    }
+    setSelectedCategory(categoryId);
+    setIsSidebarOpen(false);
+    navigate({
+      to: '/diseases',
+      search: { category: categoryId },
+      replace: true,
+    });
+  };
 
   useEffect(() => {
     if (!debouncedSearch || isLoadingDiseases) {
@@ -173,7 +200,7 @@ function DiseasesListPage() {
                   {uiText('疾病分类', 'Disease Categories')}
                 </h2>
 
-                {isLoadingCategories ? (
+                {isLoadingCategories || isLoadingAllDiseases ? (
                   <div className="space-y-2">
                     {[1, 2, 3, 4].map((i) => (
                       <div
@@ -190,13 +217,7 @@ function DiseasesListPage() {
                         <button
                           type="button"
                           key={category.id}
-                          onClick={() => {
-                            trackEvent('disease_filter_change', {
-                              category: category.id,
-                            });
-                            setSelectedCategory(category.id);
-                            setIsSidebarOpen(false);
-                          }}
+                          onClick={() => selectCategory(category.id)}
                           className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${
                             selectedCategory === category.id
                               ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg shadow-amber-500/25'
@@ -206,6 +227,15 @@ function DiseasesListPage() {
                           <Icon className="w-5 h-5 shrink-0" />
                           <span className="min-w-0 text-left font-medium">
                             {category.name}
+                          </span>
+                          <span
+                            className={`ml-auto rounded-full px-2 py-0.5 text-xs ${
+                              selectedCategory === category.id
+                                ? 'bg-white/20 text-white'
+                                : 'bg-stone-100 text-stone-500 dark:bg-stone-800 dark:text-stone-400'
+                            }`}
+                          >
+                            {category.count}
                           </span>
                         </button>
                       );
@@ -262,7 +292,7 @@ function DiseasesListPage() {
                       filter_type: 'category',
                       page: 'disease_list',
                     });
-                    setSelectedCategory('all');
+                    selectCategory('all', { trackChange: false });
                   }}
                   className="text-sm text-amber-600 hover:text-amber-700 flex items-center gap-1"
                 >
@@ -312,7 +342,7 @@ function DiseasesListPage() {
                         page: 'disease_list',
                       });
                       setSearchQuery('');
-                      setSelectedCategory('all');
+                      selectCategory('all', { trackChange: false });
                     }}
                     className="btn-soft"
                   >
@@ -363,6 +393,8 @@ function DiseasesListPage() {
                           </p>
                         )}
 
+                        <DiseaseQuickLookHints disease={disease} />
+
                         <div className="flex flex-wrap items-center gap-2">
                           {disease.category && (
                             <span className="badge-warm">
@@ -410,6 +442,45 @@ function DiseasesListPage() {
           </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+function DiseaseQuickLookHints({ disease }: { disease: Disease }) {
+  const hints = [
+    {
+      label: uiText('先看', 'Start'),
+      value: disease.quickLook?.whoToSeeFirst,
+    },
+    {
+      label: uiText('治疗', 'Care'),
+      value: disease.quickLook?.hasTreatment,
+    },
+    {
+      label: uiText('常见延误', 'Delay'),
+      value: disease.quickLook?.commonDelayReason,
+    },
+  ].filter((item) => item.value);
+
+  if (!hints.length) {
+    return null;
+  }
+
+  return (
+    <div className="mb-4 grid gap-2 sm:grid-cols-3">
+      {hints.map((hint) => (
+        <div
+          key={hint.label}
+          className="rounded-md border border-stone-200 bg-stone-50 px-3 py-2 text-xs dark:border-stone-700 dark:bg-stone-900/40"
+        >
+          <div className="font-medium text-stone-500 dark:text-stone-400">
+            {hint.label}
+          </div>
+          <div className="mt-1 line-clamp-2 text-stone-700 dark:text-stone-200">
+            {hint.value}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

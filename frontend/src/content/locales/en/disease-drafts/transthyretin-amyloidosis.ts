@@ -89,6 +89,11 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/druginfo/meds/a622032.html',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Features include progressive peripheral neuropathy, autonomic symptoms, carpal tunnel syndrome, GI problems, thickened heart muscle, heart failure, rhythm or conduction disease, and sometimes kidney or eye involvement.</p>',
@@ -103,7 +108,7 @@ export const diseaseTransthyretinAmyloidosis: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'multisystem',
-  charityIds: [],
+  charityIds: [41],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

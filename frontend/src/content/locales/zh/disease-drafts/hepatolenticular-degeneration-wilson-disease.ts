@@ -91,6 +91,11 @@ export const diseaseHepatolenticularDegenerationWilsonDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/wilson-disease/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为肝功能异常、肝硬化、急性肝衰竭、溶血、震颤、肌张力障碍、说话吞咽困难或精神行为变化。</p>',
@@ -103,7 +108,7 @@ export const diseaseHepatolenticularDegenerationWilsonDisease: DiseaseDraft = {
   sourceName: 'GeneReviews: Wilson Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1512/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [32, 33],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

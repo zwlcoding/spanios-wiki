@@ -98,6 +98,11 @@ export const diseaseIdiopathicPulmonaryArterialHypertension: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://eurheartj.oxfordjournals.org/content/early/2022/08/25/eurheartj.ehac237',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Early exertional dyspnea progressing to dyspnea at rest, fatigue, chest pain, syncope; late right heart failure with jugular distention, hepatomegaly, ascites, and edema.</p>',
@@ -110,7 +115,7 @@ export const diseaseIdiopathicPulmonaryArterialHypertension: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Idiopathic Pulmonary Arterial Hypertension',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK519041/',
   categorySlug: 'cardiovascular',
-  charityIds: [],
+  charityIds: [46, 47, 48],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

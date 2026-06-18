@@ -34,6 +34,8 @@ function HospitalsListPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const lastTrackedSearch = useRef('');
 
+  const { data: allHospitalsData, isLoading: isLoadingAllHospitals } =
+    useHospitals();
   const { data: hospitalsData, isLoading } = useHospitals({
     province: selectedProvince !== 'all' ? selectedProvince : undefined,
     search: debouncedSearch || undefined,
@@ -47,11 +49,21 @@ function HospitalsListPage() {
   }, [searchQuery]);
 
   const hospitals = hospitalsData?.data || [];
+  const allHospitals = allHospitalsData?.data || [];
   const provinces = [
-    { id: 'all', name: uiText('全部地区', 'All Regions') },
-    ...Array.from(new Set(hospitals.map((h) => h.province)))
+    {
+      count: allHospitals.length,
+      id: 'all',
+      name: uiText('全部地区', 'All Regions'),
+    },
+    ...Array.from(new Set(allHospitals.map((h) => h.province)))
       .filter(Boolean)
-      .map((province) => ({ id: province, name: province })),
+      .map((province) => ({
+        count: allHospitals.filter((hospital) => hospital.province === province)
+          .length,
+        id: province,
+        name: province,
+      })),
   ];
 
   const getLevelBadge = (level: string | undefined) => {
@@ -172,33 +184,55 @@ function HospitalsListPage() {
                   {uiText('地区筛选', 'Region Filter')}
                 </h2>
 
-                <div className="space-y-1 max-h-80 overflow-y-auto pr-2">
-                  {provinces.map((province) => (
-                    <button
-                      type="button"
-                      key={province.id}
-                      onClick={() => {
-                        trackEvent('hospital_filter_change', {
-                          province: province.id,
-                        });
-                        setSelectedProvince(province.id);
-                        setIsSidebarOpen(false);
-                      }}
-                      className={`w-full flex items-center justify-between px-4 py-3 rounded-xl transition-all duration-200 ${
-                        selectedProvince === province.id
-                          ? 'bg-gradient-to-r from-teal-500 to-emerald-500 text-white shadow-lg shadow-teal-500/25'
-                          : 'hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-400'
-                      } text-left`}
-                    >
-                      <span className="min-w-0 text-left font-medium">
-                        {province.name}
-                      </span>
-                      {selectedProvince === province.id && (
-                        <Navigation className="w-4 h-4 shrink-0" />
-                      )}
-                    </button>
-                  ))}
-                </div>
+                {isLoadingAllHospitals ? (
+                  <div className="space-y-2">
+                    {[1, 2, 3].map((item) => (
+                      <div
+                        key={item}
+                        className="h-10 animate-pulse rounded-lg bg-stone-200 dark:bg-stone-700"
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="space-y-1 max-h-80 overflow-y-auto pr-2">
+                    {provinces.map((province) => (
+                      <button
+                        type="button"
+                        key={province.id}
+                        onClick={() => {
+                          trackEvent('hospital_filter_change', {
+                            province: province.id,
+                          });
+                          setSelectedProvince(province.id);
+                          setIsSidebarOpen(false);
+                        }}
+                        className={`w-full flex items-center justify-between gap-3 px-4 py-3 rounded-xl transition-all duration-200 ${
+                          selectedProvince === province.id
+                            ? 'bg-gradient-to-r from-teal-500 to-emerald-500 text-white shadow-lg shadow-teal-500/25'
+                            : 'hover:bg-stone-100 dark:hover:bg-stone-800 text-stone-600 dark:text-stone-400'
+                        } text-left`}
+                      >
+                        <span className="min-w-0 text-left font-medium">
+                          {province.name}
+                        </span>
+                        <span className="ml-auto flex items-center gap-2">
+                          <span
+                            className={`rounded-full px-2 py-0.5 text-xs ${
+                              selectedProvince === province.id
+                                ? 'bg-white/20 text-white'
+                                : 'bg-stone-100 text-stone-500 dark:bg-stone-800 dark:text-stone-400'
+                            }`}
+                          >
+                            {province.count}
+                          </span>
+                          {selectedProvince === province.id && (
+                            <Navigation className="w-4 h-4 shrink-0" />
+                          )}
+                        </span>
+                      </button>
+                    ))}
+                  </div>
+                )}
               </div>
 
               {/* Info Card */}

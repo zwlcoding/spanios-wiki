@@ -92,11 +92,16 @@ export const diseaseHuntingtonDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/huntington-disease/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   sourceName: 'GeneReviews: Huntington Disease',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1305/',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [5],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

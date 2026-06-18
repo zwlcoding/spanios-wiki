@@ -112,6 +112,11 @@ export const diseaseMucopolysaccharidosis: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/579',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Coarse facial features, short stature, joint stiffness, skeletal abnormalities, developmental delay, hepatosplenomegaly, recurrent infections, corneal clouding, cardiac valve disease, and respiratory complications.</p>',
@@ -124,7 +129,7 @@ export const diseaseMucopolysaccharidosis: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1162/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [30],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -109,6 +109,11 @@ export const diseasePeutzJeghersSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/2869',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>特征性皮肤黏膜黑色素斑（口唇、口腔、指端）和胃肠道多发Peutz-Jeghers息肉。息肉可导致腹痛、肠套叠、便血和贫血。显著增加多种癌症风险。</p>',
@@ -121,7 +126,7 @@ export const diseasePeutzJeghersSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1266/',
   categorySlug: 'digestive-hepatic',
-  charityIds: [],
+  charityIds: [37],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

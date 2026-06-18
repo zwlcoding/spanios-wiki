@@ -96,6 +96,11 @@ export const diseaseGeneralizedMyastheniaGravis: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/myasthenia-gravis',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>可表现为眼睑下垂、复视、吞咽或说话困难、颈部和四肢无力、呼吸肌受累，常活动后加重、休息后改善。</p>',
@@ -108,7 +113,7 @@ export const diseaseGeneralizedMyastheniaGravis: DiseaseDraft = {
   sourceName: 'NINDS: Myasthenia Gravis',
   sourceUrl: 'https://www.ninds.nih.gov/node/733',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [12],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

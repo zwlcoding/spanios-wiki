@@ -107,6 +107,11 @@ export const diseaseParoxysmalNocturnalHemoglobinuria: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/447',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>血管内溶血（酱油色尿、贫血、黄疸）、血栓形成（尤其腹部静脉和脑静脉）和骨髓衰竭（全血细胞减少）。平滑肌痉挛可导致腹痛和吞咽困难。</p>',
@@ -119,7 +124,7 @@ export const diseaseParoxysmalNocturnalHemoglobinuria: DiseaseDraft = {
   sourceName: 'NCBI StatPearls',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK538475/',
   categorySlug: 'hematological',
-  charityIds: [],
+  charityIds: [19],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -103,6 +103,11 @@ export const diseaseAmyotrophicLateralSclerosis: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/amyotrophic-lateral-sclerosis/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>常见表现包括进行性肌无力、肌肉萎缩、肌束震颤、吞咽或言语困难。多数患者意识和感觉功能相对保留。</p>',
@@ -113,7 +118,7 @@ export const diseaseAmyotrophicLateralSclerosis: DiseaseDraft = {
   prognosis:
     '<p>病程差异很大。早期识别呼吸、吞咽和营养风险，并提前安排支持措施，有助于改善生活质量和照护连续性。</p>',
   categorySlug: 'neurological',
-  charityIds: [],
+  charityIds: [34, 35],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

@@ -93,6 +93,11 @@ export const diseasePemphigus: DiseaseDraft = {
       type: 'patient-organization',
       url: 'https://www.aad.org/public/diseases/a-z/pemphigus-overview',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Features include recurrent mouth or mucosal erosions, flaccid blisters, raw skin erosions, crusting, pain, eating difficulty, drainage, and secondary infection.</p>',
@@ -107,7 +112,7 @@ export const diseasePemphigus: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [54],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

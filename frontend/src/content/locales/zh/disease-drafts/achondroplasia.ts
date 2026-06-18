@@ -85,6 +85,11 @@ export const diseaseAchondroplasia: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/achondroplasia/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>主要表现为四肢近端短、非匀称性身材矮小、头围偏大、前额突出、手指短，并可能合并睡眠呼吸暂停、中耳炎、听力问题、脊柱或神经压迫相关症状。</p>',
@@ -98,7 +103,7 @@ export const diseaseAchondroplasia: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [38],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

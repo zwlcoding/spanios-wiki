@@ -96,11 +96,16 @@ export const diseaseHypophosphatemicRickets: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/x-linked-hypophosphatemia/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   sourceName: 'GeneReviews: X-Linked Hypophosphatemia',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK83985/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [58],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

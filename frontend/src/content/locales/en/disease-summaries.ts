@@ -26,7 +26,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/201902/073540e8f83b4a54a28684d23e2ae2f5/files/1732871139221_41526.pdf',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [21, 22],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -53,7 +53,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
+    charityIds: [38],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -109,7 +109,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [40],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -164,7 +164,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'digestive-hepatic',
-    charityIds: [],
+    charityIds: [50],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -191,7 +191,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://medlineplus.gov/genetics/condition/oculocutaneous-albinism/',
     categorySlug: 'dermatologic',
-    charityIds: [],
+    charityIds: [9],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -251,7 +251,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Alport Syndrome',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1207/',
     categorySlug: 'renal-urologic',
-    charityIds: [],
+    charityIds: [13],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -281,7 +281,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'ALS swallowing breathing risk',
     ],
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [34, 35],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -418,7 +418,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'aHUS recurrence genetic risk',
     ],
     categorySlug: 'renal-urologic',
-    charityIds: [],
+    charityIds: [57],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -779,7 +779,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'GeneReviews: Charcot-Marie-Tooth Hereditary Neuropathy Overview',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1358/',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [4],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -946,7 +946,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: NR0B1-Related Adrenal Hypoplasia Congenita',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1431/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [21],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -1422,7 +1422,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Fabry Disease',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1292/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [25],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -1450,7 +1450,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [6],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -1589,7 +1589,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
+    charityIds: [53],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -1753,7 +1753,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Gaucher Disease',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1269/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [36],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -1779,7 +1779,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NINDS: Myasthenia Gravis',
     sourceUrl: 'https://www.ninds.nih.gov/node/733',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [12],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2026,7 +2026,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Glycogen Storage Disease Type I',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1312/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [26, 49],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2087,7 +2087,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Hemophilia A',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1404/',
     categorySlug: 'hematological',
-    charityIds: [],
+    charityIds: [27, 28, 29],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2113,7 +2113,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Wilson Disease',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1512/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [32, 33],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2139,7 +2139,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://medlineplus.gov/genetics/condition/hereditary-angioedema/',
     categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
+    charityIds: [51],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2165,7 +2165,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI Bookshelf StatPearls: Epidermolysis Bullosa',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK599531/',
     categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
+    charityIds: [11],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2396,7 +2396,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Huntington Disease',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1305/',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [5],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2526,7 +2526,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: X-Linked Hypophosphatemia',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK83985/',
     categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
+    charityIds: [58],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2577,7 +2577,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'GeneReviews: Isolated Gonadotropin-Releasing Hormone Deficiency',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1334/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [7],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2605,7 +2605,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'oncology',
-    charityIds: [],
+    charityIds: [24],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2635,7 +2635,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'Kallmann syndrome genetic testing',
     ],
     categorySlug: 'genetic-developmental',
-    charityIds: [],
+    charityIds: [7, 8],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2919,7 +2919,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [20],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2973,7 +2973,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'genetic-developmental',
-    charityIds: [],
+    charityIds: [31],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3084,7 +3084,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
+    charityIds: [54],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3318,7 +3318,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
+    charityIds: [44],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3484,7 +3484,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [10],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3708,7 +3708,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'multisystem',
-    charityIds: [],
+    charityIds: [41],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3879,7 +3879,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [60],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3912,7 +3912,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls: Idiopathic Pulmonary Arterial Hypertension',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK519041/',
     categorySlug: 'cardiovascular',
-    charityIds: [],
+    charityIds: [46, 47, 48],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3945,7 +3945,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls: Idiopathic Pulmonary Fibrosis',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK448162/',
     categorySlug: 'respiratory',
-    charityIds: [],
+    charityIds: [56],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4142,7 +4142,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Leber Hereditary Optic Neuropathy',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1174/',
     categorySlug: 'ophthalmologic',
-    charityIds: [],
+    charityIds: [52],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4212,7 +4212,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls: Lymphangioleiomyomatosis',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK470348/',
     categorySlug: 'respiratory',
-    charityIds: [],
+    charityIds: [3],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4344,7 +4344,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: Marfan Syndrome',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1335/',
     categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
+    charityIds: [23],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4377,7 +4377,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews: McCune-Albright Syndrome',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK274564/',
     categorySlug: 'genetic-developmental',
-    charityIds: [],
+    charityIds: [55],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4441,7 +4441,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1231/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [42, 43],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4473,7 +4473,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1224/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [61],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4505,7 +4505,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1162/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [30],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4601,7 +4601,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK499849/',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [14, 15, 59],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4763,7 +4763,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK572108/',
     categorySlug: 'neurological',
-    charityIds: [],
+    charityIds: [14, 15, 16, 17, 18, 59],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4795,7 +4795,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1296/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [39],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4923,7 +4923,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1295/',
     categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
+    charityIds: [1, 2],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4988,7 +4988,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK538475/',
     categorySlug: 'hematological',
-    charityIds: [],
+    charityIds: [19],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -5020,7 +5020,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'GeneReviews',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1266/',
     categorySlug: 'digestive-hepatic',
-    charityIds: [],
+    charityIds: [37],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -5671,7 +5671,7 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     sourceName: 'NCBI StatPearls: Phenylketonuria (PKU)',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK535378/',
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [45],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {

@@ -98,6 +98,11 @@ export const diseaseGlycogenStorageDiseaseTypeIIi: DiseaseDraft = {
       type: 'review',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK470558/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Type I mainly presents with hypoglycemia, enlarged liver, abnormal lactate/uric acid/lipids; Type II Pompe disease mainly presents with muscle weakness, heart muscle or breathing muscle involvement.</p>',
@@ -110,7 +115,7 @@ export const diseaseGlycogenStorageDiseaseTypeIIi: DiseaseDraft = {
   sourceName: 'GeneReviews: Glycogen Storage Disease Type I',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1312/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [26, 49],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

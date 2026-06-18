@@ -110,6 +110,11 @@ export const diseasePeutzJeghersSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://www.orpha.net/en/disease/detail/2869',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Characteristic mucocutaneous melanin pigmentation (lips, oral cavity, digits) and multiple gastrointestinal Peutz-Jeghers polyps. Polyps can cause abdominal pain, intussusception, rectal bleeding, and anemia. Significantly elevated cancer risk.</p>',
@@ -122,7 +127,7 @@ export const diseasePeutzJeghersSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1266/',
   categorySlug: 'digestive-hepatic',
-  charityIds: [],
+  charityIds: [37],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

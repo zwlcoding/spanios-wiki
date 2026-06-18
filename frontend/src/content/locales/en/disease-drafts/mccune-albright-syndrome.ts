@@ -103,6 +103,11 @@ export const diseaseMccuneAlbrightSyndrome: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/mccune-albright-syndrome/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Fibrous dysplasia (bone pain, fractures, deformity), irregular-border caf\u00e9-au-lait spots, peripheral precocious puberty, hyperthyroidism, acromegaly, Cushing syndrome.</p>',
@@ -115,7 +120,7 @@ export const diseaseMccuneAlbrightSyndrome: DiseaseDraft = {
   sourceName: 'GeneReviews: McCune-Albright Syndrome',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK274564/',
   categorySlug: 'genetic-developmental',
-  charityIds: [],
+  charityIds: [55],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

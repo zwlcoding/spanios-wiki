@@ -99,6 +99,11 @@ export const diseaseHereditaryEpidermolysisBullosa: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/epidermolysis-bullosa/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Repeated blisters, erosions, chronic wounds, pain, scarring, and abnormal nails after minor friction; the mouth, eyes, esophagus, and hand/foot function may also be affected.</p>',
@@ -111,7 +116,7 @@ export const diseaseHereditaryEpidermolysisBullosa: DiseaseDraft = {
   sourceName: 'NCBI Bookshelf StatPearls: Epidermolysis Bullosa',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK599531/',
   categorySlug: 'skeletal-connective-tissue',
-  charityIds: [],
+  charityIds: [11],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

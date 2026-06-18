@@ -101,6 +101,11 @@ export const diseaseIdiopathicPulmonaryArterialHypertension: DiseaseDraft = {
       type: 'official',
       url: 'https://www.nhc.gov.cn/yjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>早期活动后气短，进展为静息呼吸困难、乏力、胸痛、晕厥；晚期右心衰竭（颈静脉怒张、肝大、腹水、下肢水肿）。</p>',
@@ -113,7 +118,7 @@ export const diseaseIdiopathicPulmonaryArterialHypertension: DiseaseDraft = {
   sourceName: 'NCBI StatPearls: Idiopathic Pulmonary Arterial Hypertension',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK519041/',
   categorySlug: 'cardiovascular',
-  charityIds: [],
+  charityIds: [46, 47, 48],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

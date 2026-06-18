@@ -107,6 +107,11 @@ export const diseaseHemophilia: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/hemophilia/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>May include joint or muscle bleeding; prolonged bleeding after injury, dental work, or surgery; repeated bruises; nosebleeds; blood in urine; or deep bleeding.</p>',
@@ -119,7 +124,7 @@ export const diseaseHemophilia: DiseaseDraft = {
   sourceName: 'GeneReviews: Hemophilia A',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK1404/',
   categorySlug: 'hematological',
-  charityIds: [],
+  charityIds: [27, 28, 29],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {
