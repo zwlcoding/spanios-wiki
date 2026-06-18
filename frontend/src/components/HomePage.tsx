@@ -8,9 +8,9 @@ import {
   Search,
 } from 'lucide-react';
 import { useState } from 'react';
+import { useCharityOrganizations } from '@/hooks/useCharityOrganizations';
 import { useDiseaseCategories } from '@/hooks/useDiseaseCategories';
 import { useDiseaseInventoryStats, useDiseases } from '@/hooks/useDiseases';
-import { useHospitals } from '@/hooks/useHospitals';
 import { getSearchMeta, trackEvent } from '@/utils/analytics';
 import { getCategoryIcon } from '@/utils/categoryIcons';
 import { uiText } from '@/utils/localeText';
@@ -32,11 +32,11 @@ export default function HomePage() {
   const { data: categoriesData } = useDiseaseCategories();
   const { data: diseasesData } = useDiseases();
   const { data: diseaseStatsData } = useDiseaseInventoryStats();
-  const { data: hospitalsData } = useHospitals();
+  const { data: charitiesData } = useCharityOrganizations();
   const categories = categoriesData?.data ?? [];
   const diseases = diseasesData?.data ?? [];
   const diseaseStats = diseaseStatsData?.data;
-  const hospitals = hospitalsData?.data ?? [];
+  const charities = charitiesData?.data ?? [];
   const quickLinks = [
     {
       title: uiText('疾病资料', 'Disease Guides'),
@@ -301,8 +301,8 @@ export default function HomePage() {
               label: uiText('官方目录条目', 'Official Catalog Items'),
             },
             {
-              value: `${hospitals.length}`,
-              label: uiText('就医资源', 'Care Resources'),
+              value: `${charities.length}`,
+              label: uiText('公益资源', 'Support Resources'),
             },
           ].map((stat) => (
             <div key={stat.label} className="surface-card p-5">

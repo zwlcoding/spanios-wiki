@@ -100,6 +100,11 @@ export const diseaseLangerhansCellHistiocytosis: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/langerhans-cell-histiocytosis/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>骨痛、皮疹、多饮多尿、肝脾肿大、淋巴结肿大、发热；成人肺 LCH 表现为呼吸困难、气胸。</p>',
@@ -112,7 +117,7 @@ export const diseaseLangerhansCellHistiocytosis: DiseaseDraft = {
   sourceName: 'GeneReviews: Langerhans Cell Histiocytosis',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK7037/',
   categorySlug: 'oncology',
-  charityIds: [],
+  charityIds: [79],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

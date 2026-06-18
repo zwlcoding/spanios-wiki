@@ -101,6 +101,11 @@ export const diseaseLangerhansCellHistiocytosis: DiseaseDraft = {
       type: 'review',
       url: 'https://rarediseases.org/rare-diseases/langerhans-cell-histiocytosis/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Bone pain, rash, polydipsia/polyuria, hepatosplenomegaly, lymphadenopathy, fever; adult pulmonary LCH presents with dyspnea and pneumothorax.</p>',
@@ -113,7 +118,7 @@ export const diseaseLangerhansCellHistiocytosis: DiseaseDraft = {
   sourceName: 'GeneReviews: Langerhans Cell Histiocytosis',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK7037/',
   categorySlug: 'oncology',
-  charityIds: [],
+  charityIds: [79],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

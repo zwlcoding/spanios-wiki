@@ -557,8 +557,20 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+    sources: [
+      {
+        name: 'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
+        type: 'official',
+        url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
+    charityIds: [78],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2372,8 +2384,20 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'Extremely rare, with a global prevalence of approximately 1 in 160,000 to 1 in 300,000, though it may be higher in certain populations due to founder effects.',
     sourceName: 'GeneReviews: Familial Hypercholesterolemia',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
+    sources: [
+      {
+        name: 'GeneReviews: Familial Hypercholesterolemia',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [82, 83],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3483,8 +3507,20 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
       'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+    sources: [
+      {
+        name: 'National Health Commission: Clinical Guidelines for 86 Rare Diseases (2025 edition)',
+        type: 'clinical-guideline',
+        url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'neurological',
-    charityIds: [10],
+    charityIds: [10, 81],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4076,8 +4112,20 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ],
     sourceName: 'GeneReviews: Langerhans Cell Histiocytosis',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK7037/',
+    sources: [
+      {
+        name: 'GeneReviews: Langerhans Cell Histiocytosis',
+        type: 'official',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK7037/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'oncology',
-    charityIds: [],
+    charityIds: [79],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -5031,624 +5079,6 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     tagSlugs: ['gastroenterology', 'genetic-counseling', 'cancer-surveillance'],
   },
   {
-    ...entity(1070, 'catalog-china-first-rare-disease-catalog-70'),
-    name: 'Medium Chain Acyl-CoA Dehydrogenase Deficiency',
-    nameEn: 'Medium Chain Acyl-CoA Dehydrogenase Deficiency',
-    alias:
-      '中链酰基辅酶A脱氢酶缺乏症; China First Rare Disease Catalog item 70',
-    slug: 'medium-chain-acyl-coa-dehydrogenase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1071, 'catalog-china-first-rare-disease-catalog-71'),
-    name: 'Methylmalonic Academia',
-    nameEn: 'Methylmalonic Academia',
-    alias: '甲基丙二酸血症; China First Rare Disease Catalog item 71',
-    slug: 'methylmalonic-academia',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1072, 'catalog-china-first-rare-disease-catalog-72'),
-    name: 'Mitochodrial Encephalomyopathy',
-    nameEn: 'Mitochodrial Encephalomyopathy',
-    alias: '线粒体脑肌病; China First Rare Disease Catalog item 72',
-    slug: 'mitochodrial-encephalomyopathy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E7%BA%BF%E7%B2%92%E4%BD%93%E8%84%91%E8%82%8C%E7%97%85',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1073, 'catalog-china-first-rare-disease-catalog-73'),
-    name: 'Mucopolysaccharidosis',
-    nameEn: 'Mucopolysaccharidosis',
-    alias: '黏多糖贮积症; China First Rare Disease Catalog item 73',
-    slug: 'mucopolysaccharidosis',
-    categorySlug: 'multisystem',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E9%BB%8F%E5%A4%9A%E9%86%A3%E8%B2%AF%E7%A9%8D%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1074, 'catalog-china-first-rare-disease-catalog-74'),
-    name: 'Multifocal Motor Neuropathy',
-    nameEn: 'Multifocal Motor Neuropathy',
-    alias: '多灶性运动神经病; China First Rare Disease Catalog item 74',
-    slug: 'multifocal-motor-neuropathy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1075, 'catalog-china-first-rare-disease-catalog-75'),
-    name: 'Multiple Acyl-CoA Dehydrogenase Deficiency',
-    nameEn: 'Multiple Acyl-CoA Dehydrogenase Deficiency',
-    alias:
-      '多种酰基辅酶A脱氢酶缺乏症; China First Rare Disease Catalog item 75',
-    slug: 'multiple-acyl-coa-dehydrogenase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1076, 'catalog-china-first-rare-disease-catalog-76'),
-    name: 'Multiple Sclerosis',
-    nameEn: 'Multiple Sclerosis',
-    alias: '多发性硬化; China First Rare Disease Catalog item 76',
-    slug: 'multiple-sclerosis',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E5%A4%9A%E5%8F%91%E6%80%A7%E7%A1%AC%E5%8C%96%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1077, 'catalog-china-first-rare-disease-catalog-77'),
-    name: 'Multiple System Atrophy',
-    nameEn: 'Multiple System Atrophy',
-    alias: '多系统萎缩; China First Rare Disease Catalog item 77',
-    slug: 'multiple-system-atrophy',
-    categorySlug: 'multisystem',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1078, 'catalog-china-first-rare-disease-catalog-78'),
-    name: 'Myotonic Dystrophy',
-    nameEn: 'Myotonic Dystrophy',
-    alias: '肌强直性营养不良; China First Rare Disease Catalog item 78',
-    slug: 'myotonic-dystrophy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E5%BC%B7%E7%9B%B4%E6%80%A7%E8%82%8C%E8%82%89%E5%A4%B1%E9%A4%8A%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1079, 'catalog-china-first-rare-disease-catalog-79'),
-    name: 'N-acetylglutamate Synthase Deficiency',
-    nameEn: 'N-acetylglutamate Synthase Deficiency',
-    alias: 'N-乙酰谷氨酸合成酶缺乏症; China First Rare Disease Catalog item 79',
-    slug: 'n-acetylglutamate-synthase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1080, 'catalog-china-first-rare-disease-catalog-80'),
-    name: 'Neonatal Diabetes Mellitus',
-    nameEn: 'Neonatal Diabetes Mellitus',
-    alias: '新生儿糖尿病; China First Rare Disease Catalog item 80',
-    slug: 'neonatal-diabetes-mellitus',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1081, 'catalog-china-first-rare-disease-catalog-81'),
-    name: 'Neuromyelitis Optica',
-    nameEn: 'Neuromyelitis Optica',
-    alias: '视神经脊髓炎; China First Rare Disease Catalog item 81',
-    slug: 'neuromyelitis-optica',
-    categorySlug: 'ophthalmologic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1082, 'catalog-china-first-rare-disease-catalog-82'),
-    name: 'Niemann-Pick Disease',
-    nameEn: 'Niemann-Pick Disease',
-    alias: '尼曼匹克病; China First Rare Disease Catalog item 82',
-    slug: 'niemann-pick-disease',
-    categorySlug: 'multisystem',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E5%B0%BC%E6%9B%BC%E5%8C%B9%E5%85%8B%E7%97%85',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1083, 'catalog-china-first-rare-disease-catalog-83'),
-    name: 'Non-Syndromic Deafness',
-    nameEn: 'Non-Syndromic Deafness',
-    alias: '非综合征性耳聋; China First Rare Disease Catalog item 83',
-    slug: 'non-syndromic-deafness',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1084, 'catalog-china-first-rare-disease-catalog-84'),
-    name: 'Noonan Syndrome',
-    nameEn: 'Noonan Syndrome',
-    alias: 'Noonan综合征; China First Rare Disease Catalog item 84',
-    slug: 'noonan-syndrome',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E5%8A%AA%E5%8D%97%E6%B0%8F%E7%97%87%E5%80%99%E7%BE%A4',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1085, 'catalog-china-first-rare-disease-catalog-85'),
-    name: 'Ornithine Transcarbamylase Deficiency',
-    nameEn: 'Ornithine Transcarbamylase Deficiency',
-    alias:
-      '鸟氨酸氨甲酰基转移酶缺乏症; China First Rare Disease Catalog item 85',
-    slug: 'ornithine-transcarbamylase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1086, 'catalog-china-first-rare-disease-catalog-86'),
-    name: 'Osteogenesis Imperfecta (Brittle Bone Disease)',
-    nameEn: 'Osteogenesis Imperfecta (Brittle Bone Disease)',
-    alias: '成骨不全症（脆骨病）; China First Rare Disease Catalog item 86',
-    slug: 'osteogenesis-imperfecta-brittle-bone-disease',
-    categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E6%88%90%E9%AA%A8%E4%B8%8D%E5%85%A8%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1087, 'catalog-china-first-rare-disease-catalog-87'),
-    name: 'Parkinson Disease (Young-onset , Early-onset)',
-    nameEn: 'Parkinson Disease (Young-onset , Early-onset)',
-    alias:
-      '帕金森病（青年型、早发型）; China First Rare Disease Catalog item 87',
-    slug: 'parkinson-disease-young-onset-early-onset',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E5%B8%95%E9%87%91%E6%A3%AE%E6%B0%8F%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1088, 'catalog-china-first-rare-disease-catalog-88'),
-    name: 'Paroxysmal Nocturnal Hemoglobinuria',
-    nameEn: 'Paroxysmal Nocturnal Hemoglobinuria',
-    alias: '阵发性睡眠性血红蛋白尿; China First Rare Disease Catalog item 88',
-    slug: 'paroxysmal-nocturnal-hemoglobinuria',
-    categorySlug: 'hematological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1089, 'catalog-china-first-rare-disease-catalog-89'),
-    name: 'Peutz-Jeghers Syndrome',
-    nameEn: 'Peutz-Jeghers Syndrome',
-    alias: '黑斑息肉综合征; China First Rare Disease Catalog item 89',
-    slug: 'peutz-jeghers-syndrome',
-    categorySlug: 'digestive-hepatic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E6%B3%A2%E4%BC%8A%E8%8C%A8-%E8%80%B6%E6%A0%BC%E7%BB%BC%E5%90%88%E5%BE%81',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
     ...entity(500, 'disease-phenylketonuria'),
     name: 'Phenylketonuria',
     nameEn: 'Phenylketonuria',
@@ -5747,35 +5177,109 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1093, 'catalog-china-first-rare-disease-catalog-93'),
     name: 'Prader-Willi Syndrome',
     nameEn: 'Prader-Willi Syndrome',
-    alias: 'Prader-Willi综合征; China First Rare Disease Catalog item 93',
+    alias: 'PWS, Prader-Willi syndrome, First Rare Disease Catalog item 93',
     slug: 'prader-willi-syndrome',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Prader-Willi syndrome is a genetic neurodevelopmental disorder usually involving abnormal paternal expression on chromosome 15, with infant hypotonia and feeding difficulty followed by hyperphagia, weight-management difficulty, and developmental-behavioral needs.',
+    plainName:
+      'A genetic syndrome affecting hunger, development, and behavior regulation',
+    prevalence:
+      'Included in China’s first rare disease catalog; international estimates are often about 1 in 10,000-30,000 people.',
+    quickLook: {
+      whatItIs:
+        'Prader-Willi syndrome is a genetic neurodevelopmental disorder usually involving abnormal paternal expression on chromosome 15, with infant hypotonia and feeding difficulty followed by hyperphagia, weight-management difficulty, and developmental-behavioral needs.',
+      whoToSeeFirst:
+        'Start with Pediatric endocrinology, Medical genetics, Pediatric neurology; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Prader-Willi syndrome is a genetic neurodevelopmental disorder usually involving abnormal paternal expression on chromosome 15, with infant hypotonia and feeding difficulty followed by hyperphagia, weight-management difficulty, and developmental-behavioral needs.',
+      hasTreatment:
+        'Current care focuses on early rehabilitation, nutrition and weight management, sleep-breathing assessment, endocrine review, and behavioral support. Growth hormone or other endocrine treatment should be assessed by a team familiar with PWS.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'a newborn or infant is very floppy, has a weak cry, poor sucking, prolonged feeds, or needs tube feeding',
+        'after infancy, appetite becomes intense, satiety is limited, and weight rises quickly',
+        'slow linear growth, delayed puberty, relatively small hands or feet, or endocrine concerns are noted',
+        'developmental delay, learning difficulty, rigid or compulsive behaviors, emotional outbursts, or sleep-disordered breathing are present',
+      ],
+      commonWrongTurns: [
+        'treating infancy symptoms only as prematurity, poor feeding, or malnutrition without genetic testing',
+        'framing food-seeking as willpower or parenting rather than impaired hunger regulation',
+        'focusing only on diet while missing sleep apnea, endocrine issues, bone health, and behavior support',
+      ],
+      firstDepartments: [
+        'Pediatric endocrinology',
+        'Medical genetics',
+        'Pediatric neurology',
+        'Rehabilitation medicine',
+        'Nutrition',
+      ],
+      diagnosisChecklist: [
+        'bring birth history, feeding history, height-weight curves, developmental milestones, and behavior timeline',
+        'bring prior genetic or methylation testing, endocrine labs, sleep study, and rehabilitation assessments',
+        'track food-security needs, snoring, daytime sleepiness, constipation, skin picking, and behavior concerns',
+      ],
+      testsToAskAbout: [
+        'PWS DNA methylation testing, with chromosomal microarray, UPD, or imprinting-center analysis when needed',
+        'growth hormone axis, thyroid, adrenal, and gonadal endocrine assessment',
+        'sleep study, nutrition assessment, bone age or bone density, and scoliosis screening',
+      ],
+      questionsForDoctor: [
+        'Can the test result identify the genetic mechanism and family recurrence risk?',
+        'How should we structure food security, activity, school support, and home routines?',
+        'Should growth hormone therapy be assessed, and what screening is needed first?',
+        'How often should sleep, behavior, and endocrine issues be reviewed?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Prader-Willi syndrome is a genetic neurodevelopmental disorder usually involving abnormal paternal expression on chromosome 15, with infant hypotonia and feeding difficulty followed by hyperphagia, weight-management difficulty, and developmental-behavioral needs.</p><p>Warning signs can include: a newborn or infant is very floppy, has a weak cry, poor sucking, prolonged feeds, or needs tube feeding; after infancy, appetite becomes intense, satiety is limited, and weight rises quickly; slow linear growth, delayed puberty, relatively small hands or feet, or endocrine concerns are noted; developmental delay, learning difficulty, rigid or compulsive behaviors, emotional outbursts, or sleep-disordered breathing are present. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Current care focuses on early rehabilitation, nutrition and weight management, sleep-breathing assessment, endocrine review, and behavioral support. Growth hormone or other endocrine treatment should be assessed by a team familiar with PWS.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Prader-Willi syndrome is a genetic neurodevelopmental disorder usually involving abnormal paternal expression on chromosome 15, with infant hypotonia and feeding difficulty followed by hyperphagia, weight-management difficulty, and developmental-behavioral needs.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Prader-Willi syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/prader-willi-syndrome/',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E6%99%AE%E7%91%9E%E5%BE%B7%E5%A8%81%E5%88%A9%E7%97%87%E5%80%99%E7%BE%A4',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Prader-Willi syndrome is a genetic neurodevelopmental disorder usually involving abnormal paternal expression on chromosome 15, with infant hypotonia and feeding difficulty followed by hyperphagia, weight-management difficulty, and developmental-behavioral needs. Common clues include a newborn or infant is very floppy, has a weak cry, poor sucking, prolonged feeds, or needs tube feeding and after infancy, appetite becomes intense, satiety is limited, and weight rises quickly.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Current care focuses on early rehabilitation, nutrition and weight management, sleep-breathing assessment, endocrine review, and behavioral support. Growth hormone or other endocrine treatment should be assessed by a team familiar with PWS.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'genetic-developmental',
+    charityIds: [63],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1094, 'catalog-china-first-rare-disease-catalog-94'),
@@ -5894,29 +5398,112 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1098, 'catalog-china-first-rare-disease-catalog-98'),
     name: 'Progressive Muscular Dystrophy',
     nameEn: 'Progressive Muscular Dystrophy',
-    alias: '进行性肌营养不良; China First Rare Disease Catalog item 98',
+    alias:
+      'Muscular dystrophy, DMD/BMD-related muscular dystrophy, First Rare Disease Catalog item 98',
     slug: 'progressive-muscular-dystrophy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Progressive muscular dystrophy covers inherited muscle disorders marked by progressive weakness and wasting; Duchenne/Becker forms are often related to DMD gene variants and require ongoing motor, cardiac, and respiratory care.',
+    plainName:
+      'A group of muscle disorders with progressive weakness and long-term heart, lung, and orthopedic needs',
+    prevalence:
+      'Included in China’s first rare disease catalog; Duchenne muscular dystrophy mainly affects boys and is often estimated at about 1 in 3,500-5,000 male births.',
+    quickLook: {
+      whatItIs:
+        'Progressive muscular dystrophy covers inherited muscle disorders marked by progressive weakness and wasting; Duchenne/Becker forms are often related to DMD gene variants and require ongoing motor, cardiac, and respiratory care.',
+      whoToSeeFirst:
+        'Start with Pediatric neurology, Neurology, Rehabilitation medicine; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Duchenne/Becker muscular dystrophy is usually X-linked, while other muscular dystrophies have different inheritance patterns; genetic diagnosis guides family testing.',
+      hasTreatment:
+        'Care includes rehabilitation, stretching and assistive devices, cardiac and respiratory surveillance, nutrition and bone health, and subtype-specific review of corticosteroids, genetic therapies, or clinical-trial options.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'a boy walks late, runs or jumps poorly, falls often, has trouble climbing stairs, or shows Gowers sign',
+        'calves look enlarged while strength is declining and creatine kinase is very high',
+        'unexplained high liver enzymes occur together with motor delay or weakness',
+        'family history includes male relatives with early weakness, wheelchair use, or cardiomyopathy',
+      ],
+      commonWrongTurns: [
+        'using calcium supplements or generic rehabilitation without checking CK and neuromuscular causes',
+        'investigating high transaminases as liver disease for too long without considering muscle source',
+        'after diagnosis, focusing only on walking while missing cardiomyopathy, respiratory, and bone risks',
+      ],
+      firstDepartments: [
+        'Pediatric neurology',
+        'Neurology',
+        'Rehabilitation medicine',
+        'Cardiology',
+        'Pulmonology',
+        'Medical genetics',
+      ],
+      diagnosisChecklist: [
+        'bring motor milestones, fall frequency, videos of rising from the floor or climbing stairs, CK, and liver enzymes',
+        'bring EMG, muscle MRI or biopsy, genetic testing, ECG/echo, and lung function results',
+        'record family history of male weakness, early death, or cardiomyopathy',
+      ],
+      testsToAskAbout: [
+        'creatine kinase, EMG, and muscle imaging',
+        'DMD deletion/duplication testing and sequencing, with broader myopathy testing when needed',
+        'ECG, echocardiogram or cardiac MRI, and lung function',
+        'bone density, scoliosis, and contracture assessment',
+      ],
+      questionsForDoctor: [
+        'Which muscular dystrophy subtype is most likely, and is the variant type clear?',
+        'Are subtype-specific medicines, steroids, genetic therapies, or trials appropriate?',
+        'When should regular heart and respiratory monitoring begin?',
+        'Should the mother and female relatives have carrier testing?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Progressive muscular dystrophy covers inherited muscle disorders marked by progressive weakness and wasting; Duchenne/Becker forms are often related to DMD gene variants and require ongoing motor, cardiac, and respiratory care.</p><p>Warning signs can include: a boy walks late, runs or jumps poorly, falls often, has trouble climbing stairs, or shows Gowers sign; calves look enlarged while strength is declining and creatine kinase is very high; unexplained high liver enzymes occur together with motor delay or weakness; family history includes male relatives with early weakness, wheelchair use, or cardiomyopathy. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Care includes rehabilitation, stretching and assistive devices, cardiac and respiratory surveillance, nutrition and bone health, and subtype-specific review of corticosteroids, genetic therapies, or clinical-trial options.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Duchenne/Becker muscular dystrophy is usually X-linked, while other muscular dystrophies have different inheritance patterns; genetic diagnosis guides family testing.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Duchenne and Becker muscular dystrophy',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dystrophy/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Progressive muscular dystrophy covers inherited muscle disorders marked by progressive weakness and wasting; Duchenne/Becker forms are often related to DMD gene variants and require ongoing motor, cardiac, and respiratory care. Common clues include a boy walks late, runs or jumps poorly, falls often, has trouble climbing stairs, or shows Gowers sign and calves look enlarged while strength is declining and creatine kinase is very high.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Care includes rehabilitation, stretching and assistive devices, cardiac and respiratory surveillance, nutrition and bone health, and subtype-specific review of corticosteroids, genetic therapies, or clinical-trial options.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [66, 67, 68, 69, 70, 71, 80],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1099, 'catalog-china-first-rare-disease-catalog-99'),
@@ -6012,69 +5599,215 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1102, 'catalog-china-first-rare-disease-catalog-102'),
     name: 'Retinitis Pigmentosa',
     nameEn: 'Retinitis Pigmentosa',
-    alias: '视网膜色素变性; China First Rare Disease Catalog item 102',
+    alias: 'RP, First Rare Disease Catalog item 102',
     slug: 'retinitis-pigmentosa',
-    categorySlug: 'ophthalmologic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Retinitis pigmentosa is a group of inherited retinal degenerations that often begin with night blindness and narrowing peripheral vision and may later affect central vision.',
+    plainName:
+      'An inherited retinal degeneration often first affecting night and side vision',
+    prevalence:
+      'Included in China’s first rare disease catalog; international estimates are often about 1 in 3,500-4,000 people.',
+    quickLook: {
+      whatItIs:
+        'Retinitis pigmentosa is a group of inherited retinal degenerations that often begin with night blindness and narrowing peripheral vision and may later affect central vision.',
+      whoToSeeFirst:
+        'Start with Ophthalmology, Retina clinic, Medical genetics; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Inheritance is diverse, including autosomal dominant, autosomal recessive, and X-linked forms, and RP may also be part of a syndrome.',
+      hasTreatment:
+        'Most types are managed with surveillance, low-vision support, treatment of complications, and genetic counseling. A small number of gene-specific conditions have approved or investigational targeted options.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'night vision is poor and adapting between bright and dark environments is slow',
+        'side vision narrows and the person bumps into objects from the side',
+        'family members have night blindness, narrowed visual fields, or early vision loss',
+        'eye examination shows bone-spicule pigmentation, narrowed retinal vessels, or waxy optic disc pallor',
+      ],
+      commonWrongTurns: [
+        'treating only myopia, astigmatism, or dry eye without visual-field and retinal electrophysiology assessment',
+        'assuming normal central acuity means there is no problem, while side vision and night vision decline',
+        'not distinguishing nonsyndromic RP from syndromic retinal disease with hearing, kidney, or neurologic signs',
+      ],
+      firstDepartments: [
+        'Ophthalmology',
+        'Retina clinic',
+        'Medical genetics',
+        'Low-vision rehabilitation',
+      ],
+      diagnosisChecklist: [
+        'track when night blindness, visual-field narrowing, reading, or mobility problems began',
+        'bring fundus photographs, OCT, visual fields, ERG, genetic testing, and family eye history',
+        'record hearing loss, balance problems, kidney symptoms, or neurologic symptoms',
+      ],
+      testsToAskAbout: [
+        'dilated retinal examination, OCT, fundus autofluorescence, visual fields, and ERG',
+        'inherited retinal disease gene testing',
+        'hearing, kidney, or other syndromic assessment when symptoms suggest it',
+      ],
+      questionsForDoctor: [
+        'Does this fit RP, and could it be syndromic retinal disease?',
+        'Which genetic test is recommended, and how would results affect follow-up and family screening?',
+        'Are there treatable complications such as macular edema or cataract?',
+        'Where should low-vision aids and mobility training start?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Retinitis pigmentosa is a group of inherited retinal degenerations that often begin with night blindness and narrowing peripheral vision and may later affect central vision.</p><p>Warning signs can include: night vision is poor and adapting between bright and dark environments is slow; side vision narrows and the person bumps into objects from the side; family members have night blindness, narrowed visual fields, or early vision loss; eye examination shows bone-spicule pigmentation, narrowed retinal vessels, or waxy optic disc pallor. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Most types are managed with surveillance, low-vision support, treatment of complications, and genetic counseling. A small number of gene-specific conditions have approved or investigational targeted options.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Inheritance is diverse, including autosomal dominant, autosomal recessive, and X-linked forms, and RP may also be part of a syndrome.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Retinitis pigmentosa',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/retinitis-pigmentosa/',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E8%A7%86%E7%BD%91%E8%86%9C%E8%89%B2%E7%B4%A0%E5%8F%98%E6%80%A7%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Retinitis pigmentosa is a group of inherited retinal degenerations that often begin with night blindness and narrowing peripheral vision and may later affect central vision. Common clues include night vision is poor and adapting between bright and dark environments is slow and side vision narrows and the person bumps into objects from the side.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Most types are managed with surveillance, low-vision support, treatment of complications, and genetic counseling. A small number of gene-specific conditions have approved or investigational targeted options.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'ophthalmologic',
+    charityIds: [74],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1103, 'catalog-china-first-rare-disease-catalog-103'),
     name: 'Retinoblastoma',
     nameEn: 'Retinoblastoma',
-    alias: '视网膜母细胞瘤; China First Rare Disease Catalog item 103',
+    alias: 'RB, First Rare Disease Catalog item 103',
     slug: 'retinoblastoma',
-    categorySlug: 'oncology',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Retinoblastoma is the most common intraocular cancer in children, often related to RB1 gene changes, and white pupil reflex, strabismus, or vision changes need urgent ophthalmic-oncology assessment.',
+    plainName:
+      'A childhood eye cancer where white pupil reflex and strabismus are key warning signs',
+    prevalence:
+      'Included in China’s first rare disease catalog; international estimates are often about 1 in 15,000-20,000 newborns.',
+    quickLook: {
+      whatItIs:
+        'Retinoblastoma is the most common intraocular cancer in children, often related to RB1 gene changes, and white pupil reflex, strabismus, or vision changes need urgent ophthalmic-oncology assessment.',
+      whoToSeeFirst:
+        'Start with Ophthalmology emergency, Pediatric retina or ocular oncology, Pediatric oncology; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Retinoblastoma can result from somatic or germline RB1 changes; bilateral, multifocal, early-onset, or family-history cases especially need genetic counseling.',
+      hasTreatment:
+        'Treatment depends on stage and whether one or both eyes are involved. Options may include local therapy, chemotherapy, intra-arterial treatment, laser or cryotherapy, radiotherapy, or eye removal when needed to protect life.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'photos repeatedly show a white pupil reflex or cat-eye-like reflection',
+        'an infant or child develops persistent strabismus, nystagmus, or vision change',
+        'eye redness, pain, bulging, or abnormal pupil appearance occurs',
+        'family history includes retinoblastoma or childhood eye cancer',
+      ],
+      commonWrongTurns: [
+        'assuming leukocoria is just flash reflection and delaying dilated retinal examination',
+        'treating only strabismus or amblyopia without excluding an eye tumor',
+        'missing genetic counseling and sibling or future-child screening',
+      ],
+      firstDepartments: [
+        'Ophthalmology emergency',
+        'Pediatric retina or ocular oncology',
+        'Pediatric oncology',
+        'Medical genetics',
+      ],
+      diagnosisChecklist: [
+        'bring photos showing leukocoria or strabismus and note when changes began',
+        'bring eye examinations, ultrasound, MRI, treatment records, and family cancer history',
+        'record whether one or both eyes are affected and whether eye pain, redness, or systemic symptoms occurred',
+      ],
+      testsToAskAbout: [
+        'dilated retinal examination and fundus photography',
+        'ocular ultrasound and MRI when indicated, while avoiding unnecessary biopsy',
+        'RB1 genetic testing and family counseling',
+      ],
+      questionsForDoctor: [
+        'What is the stage and risk of spread, and what is the treatment sequence?',
+        'Is eye or vision preservation possible, and when is eye removal necessary to protect life?',
+        'Is RB1 testing needed, and how should siblings be screened?',
+        'How often is follow-up needed, and what second-cancer or recurrence signs matter?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Retinoblastoma is the most common intraocular cancer in children, often related to RB1 gene changes, and white pupil reflex, strabismus, or vision changes need urgent ophthalmic-oncology assessment.</p><p>Warning signs can include: photos repeatedly show a white pupil reflex or cat-eye-like reflection; an infant or child develops persistent strabismus, nystagmus, or vision change; eye redness, pain, bulging, or abnormal pupil appearance occurs; family history includes retinoblastoma or childhood eye cancer. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Treatment depends on stage and whether one or both eyes are involved. Options may include local therapy, chemotherapy, intra-arterial treatment, laser or cryotherapy, radiotherapy, or eye removal when needed to protect life.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Retinoblastoma can result from somatic or germline RB1 changes; bilateral, multifocal, early-onset, or family-history cases especially need genetic counseling.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Retinoblastoma',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/retinoblastoma/',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E8%A7%86%E7%BD%91%E8%86%9C%E6%AF%8D%E7%BB%86%E8%83%9E%E7%98%A4',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Retinoblastoma is the most common intraocular cancer in children, often related to RB1 gene changes, and white pupil reflex, strabismus, or vision changes need urgent ophthalmic-oncology assessment. Common clues include photos repeatedly show a white pupil reflex or cat-eye-like reflection and an infant or child develops persistent strabismus, nystagmus, or vision change.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Treatment depends on stage and whether one or both eyes are involved. Options may include local therapy, chemotherapy, intra-arterial treatment, laser or cryotherapy, radiotherapy, or eye removal when needed to protect life.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'oncology',
+    charityIds: [75],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1104, 'catalog-china-first-rare-disease-catalog-104'),
@@ -6108,36 +5841,109 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1105, 'catalog-china-first-rare-disease-catalog-105'),
     name: 'Severe Myoclonic Epilepsy in Infancy (Dravet Syndrome)',
     nameEn: 'Severe Myoclonic Epilepsy in Infancy (Dravet Syndrome)',
-    alias:
-      '婴儿严重肌阵挛性癫痫(Dravet综合征); China First Rare Disease Catalog item 105',
+    alias: 'Dravet syndrome, SMEI, First Rare Disease Catalog item 105',
     slug: 'severe-myoclonic-epilepsy-in-infancy-dravet-syndrome',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Dravet syndrome is a developmental and epileptic encephalopathy beginning in infancy, often related to SCN1A variants, with seizures that may be triggered by fever, warm water, vaccine-related fever, or environmental heat.',
+    plainName:
+      'An early-childhood genetic epilepsy syndrome often triggered by fever',
+    prevalence:
+      'Included in China’s first rare disease catalog; estimates vary, and OCR source material from Zhuowei Baby Support Center cites about 1/15,700-1/40,900.',
+    quickLook: {
+      whatItIs:
+        'Dravet syndrome is a developmental and epileptic encephalopathy beginning in infancy, often related to SCN1A variants, with seizures that may be triggered by fever, warm water, vaccine-related fever, or environmental heat.',
+      whoToSeeFirst:
+        'Start with Pediatric neurology, Epilepsy clinic, Emergency medicine; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Many cases are related to de novo SCN1A variants, though other genes can be involved; genetic diagnosis can guide treatment and counseling.',
+      hasTreatment:
+        'Care focuses on reducing seizures, avoiding triggers, and having a rescue plan. Some sodium-channel blockers may worsen Dravet syndrome, so medicine choices should be made by an epilepsy specialist.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'a seizure before age one is prolonged and triggered by fever or warm water',
+        'seizures are one-sided or alternate sides, then multiple seizure types appear',
+        'recovery after seizures is slow, or development, language, or gait begins to lag',
+        'the frequency, duration, or triggers do not fit ordinary febrile seizures',
+      ],
+      commonWrongTurns: [
+        'treating recurrent events as simple febrile seizures without epilepsy-syndrome assessment',
+        'not having a home rescue plan, causing delay during prolonged seizures',
+        'not confirming which antiseizure medicines may be unsuitable in Dravet syndrome',
+      ],
+      firstDepartments: [
+        'Pediatric neurology',
+        'Epilepsy clinic',
+        'Emergency medicine',
+        'Rehabilitation medicine',
+        'Medical genetics',
+      ],
+      diagnosisChecklist: [
+        'save seizure videos and record age, temperature, trigger, duration, laterality, and recovery',
+        'bring EEG, brain MRI, genetic testing, and previous medication responses',
+        'list triggers such as fever, vaccination-related fever, bathing, heat, light, and sleep loss',
+      ],
+      testsToAskAbout: [
+        'EEG and epilepsy-syndrome assessment',
+        'SCN1A and epilepsy gene testing',
+        'developmental, language, motor, and behavior assessment',
+      ],
+      questionsForDoctor: [
+        'Do these seizures fit Dravet syndrome, and is SCN1A testing needed?',
+        'When and how should rescue medication be used, and when should emergency services be called?',
+        'Which medicines and triggers should be avoided?',
+        'How should vaccination, fever, and bathing safety be planned?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Dravet syndrome is a developmental and epileptic encephalopathy beginning in infancy, often related to SCN1A variants, with seizures that may be triggered by fever, warm water, vaccine-related fever, or environmental heat.</p><p>Warning signs can include: a seizure before age one is prolonged and triggered by fever or warm water; seizures are one-sided or alternate sides, then multiple seizure types appear; recovery after seizures is slow, or development, language, or gait begins to lag; the frequency, duration, or triggers do not fit ordinary febrile seizures. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Care focuses on reducing seizures, avoiding triggers, and having a rescue plan. Some sodium-channel blockers may worsen Dravet syndrome, so medicine choices should be made by an epilepsy specialist.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Many cases are related to de novo SCN1A variants, though other genes can be involved; genetic diagnosis can guide treatment and counseling.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'GARD: Dravet syndrome',
+        type: 'official',
+        url: 'https://rarediseases.info.nih.gov/diseases/10430/dravet-syndrome',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E5%A9%B4%E5%84%BF%E4%B8%A5%E9%87%8D%E8%82%8C%E9%98%B5%E6%8C%9B%E6%80%A7%E7%99%AB%E7%97%AB',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Dravet syndrome is a developmental and epileptic encephalopathy beginning in infancy, often related to SCN1A variants, with seizures that may be triggered by fever, warm water, vaccine-related fever, or environmental heat. Common clues include a seizure before age one is prolonged and triggered by fever or warm water and seizures are one-sided or alternate sides, then multiple seizure types appear.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Care focuses on reducing seizures, avoiding triggers, and having a rescue plan. Some sodium-channel blockers may worsen Dravet syndrome, so medicine choices should be made by an epilepsy specialist.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [72, 73],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1106, 'catalog-china-first-rare-disease-catalog-106'),
@@ -6233,125 +6039,432 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1109, 'catalog-china-first-rare-disease-catalog-109'),
     name: 'Spinal and Bulbar Muscular Atrophy (Kennedy Disease)',
     nameEn: 'Spinal and Bulbar Muscular Atrophy (Kennedy Disease)',
-    alias:
-      '脊髓延髓肌萎缩症（肯尼迪病）; China First Rare Disease Catalog item 109',
+    alias: 'SBMA, Kennedy disease, First Rare Disease Catalog item 109',
     slug: 'spinal-and-bulbar-muscular-atrophy-kennedy-disease',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Spinal and bulbar muscular atrophy, or Kennedy disease, is an X-linked neuromuscular disorder caused by CAG repeat expansion in the AR gene, with adult-onset weakness, fasciculations, swallowing or speech difficulty, and endocrine features.',
+    plainName:
+      'An X-linked neuromuscular disease, usually in adult men, affecting limb and bulbar muscles',
+    prevalence:
+      'Included in China’s first rare disease catalog; OCR patient-organization material cites about 1-2 per 100,000, with estimates varying by population.',
+    quickLook: {
+      whatItIs:
+        'Spinal and bulbar muscular atrophy, or Kennedy disease, is an X-linked neuromuscular disorder caused by CAG repeat expansion in the AR gene, with adult-onset weakness, fasciculations, swallowing or speech difficulty, and endocrine features.',
+      whoToSeeFirst:
+        'Start with Neurology, Neuromuscular clinic, Rehabilitation medicine; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Kennedy disease is X-linked and caused by CAG repeat expansion in the AR gene; genetic counseling is important for families.',
+      hasTreatment:
+        'Current care is mainly supportive: rehabilitation, fall prevention, swallowing and nutrition support, respiratory assessment, endocrine care, and genetic counseling.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'an adult man gradually develops proximal limb weakness, falls, or difficulty climbing stairs',
+        'tongue or facial twitching, slurred speech, choking, or swallowing difficulty occurs',
+        'fasciculations or tremor occur with gynecomastia, infertility, or testicular atrophy',
+        'male relatives have similar slowly progressive weakness',
+      ],
+      commonWrongTurns: [
+        'being labeled ALS without confirmatory AR gene testing, causing avoidable fear',
+        'seeing only endocrine or breast symptoms while neuromuscular signs are missed',
+        'underestimating choking, falls, and sleep-related breathing problems',
+      ],
+      firstDepartments: [
+        'Neurology',
+        'Neuromuscular clinic',
+        'Rehabilitation medicine',
+        'Endocrinology',
+        'Medical genetics',
+      ],
+      diagnosisChecklist: [
+        'track weakness, falls, swallowing, speech, and fasciculation timeline',
+        'bring EMG, CK, hormone tests, family history, and previous diagnoses',
+        'record choking, weight loss, sleep breathing, and daily function change',
+      ],
+      testsToAskAbout: [
+        'AR gene CAG repeat-expansion testing',
+        'EMG, nerve conduction, CK, and endocrine assessment',
+        'swallowing, nutrition, respiratory, and rehabilitation assessment',
+      ],
+      questionsForDoctor: [
+        'Do symptoms fit SBMA, and how is it distinguished from ALS and other myopathies?',
+        'What does the AR gene result mean for family members?',
+        'How should swallowing, fall, and breathing risks be monitored?',
+        'What exercise intensity and assistive devices are appropriate?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Spinal and bulbar muscular atrophy, or Kennedy disease, is an X-linked neuromuscular disorder caused by CAG repeat expansion in the AR gene, with adult-onset weakness, fasciculations, swallowing or speech difficulty, and endocrine features.</p><p>Warning signs can include: an adult man gradually develops proximal limb weakness, falls, or difficulty climbing stairs; tongue or facial twitching, slurred speech, choking, or swallowing difficulty occurs; fasciculations or tremor occur with gynecomastia, infertility, or testicular atrophy; male relatives have similar slowly progressive weakness. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Current care is mainly supportive: rehabilitation, fall prevention, swallowing and nutrition support, respiratory assessment, endocrine care, and genetic counseling.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Kennedy disease is X-linked and caused by CAG repeat expansion in the AR gene; genetic counseling is important for families.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: "NINDS: Kennedy's Disease",
+        type: 'official',
+        url: 'https://www.ninds.nih.gov/health-information/disorders/kennedys-disease',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Spinal and bulbar muscular atrophy, or Kennedy disease, is an X-linked neuromuscular disorder caused by CAG repeat expansion in the AR gene, with adult-onset weakness, fasciculations, swallowing or speech difficulty, and endocrine features. Common clues include an adult man gradually develops proximal limb weakness, falls, or difficulty climbing stairs and tongue or facial twitching, slurred speech, choking, or swallowing difficulty occurs.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Current care is mainly supportive: rehabilitation, fall prevention, swallowing and nutrition support, respiratory assessment, endocrine care, and genetic counseling.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [76],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1110, 'catalog-china-first-rare-disease-catalog-110'),
     name: 'Spinal Muscular Atrophy',
     nameEn: 'Spinal Muscular Atrophy',
-    alias: '脊髓性肌萎缩症; China First Rare Disease Catalog item 110',
+    alias: 'SMA, First Rare Disease Catalog item 110',
     slug: 'spinal-muscular-atrophy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Spinal muscular atrophy is a group of inherited neuromuscular disorders, usually related to SMN1 gene changes, in which motor-neuron loss causes progressive weakness, motor delay, and sometimes swallowing or breathing problems.',
+    plainName:
+      'A genetic motor-neuron disease causing muscle weakness and movement limitations',
+    prevalence:
+      'Included in China’s first rare disease catalog; international estimates are often about 1 in 6,000-10,000 newborns.',
+    quickLook: {
+      whatItIs:
+        'Spinal muscular atrophy is a group of inherited neuromuscular disorders, usually related to SMN1 gene changes, in which motor-neuron loss causes progressive weakness, motor delay, and sometimes swallowing or breathing problems.',
+      whoToSeeFirst:
+        'Start with Pediatric neurology, Neurology, Rehabilitation medicine; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Most SMA is autosomal recessive and related to biallelic SMN1 changes; SMN2 copy number influences severity but does not fully predict the course.',
+      hasTreatment:
+        'Disease-modifying therapies may be available, but suitability depends on SMA type, timing, clinical status, and access. Care also includes respiratory, nutrition, swallowing, rehabilitation, orthopedic, and genetic-counseling support.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'marked infant hypotonia, poor head control, delayed rolling or sitting, weak cry or cough',
+        'proximal weakness, legs weaker than hands, and reduced reflexes',
+        'feeding effort, choking, recurrent respiratory infections, or nighttime underventilation',
+        'family history of SMA, unexplained infant weakness, or positive carrier screening',
+      ],
+      commonWrongTurns: [
+        'observing too long as calcium deficiency or developmental delay without SMN1 testing',
+        'doing rehabilitation alone while missing respiratory, nutrition, and disease-modifying treatment assessment',
+        'assuming sitting or walking ability means long-term spine, joint, and respiratory follow-up is unnecessary',
+      ],
+      firstDepartments: [
+        'Pediatric neurology',
+        'Neurology',
+        'Rehabilitation medicine',
+        'Pulmonology',
+        'Medical genetics',
+      ],
+      diagnosisChecklist: [
+        'bring motor milestones, weakness timeline, swallowing and feeding history, respiratory infections, and sleep symptoms',
+        'bring genetic testing, EMG, lung function or sleep study, spine imaging, and medication records',
+        'record whether disease-modifying treatment has been used and when it started',
+      ],
+      testsToAskAbout: [
+        'SMN1 deletion or variant testing and SMN2 copy-number assessment',
+        'respiratory function, sleep ventilation, swallowing, and nutrition assessment',
+        'rehabilitation, contracture, scoliosis, and bone-health assessment',
+      ],
+      questionsForDoctor: [
+        'Which SMA type fits, and what neuromuscular conditions still need exclusion?',
+        'Is disease-modifying therapy suitable, and how should response and safety be monitored?',
+        'How should respiratory, nutrition, and rehabilitation plans be organized?',
+        'Should parents or siblings have carrier testing?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Spinal muscular atrophy is a group of inherited neuromuscular disorders, usually related to SMN1 gene changes, in which motor-neuron loss causes progressive weakness, motor delay, and sometimes swallowing or breathing problems.</p><p>Warning signs can include: marked infant hypotonia, poor head control, delayed rolling or sitting, weak cry or cough; proximal weakness, legs weaker than hands, and reduced reflexes; feeding effort, choking, recurrent respiratory infections, or nighttime underventilation; family history of SMA, unexplained infant weakness, or positive carrier screening. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Disease-modifying therapies may be available, but suitability depends on SMA type, timing, clinical status, and access. Care also includes respiratory, nutrition, swallowing, rehabilitation, orthopedic, and genetic-counseling support.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Most SMA is autosomal recessive and related to biallelic SMN1 changes; SMN2 copy number influences severity but does not fully predict the course.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Spinal muscular atrophy',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy/',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E8%84%8A%E9%AB%93%E6%80%A7%E8%82%8C%E8%82%89%E8%90%8E%E7%B8%AE%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Spinal muscular atrophy is a group of inherited neuromuscular disorders, usually related to SMN1 gene changes, in which motor-neuron loss causes progressive weakness, motor delay, and sometimes swallowing or breathing problems. Common clues include marked infant hypotonia, poor head control, delayed rolling or sitting, weak cry or cough and proximal weakness, legs weaker than hands, and reduced reflexes.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Disease-modifying therapies may be available, but suitability depends on SMA type, timing, clinical status, and access. Care also includes respiratory, nutrition, swallowing, rehabilitation, orthopedic, and genetic-counseling support.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [65],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1111, 'catalog-china-first-rare-disease-catalog-111'),
     name: 'Spinocerebellar Ataxia',
     nameEn: 'Spinocerebellar Ataxia',
-    alias: '脊髓小脑性共济失调; China First Rare Disease Catalog item 111',
+    alias: 'SCA, Spinocerebellar ataxia, First Rare Disease Catalog item 111',
     slug: 'spinocerebellar-ataxia',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Spinocerebellar ataxia is a group of inherited neurodegenerative disorders causing imbalance, poor coordination, slurred speech, and sometimes eye-movement, swallowing, peripheral-nerve, cognitive, or mood symptoms.',
+    plainName:
+      'A group of inherited ataxias mainly causing imbalance and coordination problems',
+    prevalence:
+      'Included in China’s first rare disease catalog; frequency varies substantially by subtype and region.',
+    quickLook: {
+      whatItIs:
+        'Spinocerebellar ataxia is a group of inherited neurodegenerative disorders causing imbalance, poor coordination, slurred speech, and sometimes eye-movement, swallowing, peripheral-nerve, cognitive, or mood symptoms.',
+      whoToSeeFirst:
+        'Start with Neurology, Movement disorders clinic, Medical genetics; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Many SCAs are autosomal dominant and some are repeat-expansion disorders; family testing and reproductive planning should be done with genetic counseling.',
+      hasTreatment:
+        'Most SCAs are managed with rehabilitation, fall prevention, swallowing and nutrition support, symptom treatment, daily-life adaptation, and genetic counseling; subtype clarity can guide surveillance and research opportunities.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'walking becomes unsteady, falls increase, movements become clumsy, or tremor appears',
+        'speech becomes slurred, or nystagmus, double vision, or choking occurs',
+        'family members have cerebellar atrophy, gait imbalance, or unexplained wheelchair use',
+        'brain imaging shows cerebellar atrophy',
+      ],
+      commonWrongTurns: [
+        'treating symptoms as cervical spine disease, vertigo, or anxiety without neurologic localization',
+        'stopping at the MRI phrase “cerebellar atrophy” without subtype testing and genetic counseling',
+        'missing swallowing safety, fall prevention, and mental-health support',
+      ],
+      firstDepartments: [
+        'Neurology',
+        'Movement disorders clinic',
+        'Medical genetics',
+        'Rehabilitation medicine',
+        'Swallowing or nutrition clinic',
+      ],
+      diagnosisChecklist: [
+        'record age at onset, progression speed, falls, speech, swallowing, and eye-movement symptoms',
+        'draw a three-generation family tree with similar symptoms, diagnoses, or early deaths',
+        'bring brain MRI, genetic testing, rehabilitation assessment, and medication records',
+      ],
+      testsToAskAbout: [
+        'brain MRI and neurologic examination',
+        'SCA repeat-expansion testing and related ataxia gene testing',
+        'swallowing, gait-balance, eye-movement, and peripheral-nerve assessment',
+      ],
+      questionsForDoctor: [
+        'Which SCA subtype is most likely, and how should genetic testing be staged?',
+        'What precautions apply to predictive testing and reproductive counseling for relatives?',
+        'How should rehabilitation, assistive devices, and fall prevention be planned?',
+        'How should choking, weight loss, or mood symptoms be managed?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Spinocerebellar ataxia is a group of inherited neurodegenerative disorders causing imbalance, poor coordination, slurred speech, and sometimes eye-movement, swallowing, peripheral-nerve, cognitive, or mood symptoms.</p><p>Warning signs can include: walking becomes unsteady, falls increase, movements become clumsy, or tremor appears; speech becomes slurred, or nystagmus, double vision, or choking occurs; family members have cerebellar atrophy, gait imbalance, or unexplained wheelchair use; brain imaging shows cerebellar atrophy. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Most SCAs are managed with rehabilitation, fall prevention, swallowing and nutrition support, symptom treatment, daily-life adaptation, and genetic counseling; subtype clarity can guide surveillance and research opportunities.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Many SCAs are autosomal dominant and some are repeat-expansion disorders; family testing and reproductive planning should be done with genetic counseling.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'NORD: Spinocerebellar Ataxia',
+        type: 'official',
+        url: 'https://rarediseases.org/rare-diseases/spinocerebellar-ataxia/',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E8%84%8A%E9%AB%93%E5%B0%8F%E8%84%91%E6%80%A7%E5%85%B1%E6%B5%8E%E5%A4%B1%E8%B0%83',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Spinocerebellar ataxia is a group of inherited neurodegenerative disorders causing imbalance, poor coordination, slurred speech, and sometimes eye-movement, swallowing, peripheral-nerve, cognitive, or mood symptoms. Common clues include walking becomes unsteady, falls increase, movements become clumsy, or tremor appears and speech becomes slurred, or nystagmus, double vision, or choking occurs.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Most SCAs are managed with rehabilitation, fall prevention, swallowing and nutrition support, symptom treatment, daily-life adaptation, and genetic counseling; subtype clarity can guide surveillance and research opportunities.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [77],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1112, 'catalog-china-first-rare-disease-catalog-112'),
     name: 'Systemic Sclerosis',
     nameEn: 'Systemic Sclerosis',
-    alias: '系统性硬化症; China First Rare Disease Catalog item 112',
+    alias: 'Scleroderma, SSc, First Rare Disease Catalog item 112',
     slug: 'systemic-sclerosis',
-    categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Systemic sclerosis is an autoimmune connective-tissue disease that can cause skin thickening, Raynaud phenomenon, and possible lung, digestive, kidney, or heart involvement.',
+    plainName:
+      'An autoimmune disease causing skin thickening and possible blood-vessel and internal-organ involvement',
+    prevalence:
+      'Included in China’s first rare disease catalog; frequency varies by population, geography, and case definition.',
+    quickLook: {
+      whatItIs:
+        'Systemic sclerosis is an autoimmune connective-tissue disease that can cause skin thickening, Raynaud phenomenon, and possible lung, digestive, kidney, or heart involvement.',
+      whoToSeeFirst:
+        'Start with Rheumatology, Pulmonology, Cardiology; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Systemic sclerosis is usually not a single-gene inherited disorder; immune, environmental, and genetic susceptibility factors may all contribute.',
+      hasTreatment:
+        'There is no single cure; treatment is organ-based and may include Raynaud and vascular care, immunosuppression, lung surveillance, reflux management, and prevention or urgent treatment of renal crisis.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'fingers turn white or purple in cold, become painful, or develop recurrent fingertip ulcers',
+        'swollen fingers, tightening or thickening skin, rings becoming tight, or difficulty making a fist',
+        'unexplained reflux, swallowing difficulty, shortness of breath, dry cough, or reduced exercise tolerance',
+        'positive autoimmune antibodies or abnormal nailfold capillaries',
+      ],
+      commonWrongTurns: [
+        'treating symptoms only as chilblains, dermatitis, reflux, or joint pain without rheumatology assessment',
+        'focusing only on skin while missing interstitial lung disease, pulmonary hypertension, or renal crisis risk',
+        'using steroids or unverified remedies without checking blood pressure, kidney function, and lung involvement',
+      ],
+      firstDepartments: [
+        'Rheumatology',
+        'Pulmonology',
+        'Cardiology',
+        'Nephrology',
+        'Gastroenterology',
+      ],
+      diagnosisChecklist: [
+        'track Raynaud attacks, skin change, fingertip ulcers, reflux, swallowing symptoms, and breathlessness',
+        'bring autoantibody results, lung function, chest HRCT, echocardiogram, urine tests, and kidney function',
+        'record blood pressure changes, medications, infections, cough, and exercise tolerance',
+      ],
+      testsToAskAbout: [
+        'ANA profile, systemic-sclerosis antibodies, and nailfold capillaroscopy',
+        'lung function, diffusion capacity, chest HRCT, and echocardiography',
+        'blood pressure, urinalysis, kidney function, ECG, and NT-proBNP when indicated',
+      ],
+      questionsForDoctor: [
+        'Is this limited or diffuse systemic sclerosis, and which organs are involved?',
+        'How often should lung disease and pulmonary hypertension be screened?',
+        'How can Raynaud attacks and fingertip ulcers be prevented and treated?',
+        'Which medications could increase renal-crisis risk?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Systemic sclerosis is an autoimmune connective-tissue disease that can cause skin thickening, Raynaud phenomenon, and possible lung, digestive, kidney, or heart involvement.</p><p>Warning signs can include: fingers turn white or purple in cold, become painful, or develop recurrent fingertip ulcers; swollen fingers, tightening or thickening skin, rings becoming tight, or difficulty making a fist; unexplained reflux, swallowing difficulty, shortness of breath, dry cough, or reduced exercise tolerance; positive autoimmune antibodies or abnormal nailfold capillaries. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>There is no single cure; treatment is organ-based and may include Raynaud and vascular care, immunosuppression, lung surveillance, reflux management, and prevention or urgent treatment of renal crisis.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Systemic sclerosis is usually not a single-gene inherited disorder; immune, environmental, and genetic susceptibility factors may all contribute.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'NIAMS: Scleroderma',
+        type: 'official',
+        url: 'https://www.niams.nih.gov/health-topics/scleroderma',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
+    symptoms:
+      '<p>Systemic sclerosis is an autoimmune connective-tissue disease that can cause skin thickening, Raynaud phenomenon, and possible lung, digestive, kidney, or heart involvement. Common clues include fingers turn white or purple in cold, become painful, or develop recurrent fingertip ulcers and swollen fingers, tightening or thickening skin, rings becoming tight, or difficulty making a fist.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>There is no single cure; treatment is organ-based and may include Raynaud and vascular care, immunosuppression, lung surveillance, reflux management, and prevention or urgent treatment of renal crisis.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'immunological-rheumatologic',
+    charityIds: [64],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['first-rare-disease-catalog'],
   },
   {
@@ -6386,35 +6499,112 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1114, 'catalog-china-first-rare-disease-catalog-114'),
     name: 'Tuberous Sclerosis Complex',
     nameEn: 'Tuberous Sclerosis Complex',
-    alias: '结节性硬化症; China First Rare Disease Catalog item 114',
+    alias:
+      'TSC, Tuberous sclerosis complex, First Rare Disease Catalog item 114',
     slug: 'tuberous-sclerosis-complex',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: 'National Health Commission First Rare Disease Catalog',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Tuberous sclerosis complex is a multisystem genetic disorder, usually caused by TSC1 or TSC2 variants, that can lead to hamartomas or related lesions in the brain, skin, kidneys, heart, lungs, and eyes.',
+    plainName:
+      'A genetic multisystem condition affecting the brain, skin, kidneys, and other organs',
+    prevalence:
+      'Included in China’s first rare disease catalog; international estimates are often about 1 in 6,000 people.',
+    quickLook: {
+      whatItIs:
+        'Tuberous sclerosis complex is a multisystem genetic disorder, usually caused by TSC1 or TSC2 variants, that can lead to hamartomas or related lesions in the brain, skin, kidneys, heart, lungs, and eyes.',
+      whoToSeeFirst:
+        'Start with Pediatric neurology, Neurology, Dermatology; confirmed cases often need multidisciplinary follow-up.',
+      isGenetic:
+        'Tuberous sclerosis complex is a multisystem genetic disorder, usually caused by TSC1 or TSC2 variants, that can lead to hamartomas or related lesions in the brain, skin, kidneys, heart, lungs, and eyes.',
+      hasTreatment:
+        'Treatment depends on organ involvement and may include seizure control, developmental and behavioral support, skin and kidney surveillance, and assessment for mTOR inhibitors, surgery, or interventional treatment when appropriate.',
+      commonDelayReason:
+        'Diagnosis is often delayed when early symptoms are treated separately, such as weakness, seizures, skin signs, vision changes, or developmental delay, instead of being connected into one disease pattern.',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        'infantile spasms, recurrent seizures, developmental regression, or significant developmental delay',
+        'hypomelanotic macules, facial angiofibromas, shagreen patch, or periungual fibromas',
+        'brain imaging shows subependymal nodules or cortical tubers, or kidney imaging shows angiomyolipomas',
+        'family history includes TSC, epilepsy, kidney hamartomas, or similar skin findings',
+      ],
+      commonWrongTurns: [
+        'treating seizures without checking skin, kidneys, eyes, and family history',
+        'calling pale skin patches ordinary pigmentation changes without Wood lamp or systemic assessment',
+        'managing adult kidney lesions in isolation without asking about childhood seizures or skin signs',
+      ],
+      firstDepartments: [
+        'Pediatric neurology',
+        'Neurology',
+        'Dermatology',
+        'Nephrology',
+        'Medical genetics',
+      ],
+      diagnosisChecklist: [
+        'bring seizure videos, EEG, brain MRI, kidney ultrasound/CT/MRI, and skin photographs',
+        'track development, learning, behavior, sleep, and kidney or lung symptoms',
+        'bring family history, genetic results, and prior medication response',
+      ],
+      testsToAskAbout: [
+        'brain MRI, EEG, and developmental-behavioral assessment',
+        'skin examination and Wood lamp examination',
+        'kidney imaging, blood pressure, kidney function, and urine testing',
+        'TSC1/TSC2 genetic testing, with family testing when needed',
+        'age-appropriate eye, heart, and lung assessment',
+      ],
+      questionsForDoctor: [
+        'Which organs are involved now, and which need scheduled surveillance?',
+        'Does seizure treatment need adjustment or further evaluation for surgery or targeted therapy?',
+        'What is the size and bleeding risk of kidney lesions, and how often should imaging be repeated?',
+        'Should relatives be screened or receive genetic counseling?',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Tuberous sclerosis complex is a multisystem genetic disorder, usually caused by TSC1 or TSC2 variants, that can lead to hamartomas or related lesions in the brain, skin, kidneys, heart, lungs, and eyes.</p><p>Warning signs can include: infantile spasms, recurrent seizures, developmental regression, or significant developmental delay; hypomelanotic macules, facial angiofibromas, shagreen patch, or periungual fibromas; brain imaging shows subependymal nodules or cortical tubers, or kidney imaging shows angiomyolipomas; family history includes TSC, epilepsy, kidney hamartomas, or similar skin findings. Symptoms vary by age, subtype, and organ involvement.</p>',
+      diagnosis:
+        '<p>Diagnosis starts with a careful symptom timeline, family history, and specialist examination, then uses targeted genetic, imaging, electrophysiology, laboratory, or functional tests depending on the disease.</p><p>Genetic results should be interpreted by clinicians familiar with the condition, because inheritance pattern, recurrence risk, and family testing differ by mechanism.</p>',
+      treatment:
+        '<p>Treatment depends on organ involvement and may include seizure control, developmental and behavioral support, skin and kidney surveillance, and assessment for mTOR inhibitors, surgery, or interventional treatment when appropriate.</p><p>Care plans should also address function, surveillance for complications, mental health, and family support. Avoid unverified medicines, supplements, or training programs without specialist advice.</p>',
+      longTermCare:
+        '<p>Long-term care works best with a concise medical summary that lists the diagnosis, key tests, genetic result, medicines, emergency signs, and main follow-up doctors. Rehabilitation, school or work accommodations, and caregiver plans should be revisited as needs change.</p>',
+      fertilityOrFamily:
+        '<p>Tuberous sclerosis complex is a multisystem genetic disorder, usually caused by TSC1 or TSC2 variants, that can lead to hamartomas or related lesions in the brain, skin, kidneys, heart, lungs, and eyes.</p><p>Before family testing, predictive testing, or reproductive planning, genetic counseling can clarify the purpose, limits, and possible family impact of testing.</p>',
+      emergencySigns:
+        '<p>Seek urgent care for breathing difficulty, altered consciousness, prolonged seizure, choking or serious swallowing difficulty, rapidly worsening weakness or vision change, severe infection, or acute severe pain.</p>',
+    },
     sources: [
       {
-        name: 'National Health Commission First Rare Disease Catalog',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+        name: 'National Health Commission: First Rare Disease Catalog',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: 'China First Rare Disease Catalog Wikipedia template',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Tuberous sclerosis complex',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/tuberous-sclerosis-complex/',
       },
       {
-        name: 'Chinese Wikipedia article',
-        url: 'https://zh.wikipedia.org/wiki/%E7%BB%93%E8%8A%82%E6%80%A7%E7%A1%AC%E5%8C%96%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Tuberous sclerosis complex is a multisystem genetic disorder, usually caused by TSC1 or TSC2 variants, that can lead to hamartomas or related lesions in the brain, skin, kidneys, heart, lungs, and eyes. Common clues include infantile spasms, recurrent seizures, developmental regression, or significant developmental delay and hypomelanotic macules, facial angiofibromas, shagreen patch, or periungual fibromas.</p>',
+    diagnosis:
+      '<p>Diagnosis combines history, examination, specialist assessment, and disease-specific genetic, imaging, or functional testing. The exact pathway should be guided by the specialist team.</p>',
+    treatment:
+      '<p>Treatment depends on organ involvement and may include seizure control, developmental and behavioral support, skin and kidney surveillance, and assessment for mTOR inhibitors, surgery, or interventional treatment when appropriate.</p>',
+    prognosis:
+      '<p>Outlook depends on subtype, age at onset, organ involvement, and access to treatment and follow-up. Early diagnosis, structured surveillance, and family support help reduce preventable risks.</p>',
+    sourceName: 'National Health Commission: First Rare Disease Catalog',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'genetic-developmental',
+    charityIds: [62],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1115, 'catalog-china-first-rare-disease-catalog-115'),
@@ -6626,5 +6816,171 @@ export const enDiseaseSummaries: DiseaseDraft[] = [
     ],
     reviewStatus: 'draft',
     tagSlugs: ['first-rare-disease-catalog'],
+  },
+  {
+    ...entity(6101, 'disease-alstrom-syndrome'),
+    name: 'Alström syndrome',
+    nameEn: 'Alström Syndrome',
+    alias:
+      'Alstrom syndrome, Alström-Hallgren syndrome, ALMS, ALMS1-related ciliopathy',
+    slug: 'alstrom-syndrome',
+    oneSentence:
+      'Alström syndrome is an autosomal recessive ALMS1-related multisystem disorder that often begins with early vision problems and can later affect hearing, weight and glucose regulation, the heart, liver, kidneys, and lungs.',
+    plainName:
+      'A genetic condition affecting vision, hearing, metabolism, the heart, and multiple organs',
+    prevalence:
+      'MedlinePlus Genetics notes that more than 900 people with Alström syndrome have been reported worldwide.',
+    sourceName: 'MedlinePlus Genetics: Alström syndrome',
+    sourceUrl: 'https://medlineplus.gov/genetics/condition/alstrom-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Alström syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/alstrom-syndrome/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'multisystem',
+    charityIds: [84],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(6102, 'disease-dup15q-syndrome'),
+    name: '15q11-q13 duplication syndrome',
+    nameEn: '15q11-q13 duplication syndrome',
+    alias:
+      'dup15q syndrome, chromosome 15q duplication syndrome, idic(15), inv dup(15)',
+    slug: 'dup15q-syndrome',
+    oneSentence:
+      'Dup15q syndrome is a neurodevelopmental disorder caused by extra maternal copies of the 15q11.2-q13.1 region and can cause hypotonia, developmental and speech delay, intellectual disability, autism-spectrum features, and epilepsy.',
+    plainName:
+      'A chromosome 15 duplication syndrome affecting development and seizure risk',
+    prevalence:
+      'MedlinePlus Genetics notes that prevalence is unknown and may be as high as about 1 in 5,000 in the general population, with higher frequency among people with autism or intellectual disability.',
+    sourceName: 'MedlinePlus Genetics: 15q11-q13 duplication syndrome',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/15q11-q13-duplication-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: 15q11-q13 duplication syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/15q11-q13-duplication-syndrome/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'genetic-developmental',
+    charityIds: [85],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(6103, 'disease-pituitary-stalk-interruption-syndrome'),
+    name: 'Pituitary Stalk Interruption Syndrome',
+    nameEn: 'Pituitary Stalk Interruption Syndrome',
+    alias:
+      'PSIS, ectopic posterior pituitary, congenital hypopituitarism-related syndrome',
+    slug: 'pituitary-stalk-interruption-syndrome',
+    oneSentence:
+      'Pituitary stalk interruption syndrome is a congenital hypothalamic-pituitary developmental disorder with an absent or thin pituitary stalk, ectopic or absent posterior pituitary, and small anterior pituitary that can cause growth hormone and other pituitary hormone deficiencies.',
+    plainName:
+      'A pituitary connection problem that can cause poor growth and multiple hormone deficiencies',
+    prevalence:
+      'Prevalence is unknown and the condition is generally described as rare in GARD and review sources.',
+    sourceName: 'GARD: Pituitary stalk interruption syndrome',
+    sourceUrl:
+      'https://rarediseases.info.nih.gov/diseases/12421/pituitary-stalk-interruption-syndrome',
+    sources: [
+      {
+        name: 'GARD: Pituitary stalk interruption syndrome',
+        type: 'official',
+        url: 'https://rarediseases.info.nih.gov/diseases/12421/pituitary-stalk-interruption-syndrome',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'genetic-developmental',
+    charityIds: [86],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['endocrine'],
+  },
+  {
+    ...entity(6104, 'disease-joubert-syndrome'),
+    name: 'Joubert syndrome',
+    nameEn: 'Joubert syndrome',
+    alias: 'Joubert-Bolthauser syndrome, JBTS, JSRD, molar tooth sign syndrome',
+    slug: 'joubert-syndrome',
+    oneSentence:
+      'Joubert syndrome is a group of genetic brain-development conditions defined by the MRI molar tooth sign and can cause infant hypotonia, abnormal breathing, abnormal eye movements, developmental delay, ataxia, and sometimes eye, kidney, liver, or skeletal involvement.',
+    plainName:
+      'A genetic brainstem and cerebellar development condition affecting movement, breathing, and multiple organs',
+    prevalence:
+      'MedlinePlus Genetics estimates Joubert syndrome affects about 1 in 80,000 to 100,000 newborns, likely an underestimate because some people are not diagnosed.',
+    sourceName: 'MedlinePlus Genetics: Joubert syndrome',
+    sourceUrl: 'https://medlineplus.gov/genetics/condition/joubert-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Joubert syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/joubert-syndrome/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'neurological',
+    charityIds: [87],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(6105, 'disease-pitt-hopkins-syndrome'),
+    name: 'Pitt-Hopkins syndrome',
+    nameEn: 'Pitt-Hopkins syndrome',
+    alias: 'PTHS, PHS, TCF4-related neurodevelopmental syndrome',
+    slug: 'pitt-hopkins-syndrome',
+    oneSentence:
+      'Pitt-Hopkins syndrome is usually caused by TCF4 variants and features moderate to severe developmental delay and intellectual disability, very limited speech, epilepsy, awake hyperventilation/apnea episodes, constipation, and distinctive facial features.',
+    plainName:
+      'A TCF4-related genetic condition affecting development, speech, breathing rhythm, and seizure risk',
+    prevalence:
+      'MedlinePlus Genetics describes Pitt-Hopkins syndrome as very rare, with about 500 affected individuals reported worldwide.',
+    sourceName: 'MedlinePlus Genetics: Pitt-Hopkins syndrome',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/pitt-hopkins-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Pitt-Hopkins syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/pitt-hopkins-syndrome/',
+      },
+      {
+        name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'neurological',
+    charityIds: [88],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
   },
 ];

@@ -97,6 +97,11 @@ export const diseaseBehcetsDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/behcet-disease/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>Typical clues include recurrent mouth ulcers, genital ulcers, skin lesions, and uveitis, with possible joint, gut, neurologic, and large-vessel involvement.</p>',
@@ -111,7 +116,7 @@ export const diseaseBehcetsDisease: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [78],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

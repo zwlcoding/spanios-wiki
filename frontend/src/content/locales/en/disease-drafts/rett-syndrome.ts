@@ -108,7 +108,7 @@ export const diseaseRettSyndrome: DiseaseDraft = {
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   slug: 'rett-syndrome',
   categorySlug: 'neurological',
-  charityIds: [10],
+  charityIds: [10, 81],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

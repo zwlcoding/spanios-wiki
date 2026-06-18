@@ -92,11 +92,16 @@ export const diseaseHomozygousHypercholesterolemia: DiseaseDraft = {
       type: 'clinical-guideline',
       url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC10314327/',
     },
+    {
+      name: 'Gene Jianghu: Revised China Rare Disease Patient Organization Directory (2023)',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   sourceName: 'GeneReviews: Familial Hypercholesterolemia',
   sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
   categorySlug: 'metabolic',
-  charityIds: [],
+  charityIds: [82, 83],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {

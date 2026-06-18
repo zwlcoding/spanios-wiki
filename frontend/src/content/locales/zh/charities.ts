@@ -732,4 +732,345 @@ export const zhCharityDrafts: CharityDraft[] = [
       '<p><strong>关注疾病：</strong>线粒体脑肌病</p><p><strong>OCR整理信息：</strong>天线宝贝线粒体脑肌病关爱中心，成立于2015年。通过多种形式的宣传，引发社会关注、争取政策支持；实现患者及家属在心理建设、治疗护理、经济救助等方面的立体化自助；在线病产前筛查、诊断时效、药品研发、治疗等方面发挥促进作用；在医疗、保健、护理等方面信心共享、协同合作、推动线病治疗进程。</p><p><strong>来源与风险提示：</strong>资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
     diseaseSlugs: ['mitochodrial-encephalomyopathy'],
   },
+
+  {
+    ...entity(62, 'charity-tsc-china-alliance'),
+    name: '北京蝴蝶结结节性硬化症罕见病（TSC）关爱中心',
+    type: 'patient_org',
+    description:
+      '北京蝴蝶结结节性硬化症罕见病（TSC）关爱中心简称TSC关爱中心，前身为中国结节性硬化症互助联盟，于2013年7月在北京民政局注册为民办非企业公益机构。中心由结节性硬化症患者及家长自发组织，主要为病患家庭提供支持和特殊救助，促进科学研究并建立相关信息共享。',
+    services:
+      '<p><strong>关注疾病:</strong> 结节性硬化症（TSC）</p><p><strong>OCR整理信息:</strong> 北京蝴蝶结结节性硬化症罕见病（TSC）关爱中心简称TSC关爱中心，前身为中国结节性硬化症互助联盟，于2013年7月在北京民政局注册为民办非企业公益机构。中心由结节性硬化症患者及家长自发组织，主要为病患家庭提供支持和特殊救助，促进科学研究并建立相关信息共享。</p><p><strong>公开联系方式:</strong> QQ群：8788295、309088491；邮箱：info@tscchina.net；网站：www.tscchina.org；电话：010-56230920。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '010-56230920',
+    email: 'info@tscchina.net',
+    website: 'http://www.tscchina.org',
+    wechat: '蝴蝶结结节性硬化症罕见病关爱中心',
+    diseaseSlugs: ['tuberous-sclerosis-complex'],
+  },
+  {
+    ...entity(63, 'charity-prader-willi-care-center'),
+    name: '小胖威利罕见病关爱中心',
+    type: 'patient_org',
+    description:
+      '浙江小胖威利罕见病关爱中心于2017年3月经浙江省民政厅批准注册，是国内较早专门服务普拉德-威利综合征患者家庭的非营利组织。中心致力于在教育、医疗康复、心理关怀、就业支持、知识教育宣传和健康咨询等方面为患者及家庭提供支持，并组织专家咨询群和家长交流群。',
+    services:
+      '<p><strong>关注疾病:</strong> 普拉德-威利综合征（PWS，小胖威利综合征）</p><p><strong>OCR整理信息:</strong> 浙江小胖威利罕见病关爱中心于2017年3月经浙江省民政厅批准注册，是国内较早专门服务普拉德-威利综合征患者家庭的非营利组织。中心致力于在教育、医疗康复、心理关怀、就业支持、知识教育宣传和健康咨询等方面为患者及家庭提供支持，并组织专家咨询群和家长交流群。</p><p><strong>公开联系方式:</strong> 工作人员微信：xpwilli；QQ群：252871478；微博：https://weibo.com/u/2598515072；邮箱：henglong2010@163.com；网站：http://www.xpwilli.org/m/；视频号：小胖威利、小胖威利小秘书。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'henglong2010@163.com',
+    website: 'http://www.xpwilli.org/m/',
+    wechat: 'xpwilli；小胖威利；小胖威利小秘书',
+    diseaseSlugs: ['prader-willi-syndrome'],
+  },
+  {
+    ...entity(64, 'charity-zibeike-scleroderma'),
+    name: '成都紫贝壳公益服务中心（硬皮病关爱之家）',
+    type: 'patient_org',
+    description:
+      '成都紫贝壳公益服务中心简称紫贝壳公益，原名硬皮病关爱之家，由硬皮病患者及家属于2016年发起，2020年在成都市民政局登记注册。机构致力于提升硬皮病公众认知，搭建相关方沟通协作桥梁，为患者及家庭提供互助、科普、医患交流、心理讲座、关怀救助和医疗资源可及性倡导。',
+    services:
+      '<p><strong>关注疾病:</strong> 硬皮病（SSc）</p><p><strong>OCR整理信息:</strong> 成都紫贝壳公益服务中心简称紫贝壳公益，原名硬皮病关爱之家，由硬皮病患者及家属于2016年发起，2020年在成都市民政局登记注册。机构致力于提升硬皮病公众认知，搭建相关方沟通协作桥梁，为患者及家庭提供互助、科普、医患交流、心理讲座、关怀救助和医疗资源可及性倡导。</p><p><strong>公开联系方式:</strong> 网站：www.sscchina.org；地址：成都市武侯区武科东路15号3栋1单元312号；电话：18180768676；邮箱：info@sscchina.org；QQ群：152267349（进群需提供诊断证明）；视频号：紫贝壳公益。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '18180768676',
+    email: 'info@sscchina.org',
+    website: 'http://www.sscchina.org',
+    wechat: '紫贝壳公益',
+    diseaseSlugs: ['systemic-sclerosis'],
+  },
+  {
+    ...entity(65, 'charity-meier-sma-care'),
+    name: '北京市美儿脊髓性肌萎缩症关爱中心',
+    type: 'patient_org',
+    description:
+      '北京市美儿脊髓性肌萎缩症关爱中心简称美儿SMA关爱中心，于2016年由患者家属冯家妹女士与患者马斌先生发起成立，是中国内地较早民政注册、专注SMA领域的非营利性组织。中心为SMA患者群体提供全生命周期支持，开展患者医疗服务、赋能和行业推动，并参与推动SMA诊疗发展。',
+    services:
+      '<p><strong>关注疾病:</strong> 脊髓性肌萎缩症（SMA）</p><p><strong>OCR整理信息:</strong> 北京市美儿脊髓性肌萎缩症关爱中心简称美儿SMA关爱中心，于2016年由患者家属冯家妹女士与患者马斌先生发起成立，是中国内地较早民政注册、专注SMA领域的非营利性组织。中心为SMA患者群体提供全生命周期支持，开展患者医疗服务、赋能和行业推动，并参与推动SMA诊疗发展。</p><p><strong>公开联系方式:</strong> 网站：www.meier.org.cn；热线：400-6060-749（801疾病咨询、802患者服务、803合作与发展、804项目查询）；微信公众号：meiersma；邮箱：info@meier.org.cn。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '400-6060-749',
+    email: 'info@meier.org.cn',
+    website: 'http://www.meier.org.cn',
+    wechat: 'meiersma',
+    diseaseSlugs: ['spinal-muscular-atrophy'],
+  },
+  {
+    ...entity(66, 'charity-mdbaby-shenzhen'),
+    name: '深圳市冻力宝贝进行性肌营养不良症关爱中心',
+    type: 'patient_org',
+    description:
+      '深圳市冻力宝贝进行性肌营养不良症关爱中心于2016年6月在深圳市民政局登记成立，是由进行性肌营养不良症患者及家长自发组成的市级非营利性社会公益组织。中心关注进行性肌营养不良症，开展科普倡导、患者数据和公益项目，推动政府、医疗医药企业和社会各界关注该疾病。',
+    services:
+      '<p><strong>关注疾病:</strong> 进行性肌营养不良症</p><p><strong>OCR整理信息:</strong> 深圳市冻力宝贝进行性肌营养不良症关爱中心于2016年6月在深圳市民政局登记成立，是由进行性肌营养不良症患者及家长自发组成的市级非营利性社会公益组织。中心关注进行性肌营养不良症，开展科普倡导、患者数据和公益项目，推动政府、医疗医药企业和社会各界关注该疾病。</p><p><strong>公开联系方式:</strong> 网站：http://www.mdbaby.org/；QQ群：570436880；电话：0755-86720195；邮箱：info@mdbaby.org；地址：深圳市南山区桃园路287号桃李花园6栋4楼。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '0755-86720195',
+    email: 'info@mdbaby.org',
+    website: 'http://www.mdbaby.org/',
+    wechat: 'MDbaby关爱中心',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(67, 'charity-zhejiang-md-care'),
+    name: '浙江MD罕见病关爱中心（杭州逐梦天使助医公益服务中心）',
+    type: 'patient_org',
+    description:
+      '浙江MD罕见病关爱中心由浙江省内MD患者及家属在2016年前后发起，杭州逐梦天使助医公益服务中心是其公益服务载体。组织关注罕见肌病患者，开展帮扶、科普、互助平台建设、遗传数据库和医疗康复科研信息桥接等工作。',
+    services:
+      '<p><strong>关注疾病:</strong> 进行性肌营养不良症（MD）</p><p><strong>OCR整理信息:</strong> 浙江MD罕见病关爱中心由浙江省内MD患者及家属在2016年前后发起，杭州逐梦天使助医公益服务中心是其公益服务载体。组织关注罕见肌病患者，开展帮扶、科普、互助平台建设、遗传数据库和医疗康复科研信息桥接等工作。</p><p><strong>公开联系方式:</strong> QQ群：89575003；电话：曾妮13486960921，汪先生13395841007；邮箱：hzzmts@163.com；微信公众号：浙江MD罕见病关爱中心。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '13486960921；13395841007',
+    email: 'hzzmts@163.com',
+    wechat: '浙江MD罕见病关爱中心',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(68, 'charity-zhiai-dmd-care'),
+    name: '北京至爱杜氏肌营养不良关爱中心',
+    type: 'patient_org',
+    description:
+      '北京至爱杜氏肌营养不良关爱中心简称至爱DMD关爱中心，前身为2012年5月中国社会福利基金会“MD关爱项目”，2016年9月由DMD/BMD患者家属在北京民政局注册成立。中心为全国DMD/BMD患者提供全生命周期支持，开展康复、社交、心理服务、疾病宣传、诊疗信息传播和患者自助管理平台建设。',
+    services:
+      '<p><strong>关注疾病:</strong> 杜氏肌营养不良（DMD/BMD）</p><p><strong>OCR整理信息:</strong> 北京至爱杜氏肌营养不良关爱中心简称至爱DMD关爱中心，前身为2012年5月中国社会福利基金会“MD关爱项目”，2016年9月由DMD/BMD患者家属在北京民政局注册成立。中心为全国DMD/BMD患者提供全生命周期支持，开展康复、社交、心理服务、疾病宣传、诊疗信息传播和患者自助管理平台建设。</p><p><strong>公开联系方式:</strong> 联系人：至爱执行主任姚颜锁；电话：15931447961；邮箱：252283727@qq.com；视频号：至爱DMD关爱中心。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    contactPerson: '姚颜锁',
+    phone: '15931447961',
+    email: '252283727@qq.com',
+    wechat: '至爱DMD关爱中心',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(69, 'charity-shanxi-dameidan-dmd'),
+    name: '山西大美蛋DMD病友会',
+    type: 'patient_org',
+    description:
+      '山西大美蛋DMD病友会由山西DMD患者家庭通过网络聚集形成，2018年明确以患者为中心，强调省内看病、就近就医、系统康复和药物研发倡导。病友会面向山西DMD家庭开展互助、就医和康复倡导，并寻找散落在各地的患者家庭。',
+    services:
+      '<p><strong>关注疾病:</strong> 杜氏肌营养不良（DMD）</p><p><strong>OCR整理信息:</strong> 山西大美蛋DMD病友会由山西DMD患者家庭通过网络聚集形成，2018年明确以患者为中心，强调省内看病、就近就医、系统康复和药物研发倡导。病友会面向山西DMD家庭开展互助、就医和康复倡导，并寻找散落在各地的患者家庭。</p><p><strong>公开联系方式:</strong> QQ：666786221；微信公众号：SXPPMD；微博：大美蛋DMD；邮箱：sxdmd2015@outlook.com。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'sxdmd2015@outlook.com',
+    wechat: 'SXPPMD',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(70, 'charity-heilongjiang-shuguang-dmd'),
+    name: '黑龙江曙光DMD罕见病关爱中心',
+    type: 'patient_org',
+    description:
+      '黑龙江曙光DMD罕见病关爱中心组建于2018年11月，由DMD/BMD患者及家属成立，是面向DMD家庭的民间公益组织。中心开展教育、医疗康复、心理关怀、知识宣传、政策倡导和多学科门诊推动，目标是提升DMD社会知晓度和患者家庭生活质量。',
+    services:
+      '<p><strong>关注疾病:</strong> 杜氏肌营养不良（DMD）</p><p><strong>OCR整理信息:</strong> 黑龙江曙光DMD罕见病关爱中心组建于2018年11月，由DMD/BMD患者及家属成立，是面向DMD家庭的民间公益组织。中心开展教育、医疗康复、心理关怀、知识宣传、政策倡导和多学科门诊推动，目标是提升DMD社会知晓度和患者家庭生活质量。</p><p><strong>公开联系方式:</strong> OCR资料未识别出稳定公开电话或邮箱；请以组织官方公众号和最新公开渠道为准。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    wechat: '黑龙江曙光DMD罕见病关爱中心',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(71, 'charity-guangzhou-aizhiyi-dmd'),
+    name: '广州市爱之翼DMD互助关爱会',
+    type: 'patient_org',
+    description:
+      '广州市爱之翼DMD互助关爱会由DMD患儿家长发起，旨在团结肌营养不良患者家庭、开展互助关爱。OCR资料显示其后来与广东血友病病友会及原折翅天使之家共同组建广州众援力罕见病关爱中心，并下设爱之翼DMD(BMD)互助关爱会项目；备注提示至2016年停止运营并与其他组织合并。',
+    services:
+      '<p><strong>关注疾病:</strong> 杜氏肌营养不良（DMD/BMD）</p><p><strong>OCR整理信息:</strong> 广州市爱之翼DMD互助关爱会由DMD患儿家长发起，旨在团结肌营养不良患者家庭、开展互助关爱。OCR资料显示其后来与广东血友病病友会及原折翅天使之家共同组建广州众援力罕见病关爱中心，并下设爱之翼DMD(BMD)互助关爱会项目；备注提示至2016年停止运营并与其他组织合并。</p><p><strong>公开联系方式:</strong> 联系人：黄春焰；OCR资料备注显示组织后续合并/停止独立运营，请务必核对最新状态。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    contactPerson: '黄春焰',
+    wechat: '爱之翼DMD互助关爱会',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(72, 'charity-china-dravet-patient-association'),
+    name: '中国Dravet综合征病友会',
+    type: 'patient_org',
+    description:
+      '中国Dravet综合征病友会于2012年1月10日由患儿家长联合组成，是公益性Dravet综合征患者互助组织。组织从Dravet交流QQ群起步，会员多为患者家长或亲属，主要开展治疗经验和护理心得交流、公益活动、困难家庭救助、疾病咨询和知识宣传。',
+    services:
+      '<p><strong>关注疾病:</strong> Dravet综合征</p><p><strong>OCR整理信息:</strong> 中国Dravet综合征病友会于2012年1月10日由患儿家长联合组成，是公益性Dravet综合征患者互助组织。组织从Dravet交流QQ群起步，会员多为患者家长或亲属，主要开展治疗经验和护理心得交流、公益活动、困难家庭救助、疾病咨询和知识宣传。</p><p><strong>公开联系方式:</strong> OCR资料未识别出稳定公开联系方式；请以论坛、公众号或最新公开渠道为准。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    wechat: '中国Dravet综合征病友会',
+    diseaseSlugs: ['severe-myoclonic-epilepsy-in-infancy-dravet-syndrome'],
+  },
+  {
+    ...entity(73, 'charity-zhuowei-dravet-support'),
+    name: '卓蔚宝贝支持中心',
+    type: 'patient_org',
+    description:
+      '卓蔚宝贝支持中心是中国内地较早专门针对Dravet综合征患者家庭提供支持服务的民办非企业单位。前身“卓蔚倡导”成立于2018年5月4日，2020年5月25日正式注册。中心围绕患者关爱、社会倡导和医疗协作开展项目，传递Dravet诊疗和护理知识，推动研究进展并增加社会支持。',
+    services:
+      '<p><strong>关注疾病:</strong> Dravet综合征</p><p><strong>OCR整理信息:</strong> 卓蔚宝贝支持中心是中国内地较早专门针对Dravet综合征患者家庭提供支持服务的民办非企业单位。前身“卓蔚倡导”成立于2018年5月4日，2020年5月25日正式注册。中心围绕患者关爱、社会倡导和医疗协作开展项目，传递Dravet诊疗和护理知识，推动研究进展并增加社会支持。</p><p><strong>公开联系方式:</strong> 网站：www.dravetsyndrome.org.cn；邮箱：dravetchina@outlook.com；视频号/公众号：DravetChina、卓蔚倡导专注Dravet。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'dravetchina@outlook.com',
+    website: 'http://www.dravetsyndrome.org.cn',
+    wechat: 'DravetChina；卓蔚倡导专注Dravet',
+    diseaseSlugs: ['severe-myoclonic-epilepsy-in-infancy-dravet-syndrome'],
+  },
+  {
+    ...entity(74, 'charity-rp-light-aitong'),
+    name: 'RP之光爱心联盟（苏州市爱瞳视康公益服务中心）',
+    type: 'patient_org',
+    description:
+      'RP之光爱心联盟由众多RP患者及家属自发成立，从QQ群和RP之家论坛逐渐发展为RP之光爱心联盟，并经民政局注册为苏州市爱瞳视康公益服务中心。机构面向视网膜病变患者及亲友，建设信息交流和互助平台，提供科研、医疗信息和专家咨询等服务，提升社会对视网膜病变的认知。',
+    services:
+      '<p><strong>关注疾病:</strong> 视网膜病变、视网膜色素变性（RP）</p><p><strong>OCR整理信息:</strong> RP之光爱心联盟由众多RP患者及家属自发成立，从QQ群和RP之家论坛逐渐发展为RP之光爱心联盟，并经民政局注册为苏州市爱瞳视康公益服务中心。机构面向视网膜病变患者及亲友，建设信息交流和互助平台，提供科研、医疗信息和专家咨询等服务，提升社会对视网膜病变的认知。</p><p><strong>公开联系方式:</strong> 视频号：RP之光爱心联盟；OCR资料未识别出稳定公开电话或邮箱。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    wechat: 'RP之光爱心联盟',
+    diseaseSlugs: ['retinitis-pigmentosa'],
+  },
+  {
+    ...entity(75, 'charity-retinoblastoma-alliance'),
+    name: '视网膜母细胞瘤关爱联盟',
+    type: 'patient_org',
+    description:
+      '视网膜母细胞瘤关爱联盟由RB患者家属于2011年自发成立，前身为视网膜母细胞瘤互助联盟，是非营利性民间互助公益组织。联盟服务全国RB群体，建立患者及家属互助机制，提升社会对RB及其他罕见病的认知，推动科研进展并促进疾病预防、检测体系完善。',
+    services:
+      '<p><strong>关注疾病:</strong> 视网膜母细胞瘤（RB）</p><p><strong>OCR整理信息:</strong> 视网膜母细胞瘤关爱联盟由RB患者家属于2011年自发成立，前身为视网膜母细胞瘤互助联盟，是非营利性民间互助公益组织。联盟服务全国RB群体，建立患者及家属互助机制，提升社会对RB及其他罕见病的认知，推动科研进展并促进疾病预防、检测体系完善。</p><p><strong>公开联系方式:</strong> 热线：13963040401；QQ群：187225890；微信公众号：视网膜母细胞瘤关爱联盟。OCR备注提示公众号2019年停止更新，请核对最新状态。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '13963040401',
+    wechat: '视网膜母细胞瘤关爱联盟',
+    diseaseSlugs: ['retinoblastoma'],
+  },
+  {
+    ...entity(76, 'charity-kennedy-disease-care-center'),
+    name: '肯尼迪罕见病关爱中心',
+    type: 'patient_org',
+    description:
+      '肯尼迪罕见病关爱中心由肯尼迪病患者于2014年自发成立，致力于为全国肯尼迪病友提供医疗资讯、情感交流、心理支持、家庭扶助、科普宣传和政策倡导。目前OCR资料显示其服务中国500多名病友。',
+    services:
+      '<p><strong>关注疾病:</strong> 肯尼迪病（脊髓延髓肌萎缩症，SBMA）</p><p><strong>OCR整理信息:</strong> 肯尼迪罕见病关爱中心由肯尼迪病患者于2014年自发成立，致力于为全国肯尼迪病友提供医疗资讯、情感交流、心理支持、家庭扶助、科普宣传和政策倡导。目前OCR资料显示其服务中国500多名病友。</p><p><strong>公开联系方式:</strong> 网站：http://kdachina.xiao-chao.com/；微信：KDA-China；QQ群：323205881；邮箱：KDA-China@outlook.com。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'KDA-China@outlook.com',
+    website: 'http://kdachina.xiao-chao.com/',
+    wechat: 'KDA-China',
+    diseaseSlugs: ['spinal-and-bulbar-muscular-atrophy-kennedy-disease'],
+  },
+  {
+    ...entity(77, 'charity-penguin-home-ataxia'),
+    name: '北京企鹅之家小脑萎缩症病患关爱中心',
+    type: 'patient_org',
+    description:
+      '北京企鹅之家小脑萎缩症病患关爱中心于2018年8月29日在北京市民政局正式成立，原中国共济失调病友协会CAA。中心由小脑萎缩症病友及家属设立，致力于共济失调患者身心健康，普及医学知识和科研进展，链接公益资源，维护患者在医疗、就业、教育和照护等方面的合法权益。',
+    services:
+      '<p><strong>关注疾病:</strong> 脊髓小脑性共济失调、小脑萎缩症</p><p><strong>OCR整理信息:</strong> 北京企鹅之家小脑萎缩症病患关爱中心于2018年8月29日在北京市民政局正式成立，原中国共济失调病友协会CAA。中心由小脑萎缩症病友及家属设立，致力于共济失调患者身心健康，普及医学知识和科研进展，链接公益资源，维护患者在医疗、就业、教育和照护等方面的合法权益。</p><p><strong>公开联系方式:</strong> 网站：http://m.webataxia.com/；微信入群：liuhong13181655465、yp306109260或Amyitisyun（请备注病友入群）；QQ群：731368956；邮箱：webataxia@163.com；微信公众号：小脑萎缩症关爱中心；微博：企鹅之家共济失调病友会；抖音：北京企鹅之家小脑萎缩症病患关爱中心。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'webataxia@163.com',
+    website: 'http://m.webataxia.com/',
+    wechat: '小脑萎缩症关爱中心；liuhong13181655465；yp306109260；Amyitisyun',
+    diseaseSlugs: ['spinocerebellar-ataxia'],
+  },
+  {
+    ...entity(78, 'charity-bailange-behcet-alliance'),
+    name: '北京白兰鸽白塞病罕见病关爱中心（白塞联盟）',
+    type: 'patient_org',
+    description:
+      '北京白兰鸽白塞病罕见病关爱中心（白塞联盟）成立于2005年5月，2014年5月在北京市民政局注册成为民非公益组织，由白塞氏病（贝赫切特综合征）患者和家属自发成立。中心致力于为白塞氏病群体开展关怀、救助、信息咨询和调查研究服务，促进社会公众对疾病群体的了解和尊重，维护患者在医疗、教育、就业和关怀等方面的平等权益。',
+    services:
+      '<p><strong>关注疾病:</strong> 白塞氏病、贝赫切特综合征</p><p><strong>OCR整理信息:</strong> 北京白兰鸽白塞病罕见病关爱中心（白塞联盟）成立于2005年5月，2014年5月在北京市民政局注册成为民非公益组织，由白塞氏病（贝赫切特综合征）患者和家属自发成立。中心致力于搭建医生与患者沟通桥梁，提供疾病知识、治疗信息、公益活动、关怀救助和政策倡导线索。</p><p><strong>公开联系方式:</strong> 网站：www.behcet.com.cn（OCR备注提示网站无法访问）；微博：@白塞联盟；微信：baisailianmeng2005；邮箱：admin@behcet.com.cn；相关推文：https://mp.weixin.qq.com/s/zdDydJ-P28rlc-IPCVWrwQ。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'admin@behcet.com.cn',
+    website: 'http://www.behcet.com.cn',
+    wechat: 'baisailianmeng2005；白塞联盟',
+    diseaseSlugs: ['behcets-disease'],
+  },
+  {
+    ...entity(79, 'charity-lch-home-of-angels'),
+    name: '朗格罕天使之家',
+    type: 'patient_org',
+    description:
+      '朗格罕天使之家（LCH Home of Angels）是由朗格罕细胞组织细胞增生症患者家长群体自发成立的互助组织。组织主要面向疾病科普、及时正确就医指导、医患沟通桥梁建设，以及在一定程度上减轻患者家属心理和经济压力。',
+    services:
+      '<p><strong>关注疾病:</strong> 朗格罕细胞组织细胞增生症（LCH）</p><p><strong>OCR整理信息:</strong> 朗格罕天使之家（LCH Home of Angels）由朗格罕细胞组织细胞增生症家长群体自发成立，因疾病误诊率较高，组织希望向社会普及疾病知识，协助患者家属及时、正确就医，在医院、医生及患者之间搭建桥梁，并通过宣传倡导争取更多政策关注。</p><p><strong>公开联系方式:</strong> 发起人：马志强（黑马）；微信公众号：LCH天使之家；公众号ID：LCHtianshizhijia。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    contactPerson: '马志强（黑马）',
+    wechat: 'LCH天使之家；LCHtianshizhijia',
+    diseaseSlugs: ['langerhans-cell-histiocytosis'],
+  },
+  {
+    ...entity(80, 'charity-chengdu-xiai-social-work-dmd'),
+    name: '成都希爱社会工作服务中心（DMD希爱援助之家）',
+    type: 'patient_org',
+    description:
+      '成都希爱社会工作服务中心是一家由医学专家、社会工作者和爱心企业家发起的民间公益组织，为罕见病人群尤其是罕见病儿童提供综合性服务。OCR资料显示其与四川大学华西第二医院联系紧密，并开展西南地区DMD援助项目，曾深入管理700多名DMD患儿。',
+    services:
+      '<p><strong>关注疾病:</strong> 罕见病儿童，DMD/进行性肌营养不良较多</p><p><strong>OCR整理信息:</strong> 成都希爱社会工作服务中心通过健康管理、数据管理、志愿服务、政策倡导等形式构建专业平台，维护罕见病群体在医疗、生活、教育、就业等方面的平等权益。OCR资料提到其公益服务面向罕见病病人提供咨询和建议，并开展DMD援助项目。</p><p><strong>公开联系方式:</strong> 联系人：刘老师，18086811756；邮箱：liqing33333@126.com；抖音号：xiwangyouai；地址：四川省成都市武侯区人民南路三段17号附1号。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    contactPerson: '刘老师',
+    phone: '18086811756',
+    email: 'liqing33333@126.com',
+    wechat: 'xiwangyouai',
+    diseaseSlugs: ['progressive-muscular-dystrophy'],
+  },
+  {
+    ...entity(81, 'charity-rett-family-care-center'),
+    name: 'Rett家庭关爱中心',
+    type: 'patient_org',
+    description:
+      'Rett家庭关爱中心由几位雷特妈妈联合北京大学第一医院儿科包新华教授于2011年平安夜共同发起，旨在让公众了解Rett综合征，汇集医学专家、药企和康复资源，推动医疗药物研发和专业化康复体系建设，并为雷特女孩及家庭争取更多支持。',
+    services:
+      '<p><strong>关注疾病:</strong> 雷特综合征（Rett syndrome）</p><p><strong>OCR整理信息:</strong> Rett家庭关爱中心关注雷特综合征患儿及家庭，开展公益倡导、公众宣传、专家和药企链接、康复体系推动等工作。OCR资料显示其公众号是患者家庭及关注人士的桥梁。</p><p><strong>公开联系方式:</strong> 网站：www.chinarfcc.org（OCR备注提示网站失效）；微信公众号：Rettgir；邮箱：chinarfcc@126.com。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    email: 'chinarfcc@126.com',
+    website: 'http://www.chinarfcc.org',
+    wechat: 'Rettgir',
+    diseaseSlugs: ['rett-syndrome'],
+  },
+  {
+    ...entity(82, 'charity-china-fh-care-center'),
+    name: '中国家族性高胆固醇血症关爱中心（FH关爱中心）',
+    type: 'patient_org',
+    description:
+      '中国FH关爱中心即中国家族性高胆固醇血症关爱中心，成立于2016年8月16日，致力于服务家族性高胆固醇血症患者，包括新药引进、患者救助、科普宣传等。OCR资料提到首都医科大学附属北京安贞医院“贞心团队”曾收集全国多地纯合FH患者和家系，并组建中国纯合FH关爱中心及微信交流群。',
+    services:
+      '<p><strong>关注疾病:</strong> 家族性高胆固醇血症（FH），尤其纯合子FH</p><p><strong>OCR整理信息:</strong> 中国FH关爱中心服务FH患者，关注新药引进、患者救助、科普宣传、病友和家系管理等方向。OCR资料显示其与北京安贞医院相关团队联系紧密。</p><p><strong>公开联系方式:</strong> 机构QQ：181687775；通讯员QQ：215560012；电话：13911359175；邮箱：cfhc2016@163.com；通讯员邮箱：wangluya@126.com。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '13911359175',
+    email: 'cfhc2016@163.com；wangluya@126.com',
+    wechat: '机构QQ 181687775；通讯员QQ 215560012',
+    diseaseSlugs: ['homozygous-hypercholesterolemia'],
+  },
+  {
+    ...entity(83, 'charity-homy-fh-care-center'),
+    name: '红米粒FH关爱中心',
+    type: 'patient_org',
+    description:
+      '红米粒FH关爱中心是家族性高胆固醇血症（FH）患者组织，致力于中国FH患者服务、社会融入、公众宣传、医学研究、政策倡导和国际交流，推动FH人群早期诊断、早期干预，并帮助患者获得更好的生活质量。',
+    services:
+      '<p><strong>关注疾病:</strong> 家族性高胆固醇血症（FH），包括纯合子FH</p><p><strong>OCR整理信息:</strong> 红米粒FH关爱中心开展FH病友登记、公众宣传、患者服务、政策倡导和科研交流。OCR资料显示其愿景是让中国FH人群早期诊断与早期干预，获得与普通人群一样良好的生活和生命质量。</p><p><strong>公开联系方式:</strong> 电话：13002985217（微信同号）；公开材料中还提到FH病友信息登记系统。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '13002985217',
+    wechat: '13002985217',
+    diseaseSlugs: ['homozygous-hypercholesterolemia'],
+  },
+  {
+    ...entity(84, 'charity-alstrom-greater-china-association'),
+    name: 'Alstrom综合征大中华协会',
+    type: 'patient_org',
+    description:
+      'Alstrom综合征大中华协会是OCR资料中列出的Alström综合征患者组织线索。OCR显示其关注Alstrom综合征这一极罕见的常染色体隐性遗传病，资料备注未查到稳定网站信息，可能依托上海交通大学医学院附属上海儿童医学中心开展病友会活动。',
+    services:
+      '<p><strong>关注疾病:</strong> Alström综合征</p><p><strong>OCR整理信息:</strong> OCR资料显示该组织面向Alström综合征患者及家庭，相关介绍提到该病为极罕见隐性遗传性疾病，目前未有彻底根治方案。公开资料备注提示未查到网站信息，依托上海交通大学医学院附属上海儿童医学中心，有病友会活动。</p><p><strong>公开联系方式:</strong> OCR资料未识别出稳定公开电话、邮箱或网站。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    diseaseSlugs: ['alstrom-syndrome'],
+  },
+  {
+    ...entity(85, 'charity-dup15q-china-mutual-aid-alliance'),
+    name: 'dup15q中国互助联盟',
+    type: 'patient_org',
+    description:
+      'dup15q中国互助联盟由15号染色体重复综合征患者家长发起，OCR资料称其希望建设面向dup15q患者、家庭、医院和康复机构的信息共享线上家园社区。',
+    services:
+      '<p><strong>关注疾病:</strong> 15号染色体重复综合征（dup15q综合征）</p><p><strong>OCR整理信息:</strong> 核心成员为4位患者家长，项目目标包括为中文家庭翻译dup15q.org相关资料、建立中国患者数据库、建设线上社区并联系医生、康复机构、学校和家长，扩大dup15q中国互助联盟的疾病宣传。</p><p><strong>公开联系方式:</strong> OCR资料未识别出稳定公开电话或邮箱。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    diseaseSlugs: ['dup15q-syndrome'],
+  },
+  {
+    ...entity(86, 'charity-little-people-home-psis'),
+    name: '袖珍人之家',
+    type: 'patient_org',
+    description:
+      '北京市东城区袖珍人之家由生长发育障碍病友发起成立，于2013年6月在北京市东城区注册。OCR资料显示其服务罕见病中的生长发育障碍群体，并将垂体柄阻断综合征列为关注疾病之一。',
+    services:
+      '<p><strong>关注疾病:</strong> 垂体柄阻断综合征及生长发育障碍相关罕见病</p><p><strong>OCR整理信息:</strong> 机构为病友提供医疗咨询、就诊、心理支持等服务，促进公众了解、接纳和支持病友群体。OCR资料提到其开展就医绿色通道、模拟诊室、医学论坛和社会倡导，推动相关疾病进入罕见病目录。</p><p><strong>公开联系方式:</strong> 网站：http://www.xiuzhenren.org/；联系人：小悦悦，18510510339；地址：北京市丰台区蒲芳路gogo新时代2607室。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '18510510339',
+    website: 'http://www.xiuzhenren.org/',
+    contactPerson: '小悦悦',
+    diseaseSlugs: ['pituitary-stalk-interruption-syndrome'],
+  },
+  {
+    ...entity(87, 'charity-joubert-syndrome-care-home'),
+    name: 'Joubert综合征关爱之家',
+    type: 'patient_org',
+    description:
+      'Joubert综合征关爱之家是OCR资料中列出的Joubert综合征患者和家庭互助组织线索，定位为陪伴、分享、互助，让更多人关注罕见病患者家庭的真实生活和需求。',
+    services:
+      '<p><strong>关注疾病:</strong> Joubert综合征</p><p><strong>OCR整理信息:</strong> 组织希望展示Joubert综合征患者和家庭的真实生活与现状，让更多人关注罕见病患需求。欢迎全国Joubert综合征患者及家属加入，强调陪伴、分享和互助。</p><p><strong>公开联系方式:</strong> QQ群：83427934；基因相关疑问联系人：罗敏娜博士，15901278366；微信群联系人：liuwan1215（加好友暗号Joubert）。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '15901278366',
+    wechat: 'liuwan1215；QQ群 83427934',
+    contactPerson: '罗敏娜博士',
+    diseaseSlugs: ['joubert-syndrome'],
+  },
+  {
+    ...entity(88, 'charity-pibaobao-pitt-hopkins-care-center'),
+    name: '皮宝宝罕见病关爱中心',
+    type: 'patient_org',
+    description:
+      '皮宝宝罕见病关爱中心由中国皮特霍普金斯综合征患者家庭发起，OCR资料显示其于2021年6月27日正式成立，旨在团结国内病友、寻找国内外医疗资源、传授康复训练技巧和护理建议。',
+    services:
+      '<p><strong>关注疾病:</strong> 皮特霍普金斯综合征（PTHS）</p><p><strong>OCR整理信息:</strong> 组织愿景是建设PTHS患者的精神家园，为患者寻找更好的治疗方案，传授康复训练技巧和护理建议，提高患者生活质量，并提供最新医疗信息。</p><p><strong>公开联系方式:</strong> QQ群：548840413；电话：18688792154；邮箱：pibaobao2021@163.com。</p><p><strong>来源与风险提示:</strong> 资料来源：基因江湖公众号《修订 | 中国罕见病患者组织名录(2023年)》（https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ）。该信息来自2023年公开推文及OCR整理，仅作患者组织线索导航；组织状态、联系方式、服务范围、援助条件可能变化，本站不作背书、不保证可联系或获得援助，请以组织官方渠道和最新公开信息为准。</p>',
+    phone: '18688792154',
+    email: 'pibaobao2021@163.com',
+    wechat: 'QQ群 548840413',
+    diseaseSlugs: ['pitt-hopkins-syndrome'],
+  },
 ];

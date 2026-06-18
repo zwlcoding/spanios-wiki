@@ -517,8 +517,20 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     sourceName: '国家卫生健康委办公厅：86个罕见病病种诊疗指南（2025年版）',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+    sources: [
+      {
+        name: '国家卫生健康委办公厅：86个罕见病病种诊疗指南（2025年版）',
+        type: 'official',
+        url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
+    charityIds: [78],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -2198,8 +2210,20 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
       '极为罕见，全球患病率约为 1/160,000～1/300,000，部分人群因奠基者效应而更高。',
     sourceName: 'GeneReviews: Familial Hypercholesterolemia',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
+    sources: [
+      {
+        name: 'GeneReviews: Familial Hypercholesterolemia',
+        type: 'review',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK174884/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'metabolic',
-    charityIds: [],
+    charityIds: [82, 83],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3226,8 +3250,20 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     sourceName: '国家卫生健康委办公厅：86个罕见病病种诊疗指南（2025年版）',
     sourceUrl:
       'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+    sources: [
+      {
+        name: '国家卫生健康委办公厅：86个罕见病病种诊疗指南（2025年版）',
+        type: 'clinical-guideline',
+        url: 'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'neurological',
-    charityIds: [10],
+    charityIds: [10, 81],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -3772,8 +3808,20 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ],
     sourceName: 'GeneReviews: Langerhans Cell Histiocytosis',
     sourceUrl: 'https://www.ncbi.nlm.nih.gov/books/NBK7037/',
+    sources: [
+      {
+        name: 'GeneReviews: Langerhans Cell Histiocytosis',
+        type: 'official',
+        url: 'https://www.ncbi.nlm.nih.gov/books/NBK7037/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
     categorySlug: 'oncology',
-    charityIds: [],
+    charityIds: [79],
     hospitalIds: [],
     reviewStatus: 'patient-reviewed',
     featuredImage: {
@@ -4688,624 +4736,6 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     tagSlugs: ['gastroenterology', 'genetic-counseling', 'cancer-surveillance'],
   },
   {
-    ...entity(1070, 'catalog-china-first-rare-disease-catalog-70'),
-    name: '中链酰基辅酶A脱氢酶缺乏症',
-    nameEn: 'Medium Chain Acyl-CoA Dehydrogenase Deficiency',
-    alias:
-      '第一批罕见病目录第 70 项；Medium Chain Acyl-CoA Dehydrogenase Deficiency',
-    slug: 'medium-chain-acyl-coa-dehydrogenase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1071, 'catalog-china-first-rare-disease-catalog-71'),
-    name: '甲基丙二酸血症',
-    nameEn: 'Methylmalonic Academia',
-    alias: '第一批罕见病目录第 71 项；Methylmalonic Academia',
-    slug: 'methylmalonic-academia',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1072, 'catalog-china-first-rare-disease-catalog-72'),
-    name: '线粒体脑肌病',
-    nameEn: 'Mitochodrial Encephalomyopathy',
-    alias: '第一批罕见病目录第 72 项；Mitochodrial Encephalomyopathy',
-    slug: 'mitochodrial-encephalomyopathy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E7%BA%BF%E7%B2%92%E4%BD%93%E8%84%91%E8%82%8C%E7%97%85',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1073, 'catalog-china-first-rare-disease-catalog-73'),
-    name: '黏多糖贮积症',
-    nameEn: 'Mucopolysaccharidosis',
-    alias: '第一批罕见病目录第 73 项；Mucopolysaccharidosis',
-    slug: 'mucopolysaccharidosis',
-    categorySlug: 'multisystem',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E9%BB%8F%E5%A4%9A%E9%86%A3%E8%B2%AF%E7%A9%8D%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1074, 'catalog-china-first-rare-disease-catalog-74'),
-    name: '多灶性运动神经病',
-    nameEn: 'Multifocal Motor Neuropathy',
-    alias: '第一批罕见病目录第 74 项；Multifocal Motor Neuropathy',
-    slug: 'multifocal-motor-neuropathy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1075, 'catalog-china-first-rare-disease-catalog-75'),
-    name: '多种酰基辅酶A脱氢酶缺乏症',
-    nameEn: 'Multiple Acyl-CoA Dehydrogenase Deficiency',
-    alias:
-      '第一批罕见病目录第 75 项；Multiple Acyl-CoA Dehydrogenase Deficiency',
-    slug: 'multiple-acyl-coa-dehydrogenase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1076, 'catalog-china-first-rare-disease-catalog-76'),
-    name: '多发性硬化',
-    nameEn: 'Multiple Sclerosis',
-    alias: '第一批罕见病目录第 76 项；Multiple Sclerosis',
-    slug: 'multiple-sclerosis',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E5%A4%9A%E5%8F%91%E6%80%A7%E7%A1%AC%E5%8C%96%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1077, 'catalog-china-first-rare-disease-catalog-77'),
-    name: '多系统萎缩',
-    nameEn: 'Multiple System Atrophy',
-    alias: '第一批罕见病目录第 77 项；Multiple System Atrophy',
-    slug: 'multiple-system-atrophy',
-    categorySlug: 'multisystem',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1078, 'catalog-china-first-rare-disease-catalog-78'),
-    name: '肌强直性营养不良',
-    nameEn: 'Myotonic Dystrophy',
-    alias: '第一批罕见病目录第 78 项；Myotonic Dystrophy',
-    slug: 'myotonic-dystrophy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E5%BC%B7%E7%9B%B4%E6%80%A7%E8%82%8C%E8%82%89%E5%A4%B1%E9%A4%8A%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1079, 'catalog-china-first-rare-disease-catalog-79'),
-    name: 'N-乙酰谷氨酸合成酶缺乏症',
-    nameEn: 'N-acetylglutamate Synthase Deficiency',
-    alias: '第一批罕见病目录第 79 项；N-acetylglutamate Synthase Deficiency',
-    slug: 'n-acetylglutamate-synthase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1080, 'catalog-china-first-rare-disease-catalog-80'),
-    name: '新生儿糖尿病',
-    nameEn: 'Neonatal Diabetes Mellitus',
-    alias: '第一批罕见病目录第 80 项；Neonatal Diabetes Mellitus',
-    slug: 'neonatal-diabetes-mellitus',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1081, 'catalog-china-first-rare-disease-catalog-81'),
-    name: '视神经脊髓炎',
-    nameEn: 'Neuromyelitis Optica',
-    alias: '第一批罕见病目录第 81 项；Neuromyelitis Optica',
-    slug: 'neuromyelitis-optica',
-    categorySlug: 'ophthalmologic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1082, 'catalog-china-first-rare-disease-catalog-82'),
-    name: '尼曼匹克病',
-    nameEn: 'Niemann-Pick Disease',
-    alias: '第一批罕见病目录第 82 项；Niemann-Pick Disease',
-    slug: 'niemann-pick-disease',
-    categorySlug: 'multisystem',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E5%B0%BC%E6%9B%BC%E5%8C%B9%E5%85%8B%E7%97%85',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1083, 'catalog-china-first-rare-disease-catalog-83'),
-    name: '非综合征性耳聋',
-    nameEn: 'Non-Syndromic Deafness',
-    alias: '第一批罕见病目录第 83 项；Non-Syndromic Deafness',
-    slug: 'non-syndromic-deafness',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1084, 'catalog-china-first-rare-disease-catalog-84'),
-    name: 'Noonan综合征',
-    nameEn: 'Noonan Syndrome',
-    alias: '第一批罕见病目录第 84 项；Noonan Syndrome',
-    slug: 'noonan-syndrome',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E5%8A%AA%E5%8D%97%E6%B0%8F%E7%97%87%E5%80%99%E7%BE%A4',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1085, 'catalog-china-first-rare-disease-catalog-85'),
-    name: '鸟氨酸氨甲酰基转移酶缺乏症',
-    nameEn: 'Ornithine Transcarbamylase Deficiency',
-    alias: '第一批罕见病目录第 85 项；Ornithine Transcarbamylase Deficiency',
-    slug: 'ornithine-transcarbamylase-deficiency',
-    categorySlug: 'metabolic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1086, 'catalog-china-first-rare-disease-catalog-86'),
-    name: '成骨不全症（脆骨病）',
-    nameEn: 'Osteogenesis Imperfecta (Brittle Bone Disease)',
-    alias:
-      '第一批罕见病目录第 86 项；Osteogenesis Imperfecta (Brittle Bone Disease)',
-    slug: 'osteogenesis-imperfecta-brittle-bone-disease',
-    categorySlug: 'skeletal-connective-tissue',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E6%88%90%E9%AA%A8%E4%B8%8D%E5%85%A8%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1087, 'catalog-china-first-rare-disease-catalog-87'),
-    name: '帕金森病（青年型、早发型）',
-    nameEn: 'Parkinson Disease (Young-onset , Early-onset)',
-    alias:
-      '第一批罕见病目录第 87 项；Parkinson Disease (Young-onset , Early-onset)',
-    slug: 'parkinson-disease-young-onset-early-onset',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E5%B8%95%E9%87%91%E6%A3%AE%E6%B0%8F%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1088, 'catalog-china-first-rare-disease-catalog-88'),
-    name: '阵发性睡眠性血红蛋白尿',
-    nameEn: 'Paroxysmal Nocturnal Hemoglobinuria',
-    alias: '第一批罕见病目录第 88 项；Paroxysmal Nocturnal Hemoglobinuria',
-    slug: 'paroxysmal-nocturnal-hemoglobinuria',
-    categorySlug: 'hematological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
-    ...entity(1089, 'catalog-china-first-rare-disease-catalog-89'),
-    name: '黑斑息肉综合征',
-    nameEn: 'Peutz-Jeghers Syndrome',
-    alias: '第一批罕见病目录第 89 项；Peutz-Jeghers Syndrome',
-    slug: 'peutz-jeghers-syndrome',
-    categorySlug: 'digestive-hepatic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-    sources: [
-      {
-        name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
-        type: 'official',
-      },
-      {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
-      },
-      {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E6%B3%A2%E4%BC%8A%E8%8C%A8-%E8%80%B6%E6%A0%BC%E7%BB%BC%E5%90%88%E5%BE%81',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
-      },
-    ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
-  },
-  {
     ...entity(500, 'disease-phenylketonuria'),
     name: '苯丙酮尿症',
     nameEn: 'Phenylketonuria',
@@ -5402,35 +4832,108 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1093, 'catalog-china-first-rare-disease-catalog-93'),
     name: 'Prader-Willi综合征',
     nameEn: 'Prader-Willi Syndrome',
-    alias: '第一批罕见病目录第 93 项；Prader-Willi Syndrome',
+    alias: 'PWS、小胖威利综合征、普拉德-威利综合征、第一批罕见病目录第 93 项',
     slug: 'prader-willi-syndrome',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Prader-Willi综合征是一种通常与15号染色体父源表达区域异常有关的遗传性神经发育疾病，常表现为婴儿期肌张力低下、喂养困难，随后出现持续饥饿感、体重管理困难和发育行为问题。',
+    plainName: '影响饥饿感、发育和行为调节的遗传综合征',
+    prevalence:
+      '已纳入国家第一批罕见病目录；国际资料常估计约每10,000-30,000人中1例。',
+    quickLook: {
+      whatItIs:
+        'PWS不是简单“吃得多”或家庭管理问题，而是大脑下丘脑相关调节、内分泌和发育受到遗传印记异常影响。早期可能先表现为太软、吃奶困难，儿童期后逐渐出现难以控制的饥饿感，需要结构化饮食、运动、行为和内分泌随访。',
+      whoToSeeFirst:
+        '婴儿期可先看儿童神经科、儿童内分泌科或医学遗传科；已确诊后通常需要营养、康复、睡眠、心理行为和遗传咨询共同管理。',
+      isGenetic:
+        '多数病例与15q11-q13区域父源表达缺失、母源单亲二体或印记中心异常有关。复发风险因机制不同差异很大，确诊后建议带检测报告做遗传咨询。',
+      hasTreatment:
+        '目前管理重点是早期康复、营养和体重管理、睡眠呼吸评估、内分泌治疗评估以及行为支持。生长激素等治疗是否适合，需要由熟悉PWS的专科团队评估。',
+      commonDelayReason:
+        '婴儿期常被当作早产、喂养差或肌张力低；儿童期又容易被误解为单纯肥胖或管教问题，若没有把肌张力低、发育、饥饿感和内分泌线索合在一起看，就容易延迟诊断。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '新生儿或婴儿明显软、哭声弱、吸吮差、吃奶时间长或需要管饲。',
+        '幼儿期后食欲显著增加、很难有饱腹感，体重快速上升。',
+        '身高增长慢、性发育延迟、手脚相对小，或医生提示生长激素/性腺轴问题。',
+        '伴有发育迟缓、学习困难、强迫样行为、情绪爆发或睡眠呼吸问题。',
+      ],
+      commonWrongTurns: [
+        '只按营养不良、早产后遗症或普通肥胖处理，没有做遗传检测。',
+        '把进食冲动归因于意志力或家长管教，忽略生物学饥饿调节障碍。',
+        '只控制饮食，没有同步评估睡眠呼吸、内分泌、骨密度和行为支持。',
+      ],
+      firstDepartments: [
+        '儿童内分泌科',
+        '医学遗传科',
+        '儿童神经科',
+        '康复医学科',
+        '营养科',
+      ],
+      diagnosisChecklist: [
+        '整理出生史、喂养史、体重身高曲线、发育里程碑和行为变化时间线。',
+        '带上既往基因/甲基化检测、内分泌检查、睡眠监测和康复评估。',
+        '记录每日进食管理、睡眠打鼾、白天困倦、便秘、皮肤抓挠和情绪行为问题。',
+      ],
+      testsToAskAbout: [
+        'PWS相关DNA甲基化检测，必要时做染色体微阵列、UPD或印记中心分析。',
+        '生长激素轴、甲状腺、肾上腺和性腺功能评估。',
+        '睡眠呼吸监测、营养评估、骨龄/骨密度和脊柱侧弯评估。',
+      ],
+      questionsForDoctor: [
+        '目前检测能区分是哪一种遗传机制吗？家族复发风险如何评估？',
+        '体重管理、运动、学校配合和食物安全需要怎样制定家庭计划？',
+        '是否需要评估生长激素治疗？开始前要筛查哪些风险？',
+        '睡眠、行为和内分泌问题分别多久复查？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>PWS常以两个阶段被发现：婴儿期肌张力低、吸吮差、喂养困难、体重增长慢；进入幼儿或儿童期后，饥饿感增强、体重快速增加，可能伴身材矮小、性发育延迟、手脚较小、斜视、睡眠呼吸问题和便秘。</p><p>部分孩子还会有发育迟缓、学习困难、固执或强迫样行为、情绪爆发、皮肤抓挠等表现。不同家庭的突出问题不同，需要把营养、内分泌、康复和行为支持放在同一个计划里。</p>',
+      diagnosis:
+        '<p>诊断以分子检测为核心。PWS相关甲基化检测通常用于确认15q11-q13区域父源表达异常；随后可进一步区分缺失、母源单亲二体或印记中心异常，以便评估复发风险和遗传咨询。</p><p>确诊后还需要系统评估身高体重、内分泌、睡眠呼吸、吞咽喂养、运动发育、脊柱和心理行为。不要只把诊断停留在“肥胖”或“发育迟缓”。</p>',
+      treatment:
+        '<p>治疗目标是降低体重和代谢并发症风险、支持发育并改善家庭生活。常见措施包括早期喂养和康复、结构化饮食环境、规律运动、睡眠呼吸处理、便秘和皮肤问题管理、心理行为支持以及学校适配。</p><p>生长激素、性激素替代或其他内分泌治疗需由专科医生评估适应证、禁忌证和监测方案。家庭不要自行使用减肥药、极端节食或未经验证的疗法。</p>',
+      longTermCare:
+        '<p>PWS需要跨年龄段管理。儿童期重点是生长、运动、语言、学习和行为；青少年和成人阶段要继续关注体重、糖脂代谢、睡眠、骨骼、心理健康、独立生活能力和照护安排。</p><p>建议家庭准备一份简短照护计划，写明诊断机制、食物环境管理原则、急诊注意事项、常用药和主要随访医生，便于学校、社区和急诊团队理解。</p>',
+      fertilityOrFamily:
+        '<p>PWS多数为新发事件，但不同遗传机制对应的复发风险不同。父母再次生育、患者成年后的生育咨询，都应基于具体分子诊断结果进行遗传咨询。</p>',
+      emergencySigns:
+        '<p>出现持续嗜睡、呼吸暂停或发绀、严重呕吐或腹胀、急性意识改变、高热后状态变差、疑似窒息或快速进展的行为/精神症状，应尽快就医。PWS患者疼痛表达可能不典型，腹部急症不要仅凭疼痛轻重判断。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Prader-Willi syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/prader-willi-syndrome/',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E6%99%AE%E7%91%9E%E5%BE%B7%E5%A8%81%E5%88%A9%E7%97%87%E5%80%99%E7%BE%A4',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>常见线索包括婴儿期肌张力低和喂养困难，随后出现持续饥饿感、体重管理困难、身材矮小、性发育延迟、发育行为问题和睡眠呼吸问题。</p>',
+    diagnosis:
+      '<p>诊断主要依靠PWS相关DNA甲基化检测，并进一步明确缺失、母源单亲二体或印记异常等机制。</p>',
+    treatment:
+      '<p>管理包括营养和体重计划、康复、睡眠呼吸和内分泌评估、行为支持；生长激素等治疗需专科评估。</p>',
+    prognosis:
+      '<p>早期诊断和结构化支持可明显改善发育、体重和家庭生活质量，但仍需长期跨学科随访。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'genetic-developmental',
+    charityIds: [63],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1094, 'catalog-china-first-rare-disease-catalog-94'),
@@ -5549,29 +5052,110 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1098, 'catalog-china-first-rare-disease-catalog-98'),
     name: '进行性肌营养不良',
     nameEn: 'Progressive Muscular Dystrophy',
-    alias: '第一批罕见病目录第 98 项；Progressive Muscular Dystrophy',
+    alias: '肌营养不良、DMD/BMD相关肌营养不良、第一批罕见病目录第 98 项',
     slug: 'progressive-muscular-dystrophy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '进行性肌营养不良是一组以肌肉逐渐无力和萎缩为主要表现的遗传性肌病，Duchenne/Becker型常与DMD基因异常有关，并需要持续关注运动、心脏和呼吸功能。',
+    plainName: '以进行性肌无力为主、需要心肺骨骼长期管理的一组肌病',
+    prevalence:
+      '已纳入国家第一批罕见病目录；其中Duchenne型多见于男孩，国际资料常估计约每3,500-5,000名男性新生儿1例。',
+    quickLook: {
+      whatItIs:
+        '这个目录名是一组疾病，不等同于单一分型。患者可能先表现为走路晚、跑跳差、频繁摔倒、爬楼困难或小腿假性肥大，随后需要围绕康复、心肺、骨骼和遗传诊断制定长期计划。',
+      whoToSeeFirst:
+        '儿童建议先看儿童神经科或神经肌肉专病门诊；同时需要康复、心内、呼吸、骨科、营养和遗传咨询参与。',
+      isGenetic:
+        'DMD/BMD多为X连锁遗传，其他肌营养不良分型遗传方式不同。明确基因和变异类型对治疗选择、家族筛查和生育咨询很重要。',
+      hasTreatment:
+        '治疗包括规范康复、牵伸和辅具，心脏和呼吸监测，营养骨骼管理，以及按分型评估糖皮质激素、基因相关治疗或临床研究可及性。',
+      commonDelayReason:
+        '早期常被认为是缺钙、懒动或发育慢；转氨酶升高也可能先被误认为肝病。肌酸激酶和基因检测常是关键转折。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '男孩走路晚、跑跳差、经常摔倒、上楼困难或Gowers征。',
+        '小腿明显粗大但力量下降，肌酸激酶显著升高。',
+        '不明原因转氨酶升高，同时有运动发育落后。',
+        '家族中有男性早发肌无力、轮椅使用或心肌病。',
+      ],
+      commonWrongTurns: [
+        '只补钙或做普通康复，没有查CK和神经肌肉病因。',
+        '把转氨酶高当肝病长期检查，未想到肌源性升高。',
+        '确诊后只关注走路，忽视心肌病、呼吸和骨骼并发症。',
+      ],
+      firstDepartments: [
+        '儿童神经科',
+        '神经内科',
+        '康复医学科',
+        '心内科',
+        '呼吸科',
+        '医学遗传科',
+      ],
+      diagnosisChecklist: [
+        '整理运动里程碑、摔倒频率、爬楼起立视频、CK和肝酶结果。',
+        '带上肌电图、肌肉MRI/活检、基因检测、心电图/心超和肺功能结果。',
+        '记录家族男性成员肌无力、早逝或心肌病情况。',
+      ],
+      testsToAskAbout: [
+        '肌酸激酶、肌电图和肌肉影像。',
+        'DMD基因缺失重复/测序，必要时扩大肌病基因检测。',
+        '心电图、心脏超声/心脏MRI和肺功能。',
+        '骨密度、脊柱侧弯和关节挛缩评估。',
+      ],
+      questionsForDoctor: [
+        '目前更像哪一种肌营养不良？变异类型是否明确？',
+        '是否适合分型相关药物、激素或临床研究？',
+        '心脏和呼吸从什么时候开始定期监测？',
+        '母亲和女性亲属是否需要携带者检测？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>这个目录名是一组疾病，不等同于单一分型。患者可能先表现为走路晚、跑跳差、频繁摔倒、爬楼困难或小腿假性肥大，随后需要围绕康复、心肺、骨骼和遗传诊断制定长期计划。</p><p>需要警惕的线索包括：男孩走路晚、跑跳差、经常摔倒、上楼困难或Gowers征；小腿明显粗大但力量下降，肌酸激酶显著升高；不明原因转氨酶升高，同时有运动发育落后；家族中有男性早发肌无力、轮椅使用或心肌病。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：肌酸激酶、肌电图和肌肉影像；DMD基因缺失重复/测序，必要时扩大肌病基因检测；心电图、心脏超声/心脏MRI和肺功能；骨密度、脊柱侧弯和关节挛缩评估。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>治疗包括规范康复、牵伸和辅具，心脏和呼吸监测，营养骨骼管理，以及按分型评估糖皮质激素、基因相关治疗或临床研究可及性。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>DMD/BMD多为X连锁遗传，其他肌营养不良分型遗传方式不同。明确基因和变异类型对治疗选择、家族筛查和生育咨询很重要。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Duchenne and Becker muscular dystrophy',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/duchenne-and-becker-muscular-dystrophy/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>进行性肌营养不良是一组以肌肉逐渐无力和萎缩为主要表现的遗传性肌病，Duchenne/Becker型常与DMD基因异常有关，并需要持续关注运动、心脏和呼吸功能；常见线索包括男孩走路晚、跑跳差、经常摔倒、上楼困难或Gowers征。、小腿明显粗大但力量下降，肌酸激酶显著升高等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>治疗包括规范康复、牵伸和辅具，心脏和呼吸监测，营养骨骼管理，以及按分型评估糖皮质激素、基因相关治疗或临床研究可及性。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [66, 67, 68, 69, 70, 71, 80],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1099, 'catalog-china-first-rare-disease-catalog-99'),
@@ -5667,69 +5251,208 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1102, 'catalog-china-first-rare-disease-catalog-102'),
     name: '视网膜色素变性',
     nameEn: 'Retinitis Pigmentosa',
-    alias: '第一批罕见病目录第 102 项；Retinitis Pigmentosa',
+    alias: 'RP、第一批罕见病目录第 102 项',
     slug: 'retinitis-pigmentosa',
-    categorySlug: 'ophthalmologic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '视网膜色素变性是一组遗传性视网膜退行性疾病，通常先出现夜盲和周边视野缩小，之后可能逐步影响中心视力。',
+    plainName: '先影响夜间和周边视野的遗传性视网膜退行性疾病',
+    prevalence:
+      '已纳入国家第一批罕见病目录；国际资料常估计约每3,500-4,000人中1例。',
+    quickLook: {
+      whatItIs:
+        'RP不是普通近视或用眼疲劳。患者常先在暗处看不清、夜间行动困难、容易撞到侧边物体，眼底、视野、ERG和基因检测能帮助明确诊断。',
+      whoToSeeFirst:
+        '建议先看眼底病/遗传性视网膜病专科；确诊后需要低视力康复、遗传咨询和并发白内障/黄斑水肿等管理。',
+      isGenetic:
+        'RP遗传方式多样，可常染色体显性、隐性或X连锁，也可作为综合征的一部分。基因检测对预后、家族筛查和治疗机会判断有帮助。',
+      hasTreatment:
+        '多数类型目前以随访、低视力支持、并发症处理和遗传咨询为主。少数特定基因相关疾病已有或正在研究靶向治疗，应由专科医生评估。',
+      commonDelayReason:
+        '早期视力表可能还不错，夜盲和视野缩小容易被忽略，直到出行受影响才就诊。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '夜间或暗处看不清，进出明暗环境适应很慢。',
+        '走路容易撞到侧边物体，视野像逐渐变窄。',
+        '家族中多人夜盲、视野缩小或年轻时视力下降。',
+        '眼底提示骨细胞样色素、视网膜血管变细或视神经蜡黄。',
+      ],
+      commonWrongTurns: [
+        '只按近视、散光或干眼处理，没有做视野和眼底电生理。',
+        '视力表尚可就认为没问题，忽略周边视野和夜视功能。',
+        '没有区分非综合征RP和可能合并听力、肾脏或神经问题的综合征。',
+      ],
+      firstDepartments: ['眼科', '眼底病专科', '医学遗传科', '低视力康复门诊'],
+      diagnosisChecklist: [
+        '记录夜盲、视野缩小、读写和出行困难的起始时间。',
+        '带上眼底照片、OCT、视野、ERG、基因检测和家族眼病史。',
+        '记录是否有听力下降、平衡问题、肾脏或神经症状。',
+      ],
+      testsToAskAbout: [
+        '散瞳眼底检查、OCT、自发荧光、视野和ERG。',
+        '遗传性视网膜病基因检测。',
+        '按症状评估听力、肾脏或其他综合征线索。',
+      ],
+      questionsForDoctor: [
+        '是否符合RP？是否可能是综合征型视网膜病？',
+        '建议做哪类基因检测，结果会如何影响随访和家族筛查？',
+        '是否有黄斑水肿、白内障等可处理问题？',
+        '低视力辅助和出行训练可以从哪里开始？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>RP不是普通近视或用眼疲劳。患者常先在暗处看不清、夜间行动困难、容易撞到侧边物体，眼底、视野、ERG和基因检测能帮助明确诊断。</p><p>需要警惕的线索包括：夜间或暗处看不清，进出明暗环境适应很慢；走路容易撞到侧边物体，视野像逐渐变窄；家族中多人夜盲、视野缩小或年轻时视力下降；眼底提示骨细胞样色素、视网膜血管变细或视神经蜡黄。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：散瞳眼底检查、OCT、自发荧光、视野和ERG；遗传性视网膜病基因检测；按症状评估听力、肾脏或其他综合征线索。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>多数类型目前以随访、低视力支持、并发症处理和遗传咨询为主。少数特定基因相关疾病已有或正在研究靶向治疗，应由专科医生评估。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>RP遗传方式多样，可常染色体显性、隐性或X连锁，也可作为综合征的一部分。基因检测对预后、家族筛查和治疗机会判断有帮助。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Retinitis pigmentosa',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/retinitis-pigmentosa/',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E8%A7%86%E7%BD%91%E8%86%9C%E8%89%B2%E7%B4%A0%E5%8F%98%E6%80%A7%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>视网膜色素变性是一组遗传性视网膜退行性疾病，通常先出现夜盲和周边视野缩小，之后可能逐步影响中心视力；常见线索包括夜间或暗处看不清，进出明暗环境适应很慢。、走路容易撞到侧边物体，视野像逐渐变窄等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>多数类型目前以随访、低视力支持、并发症处理和遗传咨询为主。少数特定基因相关疾病已有或正在研究靶向治疗，应由专科医生评估。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'ophthalmologic',
+    charityIds: [74],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1103, 'catalog-china-first-rare-disease-catalog-103'),
     name: '视网膜母细胞瘤',
     nameEn: 'Retinoblastoma',
-    alias: '第一批罕见病目录第 103 项；Retinoblastoma',
+    alias: 'RB、第一批罕见病目录第 103 项',
     slug: 'retinoblastoma',
-    categorySlug: 'oncology',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '视网膜母细胞瘤是儿童最常见的眼内恶性肿瘤，常与RB1基因改变有关，白瞳、斜视或视力异常需要尽快由眼肿瘤团队评估。',
+    plainName: '儿童眼内恶性肿瘤，白瞳和斜视是重要警讯',
+    prevalence:
+      '已纳入国家第一批罕见病目录；国际资料常估计约每15,000-20,000名新生儿1例。',
+    quickLook: {
+      whatItIs:
+        'RB不是普通拍照反光。白瞳、猫眼样反光、斜视、眼红痛或眼球突出都可能是警讯；越早规范治疗，越有机会兼顾生命安全、眼球保留和视功能。',
+      whoToSeeFirst:
+        '应尽快看儿童眼底病/眼肿瘤专科或儿童肿瘤团队；疑似时不要长时间观察或自行用眼药。',
+      isGenetic:
+        'RB可由体细胞或胚系RB1变异导致。双眼、多灶、早发或有家族史时更需遗传咨询；单眼病例也可能存在胚系风险。',
+      hasTreatment:
+        '治疗按分期、单眼/双眼和扩散风险决定，包括局部治疗、化疗、动脉介入、冷冻/激光、放疗或摘除眼球等。目标首先是保命，其次尽量保眼和保视力。',
+      commonDelayReason:
+        '白瞳可能被误认为拍照角度问题，斜视被当普通斜视；延误会增加眼外扩散风险。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '照片中瞳孔反复发白或呈猫眼样反光。',
+        '婴幼儿突然或持续斜视、眼球震颤、视物异常。',
+        '眼红、眼痛、眼球突出或瞳孔异常。',
+        '家族中有人患RB或儿童期眼内肿瘤。',
+      ],
+      commonWrongTurns: [
+        '把白瞳当闪光灯反光，没有尽快散瞳眼底检查。',
+        '只按斜视配镜或弱视训练处理，未排除眼底肿瘤。',
+        '未做遗传咨询，忽略同胞或未来子女风险。',
+      ],
+      firstDepartments: [
+        '眼科急诊',
+        '儿童眼底病/眼肿瘤专科',
+        '儿童肿瘤科',
+        '医学遗传科',
+      ],
+      diagnosisChecklist: [
+        '准备出现白瞳或斜视的照片、起始时间和变化。',
+        '带上眼底检查、眼部超声、MRI、治疗记录和家族肿瘤史。',
+        '记录是否双眼受累、是否曾有眼红痛或全身症状。',
+      ],
+      testsToAskAbout: [
+        '散瞳眼底检查和眼底照相。',
+        '眼部超声、MRI等影像评估，避免不必要穿刺。',
+        'RB1基因检测和家系遗传咨询。',
+      ],
+      questionsForDoctor: [
+        '目前分期和扩散风险如何？治疗目标和顺序是什么？',
+        '能否保眼、保视力？如果不能，摘除眼球的时机和后续支持是什么？',
+        '是否需要RB1检测？兄弟姐妹怎样筛查？',
+        '治疗后多久随访，需警惕哪些第二肿瘤或复发信号？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>RB不是普通拍照反光。白瞳、猫眼样反光、斜视、眼红痛或眼球突出都可能是警讯；越早规范治疗，越有机会兼顾生命安全、眼球保留和视功能。</p><p>需要警惕的线索包括：照片中瞳孔反复发白或呈猫眼样反光；婴幼儿突然或持续斜视、眼球震颤、视物异常；眼红、眼痛、眼球突出或瞳孔异常；家族中有人患RB或儿童期眼内肿瘤。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：散瞳眼底检查和眼底照相；眼部超声、MRI等影像评估，避免不必要穿刺；RB1基因检测和家系遗传咨询。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>治疗按分期、单眼/双眼和扩散风险决定，包括局部治疗、化疗、动脉介入、冷冻/激光、放疗或摘除眼球等。目标首先是保命，其次尽量保眼和保视力。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>RB可由体细胞或胚系RB1变异导致。双眼、多灶、早发或有家族史时更需遗传咨询；单眼病例也可能存在胚系风险。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Retinoblastoma',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/retinoblastoma/',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E8%A7%86%E7%BD%91%E8%86%9C%E6%AF%8D%E7%BB%86%E8%83%9E%E7%98%A4',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>视网膜母细胞瘤是儿童最常见的眼内恶性肿瘤，常与RB1基因改变有关，白瞳、斜视或视力异常需要尽快由眼肿瘤团队评估；常见线索包括照片中瞳孔反复发白或呈猫眼样反光。、婴幼儿突然或持续斜视、眼球震颤、视物异常等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>治疗按分期、单眼/双眼和扩散风险决定，包括局部治疗、化疗、动脉介入、冷冻/激光、放疗或摘除眼球等。目标首先是保命，其次尽量保眼和保视力。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'oncology',
+    charityIds: [75],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1104, 'catalog-china-first-rare-disease-catalog-104'),
@@ -5763,36 +5486,108 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1105, 'catalog-china-first-rare-disease-catalog-105'),
     name: '婴儿严重肌阵挛性癫痫(Dravet综合征)',
     nameEn: 'Severe Myoclonic Epilepsy in Infancy (Dravet Syndrome)',
-    alias:
-      '第一批罕见病目录第 105 项；Severe Myoclonic Epilepsy in Infancy (Dravet Syndrome)',
+    alias: 'Dravet综合征、SMEI、第一批罕见病目录第 105 项',
     slug: 'severe-myoclonic-epilepsy-in-infancy-dravet-syndrome',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      'Dravet综合征是一种婴幼儿期起病的发育性癫痫性脑病，常与SCN1A基因变异有关，发热、热水、疫苗后发热或环境升温都可能诱发长时间癫痫发作。',
+    plainName: '婴幼儿早期起病、常由发热诱发的遗传性癫痫综合征',
+    prevalence:
+      '已纳入国家第一批罕见病目录；不同研究估计差异较大，卓蔚宝贝支持中心OCR资料提到约1/15,700-1/40,900。',
+    quickLook: {
+      whatItIs:
+        'Dravet不是普通热性惊厥。孩子早期发育可能看似正常，但一岁内出现反复、长时间、偏侧或多类型惊厥后，应尽快评估癫痫综合征和基因原因。',
+      whoToSeeFirst:
+        '首选儿童神经科或癫痫专病门诊；需要急救方案、发热管理、发育康复、睡眠和学校照护共同支持。',
+      isGenetic:
+        '许多患者与SCN1A新发变异有关，也可能涉及其他基因。明确基因有助于用药选择和家族咨询。',
+      hasTreatment:
+        '治疗重点是减少发作、避免诱因和准备急救药物。部分钠通道阻滞剂可能加重Dravet，具体用药必须由癫痫专科医生决定。',
+      commonDelayReason:
+        '早期常被当作普通热性惊厥；如果没有注意长时间、反复、偏侧、无热发作或发育变化，诊断会延迟。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '一岁以内因发热或热水诱发长时间惊厥。',
+        '惊厥可偏侧或交替，之后出现多种类型发作。',
+        '发作后恢复慢，或发育、语言、步态逐渐落后。',
+        '常规热性惊厥解释不了发作频率、持续时间或诱因。',
+      ],
+      commonWrongTurns: [
+        '长期按普通热性惊厥处理，没有做癫痫综合征评估。',
+        '未建立家庭急救方案，长时间发作处理延误。',
+        '未向医生确认哪些抗癫痫药可能不适合Dravet。',
+      ],
+      firstDepartments: [
+        '儿童神经科',
+        '癫痫专病门诊',
+        '急诊科',
+        '康复医学科',
+        '医学遗传科',
+      ],
+      diagnosisChecklist: [
+        '保存发作视频，记录年龄、体温、诱因、持续时间、偏侧性和恢复情况。',
+        '带上脑电图、头颅MRI、基因检测和既往用药反应。',
+        '列出发热、疫苗、洗澡、光刺激和睡眠不足等诱因。',
+      ],
+      testsToAskAbout: [
+        '脑电图和癫痫综合征评估。',
+        'SCN1A及癫痫基因检测。',
+        '发育、语言、运动和行为评估。',
+      ],
+      questionsForDoctor: [
+        '这些发作是否符合Dravet？是否需要SCN1A检测？',
+        '家庭急救药物什么时候用、如何用、何时叫急救？',
+        '哪些药物和诱因需要避免？',
+        '疫苗、发热和洗澡如何制定安全计划？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>Dravet不是普通热性惊厥。孩子早期发育可能看似正常，但一岁内出现反复、长时间、偏侧或多类型惊厥后，应尽快评估癫痫综合征和基因原因。</p><p>需要警惕的线索包括：一岁以内因发热或热水诱发长时间惊厥；惊厥可偏侧或交替，之后出现多种类型发作；发作后恢复慢，或发育、语言、步态逐渐落后；常规热性惊厥解释不了发作频率、持续时间或诱因。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：脑电图和癫痫综合征评估；SCN1A及癫痫基因检测；发育、语言、运动和行为评估。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>治疗重点是减少发作、避免诱因和准备急救药物。部分钠通道阻滞剂可能加重Dravet，具体用药必须由癫痫专科医生决定。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>许多患者与SCN1A新发变异有关，也可能涉及其他基因。明确基因有助于用药选择和家族咨询。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'GARD: Dravet syndrome',
+        type: 'official',
+        url: 'https://rarediseases.info.nih.gov/diseases/10430/dravet-syndrome',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E5%A9%B4%E5%84%BF%E4%B8%A5%E9%87%8D%E8%82%8C%E9%98%B5%E6%8C%9B%E6%80%A7%E7%99%AB%E7%97%AB',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>Dravet综合征是一种婴幼儿期起病的发育性癫痫性脑病，常与SCN1A基因变异有关，发热、热水、疫苗后发热或环境升温都可能诱发长时间癫痫发作；常见线索包括一岁以内因发热或热水诱发长时间惊厥。、惊厥可偏侧或交替，之后出现多种类型发作等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>治疗重点是减少发作、避免诱因和准备急救药物。部分钠通道阻滞剂可能加重Dravet，具体用药必须由癫痫专科医生决定。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [72, 73],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1106, 'catalog-china-first-rare-disease-catalog-106'),
@@ -5888,125 +5683,421 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1109, 'catalog-china-first-rare-disease-catalog-109'),
     name: '脊髓延髓肌萎缩症（肯尼迪病）',
     nameEn: 'Spinal and Bulbar Muscular Atrophy (Kennedy Disease)',
-    alias:
-      '第一批罕见病目录第 109 项；Spinal and Bulbar Muscular Atrophy (Kennedy Disease)',
+    alias: 'SBMA、Kennedy病、第一批罕见病目录第 109 项',
     slug: 'spinal-and-bulbar-muscular-atrophy-kennedy-disease',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '脊髓延髓肌萎缩症（肯尼迪病）是一种由AR基因CAG重复扩增导致的X连锁神经肌肉病，常见成年男性逐渐出现肢体无力、肌束颤动、吞咽或构音困难，并可伴内分泌表现。',
+    plainName: '成年男性多见、影响肢体和吞咽说话肌肉的X连锁神经肌肉病',
+    prevalence:
+      '已纳入国家第一批罕见病目录；患者组织OCR资料提到约1-2/10万人，具体人群估计可能不同。',
+    quickLook: {
+      whatItIs:
+        '肯尼迪病进展通常较慢，容易被误认为运动神经元病、普通肌病或内分泌问题。与ALS不同，它常伴雄激素不敏感相关表现，如男性乳房发育、不育或睾丸萎缩。',
+      whoToSeeFirst:
+        '建议看神经肌肉专病门诊或神经内科，同时根据需要评估康复、吞咽营养、呼吸、内分泌和遗传咨询。',
+      isGenetic:
+        '本病为X连锁遗传，与AR基因CAG重复扩增有关。男性多发病，女性携带者通常症状轻或无症状，但家族生育需遗传咨询。',
+      hasTreatment:
+        '目前以支持治疗为主，包括康复、预防跌倒、吞咽和营养管理、呼吸评估、内分泌问题处理和遗传咨询。',
+      commonDelayReason:
+        '肌无力、手抖、肌束颤动和乳房发育可能分散就诊；如果未做AR基因检测，常与ALS或其他肌病混淆。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '成年男性逐渐出现四肢近端无力、易跌倒、爬楼困难。',
+        '舌肌或面肌颤动、说话含糊、吞咽呛咳。',
+        '肌束颤动、手抖，同时伴男性乳房发育、不育或睾丸萎缩。',
+        '家族中男性有类似缓慢进展肌无力。',
+      ],
+      commonWrongTurns: [
+        '被误诊为ALS后产生过度恐慌，未做AR基因检测确认。',
+        '只看内分泌或乳腺问题，没有追踪神经肌肉症状。',
+        '忽视吞咽呛咳、跌倒和呼吸睡眠问题。',
+      ],
+      firstDepartments: [
+        '神经内科',
+        '神经肌肉专病门诊',
+        '康复医学科',
+        '内分泌科',
+        '医学遗传科',
+      ],
+      diagnosisChecklist: [
+        '整理肌无力、跌倒、吞咽、说话和肌束颤动进展时间线。',
+        '带上肌电图、CK、激素检查、家族史和既往诊断。',
+        '记录呛咳、体重下降、睡眠呼吸和日常功能变化。',
+      ],
+      testsToAskAbout: [
+        'AR基因CAG重复扩增检测。',
+        '肌电图、神经传导、CK和内分泌评估。',
+        '吞咽、营养、呼吸功能和康复评估。',
+      ],
+      questionsForDoctor: [
+        '症状是否符合SBMA？如何与ALS和其他肌病区分？',
+        'AR基因结果对家族成员意味着什么？',
+        '吞咽、跌倒和呼吸风险怎样监测？',
+        '运动训练强度和辅具如何选择？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>肯尼迪病进展通常较慢，容易被误认为运动神经元病、普通肌病或内分泌问题。与ALS不同，它常伴雄激素不敏感相关表现，如男性乳房发育、不育或睾丸萎缩。</p><p>需要警惕的线索包括：成年男性逐渐出现四肢近端无力、易跌倒、爬楼困难；舌肌或面肌颤动、说话含糊、吞咽呛咳；肌束颤动、手抖，同时伴男性乳房发育、不育或睾丸萎缩；家族中男性有类似缓慢进展肌无力。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：AR基因CAG重复扩增检测；肌电图、神经传导、CK和内分泌评估；吞咽、营养、呼吸功能和康复评估。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>目前以支持治疗为主，包括康复、预防跌倒、吞咽和营养管理、呼吸评估、内分泌问题处理和遗传咨询。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>本病为X连锁遗传，与AR基因CAG重复扩增有关。男性多发病，女性携带者通常症状轻或无症状，但家族生育需遗传咨询。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: "NINDS: Kennedy's Disease",
+        type: 'official',
+        url: 'https://www.ninds.nih.gov/health-information/disorders/kennedys-disease',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>脊髓延髓肌萎缩症（肯尼迪病）是一种由AR基因CAG重复扩增导致的X连锁神经肌肉病，常见成年男性逐渐出现肢体无力、肌束颤动、吞咽或构音困难，并可伴内分泌表现；常见线索包括成年男性逐渐出现四肢近端无力、易跌倒、爬楼困难。、舌肌或面肌颤动、说话含糊、吞咽呛咳等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>目前以支持治疗为主，包括康复、预防跌倒、吞咽和营养管理、呼吸评估、内分泌问题处理和遗传咨询。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [76],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1110, 'catalog-china-first-rare-disease-catalog-110'),
     name: '脊髓性肌萎缩症',
     nameEn: 'Spinal Muscular Atrophy',
-    alias: '第一批罕见病目录第 110 项；Spinal Muscular Atrophy',
+    alias: 'SMA、第一批罕见病目录第 110 项',
     slug: 'spinal-muscular-atrophy',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '脊髓性肌萎缩症是一组多由SMN1基因异常导致的遗传性神经肌肉病，运动神经元受损后可出现进行性肌无力、运动发育受限、吞咽或呼吸问题。',
+    plainName: '影响运动神经元、导致肌无力和运动发育受限的遗传病',
+    prevalence:
+      '已纳入国家第一批罕见病目录；国际资料常估计约每6,000-10,000名新生儿1例。',
+    quickLook: {
+      whatItIs:
+        'SMA不是普通“没力气”或缺钙，而是运动神经元供应肌肉的信号不足。不同分型起病年龄和严重程度不同，越早发现越能尽早评估疾病修饰治疗、呼吸营养和康复支持。',
+      whoToSeeFirst:
+        '婴幼儿可先看儿童神经科或儿童康复科；疑似或确诊后需要神经肌肉专病团队、呼吸、营养、康复、骨科和遗传咨询共同管理。',
+      isGenetic:
+        '多数SMA为常染色体隐性遗传，与SMN1双等位异常有关，SMN2拷贝数会影响但不能完全决定严重程度。父母和计划生育家庭建议做携带者咨询。',
+      hasTreatment:
+        '目前已有疾病修饰治疗可选择，但疗效与起病、分型、治疗时机和可及性有关。照护还包括呼吸支持、营养吞咽、康复、脊柱和关节管理。',
+      commonDelayReason:
+        '早期常被当成发育慢、早产后肌张力低或普通肌病。若没有及时做SMN1检测，可能错过早期治疗窗口。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '婴儿明显软、抬头差、翻身坐立落后，哭声或咳嗽弱。',
+        '近端肌无力明显，腿部无力比手部更突出，腱反射减弱。',
+        '喂养费力、吞咽呛咳、反复呼吸道感染或夜间通气不足。',
+        '家族中有SMA、婴儿期不明原因肌无力或携带者筛查阳性。',
+      ],
+      commonWrongTurns: [
+        '按缺钙、发育慢观察太久，没有做基因检测。',
+        '只做康复训练，忽略呼吸、营养和疾病修饰治疗评估。',
+        '以为能坐能走就不需要长期随访，忽视脊柱、关节和呼吸变化。',
+      ],
+      firstDepartments: [
+        '儿童神经科',
+        '神经内科',
+        '康复医学科',
+        '呼吸科',
+        '医学遗传科',
+      ],
+      diagnosisChecklist: [
+        '整理运动里程碑、肌力变化、吞咽喂养、呼吸感染和睡眠情况。',
+        '带上基因检测、肌电图、肺功能/睡眠监测、脊柱影像和用药记录。',
+        '记录是否已接受疾病修饰治疗以及治疗时间点。',
+      ],
+      testsToAskAbout: [
+        'SMN1缺失/变异检测及SMN2拷贝数评估。',
+        '呼吸功能、睡眠通气、吞咽和营养评估。',
+        '康复、关节挛缩、脊柱侧弯和骨密度评估。',
+      ],
+      questionsForDoctor: [
+        '是否符合SMA分型？还需要排除哪些神经肌肉病？',
+        '是否适合疾病修饰治疗？治疗前后怎样监测？',
+        '呼吸、营养和康复计划应如何安排？',
+        '父母和兄弟姐妹是否需要携带者检测？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>SMA不是普通“没力气”或缺钙，而是运动神经元供应肌肉的信号不足。不同分型起病年龄和严重程度不同，越早发现越能尽早评估疾病修饰治疗、呼吸营养和康复支持。</p><p>需要警惕的线索包括：婴儿明显软、抬头差、翻身坐立落后，哭声或咳嗽弱；近端肌无力明显，腿部无力比手部更突出，腱反射减弱；喂养费力、吞咽呛咳、反复呼吸道感染或夜间通气不足；家族中有SMA、婴儿期不明原因肌无力或携带者筛查阳性。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：SMN1缺失/变异检测及SMN2拷贝数评估；呼吸功能、睡眠通气、吞咽和营养评估；康复、关节挛缩、脊柱侧弯和骨密度评估。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>目前已有疾病修饰治疗可选择，但疗效与起病、分型、治疗时机和可及性有关。照护还包括呼吸支持、营养吞咽、康复、脊柱和关节管理。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>多数SMA为常染色体隐性遗传，与SMN1双等位异常有关，SMN2拷贝数会影响但不能完全决定严重程度。父母和计划生育家庭建议做携带者咨询。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Spinal muscular atrophy',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/spinal-muscular-atrophy/',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E8%84%8A%E9%AB%93%E6%80%A7%E8%82%8C%E8%82%89%E8%90%8E%E7%B8%AE%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>脊髓性肌萎缩症是一组多由SMN1基因异常导致的遗传性神经肌肉病，运动神经元受损后可出现进行性肌无力、运动发育受限、吞咽或呼吸问题；常见线索包括婴儿明显软、抬头差、翻身坐立落后，哭声或咳嗽弱。、近端肌无力明显，腿部无力比手部更突出，腱反射减弱等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>目前已有疾病修饰治疗可选择，但疗效与起病、分型、治疗时机和可及性有关。照护还包括呼吸支持、营养吞咽、康复、脊柱和关节管理。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [65],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1111, 'catalog-china-first-rare-disease-catalog-111'),
     name: '脊髓小脑性共济失调',
     nameEn: 'Spinocerebellar Ataxia',
-    alias: '第一批罕见病目录第 111 项；Spinocerebellar Ataxia',
+    alias: 'SCA、小脑萎缩症、第一批罕见病目录第 111 项',
     slug: 'spinocerebellar-ataxia',
-    categorySlug: 'neurological',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '脊髓小脑性共济失调是一组遗传性神经退行性疾病，主要表现为走路不稳、动作协调差、说话含糊，并可伴眼动、吞咽、周围神经或认知情绪问题。',
+    plainName: '以走路不稳、协调变差为主的一组遗传性共济失调',
+    prevalence: '已纳入国家第一批罕见病目录；不同SCA分型和地区的频率差异很大。',
+    quickLook: {
+      whatItIs:
+        'SCA不是单一疾病，常见分型包括SCA1、SCA2、SCA3等。家族史、起病年龄、眼动和周围神经表现、基因检测有助于分型，分型会影响遗传咨询和随访重点。',
+      whoToSeeFirst:
+        '建议看神经内科运动障碍或神经遗传门诊；确诊后需要康复、吞咽营养、心理和遗传咨询支持。',
+      isGenetic:
+        '许多SCA为常染色体显性遗传，部分与重复序列扩增有关。家族成员检测和生育选择需要遗传咨询，尤其要避免在未咨询前直接给未成年人预测性检测。',
+      hasTreatment:
+        '多数SCA目前以康复、预防跌倒、吞咽和营养管理、症状治疗和生活适配为主。分型清楚后可关注临床研究和特定并发症筛查。',
+      commonDelayReason:
+        '早期走路不稳、说话含糊可能被误认为颈椎病、酒精影响或心理问题；家族史不明显时更易延迟。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '逐渐出现走路不稳、容易跌倒、动作笨拙或手抖。',
+        '说话含糊、眼球震颤、复视或吞咽呛咳。',
+        '家族中多人有“小脑萎缩”、走路不稳或不明原因轮椅使用。',
+        '头颅影像提示小脑萎缩。',
+      ],
+      commonWrongTurns: [
+        '长期按颈椎病、眩晕或焦虑处理，没有做神经系统定位。',
+        '只看到影像“小脑萎缩”，未进一步分型和遗传咨询。',
+        '忽视吞咽安全、跌倒预防和心理支持。',
+      ],
+      firstDepartments: [
+        '神经内科',
+        '运动障碍门诊',
+        '医学遗传科',
+        '康复医学科',
+        '吞咽/营养门诊',
+      ],
+      diagnosisChecklist: [
+        '整理起病年龄、进展速度、跌倒、说话吞咽和眼动症状。',
+        '画出三代家系图，记录类似症状、诊断或早逝情况。',
+        '带上头颅MRI、基因检测、康复评估和用药记录。',
+      ],
+      testsToAskAbout: [
+        '头颅MRI和神经系统查体。',
+        'SCA重复扩增和相关共济失调基因检测。',
+        '吞咽、步态平衡、眼动和周围神经评估。',
+      ],
+      questionsForDoctor: [
+        '最可能是哪一型SCA？基因检测应该如何分步做？',
+        '家属预测性检测和生育咨询有哪些注意事项？',
+        '怎样安排康复、辅具和跌倒预防？',
+        '吞咽呛咳、体重下降或情绪问题应如何处理？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>SCA不是单一疾病，常见分型包括SCA1、SCA2、SCA3等。家族史、起病年龄、眼动和周围神经表现、基因检测有助于分型，分型会影响遗传咨询和随访重点。</p><p>需要警惕的线索包括：逐渐出现走路不稳、容易跌倒、动作笨拙或手抖；说话含糊、眼球震颤、复视或吞咽呛咳；家族中多人有“小脑萎缩”、走路不稳或不明原因轮椅使用；头颅影像提示小脑萎缩。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：头颅MRI和神经系统查体；SCA重复扩增和相关共济失调基因检测；吞咽、步态平衡、眼动和周围神经评估。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>多数SCA目前以康复、预防跌倒、吞咽和营养管理、症状治疗和生活适配为主。分型清楚后可关注临床研究和特定并发症筛查。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>许多SCA为常染色体显性遗传，部分与重复序列扩增有关。家族成员检测和生育选择需要遗传咨询，尤其要避免在未咨询前直接给未成年人预测性检测。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'NORD: Spinocerebellar Ataxia',
+        type: 'official',
+        url: 'https://rarediseases.org/rare-diseases/spinocerebellar-ataxia/',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E8%84%8A%E9%AB%93%E5%B0%8F%E8%84%91%E6%80%A7%E5%85%B1%E6%B5%8E%E5%A4%B1%E8%B0%83',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>脊髓小脑性共济失调是一组遗传性神经退行性疾病，主要表现为走路不稳、动作协调差、说话含糊，并可伴眼动、吞咽、周围神经或认知情绪问题；常见线索包括逐渐出现走路不稳、容易跌倒、动作笨拙或手抖。、说话含糊、眼球震颤、复视或吞咽呛咳等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>多数SCA目前以康复、预防跌倒、吞咽和营养管理、症状治疗和生活适配为主。分型清楚后可关注临床研究和特定并发症筛查。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'neurological',
+    charityIds: [77],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1112, 'catalog-china-first-rare-disease-catalog-112'),
     name: '系统性硬化症',
     nameEn: 'Systemic Sclerosis',
-    alias: '第一批罕见病目录第 112 项；Systemic Sclerosis',
+    alias: '硬皮病、SSc、第一批罕见病目录第 112 项',
     slug: 'systemic-sclerosis',
-    categorySlug: 'immunological-rheumatologic',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '系统性硬化症是一种自身免疫性结缔组织病，可引起皮肤增厚变硬、雷诺现象，并可能累及肺、消化道、肾脏和心脏。',
+    plainName: '会造成皮肤变硬并可能累及血管和内脏的自身免疫病',
+    prevalence:
+      '已纳入国家第一批罕见病目录；发病率和患病率因地区、人群和诊断标准而不同。',
+    quickLook: {
+      whatItIs:
+        'SSc不只是“皮肤硬”，它常从手指遇冷变白变紫、肿胀或皮肤紧绷开始，并可能逐步影响肺间质、肺动脉压力、胃食管反流和肾脏血压。',
+      whoToSeeFirst:
+        '疑似者建议先看风湿免疫科；有气短、吞咽反流、肾脏血压或心脏症状时，需要呼吸、消化、肾内和心内科共同评估。',
+      isGenetic:
+        'SSc通常不是单基因遗传病，可能与免疫、环境和遗传易感共同相关。家族聚集少见，但有自身免疫病家族史可告知医生。',
+      hasTreatment:
+        '目前没有单一根治方案，治疗按受累器官分层，包括雷诺和血管保护、免疫抑制、肺部监测、胃食管反流管理和肾危象预防。',
+      commonDelayReason:
+        '早期雷诺、手肿、胃反流或关节痛容易被分开处理；若没有查自身抗体和毛细血管镜，诊断会延迟。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '手指遇冷变白、变紫或疼痛，反复指尖溃疡。',
+        '手指肿胀、皮肤发紧变厚，戒指变紧或握拳困难。',
+        '不明原因胃食管反流、吞咽困难、气短、干咳或运动耐量下降。',
+        '自身抗体阳性或甲襞毛细血管异常。',
+      ],
+      commonWrongTurns: [
+        '只按冻疮、皮炎或胃病处理，没有风湿免疫评估。',
+        '只关注皮肤，忽略肺间质病变、肺动脉高压和肾危象风险。',
+        '自行使用激素或偏方，未评估血压、肾功能和肺部情况。',
+      ],
+      firstDepartments: ['风湿免疫科', '呼吸科', '心内科', '肾内科', '消化科'],
+      diagnosisChecklist: [
+        '记录雷诺发作、皮肤变化、指尖溃疡、反流吞咽和气短时间线。',
+        '带上自身抗体、肺功能、胸部HRCT、心超、尿检和肾功能结果。',
+        '记录血压变化、用药和感染/咳嗽情况。',
+      ],
+      testsToAskAbout: [
+        'ANA谱和SSc相关抗体，甲襞毛细血管镜。',
+        '肺功能、弥散功能、胸部HRCT和心脏超声。',
+        '血压、尿常规、肾功能、心电图和NT-proBNP等按需评估。',
+      ],
+      questionsForDoctor: [
+        '属于局限型还是弥漫型？目前哪些器官受累？',
+        '肺部和肺动脉高压多久筛查一次？',
+        '雷诺和指尖溃疡怎样预防和处理？',
+        '哪些药物可能增加肾危象风险？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>SSc不只是“皮肤硬”，它常从手指遇冷变白变紫、肿胀或皮肤紧绷开始，并可能逐步影响肺间质、肺动脉压力、胃食管反流和肾脏血压。</p><p>需要警惕的线索包括：手指遇冷变白、变紫或疼痛，反复指尖溃疡；手指肿胀、皮肤发紧变厚，戒指变紧或握拳困难；不明原因胃食管反流、吞咽困难、气短、干咳或运动耐量下降；自身抗体阳性或甲襞毛细血管异常。表现会因年龄、分型和受累系统不同而变化。</p>',
+      diagnosis:
+        '<p>诊断通常从详细病史、家族史和专科查体开始，再结合相关检查。常用检查包括：ANA谱和SSc相关抗体，甲襞毛细血管镜；肺功能、弥散功能、胸部HRCT和心脏超声；血压、尿常规、肾功能、心电图和NT-proBNP等按需评估。</p><p>如果怀疑遗传因素，建议由遗传咨询或熟悉该病的专科团队解释检测结果，避免只凭单一异常自行判断。</p>',
+      treatment:
+        '<p>目前没有单一根治方案，治疗按受累器官分层，包括雷诺和血管保护、免疫抑制、肺部监测、胃食管反流管理和肾危象预防。</p><p>治疗计划应同时覆盖日常功能、并发症筛查、心理支持和家庭照护。不要自行使用未经验证的药物、保健品或训练方案。</p>',
+      longTermCare:
+        '<p>长期管理建议保存一份病情摘要，包含诊断、关键检查、基因结果、用药、急症信号和主要随访医生。随着年龄、功能和家庭目标变化，康复、学校/工作适配和照护计划也需要定期更新。</p>',
+      fertilityOrFamily:
+        '<p>SSc通常不是单基因遗传病，可能与免疫、环境和遗传易感共同相关。家族聚集少见，但有自身免疫病家族史可告知医生。</p><p>计划生育、家属筛查或预测性检测前，建议先做遗传咨询，明确检测目的、局限和可能带来的心理及家庭影响。</p>',
+      emergencySigns:
+        '<p>出现呼吸困难、意识改变、持续抽搐、明显吞咽窒息、快速进展的无力或视力变化、严重感染或急性疼痛时，应及时急诊或联系主管专科。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'NIAMS: Scleroderma',
+        type: 'official',
+        url: 'https://www.niams.nih.gov/health-topics/scleroderma',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
+    symptoms:
+      '<p>系统性硬化症是一种自身免疫性结缔组织病，可引起皮肤增厚变硬、雷诺现象，并可能累及肺、消化道、肾脏和心脏；常见线索包括手指遇冷变白、变紫或疼痛，反复指尖溃疡。、手指肿胀、皮肤发紧变厚，戒指变紧或握拳困难等。</p>',
+    diagnosis:
+      '<p>诊断需要结合病史、体格检查、专科评估和疾病相关基因/影像/功能检查，具体路径由专科医生按表现决定。</p>',
+    treatment:
+      '<p>目前没有单一根治方案，治疗按受累器官分层，包括雷诺和血管保护、免疫抑制、肺部监测、胃食管反流管理和肾危象预防。</p>',
+    prognosis:
+      '<p>预后取决于分型、起病年龄、受累器官和治疗可及性。尽早确诊、规范随访和家庭支持可帮助减少可预防风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'immunological-rheumatologic',
+    charityIds: [64],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
     tagSlugs: ['first-rare-disease-catalog'],
   },
   {
@@ -6041,35 +6132,109 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ...entity(1114, 'catalog-china-first-rare-disease-catalog-114'),
     name: '结节性硬化症',
     nameEn: 'Tuberous Sclerosis Complex',
-    alias: '第一批罕见病目录第 114 项；Tuberous Sclerosis Complex',
+    alias: 'TSC、结节性硬化复合征、第一批罕见病目录第 114 项',
     slug: 'tuberous-sclerosis-complex',
-    categorySlug: 'genetic-developmental',
-    charityIds: [],
-    hospitalIds: [],
-    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
-    sourceUrl:
-      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    oneSentence:
+      '结节性硬化症是一种多系统遗传性疾病，常由TSC1或TSC2基因变异引起，可在脑、皮肤、肾脏、心脏、肺和眼部形成错构瘤或相关病变。',
+    plainName: '会影响脑、皮肤和多个器官的遗传性多系统疾病',
+    prevalence: '已纳入国家第一批罕见病目录；国际资料常估计约每6,000人中1例。',
+    quickLook: {
+      whatItIs:
+        'TSC的关键不是单一“结节”，而是多个器官可能随年龄出现不同问题。婴幼儿可先因癫痫或皮肤白斑就诊，成年后也可能因肾血管平滑肌脂肪瘤、肺部问题或皮肤改变被发现。',
+      whoToSeeFirst:
+        '儿童可先看儿童神经科、皮肤科或医学遗传科；成人可由神经内科、肾内科、皮肤科、呼吸科和遗传门诊共同评估。',
+      isGenetic:
+        'TSC多与TSC1或TSC2基因有关，常染色体显性遗传，很多患者为新发变异。确诊者及家属建议做遗传咨询和家系评估。',
+      hasTreatment:
+        '治疗取决于受累器官，包括癫痫控制、发育行为支持、皮肤和肾脏监测，部分病变可评估mTOR抑制剂、手术或介入方案。',
+      commonDelayReason:
+        '皮肤白斑、面部血管纤维瘤、癫痫、肾脏病变常被分散处理；如果没有把多器官线索连接起来，就容易漏诊。',
+    },
+    patientJourney: {
+      whenToSuspect: [
+        '婴儿痉挛、反复癫痫发作，或发育倒退/明显发育迟缓。',
+        '皮肤出现白色叶形斑、面部红色丘疹、鲨革斑或甲周纤维瘤。',
+        '影像提示脑室管膜下结节、皮质结节，或肾脏血管平滑肌脂肪瘤。',
+        '家族中有人有TSC、癫痫、肾脏错构瘤或类似皮肤表现。',
+      ],
+      commonWrongTurns: [
+        '只按普通癫痫治疗，没有查看皮肤、肾脏、眼底和家族史。',
+        '把白斑当作普通色素减退，没有用伍德灯和系统评估。',
+        '成年肾脏病变被单独处理，未追问儿童期癫痫或皮肤表现。',
+      ],
+      firstDepartments: [
+        '儿童神经科',
+        '神经内科',
+        '皮肤科',
+        '肾内科',
+        '医学遗传科',
+      ],
+      diagnosisChecklist: [
+        '整理癫痫发作视频、脑电图、头颅MRI、肾脏超声/CT/MRI和皮肤照片。',
+        '记录发育、学习、行为、睡眠和肾脏/肺部症状。',
+        '带上家族成员类似表现、基因检测和既往用药反应。',
+      ],
+      testsToAskAbout: [
+        '头颅MRI、脑电图和发育行为评估。',
+        '皮肤科检查和伍德灯检查。',
+        '肾脏影像、血压、肾功能和尿检。',
+        'TSC1/TSC2基因检测，必要时做家属验证。',
+        '按年龄和性别评估眼底、心脏和肺部受累。',
+      ],
+      questionsForDoctor: [
+        '目前哪些器官已经受累？哪些需要定期筛查？',
+        '癫痫是否需要调整方案，是否适合进一步评估手术或靶向药？',
+        '肾脏病变大小和出血风险如何？多久复查影像？',
+        '家属是否需要检查或遗传咨询？',
+      ],
+    },
+    medicalSections: {
+      symptoms:
+        '<p>TSC可以影响脑、皮肤、肾脏、心脏、肺和眼睛。常见线索包括癫痫、婴儿痉挛、发育迟缓、学习或行为问题、皮肤白斑、面部血管纤维瘤、鲨革斑、甲周纤维瘤，以及肾脏血管平滑肌脂肪瘤。</p><p>表现随年龄变化。婴幼儿可能先因癫痫或心脏横纹肌瘤被发现；成人可能以肾脏或肺部问题就诊。即使症状较轻，也需要多器官随访。</p>',
+      diagnosis:
+        '<p>诊断通常结合临床标准、影像、皮肤检查和基因检测。头颅MRI、脑电图、肾脏影像和皮肤科评估有助于判断是否符合TSC以及当前受累范围。</p><p>TSC1/TSC2基因检测可帮助确认诊断、做家系评估和遗传咨询；检测阴性并不能完全排除，仍需由熟悉TSC的医生结合临床判断。</p>',
+      treatment:
+        '<p>治疗按器官和风险分层。癫痫需要尽早规范控制，婴儿痉挛尤其要及时处理；肾脏病变需定期影像监测，必要时评估药物、介入或手术；皮肤、行为、学习和睡眠问题也应纳入照护。</p><p>部分TSC相关病变可评估mTOR抑制剂。是否适合、如何监测副作用，应由专科团队决定。</p>',
+      longTermCare:
+        '<p>TSC是长期管理疾病。建议建立跨学科随访表，按年龄安排脑、肾、皮肤、眼、肺、心脏和心理行为评估，并保存关键影像和基因报告。</p>',
+      fertilityOrFamily:
+        '<p>TSC可常染色体显性遗传。患者生育前和家属筛查应基于基因结果、临床表现和家系情况进行遗传咨询。</p>',
+      emergencySigns:
+        '<p>长时间癫痫发作、连续发作不恢复、突发剧烈头痛呕吐、意识改变、急性肢体无力、肉眼血尿或腰腹痛提示肾脏出血风险时，应尽快急诊。</p>',
+    },
     sources: [
       {
         name: '国家卫生健康委员会《第一批罕见病目录》',
-        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
         type: 'official',
+        url: 'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
       },
       {
-        name: '第一批罕见病目录维基百科模板',
-        url: 'https://zh.wikipedia.org/wiki/Template:%E4%B8%AD%E5%8D%8E%E4%BA%BA%E6%B0%91%E5%85%B1%E5%92%8C%E5%9B%BD%E7%AC%AC%E4%B8%80%E6%89%B9%E7%BD%95%E8%A7%81%E7%97%85%E7%9B%AE%E5%BD%95',
-        type: 'wikipedia-template',
-        license: 'CC BY-SA 4.0',
+        name: 'MedlinePlus Genetics: Tuberous sclerosis complex',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/tuberous-sclerosis-complex/',
       },
       {
-        name: '维基百科中文条目',
-        url: 'https://zh.wikipedia.org/wiki/%E7%BB%93%E8%8A%82%E6%80%A7%E7%A1%AC%E5%8C%96%E7%97%87',
-        type: 'wikipedia-entry',
-        license: 'CC BY-SA 4.0',
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
       },
     ],
-    reviewStatus: 'draft',
-    tagSlugs: ['first-rare-disease-catalog'],
+    symptoms:
+      '<p>常见表现包括癫痫、发育行为问题、皮肤白斑或面部丘疹、肾脏血管平滑肌脂肪瘤，以及不同年龄出现的多器官病变。</p>',
+    diagnosis:
+      '<p>诊断结合临床标准、头颅和肾脏影像、皮肤检查、脑电图和TSC1/TSC2基因检测。</p>',
+    treatment:
+      '<p>治疗按受累器官制定，包括癫痫控制、肾脏监测、皮肤和发育行为支持，部分患者可评估mTOR抑制剂或手术/介入。</p>',
+    prognosis:
+      '<p>预后差异很大；规范筛查和早期处理癫痫、肾脏及行为问题，可降低严重并发症风险。</p>',
+    sourceName: '国家卫生健康委员会《第一批罕见病目录》',
+    sourceUrl:
+      'https://www.nhc.gov.cn/wjw/c100175/201806/049e945e6c8044c5b4cb6b4aa19ad98e.shtml',
+    categorySlug: 'genetic-developmental',
+    charityIds: [62],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['first-rare-disease-catalog', 'genetic-counseling'],
   },
   {
     ...entity(1115, 'catalog-china-first-rare-disease-catalog-115'),
@@ -6279,5 +6444,162 @@ export const zhDiseaseSummaries: DiseaseDraft[] = [
     ],
     reviewStatus: 'draft',
     tagSlugs: ['first-rare-disease-catalog'],
+  },
+  {
+    ...entity(6101, 'disease-alstrom-syndrome'),
+    name: 'Alström综合征',
+    nameEn: 'Alström Syndrome',
+    alias: 'Alstrom综合征、Alström-Hallgren综合征、ALMS、ALMS1相关纤毛病',
+    slug: 'alstrom-syndrome',
+    oneSentence:
+      'Alström综合征是一种ALMS1基因相关的常染色体隐性遗传性多系统疾病，常从婴幼儿期视力问题开始，随后可出现听力下降、肥胖、胰岛素抵抗或2型糖尿病、心肌病以及肝肾肺等器官受累。',
+    plainName: '会同时影响视力、听力、代谢、心脏和多器官功能的遗传病',
+    prevalence:
+      'MedlinePlus Genetics 资料提到全球已报告超过900例；OCR来源也将其列为极罕见疾病。',
+    sourceName: 'MedlinePlus Genetics: Alström syndrome',
+    sourceUrl: 'https://medlineplus.gov/genetics/condition/alstrom-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Alström syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/alstrom-syndrome/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'multisystem',
+    charityIds: [84],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(6102, 'disease-dup15q-syndrome'),
+    name: '15q11-q13重复综合征（dup15q综合征）',
+    nameEn: '15q11-q13 duplication syndrome',
+    alias: 'dup15q综合征、15号染色体重复综合征、idic(15)、inv dup(15)',
+    slug: 'dup15q-syndrome',
+    oneSentence:
+      'dup15q综合征是一种母源15q11.2-q13.1区域额外拷贝导致的神经发育障碍，可引起肌张力低、运动和语言发育迟缓、智力障碍、孤独症谱系特征和癫痫。',
+    plainName: '15号染色体特定区域重复导致的发育和癫痫相关综合征',
+    prevalence:
+      'MedlinePlus Genetics 描述其患病率不明，可能在普通人群中高达约1/5,000，在孤独症或智力障碍人群中更常见。',
+    sourceName: 'MedlinePlus Genetics: 15q11-q13 duplication syndrome',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/15q11-q13-duplication-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: 15q11-q13 duplication syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/15q11-q13-duplication-syndrome/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'genetic-developmental',
+    charityIds: [85],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(6103, 'disease-pituitary-stalk-interruption-syndrome'),
+    name: '垂体柄阻断综合征',
+    nameEn: 'Pituitary Stalk Interruption Syndrome',
+    alias: 'PSIS、垂体柄中断综合征、异位垂体后叶、先天性垂体功能减退相关综合征',
+    slug: 'pituitary-stalk-interruption-syndrome',
+    oneSentence:
+      '垂体柄阻断综合征是一种先天性下丘脑-垂体发育异常，典型影像表现包括垂体柄缺如或变细、垂体后叶异位或缺如、垂体前叶发育不良，可导致生长激素和其他垂体激素缺乏。',
+    plainName: '垂体连接结构发育异常导致孩子生长和多种激素不足的疾病',
+    prevalence:
+      '患病率不明，公开资料通常描述为罕见；GARD和综述资料将其列为罕见病。',
+    sourceName: 'GARD: Pituitary stalk interruption syndrome',
+    sourceUrl:
+      'https://rarediseases.info.nih.gov/diseases/12421/pituitary-stalk-interruption-syndrome',
+    sources: [
+      {
+        name: 'GARD: Pituitary stalk interruption syndrome',
+        type: 'official',
+        url: 'https://rarediseases.info.nih.gov/diseases/12421/pituitary-stalk-interruption-syndrome',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'genetic-developmental',
+    charityIds: [86],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['endocrine'],
+  },
+  {
+    ...entity(6104, 'disease-joubert-syndrome'),
+    name: 'Joubert综合征',
+    nameEn: 'Joubert syndrome',
+    alias: 'Joubert-Bolthauser综合征、JBTS、JSRD、磨牙征相关综合征',
+    slug: 'joubert-syndrome',
+    oneSentence:
+      'Joubert综合征是一组以脑MRI“磨牙征”为核心特征的遗传性脑发育疾病，可导致婴儿肌张力低、呼吸节律异常、眼球运动异常、发育迟缓、共济失调，并可累及眼、肾、肝或骨骼。',
+    plainName: '脑干和小脑发育异常导致运动、呼吸和多系统问题的遗传病',
+    prevalence:
+      'MedlinePlus Genetics 估计约每80,000到100,000名新生儿1例，但可能因漏诊而低估。',
+    sourceName: 'MedlinePlus Genetics: Joubert syndrome',
+    sourceUrl: 'https://medlineplus.gov/genetics/condition/joubert-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Joubert syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/joubert-syndrome/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'neurological',
+    charityIds: [87],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
+  },
+  {
+    ...entity(6105, 'disease-pitt-hopkins-syndrome'),
+    name: 'Pitt-Hopkins综合征',
+    nameEn: 'Pitt-Hopkins syndrome',
+    alias: '皮特霍普金斯综合征、PTHS、PHS、TCF4相关神经发育综合征',
+    slug: 'pitt-hopkins-syndrome',
+    oneSentence:
+      'Pitt-Hopkins综合征是一种多由TCF4基因变异导致的神经发育疾病，常表现为中重度发育迟缓和智力障碍、语言严重受限、癫痫、清醒时过度换气/呼吸暂停样发作、便秘和特征性面容。',
+    plainName: '影响发育、语言、呼吸节律和癫痫风险的TCF4相关遗传病',
+    prevalence: 'MedlinePlus Genetics 描述其非常罕见，全球约报告500名患者。',
+    sourceName: 'MedlinePlus Genetics: Pitt-Hopkins syndrome',
+    sourceUrl:
+      'https://medlineplus.gov/genetics/condition/pitt-hopkins-syndrome/',
+    sources: [
+      {
+        name: 'MedlinePlus Genetics: Pitt-Hopkins syndrome',
+        type: 'official',
+        url: 'https://medlineplus.gov/genetics/condition/pitt-hopkins-syndrome/',
+      },
+      {
+        name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+        type: 'patient-organization',
+        url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+      },
+    ],
+    categorySlug: 'neurological',
+    charityIds: [88],
+    hospitalIds: [],
+    reviewStatus: 'patient-reviewed',
+    tagSlugs: ['genetic-counseling'],
   },
 ];

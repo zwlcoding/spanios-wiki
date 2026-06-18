@@ -91,6 +91,11 @@ export const diseaseBehcetsDisease: DiseaseDraft = {
       type: 'official',
       url: 'https://medlineplus.gov/genetics/condition/behcet-disease/',
     },
+    {
+      name: '基因江湖：《修订 | 中国罕见病患者组织名录(2023年)》',
+      type: 'patient-organization',
+      url: 'https://mp.weixin.qq.com/s/C-KAD5l2GUlNpwruGesRHQ',
+    },
   ],
   symptoms:
     '<p>典型线索是反复口腔溃疡、生殖器溃疡、皮肤损害和眼部葡萄膜炎，也可有关节、肠道、神经和大血管受累。</p>',
@@ -104,7 +109,7 @@ export const diseaseBehcetsDisease: DiseaseDraft = {
   sourceUrl:
     'https://www.nhc.gov.cn/yzygj/c100068/202507/5b3f41180a42465eb9eec34597bacaf2.shtml',
   categorySlug: 'immunological-rheumatologic',
-  charityIds: [],
+  charityIds: [78],
   hospitalIds: [],
   reviewStatus: 'patient-reviewed',
   featuredImage: {
