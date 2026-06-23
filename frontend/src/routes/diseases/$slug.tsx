@@ -25,15 +25,35 @@ import {
 } from '@/components/disease/detail-blocks';
 import { useDisease } from '@/hooks/useDiseases';
 import { fetchDiseaseBySlug } from '@/lib/contentClient';
+import { getLocale } from '@/paraglide/runtime';
 import { trackEvent } from '@/utils/analytics';
 import { uiText } from '@/utils/localeText';
+import { buildDiseaseSeo } from '@/utils/seo';
 
 export const Route = createFileRoute('/diseases/$slug')({
   loader: async ({ context, params }) => {
-    await context.queryClient.prefetchQuery({
+    return context.queryClient.ensureQueryData({
       queryKey: ['disease', params.slug],
       queryFn: () => fetchDiseaseBySlug(params.slug),
     });
+  },
+  head: ({ loaderData }) => {
+    if (!loaderData?.data) {
+      return {};
+    }
+
+    const seo = buildDiseaseSeo(loaderData.data, getLocale());
+
+    return {
+      meta: [
+        { title: seo.title },
+        { name: 'description', content: seo.description },
+        { property: 'og:title', content: seo.title },
+        { property: 'og:description', content: seo.description },
+        { property: 'og:type', content: 'article' },
+        { 'script:ld+json': seo.jsonLd },
+      ],
+    };
   },
   component: DiseaseDetailPage,
 });

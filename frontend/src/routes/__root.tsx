@@ -4,14 +4,16 @@ import {
   HeadContent,
   Link,
   Scripts,
+  useLocation,
 } from '@tanstack/react-router';
+import { useEffect } from 'react';
 import { MedicalDisclaimer } from '@/components/MedicalDisclaimer';
 import NotFound from '@/components/NotFound';
 import { DarkModeBtn, useDarkMode } from '@/features/DarkMode';
 import { LangModeBtn } from '@/features/LangMode';
 import { m } from '@/paraglide/messages';
 import { getLocale } from '@/paraglide/runtime';
-import { trackEvent } from '@/utils/analytics';
+import { trackEvent, trackPageview } from '@/utils/analytics';
 import { uiText } from '@/utils/localeText';
 import styles from '../styles.css?url';
 
@@ -39,6 +41,7 @@ export const Route = createRootRouteWithContext<RouterContext>()({
       {
         src: 'https://umami.qdkf.net/script.js',
         defer: true,
+        'data-auto-track': 'false',
         'data-website-id': 'b09dfc4e-d16c-430d-9499-5b1bcdf07759',
       },
     ],
@@ -49,6 +52,12 @@ export const Route = createRootRouteWithContext<RouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   const { toggleDarkMode } = useDarkMode();
+  const publicHref = useLocation({ select: (location) => location.publicHref });
+
+  useEffect(() => {
+    trackPageview(publicHref);
+  }, [publicHref]);
+
   const handleDarkModeChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     trackEvent('theme_change', {
       target_theme: event.currentTarget.checked ? 'dark' : 'light',
